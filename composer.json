@@ -1,0 +1,21 @@
+{
+  "name": "tstprep/sfwd-lms",
+  "description": "A brief description of your WordPress plugin",
+  "type": "wordpress-plugin",
+  "version": "4.9.1",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "Valentin Ceaprazaru",
+      "email": "valentin.c@codingheads.com"
+    }
+  ],
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.8",
+    "friendsofphp/php-cs-fixer": "^3.49",
+    "laravel/pint": "^1.13",
+    "phpmd/phpmd": "^2.15",
+    "phpstan/phpstan": "^1.10",
+    "vimeo/psalm": "^5.21"
+  }
+}

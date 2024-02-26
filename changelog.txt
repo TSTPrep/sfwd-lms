@@ -1,0 +1,203 @@
+= [4.9.1] =
+
+* Fix - Deprecation notice on the course page in PHP 8.1.
+* Fix - Support a custom label in the latest transactions course widget.
+* Fix - Can’t re-arrange/drag and drop Answers in Quiz Builder.
+* Fix - Quizzes inside topic can't be re-ordered.
+* Fix - Can’t correctly remove answers via Quiz Builder.
+* Tweak - Format a discount properly in the purchase invoice PDF.
+* Tweak - Improve a button label and a warning message on the quiz statistics page.
+* Tweak - Use WP defined date/time format in course dashboard widgets.
+
+= [4.9.0.1] =
+
+* Fix - Parameters compatibility for the get_edit_post_link filter.
+
+= [4.9.0] =
+
+* Feature - Add new course dashboard with course performance metrics and data.
+* Fix - Course 'Mark Complete' button validations.
+* Fix - Sidebar hiding does not work in tabs.
+* Tweak - Added Course-Presell support for the Student and Visitor shortcodes.
+* Tweak - Set default course access mode to Free.
+* Tweak - Support non /wp-admin URLs in the course video playlist.
+* Tweak - Added actions: `learndash_dashboard_widget_before_loading`, `learndash_dashboard_widget_after_loading`, `learndash_template_before_include`, `learndash_template_before_include:{template_name}`, `learndash_template_after_include`, `learndash_template_after_include:{template_name}`, `learndash_template_entry_point:{template_name}`, `learndash_template_entry_point:{template_name}:{entry_point_name}`.
+* Tweak - Added filters: `learndash_template_after_include_html:{$template_name}`, `learndash_template_after_include_html`, `learndash_template_args:{$template_name}`, `learndash_template_args`, `learndash_template_filepath`, `learndash_template_before_include_html:{$template_name}`, `learndash_template_before_include_html`, `learndash_template_entry_point_html:{template_name}:{entry_point_name}`, `learndash_template_entry_point_html:{template_name}`, `learndash_template_entry_point_is_enabled`, `learndash_template_html:{template_name}`, `learndash_template_html`, `learndash_template_include_html:{template_name}`, `learndash_template_include_html`, `learndash_template_pre_html:{$template_name}`, `learndash_template_pre_html`, `learndash_template_skip_rendering`, `learndash_template_admin_template_paths`, `learndash_dashboard_tab_is_default`, `learndash_dashboard_widget_course_lifetime_sales_transactions_chunk_size`, `learndash_dashboard_widget_course_latest_enrollees_users_limit`, `learndash_dashboard_widget_course_latest_transactions_limit`, `learndash_dashboard_is_enabled`, `learndash_dashboard_post_is_enabled`, `learndash_dashboard_section_hint_supported_html_tags`, `learndash_dashboard_sections`, `learndash_dashboard_sections_course`, `learndash_dashboard_widget_view_path`.
+* Tweak - Updated constants: LEARNDASH_DEFAULT_COURSE_PRICE_TYPE.
+* Tweak - Updated filters: `learndash_template_filename`.
+* Tweak - Updated functions: `learndash_mark_complete_process`.
+
+= [4.8.0.1] =
+
+* Fix - Error on Settings Support page when no .po file is available.
+* Fix - Incompatibility of binary selectors (group courses and course groups) with the classic editor.
+
+= [4.8.0] =
+
+* Feature - Add a password reset success page setting.
+* Feature - Add Bunny.net video progress support.
+* Feature - Create quizzes using AI.
+* Feature - Extend access to a course (single or in a group) on an individual user basis.
+* Feature - Group pre-selling.
+* Feature - Group start and end dates.
+* Feature - Group student limit.
+* Fix - Course could not be created from a video playlist if a license email contained a plus sign.
+* Fix - Incorrect from email address when sending admin and user quiz completion emails.
+* Fix - Remove "0 Days Trial" item for Stripe subscriptions with no trial.
+* Performance - `sfwd_lms_has_access_fn` function is optimized.
+* Tweak - Added actions: `learndash_metabox_initialized`.
+* Tweak - Added confirm dialog to start of Design Wizard.
+* Tweak - Added filters: `learndash_group_access_from`, `learndash_model_product_user_enrollment_date`, `learndash_course_get_extended_access_timestamp`.
+* Tweak - Added functions: `learndash_group_access_from`, `learndash_get_reset_password_success_page_id`, `learndash_is_learndash_hub_installed`, `learndash_activate_learndash_hub`, `learndash_course_extend_user_access`, `learndash_course_get_extended_access_timestamp`.
+* Tweak - Improved the LearnDash Licensing & Management plugin activation process.
+* Tweak - Updated functions: `ld_update_group_access`, `learndash_user_group_enrolled_to_course`, `ld_update_course_access`, `learndash_hub_deactivated_notice`, `learndash_video_complete_for_step`, `learndash_video_delete_cookie_for_step`, `learndash_delete_user_data`, `ld_course_access_expires_on`, `sfwd_lms_has_access_fn`.
+
+= [4.7.0.2] =
+
+* Fix - Add compatibility with the User Role Editor plugin when updating user roles via profile page.
+* Fix - Removed Astra templates from Design Wizard.
+* Tweak - Added 12 additional Kadence templates into the Design Wizard.
+* Tweak - Added filters: `learndash_stripe_webhook_event_processable`.
+
+= [4.7.0.1] =
+
+* Fix - Content editor was sometimes shown above the correct page content on LD post editing pages with tabs.
+* Fix - Respect gateway return url on successful payment redirect.
+* Fix - Stop exporting all courses when a user has no courses attached on GDPR export.
+* Tweak - Added actions: `learndash_quiz_resume_metadata_updated`.
+* Tweak - Added filters: `learndash_privacy_export_exporters`, `learndash_privacy_export_course_progress_data`, `learndash_privacy_export_lesson_progress_data`, `learndash_privacy_export_topic_progress_data`
+* Tweak - Deprecated functions: `learndash_get_course_enrollment_url`, `learndash_get_group_enrollment_url`.
+
+= [4.7.0] =
+
+* Feature - Course pre-selling.
+* Feature - Course start and end dates.
+* Feature - Course student limit.
+* Fix - Add left padding to content area in Focus Mode when using right sidebar on mobile screens.
+* Fix - Prevent group_leader role being removed from users on profile update.
+* Fix - Undefined array key warning in `ld_profile` shortcode when displaying a quiz with no title.
+* Tweak - Added actions: `learndash_metabox_updated_field`.
+* Tweak - Added filters: `learndash_payment_button_disabled`, `learndash_model_product_can_be_purchased`, `learndash_model_product_has_started`, `learndash_model_product_has_ended`, `learndash_model_product_start_date`, `learndash_model_product_end_date`, `learndash_model_product_pre_ordered`, `learndash_model_product_seats_limit`, `learndash_model_product_seats_used`, `learndash_model_product_seats_available`.
+* Tweak - Updated functions: `sfwd_lms_has_access_fn`, `ld_update_course_access`.
+
+= [4.6.0.1] =
+
+* Fix - Duplicate status bubbles when using the `learndash_status_bubble` function.
+* Security - Tightened security around the reset password shortcode.
+
+= [4.6.0] =
+
+* Feature - Course Outline AI module.
+* Fix - Display free trial in course/group infobar if trial price set to 0 or empty.
+* Fix - learndash_process_user_course_progress_update function was not processing the progress correctly in some cases.
+* Fix - Prevent duplicate password reset email after password reset.
+* Fix - Set product name as description for Stripe Connect buy now products.
+* Fix - Undefined FS_CHMOD_FILE error.
+* Fix - Updated method to required files in helpers.php file.
+* Tweak - Added actions: `learndash_files_included`.
+* Tweak - Added filters: `learndash_payment_button_classes`, `learndash_model_product_display_price`, `learndash_model_product_display_trial_price`, `learndash_service_chatgpt_send_command_data`.
+* Tweak - Added functions: `learndash_register_provider`, `learndash_extra_autoloading`.
+* Tweak - AI Integrations settings page under advanced settings tab.
+* Tweak - Deprecated functions: `learndash_the_breadcrumbs`.
+* Tweak - Deprecated models classes (replaced with LearnDash\Core\Models): `Learndash_Model`, `Learndash_Product_Model`, `Learndash_Transaction_Model`.
+
+= [4.5.3.2] =
+
+* Fix - learndash_reports_get_activity function did not return correct results in some cases (which has been affected by a fix in 4.5.3.1).
+
+= [4.5.3.1] =
+
+* Security - Tightened security around the courseinfo shortcode.
+
+= [4.5.3] =
+
+* Fix - The default color is not displayed in the theme settings color picker.
+* Update - RazorPay library to 2.8.5.
+
+= [4.5.2.1] =
+
+* Fix - Location of /lang directory in TCPDF library.
+
+= [4.5.2] =
+
+* Fix - 'Click here to visit' translatable text on checkout form.
+* Fix - Display correct pricing interval values in purchase invoice.
+* Fix - Incorrect decimal pricing on Stripe & Razorpay checkout.
+* Fix - learndash_reports_get_activity() returns results outside of date range if activity status combination is set.
+* Tweak - Show deprecation notice if using Stripe addon plugin.
+* Update - Change documentation in LearnDash LMS > Setup page.
+* Update - TCPDF to version 6.6.2.
+
+= [4.5.1.2] =
+
+* Fix - Course access validation error message.
+* Fix - Passed quizzes not showing continue button.
+
+= [4.5.1.1] =
+
+* Fix - Telemetry modal loading on incorrect admin pages.
+
+= [4.5.1] =
+
+* Fix - Add ; to Content-Type email header.
+* Fix - Display Telemetry modal on LD admin pages.
+* Fix - Hide continue button on failed quiz shortcode unless filtered
+* Fix - Issues with pagination, minimum global pagination value is 1 now.
+* Fix - Keep the old slugs for imported posts where possible.
+* Fix - learndash_user_get_course_completed_date function did not calculate the correct date in some cases.
+* Fix - Posts and authors were not connected on import when users were being imported.
+* Fix - Process shortcode placeholders in purchase invoice email message.
+* Tweak - Add better validation messages on import.
+* Tweak - Add validation error to the course access period field, when the value is less than 1.
+* Tweak - Confirm dialog when setting up template in Design Wizard.
+
+= [4.5.0.3] =
+
+* Fix - Increase timeout period for Action Scheduler
+* Fix - Prices containing commas were not being passed to payment gateways correctly.
+* Fix - Stripe Connect does not allow purchase for a logged-out user if Registration page not set.
+* Tweak - Removed a non-circulating currency CLF.
+
+= [4.5.0.2] =
+
+* Fix - PayPal ignored the 'Use PayPal Sandbox' setting.
+
+= [4.5.0.1] =
+
+* Fix - Compatibility with PHP 7.2, 7.3.
+* Fix - Conflict with a list of plugins.
+* Fix - Mobile sidebar menu and materials tab not opening.
+* Fix - Move scalar constants out of the `plugins_loaded` hook.
+
+= [4.5.0] =
+
+* Fix - Allow user to bypass topic progression when lesson is using video progression and admin bypass is enabled.
+* Fix - By default a group leader should not have an ability to edit the groups list they lead or other group leaders lead.
+* Fix - Check for mobile resolution when opening Focus Mode sidebar.
+* Fix - Ensure that all assignments for step are approved before considering as complete.
+* Fix - Fatal error on questions CPT when using 'j \d\e F \d\e Y' date format.
+* Fix - Fill in the blank answer formatting on quiz statistics.
+* Fix - Format price properly on course/group pages.
+* Fix - Highlight current topic in focus mode sidebar navigation.
+* Fix - License validation cache was not being cleared when a license was updated.
+* Fix - PayPal subscriptions used a usual price instead of a trial price. Now all options are mapped correctly.
+* Fix - Quiz pagination when using Overview table feature.
+* Fix - Quiz resume setting not saving in Quiz Template feature.
+* Fix - Razorpay subscriptions from guest users were ignored, now they are processed correctly.
+* Fix - Setup wizard not showing in some cases.
+* Fix - Shorten screen height on Setup Wizard Payment page.
+* Fix - Stripe Connect could not process a webhook, when a guest user tried to buy a product using the existing WP user email.
+* Fix - Text on the course wizard page was not using custom labels.
+* Fix - When the Group Leader user role was removed through the user’s profile, it was not deleted from group leaders assigned to groups.
+* Performance - learndash_active_coupons_exist function is optimized.
+* Tweak - Added actions: `learndash_payment_button_added`, `learndash_payment_gateway_event_processed`, `learndash_payment_gateway_user_created`
+* Tweak - Added Data Sharing tab to the advanced settings.
+* Tweak - Added filters: `learndash_admin_settings_advanced_sections_with_hidden_metaboxes`
+* Tweak - Added filters: `learndash_group_leader_can_edit_group_leaders`, `learndash_admin_settings_advanced_sections_with_hidden_metaboxes`
+* Tweak - Added filters: `learndash_purchase_invoice_logo_params`, `learndash_user_statistics`, `learndash_lesson_row_class`, `learndash_quiz_essay_upload_link`, `learndash_account_error_messages`, `learndash_account_menu`, `learndash_label_to_slug`, `learndash_payment_gateway_event_ignore`, `learndash_payment_gateways`, `learndash_loggers`, `learndash_logger_max_file_size`, `learndash_model_is_parent`, `learndash_model_allowed_post_types`, `learndash_model_product_pricing_type`, `learndash_model_product_type_label`, `learndash_model_product_pricing`, `learndash_model_product_user_has_access`, `learndash_model_product_user_enrolled`, `learndash_model_product_user_unenrolled`, `learndash_model_transaction_user`, `learndash_model_transaction_gateway_name`, `learndash_model_transaction_gateway_label`, `learndash_model_transaction_gateway`, `learndash_model_transaction_is_subscription`, `learndash_model_transaction_is_free`, `learndash_model_transaction_is_parent`, `learndash_model_transaction_has_trial`, `learndash_model_transaction_has_coupon`, `learndash_model_transaction_gateway_transaction_id`, `learndash_model_transaction_product`, `learndash_model_transaction_product_name`, `learndash_model_transaction_product_type_label`, `learndash_model_transaction_pricing`, `learndash_model_transaction_coupon_data`, `learndash_payment_option_image_url`, `learndash_payment_option_url_fail`, `learndash_payment_option_url_success`, `learndash_payment_button_label`, `learndash_payment_buttons`, `learndash_payment_button_open`, `learndash_payment_button_closed`, `learndash_payment_button_free`, `learndash_payment_button_dropdown`, `learndash_payment_button_dropdown_trigger`, `learndash_payment_button_markup`, `learndash_transaction_post_title`
+* Tweak - Added functions: `learndash_registration_errors`, `learndash_get_account_menu`, `learndash_coupons_init`, `learndash_registration_page_get_id`, `learndash_generate_purchase_invoice`
+* Tweak - Allow child class of LearnDash_Gutenberg_Block to set $block_dir property so it can register Gutenberg block using block.json.
+* Tweak - Deprecated actions: `learndash_user_created_with_razorpay`, `learndash_stripe_after_create_user`
+* Tweak - Deprecated classes: `LearnDash_Payment_Gateway_Integration`, `LearnDash_PayPal_IPN`, `LearnDash_Stripe_Connect_Checkout_Integration`, `LearnDash_Razorpay_Integration`
+* Tweak - Deprecated filters: `learndash-get-user-stats`, `learndash-lesson-row-class`, `learndash-quiz-essay-upload-link`, `learndash-registration-errors`, `learndash_payment_closed_button`, `learndash_dropdown_payment_button`, `label_to_slug`, `learndash_stripe_create_short_username`, `learndash_button_label_razorpay`, `learndash_stripe_purchase_button_text`, `learndash_process_webhook_razorpay`, `learndash_stripe_process_webhook`
+* Tweak - Deprecated functions: `learndash_footer_payment_buttons`, `learndash_get_footer`, `learndash_get_payment_button_label`, `learndash_paypal_init_user_purchase_hash`, `learndash_paypal_get_purchase_success_redirect_url`, `learndash_paypal_get_purchase_cancel_redirect_url`, `learndash_send_purchase_invoice_email`, `learndash_transaction_add_learndash_version`, `learndash_transaction_get_payment_meta`, `learndash_transaction_get_razorpay_meta`, `learndash_transaction_get_paypal_meta`, `learndash_transaction_get_final_price`, `learndash_transaction_get_stripe_meta`, `learndash_transaction_get_coupon_meta`
