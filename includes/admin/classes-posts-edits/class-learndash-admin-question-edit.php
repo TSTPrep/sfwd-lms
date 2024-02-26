@@ -238,6 +238,7 @@ if ( ( class_exists( 'Learndash_Admin_Post_Edit' ) ) && ( ! class_exists( 'Learn
 		 * @param object $post      WP_Post Post being edited.
 		 */
 		public function add_metaboxes( $post_type = '', $post = null ) {
+
 			if ( $this->post_type_check( $post_type ) ) {
 				parent::add_metaboxes( $post_type, $post );
 

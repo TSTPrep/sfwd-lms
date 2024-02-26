@@ -7673,3 +7673,66 @@ body.ld-in-focus-mode.admin-bar {
 .ld-exam-content .ld-exam-footer * {
   float: right;
 }
+
+
+
+
+
+
+
+
+
+
+/**
+ * TSTPREP
+ */
+.openai-disclaimer {
+	display: none;
+}
+.wpProQuiz_spinnerII {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0 0 0 / 0.4);
+	backdrop-filter: blur(10px);
+	display: block;
+	z-index: 10;
+	opacity: .2;
+}
+
+.wpProQuiz_spinnerII div {
+	width: 150px; /* control the size */
+	aspect-ratio: 1;
+	display: grid;
+	-webkit-mask: conic-gradient(from 22deg, #0003, #000);
+	mask: conic-gradient(from 22deg, #0003, #000);
+	animation: load 1s steps(8) infinite;
+	height: 150px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -75px 0 0 -75px;
+}
+
+.wpProQuiz_spinnerII div,
+.wpProQuiz_spinnerII div:before {
+	--_g: linear-gradient(#17177c 0 0) 50%; /* update the color here */
+	background: var(--_g)/34% 8% space no-repeat,
+	var(--_g)/8% 34% no-repeat space;
+}
+
+.wpProQuiz_spinnerII div:before {
+	content: "";
+	transform: rotate(45deg);
+}
+
+@keyframes load {
+	from {
+		transform: rotate(0turn)
+	}
+	to {
+		transform: rotate(1turn)
+	}
+}

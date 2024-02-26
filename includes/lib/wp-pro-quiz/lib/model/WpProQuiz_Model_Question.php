@@ -247,20 +247,22 @@ class WpProQuiz_Model_Question extends WpProQuiz_Model_Model {
 	public function getAnswerData( $serialize = false ) {
 		global $wpdb;
 
-		if ( ! is_null( $this->_answerData ) ) {
-			if ( ! is_array( $this->_answerData ) ) {
-				$answerData = @maybe_unserialize( $this->_answerData );
-				if ( false === $answerData ) {
-					$answerData = learndash_recount_serialized_bytes( $this->_answerData );
-					if ( false !== $answerData ) {
-						$answerData = @maybe_unserialize( $answerData );
-						if ( false === $answerData ) {
-							return null;
-						}
-					}
-				}
 
-				if ( ( ! empty( $answerData ) ) && ( is_array( $answerData ) ) ) {
+
+        if ( ! is_null( $this->_answerData ) ) {
+            if ( ! is_array( $this->_answerData ) ) {
+                $answerData = @maybe_unserialize( $this->_answerData );
+                if ( false === $answerData ) {
+                    $answerData = learndash_recount_serialized_bytes( $this->_answerData );
+                    if ( false !== $answerData ) {
+                        $answerData = @maybe_unserialize( $answerData );
+                        if ( false === $answerData ) {
+                            return null;
+                        }
+                    }
+                }
+
+                if ( ( ! empty( $answerData ) ) && ( is_array( $answerData ) ) ) {
 					$changes = false;
 					foreach ( $answerData as $a_idx => $answer ) {
 						if ( ! is_a( $answer, 'WpProQuiz_Model_AnswerTypes' ) ) {
@@ -293,10 +295,10 @@ class WpProQuiz_Model_Question extends WpProQuiz_Model_Model {
 			}
 		}
 
-		if ( $serialize ) {
-			return @serialize( $this->_answerData );
-		} else {
-			return $this->_answerData;
+        if ( $serialize ) {
+            return @serialize( $this->_answerData );
+        } else {
+            return $this->_answerData;
 		}
 	}
 

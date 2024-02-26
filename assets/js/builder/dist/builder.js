@@ -4089,6 +4089,7 @@ class NodeHeader extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       updateSectionHeadings
     } = this.props;
     const questionAlerts = (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.getQuestionAlerts)(node);
+    console.log(node);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "ld-node-header"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -8581,6 +8582,8 @@ class QuestionWorkspace extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
     } = this.state;
     const answerTypeMap = LearnDashData.questions_types_map;
     const questionAlerts = (0,_helpers__WEBPACK_IMPORTED_MODULE_11__.getQuestionAlerts)(question);
+
+    console.log(question);
     return (
       /*#__PURE__*/
       // A lesson must be draggable for us to sort them
@@ -9662,7 +9665,12 @@ const getQuestionAlerts = question => {
     const answerTypeMap = LearnDashData.questions_types_map;
 
     // Get answer data and retrieve contents of first answer.
-    const answerData = question.answers && question.answers[answerTypeMap[question.question_type]];
+    const answerData = question.answers && question.answers[answerTypeMap[question.question_type]] || [];
+
+    console.log(question.answers);
+    console.log(question);
+    console.log(answerTypeMap);
+    console.log(answerData);
     answerData.map(question_answer => {
       if (question_answer.answer !== '') {
         validAnswersCount++;
@@ -13448,19 +13456,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /**
  * MIT License
- * 
+ *
  * Copyright (c) 2014-present, Lee Byron and other contributors.
- * 
+ *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- * 
+ *
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
- * 
+ *
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -35082,7 +35090,7 @@ __webpack_require__.r(__webpack_exports__);
   selectorFactory, which has the signature:
 
     (dispatch, options) => (nextState, nextOwnProps) => nextFinalProps
-  
+
   connect passes its args to connectAdvanced as options, which will in turn pass them to
   selectorFactory each time a Connect component instance is instantiated or hot reloaded.
 
@@ -35453,7 +35461,7 @@ function wrapMapToPropsConstant(getConstant) {
 } // dependsOnOwnProps is used by createMapToPropsProxy to determine whether to pass props as args
 // to the mapToProps function being wrapped. It is also used by makePurePropsSelector to determine
 // whether mapToProps needs to be invoked when props have changed.
-// 
+//
 // A length of one signals that mapToProps does not depend on props from the parent component.
 // A length of zero is assumed to mean mapToProps is getting args via arguments or ...args and
 // therefore not reporting its length accurately..
@@ -35462,16 +35470,16 @@ function getDependsOnOwnProps(mapToProps) {
   return mapToProps.dependsOnOwnProps !== null && mapToProps.dependsOnOwnProps !== undefined ? Boolean(mapToProps.dependsOnOwnProps) : mapToProps.length !== 1;
 } // Used by whenMapStateToPropsIsFunction and whenMapDispatchToPropsIsFunction,
 // this function wraps mapToProps in a proxy function which does several things:
-// 
+//
 //  * Detects whether the mapToProps function being called depends on props, which
 //    is used by selectorFactory to decide if it should reinvoke on props changes.
-//    
+//
 //  * On first call, handles mapToProps if returns another function, and treats that
 //    new function as the true mapToProps for subsequent calls.
-//    
+//
 //  * On first call, verifies the first result is a plain object, in order to warn
 //    the developer that their mapToProps function is not returning a valid result.
-//    
+//
 
 function wrapMapToPropsFunc(mapToProps, methodName) {
   return function initProxySelector(dispatch, _ref) {
@@ -68573,7 +68581,7 @@ if (
 ) {
   __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 }
-        
+
   })();
 }
 
@@ -68749,7 +68757,7 @@ if (
 ) {
   __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 }
-        
+
   })();
 }
 
@@ -69212,7 +69220,7 @@ function invariant(condition, message) {
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/ 	
+/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -69226,17 +69234,17 @@ function invariant(condition, message) {
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/ 	
+/******/
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
+/******/
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/ 	
+/******/
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/ 	
+/******/
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	!function() {
@@ -69249,7 +69257,7 @@ function invariant(condition, message) {
 /******/ 			return getter;
 /******/ 		};
 /******/ 	}();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/define property getters */
 /******/ 	!function() {
 /******/ 		// define getter functions for harmony exports
@@ -69261,7 +69269,7 @@ function invariant(condition, message) {
 /******/ 			}
 /******/ 		};
 /******/ 	}();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/global */
 /******/ 	!function() {
 /******/ 		__webpack_require__.g = (function() {
@@ -69273,12 +69281,12 @@ function invariant(condition, message) {
 /******/ 			}
 /******/ 		})();
 /******/ 	}();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	!function() {
 /******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
 /******/ 	}();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	!function() {
 /******/ 		// define __esModule on exports
@@ -69289,7 +69297,7 @@ function invariant(condition, message) {
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
 /******/ 	}();
-/******/ 	
+/******/
 /******/ 	/* webpack/runtime/node module decorator */
 /******/ 	!function() {
 /******/ 		__webpack_require__.nmd = function(module) {
@@ -69298,7 +69306,7 @@ function invariant(condition, message) {
 /******/ 			return module;
 /******/ 		};
 /******/ 	}();
-/******/ 	
+/******/
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
@@ -69322,16 +69330,33 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
+console.log('dewdwedwdw');
 
 const errorMessage = 'undefined' !== typeof LearnDashData ? LearnDashData.error_messages && LearnDashData.error_messages.header && LearnDashData.error_messages.header : 'Sorry, something went wrong with LearnDash.';
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_components_common_error_boundary__WEBPACK_IMPORTED_MODULE_6__["default"], {
-  message: errorMessage,
-  className: "builder-boundary"
-}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {
-  store: _src_redux_configureStore__WEBPACK_IMPORTED_MODULE_3__.store
-}, 'sfwd-quiz' === LearnDashData.post_data.builder_post_type ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_components_quizzes_quiz_builder__WEBPACK_IMPORTED_MODULE_5__["default"], null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_components_courses_course_builder__WEBPACK_IMPORTED_MODULE_4__["default"], null))), document.getElementById('learndash_builder_box_wrap'));
-}();
-/******/ })()
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render(
+    /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+        _src_components_common_error_boundary__WEBPACK_IMPORTED_MODULE_6__["default"], {
+            message: errorMessage,
+            className: "builder-boundary"
+        },
+        /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+            react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {
+                store: _src_redux_configureStore__WEBPACK_IMPORTED_MODULE_3__.store
+            },
+            'sfwd-quiz' === LearnDashData.post_data.builder_post_type ?
+             /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+                _src_components_quizzes_quiz_builder__WEBPACK_IMPORTED_MODULE_5__["default"], null
+            ) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
+                _src_components_courses_course_builder__WEBPACK_IMPORTED_MODULE_4__["default"], null
+            )
+        )
+    ), 
+    document.getElementById('learndash_builder_box_wrap')
+  );
+}
+();
+/******/
+})
+()
 ;
 //# sourceMappingURL=builder.js.map

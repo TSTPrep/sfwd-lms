@@ -2310,6 +2310,8 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 				$this->admin_tab_sets[ $menu_tab_key ]
 			);
 
+//            echo '<pre>'; var_dump($learndash_data['questions_types_map']); die;
+
 			if ( ! empty( $learndash_data ) ) {
 				echo '<div id="sfwd-header"></div>';
 

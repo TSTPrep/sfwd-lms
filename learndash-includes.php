@@ -470,3 +470,8 @@ if ( ( defined( 'LEARNDASH_GUTENBERG' ) ) && ( LEARNDASH_GUTENBERG === true ) ) 
  * LearnDash Deprecated Functions/Classes
  */
 require_once dirname( __FILE__ ) . '/includes/deprecated/deprecated-functions.php';
+
+/**
+ * LearnDash Deprecated Functions/Classes
+ */
+require_once dirname( __FILE__ ) . '/includes/functions-tstprep.php';
