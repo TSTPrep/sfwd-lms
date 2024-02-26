@@ -2,7 +2,7 @@
   "name": "tstprep/sfwd-lms",
   "description": "A brief description of your WordPress plugin",
   "type": "wordpress-plugin",
-  "version": "4.9.1",
+  "version": "4.9.1.1",
   "license": "GPL-2.0-or-later",
   "authors": [
     {
