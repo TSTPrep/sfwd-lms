@@ -774,9 +774,9 @@
                         $question.find('.wpProQuiz_QuestionButton').hide();
                         plugin.methode.makeAjaxCall(essayText, $question);
                     }
-					/**
-					 * /TSTPREP
-					 */
+                    /**
+                     * /TSTPREP
+                     */
 
 
                     if (typeof essayText !== 'undefined') {
@@ -793,9 +793,6 @@
 
             return {response};
         };
-
-
-
 
 
         // Called from the Cookie handler logic. If the Quiz is loaded and a cookie is present the values of the cookie are used
@@ -2883,22 +2880,40 @@
             },
 
 
-
-
-
             /**
              * TSTPREP
              */
+            startTimer() {
+                let time = 15;
+                let timerContainer = $e.find('.wpProQuiz_spinnerII .timer');
+
+                let timer = setInterval(function () {
+                    time--;
+                    timerContainer.html(time);
+
+                    if (time === 0) {
+                        clearInterval(timer);
+                    }
+                }, 1000);
+            },
             showSpinnerII() {
-                if ($e.find('.wpProQuiz_spinnerII').length === 0)
-                    $e.append('<div class="wpProQuiz_spinnerII"><div></div></div>');
+                let startTimer = false;
+                if ($e.find('.wpProQuiz_spinnerII').length === 0) {
+                    startTimer = true;
+                    $e.append('<div class="wpProQuiz_spinnerII"><div class="timer">15</div><div class="spinner"></div></div>');
+                }
+
+                /**
+                 * Start the timer only once.
+                 */
+                if (startTimer === true) {
+                    plugin.methode.startTimer();
+                }
 
                 $e.find('.wpProQuiz_spinnerII').show();
-                console.log('showSpinner')
             },
             hideSpinnerII() {
                 $e.find('.wpProQuiz_spinnerII').hide();
-                console.log('hideSpinner')
             },
             validateNumberOfWords: function ($question) {
                 const essayText = $question
@@ -2939,15 +2954,13 @@
 
                         const newText = response?.[0].choices[0].message.content.replace(/\n/g, '<br>');
 
-	                    // Check
+                        // Check
                         if (response?.[0].object === 'chat.completion') {
-                            if ($question.find('.graded-disclaimer').length) {
-                                $question.find('.graded-disclaimer').replaceWith(`<p class="openai-feedback">${newText}</p>`)
-                            } else {
-                                $question.append(`<p class="openai-feedback">${newText}</p>`)
-                            }
+                            $question
+                                .find('.wpProQuiz_question_text')
+                                .append(`<p class="openai-feedback">${newText}</p>`);
                         }
-						plugin.methode.hideSpinnerII();
+                        plugin.methode.hideSpinnerII();
 
                     }
                 });
@@ -2989,10 +3002,17 @@
                      */
                     plugin.methode.showSpinnerII();
                     if ($this.find('.openai-disclaimer').length === 0)
-                        $this.find('.graded-disclaimer').after('<p class="openai-disclaimer">You need to write at least 100 words.</p>');
+                        $this
+                            .find('.wpProQuiz_question_text')
+                            .append('<p class="openai-disclaimer">You need to write at least 100 words.</p>');
+
+
+                    console.log($this);
+                    console.log($this.find('.wpProQuiz_question_text'));
+                    console.log($this.find('.openai-disclaimer'));
+
 
                     if (!plugin.methode.validateNumberOfWords($this)) {
-                        console.log($this.find('.openai-disclaimer'))
                         $this.find('.openai-disclaimer').show();
                         plugin.methode.hideSpinnerII();
                         return false;
