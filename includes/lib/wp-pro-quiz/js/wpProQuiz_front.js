@@ -3006,12 +3006,6 @@
                             .find('.wpProQuiz_question_text')
                             .append('<p class="openai-disclaimer">You need to write at least 100 words.</p>');
 
-
-                    console.log($this);
-                    console.log($this.find('.wpProQuiz_question_text'));
-                    console.log($this.find('.openai-disclaimer'));
-
-
                     if (!plugin.methode.validateNumberOfWords($this)) {
                         $this.find('.openai-disclaimer').show();
                         plugin.methode.hideSpinnerII();
