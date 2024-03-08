@@ -19,9 +19,7 @@ namespace LearnDash\Core\Models;
 use InvalidArgumentException;
 use LDLMS_Post_Types;
 use LearnDash\Core\Traits\Memoizable;
-use LearnDash\Core\Utilities\Cast;
 use WP_Post;
-use WP_User;
 
 /**
  * Post model class.
@@ -291,19 +289,9 @@ abstract class Post extends Model {
 			return null;
 		}
 
-		$post = get_post( $post_id );
+		$models = self::find_many( array( $post_id ) );
 
-		if ( ! $post instanceof WP_Post ) {
-			return null;
-		}
-
-		try {
-			$model = self::create_from_post( $post );
-		} catch ( InvalidArgumentException $e ) {
-			return null;
-		}
-
-		return $model;
+		return ! empty( $models ) ? $models[0] : null;
 	}
 
 	/**
@@ -496,27 +484,5 @@ abstract class Post extends Model {
 		}
 
 		$this->post = $post;
-	}
-
-	/**
-	 * Returns a WP_User object or a user ID mapped according to the given user.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param WP_User|int|null $user          The user ID or WP_User. If null or empty, the current user is used if $supports_null is false.
-	 * @param bool             $supports_null Whether to return null if the given user is null or empty.
-	 *
-	 * @return ( $supports_null is true ? WP_User|int|null : WP_User|int )
-	 */
-	protected function map_user( $user, bool $supports_null = false ) {
-		if ( $user instanceof WP_User ) {
-			return $user;
-		}
-
-		$user_id = Cast::to_int( $user );
-
-		return $user_id > 0
-			? $user_id
-			: ( $supports_null ? null : wp_get_current_user() );
 	}
 }

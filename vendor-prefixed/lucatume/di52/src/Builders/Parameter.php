@@ -5,7 +5,7 @@
  * @package StellarWP\Learndash\lucatume\DI52\Builders
  *
  * @license GPL-3.0
- * Modified by learndash on 22-September-2023 using Strauss.
+ * Modified by learndash on 21-June-2023 using Strauss.
  * @see https://github.com/BrianHenryIE/strauss
  */
 
@@ -210,7 +210,7 @@ class Parameter
         }
 
         try {
-            if (function_exists('enum_exists') && enum_exists((string) $this->type)) {
+            if (function_exists('enum_exists') && enum_exists($this->type)) {
                 return false;
             }
         } catch (ParseError $e) {

@@ -912,10 +912,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 				);
 				global $l10n;
 				$ld_translation_files = '';
-				if (
-					isset( $l10n[ LEARNDASH_LMS_TEXT_DOMAIN ] )
-					&& $l10n[ LEARNDASH_LMS_TEXT_DOMAIN ] instanceof MO
-				) {
+				if ( ( isset( $l10n[ LEARNDASH_LMS_TEXT_DOMAIN ] ) ) && ( ! empty( $l10n[ LEARNDASH_LMS_TEXT_DOMAIN ] ) ) ) {
 					$mo_file = $l10n[ LEARNDASH_LMS_TEXT_DOMAIN ]->get_filename();
 					if ( ! empty( $mo_file ) ) {
 						$mo_files_output       = str_replace( ABSPATH, '', $mo_file );

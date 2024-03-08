@@ -9,7 +9,6 @@
 
 use LearnDash\Core\Models\Product;
 use LearnDash\Core\Models\Transaction;
-use LearnDash\Core\Utilities\Cast;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -427,22 +426,15 @@ if ( ! class_exists( 'Learndash_Payment_Gateway' ) ) {
 			// For buy now and recurring types, use the “enrollment URL” field from post settings.
 
 			if ( 1 === count( $products ) ) {
-				$product        = $products[0];
-				$setting_prefix = LDLMS_Post_Types::get_post_type_key( $product->get_post_type() );
+				$product = $products[0];
 
-				if ( $product->is_price_type_paynow() ) {
-					$product_enrollment_url = Cast::to_string(
-						$product->get_setting( "{$setting_prefix}_price_type_paynow_enrollment_url" )
-					);
-				} elseif ( $product->is_price_type_subscribe() ) {
-					$product_enrollment_url = Cast::to_string(
-						$product->get_setting( "{$setting_prefix}_price_type_subscribe_enrollment_url" )
-					);
-				} else {
-					$product_enrollment_url = '';
+				if ( learndash_is_course_post( $product->get_post() ) ) {
+					$enrollment_url = learndash_get_course_enrollment_url( $product->get_post() );
+				} elseif ( learndash_is_group_post( $product->get_post() ) ) {
+					$enrollment_url = learndash_get_group_enrollment_url( $product->get_post() );
 				}
 
-				if ( ! empty( $product_enrollment_url ) ) {
+				if ( ! empty( $enrollment_url ) ) {
 					/**
 					 * Filters URL for successful payments.
 					 *
@@ -454,7 +446,7 @@ if ( ! class_exists( 'Learndash_Payment_Gateway' ) ) {
 					 *
 					 * @return string The URL, where user will be redirected after the successful payment.
 					 */
-					return apply_filters( 'learndash_payment_option_url_success', $product_enrollment_url, static::get_name(), $products );
+					return apply_filters( 'learndash_payment_option_url_success', $enrollment_url, static::get_name(), $products );
 				}
 			}
 

@@ -209,7 +209,14 @@ class Course_Outline {
 	public function enqueue_admin_scripts(): void {
 		$screen = get_current_screen();
 		if ( is_object( $screen ) && 'learndash-lms_page_' . static::$slug === $screen->id ) {
+			wp_register_style(
+				'ld-tailwindcss',
+				LEARNDASH_LMS_PLUGIN_URL . 'assets/css/ld-tailwind.css',
+				array(),
+				LEARNDASH_SCRIPT_VERSION_TOKEN
+			);
 			wp_enqueue_style( 'ld-tailwindcss' );
+			wp_style_add_data( 'ld-tailwindcss', 'rtl', 'replace' );
 		}
 	}
 
@@ -267,7 +274,7 @@ class Course_Outline {
 				$course_title = is_array( $course ) && ! empty( $course['title'] ) ? $course['title'] : get_the_title( absint( $course ) );
 				$course_id    = ! is_array( $course ) || empty( $course['title'] ) ? absint( $course ) : 0;
 
-				$command = "Create a numbered bullet list with {$lesson_count} lesson titles for a '{$course_title}' course on the topic of '{$course_idea}'.";
+				$command = "Outline {$lesson_count} lessons for a '{$course_title}' course on the topic of '{$course_idea}'.";
 
 				$response = $this->chatgpt->send_command( $command );
 			} catch ( Exception $e ) {

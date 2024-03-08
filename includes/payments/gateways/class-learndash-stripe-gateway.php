@@ -45,15 +45,7 @@ if ( ! class_exists( 'Learndash_Stripe_Gateway' ) && class_exists( 'Learndash_Pa
 		private const EVENT_INVOICE_PAYMENT_SUCCEEDED     = 'invoice.payment_succeeded';
 		private const EVENT_INVOICE_PAYMENT_FAILED        = 'invoice.payment_failed';
 		private const EVENT_CUSTOMER_SUBSCRIPTION_DELETED = 'customer.subscription.deleted';
-		private const EVENT_COUPON_DELETED                = 'coupon.deleted';
-
-		private const PROCESSABLE_WEBHOOK_EVENTS = [
-			self::EVENT_CHECKOUT_SESSION_COMPLETED,
-			self::EVENT_INVOICE_PAYMENT_SUCCEEDED,
-			self::EVENT_INVOICE_PAYMENT_FAILED,
-			self::EVENT_CUSTOMER_SUBSCRIPTION_DELETED,
-			self::EVENT_COUPON_DELETED,
-		];
+		private const EVENT_COUPON_DELETED = 'coupon.deleted';
 
 		/**
 		 * Stripe secret key.
@@ -474,37 +466,6 @@ if ( ! class_exists( 'Learndash_Stripe_Gateway' ) && class_exists( 'Learndash_Pa
 		}
 
 		/**
-		 * Returns whether the webhook event is processable or not.
-		 *
-		 * @since 4.7.0.2
-		 *
-		 * @param Event $event The Stripe event.
-		 *
-		 * @return bool
-		 */
-		private function is_webhook_event_processable( Event $event ): bool {
-			$is_processable = in_array( $event->type, self::PROCESSABLE_WEBHOOK_EVENTS, true );
-
-			/**
-			 * Filters whether the webhook event is processable or not.
-			 *
-			 * @since 4.7.0.2
-			 *
-			 * @param bool                      $is_processable Whether the webhook event is processable or not.
-			 * @param Event                     $event          The Stripe event.
-			 * @param Learndash_Stripe_Gateway  $gateway        The Stripe gateway.
-			 *
-			 * @return bool
-			 */
-			return apply_filters(
-				'learndash_stripe_webhook_event_processable',
-				$is_processable,
-				$event,
-				$this
-			);
-		}
-
-		/**
 		 * Processes the webhook event.
 		 *
 		 * @since 4.5.0
@@ -831,13 +792,11 @@ if ( ! class_exists( 'Learndash_Stripe_Gateway' ) && class_exists( 'Learndash_Pa
 			);
 
 			if ( ! $user instanceof WP_User ) {
-				$this->log_info( 'No WP user found and failed to create a new user. Event was ignored.' );
+				$this->log_error( 'No WP user found and failed to create a new user.' );
 
-				wp_send_json_success(
-					[
-						'message' => 'No WP user found and failed to create a new user. Event was ignored.',
-					],
-					200
+				wp_send_json_error(
+					new WP_Error( 'bad_request', 'User validation failed. User was not found or had not been able to be created successfully.' ),
+					422
 				);
 			}
 
@@ -915,13 +874,14 @@ if ( ! class_exists( 'Learndash_Stripe_Gateway' ) && class_exists( 'Learndash_Pa
 			}
 
 			if ( empty( $products ) ) {
-				$this->log_info( 'No related products found with ID(s): ' . implode( ', ', $post_ids ) . '. Event was ignored.' );
+				$this->log_error( 'No related products found with ID(s): ' . implode( ', ', $post_ids ) );
 
-				wp_send_json_success(
-					[
-						'message' => 'No related products found with ID(s): ' . implode( ', ', $post_ids ) . '. Event was ignored.',
-					],
-					200
+				wp_send_json_error(
+					new WP_Error(
+						'bad_request',
+						sprintf( 'Product validation failed. Product was not found.' )
+					),
+					422
 				);
 			}
 
@@ -1001,15 +961,6 @@ if ( ! class_exists( 'Learndash_Stripe_Gateway' ) && class_exists( 'Learndash_Pa
 				wp_send_json_error(
 					new WP_Error( 'bad_request', 'Event validation failed. The event could not be retrieved from Stripe.' ),
 					422
-				);
-			}
-
-			if ( ! $this->is_webhook_event_processable( $event ) ) {
-				$this->log_info( 'Webhook event is not processable by LearnDash and was ignored.' );
-
-				wp_send_json_success(
-					[ 'message' => 'Webhook event is not processable by LearnDash and was ignored.' ],
-					200
 				);
 			}
 
@@ -1340,10 +1291,7 @@ if ( ! class_exists( 'Learndash_Stripe_Gateway' ) && class_exists( 'Learndash_Pa
 			);
 
 			$items = null;
-			if (
-				$transaction_meta_dto->has_trial
-				&& ! $transaction_meta_dto->has_free_trial
-			) {
+			if ( ! $transaction_meta_dto->has_free_trial ) {
 				$items = array(
 					array(
 						'name'     => sprintf(

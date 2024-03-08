@@ -626,19 +626,18 @@ if ( ! defined( 'LEARNDASH_DEFAULT_COURSE_PRICE_TYPE' ) ) {
 	/**
 	 * Define LearnDash LMS - Set the default course price type.
 	 *
-	 * @since 3.2.0 Default is 'open'.
-	 * @since 4.9.0   Default is 'free'.
+	 * @since 3.2.0
 	 *
 	 * @var string $value {
 	 *    Possible values one of the following.
-	 *    @type string open      Price Type 'open'.
-	 *    @type string free      Price Type 'free'. Default.
+	 *    @type string open      Price Type 'open'. Default.
+	 *    @type string free      Price Type 'free'.
 	 *    @type string paynow    Price Type 'paynow'.
 	 *    @type string subscribe Price Type 'subscribe'.
 	 *    @type string closed    Price Type 'closed'.
 	 * }
 	 */
-	define( 'LEARNDASH_DEFAULT_COURSE_PRICE_TYPE', 'free' );
+	define( 'LEARNDASH_DEFAULT_COURSE_PRICE_TYPE', 'open' );
 }
 
 if ( ! defined( 'LEARNDASH_DEFAULT_COURSE_ORDER' ) ) {

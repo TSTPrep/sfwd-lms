@@ -10,8 +10,8 @@
 namespace LearnDash\Core;
 
 use StellarWP\Learndash\lucatume\DI52\ServiceProvider;
-use LearnDash\Core\Modules;
 use LearnDash\Core\Payments;
+use LearnDash\Core\Modules\AI;
 
 /**
  * Class Provider for the LearnDash Core.
@@ -29,8 +29,7 @@ class Provider extends ServiceProvider {
 	public function register(): void {
 		// Registering implementations.
 
-		$this->container->register( Modules\AI\Provider::class );
-		$this->container->register( Modules\AJAX\Provider::class );
+		$this->container->register( AI\Provider::class );
 		$this->container->register( Payments\Provider::class );
 
 		// Registering in-progress features.

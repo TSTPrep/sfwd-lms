@@ -80,7 +80,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 		public function load_settings_fields() {
 
 			$this->setting_option_fields = array(
-				'course'                        => array(
+				'course'                                 => array(
 					'name'      => 'course',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Course', 'learndash' ),
@@ -88,7 +88,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['course'] ) ? $this->setting_option_values['course'] : '',
 					'class'     => 'regular-text',
 				),
-				'courses'                       => array(
+				'courses'                                => array(
 					'name'      => 'courses',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Courses', 'learndash' ),
@@ -96,7 +96,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['courses'] ) ? $this->setting_option_values['courses'] : '',
 					'class'     => 'regular-text',
 				),
-				'lesson'                        => array(
+				'lesson'                                 => array(
 					'name'      => 'lesson',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Lesson', 'learndash' ),
@@ -104,7 +104,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['lesson'] ) ? $this->setting_option_values['lesson'] : '',
 					'class'     => 'regular-text',
 				),
-				'lessons'                       => array(
+				'lessons'                                => array(
 					'name'      => 'lessons',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Lessons', 'learndash' ),
@@ -112,7 +112,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['lessons'] ) ? $this->setting_option_values['lessons'] : '',
 					'class'     => 'regular-text',
 				),
-				'topic'                         => array(
+				'topic'                                  => array(
 					'name'      => 'topic',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Topic', 'learndash' ),
@@ -120,7 +120,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['topic'] ) ? $this->setting_option_values['topic'] : '',
 					'class'     => 'regular-text',
 				),
-				'topics'                        => array(
+				'topics'                                 => array(
 					'name'      => 'topics',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Topics', 'learndash' ),
@@ -128,7 +128,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['topics'] ) ? $this->setting_option_values['topics'] : '',
 					'class'     => 'regular-text',
 				),
-				'quiz'                          => array(
+				'quiz'                                   => array(
 					'name'      => 'quiz',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Quiz', 'learndash' ),
@@ -136,7 +136,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['quiz'] ) ? $this->setting_option_values['quiz'] : '',
 					'class'     => 'regular-text',
 				),
-				'quizzes'                       => array(
+				'quizzes'                                => array(
 					'name'      => 'quizzes',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Quizzes', 'learndash' ),
@@ -144,7 +144,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['quizzes'] ) ? $this->setting_option_values['quizzes'] : '',
 					'class'     => 'regular-text',
 				),
-				'question'                      => array(
+				'question'                               => array(
 					'name'      => 'question',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Question', 'learndash' ),
@@ -152,7 +152,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['question'] ) ? $this->setting_option_values['question'] : '',
 					'class'     => 'regular-text',
 				),
-				'questions'                     => array(
+				'questions'                              => array(
 					'name'      => 'questions',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Questions', 'learndash' ),
@@ -160,7 +160,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['questions'] ) ? $this->setting_option_values['questions'] : '',
 					'class'     => 'regular-text',
 				),
-				'group'                         => array(
+				'group'                                  => array(
 					'name'      => 'group',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Group', 'learndash' ),
@@ -168,7 +168,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['group'] ) ? $this->setting_option_values['group'] : '',
 					'class'     => 'regular-text',
 				),
-				'groups'                        => array(
+				'groups'                                 => array(
 					'name'      => 'groups',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Groups', 'learndash' ),
@@ -176,7 +176,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['groups'] ) ? $this->setting_option_values['groups'] : '',
 					'class'     => 'regular-text',
 				),
-				'group_leader'                  => array(
+				'group_leader'                           => array(
 					'name'      => 'group_leader',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Group Leader', 'learndash' ),
@@ -184,7 +184,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['group_leader'] ) ? $this->setting_option_values['group_leader'] : '',
 					'class'     => 'regular-text',
 				),
-				'exam'                          => array(
+				'exam'                                   => array(
 					'name'      => 'exam',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Challenge Exam', 'learndash' ),
@@ -192,7 +192,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => $this->setting_option_values['exam'] ?? '',
 					'class'     => 'regular-text',
 				),
-				'exams'                         => array(
+				'exams'                                  => array(
 					'name'      => 'exams',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Challenge Exams', 'learndash' ),
@@ -200,7 +200,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => $this->setting_option_values['exams'] ?? '',
 					'class'     => 'regular-text',
 				),
-				'button_take_this_course'       => array(
+				'button_take_this_course'                => array(
 					'name'      => 'button_take_this_course',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Take this Course (Button)', 'learndash' ),
@@ -208,7 +208,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['button_take_this_course'] ) ? $this->setting_option_values['button_take_this_course'] : '',
 					'class'     => 'regular-text',
 				),
-				'button_take_this_group'        => array(
+				'button_take_this_group'                 => array(
 					'name'      => 'button_take_this_group',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Join Group (Button)', 'learndash' ),
@@ -216,7 +216,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['button_take_this_group'] ) ? $this->setting_option_values['button_take_this_group'] : '',
 					'class'     => 'regular-text',
 				),
-				'button_mark_complete'          => array(
+				'button_mark_complete'                   => array(
 					'name'      => 'button_mark_complete',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Mark Complete (Button)', 'learndash' ),
@@ -224,7 +224,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['button_mark_complete'] ) ? $this->setting_option_values['button_mark_complete'] : '',
 					'class'     => 'regular-text',
 				),
-				'button_mark_incomplete'        => array(
+				'button_mark_incomplete'                 => array(
 					'name'      => 'button_mark_incomplete',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Mark Incomplete (Button)', 'learndash' ),
@@ -232,7 +232,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['button_mark_incomplete'] ) ? $this->setting_option_values['button_mark_incomplete'] : '',
 					'class'     => 'regular-text',
 				),
-				'button_click_here_to_continue' => array(
+				'button_click_here_to_continue'          => array(
 					'name'      => 'button_click_here_to_continue',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Click Here to Continue (Button)', 'learndash' ),
@@ -240,7 +240,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['button_click_here_to_continue'] ) ? $this->setting_option_values['button_click_here_to_continue'] : '',
 					'class'     => 'regular-text',
 				),
-				'transaction'                   => array(
+				'transaction'                            => array(
 					'name'      => 'transaction',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Transaction', 'learndash' ),
@@ -248,7 +248,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'value'     => isset( $this->setting_option_values['transaction'] ) ? $this->setting_option_values['transaction'] : '',
 					'class'     => 'regular-text',
 				),
-				'transactions'                  => array(
+				'transactions'                           => array(
 					'name'      => 'transactions',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Transactions', 'learndash' ),

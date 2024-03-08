@@ -5,7 +5,7 @@
  * @package lucatume\DI52
  *
  * @license GPL-3.0
- * Modified by learndash on 22-September-2023 using Strauss.
+ * Modified by learndash on 21-June-2023 using Strauss.
  * @see https://github.com/BrianHenryIE/strauss
  */
 
@@ -49,12 +49,13 @@ class Factory
     /**
      * Returns the correct builder for a value.
      *
-     * @param  string|class-string|mixed  $id                 The string id to provide a builder for, or a value.
-     * @param  mixed                      $implementation     The implementation to build the builder for.
-     * @param  string[]|null              $afterBuildMethods  A list of methods that should be called on the built
-     *                                                        instance after it's been built.
-     * @param  mixed                      ...$buildArgs       A set of arguments to pass that should be used to build
-     *                                                        the instance, if any.
+     * @param string|mixed       $id                 The string id to provide a builder for, or a value.
+     * @param mixed              $implementation     The implementation to build the builder for.
+     * @param array<string>|null $afterBuildMethods  A list of methods that should be called on the built instance
+     *                                               after
+     *                                               it's been built.
+     * @param mixed              ...$buildArgs       A set of arguments to pass that should be used to build the
+     *                                               instance, if any.
      *
      * @return BuilderInterface A builder instance.
      *

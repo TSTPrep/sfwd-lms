@@ -15,7 +15,7 @@ const LEARNDASH_HUB_LICENSE_CACHE_OPTION  = 'learndash_hub_license_result';
 const LEARNDASH_HUB_LICENSE_CACHE_TIMEOUT = 6 * HOUR_IN_SECONDS;
 const LEARNDASH_LICENSE_KEY               = 'nss_plugin_license_sfwd_lms';
 const LEARNDASH_LICENSE_EMAIL_KEY         = 'nss_plugin_license_email_sfwd_lms';
-const LEARNDASH_HUB_PLUGIN_SLUG           = 'learndash-hub/learndash-hub.php';
+
 /**
  * Updates the LearnDash Hub license cache when the license is verified.
  *
@@ -53,74 +53,6 @@ add_action(
 );
 
 /**
- * Redirects to the LearnDash Hub license page if the L&M plugin is installed and can be activated.
- *
- * @since 4.8.0
- *
- * @return void
- */
-add_action(
-	'admin_init',
-	function () {
-		if (
-			! isset( $_GET['page'] ) // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-			|| $_GET['page'] !== 'nss_plugin_license-sfwd_lms-settings' // phpcs:ignore WordPress.Security.NonceVerification.Recommended
-		) {
-			return;
-		}
-
-		if ( ! learndash_is_learndash_hub_installed() || ! learndash_activate_learndash_hub() ) {
-			return;
-		}
-
-		learndash_safe_redirect( admin_url( 'admin.php?page=learndash_hub_licensing' ) );
-	}
-);
-
-/**
- * Activates the LearnDash Hub plugin (Licensing & Management).
- *
- * @since 4.8.0
- *
- * @return bool True if the plugin is activated. False otherwise.
- */
-function learndash_activate_learndash_hub(): bool {
-	if ( learndash_is_learndash_hub_active() ) {
-		return true;
-	}
-
-	$activation_result = activate_plugin(
-		LEARNDASH_HUB_PLUGIN_SLUG,
-		'',
-		is_plugin_active_for_network( LEARNDASH_LMS_PLUGIN_KEY ),
-		true
-	);
-
-	if ( is_wp_error( $activation_result ) ) {
-		WP_DEBUG && error_log( 'Failed to activate the learndash licensing & management plugin: ' . $activation_result->get_error_message() ); // phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_error_log
-
-		return false;
-	}
-
-	return true;
-}
-
-/**
- * Check if LearnDash Hub is installed.
- *
- * @since 4.8.0
- *
- * @return bool True if the LearnDash Hub is installed. False otherwise.
- */
-function learndash_is_learndash_hub_installed() {
-	if ( ! function_exists( 'get_plugins' ) ) {
-		require_once ABSPATH . 'wp-admin/includes/plugin.php';
-	}
-
-	return array_key_exists( LEARNDASH_HUB_PLUGIN_SLUG, get_plugins() );
-}
-
-/**
  * Check if LearnDash Hub is installed and active.
  *
  * @since 4.3.1
@@ -132,7 +64,7 @@ function learndash_is_learndash_hub_active() {
 		include_once ABSPATH . 'wp-admin/includes/plugin.php';
 	}
 
-	return function_exists( 'is_plugin_active' ) && is_plugin_active( LEARNDASH_HUB_PLUGIN_SLUG );
+	return function_exists( 'is_plugin_active' ) && is_plugin_active( 'learndash-hub/learndash-hub.php' );
 }
 
 /**

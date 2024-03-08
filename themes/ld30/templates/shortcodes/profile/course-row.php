@@ -65,7 +65,7 @@ $course_class = apply_filters(
 		<?php
 		// add badge according to course Start/End Date.
 		$ld_badge_text = '';
-		if ( $ld_product->has_ended( $ld_user ) ) {
+		if ( $ld_product->has_ended() ) {
 			$ld_badge_text = __( 'Ended', 'learndash' );
 		} elseif ( $ld_product->is_pre_ordered( $ld_user ) ) {
 			$ld_badge_text = __( 'Pre-ordered', 'learndash' );

@@ -1,78 +1,8 @@
-= [4.9.1] =
-
-* Fix - Deprecation notice on the course page in PHP 8.1.
-* Fix - Support a custom label in the latest transactions course widget.
-* Fix - Can’t re-arrange/drag and drop Answers in Quiz Builder.
-* Fix - Quizzes inside topic can't be re-ordered.
-* Fix - Can’t correctly remove answers via Quiz Builder.
-* Tweak - Format a discount properly in the purchase invoice PDF.
-* Tweak - Improve a button label and a warning message on the quiz statistics page.
-* Tweak - Use WP defined date/time format in course dashboard widgets.
-
-= [4.9.0.1] =
-
-* Fix - Parameters compatibility for the get_edit_post_link filter.
-
-= [4.9.0] =
-
-* Feature - Add new course dashboard with course performance metrics and data.
-* Fix - Course 'Mark Complete' button validations.
-* Fix - Sidebar hiding does not work in tabs.
-* Tweak - Added Course-Presell support for the Student and Visitor shortcodes.
-* Tweak - Set default course access mode to Free.
-* Tweak - Support non /wp-admin URLs in the course video playlist.
-* Tweak - Added actions: `learndash_dashboard_widget_before_loading`, `learndash_dashboard_widget_after_loading`, `learndash_template_before_include`, `learndash_template_before_include:{template_name}`, `learndash_template_after_include`, `learndash_template_after_include:{template_name}`, `learndash_template_entry_point:{template_name}`, `learndash_template_entry_point:{template_name}:{entry_point_name}`.
-* Tweak - Added filters: `learndash_template_after_include_html:{$template_name}`, `learndash_template_after_include_html`, `learndash_template_args:{$template_name}`, `learndash_template_args`, `learndash_template_filepath`, `learndash_template_before_include_html:{$template_name}`, `learndash_template_before_include_html`, `learndash_template_entry_point_html:{template_name}:{entry_point_name}`, `learndash_template_entry_point_html:{template_name}`, `learndash_template_entry_point_is_enabled`, `learndash_template_html:{template_name}`, `learndash_template_html`, `learndash_template_include_html:{template_name}`, `learndash_template_include_html`, `learndash_template_pre_html:{$template_name}`, `learndash_template_pre_html`, `learndash_template_skip_rendering`, `learndash_template_admin_template_paths`, `learndash_dashboard_tab_is_default`, `learndash_dashboard_widget_course_lifetime_sales_transactions_chunk_size`, `learndash_dashboard_widget_course_latest_enrollees_users_limit`, `learndash_dashboard_widget_course_latest_transactions_limit`, `learndash_dashboard_is_enabled`, `learndash_dashboard_post_is_enabled`, `learndash_dashboard_section_hint_supported_html_tags`, `learndash_dashboard_sections`, `learndash_dashboard_sections_course`, `learndash_dashboard_widget_view_path`.
-* Tweak - Updated constants: LEARNDASH_DEFAULT_COURSE_PRICE_TYPE.
-* Tweak - Updated filters: `learndash_template_filename`.
-* Tweak - Updated functions: `learndash_mark_complete_process`.
-
-= [4.8.0.1] =
-
-* Fix - Error on Settings Support page when no .po file is available.
-* Fix - Incompatibility of binary selectors (group courses and course groups) with the classic editor.
-
-= [4.8.0] =
-
-* Feature - Add a password reset success page setting.
-* Feature - Add Bunny.net video progress support.
-* Feature - Create quizzes using AI.
-* Feature - Extend access to a course (single or in a group) on an individual user basis.
-* Feature - Group pre-selling.
-* Feature - Group start and end dates.
-* Feature - Group student limit.
-* Fix - Course could not be created from a video playlist if a license email contained a plus sign.
-* Fix - Incorrect from email address when sending admin and user quiz completion emails.
-* Fix - Remove "0 Days Trial" item for Stripe subscriptions with no trial.
-* Performance - `sfwd_lms_has_access_fn` function is optimized.
-* Tweak - Added actions: `learndash_metabox_initialized`.
-* Tweak - Added confirm dialog to start of Design Wizard.
-* Tweak - Added filters: `learndash_group_access_from`, `learndash_model_product_user_enrollment_date`, `learndash_course_get_extended_access_timestamp`.
-* Tweak - Added functions: `learndash_group_access_from`, `learndash_get_reset_password_success_page_id`, `learndash_is_learndash_hub_installed`, `learndash_activate_learndash_hub`, `learndash_course_extend_user_access`, `learndash_course_get_extended_access_timestamp`.
-* Tweak - Improved the LearnDash Licensing & Management plugin activation process.
-* Tweak - Updated functions: `ld_update_group_access`, `learndash_user_group_enrolled_to_course`, `ld_update_course_access`, `learndash_hub_deactivated_notice`, `learndash_video_complete_for_step`, `learndash_video_delete_cookie_for_step`, `learndash_delete_user_data`, `ld_course_access_expires_on`, `sfwd_lms_has_access_fn`.
-
-= [4.7.0.2] =
-
-* Fix - Add compatibility with the User Role Editor plugin when updating user roles via profile page.
-* Fix - Removed Astra templates from Design Wizard.
-* Tweak - Added 12 additional Kadence templates into the Design Wizard.
-* Tweak - Added filters: `learndash_stripe_webhook_event_processable`.
-
-= [4.7.0.1] =
-
-* Fix - Content editor was sometimes shown above the correct page content on LD post editing pages with tabs.
-* Fix - Respect gateway return url on successful payment redirect.
-* Fix - Stop exporting all courses when a user has no courses attached on GDPR export.
-* Tweak - Added actions: `learndash_quiz_resume_metadata_updated`.
-* Tweak - Added filters: `learndash_privacy_export_exporters`, `learndash_privacy_export_course_progress_data`, `learndash_privacy_export_lesson_progress_data`, `learndash_privacy_export_topic_progress_data`
-* Tweak - Deprecated functions: `learndash_get_course_enrollment_url`, `learndash_get_group_enrollment_url`.
-
 = [4.7.0] =
 
 * Feature - Course pre-selling.
-* Feature - Course start and end dates.
 * Feature - Course student limit.
+* Feature - Course start and end dates.
 * Fix - Add left padding to content area in Focus Mode when using right sidebar on mobile screens.
 * Fix - Prevent group_leader role being removed from users on profile update.
 * Fix - Undefined array key warning in `ld_profile` shortcode when displaying a quiz with no title.

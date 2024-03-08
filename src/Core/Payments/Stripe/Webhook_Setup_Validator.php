@@ -18,11 +18,11 @@ use Learndash_Stripe_Gateway;
  * @since 4.6.0
  */
 class Webhook_Setup_Validator {
-	private const TRANSIENT_KEY        = 'learndash_stripe_webhook_validation';
+	private const TRANSIENT_KEY = 'learndash_stripe_webhook_validation';
 	private const TRANSIENT_EXPIRATION = 60;
 
 	private const STATUS_IN_PROGRESS = 'in_progress';
-	private const STATUS_SUCCESS     = 'success';
+	private const STATUS_SUCCESS = 'success';
 
 	/**
 	 * Ajax action name.

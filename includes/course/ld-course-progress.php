@@ -417,31 +417,6 @@ function learndash_mark_complete_process( $post = null ) {
 			return;
 		}
 
-		// Check if the user can complete the step.
-
-		if ( ! learndash_can_complete_step( $userid, $post_id, (int) $course_id ) ) {
-			return;
-		}
-
-		/**
-		 * In case of video progression, we need to check if the video is completed.
-		 *
-		 * This check should be done in the `learndash_can_complete_step` function, but this function is used in other places with different purpose.
-		 * We needed to add a new parameter to the function, making it more weird. So, putting the check here for now until we refactor this logic.
-		 */
-
-		$is_video_enabled = learndash_get_setting( $post_id, 'lesson_video_enabled' ) === 'on'
-							&& ! empty( learndash_get_setting( $post_id, 'lesson_video_url' ) );
-
-		if (
-			$is_video_enabled
-			&& ! learndash_video_complete_for_step( $post_id, (int) $course_id, $userid )
-		) {
-			return;
-		}
-
-		// Mark the step as completed.
-
 		$return = learndash_process_mark_complete( $userid, $post_id, false, $course_id );
 
 		if ( $return ) {

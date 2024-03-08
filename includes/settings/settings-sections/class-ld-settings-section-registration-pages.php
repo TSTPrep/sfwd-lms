@@ -62,10 +62,6 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 			if ( ! isset( $this->setting_option_values['reset_password'] ) ) {
 				$this->setting_option_values['reset_password'] = '';
 			}
-
-			if ( ! isset( $this->setting_option_values['reset_password_success'] ) ) {
-				$this->setting_option_values['reset_password_success'] = '';
-			}
 		}
 
 		/**
@@ -97,14 +93,6 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 				'type'             => 'select',
 				'label'            => esc_html__( 'Reset Password', 'learndash' ),
 				'value'            => $this->setting_option_values['reset_password'],
-				'display_callback' => array( $this, 'display_pages_selector' ),
-			);
-
-			$this->setting_option_fields['reset_password_success'] = array(
-				'name'             => 'reset_password_success',
-				'type'             => 'select',
-				'label'            => esc_html__( 'Reset Password Success', 'learndash' ),
-				'value'            => $this->setting_option_values['reset_password_success'],
 				'display_callback' => array( $this, 'display_pages_selector' ),
 			);
 

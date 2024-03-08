@@ -460,11 +460,6 @@ if ( ! class_exists( 'LearnDash_Setup_Wizard' ) ) {
 			update_option( self::LICENSE_KEY, $license_key );
 			update_option( self::LICENSE_EMAIL_KEY, $email );
 
-			// try to activate the licensing plugin.
-			learndash_activate_learndash_hub();
-
-			// Licensing validation.
-
 			$license_status = false;
 			if ( learndash_is_learndash_hub_active() ) {
 				$license_status = learndash_validate_hub_license( $email, $license_key );

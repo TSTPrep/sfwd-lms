@@ -384,7 +384,7 @@ class WpProQuiz_Controller_Admin {
 				if ( ( isset( $result['a_nonce'] ) ) && ( ! empty( $result['a_nonce'] ) ) ) {
 					global $learndash_completed_question;
 					$learndash_completed_question = $question;
-
+					
 					$response_str = maybe_serialize(
 						array_map(
 							function ( $array_item ) {
@@ -459,7 +459,7 @@ class WpProQuiz_Controller_Admin {
 			'no_nummber_points_new'               => esc_html__( 'No number in the field "Points" or less than 0', 'learndash' ),
 			// translators: placeholder: quiz.
 			'no_selected_quiz'                    => sprintf( esc_html_x( 'No %s selected', 'placeholder: quiz', 'learndash' ), learndash_get_custom_label_lower( 'quiz' ) ),
-			'reset_statistics_msg'                => esc_html__( 'Warning: This action removes all quiz statistics and cannot be reversed.', 'learndash' ),
+			'reset_statistics_msg'                => esc_html__( 'Do you really want to reset the statistic?', 'learndash' ),
 			'no_data_available'                   => esc_html__( 'No data available', 'learndash' ),
 			'no_sort_element_criterion'           => esc_html__( 'No sort element in the criterion', 'learndash' ),
 			'dif_points'                          => esc_html__( '"Different points for every answer" is not possible at "Free" choice', 'learndash' ),

@@ -112,29 +112,6 @@ if ( ! class_exists( 'LDLMS_User_Quiz_Resume' ) ) {
 				learndash_update_user_activity_meta( $activity->activity_id, self::$meta_key, $activity->activity_meta );
 			}
 
-			/**
-			 * Fires when the quiz resume metadata is updated.
-			 *
-			 * @since 4.7.0.1
-			 *
-			 * @param bool                                         $changes_made  A flag indicating if changes were made.
-			 * @param array{ quiz_started: int, results: mixed[] } $activity_data Activity data, including quiz started timestamp and results.
-			 * @param int                                          $quiz_id       Quiz ID.
-			 * @param int                                          $course_id     Course ID.
-			 * @param int                                          $user_id       User ID.
-			 */
-			do_action(
-				'learndash_quiz_resume_metadata_updated',
-				$changes_made,
-				[
-					'quiz_started' => $quiz_started,
-					'results'      => $results,
-				],
-				$quiz_id,
-				$course_id,
-				$user_id
-			);
-
 			return $changes_made;
 		}
 

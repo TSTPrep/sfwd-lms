@@ -717,7 +717,7 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 					if ( ! empty( $quiz_id ) ) {
 
 						$this->add_admin_tab_item(
-							(string) $current_screen->parent_file,
+							$current_screen->parent_file,
 							array(
 								'link' => 'post.php?post=' . $post_id . '&action=edit',
 								'name' => sprintf(
@@ -752,7 +752,7 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 
 						if ( learndash_get_setting( $post_id, 'statisticsOn' ) ) {
 							$this->add_admin_tab_item(
-								(string) $current_screen->parent_file,
+								$current_screen->parent_file,
 								array(
 									'link' => 'admin.php?page=ldAdvQuiz&module=statistics&id=' . $quiz_id . '&post_id=' . $post_id,
 									'name' => esc_html_x( 'Statistics', 'Quiz Statistics Tab Label', 'learndash' ),
@@ -764,7 +764,7 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 
 						if ( learndash_get_setting( $post_id, 'toplistActivated' ) ) {
 							$this->add_admin_tab_item(
-								(string) $current_screen->parent_file,
+								$current_screen->parent_file,
 								array(
 									'link' => 'admin.php?page=ldAdvQuiz&module=toplist&id=' . $quiz_id . '&post_id=' . $post_id,
 									'name' => esc_html_x( 'Leaderboard', 'Quiz Leaderboard Tab Label', 'learndash' ),
@@ -1854,36 +1854,16 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 							)
 						);
 					}
-
 					$header_data['tabs'] = array_merge(
 						$header_data['tabs'],
-						[
-							[
-								'id'                  => 'learndash_' . $screen_post_type . '_dashboard',
-								'name'                => esc_html__( 'Dashboard', 'learndash' ),
-								'metaboxes'           => [ 'learndash-course-dashboard' ],
-								'showDocumentSidebar' => 'false',
-							],
-							[
-								'id'                  => 'learndash_' . $screen_post_type . '_access_extending',
-								'name'                => esc_html__( 'Extend Access', 'learndash' ),
-								'metaboxes'           => [ 'learndash-course-access-extending' ],
-								'showDocumentSidebar' => 'false',
-							],
-							[
+						array(
+							array(
 								'id'                  => $screen_post_type . '-settings',
 								'name'                => esc_html__( 'Settings', 'learndash' ),
-								'metaboxes'           => [
-									'sfwd-courses',
-									'learndash-course-display-content-settings',
-									'learndash-course-access-settings',
-									'learndash-course-navigation-settings',
-									'learndash-course-users-settings',
-									'learndash-course-grid-meta-box',
-								],
+								'metaboxes'           => array( 'sfwd-courses', 'learndash-course-display-content-settings', 'learndash-course-access-settings', 'learndash-course-navigation-settings', 'learndash-course-users-settings', 'learndash-course-grid-meta-box' ),
 								'showDocumentSidebar' => 'false',
-							],
-						]
+							),
+						)
 					);
 
 					if ( ( current_user_can( 'edit_groups' ) ) && ( learndash_get_total_post_count( learndash_get_post_type_slug( 'group' ) ) !== 0 ) ) {
@@ -2122,18 +2102,6 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 								)
 							);
 
-							$header_data['tabs'] = array_merge(
-								$header_data['tabs'],
-								[
-									[
-										'id'        => 'learndash_' . $screen_post_type . '_access_extending',
-										'name'      => esc_html__( 'Extend Access', 'learndash' ),
-										'metaboxes' => [ 'learndash-group-access-extending' ],
-										'showDocumentSidebar' => 'false',
-									],
-								]
-							);
-
 							/**
 							 * Filters whether to show group courses metabox or not.
 							 *
@@ -2211,32 +2179,8 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 				$header_data_tabs     = array();
 				$header_data_tabs_ids = wp_list_pluck( $header_data['tabs'], 'id' );
 
-				/** This filter is documented in includes/admin/class-learndash-admin-posts-edit.php */
-				$dashboard_tab_is_default = apply_filters( 'learndash_dashboard_tab_is_default', true, $screen_post_type );
+				foreach ( array( 'post-body-content', 'learndash_course_builder', 'learndash_quiz_builder', $screen_post_type . '-settings' ) as $tab_id ) {
 
-				if ( $dashboard_tab_is_default ) {
-					$prioritized_tab_ids = [
-						'learndash_' . $screen_post_type . '_dashboard',
-						'post-body-content',
-					];
-				} else {
-					$prioritized_tab_ids = [
-						'post-body-content',
-						'learndash_' . $screen_post_type . '_dashboard',
-					];
-				}
-
-				$prioritized_tab_ids = array_merge(
-					$prioritized_tab_ids,
-					[
-						'learndash_course_builder',
-						'learndash_quiz_builder',
-						'learndash_' . $screen_post_type . '_access_extending',
-						$screen_post_type . '-settings',
-					]
-				);
-
-				foreach ( $prioritized_tab_ids as $tab_id ) {
 					$index_found = array_search( $tab_id, $header_data_tabs_ids, true );
 					if ( false !== $index_found ) {
 						$header_data_tabs[] = $header_data['tabs'][ $index_found ];
@@ -2247,7 +2191,6 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 				if ( ! empty( $header_data['tabs'] ) ) {
 					$header_data_tabs = array_merge( $header_data_tabs, $header_data['tabs'] );
 				}
-
 				$header_data['tabs'] = $header_data_tabs;
 			}
 
@@ -2309,8 +2252,6 @@ if ( ! class_exists( 'Learndash_Admin_Menus_Tabs' ) ) {
 				$menu_tab_key,
 				$this->admin_tab_sets[ $menu_tab_key ]
 			);
-
-//            echo '<pre>'; var_dump($learndash_data['questions_types_map']); die;
 
 			if ( ! empty( $learndash_data ) ) {
 				echo '<div id="sfwd-header"></div>';

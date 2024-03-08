@@ -142,10 +142,6 @@ if ( ! class_exists( 'SFWD_LMS' ) ) {
 				function () {
 					if ( get_option( 'learndash_activation' ) ) {
 						$this->activate();
-
-						// Activate the LearnDash Hub plugin (Licensing & Management).
-						learndash_activate_learndash_hub();
-
 						delete_option( 'learndash_activation' );
 					}
 				}
@@ -4845,16 +4841,18 @@ if ( ! class_exists( 'SFWD_LMS' ) ) {
 				$template_filename .= '.php';
 			}
 
-			/** This filter is documented in src/Core/Template/Template.php */
-			$template_filename = apply_filters(
-				'learndash_template_filename',
-				$template_filename,
-				$name,
-				$args,
-				$echo,
-				$return_file_path,
-				null
-			);
+			/**
+			 * Filters template file name.
+			 *
+			 * @since 3.0.0
+			 *
+			 * @param string     $template_filename Template file name.
+			 * @param string     $name              Template name.
+			 * @param array|null $args              Template data.
+			 * @param bool|null  $echo              Whether to echo the template output or not.
+			 * @param bool       $return_file_path  Whether to return file or path or not.
+			 */
+			$template_filename = apply_filters( 'learndash_template_filename', $template_filename, $name, $args, $echo, $return_file_path );
 
 			if ( empty( $template_filename ) ) {
 				return;

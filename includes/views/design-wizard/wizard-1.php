@@ -27,7 +27,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<p class="description">
 				<?php
 				esc_html_e(
-					'Our setup wizard will help you
+					'Our setup wizard will help you 
                 get the most out of your store.',
 					'learndash'
 				);
@@ -58,7 +58,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 		<div class="footer">
 			<div class="back">
                 <?php // phpcs:ignore Generic.Files.LineLength.TooLong?>
-				<img class="icon" src="<?php echo esc_url( \LEARNDASH_LMS_PLUGIN_URL . '/assets/images/design-wizard/svg/back.svg' ); ?>" >
+				<img class="icon" src="<?php echo esc_url( \LEARNDASH_LMS_PLUGIN_URL . '/assets/images/design-wizard/svg/back.svg' ); ?>" > 
 				<span class="text"><?php esc_html_e( 'Back', 'learndash' ); ?></span>
 			</div>
 			<div class="steps">
@@ -99,17 +99,5 @@ if ( ! defined( 'ABSPATH' ) ) {
 				></iframe>
 			</div>
 		</div>
-	</div>
-	<div id="ld_dw_initial_confirm">
-		<?php
-		$learndash_dw_confirm_message = sprintf(
-			__(
-				'<strong>Notice:</strong> This is an optional step and not required to run LearnDash.
-				<p>If you already have a theme configured on your site, you can skip this process.</p>',
-				'learndash'
-			)
-		);
-		echo wp_kses_post( $learndash_dw_confirm_message );
-		?>
 	</div>
 </div>

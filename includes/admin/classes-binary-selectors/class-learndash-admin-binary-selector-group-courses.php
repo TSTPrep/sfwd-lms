@@ -3,11 +3,8 @@
  * LearnDash Binary Selector Group Courses.
  *
  * @since 2.2.1
- *
  * @package LearnDash\Settings
  */
-
-use LearnDash\Core\Validations\Validators\Metaboxes\Group_Courses;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -19,10 +16,10 @@ if ( ( ! class_exists( 'Learndash_Binary_Selector_Group_Courses' ) ) && ( class_
 	 *  Class LearnDash Binary Selector Group Courses.
 	 *
 	 * @since 2.2.1
-	 *
 	 * @uses Learndash_Binary_Selector_Posts
 	 */
 	class Learndash_Binary_Selector_Group_Courses extends Learndash_Binary_Selector_Posts {
+
 		/**
 		 * Public constructor for class
 		 *
@@ -31,6 +28,7 @@ if ( ( ! class_exists( 'Learndash_Binary_Selector_Group_Courses' ) ) && ( class_
 		 * @param array $args Array of arguments for class.
 		 */
 		public function __construct( $args = array() ) {
+
 			$this->selector_class = get_class( $this );
 
 			$defaults = array(
@@ -65,9 +63,6 @@ if ( ( ! class_exists( 'Learndash_Binary_Selector_Group_Courses' ) ) && ( class_
 			$args['html_name'] = $args['html_name'] . '[' . $args['group_id'] . ']';
 
 			parent::__construct( $args );
-
-			$this->server_side_validator           = new Group_Courses( $args['group_id'] );
-			$this->server_side_validation_field_id = Group_Courses::$field_courses;
 		}
 	}
 }

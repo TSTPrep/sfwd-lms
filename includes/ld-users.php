@@ -7,8 +7,6 @@
  * @package LearnDash\Users
  */
 
-use LearnDash\Core\Utilities\Cast;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -31,167 +29,147 @@ function learndash_delete_user_data( $user_id ) {
 		return;
 	}
 
-	$user_id = Cast::to_int( $user_id );
+	$user_id = intval( $user_id );
+	if ( ! empty( $user_id ) ) {
+		$user = get_user_by( 'id', $user_id );
 
-	if ( empty( $user_id ) ) {
-		return;
-	}
-
-	$user = get_user_by( 'id', $user_id );
-
-	if ( ! $user ) {
-		return;
-	}
-
-	$ref_ids = $wpdb->get_col(
-		$wpdb->prepare(
-			'SELECT statistic_ref_id FROM ' . esc_sql( LDLMS_DB::get_table_name( 'quiz_statistic_ref' ) ) . ' WHERE  user_id = %d ',
-			$user->ID
-		)
-	);
-
-	if ( ! empty( $ref_ids[0] ) ) {
-		$ref_ids = array_map( 'absint', $ref_ids );
-		$wpdb->query(
-			// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare, WordPress.DB.PreparedSQL.NotPrepared -- IN clause
-			$wpdb->prepare( 'DELETE FROM ' . esc_sql( LDLMS_DB::get_table_name( 'quiz_statistic' ) ) . ' WHERE statistic_ref_id IN (' . LDLMS_DB::escape_IN_clause_placeholders( $ref_ids ) . ')', LDLMS_DB::escape_IN_clause_values( $ref_ids ) )
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$ref_ids = $wpdb->get_col(
+			$wpdb->prepare(
+				'SELECT statistic_ref_id FROM ' . esc_sql( LDLMS_DB::get_table_name( 'quiz_statistic_ref' ) ) . ' WHERE  user_id = %d ',
+				absint( $user->ID )
+			)
 		);
-	}
 
-	$wpdb->delete(
-		LDLMS_DB::get_table_name( 'quiz_statistic_ref' ),
-		array(
-			'user_id' => $user->ID,
-		)
-	);
+		if ( ! empty( $ref_ids[0] ) ) {
 
-	$wpdb->delete(
-		$wpdb->usermeta,
-		array(
-			'meta_key' => '_sfwd-quizzes',
-			'user_id'  => $user->ID,
-		)
-	);
-
-	$wpdb->delete(
-		$wpdb->usermeta,
-		array(
-			'meta_key' => '_sfwd-course_progress',
-			'user_id'  => $user->ID,
-		)
-	);
-
-	$wpdb->delete(
-		$wpdb->usermeta,
-		array(
-			'meta_key' => 'learndash-last-login',
-			'user_id'  => $user->ID,
-		)
-	);
-
-	$wpdb->query(
-		$wpdb->prepare(
-			"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
-			'completed_%',
-			$user->ID
-		)
-	);
-
-	$wpdb->query(
-		$wpdb->prepare(
-			"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
-			'course_%_access_from',
-			$user->ID
-		)
-	);
-
-	$wpdb->query(
-		$wpdb->prepare(
-			"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
-			'group_%_access_from',
-			$user->ID
-		)
-	);
-
-	$wpdb->query(
-		$wpdb->prepare(
-			"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
-			'course_completed_%',
-			$user->ID
-		)
-	);
-
-	$wpdb->query(
-		$wpdb->prepare(
-			"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
-			'learndash_course_expired_%',
-			$user->ID
-		)
-	);
-
-	$wpdb->query(
-		$wpdb->prepare(
-			"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
-			'learndash_course_%',
-			$user->ID
-		)
-	);
-
-	$wpdb->query(
-		$wpdb->prepare(
-			"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
-			'learndash_group_%',
-			$user->ID
-		)
-	);
-
-	learndash_report_clear_user_activity_by_types( $user->ID );
-
-	$wpdb->delete( LDLMS_DB::get_table_name( 'quiz_lock' ), array( 'user_id' => $user->ID ) );
-
-	$wpdb->delete( LDLMS_DB::get_table_name( 'quiz_toplist' ), array( 'user_id' => $user->ID ) );
-
-	// Move user uploaded Assignments to Trash.
-	$user_assignments_query_args = array(
-		'post_type'   => 'sfwd-assignment',
-		'post_status' => 'publish',
-		'nopaging'    => true,
-		'author'      => $user->ID,
-	);
-
-	$user_assignments_query = new WP_Query( $user_assignments_query_args );
-	if ( $user_assignments_query->have_posts() ) {
-		foreach ( $user_assignments_query->posts as $assignment_post ) {
-			wp_trash_post( $assignment_post->ID );
+			$ref_ids = array_map( 'absint', $ref_ids );
+			// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+			$wpdb->query(
+				// phpcs:ignore WordPress.DB.PreparedSQLPlaceholders.UnfinishedPrepare, WordPress.DB.PreparedSQL.NotPrepared -- IN clause
+				$wpdb->prepare( 'DELETE FROM ' . esc_sql( LDLMS_DB::get_table_name( 'quiz_statistic' ) ) . ' WHERE statistic_ref_id IN (' . LDLMS_DB::escape_IN_clause_placeholders( $ref_ids ) . ')', LDLMS_DB::escape_IN_clause_values( $ref_ids ) )
+			);
 		}
-	}
-	wp_reset_postdata();
 
-	// Move user uploaded Essay to Trash.
-	$user_essays_query_args = array(
-		'post_type' => 'sfwd-essays',
-		'nopaging'  => true,
-		'author'    => $user->ID,
-	);
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->delete(
+			LDLMS_DB::get_table_name( 'quiz_statistic_ref' ),
+			array(
+				'user_id' => $user->ID,
+			)
+		);
 
-	$user_essays_query = new WP_Query( $user_essays_query_args );
-	if ( $user_essays_query->have_posts() ) {
-		foreach ( $user_essays_query->posts as $essay_post ) {
-			wp_trash_post( $essay_post->ID );
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->delete(
+			$wpdb->usermeta,
+			array(
+				'meta_key' => '_sfwd-quizzes', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
+				'user_id'  => $user->ID,
+			)
+		);
+
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->delete(
+			$wpdb->usermeta,
+			array(
+				'meta_key' => '_sfwd-course_progress', // phpcs:ignore WordPress.DB.SlowDBQuery.slow_db_query_meta_key
+				'user_id'  => $user->ID,
+			)
+		);
+
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->query(
+			$wpdb->prepare(
+				"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
+				'completed_%',
+				absint( $user->ID )
+			)
+		);
+
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->query(
+			$wpdb->prepare(
+				"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
+				'course_%_access_from',
+				absint( $user->ID )
+			)
+		);
+
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->query(
+			$wpdb->prepare(
+				"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
+				'course_completed_%',
+				absint( $user->ID )
+			)
+		);
+
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->query(
+			$wpdb->prepare(
+				"DELETE FROM {$wpdb->usermeta} WHERE meta_key LIKE %s AND user_id = %d",
+				'learndash_course_expired_%',
+				absint( $user->ID )
+			)
+		);
+
+		// Added in v2.3.1 to remove the quiz locks for user.
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->query(
+			$wpdb->prepare(
+				'DELETE FROM ' . esc_sql( LDLMS_DB::get_table_name( 'quiz_lock' ) ) . ' WHERE user_id = %d',
+				absint( $user->ID )
+			)
+		);
+
+		learndash_report_clear_user_activity_by_types( $user_id );
+
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->delete( LDLMS_DB::get_table_name( 'quiz_lock' ), array( 'user_id' => $user->ID ) );
+
+		// phpcs:ignore WordPress.DB.DirectDatabaseQuery.DirectQuery, WordPress.DB.DirectDatabaseQuery.NoCaching
+		$wpdb->delete( LDLMS_DB::get_table_name( 'quiz_toplist' ), array( 'user_id' => $user->ID ) );
+
+		// Move user uploaded Assignments to Trash.
+		$user_assignments_query_args = array(
+			'post_type'   => 'sfwd-assignment',
+			'post_status' => 'publish',
+			'nopaging'    => true,
+			'author'      => $user->ID,
+		);
+
+		$user_assignments_query = new WP_Query( $user_assignments_query_args );
+		if ( $user_assignments_query->have_posts() ) {
+
+			foreach ( $user_assignments_query->posts as $assignment_post ) {
+				wp_trash_post( $assignment_post->ID );
+			}
 		}
+		wp_reset_postdata();
+
+		// Move user uploaded Essay to Trash.
+		$user_essays_query_args = array(
+			'post_type' => 'sfwd-essays',
+			'nopaging'  => true,
+			'author'    => $user->ID,
+		);
+
+		$user_essays_query = new WP_Query( $user_essays_query_args );
+		if ( $user_essays_query->have_posts() ) {
+
+			foreach ( $user_essays_query->posts as $essay_post ) {
+				wp_trash_post( $essay_post->ID );
+			}
+		}
+		wp_reset_postdata();
+
+		/**
+		 * Fires after deleting user data.
+		 *
+		 * @param int $user_id User ID.
+		 */
+		do_action( 'learndash_delete_user_data', $user_id );
 	}
-	wp_reset_postdata();
-
-	// flush user meta cache.
-
-	wp_cache_delete( $user->ID, 'user_meta' );
-
-	/**
-	 * Fires after deleting user data.
-	 *
-	 * @param int $user_id User ID.
-	 */
-	do_action( 'learndash_delete_user_data', $user->ID );
 }
 
 add_action( 'delete_user', 'learndash_delete_user_data' );
@@ -493,7 +471,7 @@ function learndash_process_user_course_progress_update( $user_id = 0, $user_prog
 
 			$processed_course_ids[ intval( $course_id ) ] = intval( $course_id );
 
-			if ( isset( $course_progress[ $course_id ] ) ) { // @phpstan-ignore-line -- legacy code.
+			if ( isset( $course_progress[ $course_id ] ) ) {
 				$course_data_old = $course_progress[ $course_id ];
 			} else {
 				$course_data_old = array();

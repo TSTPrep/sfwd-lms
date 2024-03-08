@@ -1164,25 +1164,24 @@ class WpProQuiz_Controller_Quiz extends WpProQuiz_Controller_Controller {
 			 */
 			$user_mail_message = apply_filters( 'learndash_quiz_email_note_user_message', $user_mail_message, $r, $quiz, $result, $categories );
 
-			if (
-				empty( $email_settings_admin['user_mail_from_email'] )
-				|| ! is_email( $email_settings_admin['user_mail_from_email'] )
-			) {
-				$email_settings_admin['user_mail_from_email'] = get_option( 'admin_email' );
-			}
+			$headers = '';
 
-			if ( empty( $email_settings_admin['user_mail_from_name'] ) ) {
-				$email_user = get_user_by( 'email', $email_settings_admin['user_mail_from_email'] );
+			if ( ( isset( $email_settings_user['user_mail_from'] ) ) && ( ! empty( $email_settings_user['user_mail_from'] ) ) && ( is_email( $email_settings_user['user_mail_from'] ) ) ) {
+				if ( ( ! isset( $email_settings_user['user_mail_from_name'] ) ) || ( empty( $email_settings_user['user_mail_from_name'] ) ) ) {
+					$email_settings_user['user_mail_from_name'] = '';
 
-				if ( $email_user && is_a( $email_user, 'WP_User' ) ) {
-					$email_settings_admin['user_mail_from_name'] = $email_user->display_name;
+					$email_user = get_user_by( 'email', $email_settings_user['user_mail_from'] );
+					if ( ( $email_user ) && ( is_a( $email_user, 'WP_User' ) ) ) {
+						$email_settings_user['user_mail_from_name'] = $email_user->display_name;
+					}
 				}
-			}
 
-			if ( ! empty( $email_settings_admin['user_mail_from_name'] ) ) {
-				$headers = 'From: ' . $email_settings_admin['user_mail_from_name'] . ' <' . $email_settings_admin['user_mail_from_email'] . '>';
-			} else {
-				$headers = 'From: ' . $email_settings_admin['user_mail_from_email'];
+				$headers .= 'From: ';
+				if ( ( isset( $email_settings_user['user_mail_from_name'] ) ) && ( ! empty( $email_settings_user['user_mail_from_name'] ) ) ) {
+					$headers .= $email_settings_user['user_mail_from_name'] . ' <' . $email_settings_user['user_mail_from'] . '>';
+				} else {
+					$headers .= $email_settings_user['user_mail_from'];
+				}
 			}
 
 			if ( ( isset( $email_settings_user['user_mail_html'] ) ) && ( 'yes' === $email_settings_user['user_mail_html'] ) ) {
@@ -1229,26 +1228,30 @@ class WpProQuiz_Controller_Quiz extends WpProQuiz_Controller_Controller {
 			 * @param array                $categories Quiz categories
 			 */
 			$admin_mail_message = apply_filters( 'learndash_quiz_email_note_admin_message', $admin_mail_message, $r, $quiz, $result, $categories );
+			$headers            = '';
 
-			if (
-				empty( $email_settings_admin['admin_mail_from_email'] )
-				|| ! is_email( $email_settings_admin['admin_mail_from_email'] )
-			) {
-				$email_settings_admin['admin_mail_from_email'] = get_option( 'admin_email' );
+			if ( ( ! isset( $email_settings_admin['admin_mail_from'] ) ) || ( empty( $email_settings_admin['admin_mail_from'] ) ) || ( ! is_email( $email_settings_admin['admin_mail_from'] ) ) ) {
+				$email_settings_admin['admin_mail_from'] = get_option( 'admin_email' );
 			}
 
-			if ( empty( $email_settings_admin['admin_mail_from_name'] ) ) {
-				$email_user = get_user_by( 'email', $email_settings_admin['admin_mail_from_email'] );
+			if ( ( ! isset( $email_settings_admin['admin_mail_from_name'] ) ) || ( empty( $email_settings_admin['admin_mail_from_name'] ) ) ) {
+				$email_settings_admin['admin_mail_from_name'] = '';
 
-				if ( $email_user && is_a( $email_user, 'WP_User' ) ) {
-					$email_settings_admin['admin_mail_from_name'] = $email_user->display_name;
+				if ( ! empty( $email_settings_admin['admin_mail_from'] ) ) {
+					$email_user = get_user_by( 'email', $email_settings_admin['admin_mail_from'] );
+					if ( ( $email_user ) && ( is_a( $email_user, 'WP_User' ) ) ) {
+						$email_settings_admin['admin_mail_from_name'] = $email_user->display_name;
+					}
 				}
 			}
 
-			if ( ! empty( $email_settings_admin['admin_mail_from_name'] ) ) {
-				$headers = 'From: ' . $email_settings_admin['admin_mail_from_name'] . ' <' . $email_settings_admin['admin_mail_from_email'] . '>';
-			} else {
-				$headers = 'From: ' . $email_settings_admin['admin_mail_from_email'];
+			if ( ! empty( $email_settings_admin['admin_mail_from'] ) ) {
+				$headers .= 'From: ';
+				if ( ( isset( $email_settings_admin['admin_mail_from_name'] ) ) && ( ! empty( $email_settings_admin['admin_mail_from_name'] ) ) ) {
+					$headers .= $email_settings_admin['admin_mail_from_name'] . ' <' . $email_settings_admin['admin_mail_from'] . '>';
+				} else {
+					$headers .= $email_settings_admin['admin_mail_from'];
+				}
 			}
 
 			if ( ( isset( $email_settings_admin['admin_mail_html'] ) ) && ( $email_settings_admin['admin_mail_html'] ) ) {

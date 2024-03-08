@@ -31,7 +31,6 @@ if ( ( ! class_exists( 'LD_REST_Questions_Controller_V1' ) ) && ( class_exists( 
 			$namespace = LEARNDASH_REST_API_NAMESPACE . '/v' . $version;
 			$base      = 'sfwd-questions';
 
-
 			register_rest_route(
 				$namespace,
 				'/' . $base,
@@ -47,7 +46,7 @@ if ( ( ! class_exists( 'LD_REST_Questions_Controller_V1' ) ) && ( class_exists( 
 
 			register_rest_route(
 				$namespace,
-				'/' . $base . '/(?P<id>\d+)',
+				'/' . $base . '/(?P<id>[\d]+)',
 				array(
 					array(
 						'methods'             => WP_REST_Server::READABLE,
@@ -121,15 +120,10 @@ if ( ( ! class_exists( 'LD_REST_Questions_Controller_V1' ) ) && ( class_exists( 
 		 * @return WP_Error|bool
 		 */
 		public function permissions_check( $request ) {
-            $params = $request->get_params();
-
-            if ( ( isset( $params['id'] ) ) && ( ! empty( $params['id'] ) ) ) {
+			$params = $request->get_params();
+			if ( ( isset( $params['id'] ) ) && ( ! empty( $params['id'] ) ) ) {
 				$question_id = $params['id'];
 
-                /**
-                 * TODO This is added to be able to debug
-                 */
-                return true;
 				return current_user_can( 'edit_post', $question_id );
 			}
 			return false;

@@ -6,11 +6,6 @@
  * @package LearnDash\Settings\Metaboxes
  */
 
-use LearnDash\Core\Utilities\Cast;
-use LearnDash\Core\Validations\Traits\Groups_With_Start_Or_End_Date;
-use LearnDash\Core\Validations\Validators\Metaboxes\Group_Access_Settings;
-use StellarWP\Learndash\StellarWP\DB\DB;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -22,7 +17,6 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 	 * @since 3.2.0
 	 */
 	class LearnDash_Settings_Metabox_Group_Access_Settings extends LearnDash_Settings_Metabox {
-		use Groups_With_Start_Or_End_Date;
 
 		/**
 		 * Public constructor for class
@@ -52,9 +46,6 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 			add_filter( 'learndash_metabox_save_fields_' . $this->settings_metabox_key, array( $this, 'filter_saved_fields' ), 30, 3 );
 			add_filter( 'learndash_admin_settings_data', array( $this, 'learndash_admin_settings_data' ), 30, 1 );
 
-			add_action( 'learndash_metabox_updated_field', [ $this, 'process_group_access_update' ], 10, 4 );
-			add_action( 'learndash_metabox_initialized', [ $this, 'initialize' ], 10, 3 );
-
 			// Map internal settings field ID to legacy field ID.
 			$this->settings_fields_map = array(
 				'group_price_type'                         => 'group_price_type',
@@ -74,58 +65,9 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 				'group_trial_duration_p1'                  => 'group_trial_duration_p1',
 				'group_price_type_paynow_enrollment_url'   => 'group_price_type_paynow_enrollment_url',
 				'group_price_type_subscribe_enrollment_url' => 'group_price_type_subscribe_enrollment_url',
-
-				Group_Access_Settings::$field_start_date   => Group_Access_Settings::$field_start_date,
-				Group_Access_Settings::$field_end_date     => Group_Access_Settings::$field_end_date,
-				'group_seats_limit'                        => 'group_seats_limit',
 			);
 
 			parent::__construct();
-		}
-
-		/**
-		 * Initialize the metabox.
-		 *
-		 * @since 4.8.0
-		 *
-		 * @param WP_Post                    $post    The WP_Post object.
-		 * @param bool                       $force   Force the metabox initialization.
-		 * @param LearnDash_Settings_Metabox $metabox The metabox object.
-		 *
-		 * @return void
-		 */
-		public function initialize(
-			WP_Post $post,
-			bool $force,
-			LearnDash_Settings_Metabox $metabox
-		): void {
-			if ( ! $metabox instanceof LearnDash_Settings_Metabox_Group_Access_Settings ) {
-				return;
-			}
-
-			$this->validator = new Group_Access_Settings( $post->ID );
-
-			// Check if we need to disable Start/End Date fields.
-
-			if ( $this->contains_course_that_belongs_to_multiple_groups( $post->ID ) ) {
-				$help_text = sprintf(
-					// translators: placeholder: group, course, groups.
-					esc_html_x(
-						'This %1$s contains at least one %2$s that belongs to other %3$s. Therefore, you can not set a start or end date.',
-						'placeholder: group, course',
-						'learndash'
-					),
-					learndash_get_custom_label( 'group' ),
-					learndash_get_custom_label( 'course' ),
-					learndash_get_custom_label( 'groups' )
-				);
-
-				$this->setting_option_fields[ Group_Access_Settings::$field_start_date ]['args']['help_text'] = $help_text;
-				$this->setting_option_fields[ Group_Access_Settings::$field_end_date ]['args']['help_text']   = $help_text;
-
-				$this->setting_option_fields[ Group_Access_Settings::$field_start_date ]['args']['disabled'] = true;
-				$this->setting_option_fields[ Group_Access_Settings::$field_end_date ]['args']['disabled']   = true;
-			}
 		}
 
 		/**
@@ -506,7 +448,7 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 			$this->settings_sub_option_fields['group_price_type_closed_fields'] = $this->setting_option_fields;
 
 			$this->setting_option_fields = array(
-				'group_price_type'                       => array(
+				'group_price_type' => array(
 					'name'    => 'group_price_type',
 					'label'   => esc_html__( 'Access Mode', 'learndash' ),
 					'type'    => 'radio',
@@ -580,50 +522,6 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 						),
 					),
 				),
-				Group_Access_Settings::$field_start_date => [
-					'name'      => Group_Access_Settings::$field_start_date,
-					'label'     => esc_html__( 'Start Date', 'learndash' ),
-					'value'     => $this->setting_option_values[ Group_Access_Settings::$field_start_date ] ?? '',
-					'type'      => 'date-entry',
-					'class'     => 'learndash-datepicker-field',
-					'help_text' => sprintf(
-						// translators: placeholder: group label.
-						esc_html_x( 'When does the %1$s start?', 'placeholder: group label', 'learndash' ),
-						learndash_get_custom_label_lower( 'group' )
-					),
-				],
-				Group_Access_Settings::$field_end_date   => [
-					'name'      => Group_Access_Settings::$field_end_date,
-					'label'     => esc_html__( 'End Date', 'learndash' ),
-					'value'     => $this->setting_option_values[ Group_Access_Settings::$field_end_date ] ?? '',
-					'type'      => 'date-entry',
-					'class'     => 'learndash-datepicker-field',
-					'help_text' => sprintf(
-						// translators: placeholder: group label.
-						esc_html_x( 'When does the %1$s end?', 'placeholder: group label', 'learndash' ),
-						learndash_get_custom_label_lower( 'group' )
-					),
-				],
-				'group_seats_limit'                      => [
-					'name'      => 'group_seats_limit',
-					'label'     => esc_html__( 'Student Limit', 'learndash' ),
-					'value'     => $this->setting_option_values['group_seats_limit'] ?? '',
-					'type'      => 'number',
-					'class'     => 'small-text',
-					'attrs'     => [
-						'step' => 1,
-						'min'  => 0,
-					],
-					'help_text' => sprintf(
-						// translators: placeholder: group label.
-						esc_html_x(
-							'Limits the number of students who can take your %1$s. When the limit is reached the %1$s can no longer be purchased or enrolled in. Admins can enroll students even if the limit is reached.',
-							'placeholder: group label',
-							'learndash'
-						),
-						learndash_get_custom_label_lower( 'group' )
-					),
-				],
 			);
 
 			/** This filter is documented in includes/settings/settings-metaboxes/class-ld-settings-metabox-course-access-settings.php */
@@ -781,39 +679,6 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 			}
 
 			return $settings_values;
-		}
-
-		/**
-		 * Update related settings after group access updating.
-		 *
-		 * @since 4.8.0
-		 *
-		 * @param WP_Post $post      The WP_Post object.
-		 * @param string  $key       The setting key.
-		 * @param mixed   $new_value The new value.
-		 * @param mixed   $old_value The old value.
-		 *
-		 * @return void
-		 */
-		public function process_group_access_update( WP_Post $post, string $key, $new_value, $old_value ): void {
-			// bail if it's the same value.
-			if ( $old_value === $new_value ) {
-				return;
-			}
-
-			switch ( $key ) {
-				case 'group_start_date':
-					if ( empty( $new_value ) && empty( $old_value ) ) {
-						return;
-					}
-
-					$new_date = ! empty( $new_value ) ? Cast::to_int( $new_value ) : time();
-
-					DB::table( 'usermeta' )
-						->where( 'meta_key', 'group_' . $post->ID . '_access_from' )
-						->update( [ 'meta_value' => $new_date ] );
-					break;
-			}
 		}
 
 		// End of functions.

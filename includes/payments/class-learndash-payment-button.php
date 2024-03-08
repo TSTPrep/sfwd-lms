@@ -615,34 +615,6 @@ if ( ! class_exists( 'Learndash_Payment_Button' ) ) {
 		 * @return string
 		 */
 		protected function map_group_label(): string {
-			if ( ! $this->product ) {
-				return '';
-			}
-
-			if ( $this->product->has_ended( $this->current_user ) ) {
-				return sprintf(
-					// translators: placeholder: Group label.
-					esc_html_x( '%s ended', 'placeholder: Group label', 'learndash' ),
-					$this->product->get_type_label()
-				);
-			}
-
-			if ( $this->product->is_pre_ordered( $this->current_user ) ) {
-				return sprintf(
-					// translators: placeholder: Group label.
-					esc_html_x( '%s pre-ordered', 'placeholder: Group label', 'learndash' ),
-					$this->product->get_type_label()
-				);
-			}
-
-			if ( 0 === $this->product->get_seats_available( $this->current_user ) ) {
-				return sprintf(
-					// translators: placeholder: Group label.
-					esc_html_x( '%s is full', 'placeholder: Group label', 'learndash' ),
-					$this->product->get_type_label()
-				);
-			}
-
 			return LearnDash_Custom_Label::get_label(
 				LearnDash_Custom_Label::$button_take_group
 			);
@@ -660,11 +632,11 @@ if ( ! class_exists( 'Learndash_Payment_Button' ) ) {
 				return '';
 			}
 
-			if ( $this->product->has_ended( $this->current_user ) ) {
+			if ( $this->product->has_ended() ) {
 				return sprintf(
 					// translators: placeholder: Course label.
 					esc_html_x( '%s ended', 'placeholder: Course label', 'learndash' ),
-					$this->product->get_type_label()
+					LearnDash_Custom_Label::get_label( 'course' )
 				);
 			}
 
@@ -672,15 +644,15 @@ if ( ! class_exists( 'Learndash_Payment_Button' ) ) {
 				return sprintf(
 					// translators: placeholder: Course label.
 					esc_html_x( '%s pre-ordered', 'placeholder: Course label', 'learndash' ),
-					$this->product->get_type_label()
+					LearnDash_Custom_Label::get_label( 'course' )
 				);
 			}
 
-			if ( 0 === $this->product->get_seats_available( $this->current_user ) ) {
+			if ( $this->product->get_seats_available() === 0 ) {
 				return sprintf(
 					// translators: placeholder: Course label.
 					esc_html_x( '%s is full', 'placeholder: Course label', 'learndash' ),
-					$this->product->get_type_label()
+					LearnDash_Custom_Label::get_label( 'course' )
 				);
 			}
 

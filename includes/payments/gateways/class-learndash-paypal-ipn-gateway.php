@@ -478,10 +478,10 @@ if ( ! class_exists( 'Learndash_Paypal_IPN_Gateway' ) && class_exists( 'Learndas
 			set_transient(
 				self::TRANSIENT_KEY_PREFIX_USER_HASH . $hash_nonce,
 				array(
-					'user_id'                           => $this->user->ID ?? 0,
-					'product_id'                        => $product_id,
-					'time'                              => time(),
-					'nonce'                             => $hash_nonce,
+					'user_id'    => $this->user->ID ?? 0,
+					'product_id' => $product_id,
+					'time'       => time(),
+					'nonce'      => $hash_nonce,
 					Transaction::$meta_key_pricing_info => $product_pricing->to_array(),
 				),
 				self::TRANSIENT_STORAGE_PERIOD
@@ -1189,11 +1189,11 @@ if ( ! class_exists( 'Learndash_Paypal_IPN_Gateway' ) && class_exists( 'Learndas
 				);
 
 			$meta = array(
-				Transaction::$meta_key_gateway_name        => $this::get_name(),
-				Transaction::$meta_key_price_type          => ! $is_subscription_event ? LEARNDASH_PRICE_TYPE_PAYNOW : LEARNDASH_PRICE_TYPE_SUBSCRIBE,
-				Transaction::$meta_key_pricing_info        => $pricing_info,
-				Transaction::$meta_key_has_trial           => $is_subscription_event && ! empty( $data['period1'] ),
-				Transaction::$meta_key_has_free_trial      => $is_subscription_event && ! empty( $data['period1'] ) && isset( $data['mc_amount1'] ) && ( '0.00' === strval( $data['mc_amount1'] ) || '0' === strval( $data['mc_amount1'] ) ),
+				Transaction::$meta_key_gateway_name => $this::get_name(),
+				Transaction::$meta_key_price_type => ! $is_subscription_event ? LEARNDASH_PRICE_TYPE_PAYNOW : LEARNDASH_PRICE_TYPE_SUBSCRIBE,
+				Transaction::$meta_key_pricing_info => $pricing_info,
+				Transaction::$meta_key_has_trial => $is_subscription_event && ! empty( $data['period1'] ),
+				Transaction::$meta_key_has_free_trial => $is_subscription_event && ! empty( $data['period1'] ) && isset( $data['mc_amount1'] ) && ( '0.00' === strval( $data['mc_amount1'] ) || '0' === strval( $data['mc_amount1'] ) ),
 				Transaction::$meta_key_gateway_transaction => Learndash_Transaction_Gateway_Transaction_DTO::create(
 					array(
 						'id'    => $is_subscription_event ? $data['subscr_id'] : $data['txn_id'],

@@ -1542,3 +1542,39 @@ function learndash_is_course_post( $post ): bool {
 
 	return LDLMS_Post_Types::get_post_type_slug( 'course' ) === $post_type;
 }
+
+/**
+ * Returns course enrollment url.
+ *
+ * @param WP_Post|int|null $post Post or Post ID.
+ *
+ * @since 4.1.0
+ *
+ * @return string
+ */
+function learndash_get_course_enrollment_url( $post ): string {
+	if ( empty( $post ) ) {
+		return '';
+	}
+
+	if ( is_int( $post ) ) {
+		$post = get_post( $post );
+
+		if ( is_null( $post ) ) {
+			return '';
+		}
+	}
+
+	$url = get_permalink( $post );
+
+	$settings = learndash_get_setting( $post );
+
+	if ( 'paynow' === $settings['course_price_type'] && ! empty( $settings['course_price_type_paynow_enrollment_url'] ) ) {
+		$url = $settings['course_price_type_paynow_enrollment_url'];
+	} elseif ( 'subscribe' === $settings['course_price_type'] && ! empty( $settings['course_price_type_subscribe_enrollment_url'] ) ) {
+		$url = $settings['course_price_type_subscribe_enrollment_url'];
+	}
+
+	/** This filter is documented in includes/course/ld-course-functions.php */
+	return apply_filters( 'learndash_course_join_redirect', $url, $post->ID );
+}

@@ -62,7 +62,7 @@ if ( ! class_exists( 'Learndash_DTO' ) ) {
 		 *
 		 * @param array<string,mixed> $args DTO properties.
 		 *
-		 * @throws Learndash_DTO_Validation_Exception If validators exist in the child class and at least one property is invalid.
+		 * @throws Learndash_DTO_Validation_Exception If one or more properties are invalid.
 		 *
 		 * @return void
 		 */

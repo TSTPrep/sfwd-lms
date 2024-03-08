@@ -1,11 +1,11 @@
-/******/ (function() { // webpackBootstrap
+/******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
   \*************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__(/*! ./lib/axios */ "./node_modules/axios/lib/axios.js");
 
@@ -15,7 +15,7 @@ module.exports = __webpack_require__(/*! ./lib/axios */ "./node_modules/axios/li
 /*!************************************************!*\
   !*** ./node_modules/axios/lib/adapters/xhr.js ***!
   \************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -248,7 +248,7 @@ module.exports = function xhrAdapter(config) {
 /*!*****************************************!*\
   !*** ./node_modules/axios/lib/axios.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -323,7 +323,7 @@ module.exports["default"] = axios;
 /*!******************************************************!*\
   !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
   \******************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -453,7 +453,7 @@ module.exports = CancelToken;
 /*!********************************************************!*\
   !*** ./node_modules/axios/lib/cancel/CanceledError.js ***!
   \********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -486,7 +486,7 @@ module.exports = CanceledError;
 /*!***************************************************!*\
   !*** ./node_modules/axios/lib/cancel/isCancel.js ***!
   \***************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -502,7 +502,7 @@ module.exports = function isCancel(value) {
 /*!**********************************************!*\
   !*** ./node_modules/axios/lib/core/Axios.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -673,7 +673,7 @@ module.exports = Axios;
 /*!***************************************************!*\
   !*** ./node_modules/axios/lib/core/AxiosError.js ***!
   \***************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -770,7 +770,7 @@ module.exports = AxiosError;
 /*!***********************************************************!*\
   !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
   \***********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -835,7 +835,7 @@ module.exports = InterceptorManager;
 /*!******************************************************!*\
   !*** ./node_modules/axios/lib/core/buildFullPath.js ***!
   \******************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -866,7 +866,7 @@ module.exports = function buildFullPath(baseURL, requestedURL) {
 /*!********************************************************!*\
   !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
   \********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -964,7 +964,7 @@ module.exports = function dispatchRequest(config) {
 /*!****************************************************!*\
   !*** ./node_modules/axios/lib/core/mergeConfig.js ***!
   \****************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1075,7 +1075,7 @@ module.exports = function mergeConfig(config1, config2) {
 /*!***********************************************!*\
   !*** ./node_modules/axios/lib/core/settle.js ***!
   \***********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1111,7 +1111,7 @@ module.exports = function settle(resolve, reject, response) {
 /*!******************************************************!*\
   !*** ./node_modules/axios/lib/core/transformData.js ***!
   \******************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1144,7 +1144,7 @@ module.exports = function transformData(data, headers, fns) {
 /*!**************************************************!*\
   !*** ./node_modules/axios/lib/defaults/index.js ***!
   \**************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1301,7 +1301,7 @@ module.exports = defaults;
 /*!*********************************************************!*\
   !*** ./node_modules/axios/lib/defaults/transitional.js ***!
   \*********************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -1319,7 +1319,7 @@ module.exports = {
 /*!********************************************!*\
   !*** ./node_modules/axios/lib/env/data.js ***!
   \********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 module.exports = {
   "version": "0.27.2"
@@ -1331,7 +1331,7 @@ module.exports = {
 /*!************************************************!*\
   !*** ./node_modules/axios/lib/helpers/bind.js ***!
   \************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -1353,7 +1353,7 @@ module.exports = function bind(fn, thisArg) {
 /*!****************************************************!*\
   !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
   \****************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1434,7 +1434,7 @@ module.exports = function buildURL(url, params, paramsSerializer) {
 /*!*******************************************************!*\
   !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
   \*******************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -1459,7 +1459,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 /*!***************************************************!*\
   !*** ./node_modules/axios/lib/helpers/cookies.js ***!
   \***************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1523,7 +1523,7 @@ module.exports = (
 /*!*********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
   \*********************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -1548,7 +1548,7 @@ module.exports = function isAbsoluteURL(url) {
 /*!********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/isAxiosError.js ***!
   \********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1572,7 +1572,7 @@ module.exports = function isAxiosError(payload) {
 /*!***********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
   \***********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1651,7 +1651,7 @@ module.exports = (
 /*!***************************************************************!*\
   !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
   \***************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1674,7 +1674,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 /*!************************************************!*\
   !*** ./node_modules/axios/lib/helpers/null.js ***!
   \************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 // eslint-disable-next-line strict
 module.exports = null;
@@ -1686,7 +1686,7 @@ module.exports = null;
 /*!********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
   \********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1750,7 +1750,7 @@ module.exports = function parseHeaders(headers) {
 /*!*********************************************************!*\
   !*** ./node_modules/axios/lib/helpers/parseProtocol.js ***!
   \*********************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -1767,7 +1767,7 @@ module.exports = function parseProtocol(url) {
 /*!**************************************************!*\
   !*** ./node_modules/axios/lib/helpers/spread.js ***!
   \**************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -1805,7 +1805,7 @@ module.exports = function spread(callback) {
 /*!******************************************************!*\
   !*** ./node_modules/axios/lib/helpers/toFormData.js ***!
   \******************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1888,7 +1888,7 @@ module.exports = toFormData;
 /*!*****************************************************!*\
   !*** ./node_modules/axios/lib/helpers/validator.js ***!
   \*****************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -1985,7 +1985,7 @@ module.exports = {
 /*!*****************************************!*\
   !*** ./node_modules/axios/lib/utils.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -2466,17 +2466,17 @@ module.exports = {
 /*!**************************!*\
   !*** ./src/api/index.js ***!
   \**************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "addSectionHeading": function() { return /* binding */ addSectionHeading; },
-/* harmony export */   "ajaxRequest": function() { return /* binding */ ajaxRequest; },
-/* harmony export */   "deleteEntity": function() { return /* binding */ deleteEntity; },
-/* harmony export */   "getQuestion": function() { return /* binding */ getQuestion; },
-/* harmony export */   "updateAnswer": function() { return /* binding */ updateAnswer; },
-/* harmony export */   "updateQuestion": function() { return /* binding */ updateQuestion; }
+/* harmony export */   "addSectionHeading": () => (/* binding */ addSectionHeading),
+/* harmony export */   "ajaxRequest": () => (/* binding */ ajaxRequest),
+/* harmony export */   "deleteEntity": () => (/* binding */ deleteEntity),
+/* harmony export */   "getQuestion": () => (/* binding */ getQuestion),
+/* harmony export */   "updateAnswer": () => (/* binding */ updateAnswer),
+/* harmony export */   "updateQuestion": () => (/* binding */ updateQuestion)
 /* harmony export */ });
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_0__);
@@ -2630,10 +2630,13 @@ const addSectionHeading = async (id, array) => {
 /*!*****************************************************!*\
   !*** ./src/components/common/empty-entity/index.js ***!
   \*****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
@@ -2665,7 +2668,7 @@ EmptyEntity.propTypes = {
   type: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),
   content: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)
 };
-/* harmony default export */ __webpack_exports__["default"] = (EmptyEntity);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (EmptyEntity);
 
 /***/ }),
 
@@ -2673,10 +2676,13 @@ EmptyEntity.propTypes = {
 /*!**************************************************************!*\
   !*** ./src/components/common/entity-builder-header/index.js ***!
   \**************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
@@ -2767,7 +2773,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   onUndo: () => dispatch(redux_undo__WEBPACK_IMPORTED_MODULE_2__.ActionCreators.undo())
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(EntityBuilderHeader));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(EntityBuilderHeader));
 
 /***/ }),
 
@@ -2775,10 +2781,13 @@ const mapDispatchToProps = dispatch => ({
 /*!*******************************************************!*\
   !*** ./src/components/common/error-boundary/index.js ***!
   \*******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
@@ -2848,7 +2857,7 @@ ErrorBoundary.defaultProps = {
   message: `${LearnDashData.i18n.error}`,
   className: ''
 };
-/* harmony default export */ __webpack_exports__["default"] = (ErrorBoundary);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ErrorBoundary);
 
 /***/ }),
 
@@ -2856,10 +2865,13 @@ ErrorBoundary.defaultProps = {
 /*!************************************************************!*\
   !*** ./src/components/common/expand-collapse-all/index.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -2931,7 +2943,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   toggleExpandAll: () => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_3__.toggleExpandAll)())
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(ExpandCollapseAll));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(ExpandCollapseAll));
 
 /***/ }),
 
@@ -2939,10 +2951,13 @@ const mapDispatchToProps = dispatch => ({
 /*!*********************************************!*\
   !*** ./src/components/common/icon/index.js ***!
   \*********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
@@ -3081,7 +3096,7 @@ Icon.propTypes = {
   icon: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),
   stroke: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string)
 };
-/* harmony default export */ __webpack_exports__["default"] = (Icon);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Icon);
 
 /***/ }),
 
@@ -3089,10 +3104,13 @@ Icon.propTypes = {
 /*!*****************************************************!*\
   !*** ./src/components/common/media-upload/index.js ***!
   \*****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
@@ -3178,7 +3196,7 @@ MediaUpload.defaultProps = {
   buttonLabel: 'Add Media',
   onSelect: () => {}
 };
-/* harmony default export */ __webpack_exports__["default"] = (MediaUpload);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MediaUpload);
 
 /***/ }),
 
@@ -3186,10 +3204,13 @@ MediaUpload.defaultProps = {
 /*!***************************************************!*\
   !*** ./src/components/common/new-entity/index.js ***!
   \***************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -3640,7 +3661,7 @@ const mapDispatchToProps = dispatch => ({
   addAnswerEntity: (answer, parent) => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_4__.addAnswerEntity)(answer, parent)),
   setActiveLesson: id => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_4__.setActiveLesson)(id))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(NewEntity));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(NewEntity));
 
 /***/ }),
 
@@ -3648,10 +3669,13 @@ const mapDispatchToProps = dispatch => ({
 /*!****************************************************!*\
   !*** ./src/components/common/node-header/index.js ***!
   \****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -4089,7 +4113,6 @@ class NodeHeader extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       updateSectionHeadings
     } = this.props;
     const questionAlerts = (0,_helpers__WEBPACK_IMPORTED_MODULE_5__.getQuestionAlerts)(node);
-    console.log(node);
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "ld-node-header"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -4325,7 +4348,7 @@ const mapDispatchToProps = dispatch => ({
   updateQuestionType: node => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_6__.updateQuestionType)(node)),
   updateSectionHeadings: node => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_6__.updateSectionHeadings)(node))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(NodeHeader));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(NodeHeader));
 
 /***/ }),
 
@@ -4333,10 +4356,13 @@ const mapDispatchToProps = dispatch => ({
 /*!**************************************************!*\
   !*** ./src/components/common/rich-text/index.js ***!
   \**************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
@@ -4511,7 +4537,7 @@ RichText.propTypes = {
   value: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().string),
   onChange: (prop_types__WEBPACK_IMPORTED_MODULE_1___default().func)
 };
-/* harmony default export */ __webpack_exports__["default"] = (RichText);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (RichText);
 
 /***/ }),
 
@@ -4519,10 +4545,13 @@ RichText.propTypes = {
 /*!*******************************************************!*\
   !*** ./src/components/common/sidebar-widget/index.js ***!
   \*******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
@@ -5219,7 +5248,7 @@ const mapDispatchToProps = dispatch => ({
   addFinalQuizEntity: (index, draggableQuiz) => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_6__.addFinalQuizEntity)(index, draggableQuiz)),
   initData: post_type => dispatch((0,_redux_actions_dataActions__WEBPACK_IMPORTED_MODULE_5__.initData)(post_type))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(SidebarWidget));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(SidebarWidget));
 
 /***/ }),
 
@@ -5227,10 +5256,13 @@ const mapDispatchToProps = dispatch => ({
 /*!****************************************************!*\
   !*** ./src/components/common/undo-button/index.js ***!
   \****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
@@ -5264,7 +5296,7 @@ const UndoButton = _ref => {
 UndoButton.propTypes = {
   undoActionHandler: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().func)
 };
-/* harmony default export */ __webpack_exports__["default"] = (UndoButton);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (UndoButton);
 
 /***/ }),
 
@@ -5272,10 +5304,13 @@ UndoButton.propTypes = {
 /*!***************************************************************!*\
   !*** ./src/components/courses/course-builder-footer/index.js ***!
   \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _course_workspace_quiz__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../course-workspace-quiz */ "./src/components/courses/course-workspace-quiz/index.js");
 
@@ -5287,7 +5322,7 @@ __webpack_require__.r(__webpack_exports__);
 const CourseBuilderFooter = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("footer", {
   className: "ld__builder--footer"
 }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_course_workspace_quiz__WEBPACK_IMPORTED_MODULE_1__["default"], null));
-/* harmony default export */ __webpack_exports__["default"] = (CourseBuilderFooter);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (CourseBuilderFooter);
 
 /***/ }),
 
@@ -5295,10 +5330,13 @@ const CourseBuilderFooter = () => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0_
 /*!********************************************************!*\
   !*** ./src/components/courses/course-builder/index.js ***!
   \********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
@@ -5420,7 +5458,7 @@ const mapStateToProps = state => _objectSpread({}, state);
  *
  */
 const mapDispatchToProps = () => ({});
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(mapStateToProps, mapDispatchToProps)(CourseBuilder));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_2__.connect)(mapStateToProps, mapDispatchToProps)(CourseBuilder));
 
 /***/ }),
 
@@ -5428,10 +5466,13 @@ const mapDispatchToProps = () => ({});
 /*!***************************************************************!*\
   !*** ./src/components/courses/course-workspace-quiz/index.js ***!
   \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
@@ -5560,7 +5601,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => ({
   toggleExpandAll: () => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_5__.toggleExpandAll)())
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(CourseWorkspaceQuiz));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(CourseWorkspaceQuiz));
 
 /***/ }),
 
@@ -5568,10 +5609,13 @@ const mapDispatchToProps = dispatch => ({
 /*!**********************************************************!*\
   !*** ./src/components/courses/course-workspace/index.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
@@ -5863,7 +5907,7 @@ const mapStateToProps = state => {
  *
  */
 const mapDispatchToProps = () => ({});
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(CourseWorkspace));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(CourseWorkspace));
 
 /***/ }),
 
@@ -5871,10 +5915,13 @@ const mapDispatchToProps = () => ({});
 /*!****************************************************************!*\
   !*** ./src/components/courses/lesson-child-workspace/index.js ***!
   \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
@@ -6059,7 +6106,7 @@ const mapStateToProps = state => _objectSpread({}, state);
 const mapDispatchToProps = dispatch => ({
   toggleExpandEntity: (indexLesson, node) => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_5__.toggleExpandEntity)(indexLesson, node))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(LessonChildWorkspace));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(LessonChildWorkspace));
 
 /***/ }),
 
@@ -6067,10 +6114,13 @@ const mapDispatchToProps = dispatch => ({
 /*!*********************************************************************!*\
   !*** ./src/components/courses/lesson-grandchild-workspace/index.js ***!
   \*********************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
@@ -6152,7 +6202,7 @@ const mapStateToProps = state => _objectSpread({}, state);
  *
  */
 const mapDispatchToProps = () => ({});
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(LessonGrandchildWorkspace));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(LessonGrandchildWorkspace));
 
 /***/ }),
 
@@ -6160,10 +6210,13 @@ const mapDispatchToProps = () => ({});
 /*!**********************************************************!*\
   !*** ./src/components/courses/lesson-workspace/index.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
@@ -6377,7 +6430,7 @@ const mapDispatchToProps = dispatch => ({
   setActiveLesson: id => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_6__.setActiveLesson)(id)),
   toggleExpandEntity: (indexLesson, node) => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_6__.toggleExpandEntity)(indexLesson, node))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(LessonWorkspace));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(LessonWorkspace));
 
 /***/ }),
 
@@ -6385,10 +6438,13 @@ const mapDispatchToProps = dispatch => ({
 /*!******************************************************************!*\
   !*** ./src/components/quizzes/new-matrix-answer-entity/index.js ***!
   \******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -6609,7 +6665,7 @@ const mapStateToProps = state => _objectSpread({}, state);
 const mapDispatchToProps = dispatch => ({
   addAnswerEntity: (answer, parent) => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_4__.addAnswerEntity)(answer, parent))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(NewMatrixAnswerEntity));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(NewMatrixAnswerEntity));
 
 /***/ }),
 
@@ -6617,10 +6673,13 @@ const mapDispatchToProps = dispatch => ({
 /*!******************************************************************!*\
   !*** ./src/components/quizzes/question-child-workspace/index.js ***!
   \******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
@@ -7168,7 +7227,7 @@ const mapDispatchToProps = dispatch => ({
   updateQuestionAnswers: (question, answers) => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_3__.updateQuestionAnswers)(question, answers)),
   updateQuestionType: node => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_3__.updateQuestionType)(node))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuestionChildWorkspace));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuestionChildWorkspace));
 
 /***/ }),
 
@@ -7176,10 +7235,13 @@ const mapDispatchToProps = dispatch => ({
 /*!**********************************************************!*\
   !*** ./src/components/quizzes/question-content/index.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -7360,7 +7422,7 @@ const mapStateToProps = state => _objectSpread({}, state);
 const mapDispatchToProps = dispatch => ({
   updateQuestionType: node => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_5__.updateQuestionType)(node))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuestionContent));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuestionContent));
 
 /***/ }),
 
@@ -7368,10 +7430,13 @@ const mapDispatchToProps = dispatch => ({
 /*!***********************************************************!*\
   !*** ./src/components/quizzes/question-settings/index.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
@@ -7600,7 +7665,7 @@ QuestionSettings.propTypes = {
   handleSettingsForm: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func),
   unlockQuestion: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func)
 };
-/* harmony default export */ __webpack_exports__["default"] = (/*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(QuestionSettings));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.memo)(QuestionSettings));
 
 /***/ }),
 
@@ -7608,10 +7673,13 @@ QuestionSettings.propTypes = {
 /*!***************************************************************!*\
   !*** ./src/components/quizzes/question-type-classic/index.js ***!
   \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
@@ -7784,7 +7852,7 @@ QuestionTypeClassic.propTypes = {
   correct: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
   html: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool)
 };
-/* harmony default export */ __webpack_exports__["default"] = (QuestionTypeClassic);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuestionTypeClassic);
 
 /***/ }),
 
@@ -7792,10 +7860,13 @@ QuestionTypeClassic.propTypes = {
 /*!*************************************************************!*\
   !*** ./src/components/quizzes/question-type-essay/index.js ***!
   \*************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
@@ -7957,7 +8028,7 @@ QuestionTypeEssay.propTypes = {
   updated: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   showForm: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool)
 };
-/* harmony default export */ __webpack_exports__["default"] = (QuestionTypeEssay);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuestionTypeEssay);
 
 /***/ }),
 
@@ -7965,10 +8036,13 @@ QuestionTypeEssay.propTypes = {
 /*!************************************************************!*\
   !*** ./src/components/quizzes/question-type-free/index.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
@@ -8051,7 +8125,7 @@ QuestionTypeFree.propTypes = {
   updated: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool),
   showForm: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().bool)
 };
-/* harmony default export */ __webpack_exports__["default"] = (QuestionTypeFree);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuestionTypeFree);
 
 /***/ }),
 
@@ -8059,10 +8133,13 @@ QuestionTypeFree.propTypes = {
 /*!**************************************************************!*\
   !*** ./src/components/quizzes/question-type-matrix/index.js ***!
   \**************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
@@ -8228,7 +8305,7 @@ QuestionTypeMatrix.propTypes = {
   sortString: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
   sortStringHtml: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool)
 };
-/* harmony default export */ __webpack_exports__["default"] = (QuestionTypeMatrix);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuestionTypeMatrix);
 
 /***/ }),
 
@@ -8236,10 +8313,13 @@ QuestionTypeMatrix.propTypes = {
 /*!****************************************************************!*\
   !*** ./src/components/quizzes/question-type-richtext/index.js ***!
   \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
@@ -8332,7 +8412,7 @@ QuestionTypeRichtext.propTypes = {
   updated: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool),
   showForm: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().bool)
 };
-/* harmony default export */ __webpack_exports__["default"] = (QuestionTypeRichtext);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QuestionTypeRichtext);
 
 /***/ }),
 
@@ -8340,10 +8420,13 @@ QuestionTypeRichtext.propTypes = {
 /*!************************************************************!*\
   !*** ./src/components/quizzes/question-workspace/index.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
@@ -8582,8 +8665,6 @@ class QuestionWorkspace extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
     } = this.state;
     const answerTypeMap = LearnDashData.questions_types_map;
     const questionAlerts = (0,_helpers__WEBPACK_IMPORTED_MODULE_11__.getQuestionAlerts)(question);
-
-    console.log(question);
     return (
       /*#__PURE__*/
       // A lesson must be draggable for us to sort them
@@ -8673,7 +8754,7 @@ class QuestionWorkspace extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       }, Object.entries(question.answers).map(_ref4 => {
         let [type, answer] = _ref4;
         return type === answerTypeMap[question.question_type] ? answer && 0 !== answer.length && answer.map((answerItem, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_question_child_workspace__WEBPACK_IMPORTED_MODULE_6__["default"], {
-          key: `answer-${index}-` + JSON.stringify(_objectSpread({}, answerItem)),
+          key: `answer-${index}`,
           node: answerItem,
           question: question,
           index: index,
@@ -8730,7 +8811,7 @@ const mapDispatchToProps = dispatch => ({
   setActiveLesson: id => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_9__.setActiveLesson)(id)),
   toggleExpandEntity: (indexQuestion, node) => dispatch((0,_redux_actions_workspaceActions__WEBPACK_IMPORTED_MODULE_9__.toggleExpandEntity)(indexQuestion, node))
 });
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuestionWorkspace));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuestionWorkspace));
 
 /***/ }),
 
@@ -8738,10 +8819,13 @@ const mapDispatchToProps = dispatch => ({
 /*!******************************************************!*\
   !*** ./src/components/quizzes/quiz-builder/index.js ***!
   \******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
@@ -8826,7 +8910,7 @@ const mapStateToProps = state => _objectSpread({}, state);
  *
  */
 const mapDispatchToProps = () => ({});
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuizBuilder));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuizBuilder));
 
 /***/ }),
 
@@ -8834,10 +8918,13 @@ const mapDispatchToProps = () => ({});
 /*!********************************************************!*\
   !*** ./src/components/quizzes/quiz-workspace/index.js ***!
   \********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-redux */ "./node_modules/react-redux/es/index.js");
 /* harmony import */ var react_beautiful_dnd__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-beautiful-dnd */ "./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js");
@@ -9096,7 +9183,7 @@ const mapStateToProps = state => {
  *
  */
 const mapDispatchToProps = () => ({});
-/* harmony default export */ __webpack_exports__["default"] = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuizWorkspace));
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,react_redux__WEBPACK_IMPORTED_MODULE_1__.connect)(mapStateToProps, mapDispatchToProps)(QuizWorkspace));
 
 /***/ }),
 
@@ -9104,42 +9191,42 @@ const mapDispatchToProps = () => ({});
 /*!********************************!*\
   !*** ./src/constants/index.js ***!
   \********************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ADD_ANSWER_ENTITY": function() { return /* binding */ ADD_ANSWER_ENTITY; },
-/* harmony export */   "ADD_FINAL_QUIZ_ENTITY": function() { return /* binding */ ADD_FINAL_QUIZ_ENTITY; },
-/* harmony export */   "ADD_LESSON": function() { return /* binding */ ADD_LESSON; },
-/* harmony export */   "ADD_LESSON_ENTITY": function() { return /* binding */ ADD_LESSON_ENTITY; },
-/* harmony export */   "ADD_QUESTION": function() { return /* binding */ ADD_QUESTION; },
-/* harmony export */   "ADD_QUESTION_ENTITY": function() { return /* binding */ ADD_QUESTION_ENTITY; },
-/* harmony export */   "ADD_QUIZ": function() { return /* binding */ ADD_QUIZ; },
-/* harmony export */   "ADD_QUIZ_ENTITY": function() { return /* binding */ ADD_QUIZ_ENTITY; },
-/* harmony export */   "ADD_SECTION_HEADING_ENTITY": function() { return /* binding */ ADD_SECTION_HEADING_ENTITY; },
-/* harmony export */   "ADD_TOPIC": function() { return /* binding */ ADD_TOPIC; },
-/* harmony export */   "ADD_TOPIC_ENTITY": function() { return /* binding */ ADD_TOPIC_ENTITY; },
-/* harmony export */   "INIT_DATA": function() { return /* binding */ INIT_DATA; },
-/* harmony export */   "MOVE_ENTITY": function() { return /* binding */ MOVE_ENTITY; },
-/* harmony export */   "REMOVE_ANSWER_ENTITY": function() { return /* binding */ REMOVE_ANSWER_ENTITY; },
-/* harmony export */   "REMOVE_ENTITY": function() { return /* binding */ REMOVE_ENTITY; },
-/* harmony export */   "REMOVE_EXISTING_ENTITY": function() { return /* binding */ REMOVE_EXISTING_ENTITY; },
-/* harmony export */   "REMOVE_SECTION_HEADING_ENTITY": function() { return /* binding */ REMOVE_SECTION_HEADING_ENTITY; },
-/* harmony export */   "SET_ACTIVE_LESSON": function() { return /* binding */ SET_ACTIVE_LESSON; },
-/* harmony export */   "SET_DRAGGABLE_ENTITY": function() { return /* binding */ SET_DRAGGABLE_ENTITY; },
-/* harmony export */   "SET_IS_DROP_DISABLED_LESSON": function() { return /* binding */ SET_IS_DROP_DISABLED_LESSON; },
-/* harmony export */   "SORT_FINAL_QUIZZES_OUTLINE": function() { return /* binding */ SORT_FINAL_QUIZZES_OUTLINE; },
-/* harmony export */   "TOGGLE_EXPAND_ALL": function() { return /* binding */ TOGGLE_EXPAND_ALL; },
-/* harmony export */   "TOGGLE_EXPAND_ENTITY": function() { return /* binding */ TOGGLE_EXPAND_ENTITY; },
-/* harmony export */   "UPDATE_COURSE_OUTLINE": function() { return /* binding */ UPDATE_COURSE_OUTLINE; },
-/* harmony export */   "UPDATE_LESSONS": function() { return /* binding */ UPDATE_LESSONS; },
-/* harmony export */   "UPDATE_NODE_TITLE": function() { return /* binding */ UPDATE_NODE_TITLE; },
-/* harmony export */   "UPDATE_QUESTIONS": function() { return /* binding */ UPDATE_QUESTIONS; },
-/* harmony export */   "UPDATE_QUESTION_ANSWERS": function() { return /* binding */ UPDATE_QUESTION_ANSWERS; },
-/* harmony export */   "UPDATE_QUESTION_TYPE": function() { return /* binding */ UPDATE_QUESTION_TYPE; },
-/* harmony export */   "UPDATE_SECTION_HEADINGS": function() { return /* binding */ UPDATE_SECTION_HEADINGS; },
-/* harmony export */   "UPDATE_WORKSPACE_NODE_TITLE": function() { return /* binding */ UPDATE_WORKSPACE_NODE_TITLE; }
+/* harmony export */   "ADD_ANSWER_ENTITY": () => (/* binding */ ADD_ANSWER_ENTITY),
+/* harmony export */   "ADD_FINAL_QUIZ_ENTITY": () => (/* binding */ ADD_FINAL_QUIZ_ENTITY),
+/* harmony export */   "ADD_LESSON": () => (/* binding */ ADD_LESSON),
+/* harmony export */   "ADD_LESSON_ENTITY": () => (/* binding */ ADD_LESSON_ENTITY),
+/* harmony export */   "ADD_QUESTION": () => (/* binding */ ADD_QUESTION),
+/* harmony export */   "ADD_QUESTION_ENTITY": () => (/* binding */ ADD_QUESTION_ENTITY),
+/* harmony export */   "ADD_QUIZ": () => (/* binding */ ADD_QUIZ),
+/* harmony export */   "ADD_QUIZ_ENTITY": () => (/* binding */ ADD_QUIZ_ENTITY),
+/* harmony export */   "ADD_SECTION_HEADING_ENTITY": () => (/* binding */ ADD_SECTION_HEADING_ENTITY),
+/* harmony export */   "ADD_TOPIC": () => (/* binding */ ADD_TOPIC),
+/* harmony export */   "ADD_TOPIC_ENTITY": () => (/* binding */ ADD_TOPIC_ENTITY),
+/* harmony export */   "INIT_DATA": () => (/* binding */ INIT_DATA),
+/* harmony export */   "MOVE_ENTITY": () => (/* binding */ MOVE_ENTITY),
+/* harmony export */   "REMOVE_ANSWER_ENTITY": () => (/* binding */ REMOVE_ANSWER_ENTITY),
+/* harmony export */   "REMOVE_ENTITY": () => (/* binding */ REMOVE_ENTITY),
+/* harmony export */   "REMOVE_EXISTING_ENTITY": () => (/* binding */ REMOVE_EXISTING_ENTITY),
+/* harmony export */   "REMOVE_SECTION_HEADING_ENTITY": () => (/* binding */ REMOVE_SECTION_HEADING_ENTITY),
+/* harmony export */   "SET_ACTIVE_LESSON": () => (/* binding */ SET_ACTIVE_LESSON),
+/* harmony export */   "SET_DRAGGABLE_ENTITY": () => (/* binding */ SET_DRAGGABLE_ENTITY),
+/* harmony export */   "SET_IS_DROP_DISABLED_LESSON": () => (/* binding */ SET_IS_DROP_DISABLED_LESSON),
+/* harmony export */   "SORT_FINAL_QUIZZES_OUTLINE": () => (/* binding */ SORT_FINAL_QUIZZES_OUTLINE),
+/* harmony export */   "TOGGLE_EXPAND_ALL": () => (/* binding */ TOGGLE_EXPAND_ALL),
+/* harmony export */   "TOGGLE_EXPAND_ENTITY": () => (/* binding */ TOGGLE_EXPAND_ENTITY),
+/* harmony export */   "UPDATE_COURSE_OUTLINE": () => (/* binding */ UPDATE_COURSE_OUTLINE),
+/* harmony export */   "UPDATE_LESSONS": () => (/* binding */ UPDATE_LESSONS),
+/* harmony export */   "UPDATE_NODE_TITLE": () => (/* binding */ UPDATE_NODE_TITLE),
+/* harmony export */   "UPDATE_QUESTIONS": () => (/* binding */ UPDATE_QUESTIONS),
+/* harmony export */   "UPDATE_QUESTION_ANSWERS": () => (/* binding */ UPDATE_QUESTION_ANSWERS),
+/* harmony export */   "UPDATE_QUESTION_TYPE": () => (/* binding */ UPDATE_QUESTION_TYPE),
+/* harmony export */   "UPDATE_SECTION_HEADINGS": () => (/* binding */ UPDATE_SECTION_HEADINGS),
+/* harmony export */   "UPDATE_WORKSPACE_NODE_TITLE": () => (/* binding */ UPDATE_WORKSPACE_NODE_TITLE)
 /* harmony export */ });
 const INIT_DATA = 'INIT_DATA';
 const UPDATE_COURSE_OUTLINE = 'UPDATE_COURSE_OUTLINE';
@@ -9179,19 +9266,19 @@ const UPDATE_QUESTION_ANSWERS = 'UPDATE_QUESTION_ANSWERS';
 /*!******************************!*\
   !*** ./src/helpers/index.js ***!
   \******************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getQuestionAlerts": function() { return /* binding */ getQuestionAlerts; },
-/* harmony export */   "getSectionHeadings": function() { return /* binding */ getSectionHeadings; },
-/* harmony export */   "onDragEndEvent": function() { return /* binding */ onDragEndEvent; },
-/* harmony export */   "onDragEndEventQuiz": function() { return /* binding */ onDragEndEventQuiz; },
-/* harmony export */   "onDragStartEvent": function() { return /* binding */ onDragStartEvent; },
-/* harmony export */   "onDragUpdateEvent": function() { return /* binding */ onDragUpdateEvent; },
-/* harmony export */   "reorder": function() { return /* binding */ reorder; },
-/* harmony export */   "updateSectionHeadingsOrder": function() { return /* binding */ updateSectionHeadingsOrder; }
+/* harmony export */   "getQuestionAlerts": () => (/* binding */ getQuestionAlerts),
+/* harmony export */   "getSectionHeadings": () => (/* binding */ getSectionHeadings),
+/* harmony export */   "onDragEndEvent": () => (/* binding */ onDragEndEvent),
+/* harmony export */   "onDragEndEventQuiz": () => (/* binding */ onDragEndEventQuiz),
+/* harmony export */   "onDragStartEvent": () => (/* binding */ onDragStartEvent),
+/* harmony export */   "onDragUpdateEvent": () => (/* binding */ onDragUpdateEvent),
+/* harmony export */   "reorder": () => (/* binding */ reorder),
+/* harmony export */   "updateSectionHeadingsOrder": () => (/* binding */ updateSectionHeadingsOrder)
 /* harmony export */ });
 /* harmony import */ var tree_node_data__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tree-node-data */ "./node_modules/tree-node-data/lib/tree-node-data.js");
 /* harmony import */ var tree_node_data__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(tree_node_data__WEBPACK_IMPORTED_MODULE_0__);
@@ -9665,12 +9752,7 @@ const getQuestionAlerts = question => {
     const answerTypeMap = LearnDashData.questions_types_map;
 
     // Get answer data and retrieve contents of first answer.
-    const answerData = question.answers && question.answers[answerTypeMap[question.question_type]] || [];
-
-    console.log(question.answers);
-    console.log(question);
-    console.log(answerTypeMap);
-    console.log(answerData);
+    const answerData = question.answers && question.answers[answerTypeMap[question.question_type]];
     answerData.map(question_answer => {
       if (question_answer.answer !== '') {
         validAnswersCount++;
@@ -9698,10 +9780,13 @@ const getQuestionAlerts = question => {
 /*!****************************************************!*\
   !*** ./src/portals/sidebar-widget-portal/index.js ***!
   \****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
@@ -9735,7 +9820,7 @@ SidebarWidgetPortal.propTypes = {
   content: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
   type: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)
 };
-/* harmony default export */ __webpack_exports__["default"] = (SidebarWidgetPortal);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SidebarWidgetPortal);
 
 /***/ }),
 
@@ -9743,17 +9828,17 @@ SidebarWidgetPortal.propTypes = {
 /*!******************************************!*\
   !*** ./src/redux/actions/dataActions.js ***!
   \******************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "addLesson": function() { return /* binding */ addLesson; },
-/* harmony export */   "addQuestion": function() { return /* binding */ addQuestion; },
-/* harmony export */   "addQuiz": function() { return /* binding */ addQuiz; },
-/* harmony export */   "addTopic": function() { return /* binding */ addTopic; },
-/* harmony export */   "initData": function() { return /* binding */ initData; },
-/* harmony export */   "updateNodeTitle": function() { return /* binding */ updateNodeTitle; }
+/* harmony export */   "addLesson": () => (/* binding */ addLesson),
+/* harmony export */   "addQuestion": () => (/* binding */ addQuestion),
+/* harmony export */   "addQuiz": () => (/* binding */ addQuiz),
+/* harmony export */   "addTopic": () => (/* binding */ addTopic),
+/* harmony export */   "initData": () => (/* binding */ initData),
+/* harmony export */   "updateNodeTitle": () => (/* binding */ updateNodeTitle)
 /* harmony export */ });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants */ "./src/constants/index.js");
 
@@ -9836,36 +9921,36 @@ const updateNodeTitle = payload => {
 /*!***********************************************!*\
   !*** ./src/redux/actions/workspaceActions.js ***!
   \***********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "addAnswerEntity": function() { return /* binding */ addAnswerEntity; },
-/* harmony export */   "addFinalQuizEntity": function() { return /* binding */ addFinalQuizEntity; },
-/* harmony export */   "addLessonEntity": function() { return /* binding */ addLessonEntity; },
-/* harmony export */   "addQuestionEntity": function() { return /* binding */ addQuestionEntity; },
-/* harmony export */   "addQuizEntity": function() { return /* binding */ addQuizEntity; },
-/* harmony export */   "addSectionHeadingEntity": function() { return /* binding */ addSectionHeadingEntity; },
-/* harmony export */   "addTopicEntity": function() { return /* binding */ addTopicEntity; },
-/* harmony export */   "moveDown": function() { return /* binding */ moveDown; },
-/* harmony export */   "moveUp": function() { return /* binding */ moveUp; },
-/* harmony export */   "removeAnswerEntity": function() { return /* binding */ removeAnswerEntity; },
-/* harmony export */   "removeEntity": function() { return /* binding */ removeEntity; },
-/* harmony export */   "removeExistingEntity": function() { return /* binding */ removeExistingEntity; },
-/* harmony export */   "removeSectionHeadingEntity": function() { return /* binding */ removeSectionHeadingEntity; },
-/* harmony export */   "setActiveLesson": function() { return /* binding */ setActiveLesson; },
-/* harmony export */   "setDraggableEntity": function() { return /* binding */ setDraggableEntity; },
-/* harmony export */   "setIsDropDisabledLesson": function() { return /* binding */ setIsDropDisabledLesson; },
-/* harmony export */   "sortFinalQuizzesOutline": function() { return /* binding */ sortFinalQuizzesOutline; },
-/* harmony export */   "toggleExpandAll": function() { return /* binding */ toggleExpandAll; },
-/* harmony export */   "toggleExpandEntity": function() { return /* binding */ toggleExpandEntity; },
-/* harmony export */   "updateLessons": function() { return /* binding */ updateLessons; },
-/* harmony export */   "updateQuestionAnswers": function() { return /* binding */ updateQuestionAnswers; },
-/* harmony export */   "updateQuestionType": function() { return /* binding */ updateQuestionType; },
-/* harmony export */   "updateQuestions": function() { return /* binding */ updateQuestions; },
-/* harmony export */   "updateSectionHeadings": function() { return /* binding */ updateSectionHeadings; },
-/* harmony export */   "updateWorkspaceNodeTitle": function() { return /* binding */ updateWorkspaceNodeTitle; }
+/* harmony export */   "addAnswerEntity": () => (/* binding */ addAnswerEntity),
+/* harmony export */   "addFinalQuizEntity": () => (/* binding */ addFinalQuizEntity),
+/* harmony export */   "addLessonEntity": () => (/* binding */ addLessonEntity),
+/* harmony export */   "addQuestionEntity": () => (/* binding */ addQuestionEntity),
+/* harmony export */   "addQuizEntity": () => (/* binding */ addQuizEntity),
+/* harmony export */   "addSectionHeadingEntity": () => (/* binding */ addSectionHeadingEntity),
+/* harmony export */   "addTopicEntity": () => (/* binding */ addTopicEntity),
+/* harmony export */   "moveDown": () => (/* binding */ moveDown),
+/* harmony export */   "moveUp": () => (/* binding */ moveUp),
+/* harmony export */   "removeAnswerEntity": () => (/* binding */ removeAnswerEntity),
+/* harmony export */   "removeEntity": () => (/* binding */ removeEntity),
+/* harmony export */   "removeExistingEntity": () => (/* binding */ removeExistingEntity),
+/* harmony export */   "removeSectionHeadingEntity": () => (/* binding */ removeSectionHeadingEntity),
+/* harmony export */   "setActiveLesson": () => (/* binding */ setActiveLesson),
+/* harmony export */   "setDraggableEntity": () => (/* binding */ setDraggableEntity),
+/* harmony export */   "setIsDropDisabledLesson": () => (/* binding */ setIsDropDisabledLesson),
+/* harmony export */   "sortFinalQuizzesOutline": () => (/* binding */ sortFinalQuizzesOutline),
+/* harmony export */   "toggleExpandAll": () => (/* binding */ toggleExpandAll),
+/* harmony export */   "toggleExpandEntity": () => (/* binding */ toggleExpandEntity),
+/* harmony export */   "updateLessons": () => (/* binding */ updateLessons),
+/* harmony export */   "updateQuestionAnswers": () => (/* binding */ updateQuestionAnswers),
+/* harmony export */   "updateQuestionType": () => (/* binding */ updateQuestionType),
+/* harmony export */   "updateQuestions": () => (/* binding */ updateQuestions),
+/* harmony export */   "updateSectionHeadings": () => (/* binding */ updateSectionHeadings),
+/* harmony export */   "updateWorkspaceNodeTitle": () => (/* binding */ updateWorkspaceNodeTitle)
 /* harmony export */ });
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../constants */ "./src/constants/index.js");
 
@@ -10197,12 +10282,12 @@ const updateQuestionAnswers = (question, answers) => {
 /*!*************************************!*\
   !*** ./src/redux/configureStore.js ***!
   \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "store": function() { return /* binding */ store; }
+/* harmony export */   "store": () => (/* binding */ store)
 /* harmony export */ });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _reducers__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./reducers */ "./src/redux/reducers/index.js");
@@ -10216,12 +10301,12 @@ const store = (0,redux__WEBPACK_IMPORTED_MODULE_1__.createStore)(_reducers__WEBP
 /*!************************************!*\
   !*** ./src/redux/reducers/data.js ***!
   \************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "data": function() { return /* binding */ data; }
+/* harmony export */   "data": () => (/* binding */ data)
 /* harmony export */ });
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util/index.js");
 /* harmony import */ var _constants__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../constants */ "./src/constants/index.js");
@@ -10355,17 +10440,20 @@ const data = function () {
 /*!*************************************!*\
   !*** ./src/redux/reducers/index.js ***!
   \*************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
 /* harmony import */ var _workspace__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./workspace */ "./src/redux/reducers/workspace.js");
 /* harmony import */ var _data__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./data */ "./src/redux/reducers/data.js");
 
 
 
-/* harmony default export */ __webpack_exports__["default"] = ((0,redux__WEBPACK_IMPORTED_MODULE_2__.combineReducers)({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,redux__WEBPACK_IMPORTED_MODULE_2__.combineReducers)({
   data: _data__WEBPACK_IMPORTED_MODULE_1__.data,
   workspace: _workspace__WEBPACK_IMPORTED_MODULE_0__.workspace
 }));
@@ -10376,12 +10464,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!*****************************************!*\
   !*** ./src/redux/reducers/workspace.js ***!
   \*****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "workspace": function() { return /* binding */ workspace; }
+/* harmony export */   "workspace": () => (/* binding */ workspace)
 /* harmony export */ });
 /* harmony import */ var _util__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../util */ "./src/util/index.js");
 /* harmony import */ var immutable__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! immutable */ "./node_modules/immutable/dist/immutable.es.js");
@@ -11158,18 +11246,18 @@ const workspace = (0,redux_undo__WEBPACK_IMPORTED_MODULE_1__["default"])(workspa
 /*!***************************!*\
   !*** ./src/util/index.js ***!
   \***************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "calculatePoints": function() { return /* binding */ calculatePoints; },
-/* harmony export */   "debounce": function() { return /* binding */ debounce; },
-/* harmony export */   "formattedAnswersForAPI": function() { return /* binding */ formattedAnswersForAPI; },
-/* harmony export */   "getNodePath": function() { return /* binding */ getNodePath; },
-/* harmony export */   "mergeUniqueItems": function() { return /* binding */ mergeUniqueItems; },
-/* harmony export */   "treeConfig": function() { return /* binding */ treeConfig; },
-/* harmony export */   "treeNodeUtils": function() { return /* binding */ treeNodeUtils; }
+/* harmony export */   "calculatePoints": () => (/* binding */ calculatePoints),
+/* harmony export */   "debounce": () => (/* binding */ debounce),
+/* harmony export */   "formattedAnswersForAPI": () => (/* binding */ formattedAnswersForAPI),
+/* harmony export */   "getNodePath": () => (/* binding */ getNodePath),
+/* harmony export */   "mergeUniqueItems": () => (/* binding */ mergeUniqueItems),
+/* harmony export */   "treeConfig": () => (/* binding */ treeConfig),
+/* harmony export */   "treeNodeUtils": () => (/* binding */ treeNodeUtils)
 /* harmony export */ });
 /* harmony import */ var lodash_mapKeys__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash/mapKeys */ "./node_modules/lodash/mapKeys.js");
 /* harmony import */ var lodash_mapKeys__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_mapKeys__WEBPACK_IMPORTED_MODULE_0__);
@@ -11314,7 +11402,7 @@ const debounce = (callback, wait) => {
 /*!*********************************************!*\
   !*** ./node_modules/call-bind/callBound.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -11340,7 +11428,7 @@ module.exports = function callBoundIntrinsic(name, allowMissing) {
 /*!*****************************************!*\
   !*** ./node_modules/call-bind/index.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -11398,7 +11486,7 @@ if ($defineProperty) {
 /*!******************************************!*\
   !*** ./node_modules/classnames/index.js ***!
   \******************************************/
-/***/ (function(module, exports) {
+/***/ ((module, exports) => {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 	Copyright (c) 2018 Jed Watson.
@@ -11463,1112 +11551,23 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/date/now.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/core-js/library/fn/date/now.js ***!
-  \*****************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.date.now */ "./node_modules/core-js/library/modules/es6.date.now.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Date.now;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/number/is-integer.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/number/is-integer.js ***!
-  \**************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.number.is-integer */ "./node_modules/core-js/library/modules/es6.number.is-integer.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Number.isInteger;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/assign.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/assign.js ***!
-  \**********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.assign */ "./node_modules/core-js/library/modules/es6.object.assign.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.assign;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/create.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/create.js ***!
-  \**********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.create */ "./node_modules/core-js/library/modules/es6.object.create.js");
-var $Object = (__webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object);
-module.exports = function create(P, D) {
-  return $Object.create(P, D);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/keys.js":
-/*!********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/keys.js ***!
-  \********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.keys */ "./node_modules/core-js/library/modules/es6.object.keys.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.keys;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/set-prototype-of.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/set-prototype-of.js ***!
-  \********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.set-prototype-of */ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.setPrototypeOf;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/values.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/fn/object/values.js ***!
-  \**********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es7.object.values */ "./node_modules/core-js/library/modules/es7.object.values.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.values;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_a-function.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_a-function.js ***!
-  \*************************************************************/
-/***/ (function(module) {
-
-module.exports = function (it) {
-  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
-  return it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_an-object.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_an-object.js ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-module.exports = function (it) {
-  if (!isObject(it)) throw TypeError(it + ' is not an object!');
-  return it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_array-includes.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_array-includes.js ***!
-  \*****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// false -> Array#indexOf
-// true  -> Array#includes
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/library/modules/_to-length.js");
-var toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ "./node_modules/core-js/library/modules/_to-absolute-index.js");
-module.exports = function (IS_INCLUDES) {
-  return function ($this, el, fromIndex) {
-    var O = toIObject($this);
-    var length = toLength(O.length);
-    var index = toAbsoluteIndex(fromIndex, length);
-    var value;
-    // Array#includes uses SameValueZero equality algorithm
-    // eslint-disable-next-line no-self-compare
-    if (IS_INCLUDES && el != el) while (length > index) {
-      value = O[index++];
-      // eslint-disable-next-line no-self-compare
-      if (value != value) return true;
-    // Array#indexOf ignores holes, Array#includes - not
-    } else for (;length > index; index++) if (IS_INCLUDES || index in O) {
-      if (O[index] === el) return IS_INCLUDES || index || 0;
-    } return !IS_INCLUDES && -1;
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_cof.js":
-/*!******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_cof.js ***!
-  \******************************************************/
-/***/ (function(module) {
-
-var toString = {}.toString;
-
-module.exports = function (it) {
-  return toString.call(it).slice(8, -1);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_core.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_core.js ***!
-  \*******************************************************/
-/***/ (function(module) {
-
-var core = module.exports = { version: '2.6.12' };
-if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_ctx.js":
-/*!******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_ctx.js ***!
-  \******************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// optional / simple context binding
-var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/library/modules/_a-function.js");
-module.exports = function (fn, that, length) {
-  aFunction(fn);
-  if (that === undefined) return fn;
-  switch (length) {
-    case 1: return function (a) {
-      return fn.call(that, a);
-    };
-    case 2: return function (a, b) {
-      return fn.call(that, a, b);
-    };
-    case 3: return function (a, b, c) {
-      return fn.call(that, a, b, c);
-    };
-  }
-  return function (/* ...args */) {
-    return fn.apply(that, arguments);
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_defined.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_defined.js ***!
-  \**********************************************************/
-/***/ (function(module) {
-
-// 7.2.1 RequireObjectCoercible(argument)
-module.exports = function (it) {
-  if (it == undefined) throw TypeError("Can't call method on  " + it);
-  return it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_descriptors.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_descriptors.js ***!
-  \**************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
-  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_dom-create.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_dom-create.js ***!
-  \*************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var document = (__webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").document);
-// typeof document.createElement is 'object' in old IE
-var is = isObject(document) && isObject(document.createElement);
-module.exports = function (it) {
-  return is ? document.createElement(it) : {};
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_enum-bug-keys.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_enum-bug-keys.js ***!
-  \****************************************************************/
-/***/ (function(module) {
-
-// IE 8- don't enum bug keys
-module.exports = (
-  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
-).split(',');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_export.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_export.js ***!
-  \*********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
-var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
-var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var PROTOTYPE = 'prototype';
-
-var $export = function (type, name, source) {
-  var IS_FORCED = type & $export.F;
-  var IS_GLOBAL = type & $export.G;
-  var IS_STATIC = type & $export.S;
-  var IS_PROTO = type & $export.P;
-  var IS_BIND = type & $export.B;
-  var IS_WRAP = type & $export.W;
-  var exports = IS_GLOBAL ? core : core[name] || (core[name] = {});
-  var expProto = exports[PROTOTYPE];
-  var target = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE];
-  var key, own, out;
-  if (IS_GLOBAL) source = name;
-  for (key in source) {
-    // contains in native
-    own = !IS_FORCED && target && target[key] !== undefined;
-    if (own && has(exports, key)) continue;
-    // export native or passed
-    out = own ? target[key] : source[key];
-    // prevent global pollution for namespaces
-    exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key]
-    // bind timers to global for call from export context
-    : IS_BIND && own ? ctx(out, global)
-    // wrap global constructors for prevent change them in library
-    : IS_WRAP && target[key] == out ? (function (C) {
-      var F = function (a, b, c) {
-        if (this instanceof C) {
-          switch (arguments.length) {
-            case 0: return new C();
-            case 1: return new C(a);
-            case 2: return new C(a, b);
-          } return new C(a, b, c);
-        } return C.apply(this, arguments);
-      };
-      F[PROTOTYPE] = C[PROTOTYPE];
-      return F;
-    // make static versions for prototype methods
-    })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
-    // export proto methods to core.%CONSTRUCTOR%.methods.%NAME%
-    if (IS_PROTO) {
-      (exports.virtual || (exports.virtual = {}))[key] = out;
-      // export proto methods to core.%CONSTRUCTOR%.prototype.%NAME%
-      if (type & $export.R && expProto && !expProto[key]) hide(expProto, key, out);
-    }
-  }
-};
-// type bitmap
-$export.F = 1;   // forced
-$export.G = 2;   // global
-$export.S = 4;   // static
-$export.P = 8;   // proto
-$export.B = 16;  // bind
-$export.W = 32;  // wrap
-$export.U = 64;  // safe
-$export.R = 128; // real proto method for `library`
-module.exports = $export;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_fails.js":
-/*!********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_fails.js ***!
-  \********************************************************/
-/***/ (function(module) {
-
-module.exports = function (exec) {
-  try {
-    return !!exec();
-  } catch (e) {
-    return true;
-  }
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_global.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_global.js ***!
-  \*********************************************************/
-/***/ (function(module) {
-
-// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-var global = module.exports = typeof window != 'undefined' && window.Math == Math
-  ? window : typeof self != 'undefined' && self.Math == Math ? self
-  // eslint-disable-next-line no-new-func
-  : Function('return this')();
-if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_has.js":
-/*!******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_has.js ***!
-  \******************************************************/
-/***/ (function(module) {
-
-var hasOwnProperty = {}.hasOwnProperty;
-module.exports = function (it, key) {
-  return hasOwnProperty.call(it, key);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_hide.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_hide.js ***!
-  \*******************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
-var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
-module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? function (object, key, value) {
-  return dP.f(object, key, createDesc(1, value));
-} : function (object, key, value) {
-  object[key] = value;
-  return object;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_html.js":
-/*!*******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_html.js ***!
-  \*******************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var document = (__webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").document);
-module.exports = document && document.documentElement;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_ie8-dom-define.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_ie8-dom-define.js ***!
-  \*****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") && !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
-  return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/library/modules/_dom-create.js")('div'), 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iobject.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_iobject.js ***!
-  \**********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js");
-// eslint-disable-next-line no-prototype-builtins
-module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
-  return cof(it) == 'String' ? it.split('') : Object(it);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_is-integer.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_is-integer.js ***!
-  \*************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// 20.1.2.3 Number.isInteger(number)
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var floor = Math.floor;
-module.exports = function isInteger(it) {
-  return !isObject(it) && isFinite(it) && floor(it) === it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_is-object.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_is-object.js ***!
-  \************************************************************/
-/***/ (function(module) {
-
-module.exports = function (it) {
-  return typeof it === 'object' ? it !== null : typeof it === 'function';
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_library.js":
-/*!**********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_library.js ***!
-  \**********************************************************/
-/***/ (function(module) {
-
-module.exports = true;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-assign.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-assign.js ***!
-  \****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-"use strict";
-
-// 19.1.2.1 Object.assign(target, source, ...)
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
-var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
-var gOPS = __webpack_require__(/*! ./_object-gops */ "./node_modules/core-js/library/modules/_object-gops.js");
-var pIE = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js");
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var IObject = __webpack_require__(/*! ./_iobject */ "./node_modules/core-js/library/modules/_iobject.js");
-var $assign = Object.assign;
-
-// should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
-  var A = {};
-  var B = {};
-  // eslint-disable-next-line no-undef
-  var S = Symbol();
-  var K = 'abcdefghijklmnopqrst';
-  A[S] = 7;
-  K.split('').forEach(function (k) { B[k] = k; });
-  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
-}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
-  var T = toObject(target);
-  var aLen = arguments.length;
-  var index = 1;
-  var getSymbols = gOPS.f;
-  var isEnum = pIE.f;
-  while (aLen > index) {
-    var S = IObject(arguments[index++]);
-    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
-    var length = keys.length;
-    var j = 0;
-    var key;
-    while (length > j) {
-      key = keys[j++];
-      if (!DESCRIPTORS || isEnum.call(S, key)) T[key] = S[key];
-    }
-  } return T;
-} : $assign;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-create.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-create.js ***!
-  \****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var dPs = __webpack_require__(/*! ./_object-dps */ "./node_modules/core-js/library/modules/_object-dps.js");
-var enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ "./node_modules/core-js/library/modules/_enum-bug-keys.js");
-var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/library/modules/_shared-key.js")('IE_PROTO');
-var Empty = function () { /* empty */ };
-var PROTOTYPE = 'prototype';
-
-// Create object with fake `null` prototype: use iframe Object with cleared prototype
-var createDict = function () {
-  // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/library/modules/_dom-create.js")('iframe');
-  var i = enumBugKeys.length;
-  var lt = '<';
-  var gt = '>';
-  var iframeDocument;
-  iframe.style.display = 'none';
-  (__webpack_require__(/*! ./_html */ "./node_modules/core-js/library/modules/_html.js").appendChild)(iframe);
-  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
-  // createDict = iframe.contentWindow.Object;
-  // html.removeChild(iframe);
-  iframeDocument = iframe.contentWindow.document;
-  iframeDocument.open();
-  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);
-  iframeDocument.close();
-  createDict = iframeDocument.F;
-  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];
-  return createDict();
-};
-
-module.exports = Object.create || function create(O, Properties) {
-  var result;
-  if (O !== null) {
-    Empty[PROTOTYPE] = anObject(O);
-    result = new Empty();
-    Empty[PROTOTYPE] = null;
-    // add "__proto__" for Object.getPrototypeOf polyfill
-    result[IE_PROTO] = O;
-  } else result = createDict();
-  return Properties === undefined ? result : dPs(result, Properties);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-dp.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-dp.js ***!
-  \************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ "./node_modules/core-js/library/modules/_ie8-dom-define.js");
-var toPrimitive = __webpack_require__(/*! ./_to-primitive */ "./node_modules/core-js/library/modules/_to-primitive.js");
-var dP = Object.defineProperty;
-
-exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? Object.defineProperty : function defineProperty(O, P, Attributes) {
-  anObject(O);
-  P = toPrimitive(P, true);
-  anObject(Attributes);
-  if (IE8_DOM_DEFINE) try {
-    return dP(O, P, Attributes);
-  } catch (e) { /* empty */ }
-  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
-  if ('value' in Attributes) O[P] = Attributes.value;
-  return O;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-dps.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-dps.js ***!
-  \*************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
-
-module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? Object.defineProperties : function defineProperties(O, Properties) {
-  anObject(O);
-  var keys = getKeys(Properties);
-  var length = keys.length;
-  var i = 0;
-  var P;
-  while (length > i) dP.f(O, P = keys[i++], Properties[P]);
-  return O;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-gopd.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-gopd.js ***!
-  \**************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
-
-var pIE = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js");
-var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var toPrimitive = __webpack_require__(/*! ./_to-primitive */ "./node_modules/core-js/library/modules/_to-primitive.js");
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ "./node_modules/core-js/library/modules/_ie8-dom-define.js");
-var gOPD = Object.getOwnPropertyDescriptor;
-
-exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? gOPD : function getOwnPropertyDescriptor(O, P) {
-  O = toIObject(O);
-  P = toPrimitive(P, true);
-  if (IE8_DOM_DEFINE) try {
-    return gOPD(O, P);
-  } catch (e) { /* empty */ }
-  if (has(O, P)) return createDesc(!pIE.f.call(O, P), O[P]);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-gops.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-gops.js ***!
-  \**************************************************************/
-/***/ (function(__unused_webpack_module, exports) {
-
-exports.f = Object.getOwnPropertySymbols;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-keys-internal.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-keys-internal.js ***!
-  \***********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var arrayIndexOf = __webpack_require__(/*! ./_array-includes */ "./node_modules/core-js/library/modules/_array-includes.js")(false);
-var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/library/modules/_shared-key.js")('IE_PROTO');
-
-module.exports = function (object, names) {
-  var O = toIObject(object);
-  var i = 0;
-  var result = [];
-  var key;
-  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);
-  // Don't enum bug & hidden keys
-  while (names.length > i) if (has(O, key = names[i++])) {
-    ~arrayIndexOf(result, key) || result.push(key);
-  }
-  return result;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-keys.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-keys.js ***!
-  \**************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(/*! ./_object-keys-internal */ "./node_modules/core-js/library/modules/_object-keys-internal.js");
-var enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ "./node_modules/core-js/library/modules/_enum-bug-keys.js");
-
-module.exports = Object.keys || function keys(O) {
-  return $keys(O, enumBugKeys);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-pie.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-pie.js ***!
-  \*************************************************************/
-/***/ (function(__unused_webpack_module, exports) {
-
-exports.f = {}.propertyIsEnumerable;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-sap.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-sap.js ***!
-  \*************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// most Object methods by ES6 should accept primitives
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
-var fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js");
-module.exports = function (KEY, exec) {
-  var fn = (core.Object || {})[KEY] || Object[KEY];
-  var exp = {};
-  exp[KEY] = exec(fn);
-  $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-to-array.js":
-/*!******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_object-to-array.js ***!
-  \******************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
-var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var isEnum = (__webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js").f);
-module.exports = function (isEntries) {
-  return function (it) {
-    var O = toIObject(it);
-    var keys = getKeys(O);
-    var length = keys.length;
-    var i = 0;
-    var result = [];
-    var key;
-    while (length > i) {
-      key = keys[i++];
-      if (!DESCRIPTORS || isEnum.call(O, key)) {
-        result.push(isEntries ? [key, O[key]] : O[key]);
-      }
-    }
-    return result;
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_property-desc.js":
-/*!****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_property-desc.js ***!
-  \****************************************************************/
-/***/ (function(module) {
-
-module.exports = function (bitmap, value) {
-  return {
-    enumerable: !(bitmap & 1),
-    configurable: !(bitmap & 2),
-    writable: !(bitmap & 4),
-    value: value
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_set-proto.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_set-proto.js ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// Works with __proto__ only. Old v8 can't work with null proto objects.
-/* eslint-disable no-proto */
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var check = function (O, proto) {
-  anObject(O);
-  if (!isObject(proto) && proto !== null) throw TypeError(proto + ": can't set as prototype!");
-};
-module.exports = {
-  set: Object.setPrototypeOf || ('__proto__' in {} ? // eslint-disable-line
-    function (test, buggy, set) {
-      try {
-        set = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js")(Function.call, (__webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js").f)(Object.prototype, '__proto__').set, 2);
-        set(test, []);
-        buggy = !(test instanceof Array);
-      } catch (e) { buggy = true; }
-      return function setPrototypeOf(O, proto) {
-        check(O, proto);
-        if (buggy) O.__proto__ = proto;
-        else set(O, proto);
-        return O;
-      };
-    }({}, false) : undefined),
-  check: check
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_shared-key.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_shared-key.js ***!
-  \*************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var shared = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/library/modules/_shared.js")('keys');
-var uid = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/library/modules/_uid.js");
-module.exports = function (key) {
-  return shared[key] || (shared[key] = uid(key));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_shared.js":
-/*!*********************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_shared.js ***!
-  \*********************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var SHARED = '__core-js_shared__';
-var store = global[SHARED] || (global[SHARED] = {});
-
-(module.exports = function (key, value) {
-  return store[key] || (store[key] = value !== undefined ? value : {});
-})('versions', []).push({
-  version: core.version,
-  mode: __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js") ? 'pure' : 'global',
-  copyright: '© 2020 Denis Pushkarev (zloirock.ru)'
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-absolute-index.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_to-absolute-index.js ***!
-  \********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/library/modules/_to-integer.js");
-var max = Math.max;
-var min = Math.min;
-module.exports = function (index, length) {
-  index = toInteger(index);
-  return index < 0 ? max(index + length, 0) : min(index, length);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-integer.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_to-integer.js ***!
-  \*************************************************************/
-/***/ (function(module) {
-
-// 7.1.4 ToInteger
-var ceil = Math.ceil;
-var floor = Math.floor;
-module.exports = function (it) {
-  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-iobject.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_to-iobject.js ***!
-  \*************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(/*! ./_iobject */ "./node_modules/core-js/library/modules/_iobject.js");
-var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
-module.exports = function (it) {
-  return IObject(defined(it));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-length.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_to-length.js ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// 7.1.15 ToLength
-var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/library/modules/_to-integer.js");
-var min = Math.min;
-module.exports = function (it) {
-  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-object.js":
-/*!************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_to-object.js ***!
-  \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// 7.1.13 ToObject(argument)
-var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
-module.exports = function (it) {
-  return Object(defined(it));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-primitive.js":
-/*!***************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_to-primitive.js ***!
-  \***************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-// 7.1.1 ToPrimitive(input [, PreferredType])
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-// instead of the ES6 spec version, we didn't implement @@toPrimitive case
-// and the second argument - flag - preferred type is a string
-module.exports = function (it, S) {
-  if (!isObject(it)) return it;
-  var fn, val;
-  if (S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
-  if (typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it))) return val;
-  if (!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
-  throw TypeError("Can't convert object to primitive value");
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_uid.js":
-/*!******************************************************!*\
-  !*** ./node_modules/core-js/library/modules/_uid.js ***!
-  \******************************************************/
-/***/ (function(module) {
-
-var id = 0;
-var px = Math.random();
-module.exports = function (key) {
-  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.date.now.js":
-/*!**************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.date.now.js ***!
-  \**************************************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-// 20.3.3.1 / 15.9.4.4 Date.now()
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-
-$export($export.S, 'Date', { now: function () { return new Date().getTime(); } });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.number.is-integer.js":
-/*!***********************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.number.is-integer.js ***!
-  \***********************************************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-// 20.1.2.3 Number.isInteger(number)
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-
-$export($export.S, 'Number', { isInteger: __webpack_require__(/*! ./_is-integer */ "./node_modules/core-js/library/modules/_is-integer.js") });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.assign.js ***!
-  \*******************************************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-// 19.1.3.1 Object.assign(target, source)
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_object-assign */ "./node_modules/core-js/library/modules/_object-assign.js") });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.create.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.create.js ***!
-  \*******************************************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-$export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/library/modules/_object-create.js") });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.keys.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.keys.js ***!
-  \*****************************************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-// 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var $keys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('keys', function () {
-  return function keys(it) {
-    return $keys(toObject(it));
-  };
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.set-prototype-of.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es6.object.set-prototype-of.js ***!
-  \*****************************************************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-// 19.1.3.19 Object.setPrototypeOf(O, proto)
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-$export($export.S, 'Object', { setPrototypeOf: (__webpack_require__(/*! ./_set-proto */ "./node_modules/core-js/library/modules/_set-proto.js").set) });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.object.values.js":
-/*!*******************************************************************!*\
-  !*** ./node_modules/core-js/library/modules/es7.object.values.js ***!
-  \*******************************************************************/
-/***/ (function(__unused_webpack_module, __unused_webpack_exports, __webpack_require__) {
-
-// https://github.com/tc39/proposal-object-values-entries
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var $values = __webpack_require__(/*! ./_object-to-array */ "./node_modules/core-js/library/modules/_object-to-array.js")(false);
-
-$export($export.S, 'Object', {
-  values: function values(it) {
-    return $values(it);
-  }
-});
-
-
-/***/ }),
-
 /***/ "./node_modules/css-box-model/dist/css-box-model.esm.js":
 /*!**************************************************************!*\
   !*** ./node_modules/css-box-model/dist/css-box-model.esm.js ***!
   \**************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "calculateBox": function() { return /* binding */ calculateBox; },
-/* harmony export */   "createBox": function() { return /* binding */ createBox; },
-/* harmony export */   "expand": function() { return /* binding */ expand; },
-/* harmony export */   "getBox": function() { return /* binding */ getBox; },
-/* harmony export */   "getRect": function() { return /* binding */ getRect; },
-/* harmony export */   "offset": function() { return /* binding */ offset; },
-/* harmony export */   "shrink": function() { return /* binding */ shrink; },
-/* harmony export */   "withScroll": function() { return /* binding */ withScroll; }
+/* harmony export */   "calculateBox": () => (/* binding */ calculateBox),
+/* harmony export */   "createBox": () => (/* binding */ createBox),
+/* harmony export */   "expand": () => (/* binding */ expand),
+/* harmony export */   "getBox": () => (/* binding */ getBox),
+/* harmony export */   "getRect": () => (/* binding */ getRect),
+/* harmony export */   "offset": () => (/* binding */ offset),
+/* harmony export */   "shrink": () => (/* binding */ shrink),
+/* harmony export */   "withScroll": () => (/* binding */ withScroll)
 /* harmony export */ });
 /* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tiny-invariant */ "./node_modules/tiny-invariant/dist/esm/tiny-invariant.js");
 
@@ -12731,7 +11730,7 @@ var getBox = function getBox(el) {
 /*!******************************************************!*\
   !*** ./node_modules/function-bind/implementation.js ***!
   \******************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -12794,7 +11793,7 @@ module.exports = function bind(that) {
 /*!*********************************************!*\
   !*** ./node_modules/function-bind/index.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -12810,7 +11809,7 @@ module.exports = Function.prototype.bind || implementation;
 /*!*********************************************!*\
   !*** ./node_modules/get-intrinsic/index.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -12858,23 +11857,18 @@ var ThrowTypeError = $gOPD
 	: throwTypeError;
 
 var hasSymbols = __webpack_require__(/*! has-symbols */ "./node_modules/has-symbols/index.js")();
-var hasProto = __webpack_require__(/*! has-proto */ "./node_modules/has-proto/index.js")();
 
-var getProto = Object.getPrototypeOf || (
-	hasProto
-		? function (x) { return x.__proto__; } // eslint-disable-line no-proto
-		: null
-);
+var getProto = Object.getPrototypeOf || function (x) { return x.__proto__; }; // eslint-disable-line no-proto
 
 var needsEval = {};
 
-var TypedArray = typeof Uint8Array === 'undefined' || !getProto ? undefined : getProto(Uint8Array);
+var TypedArray = typeof Uint8Array === 'undefined' ? undefined : getProto(Uint8Array);
 
 var INTRINSICS = {
 	'%AggregateError%': typeof AggregateError === 'undefined' ? undefined : AggregateError,
 	'%Array%': Array,
 	'%ArrayBuffer%': typeof ArrayBuffer === 'undefined' ? undefined : ArrayBuffer,
-	'%ArrayIteratorPrototype%': hasSymbols && getProto ? getProto([][Symbol.iterator]()) : undefined,
+	'%ArrayIteratorPrototype%': hasSymbols ? getProto([][Symbol.iterator]()) : undefined,
 	'%AsyncFromSyncIteratorPrototype%': undefined,
 	'%AsyncFunction%': needsEval,
 	'%AsyncGenerator%': needsEval,
@@ -12904,10 +11898,10 @@ var INTRINSICS = {
 	'%Int32Array%': typeof Int32Array === 'undefined' ? undefined : Int32Array,
 	'%isFinite%': isFinite,
 	'%isNaN%': isNaN,
-	'%IteratorPrototype%': hasSymbols && getProto ? getProto(getProto([][Symbol.iterator]())) : undefined,
+	'%IteratorPrototype%': hasSymbols ? getProto(getProto([][Symbol.iterator]())) : undefined,
 	'%JSON%': typeof JSON === 'object' ? JSON : undefined,
 	'%Map%': typeof Map === 'undefined' ? undefined : Map,
-	'%MapIteratorPrototype%': typeof Map === 'undefined' || !hasSymbols || !getProto ? undefined : getProto(new Map()[Symbol.iterator]()),
+	'%MapIteratorPrototype%': typeof Map === 'undefined' || !hasSymbols ? undefined : getProto(new Map()[Symbol.iterator]()),
 	'%Math%': Math,
 	'%Number%': Number,
 	'%Object%': Object,
@@ -12920,10 +11914,10 @@ var INTRINSICS = {
 	'%Reflect%': typeof Reflect === 'undefined' ? undefined : Reflect,
 	'%RegExp%': RegExp,
 	'%Set%': typeof Set === 'undefined' ? undefined : Set,
-	'%SetIteratorPrototype%': typeof Set === 'undefined' || !hasSymbols || !getProto ? undefined : getProto(new Set()[Symbol.iterator]()),
+	'%SetIteratorPrototype%': typeof Set === 'undefined' || !hasSymbols ? undefined : getProto(new Set()[Symbol.iterator]()),
 	'%SharedArrayBuffer%': typeof SharedArrayBuffer === 'undefined' ? undefined : SharedArrayBuffer,
 	'%String%': String,
-	'%StringIteratorPrototype%': hasSymbols && getProto ? getProto(''[Symbol.iterator]()) : undefined,
+	'%StringIteratorPrototype%': hasSymbols ? getProto(''[Symbol.iterator]()) : undefined,
 	'%Symbol%': hasSymbols ? Symbol : undefined,
 	'%SyntaxError%': $SyntaxError,
 	'%ThrowTypeError%': ThrowTypeError,
@@ -12939,14 +11933,12 @@ var INTRINSICS = {
 	'%WeakSet%': typeof WeakSet === 'undefined' ? undefined : WeakSet
 };
 
-if (getProto) {
-	try {
-		null.error; // eslint-disable-line no-unused-expressions
-	} catch (e) {
-		// https://github.com/tc39/proposal-shadowrealm/pull/384#issuecomment-1364264229
-		var errorProto = getProto(getProto(e));
-		INTRINSICS['%Error.prototype%'] = errorProto;
-	}
+try {
+	null.error; // eslint-disable-line no-unused-expressions
+} catch (e) {
+	// https://github.com/tc39/proposal-shadowrealm/pull/384#issuecomment-1364264229
+	var errorProto = getProto(getProto(e));
+	INTRINSICS['%Error.prototype%'] = errorProto;
 }
 
 var doEval = function doEval(name) {
@@ -12964,7 +11956,7 @@ var doEval = function doEval(name) {
 		}
 	} else if (name === '%AsyncIteratorPrototype%') {
 		var gen = doEval('%AsyncGenerator%');
-		if (gen && getProto) {
+		if (gen) {
 			value = getProto(gen.prototype);
 		}
 	}
@@ -13168,33 +12160,11 @@ module.exports = function GetIntrinsic(name, allowMissing) {
 
 /***/ }),
 
-/***/ "./node_modules/has-proto/index.js":
-/*!*****************************************!*\
-  !*** ./node_modules/has-proto/index.js ***!
-  \*****************************************/
-/***/ (function(module) {
-
-"use strict";
-
-
-var test = {
-	foo: {}
-};
-
-var $Object = Object;
-
-module.exports = function hasProto() {
-	return { __proto__: test }.foo === test.foo && !({ __proto__: null } instanceof $Object);
-};
-
-
-/***/ }),
-
 /***/ "./node_modules/has-symbols/index.js":
 /*!*******************************************!*\
   !*** ./node_modules/has-symbols/index.js ***!
   \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -13218,7 +12188,7 @@ module.exports = function hasNativeSymbols() {
 /*!*******************************************!*\
   !*** ./node_modules/has-symbols/shams.js ***!
   \*******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -13271,7 +12241,7 @@ module.exports = function hasSymbols() {
 /*!***************************************!*\
   !*** ./node_modules/has/src/index.js ***!
   \***************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -13287,7 +12257,7 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 /*!**********************************************************************************!*\
   !*** ./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
   \**********************************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -13401,74 +12371,75 @@ module.exports = hoistNonReactStatics;
 /*!*****************************************************!*\
   !*** ./node_modules/immutable/dist/immutable.es.js ***!
   \*****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Collection": function() { return /* binding */ Collection; },
-/* harmony export */   "Iterable": function() { return /* binding */ Iterable; },
-/* harmony export */   "List": function() { return /* binding */ List; },
-/* harmony export */   "Map": function() { return /* binding */ Map; },
-/* harmony export */   "OrderedMap": function() { return /* binding */ OrderedMap; },
-/* harmony export */   "OrderedSet": function() { return /* binding */ OrderedSet; },
-/* harmony export */   "PairSorting": function() { return /* binding */ PairSorting; },
-/* harmony export */   "Range": function() { return /* binding */ Range; },
-/* harmony export */   "Record": function() { return /* binding */ Record; },
-/* harmony export */   "Repeat": function() { return /* binding */ Repeat; },
-/* harmony export */   "Seq": function() { return /* binding */ Seq; },
-/* harmony export */   "Set": function() { return /* binding */ Set; },
-/* harmony export */   "Stack": function() { return /* binding */ Stack; },
-/* harmony export */   "fromJS": function() { return /* binding */ fromJS; },
-/* harmony export */   "get": function() { return /* binding */ get; },
-/* harmony export */   "getIn": function() { return /* binding */ getIn$1; },
-/* harmony export */   "has": function() { return /* binding */ has; },
-/* harmony export */   "hasIn": function() { return /* binding */ hasIn$1; },
-/* harmony export */   "hash": function() { return /* binding */ hash; },
-/* harmony export */   "is": function() { return /* binding */ is; },
-/* harmony export */   "isAssociative": function() { return /* binding */ isAssociative; },
-/* harmony export */   "isCollection": function() { return /* binding */ isCollection; },
-/* harmony export */   "isImmutable": function() { return /* binding */ isImmutable; },
-/* harmony export */   "isIndexed": function() { return /* binding */ isIndexed; },
-/* harmony export */   "isKeyed": function() { return /* binding */ isKeyed; },
-/* harmony export */   "isList": function() { return /* binding */ isList; },
-/* harmony export */   "isMap": function() { return /* binding */ isMap; },
-/* harmony export */   "isOrdered": function() { return /* binding */ isOrdered; },
-/* harmony export */   "isOrderedMap": function() { return /* binding */ isOrderedMap; },
-/* harmony export */   "isOrderedSet": function() { return /* binding */ isOrderedSet; },
-/* harmony export */   "isPlainObject": function() { return /* binding */ isPlainObject; },
-/* harmony export */   "isRecord": function() { return /* binding */ isRecord; },
-/* harmony export */   "isSeq": function() { return /* binding */ isSeq; },
-/* harmony export */   "isSet": function() { return /* binding */ isSet; },
-/* harmony export */   "isStack": function() { return /* binding */ isStack; },
-/* harmony export */   "isValueObject": function() { return /* binding */ isValueObject; },
-/* harmony export */   "merge": function() { return /* binding */ merge; },
-/* harmony export */   "mergeDeep": function() { return /* binding */ mergeDeep$1; },
-/* harmony export */   "mergeDeepWith": function() { return /* binding */ mergeDeepWith$1; },
-/* harmony export */   "mergeWith": function() { return /* binding */ mergeWith; },
-/* harmony export */   "remove": function() { return /* binding */ remove; },
-/* harmony export */   "removeIn": function() { return /* binding */ removeIn; },
-/* harmony export */   "set": function() { return /* binding */ set; },
-/* harmony export */   "setIn": function() { return /* binding */ setIn$1; },
-/* harmony export */   "update": function() { return /* binding */ update$1; },
-/* harmony export */   "updateIn": function() { return /* binding */ updateIn$1; },
-/* harmony export */   "version": function() { return /* binding */ version; }
+/* harmony export */   "Collection": () => (/* binding */ Collection),
+/* harmony export */   "Iterable": () => (/* binding */ Iterable),
+/* harmony export */   "List": () => (/* binding */ List),
+/* harmony export */   "Map": () => (/* binding */ Map),
+/* harmony export */   "OrderedMap": () => (/* binding */ OrderedMap),
+/* harmony export */   "OrderedSet": () => (/* binding */ OrderedSet),
+/* harmony export */   "PairSorting": () => (/* binding */ PairSorting),
+/* harmony export */   "Range": () => (/* binding */ Range),
+/* harmony export */   "Record": () => (/* binding */ Record),
+/* harmony export */   "Repeat": () => (/* binding */ Repeat),
+/* harmony export */   "Seq": () => (/* binding */ Seq),
+/* harmony export */   "Set": () => (/* binding */ Set),
+/* harmony export */   "Stack": () => (/* binding */ Stack),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "fromJS": () => (/* binding */ fromJS),
+/* harmony export */   "get": () => (/* binding */ get),
+/* harmony export */   "getIn": () => (/* binding */ getIn$1),
+/* harmony export */   "has": () => (/* binding */ has),
+/* harmony export */   "hasIn": () => (/* binding */ hasIn$1),
+/* harmony export */   "hash": () => (/* binding */ hash),
+/* harmony export */   "is": () => (/* binding */ is),
+/* harmony export */   "isAssociative": () => (/* binding */ isAssociative),
+/* harmony export */   "isCollection": () => (/* binding */ isCollection),
+/* harmony export */   "isImmutable": () => (/* binding */ isImmutable),
+/* harmony export */   "isIndexed": () => (/* binding */ isIndexed),
+/* harmony export */   "isKeyed": () => (/* binding */ isKeyed),
+/* harmony export */   "isList": () => (/* binding */ isList),
+/* harmony export */   "isMap": () => (/* binding */ isMap),
+/* harmony export */   "isOrdered": () => (/* binding */ isOrdered),
+/* harmony export */   "isOrderedMap": () => (/* binding */ isOrderedMap),
+/* harmony export */   "isOrderedSet": () => (/* binding */ isOrderedSet),
+/* harmony export */   "isPlainObject": () => (/* binding */ isPlainObject),
+/* harmony export */   "isRecord": () => (/* binding */ isRecord),
+/* harmony export */   "isSeq": () => (/* binding */ isSeq),
+/* harmony export */   "isSet": () => (/* binding */ isSet),
+/* harmony export */   "isStack": () => (/* binding */ isStack),
+/* harmony export */   "isValueObject": () => (/* binding */ isValueObject),
+/* harmony export */   "merge": () => (/* binding */ merge),
+/* harmony export */   "mergeDeep": () => (/* binding */ mergeDeep$1),
+/* harmony export */   "mergeDeepWith": () => (/* binding */ mergeDeepWith$1),
+/* harmony export */   "mergeWith": () => (/* binding */ mergeWith),
+/* harmony export */   "remove": () => (/* binding */ remove),
+/* harmony export */   "removeIn": () => (/* binding */ removeIn),
+/* harmony export */   "set": () => (/* binding */ set),
+/* harmony export */   "setIn": () => (/* binding */ setIn$1),
+/* harmony export */   "update": () => (/* binding */ update$1),
+/* harmony export */   "updateIn": () => (/* binding */ updateIn$1),
+/* harmony export */   "version": () => (/* binding */ version)
 /* harmony export */ });
 /**
  * MIT License
- *
+ * 
  * Copyright (c) 2014-present, Lee Byron and other contributors.
- *
+ * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
  * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
  * copies of the Software, and to permit persons to whom the Software is
  * furnished to do so, subject to the following conditions:
- *
+ * 
  * The above copyright notice and this permission notice shall be included in all
  * copies or substantial portions of the Software.
- *
+ * 
  * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
  * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -19409,68 +18380,8 @@ var Immutable = {
 // Note: Iterable is deprecated
 var Iterable = Collection;
 
-/* harmony default export */ __webpack_exports__["default"] = (Immutable);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Immutable);
 
-
-
-/***/ }),
-
-/***/ "./node_modules/invariant/browser.js":
-/*!*******************************************!*\
-  !*** ./node_modules/invariant/browser.js ***!
-  \*******************************************/
-/***/ (function(module) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-var invariant = function(condition, format, a, b, c, d, e, f) {
-  if (true) {
-    if (format === undefined) {
-      throw new Error('invariant requires an error message argument');
-    }
-  }
-
-  if (!condition) {
-    var error;
-    if (format === undefined) {
-      error = new Error(
-        'Minified exception occurred; use the non-minified dev environment ' +
-        'for the full error message and additional helpful warnings.'
-      );
-    } else {
-      var args = [a, b, c, d, e, f];
-      var argIndex = 0;
-      error = new Error(
-        format.replace(/%s/g, function() { return args[argIndex++]; })
-      );
-      error.name = 'Invariant Violation';
-    }
-
-    error.framesToPop = 1; // we don't care about invariant's own frame
-    throw error;
-  }
-};
-
-module.exports = invariant;
 
 
 /***/ }),
@@ -19479,7 +18390,7 @@ module.exports = invariant;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_DataView.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -19496,7 +18407,7 @@ module.exports = DataView;
 /*!**************************************!*\
   !*** ./node_modules/lodash/_Hash.js ***!
   \**************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var hashClear = __webpack_require__(/*! ./_hashClear */ "./node_modules/lodash/_hashClear.js"),
     hashDelete = __webpack_require__(/*! ./_hashDelete */ "./node_modules/lodash/_hashDelete.js"),
@@ -19538,7 +18449,7 @@ module.exports = Hash;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_ListCache.js ***!
   \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var listCacheClear = __webpack_require__(/*! ./_listCacheClear */ "./node_modules/lodash/_listCacheClear.js"),
     listCacheDelete = __webpack_require__(/*! ./_listCacheDelete */ "./node_modules/lodash/_listCacheDelete.js"),
@@ -19580,7 +18491,7 @@ module.exports = ListCache;
 /*!*************************************!*\
   !*** ./node_modules/lodash/_Map.js ***!
   \*************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -19597,7 +18508,7 @@ module.exports = Map;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_MapCache.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var mapCacheClear = __webpack_require__(/*! ./_mapCacheClear */ "./node_modules/lodash/_mapCacheClear.js"),
     mapCacheDelete = __webpack_require__(/*! ./_mapCacheDelete */ "./node_modules/lodash/_mapCacheDelete.js"),
@@ -19639,7 +18550,7 @@ module.exports = MapCache;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_Promise.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -19656,7 +18567,7 @@ module.exports = Promise;
 /*!*************************************!*\
   !*** ./node_modules/lodash/_Set.js ***!
   \*************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -19673,7 +18584,7 @@ module.exports = Set;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_SetCache.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var MapCache = __webpack_require__(/*! ./_MapCache */ "./node_modules/lodash/_MapCache.js"),
     setCacheAdd = __webpack_require__(/*! ./_setCacheAdd */ "./node_modules/lodash/_setCacheAdd.js"),
@@ -19710,7 +18621,7 @@ module.exports = SetCache;
 /*!***************************************!*\
   !*** ./node_modules/lodash/_Stack.js ***!
   \***************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
     stackClear = __webpack_require__(/*! ./_stackClear */ "./node_modules/lodash/_stackClear.js"),
@@ -19747,7 +18658,7 @@ module.exports = Stack;
 /*!****************************************!*\
   !*** ./node_modules/lodash/_Symbol.js ***!
   \****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
 
@@ -19763,7 +18674,7 @@ module.exports = Symbol;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_Uint8Array.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
 
@@ -19779,7 +18690,7 @@ module.exports = Uint8Array;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_WeakMap.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -19796,7 +18707,7 @@ module.exports = WeakMap;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_arrayFilter.js ***!
   \*********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * A specialized version of `_.filter` for arrays without support for
@@ -19831,7 +18742,7 @@ module.exports = arrayFilter;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_arrayLikeKeys.js ***!
   \***********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseTimes = __webpack_require__(/*! ./_baseTimes */ "./node_modules/lodash/_baseTimes.js"),
     isArguments = __webpack_require__(/*! ./isArguments */ "./node_modules/lodash/isArguments.js"),
@@ -19890,7 +18801,7 @@ module.exports = arrayLikeKeys;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_arrayMap.js ***!
   \******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * A specialized version of `_.map` for arrays without support for iteratee
@@ -19921,7 +18832,7 @@ module.exports = arrayMap;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_arrayPush.js ***!
   \*******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Appends the elements of `values` to `array`.
@@ -19951,7 +18862,7 @@ module.exports = arrayPush;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_arraySome.js ***!
   \*******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * A specialized version of `_.some` for arrays without support for iteratee
@@ -19984,7 +18895,7 @@ module.exports = arraySome;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_assocIndexOf.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var eq = __webpack_require__(/*! ./eq */ "./node_modules/lodash/eq.js");
 
@@ -20015,7 +18926,7 @@ module.exports = assocIndexOf;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_baseAssignValue.js ***!
   \*************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var defineProperty = __webpack_require__(/*! ./_defineProperty */ "./node_modules/lodash/_defineProperty.js");
 
@@ -20050,7 +18961,7 @@ module.exports = baseAssignValue;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_baseFor.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var createBaseFor = __webpack_require__(/*! ./_createBaseFor */ "./node_modules/lodash/_createBaseFor.js");
 
@@ -20076,7 +18987,7 @@ module.exports = baseFor;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_baseForOwn.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseFor = __webpack_require__(/*! ./_baseFor */ "./node_modules/lodash/_baseFor.js"),
     keys = __webpack_require__(/*! ./keys */ "./node_modules/lodash/keys.js");
@@ -20102,7 +19013,7 @@ module.exports = baseForOwn;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_baseGet.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var castPath = __webpack_require__(/*! ./_castPath */ "./node_modules/lodash/_castPath.js"),
     toKey = __webpack_require__(/*! ./_toKey */ "./node_modules/lodash/_toKey.js");
@@ -20136,7 +19047,7 @@ module.exports = baseGet;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_baseGetAllKeys.js ***!
   \************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var arrayPush = __webpack_require__(/*! ./_arrayPush */ "./node_modules/lodash/_arrayPush.js"),
     isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js");
@@ -20166,7 +19077,7 @@ module.exports = baseGetAllKeys;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_baseGetTag.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
     getRawTag = __webpack_require__(/*! ./_getRawTag */ "./node_modules/lodash/_getRawTag.js"),
@@ -20204,7 +19115,7 @@ module.exports = baseGetTag;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseHasIn.js ***!
   \*******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * The base implementation of `_.hasIn` without support for deep paths.
@@ -20227,7 +19138,7 @@ module.exports = baseHasIn;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_baseIsArguments.js ***!
   \*************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -20255,7 +19166,7 @@ module.exports = baseIsArguments;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_baseIsEqual.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseIsEqualDeep = __webpack_require__(/*! ./_baseIsEqualDeep */ "./node_modules/lodash/_baseIsEqualDeep.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -20293,7 +19204,7 @@ module.exports = baseIsEqual;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_baseIsEqualDeep.js ***!
   \*************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var Stack = __webpack_require__(/*! ./_Stack */ "./node_modules/lodash/_Stack.js"),
     equalArrays = __webpack_require__(/*! ./_equalArrays */ "./node_modules/lodash/_equalArrays.js"),
@@ -20386,7 +19297,7 @@ module.exports = baseIsEqualDeep;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_baseIsMatch.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var Stack = __webpack_require__(/*! ./_Stack */ "./node_modules/lodash/_Stack.js"),
     baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ "./node_modules/lodash/_baseIsEqual.js");
@@ -20458,7 +19369,7 @@ module.exports = baseIsMatch;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseIsNative.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isFunction = __webpack_require__(/*! ./isFunction */ "./node_modules/lodash/isFunction.js"),
     isMasked = __webpack_require__(/*! ./_isMasked */ "./node_modules/lodash/_isMasked.js"),
@@ -20515,7 +19426,7 @@ module.exports = baseIsNative;
 /*!**************************************************!*\
   !*** ./node_modules/lodash/_baseIsTypedArray.js ***!
   \**************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isLength = __webpack_require__(/*! ./isLength */ "./node_modules/lodash/isLength.js"),
@@ -20585,7 +19496,7 @@ module.exports = baseIsTypedArray;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseIteratee.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseMatches = __webpack_require__(/*! ./_baseMatches */ "./node_modules/lodash/_baseMatches.js"),
     baseMatchesProperty = __webpack_require__(/*! ./_baseMatchesProperty */ "./node_modules/lodash/_baseMatchesProperty.js"),
@@ -20626,7 +19537,7 @@ module.exports = baseIteratee;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_baseKeys.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isPrototype = __webpack_require__(/*! ./_isPrototype */ "./node_modules/lodash/_isPrototype.js"),
     nativeKeys = __webpack_require__(/*! ./_nativeKeys */ "./node_modules/lodash/_nativeKeys.js");
@@ -20666,7 +19577,7 @@ module.exports = baseKeys;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_baseMatches.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseIsMatch = __webpack_require__(/*! ./_baseIsMatch */ "./node_modules/lodash/_baseIsMatch.js"),
     getMatchData = __webpack_require__(/*! ./_getMatchData */ "./node_modules/lodash/_getMatchData.js"),
@@ -20698,7 +19609,7 @@ module.exports = baseMatches;
 /*!*****************************************************!*\
   !*** ./node_modules/lodash/_baseMatchesProperty.js ***!
   \*****************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ "./node_modules/lodash/_baseIsEqual.js"),
     get = __webpack_require__(/*! ./get */ "./node_modules/lodash/get.js"),
@@ -20741,7 +19652,7 @@ module.exports = baseMatchesProperty;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseProperty.js ***!
   \**********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * The base implementation of `_.property` without support for deep paths.
@@ -20765,7 +19676,7 @@ module.exports = baseProperty;
 /*!**************************************************!*\
   !*** ./node_modules/lodash/_basePropertyDeep.js ***!
   \**************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseGet = __webpack_require__(/*! ./_baseGet */ "./node_modules/lodash/_baseGet.js");
 
@@ -20791,7 +19702,7 @@ module.exports = basePropertyDeep;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseTimes.js ***!
   \*******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * The base implementation of `_.times` without support for iteratee shorthands
@@ -20821,7 +19732,7 @@ module.exports = baseTimes;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseToString.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
     arrayMap = __webpack_require__(/*! ./_arrayMap */ "./node_modules/lodash/_arrayMap.js"),
@@ -20868,7 +19779,7 @@ module.exports = baseToString;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseUnary.js ***!
   \*******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * The base implementation of `_.unary` without support for storing metadata.
@@ -20892,7 +19803,7 @@ module.exports = baseUnary;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_cacheHas.js ***!
   \******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Checks if a `cache` value for `key` exists.
@@ -20915,7 +19826,7 @@ module.exports = cacheHas;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_castPath.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
     isKey = __webpack_require__(/*! ./_isKey */ "./node_modules/lodash/_isKey.js"),
@@ -20946,7 +19857,7 @@ module.exports = castPath;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_coreJsData.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
 
@@ -20962,7 +19873,7 @@ module.exports = coreJsData;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_createBaseFor.js ***!
   \***********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Creates a base function for methods like `_.forIn` and `_.forOwn`.
@@ -20997,7 +19908,7 @@ module.exports = createBaseFor;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_defineProperty.js ***!
   \************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js");
 
@@ -21018,7 +19929,7 @@ module.exports = defineProperty;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_equalArrays.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var SetCache = __webpack_require__(/*! ./_SetCache */ "./node_modules/lodash/_SetCache.js"),
     arraySome = __webpack_require__(/*! ./_arraySome */ "./node_modules/lodash/_arraySome.js"),
@@ -21112,7 +20023,7 @@ module.exports = equalArrays;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_equalByTag.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
     Uint8Array = __webpack_require__(/*! ./_Uint8Array */ "./node_modules/lodash/_Uint8Array.js"),
@@ -21234,7 +20145,7 @@ module.exports = equalByTag;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_equalObjects.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getAllKeys = __webpack_require__(/*! ./_getAllKeys */ "./node_modules/lodash/_getAllKeys.js");
 
@@ -21334,7 +20245,7 @@ module.exports = equalObjects;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_freeGlobal.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /** Detect free variable `global` from Node.js. */
 var freeGlobal = typeof __webpack_require__.g == 'object' && __webpack_require__.g && __webpack_require__.g.Object === Object && __webpack_require__.g;
@@ -21348,7 +20259,7 @@ module.exports = freeGlobal;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_getAllKeys.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseGetAllKeys = __webpack_require__(/*! ./_baseGetAllKeys */ "./node_modules/lodash/_baseGetAllKeys.js"),
     getSymbols = __webpack_require__(/*! ./_getSymbols */ "./node_modules/lodash/_getSymbols.js"),
@@ -21374,7 +20285,7 @@ module.exports = getAllKeys;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_getMapData.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isKeyable = __webpack_require__(/*! ./_isKeyable */ "./node_modules/lodash/_isKeyable.js");
 
@@ -21402,7 +20313,7 @@ module.exports = getMapData;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_getMatchData.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ "./node_modules/lodash/_isStrictComparable.js"),
     keys = __webpack_require__(/*! ./keys */ "./node_modules/lodash/keys.js");
@@ -21436,7 +20347,7 @@ module.exports = getMatchData;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_getNative.js ***!
   \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseIsNative = __webpack_require__(/*! ./_baseIsNative */ "./node_modules/lodash/_baseIsNative.js"),
     getValue = __webpack_require__(/*! ./_getValue */ "./node_modules/lodash/_getValue.js");
@@ -21463,7 +20374,7 @@ module.exports = getNative;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_getRawTag.js ***!
   \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js");
 
@@ -21519,7 +20430,7 @@ module.exports = getRawTag;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_getSymbols.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var arrayFilter = __webpack_require__(/*! ./_arrayFilter */ "./node_modules/lodash/_arrayFilter.js"),
     stubArray = __webpack_require__(/*! ./stubArray */ "./node_modules/lodash/stubArray.js");
@@ -21559,7 +20470,7 @@ module.exports = getSymbols;
 /*!****************************************!*\
   !*** ./node_modules/lodash/_getTag.js ***!
   \****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var DataView = __webpack_require__(/*! ./_DataView */ "./node_modules/lodash/_DataView.js"),
     Map = __webpack_require__(/*! ./_Map */ "./node_modules/lodash/_Map.js"),
@@ -21627,7 +20538,7 @@ module.exports = getTag;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_getValue.js ***!
   \******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Gets the value at `key` of `object`.
@@ -21650,7 +20561,7 @@ module.exports = getValue;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_hasPath.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var castPath = __webpack_require__(/*! ./_castPath */ "./node_modules/lodash/_castPath.js"),
     isArguments = __webpack_require__(/*! ./isArguments */ "./node_modules/lodash/isArguments.js"),
@@ -21699,7 +20610,7 @@ module.exports = hasPath;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_hashClear.js ***!
   \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
 
@@ -21724,7 +20635,7 @@ module.exports = hashClear;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_hashDelete.js ***!
   \********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Removes `key` and its value from the hash.
@@ -21751,7 +20662,7 @@ module.exports = hashDelete;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_hashGet.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
 
@@ -21791,7 +20702,7 @@ module.exports = hashGet;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_hashHas.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
 
@@ -21824,7 +20735,7 @@ module.exports = hashHas;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_hashSet.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
 
@@ -21857,7 +20768,7 @@ module.exports = hashSet;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_isIndex.js ***!
   \*****************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /** Used as references for various `Number` constants. */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -21892,7 +20803,7 @@ module.exports = isIndex;
 /*!***************************************!*\
   !*** ./node_modules/lodash/_isKey.js ***!
   \***************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
     isSymbol = __webpack_require__(/*! ./isSymbol */ "./node_modules/lodash/isSymbol.js");
@@ -21931,7 +20842,7 @@ module.exports = isKey;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_isKeyable.js ***!
   \*******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Checks if `value` is suitable for use as unique object key.
@@ -21956,7 +20867,7 @@ module.exports = isKeyable;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_isMasked.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var coreJsData = __webpack_require__(/*! ./_coreJsData */ "./node_modules/lodash/_coreJsData.js");
 
@@ -21986,7 +20897,7 @@ module.exports = isMasked;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_isPrototype.js ***!
   \*********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -22014,7 +20925,7 @@ module.exports = isPrototype;
 /*!****************************************************!*\
   !*** ./node_modules/lodash/_isStrictComparable.js ***!
   \****************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js");
 
@@ -22039,7 +20950,7 @@ module.exports = isStrictComparable;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_listCacheClear.js ***!
   \************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Removes all key-value entries from the list cache.
@@ -22062,7 +20973,7 @@ module.exports = listCacheClear;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_listCacheDelete.js ***!
   \*************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
 
@@ -22107,7 +21018,7 @@ module.exports = listCacheDelete;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_listCacheGet.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
 
@@ -22136,7 +21047,7 @@ module.exports = listCacheGet;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_listCacheHas.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
 
@@ -22162,7 +21073,7 @@ module.exports = listCacheHas;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_listCacheSet.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
 
@@ -22198,7 +21109,7 @@ module.exports = listCacheSet;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_mapCacheClear.js ***!
   \***********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var Hash = __webpack_require__(/*! ./_Hash */ "./node_modules/lodash/_Hash.js"),
     ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
@@ -22229,7 +21140,7 @@ module.exports = mapCacheClear;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_mapCacheDelete.js ***!
   \************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
 
@@ -22257,7 +21168,7 @@ module.exports = mapCacheDelete;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_mapCacheGet.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
 
@@ -22283,7 +21194,7 @@ module.exports = mapCacheGet;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_mapCacheHas.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
 
@@ -22309,7 +21220,7 @@ module.exports = mapCacheHas;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_mapCacheSet.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
 
@@ -22341,7 +21252,7 @@ module.exports = mapCacheSet;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_mapToArray.js ***!
   \********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Converts `map` to its key-value pairs.
@@ -22369,7 +21280,7 @@ module.exports = mapToArray;
 /*!*********************************************************!*\
   !*** ./node_modules/lodash/_matchesStrictComparable.js ***!
   \*********************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * A specialized version of `matchesProperty` for source values suitable
@@ -22399,7 +21310,7 @@ module.exports = matchesStrictComparable;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_memoizeCapped.js ***!
   \***********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var memoize = __webpack_require__(/*! ./memoize */ "./node_modules/lodash/memoize.js");
 
@@ -22435,7 +21346,7 @@ module.exports = memoizeCapped;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_nativeCreate.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js");
 
@@ -22451,7 +21362,7 @@ module.exports = nativeCreate;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_nativeKeys.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var overArg = __webpack_require__(/*! ./_overArg */ "./node_modules/lodash/_overArg.js");
 
@@ -22467,7 +21378,7 @@ module.exports = nativeKeys;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_nodeUtil.js ***!
   \******************************************/
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((module, exports, __webpack_require__) => {
 
 /* module decorator */ module = __webpack_require__.nmd(module);
 var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ "./node_modules/lodash/_freeGlobal.js");
@@ -22508,7 +21419,7 @@ module.exports = nodeUtil;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_objectToString.js ***!
   \************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -22540,7 +21451,7 @@ module.exports = objectToString;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_overArg.js ***!
   \*****************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Creates a unary function that invokes `func` with its argument transformed.
@@ -22565,7 +21476,7 @@ module.exports = overArg;
 /*!**************************************!*\
   !*** ./node_modules/lodash/_root.js ***!
   \**************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ "./node_modules/lodash/_freeGlobal.js");
 
@@ -22584,7 +21495,7 @@ module.exports = root;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_setCacheAdd.js ***!
   \*********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -22613,7 +21524,7 @@ module.exports = setCacheAdd;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_setCacheHas.js ***!
   \*********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Checks if `value` is in the array cache.
@@ -22637,7 +21548,7 @@ module.exports = setCacheHas;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_setToArray.js ***!
   \********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Converts `set` to an array of its values.
@@ -22665,7 +21576,7 @@ module.exports = setToArray;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_stackClear.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js");
 
@@ -22690,7 +21601,7 @@ module.exports = stackClear;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_stackDelete.js ***!
   \*********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Removes `key` and its value from the stack.
@@ -22718,7 +21629,7 @@ module.exports = stackDelete;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_stackGet.js ***!
   \******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Gets the stack value for `key`.
@@ -22742,7 +21653,7 @@ module.exports = stackGet;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_stackHas.js ***!
   \******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Checks if a stack value for `key` exists.
@@ -22766,7 +21677,7 @@ module.exports = stackHas;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_stackSet.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
     Map = __webpack_require__(/*! ./_Map */ "./node_modules/lodash/_Map.js"),
@@ -22810,7 +21721,7 @@ module.exports = stackSet;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_stringToPath.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var memoizeCapped = __webpack_require__(/*! ./_memoizeCapped */ "./node_modules/lodash/_memoizeCapped.js");
 
@@ -22847,7 +21758,7 @@ module.exports = stringToPath;
 /*!***************************************!*\
   !*** ./node_modules/lodash/_toKey.js ***!
   \***************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isSymbol = __webpack_require__(/*! ./isSymbol */ "./node_modules/lodash/isSymbol.js");
 
@@ -22878,7 +21789,7 @@ module.exports = toKey;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_toSource.js ***!
   \******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /** Used for built-in method references. */
 var funcProto = Function.prototype;
@@ -22914,7 +21825,7 @@ module.exports = toSource;
 /*!***********************************!*\
   !*** ./node_modules/lodash/eq.js ***!
   \***********************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Performs a
@@ -22961,7 +21872,7 @@ module.exports = eq;
 /*!************************************!*\
   !*** ./node_modules/lodash/get.js ***!
   \************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseGet = __webpack_require__(/*! ./_baseGet */ "./node_modules/lodash/_baseGet.js");
 
@@ -23004,7 +21915,7 @@ module.exports = get;
 /*!**************************************!*\
   !*** ./node_modules/lodash/hasIn.js ***!
   \**************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseHasIn = __webpack_require__(/*! ./_baseHasIn */ "./node_modules/lodash/_baseHasIn.js"),
     hasPath = __webpack_require__(/*! ./_hasPath */ "./node_modules/lodash/_hasPath.js");
@@ -23048,7 +21959,7 @@ module.exports = hasIn;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/identity.js ***!
   \*****************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * This method returns the first argument it receives.
@@ -23079,7 +21990,7 @@ module.exports = identity;
 /*!********************************************!*\
   !*** ./node_modules/lodash/isArguments.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseIsArguments = __webpack_require__(/*! ./_baseIsArguments */ "./node_modules/lodash/_baseIsArguments.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -23125,7 +22036,7 @@ module.exports = isArguments;
 /*!****************************************!*\
   !*** ./node_modules/lodash/isArray.js ***!
   \****************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Checks if `value` is classified as an `Array` object.
@@ -23161,7 +22072,7 @@ module.exports = isArray;
 /*!********************************************!*\
   !*** ./node_modules/lodash/isArrayLike.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var isFunction = __webpack_require__(/*! ./isFunction */ "./node_modules/lodash/isFunction.js"),
     isLength = __webpack_require__(/*! ./isLength */ "./node_modules/lodash/isLength.js");
@@ -23204,7 +22115,7 @@ module.exports = isArrayLike;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isBuffer.js ***!
   \*****************************************/
-/***/ (function(module, exports, __webpack_require__) {
+/***/ ((module, exports, __webpack_require__) => {
 
 /* module decorator */ module = __webpack_require__.nmd(module);
 var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js"),
@@ -23253,7 +22164,7 @@ module.exports = isBuffer;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/isFunction.js ***!
   \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js");
@@ -23300,7 +22211,7 @@ module.exports = isFunction;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isLength.js ***!
   \*****************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /** Used as references for various `Number` constants. */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -23345,7 +22256,7 @@ module.exports = isLength;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isObject.js ***!
   \*****************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Checks if `value` is the
@@ -23386,7 +22297,7 @@ module.exports = isObject;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/isObjectLike.js ***!
   \*********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * Checks if `value` is object-like. A value is object-like if it's not `null`
@@ -23425,7 +22336,7 @@ module.exports = isObjectLike;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isSymbol.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -23464,7 +22375,7 @@ module.exports = isSymbol;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/isTypedArray.js ***!
   \*********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseIsTypedArray = __webpack_require__(/*! ./_baseIsTypedArray */ "./node_modules/lodash/_baseIsTypedArray.js"),
     baseUnary = __webpack_require__(/*! ./_baseUnary */ "./node_modules/lodash/_baseUnary.js"),
@@ -23501,7 +22412,7 @@ module.exports = isTypedArray;
 /*!*************************************!*\
   !*** ./node_modules/lodash/keys.js ***!
   \*************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var arrayLikeKeys = __webpack_require__(/*! ./_arrayLikeKeys */ "./node_modules/lodash/_arrayLikeKeys.js"),
     baseKeys = __webpack_require__(/*! ./_baseKeys */ "./node_modules/lodash/_baseKeys.js"),
@@ -23548,7 +22459,7 @@ module.exports = keys;
 /*!****************************************!*\
   !*** ./node_modules/lodash/mapKeys.js ***!
   \****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseAssignValue = __webpack_require__(/*! ./_baseAssignValue */ "./node_modules/lodash/_baseAssignValue.js"),
     baseForOwn = __webpack_require__(/*! ./_baseForOwn */ "./node_modules/lodash/_baseForOwn.js"),
@@ -23594,7 +22505,7 @@ module.exports = mapKeys;
 /*!****************************************!*\
   !*** ./node_modules/lodash/memoize.js ***!
   \****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var MapCache = __webpack_require__(/*! ./_MapCache */ "./node_modules/lodash/_MapCache.js");
 
@@ -23677,7 +22588,7 @@ module.exports = memoize;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/property.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseProperty = __webpack_require__(/*! ./_baseProperty */ "./node_modules/lodash/_baseProperty.js"),
     basePropertyDeep = __webpack_require__(/*! ./_basePropertyDeep */ "./node_modules/lodash/_basePropertyDeep.js"),
@@ -23719,7 +22630,7 @@ module.exports = property;
 /*!******************************************!*\
   !*** ./node_modules/lodash/stubArray.js ***!
   \******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * This method returns a new empty array.
@@ -23752,7 +22663,7 @@ module.exports = stubArray;
 /*!******************************************!*\
   !*** ./node_modules/lodash/stubFalse.js ***!
   \******************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 /**
  * This method returns `false`.
@@ -23780,7 +22691,7 @@ module.exports = stubFalse;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/toString.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var baseToString = __webpack_require__(/*! ./_baseToString */ "./node_modules/lodash/_baseToString.js");
 
@@ -23818,10 +22729,13 @@ module.exports = toString;
 /*!**********************************************************!*\
   !*** ./node_modules/memoize-one/dist/memoize-one.esm.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 var safeIsNaN = Number.isNaN ||
     function ponyfill(value) {
         return typeof value === 'number' && value !== value;
@@ -23870,7 +22784,7 @@ function memoizeOne(resultFn, isEqual) {
     return memoized;
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (memoizeOne);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (memoizeOne);
 
 
 /***/ }),
@@ -23879,7 +22793,7 @@ function memoizeOne(resultFn, isEqual) {
 /*!*******************************!*\
   !*** ./src/sass/builder.scss ***!
   \*******************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -23892,7 +22806,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
   \*********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 /*
@@ -23993,7 +22907,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /*!**********************************************!*\
   !*** ./node_modules/object-inspect/index.js ***!
   \**********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 var hasMap = typeof Map === 'function' && Map.prototype;
 var mapSizeDescriptor = Object.getOwnPropertyDescriptor && hasMap ? Object.getOwnPropertyDescriptor(Map.prototype, 'size') : null;
@@ -24519,7 +23433,7 @@ function arrObjKeys(obj, inspect) {
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
   \***************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 /**
@@ -24633,7 +23547,7 @@ module.exports = checkPropTypes;
 /*!************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
   \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 /**
@@ -25254,7 +24168,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /*!******************************************!*\
   !*** ./node_modules/prop-types/index.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -25279,7 +24193,7 @@ if (true) {
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
   \*************************************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 /**
@@ -25302,7 +24216,7 @@ module.exports = ReactPropTypesSecret;
 /*!********************************************!*\
   !*** ./node_modules/prop-types/lib/has.js ***!
   \********************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -25313,7 +24227,7 @@ module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
 /*!****************************************!*\
   !*** ./node_modules/qs/lib/formats.js ***!
   \****************************************/
-/***/ (function(module) {
+/***/ ((module) => {
 
 "use strict";
 
@@ -25347,7 +24261,7 @@ module.exports = {
 /*!**************************************!*\
   !*** ./node_modules/qs/lib/index.js ***!
   \**************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -25369,7 +24283,7 @@ module.exports = {
 /*!**************************************!*\
   !*** ./node_modules/qs/lib/parse.js ***!
   \**************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -25643,7 +24557,7 @@ module.exports = function (str, opts) {
 /*!******************************************!*\
   !*** ./node_modules/qs/lib/stringify.js ***!
   \******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -25974,7 +24888,7 @@ module.exports = function (object, opts) {
 /*!**************************************!*\
   !*** ./node_modules/qs/lib/utils.js ***!
   \**************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -26237,10 +25151,13 @@ module.exports = {
 /*!****************************************************!*\
   !*** ./node_modules/raf-schd/dist/raf-schd.esm.js ***!
   \****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 var rafSchd = function rafSchd(fn) {
   var lastArgs = [];
   var frameId = null;
@@ -26274,7 +25191,7 @@ var rafSchd = function rafSchd(fn) {
   return wrapperFn;
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (rafSchd);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (rafSchd);
 
 
 /***/ }),
@@ -26283,37 +25200,29 @@ var rafSchd = function rafSchd(fn) {
 /*!**************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/dist/react-beautiful-dnd.esm.js ***!
   \**************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "DragDropContext": function() { return /* binding */ DragDropContext; },
-/* harmony export */   "Draggable": function() { return /* binding */ ConnectedDraggable; },
-/* harmony export */   "Droppable": function() { return /* binding */ ConnectedDroppable; },
-/* harmony export */   "resetServerContext": function() { return /* binding */ resetServerContext; }
+/* harmony export */   "DragDropContext": () => (/* binding */ DragDropContext),
+/* harmony export */   "Draggable": () => (/* binding */ PublicDraggable),
+/* harmony export */   "Droppable": () => (/* binding */ ConnectedDroppable),
+/* harmony export */   "resetServerContext": () => (/* binding */ resetServerContext),
+/* harmony export */   "useKeyboardSensor": () => (/* binding */ useKeyboardSensor),
+/* harmony export */   "useMouseSensor": () => (/* binding */ useMouseSensor),
+/* harmony export */   "useTouchSensor": () => (/* binding */ useTouchSensor)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/extends */ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inheritsLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-/* harmony import */ var tiny_invariant__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! tiny-invariant */ "./node_modules/tiny-invariant/dist/esm/tiny-invariant.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var css_box_model__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! css-box-model */ "./node_modules/css-box-model/dist/css-box-model.esm.js");
-/* harmony import */ var memoize_one__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! memoize-one */ "./node_modules/memoize-one/dist/memoize-one.esm.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/values */ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/date/now */ "./node_modules/@babel/runtime-corejs2/core-js/date/now.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var raf_schd__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! raf-schd */ "./node_modules/raf-schd/dist/raf-schd.esm.js");
-/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-redux */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/index.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_number_is_integer__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/number/is-integer */ "./node_modules/@babel/runtime-corejs2/core-js/number/is-integer.js");
-/* harmony import */ var _babel_runtime_corejs2_core_js_number_is_integer__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_number_is_integer__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
+/* harmony import */ var react_redux__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-redux */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/index.js");
+/* harmony import */ var use_memo_one__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! use-memo-one */ "./node_modules/use-memo-one/dist/use-memo-one.esm.js");
+/* harmony import */ var css_box_model__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! css-box-model */ "./node_modules/css-box-model/dist/css-box-model.esm.js");
+/* harmony import */ var memoize_one__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! memoize-one */ "./node_modules/memoize-one/dist/memoize-one.esm.js");
+/* harmony import */ var raf_schd__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! raf-schd */ "./node_modules/raf-schd/dist/raf-schd.esm.js");
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
 
 
@@ -26325,10 +25234,239 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+var isProduction = "development" === 'production';
+var spacesAndTabs = /[ \t]{2,}/g;
+var lineStartWithSpaces = /^[ \t]*/gm;
 
+var clean = function clean(value) {
+  return value.replace(spacesAndTabs, ' ').replace(lineStartWithSpaces, '').trim();
+};
 
+var getDevMessage = function getDevMessage(message) {
+  return clean("\n  %creact-beautiful-dnd\n\n  %c" + clean(message) + "\n\n  %c\uD83D\uDC77\u200D This is a development only message. It will be removed in production builds.\n");
+};
 
+var getFormattedMessage = function getFormattedMessage(message) {
+  return [getDevMessage(message), 'color: #00C584; font-size: 1.2em; font-weight: bold;', 'line-height: 1.5', 'color: #723874;'];
+};
+var isDisabledFlag = '__react-beautiful-dnd-disable-dev-warnings';
+function log(type, message) {
+  var _console;
 
+  if (isProduction) {
+    return;
+  }
+
+  if (typeof window !== 'undefined' && window[isDisabledFlag]) {
+    return;
+  }
+
+  (_console = console)[type].apply(_console, getFormattedMessage(message));
+}
+var warning = log.bind(null, 'warn');
+var error = log.bind(null, 'error');
+
+function noop() {}
+
+function getOptions(shared, fromBinding) {
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, shared, {}, fromBinding);
+}
+
+function bindEvents(el, bindings, sharedOptions) {
+  var unbindings = bindings.map(function (binding) {
+    var options = getOptions(sharedOptions, binding.options);
+    el.addEventListener(binding.eventName, binding.fn, options);
+    return function unbind() {
+      el.removeEventListener(binding.eventName, binding.fn, options);
+    };
+  });
+  return function unbindAll() {
+    unbindings.forEach(function (unbind) {
+      unbind();
+    });
+  };
+}
+
+var isProduction$1 = "development" === 'production';
+var prefix = 'Invariant failed';
+function RbdInvariant(message) {
+  this.message = message;
+}
+
+RbdInvariant.prototype.toString = function toString() {
+  return this.message;
+};
+
+function invariant(condition, message) {
+  if (condition) {
+    return;
+  }
+
+  if (isProduction$1) {
+    throw new RbdInvariant(prefix);
+  } else {
+    throw new RbdInvariant(prefix + ": " + (message || ''));
+  }
+}
+
+var ErrorBoundary = function (_React$Component) {
+  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(ErrorBoundary, _React$Component);
+
+  function ErrorBoundary() {
+    var _this;
+
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    _this.callbacks = null;
+    _this.unbind = noop;
+
+    _this.onWindowError = function (event) {
+      var callbacks = _this.getCallbacks();
+
+      if (callbacks.isDragging()) {
+        callbacks.tryAbort();
+         true ? warning("\n        An error was caught by our window 'error' event listener while a drag was occurring.\n        The active drag has been aborted.\n      ") : 0;
+      }
+
+      var err = event.error;
+
+      if (err instanceof RbdInvariant) {
+        event.preventDefault();
+
+        if (true) {
+          error(err.message);
+        }
+      }
+    };
+
+    _this.getCallbacks = function () {
+      if (!_this.callbacks) {
+        throw new Error('Unable to find AppCallbacks in <ErrorBoundary/>');
+      }
+
+      return _this.callbacks;
+    };
+
+    _this.setCallbacks = function (callbacks) {
+      _this.callbacks = callbacks;
+    };
+
+    return _this;
+  }
+
+  var _proto = ErrorBoundary.prototype;
+
+  _proto.componentDidMount = function componentDidMount() {
+    this.unbind = bindEvents(window, [{
+      eventName: 'error',
+      fn: this.onWindowError
+    }]);
+  };
+
+  _proto.componentDidCatch = function componentDidCatch(err) {
+    if (err instanceof RbdInvariant) {
+      if (true) {
+        error(err.message);
+      }
+
+      this.setState({});
+      return;
+    }
+
+    throw err;
+  };
+
+  _proto.componentWillUnmount = function componentWillUnmount() {
+    this.unbind();
+  };
+
+  _proto.render = function render() {
+    return this.props.children(this.setCallbacks);
+  };
+
+  return ErrorBoundary;
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
+
+var dragHandleUsageInstructions = "\n  Press space bar to start a drag.\n  When dragging you can use the arrow keys to move the item around and escape to cancel.\n  Some screen readers may require you to be in focus mode or to use your pass through key\n";
+
+var position = function position(index) {
+  return index + 1;
+};
+
+var onDragStart = function onDragStart(start) {
+  return "\n  You have lifted an item in position " + position(start.source.index) + "\n";
+};
+
+var withLocation = function withLocation(source, destination) {
+  var isInHomeList = source.droppableId === destination.droppableId;
+  var startPosition = position(source.index);
+  var endPosition = position(destination.index);
+
+  if (isInHomeList) {
+    return "\n      You have moved the item from position " + startPosition + "\n      to position " + endPosition + "\n    ";
+  }
+
+  return "\n    You have moved the item from position " + startPosition + "\n    in list " + source.droppableId + "\n    to list " + destination.droppableId + "\n    in position " + endPosition + "\n  ";
+};
+
+var withCombine = function withCombine(id, source, combine) {
+  var inHomeList = source.droppableId === combine.droppableId;
+
+  if (inHomeList) {
+    return "\n      The item " + id + "\n      has been combined with " + combine.draggableId;
+  }
+
+  return "\n      The item " + id + "\n      in list " + source.droppableId + "\n      has been combined with " + combine.draggableId + "\n      in list " + combine.droppableId + "\n    ";
+};
+
+var onDragUpdate = function onDragUpdate(update) {
+  var location = update.destination;
+
+  if (location) {
+    return withLocation(update.source, location);
+  }
+
+  var combine = update.combine;
+
+  if (combine) {
+    return withCombine(update.draggableId, update.source, combine);
+  }
+
+  return 'You are over an area that cannot be dropped on';
+};
+
+var returnedToStart = function returnedToStart(source) {
+  return "\n  The item has returned to its starting position\n  of " + position(source.index) + "\n";
+};
+
+var onDragEnd = function onDragEnd(result) {
+  if (result.reason === 'CANCEL') {
+    return "\n      Movement cancelled.\n      " + returnedToStart(result.source) + "\n    ";
+  }
+
+  var location = result.destination;
+  var combine = result.combine;
+
+  if (location) {
+    return "\n      You have dropped the item.\n      " + withLocation(result.source, location) + "\n    ";
+  }
+
+  if (combine) {
+    return "\n      You have dropped the item.\n      " + withCombine(result.draggableId, result.source, combine) + "\n    ";
+  }
+
+  return "\n    The item has been dropped while not over a drop area.\n    " + returnedToStart(result.source) + "\n  ";
+};
+
+var preset = {
+  dragHandleUsageInstructions: dragHandleUsageInstructions,
+  onDragStart: onDragStart,
+  onDragUpdate: onDragUpdate,
+  onDragEnd: onDragEnd
+};
 
 var origin = {
   x: 0,
@@ -26382,7 +25520,7 @@ var apply = function apply(fn) {
 };
 
 var executeClip = (function (frame, subject) {
-  var result = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.getRect)({
+  var result = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getRect)({
     top: Math.max(subject.top, frame.top),
     right: Math.min(subject.right, frame.right),
     bottom: Math.min(subject.bottom, frame.bottom),
@@ -26396,9 +25534,6 @@ var executeClip = (function (frame, subject) {
   return result;
 });
 
-var isEqual$1 = function isEqual(first, second) {
-  return first.top === second.top && first.right === second.right && first.bottom === second.bottom && first.left === second.left;
-};
 var offsetByPosition = function offsetByPosition(spacing, point) {
   return {
     top: spacing.top + point.y,
@@ -26441,7 +25576,7 @@ var increase = function increase(target, axis, withPlaceholder) {
   if (withPlaceholder && withPlaceholder.increasedBy) {
     var _extends2;
 
-    return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, target, (_extends2 = {}, _extends2[axis.end] = target[axis.end] + withPlaceholder.increasedBy[axis.line], _extends2));
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, target, (_extends2 = {}, _extends2[axis.end] = target[axis.end] + withPlaceholder.increasedBy[axis.line], _extends2));
   }
 
   return target;
@@ -26452,7 +25587,7 @@ var clip = function clip(target, frame) {
     return executeClip(frame.pageMarginBox, target);
   }
 
-  return (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.getRect)(target);
+  return (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getRect)(target);
 };
 
 var getSubject = (function (_ref) {
@@ -26471,12 +25606,12 @@ var getSubject = (function (_ref) {
 });
 
 var scrollDroppable = (function (droppable, newScroll) {
-  !droppable.frame ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false) : 0 : void 0;
+  !droppable.frame ?  true ? invariant(false) : 0 : void 0;
   var scrollable = droppable.frame;
   var scrollDiff = subtract(newScroll, scrollable.scroll.initial);
   var scrollDisplacement = negate(scrollDiff);
 
-  var frame = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, scrollable, {
+  var frame = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, scrollable, {
     scroll: {
       initial: scrollable.scroll.initial,
       current: newScroll,
@@ -26495,7 +25630,7 @@ var scrollDroppable = (function (droppable, newScroll) {
     frame: frame
   });
 
-  var result = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, droppable, {
+  var result = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, droppable, {
     frame: frame,
     subject: subject
   });
@@ -26503,81 +25638,21 @@ var scrollDroppable = (function (droppable, newScroll) {
   return result;
 });
 
-var records = {};
-var isEnabled = false;
-
-var isTimingsEnabled = function isTimingsEnabled() {
-  return isEnabled;
-};
-var start = function start(key) {
-  if (true) {
-    if (!isTimingsEnabled()) {
-      return;
-    }
-
-    var now = performance.now();
-    records[key] = now;
-  }
-};
-var finish = function finish(key) {
-  if (true) {
-    if (!isTimingsEnabled()) {
-      return;
-    }
-
-    var now = performance.now();
-    var previous = records[key];
-
-    if (!previous) {
-      console.warn('cannot finish timing as no previous time found', key);
-      return;
-    }
-
-    var result = now - previous;
-    var rounded = result.toFixed(2);
-
-    var style = function () {
-      if (result < 12) {
-        return {
-          textColor: 'green',
-          symbol: '✅'
-        };
-      }
-
-      if (result < 40) {
-        return {
-          textColor: 'orange',
-          symbol: '⚠️'
-        };
-      }
-
-      return {
-        textColor: 'red',
-        symbol: '❌'
-      };
-    }();
-
-    console.log(style.symbol + " %cTiming %c" + rounded + " %cms %c" + key, 'color: blue; font-weight: bold;', "color: " + style.textColor + "; font-size: 1.1em;", 'color: grey;', 'color: purple; font-weight: bold;');
-  }
-};
-
-var whatIsDraggedOver = (function (impact) {
-  var merge = impact.merge,
-      destination = impact.destination;
-
-  if (destination) {
-    return destination.droppableId;
+function isInteger(value) {
+  if (Number.isInteger) {
+    return Number.isInteger(value);
   }
 
-  if (merge) {
-    return merge.combine.droppableId;
-  }
-
-  return null;
-});
-
+  return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
+}
 function values(map) {
-  return _babel_runtime_corejs2_core_js_object_values__WEBPACK_IMPORTED_MODULE_4___default()(map);
+  if (Object.values) {
+    return Object.values(map);
+  }
+
+  return Object.keys(map).map(function (key) {
+    return map[key];
+  });
 }
 function findIndex(list, predicate) {
   if (list.findIndex) {
@@ -26605,60 +25680,30 @@ function find(list, predicate) {
 
   return undefined;
 }
+function toArray(list) {
+  return Array.prototype.slice.call(list);
+}
 
-var toDroppableMap = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (droppables) {
+var toDroppableMap = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (droppables) {
   return droppables.reduce(function (previous, current) {
     previous[current.descriptor.id] = current;
     return previous;
   }, {});
 });
-var toDraggableMap = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (draggables) {
+var toDraggableMap = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (draggables) {
   return draggables.reduce(function (previous, current) {
     previous[current.descriptor.id] = current;
     return previous;
   }, {});
 });
-var toDroppableList = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (droppables) {
+var toDroppableList = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (droppables) {
   return values(droppables);
 });
-var toDraggableList = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (draggables) {
+var toDraggableList = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (draggables) {
   return values(draggables);
 });
 
-var isWithin = (function (lowerBound, upperBound) {
-  return function (value) {
-    return lowerBound <= value && value <= upperBound;
-  };
-});
-
-var isPositionInFrame = (function (frame) {
-  var isWithinVertical = isWithin(frame.top, frame.bottom);
-  var isWithinHorizontal = isWithin(frame.left, frame.right);
-  return function (point) {
-    return isWithinVertical(point.y) && isWithinVertical(point.y) && isWithinHorizontal(point.x) && isWithinHorizontal(point.x);
-  };
-});
-
-var getDroppableOver = (function (_ref) {
-  var target = _ref.target,
-      droppables = _ref.droppables;
-  var maybe = find(toDroppableList(droppables), function (droppable) {
-    if (!droppable.isEnabled) {
-      return false;
-    }
-
-    var active = droppable.subject.active;
-
-    if (!active) {
-      return false;
-    }
-
-    return isPositionInFrame(active)(target);
-  });
-  return maybe ? maybe.descriptor.id : null;
-});
-
-var getDraggablesInsideDroppable = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (droppableId, draggables) {
+var getDraggablesInsideDroppable = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (droppableId, draggables) {
   var result = toDraggableList(draggables).filter(function (draggable) {
     return droppableId === draggable.descriptor.droppableId;
   }).sort(function (a, b) {
@@ -26667,149 +25712,112 @@ var getDraggablesInsideDroppable = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__[
   return result;
 });
 
-var withDroppableScroll = (function (droppable, point) {
-  var frame = droppable.frame;
-
-  if (!frame) {
-    return point;
+function tryGetDestination(impact) {
+  if (impact.at && impact.at.type === 'REORDER') {
+    return impact.at.destination;
   }
 
-  return add(point, frame.scroll.diff.value);
+  return null;
+}
+function tryGetCombine(impact) {
+  if (impact.at && impact.at.type === 'COMBINE') {
+    return impact.at.combine;
+  }
+
+  return null;
+}
+
+var removeDraggableFromList = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (remove, list) {
+  return list.filter(function (item) {
+    return item.descriptor.id !== remove.descriptor.id;
+  });
 });
 
-var vertical = {
-  direction: 'vertical',
-  line: 'y',
-  crossAxisLine: 'x',
-  start: 'top',
-  end: 'bottom',
-  size: 'height',
-  crossAxisStart: 'left',
-  crossAxisEnd: 'right',
-  crossAxisSize: 'width'
-};
-var horizontal = {
-  direction: 'horizontal',
-  line: 'x',
-  crossAxisLine: 'y',
-  start: 'left',
-  end: 'right',
-  size: 'width',
-  crossAxisStart: 'top',
-  crossAxisEnd: 'bottom',
-  crossAxisSize: 'height'
-};
-
-var isUserMovingForward = (function (axis, direction) {
-  return axis === vertical ? direction.vertical === 'down' : direction.horizontal === 'right';
-});
-
-var didStartDisplaced = (function (draggableId, onLift) {
-  return Boolean(onLift.wasDisplaced[draggableId]);
-});
-
-var getCombinedItemDisplacement = (function (_ref) {
-  var displaced = _ref.displaced,
-      onLift = _ref.onLift,
-      combineWith = _ref.combineWith,
-      displacedBy = _ref.displacedBy;
-  var isDisplaced = Boolean(displaced[combineWith]);
-
-  if (didStartDisplaced(combineWith, onLift)) {
-    return isDisplaced ? origin : negate(displacedBy.point);
-  }
-
-  return isDisplaced ? displacedBy.point : origin;
-});
-
-var getWhenEntered = function getWhenEntered(id, current, oldMerge) {
-  if (!oldMerge) {
-    return current;
-  }
-
-  if (id !== oldMerge.combine.draggableId) {
-    return current;
-  }
-
-  return oldMerge.whenEntered;
-};
-
-var isCombiningWith = function isCombiningWith(_ref) {
-  var id = _ref.id,
-      currentCenter = _ref.currentCenter,
-      axis = _ref.axis,
-      borderBox = _ref.borderBox,
-      displaceBy = _ref.displaceBy,
-      currentUserDirection = _ref.currentUserDirection,
-      oldMerge = _ref.oldMerge;
-  var start = borderBox[axis.start] + displaceBy[axis.line];
-  var end = borderBox[axis.end] + displaceBy[axis.line];
-  var size = borderBox[axis.size];
-  var twoThirdsOfSize = size * 0.666;
-  var whenEntered = getWhenEntered(id, currentUserDirection, oldMerge);
-  var isMovingForward = isUserMovingForward(axis, whenEntered);
-  var targetCenter = currentCenter[axis.line];
-
-  if (isMovingForward) {
-    return isWithin(start, start + twoThirdsOfSize)(targetCenter);
-  }
-
-  return isWithin(end - twoThirdsOfSize, end)(targetCenter);
-};
-
-var getCombineImpact = (function (_ref2) {
-  var currentCenter = _ref2.pageBorderBoxCenterWithDroppableScrollChange,
-      previousImpact = _ref2.previousImpact,
-      destination = _ref2.destination,
-      insideDestinationWithoutDraggable = _ref2.insideDestinationWithoutDraggable,
-      userDirection = _ref2.userDirection,
-      onLift = _ref2.onLift;
+var moveToNextCombine = (function (_ref) {
+  var isMovingForward = _ref.isMovingForward,
+      draggable = _ref.draggable,
+      destination = _ref.destination,
+      insideDestination = _ref.insideDestination,
+      previousImpact = _ref.previousImpact;
 
   if (!destination.isCombineEnabled) {
     return null;
   }
 
-  var axis = destination.axis;
-  var map = previousImpact.movement.map;
-  var canBeDisplacedBy = previousImpact.movement.displacedBy;
-  var oldMerge = previousImpact.merge;
-  var target = find(insideDestinationWithoutDraggable, function (child) {
-    var id = child.descriptor.id;
-    var displaceBy = getCombinedItemDisplacement({
-      displaced: map,
-      onLift: onLift,
-      combineWith: id,
-      displacedBy: canBeDisplacedBy
-    });
-    return isCombiningWith({
-      id: id,
-      currentCenter: currentCenter,
-      axis: axis,
-      borderBox: child.page.borderBox,
-      displaceBy: displaceBy,
-      currentUserDirection: userDirection,
-      oldMerge: oldMerge
-    });
-  });
+  var location = tryGetDestination(previousImpact);
 
-  if (!target) {
+  if (!location) {
     return null;
   }
 
-  var merge = {
-    whenEntered: getWhenEntered(target.descriptor.id, userDirection, oldMerge),
-    combine: {
-      draggableId: target.descriptor.id,
-      droppableId: destination.descriptor.id
+  function getImpact(target) {
+    var at = {
+      type: 'COMBINE',
+      combine: {
+        draggableId: target,
+        droppableId: destination.descriptor.id
+      }
+    };
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, previousImpact, {
+      at: at
+    });
+  }
+
+  var all = previousImpact.displaced.all;
+  var closestId = all.length ? all[0] : null;
+
+  if (isMovingForward) {
+    return closestId ? getImpact(closestId) : null;
+  }
+
+  var withoutDraggable = removeDraggableFromList(draggable, insideDestination);
+
+  if (!closestId) {
+    if (!withoutDraggable.length) {
+      return null;
     }
-  };
 
-  var withMerge = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, previousImpact, {
-    destination: null,
-    merge: merge
+    var last = withoutDraggable[withoutDraggable.length - 1];
+    return getImpact(last.descriptor.id);
+  }
+
+  var indexOfClosest = findIndex(withoutDraggable, function (d) {
+    return d.descriptor.id === closestId;
   });
+  !(indexOfClosest !== -1) ?  true ? invariant(false, 'Could not find displaced item in set') : 0 : void 0;
+  var proposedIndex = indexOfClosest - 1;
 
-  return withMerge;
+  if (proposedIndex < 0) {
+    return null;
+  }
+
+  var before = withoutDraggable[proposedIndex];
+  return getImpact(before.descriptor.id);
+});
+
+var isHomeOf = (function (draggable, destination) {
+  return draggable.descriptor.droppableId === destination.descriptor.id;
+});
+
+var noDisplacedBy = {
+  point: origin,
+  value: 0
+};
+var emptyGroups = {
+  invisible: {},
+  visible: {},
+  all: []
+};
+var noImpact = {
+  displaced: emptyGroups,
+  displacedBy: noDisplacedBy,
+  at: null
+};
+
+var isWithin = (function (lowerBound, upperBound) {
+  return function (value) {
+    return lowerBound <= value && value <= upperBound;
+  };
 });
 
 var isPartiallyVisibleThroughFrame = (function (frame) {
@@ -26851,6 +25859,29 @@ var isTotallyVisibleThroughFrame = (function (frame) {
     return isContained;
   };
 });
+
+var vertical = {
+  direction: 'vertical',
+  line: 'y',
+  crossAxisLine: 'x',
+  start: 'top',
+  end: 'bottom',
+  size: 'height',
+  crossAxisStart: 'left',
+  crossAxisEnd: 'right',
+  crossAxisSize: 'width'
+};
+var horizontal = {
+  direction: 'horizontal',
+  line: 'x',
+  crossAxisLine: 'y',
+  start: 'left',
+  end: 'right',
+  size: 'width',
+  crossAxisStart: 'top',
+  crossAxisEnd: 'bottom',
+  crossAxisSize: 'height'
+};
 
 var isTotallyVisibleThroughFrameOnAxis = (function (axis) {
   return function (frame) {
@@ -26894,1157 +25925,236 @@ var isVisible = function isVisible(_ref) {
 };
 
 var isPartiallyVisible = function isPartiallyVisible(args) {
-  return isVisible((0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, args, {
+  return isVisible((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, args, {
     isVisibleThroughFrameFn: isPartiallyVisibleThroughFrame
   }));
 };
 var isTotallyVisible = function isTotallyVisible(args) {
-  return isVisible((0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, args, {
+  return isVisible((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, args, {
     isVisibleThroughFrameFn: isTotallyVisibleThroughFrame
   }));
 };
 var isTotallyVisibleOnAxis = function isTotallyVisibleOnAxis(args) {
-  return isVisible((0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, args, {
+  return isVisible((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, args, {
     isVisibleThroughFrameFn: isTotallyVisibleThroughFrameOnAxis(args.destination.axis)
   }));
 };
 
-var getShouldAnimate = function getShouldAnimate(forceShouldAnimate, isVisible, previous) {
+var getShouldAnimate = function getShouldAnimate(id, last, forceShouldAnimate) {
   if (typeof forceShouldAnimate === 'boolean') {
     return forceShouldAnimate;
   }
 
-  if (!isVisible) {
-    return false;
-  }
-
-  if (!previous) {
+  if (!last) {
     return true;
   }
 
-  return previous.shouldAnimate;
+  var invisible = last.invisible,
+      visible = last.visible;
+
+  if (invisible[id]) {
+    return false;
+  }
+
+  var previous = visible[id];
+  return previous ? previous.shouldAnimate : true;
 };
 
-var getTarget = function getTarget(draggable, onLift) {
+function getTarget(draggable, displacedBy) {
   var marginBox = draggable.page.marginBox;
-
-  if (!didStartDisplaced(draggable.descriptor.id, onLift)) {
-    return marginBox;
-  }
-
   var expandBy = {
-    top: onLift.displacedBy.point.y,
-    right: onLift.displacedBy.point.x,
+    top: displacedBy.point.y,
+    right: 0,
     bottom: 0,
-    left: 0
+    left: displacedBy.point.x
   };
-  return (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.getRect)((0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.expand)(marginBox, expandBy));
-};
+  return (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getRect)((0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.expand)(marginBox, expandBy));
+}
 
-var getDisplacement = (function (_ref) {
-  var draggable = _ref.draggable,
+function getDisplacementGroups(_ref) {
+  var afterDragging = _ref.afterDragging,
       destination = _ref.destination,
-      previousImpact = _ref.previousImpact,
+      displacedBy = _ref.displacedBy,
       viewport = _ref.viewport,
-      onLift = _ref.onLift,
-      forceShouldAnimate = _ref.forceShouldAnimate;
-  var id = draggable.descriptor.id;
-  var map = previousImpact.movement.map;
-  var target = getTarget(draggable, onLift);
-  var isVisible = isPartiallyVisible({
-    target: target,
-    destination: destination,
-    viewport: viewport,
-    withDroppableDisplacement: true
-  });
-  var shouldAnimate = getShouldAnimate(forceShouldAnimate, isVisible, map[id]);
-  var displacement = {
-    draggableId: id,
-    isVisible: isVisible,
-    shouldAnimate: shouldAnimate
-  };
-  return displacement;
-});
-
-var getDisplacementMap = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (displaced) {
-  return displaced.reduce(function (map, displacement) {
-    map[displacement.draggableId] = displacement;
-    return map;
-  }, {});
-});
-
-var getDisplacedBy = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (axis, displaceBy) {
-  var displacement = displaceBy[axis.line];
-  return {
-    value: displacement,
-    point: patch(axis.line, displacement)
-  };
-});
-
-var getReorderImpact = (function (_ref) {
-  var currentCenter = _ref.pageBorderBoxCenterWithDroppableScrollChange,
-      draggable = _ref.draggable,
-      destination = _ref.destination,
-      insideDestinationWithoutDraggable = _ref.insideDestinationWithoutDraggable,
-      previousImpact = _ref.previousImpact,
-      viewport = _ref.viewport,
-      userDirection = _ref.userDirection,
-      onLift = _ref.onLift;
-  var axis = destination.axis;
-  var isMovingForward = isUserMovingForward(destination.axis, userDirection);
-  var displacedBy = getDisplacedBy(destination.axis, draggable.displaceBy);
-  var targetCenter = currentCenter[axis.line];
-  var displacement = displacedBy.value;
-  var displaced = insideDestinationWithoutDraggable.filter(function (child) {
-    var borderBox = child.page.borderBox;
-    var start = borderBox[axis.start];
-    var end = borderBox[axis.end];
-    var didStartDisplaced$1 = didStartDisplaced(child.descriptor.id, onLift);
-
-    if (isMovingForward) {
-      if (didStartDisplaced$1) {
-        return targetCenter < start;
-      }
-
-      return targetCenter < start + displacement;
-    }
-
-    if (didStartDisplaced$1) {
-      return targetCenter <= end - displacement;
-    }
-
-    return targetCenter <= end;
-  }).map(function (dimension) {
-    return getDisplacement({
-      draggable: dimension,
+      forceShouldAnimate = _ref.forceShouldAnimate,
+      last = _ref.last;
+  return afterDragging.reduce(function process(groups, draggable) {
+    var target = getTarget(draggable, displacedBy);
+    var id = draggable.descriptor.id;
+    groups.all.push(id);
+    var isVisible = isPartiallyVisible({
+      target: target,
       destination: destination,
-      previousImpact: previousImpact,
-      viewport: viewport.frame,
-      onLift: onLift
+      viewport: viewport,
+      withDroppableDisplacement: true
     });
-  });
-  var newIndex = insideDestinationWithoutDraggable.length - displaced.length;
-  var movement = {
-    displacedBy: displacedBy,
-    displaced: displaced,
-    map: getDisplacementMap(displaced)
-  };
-  var impact = {
-    movement: movement,
-    destination: {
-      droppableId: destination.descriptor.id,
-      index: newIndex
-    },
-    merge: null
-  };
-  return impact;
-});
 
-var noDisplacedBy = {
-  point: origin,
-  value: 0
-};
-var noMovement = {
-  displaced: [],
-  map: {},
-  displacedBy: noDisplacedBy
-};
-var noImpact = {
-  movement: noMovement,
-  destination: null,
-  merge: null
-};
-
-var removeDraggableFromList = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (remove, list) {
-  return list.filter(function (item) {
-    return item.descriptor.id !== remove.descriptor.id;
-  });
-});
-
-var getDragImpact = (function (_ref) {
-  var pageBorderBoxCenter = _ref.pageBorderBoxCenter,
-      draggable = _ref.draggable,
-      draggables = _ref.draggables,
-      droppables = _ref.droppables,
-      previousImpact = _ref.previousImpact,
-      viewport = _ref.viewport,
-      userDirection = _ref.userDirection,
-      onLift = _ref.onLift;
-  var destinationId = getDroppableOver({
-    target: pageBorderBoxCenter,
-    droppables: droppables
-  });
-
-  if (!destinationId) {
-    return noImpact;
-  }
-
-  var destination = droppables[destinationId];
-  var insideDestination = getDraggablesInsideDroppable(destination.descriptor.id, draggables);
-  var insideDestinationWithoutDraggable = removeDraggableFromList(draggable, insideDestination);
-  var pageBorderBoxCenterWithDroppableScrollChange = withDroppableScroll(destination, pageBorderBoxCenter);
-  var withMerge = getCombineImpact({
-    pageBorderBoxCenterWithDroppableScrollChange: pageBorderBoxCenterWithDroppableScrollChange,
-    previousImpact: previousImpact,
-    destination: destination,
-    insideDestinationWithoutDraggable: insideDestinationWithoutDraggable,
-    userDirection: userDirection,
-    onLift: onLift
-  });
-
-  if (withMerge) {
-    return withMerge;
-  }
-
-  return getReorderImpact({
-    pageBorderBoxCenterWithDroppableScrollChange: pageBorderBoxCenterWithDroppableScrollChange,
-    destination: destination,
-    draggable: draggable,
-    insideDestinationWithoutDraggable: insideDestinationWithoutDraggable,
-    previousImpact: previousImpact,
-    viewport: viewport,
-    userDirection: userDirection,
-    onLift: onLift
-  });
-});
-
-var getHomeLocation = (function (descriptor) {
-  return {
-    index: descriptor.index,
-    droppableId: descriptor.droppableId
-  };
-});
-
-var getHomeOnLift = (function (_ref) {
-  var draggable = _ref.draggable,
-      home = _ref.home,
-      draggables = _ref.draggables,
-      viewport = _ref.viewport;
-  var displacedBy = getDisplacedBy(home.axis, draggable.displaceBy);
-  var insideHome = getDraggablesInsideDroppable(home.descriptor.id, draggables);
-  var originallyDisplaced = insideHome.slice(draggable.descriptor.index + 1);
-  var wasDisplaced = originallyDisplaced.reduce(function (previous, item) {
-    previous[item.descriptor.id] = true;
-    return previous;
-  }, {});
-  var onLift = {
-    displacedBy: displacedBy,
-    wasDisplaced: wasDisplaced
-  };
-  var displaced = originallyDisplaced.map(function (dimension) {
-    return getDisplacement({
-      draggable: dimension,
-      destination: home,
-      previousImpact: noImpact,
-      viewport: viewport.frame,
-      forceShouldAnimate: false,
-      onLift: onLift
-    });
-  });
-  var movement = {
-    displaced: displaced,
-    map: getDisplacementMap(displaced),
-    displacedBy: displacedBy
-  };
-  var impact = {
-    movement: movement,
-    destination: getHomeLocation(draggable.descriptor),
-    merge: null
-  };
-  return {
-    impact: impact,
-    onLift: onLift
-  };
-});
-
-var getDragPositions = (function (_ref) {
-  var oldInitial = _ref.initial,
-      oldCurrent = _ref.current,
-      oldClientBorderBoxCenter = _ref.oldClientBorderBoxCenter,
-      newClientBorderBoxCenter = _ref.newClientBorderBoxCenter,
-      viewport = _ref.viewport;
-  var shift = subtract(newClientBorderBoxCenter, oldClientBorderBoxCenter);
-
-  var initial = function () {
-    var client = {
-      selection: add(oldInitial.client.selection, shift),
-      borderBoxCenter: newClientBorderBoxCenter,
-      offset: origin
-    };
-    var page = {
-      selection: add(client.selection, viewport.scroll.initial),
-      borderBoxCenter: add(client.selection, viewport.scroll.initial)
-    };
-    return {
-      client: client,
-      page: page
-    };
-  }();
-
-  var current = function () {
-    var reverse = negate(shift);
-    var offset = add(oldCurrent.client.offset, reverse);
-    var client = {
-      selection: add(initial.client.selection, offset),
-      borderBoxCenter: add(initial.client.borderBoxCenter, offset),
-      offset: offset
-    };
-    var page = {
-      selection: add(client.selection, viewport.scroll.current),
-      borderBoxCenter: add(client.borderBoxCenter, viewport.scroll.current)
-    };
-    !isEqual(oldCurrent.client.borderBoxCenter, client.borderBoxCenter) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "\n        Incorrect new client center position.\n        Expected (" + oldCurrent.client.borderBoxCenter.x + ", " + oldCurrent.client.borderBoxCenter.y + ")\n        to equal (" + client.borderBoxCenter.x + ", " + client.borderBoxCenter.y + ")\n      ") : 0 : void 0;
-    return {
-      client: client,
-      page: page
-    };
-  }();
-
-  return {
-    current: current,
-    initial: initial
-  };
-});
-
-var offsetDraggable = (function (_ref) {
-  var draggable = _ref.draggable,
-      offset$1 = _ref.offset,
-      initialWindowScroll = _ref.initialWindowScroll;
-  var client = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.offset)(draggable.client, offset$1);
-  var page = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.withScroll)(client, initialWindowScroll);
-
-  var moved = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, draggable, {
-    placeholder: (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, draggable.placeholder, {
-      client: client
-    }),
-    client: client,
-    page: page
-  });
-
-  return moved;
-});
-
-var adjustExistingForAdditionsAndRemovals = (function (_ref) {
-  var existing = _ref.existing,
-      droppables = _ref.droppables,
-      addedDraggables = _ref.additions,
-      removedDraggables = _ref.removals,
-      viewport = _ref.viewport;
-  var shifted = {};
-  toDroppableList(droppables).forEach(function (droppable) {
-    var axis = droppable.axis;
-    var original = getDraggablesInsideDroppable(droppable.descriptor.id, existing);
-    var toShift = {};
-
-    var addShift = function addShift(id, shift) {
-      var previous = toShift[id];
-
-      if (!previous) {
-        toShift[id] = shift;
-        return;
-      }
-
-      toShift[id] = {
-        indexChange: previous.indexChange + shift.indexChange,
-        offset: add(previous.offset, shift.offset)
-      };
-    };
-
-    var removals = toDraggableMap(removedDraggables.map(function (id) {
-      var item = existing[id];
-      !item ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Could not find removed draggable \"" + id + "\"") : 0 : void 0;
-      return item;
-    }).filter(function (draggable) {
-      return draggable.descriptor.droppableId === droppable.descriptor.id;
-    }));
-    var withRemovals = original.filter(function (item, index) {
-      var isBeingRemoved = Boolean(removals[item.descriptor.id]);
-
-      if (!isBeingRemoved) {
-        return true;
-      }
-
-      var offset = negate(patch(axis.line, item.displaceBy[axis.line]));
-      original.slice(index).forEach(function (sibling) {
-        if (removals[sibling.descriptor.id]) {
-          return;
-        }
-
-        addShift(sibling.descriptor.id, {
-          indexChange: -1,
-          offset: offset
-        });
-      });
-      return false;
-    });
-    var additions = addedDraggables.filter(function (draggable) {
-      return draggable.descriptor.droppableId === droppable.descriptor.id;
-    });
-    var withAdditions = withRemovals.slice(0);
-    additions.forEach(function (item) {
-      withAdditions.splice(item.descriptor.index, 0, item);
-    });
-    var additionMap = toDraggableMap(additions);
-    withAdditions.forEach(function (item, index) {
-      var wasAdded = Boolean(additionMap[item.descriptor.id]);
-
-      if (!wasAdded) {
-        return;
-      }
-
-      var offset = patch(axis.line, item.client.marginBox[axis.size]);
-      withAdditions.slice(index).forEach(function (sibling) {
-        if (additionMap[sibling.descriptor.id]) {
-          return;
-        }
-
-        addShift(sibling.descriptor.id, {
-          indexChange: 1,
-          offset: offset
-        });
-      });
-    });
-    withAdditions.forEach(function (item) {
-      if (additionMap[item.descriptor.id]) {
-        return;
-      }
-
-      var shift = toShift[item.descriptor.id];
-
-      if (!shift) {
-        return;
-      }
-
-      var moved = offsetDraggable({
-        draggable: item,
-        offset: shift.offset,
-        initialWindowScroll: viewport.scroll.initial
-      });
-      var index = item.descriptor.index + shift.indexChange;
-
-      var updated = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, moved, {
-        descriptor: (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, item.descriptor, {
-          index: index
-        })
-      });
-
-      shifted[moved.descriptor.id] = updated;
-    });
-  });
-
-  var map = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, existing, shifted);
-
-  return map;
-});
-
-var adjustAdditionsForScrollChanges = (function (_ref) {
-  var additions = _ref.additions,
-      updatedDroppables = _ref.updatedDroppables,
-      viewport = _ref.viewport;
-  var windowScrollChange = viewport.scroll.diff.value;
-  return additions.map(function (draggable) {
-    var droppableId = draggable.descriptor.droppableId;
-    var modified = updatedDroppables[droppableId];
-    var frame = modified.frame;
-    !frame ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false) : 0 : void 0;
-    var droppableScrollChange = frame.scroll.diff.value;
-    var totalChange = add(windowScrollChange, droppableScrollChange);
-    var moved = offsetDraggable({
-      draggable: draggable,
-      offset: totalChange,
-      initialWindowScroll: viewport.scroll.initial
-    });
-    return moved;
-  });
-});
-
-var adjustAdditionsForCollapsedHome = (function (_ref) {
-  var additions = _ref.additions,
-      dragging = _ref.dragging,
-      home = _ref.home,
-      viewport = _ref.viewport;
-  var displacedBy = getDisplacedBy(home.axis, dragging.displaceBy);
-  return additions.map(function (draggable) {
-    if (draggable.descriptor.droppableId !== home.descriptor.id) {
-      return draggable;
+    if (!isVisible) {
+      groups.invisible[draggable.descriptor.id] = true;
+      return groups;
     }
 
-    if (draggable.descriptor.index < dragging.descriptor.index) {
-      return draggable;
-    }
-
-    return offsetDraggable({
-      draggable: draggable,
-      offset: displacedBy.point,
-      initialWindowScroll: viewport.scroll.initial
-    });
-  });
-});
-
-var updateDraggables = (function (_ref) {
-  var updatedDroppables = _ref.updatedDroppables,
-      criticalId = _ref.criticalId,
-      unmodifiedExisting = _ref.existing,
-      unmodifiedAdditions = _ref.additions,
-      removals = _ref.removals,
-      viewport = _ref.viewport;
-  var existing = adjustExistingForAdditionsAndRemovals({
-    droppables: updatedDroppables,
-    existing: unmodifiedExisting,
-    additions: unmodifiedAdditions,
-    removals: removals,
-    viewport: viewport
-  });
-  var dragging = existing[criticalId];
-  var home = updatedDroppables[dragging.descriptor.droppableId];
-  var scrolledAdditions = adjustAdditionsForScrollChanges({
-    additions: unmodifiedAdditions,
-    updatedDroppables: updatedDroppables,
-    viewport: viewport
-  });
-  var additions = adjustAdditionsForCollapsedHome({
-    additions: scrolledAdditions,
-    dragging: dragging,
-    home: home,
-    viewport: viewport
-  });
-
-  var map = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, existing, toDraggableMap(additions));
-
-  removals.forEach(function (id) {
-    delete map[id];
-  });
-  return map;
-});
-
-var getMaxScroll = (function (_ref) {
-  var scrollHeight = _ref.scrollHeight,
-      scrollWidth = _ref.scrollWidth,
-      height = _ref.height,
-      width = _ref.width;
-  var maxScroll = subtract({
-    x: scrollWidth,
-    y: scrollHeight
+    var shouldAnimate = getShouldAnimate(id, last, forceShouldAnimate);
+    var displacement = {
+      draggableId: id,
+      shouldAnimate: shouldAnimate
+    };
+    groups.visible[id] = displacement;
+    return groups;
   }, {
-    x: width,
-    y: height
+    all: [],
+    visible: {},
+    invisible: {}
   });
-  var adjustedMaxScroll = {
-    x: Math.max(0, maxScroll.x),
-    y: Math.max(0, maxScroll.y)
-  };
-  return adjustedMaxScroll;
-});
+}
 
-var getDroppableDimension = (function (_ref) {
-  var descriptor = _ref.descriptor,
-      isEnabled = _ref.isEnabled,
-      isCombineEnabled = _ref.isCombineEnabled,
-      isFixedOnPage = _ref.isFixedOnPage,
-      direction = _ref.direction,
-      client = _ref.client,
-      page = _ref.page,
-      closest = _ref.closest;
+function getIndexOfLastItem(draggables, options) {
+  if (!draggables.length) {
+    return 0;
+  }
 
-  var frame = function () {
-    if (!closest) {
-      return null;
-    }
+  var indexOfLastItem = draggables[draggables.length - 1].descriptor.index;
+  return options.inHomeList ? indexOfLastItem : indexOfLastItem + 1;
+}
 
-    var scrollSize = closest.scrollSize,
-        frameClient = closest.client;
-    var maxScroll = getMaxScroll({
-      scrollHeight: scrollSize.scrollHeight,
-      scrollWidth: scrollSize.scrollWidth,
-      height: frameClient.paddingBox.height,
-      width: frameClient.paddingBox.width
-    });
-    return {
-      pageMarginBox: closest.page.marginBox,
-      frameClient: frameClient,
-      scrollSize: scrollSize,
-      shouldClipSubject: closest.shouldClipSubject,
-      scroll: {
-        initial: closest.scroll,
-        current: closest.scroll,
-        max: maxScroll,
-        diff: {
-          value: origin,
-          displacement: origin
-        }
+function goAtEnd(_ref) {
+  var insideDestination = _ref.insideDestination,
+      inHomeList = _ref.inHomeList,
+      displacedBy = _ref.displacedBy,
+      destination = _ref.destination;
+  var newIndex = getIndexOfLastItem(insideDestination, {
+    inHomeList: inHomeList
+  });
+  return {
+    displaced: emptyGroups,
+    displacedBy: displacedBy,
+    at: {
+      type: 'REORDER',
+      destination: {
+        droppableId: destination.descriptor.id,
+        index: newIndex
       }
-    };
-  }();
-
-  var axis = direction === 'vertical' ? vertical : horizontal;
-  var subject = getSubject({
-    page: page,
-    withPlaceholder: null,
-    axis: axis,
-    frame: frame
-  });
-  var dimension = {
-    descriptor: descriptor,
-    isCombineEnabled: isCombineEnabled,
-    isFixedOnPage: isFixedOnPage,
-    axis: axis,
-    isEnabled: isEnabled,
-    client: client,
-    page: page,
-    frame: frame,
-    subject: subject
-  };
-  return dimension;
-});
-
-var isHomeOf = (function (draggable, destination) {
-  return draggable.descriptor.droppableId === destination.descriptor.id;
-});
-
-var getRequiredGrowthForPlaceholder = function getRequiredGrowthForPlaceholder(droppable, placeholderSize, draggables) {
-  var axis = droppable.axis;
-  var availableSpace = droppable.subject.page.contentBox[axis.size];
-  var insideDroppable = getDraggablesInsideDroppable(droppable.descriptor.id, draggables);
-  var spaceUsed = insideDroppable.reduce(function (sum, dimension) {
-    return sum + dimension.client.marginBox[axis.size];
-  }, 0);
-  var requiredSpace = spaceUsed + placeholderSize[axis.line];
-  var needsToGrowBy = requiredSpace - availableSpace;
-
-  if (needsToGrowBy <= 0) {
-    return null;
-  }
-
-  return patch(axis.line, needsToGrowBy);
-};
-
-var withMaxScroll = function withMaxScroll(frame, max) {
-  return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, frame, {
-    scroll: (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, frame.scroll, {
-      max: max
-    })
-  });
-};
-
-var addPlaceholder = function addPlaceholder(droppable, draggable, draggables) {
-  var frame = droppable.frame;
-  !!isHomeOf(draggable, droppable) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Should not add placeholder space to home list') : 0 : void 0;
-  !!droppable.subject.withPlaceholder ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot add placeholder size to a subject when it already has one') : 0 : void 0;
-  var placeholderSize = getDisplacedBy(droppable.axis, draggable.displaceBy).point;
-  var requiredGrowth = getRequiredGrowthForPlaceholder(droppable, placeholderSize, draggables);
-  var added = {
-    placeholderSize: placeholderSize,
-    increasedBy: requiredGrowth,
-    oldFrameMaxScroll: droppable.frame ? droppable.frame.scroll.max : null
-  };
-
-  if (!frame) {
-    var _subject = getSubject({
-      page: droppable.subject.page,
-      withPlaceholder: added,
-      axis: droppable.axis,
-      frame: droppable.frame
-    });
-
-    return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, droppable, {
-      subject: _subject
-    });
-  }
-
-  var maxScroll = requiredGrowth ? add(frame.scroll.max, requiredGrowth) : frame.scroll.max;
-  var newFrame = withMaxScroll(frame, maxScroll);
-  var subject = getSubject({
-    page: droppable.subject.page,
-    withPlaceholder: added,
-    axis: droppable.axis,
-    frame: newFrame
-  });
-  return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, droppable, {
-    subject: subject,
-    frame: newFrame
-  });
-};
-var removePlaceholder = function removePlaceholder(droppable) {
-  var added = droppable.subject.withPlaceholder;
-  !added ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot remove placeholder form subject when there was none') : 0 : void 0;
-  var frame = droppable.frame;
-
-  if (!frame) {
-    var _subject2 = getSubject({
-      page: droppable.subject.page,
-      axis: droppable.axis,
-      frame: null,
-      withPlaceholder: null
-    });
-
-    return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, droppable, {
-      subject: _subject2
-    });
-  }
-
-  var oldMaxScroll = added.oldFrameMaxScroll;
-  !oldMaxScroll ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Expected droppable with frame to have old max frame scroll when removing placeholder') : 0 : void 0;
-  var newFrame = withMaxScroll(frame, oldMaxScroll);
-  var subject = getSubject({
-    page: droppable.subject.page,
-    axis: droppable.axis,
-    frame: newFrame,
-    withPlaceholder: null
-  });
-  return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, droppable, {
-    subject: subject,
-    frame: newFrame
-  });
-};
-
-var getFrame = (function (droppable) {
-  var frame = droppable.frame;
-  !frame ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Expected Droppable to have a frame') : 0 : void 0;
-  return frame;
-});
-
-var throwIfSpacingChange = function throwIfSpacingChange(old, fresh) {
-  if (true) {
-    var getMessage = function getMessage(spacingType) {
-      return "Cannot change the " + spacingType + " of a Droppable during a drag";
-    };
-
-    !isEqual$1(old.margin, fresh.margin) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, getMessage('margin')) : 0 : void 0;
-    !isEqual$1(old.border, fresh.border) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, getMessage('border')) : 0 : void 0;
-    !isEqual$1(old.padding, fresh.padding) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, getMessage('padding')) : 0 : void 0;
-  }
-};
-
-var adjustBorderBoxSize = function adjustBorderBoxSize(axis, old, fresh) {
-  return {
-    top: old.top,
-    left: old.left,
-    right: old.left + fresh.width,
-    bottom: old.top + fresh.height
-  };
-};
-
-var updateDroppables = (function (_ref) {
-  var modified = _ref.modified,
-      existing = _ref.existing,
-      viewport = _ref.viewport;
-
-  if (!modified.length) {
-    return existing;
-  }
-
-  var adjusted = modified.map(function (provided) {
-    var raw = existing[provided.descriptor.id];
-    !raw ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Could not locate droppable in existing droppables') : 0 : void 0;
-    var hasPlaceholder = Boolean(raw.subject.withPlaceholder);
-    var dimension = hasPlaceholder ? removePlaceholder(raw) : raw;
-    var oldClient = dimension.client;
-    var newClient = provided.client;
-    var oldScrollable = getFrame(dimension);
-    var newScrollable = getFrame(provided);
-
-    if (true) {
-      throwIfSpacingChange(dimension.client, provided.client);
-      throwIfSpacingChange(oldScrollable.frameClient, newScrollable.frameClient);
-      var isFrameEqual = oldScrollable.frameClient.borderBox.height === newScrollable.frameClient.borderBox.height && oldScrollable.frameClient.borderBox.width === newScrollable.frameClient.borderBox.width;
-      !isFrameEqual ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'The width and height of your Droppable scroll container cannot change when adding or removing Draggables during a drag') : 0 : void 0;
     }
+  };
+}
 
-    var client = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.createBox)({
-      borderBox: adjustBorderBoxSize(dimension.axis, oldClient.borderBox, newClient.borderBox),
-      margin: oldClient.margin,
-      border: oldClient.border,
-      padding: oldClient.padding
-    });
-    var closest = {
-      client: oldScrollable.frameClient,
-      page: (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.withScroll)(oldScrollable.frameClient, viewport.scroll.initial),
-      shouldClipSubject: oldScrollable.shouldClipSubject,
-      scrollSize: newScrollable.scrollSize,
-      scroll: oldScrollable.scroll.initial
-    };
-    var withSizeChanged = getDroppableDimension({
-      descriptor: provided.descriptor,
-      isEnabled: provided.isEnabled,
-      isCombineEnabled: provided.isCombineEnabled,
-      isFixedOnPage: provided.isFixedOnPage,
-      direction: provided.axis.direction,
-      client: client,
-      page: (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.withScroll)(client, viewport.scroll.initial),
-      closest: closest
-    });
-    var scrolled = scrollDroppable(withSizeChanged, newScrollable.scroll.current);
-    return scrolled;
-  });
-
-  var result = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, existing, toDroppableMap(adjusted));
-
-  return result;
-});
-
-var withNoAnimatedDisplacement = (function (impact) {
-  var displaced = impact.movement.displaced;
-
-  if (!displaced.length) {
-    return impact;
-  }
-
-  var withoutAnimation = displaced.map(function (displacement) {
-    if (!displacement.isVisible) {
-      return displacement;
-    }
-
-    if (!displacement.shouldAnimate) {
-      return displacement;
-    }
-
-    return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, displacement, {
-      shouldAnimate: false
-    });
-  });
-
-  var result = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, impact, {
-    movement: (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, impact.movement, {
-      displaced: withoutAnimation,
-      map: getDisplacementMap(withoutAnimation)
-    })
-  });
-
-  return result;
-});
-
-var patchDroppableMap = (function (droppables, updated) {
-  var _extends2;
-
-  return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, droppables, (_extends2 = {}, _extends2[updated.descriptor.id] = updated, _extends2));
-});
-
-var clearUnusedPlaceholder = function clearUnusedPlaceholder(_ref) {
-  var previousImpact = _ref.previousImpact,
-      impact = _ref.impact,
-      droppables = _ref.droppables;
-  var last = whatIsDraggedOver(previousImpact);
-  var now = whatIsDraggedOver(impact);
-
-  if (!last) {
-    return droppables;
-  }
-
-  if (last === now) {
-    return droppables;
-  }
-
-  var lastDroppable = droppables[last];
-
-  if (!lastDroppable.subject.withPlaceholder) {
-    return droppables;
-  }
-
-  var updated = removePlaceholder(lastDroppable);
-  return patchDroppableMap(droppables, updated);
-};
-
-var recomputePlaceholders = (function (_ref2) {
+function calculateReorderImpact(_ref2) {
   var draggable = _ref2.draggable,
-      draggables = _ref2.draggables,
-      droppables = _ref2.droppables,
-      previousImpact = _ref2.previousImpact,
-      impact = _ref2.impact;
-  var cleaned = clearUnusedPlaceholder({
-    previousImpact: previousImpact,
-    impact: impact,
-    droppables: droppables
+      insideDestination = _ref2.insideDestination,
+      destination = _ref2.destination,
+      viewport = _ref2.viewport,
+      displacedBy = _ref2.displacedBy,
+      last = _ref2.last,
+      index = _ref2.index,
+      forceShouldAnimate = _ref2.forceShouldAnimate;
+  var inHomeList = isHomeOf(draggable, destination);
+
+  if (index == null) {
+    return goAtEnd({
+      insideDestination: insideDestination,
+      inHomeList: inHomeList,
+      displacedBy: displacedBy,
+      destination: destination
+    });
+  }
+
+  var match = find(insideDestination, function (item) {
+    return item.descriptor.index === index;
   });
-  var isOver = whatIsDraggedOver(impact);
 
-  if (!isOver) {
-    return cleaned;
+  if (!match) {
+    return goAtEnd({
+      insideDestination: insideDestination,
+      inHomeList: inHomeList,
+      displacedBy: displacedBy,
+      destination: destination
+    });
   }
 
-  var droppable = droppables[isOver];
-
-  if (isHomeOf(draggable, droppable)) {
-    return cleaned;
-  }
-
-  if (droppable.subject.withPlaceholder) {
-    return cleaned;
-  }
-
-  var patched = addPlaceholder(droppable, draggable, draggables);
-  return patchDroppableMap(cleaned, patched);
-});
-
-var timingsKey = 'Processing dynamic changes';
-var publishWhileDragging = (function (_ref) {
-  var _extends2, _extends3;
-
-  var state = _ref.state,
-      published = _ref.published;
-  start(timingsKey);
-  var updatedDroppables = updateDroppables({
-    modified: published.modified,
-    existing: state.dimensions.droppables,
-    viewport: state.viewport
+  var withoutDragging = removeDraggableFromList(draggable, insideDestination);
+  var sliceFrom = insideDestination.indexOf(match);
+  var impacted = withoutDragging.slice(sliceFrom);
+  var displaced = getDisplacementGroups({
+    afterDragging: impacted,
+    destination: destination,
+    displacedBy: displacedBy,
+    last: last,
+    viewport: viewport.frame,
+    forceShouldAnimate: forceShouldAnimate
   });
-  var draggables = updateDraggables({
-    updatedDroppables: updatedDroppables,
-    criticalId: state.critical.draggable.id,
-    existing: state.dimensions.draggables,
-    additions: published.additions,
-    removals: published.removals,
-    viewport: state.viewport
-  });
-  var critical = {
-    draggable: draggables[state.critical.draggable.id].descriptor,
-    droppable: updatedDroppables[state.critical.droppable.id].descriptor
-  };
-  var original = state.dimensions.draggables[critical.draggable.id];
-  var updated = draggables[critical.draggable.id];
-  var droppables = recomputePlaceholders({
-    draggable: updated,
-    draggables: draggables,
-    droppables: updatedDroppables,
-    previousImpact: state.impact,
-    impact: state.impact
-  });
-  var dimensions = {
-    draggables: draggables,
-    droppables: droppables
-  };
-
-  var _getDragPositions = getDragPositions({
-    initial: state.initial,
-    current: state.current,
-    oldClientBorderBoxCenter: original.client.borderBox.center,
-    newClientBorderBoxCenter: updated.client.borderBox.center,
-    viewport: state.viewport
-  }),
-      initial = _getDragPositions.initial,
-      current = _getDragPositions.current;
-
-  var _getHomeOnLift = getHomeOnLift({
-    draggable: updated,
-    home: dimensions.droppables[critical.droppable.id],
-    draggables: dimensions.draggables,
-    viewport: state.viewport
-  }),
-      homeImpact = _getHomeOnLift.impact,
-      onLift = _getHomeOnLift.onLift;
-
-  var impact = withNoAnimatedDisplacement(getDragImpact({
-    pageBorderBoxCenter: current.page.borderBoxCenter,
-    draggable: updated,
-    draggables: dimensions.draggables,
-    droppables: dimensions.droppables,
-    previousImpact: homeImpact,
-    viewport: state.viewport,
-    userDirection: state.userDirection,
-    onLift: onLift
-  }));
-  var isOrphaned = Boolean(state.movementMode === 'SNAP' && !whatIsDraggedOver(impact));
-  !!isOrphaned ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Dragging item no longer has a valid merge/destination after a dynamic update. This is not supported') : 0 : void 0;
-  finish(timingsKey);
-
-  var draggingState = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    phase: 'DRAGGING'
-  }, state, (_extends2 = {}, _extends2["phase"] = 'DRAGGING', _extends2.critical = critical, _extends2.current = current, _extends2.initial = initial, _extends2.impact = impact, _extends2.dimensions = dimensions, _extends2.onLift = onLift, _extends2.onLiftImpact = homeImpact, _extends2.forceShouldAnimate = false, _extends2));
-
-  if (state.phase === 'COLLECTING') {
-    return draggingState;
-  }
-
-  var dropPending = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
-    phase: 'DROP_PENDING'
-  }, draggingState, (_extends3 = {}, _extends3["phase"] = 'DROP_PENDING', _extends3.reason = state.reason, _extends3.isWaiting = false, _extends3));
-
-  return dropPending;
-});
-
-var forward = {
-  vertical: 'down',
-  horizontal: 'right'
-};
-var backward = {
-  vertical: 'up',
-  horizontal: 'left'
-};
-
-var moveToNextCombine = (function (_ref) {
-  var isMovingForward = _ref.isMovingForward,
-      isInHomeList = _ref.isInHomeList,
-      draggable = _ref.draggable,
-      destination = _ref.destination,
-      originalInsideDestination = _ref.insideDestination,
-      previousImpact = _ref.previousImpact;
-
-  if (!destination.isCombineEnabled) {
-    return null;
-  }
-
-  if (previousImpact.merge) {
-    return null;
-  }
-
-  var location = previousImpact.destination;
-  !location ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Need a previous location to move from into a combine') : 0 : void 0;
-  var currentIndex = location.index;
-
-  var currentInsideDestination = function () {
-    var shallow = originalInsideDestination.slice();
-
-    if (isInHomeList) {
-      shallow.splice(draggable.descriptor.index, 1);
-    }
-
-    shallow.splice(location.index, 0, draggable);
-    return shallow;
-  }();
-
-  var targetIndex = isMovingForward ? currentIndex + 1 : currentIndex - 1;
-
-  if (targetIndex < 0) {
-    return null;
-  }
-
-  if (targetIndex > currentInsideDestination.length - 1) {
-    return null;
-  }
-
-  var target = currentInsideDestination[targetIndex];
-  !(target !== draggable) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot combine with self') : 0 : void 0;
-  var merge = {
-    whenEntered: isMovingForward ? forward : backward,
-    combine: {
-      draggableId: target.descriptor.id,
-      droppableId: destination.descriptor.id
-    }
-  };
-  var impact = {
-    movement: previousImpact.movement,
-    destination: null,
-    merge: merge
-  };
-  return impact;
-});
-
-var addClosest = function addClosest(add, displaced) {
-  var added = {
-    draggableId: add.descriptor.id,
-    isVisible: true,
-    shouldAnimate: true
-  };
-  return [added].concat(displaced);
-};
-var removeClosest = function removeClosest(displaced) {
-  return displaced.slice(1);
-};
-
-var fromReorder = (function (_ref) {
-  var isMovingForward = _ref.isMovingForward,
-      isInHomeList = _ref.isInHomeList,
-      draggable = _ref.draggable,
-      initialInside = _ref.insideDestination,
-      location = _ref.location;
-  var insideDestination = initialInside.slice();
-  var currentIndex = location.index;
-  var isInForeignList = !isInHomeList;
-
-  if (isInForeignList) {
-    insideDestination.splice(location.index, 0, draggable);
-  }
-
-  var proposedIndex = isMovingForward ? currentIndex + 1 : currentIndex - 1;
-
-  if (proposedIndex < 0) {
-    return null;
-  }
-
-  if (proposedIndex > insideDestination.length - 1) {
-    return null;
-  }
-
   return {
-    proposedIndex: proposedIndex,
-    modifyDisplacement: true
+    displaced: displaced,
+    displacedBy: displacedBy,
+    at: {
+      type: 'REORDER',
+      destination: {
+        droppableId: destination.descriptor.id,
+        index: index
+      }
+    }
   };
-});
+}
+
+function didStartAfterCritical(draggableId, afterCritical) {
+  return Boolean(afterCritical.effected[draggableId]);
+}
 
 var fromCombine = (function (_ref) {
   var isMovingForward = _ref.isMovingForward,
       destination = _ref.destination,
-      previousImpact = _ref.previousImpact,
       draggables = _ref.draggables,
-      merge = _ref.merge,
-      onLift = _ref.onLift;
+      combine = _ref.combine,
+      afterCritical = _ref.afterCritical;
 
   if (!destination.isCombineEnabled) {
     return null;
   }
 
-  var movement = previousImpact.movement;
-  var combineId = merge.combine.draggableId;
-  var combine = draggables[combineId];
-  var combineIndex = combine.descriptor.index;
-  var wasDisplacedAtStart = didStartDisplaced(combineId, onLift);
+  var combineId = combine.draggableId;
+  var combineWith = draggables[combineId];
+  var combineWithIndex = combineWith.descriptor.index;
+  var didCombineWithStartAfterCritical = didStartAfterCritical(combineId, afterCritical);
 
-  if (wasDisplacedAtStart) {
-    var hasDisplacedFromStart = !movement.map[combineId];
-
-    if (hasDisplacedFromStart) {
-      if (isMovingForward) {
-        return {
-          proposedIndex: combineIndex,
-          modifyDisplacement: false
-        };
-      }
-
-      return {
-        proposedIndex: combineIndex - 1,
-        modifyDisplacement: true
-      };
-    }
-
+  if (didCombineWithStartAfterCritical) {
     if (isMovingForward) {
-      return {
-        proposedIndex: combineIndex,
-        modifyDisplacement: true
-      };
+      return combineWithIndex;
     }
 
-    return {
-      proposedIndex: combineIndex - 1,
-      modifyDisplacement: false
-    };
-  }
-
-  var isDisplaced = Boolean(movement.map[combineId]);
-
-  if (isDisplaced) {
-    if (isMovingForward) {
-      return {
-        proposedIndex: combineIndex + 1,
-        modifyDisplacement: true
-      };
-    }
-
-    return {
-      proposedIndex: combineIndex,
-      modifyDisplacement: false
-    };
+    return combineWithIndex - 1;
   }
 
   if (isMovingForward) {
-    return {
-      proposedIndex: combineIndex + 1,
-      modifyDisplacement: false
-    };
+    return combineWithIndex + 1;
   }
 
-  return {
-    proposedIndex: combineIndex,
-    modifyDisplacement: true
-  };
+  return combineWithIndex;
+});
+
+var fromReorder = (function (_ref) {
+  var isMovingForward = _ref.isMovingForward,
+      isInHomeList = _ref.isInHomeList,
+      insideDestination = _ref.insideDestination,
+      location = _ref.location;
+
+  if (!insideDestination.length) {
+    return null;
+  }
+
+  var currentIndex = location.index;
+  var proposedIndex = isMovingForward ? currentIndex + 1 : currentIndex - 1;
+  var firstIndex = insideDestination[0].descriptor.index;
+  var lastIndex = insideDestination[insideDestination.length - 1].descriptor.index;
+  var upperBound = isInHomeList ? lastIndex : lastIndex + 1;
+
+  if (proposedIndex < firstIndex) {
+    return null;
+  }
+
+  if (proposedIndex > upperBound) {
+    return null;
+  }
+
+  return proposedIndex;
 });
 
 var moveToNextIndex = (function (_ref) {
@@ -28055,82 +26165,85 @@ var moveToNextIndex = (function (_ref) {
       destination = _ref.destination,
       insideDestination = _ref.insideDestination,
       previousImpact = _ref.previousImpact,
-      onLift = _ref.onLift;
+      viewport = _ref.viewport,
+      afterCritical = _ref.afterCritical;
+  var wasAt = previousImpact.at;
+  !wasAt ?  true ? invariant(false, 'Cannot move in direction without previous impact location') : 0 : void 0;
 
-  var instruction = function () {
-    if (previousImpact.destination) {
-      return fromReorder({
-        isMovingForward: isMovingForward,
-        isInHomeList: isInHomeList,
-        draggable: draggable,
-        location: previousImpact.destination,
-        insideDestination: insideDestination
-      });
+  if (wasAt.type === 'REORDER') {
+    var _newIndex = fromReorder({
+      isMovingForward: isMovingForward,
+      isInHomeList: isInHomeList,
+      location: wasAt.destination,
+      insideDestination: insideDestination
+    });
+
+    if (_newIndex == null) {
+      return null;
     }
 
-    if (previousImpact.merge) {
-      return fromCombine({
-        isMovingForward: isMovingForward,
-        destination: destination,
-        previousImpact: previousImpact,
-        draggables: draggables,
-        merge: previousImpact.merge,
-        onLift: onLift
-      });
-    }
-    return null;
-  }();
+    return calculateReorderImpact({
+      draggable: draggable,
+      insideDestination: insideDestination,
+      destination: destination,
+      viewport: viewport,
+      last: previousImpact.displaced,
+      displacedBy: previousImpact.displacedBy,
+      index: _newIndex
+    });
+  }
 
-  if (instruction == null) {
+  var newIndex = fromCombine({
+    isMovingForward: isMovingForward,
+    destination: destination,
+    displaced: previousImpact.displaced,
+    draggables: draggables,
+    combine: wasAt.combine,
+    afterCritical: afterCritical
+  });
+
+  if (newIndex == null) {
     return null;
   }
 
-  var proposedIndex = instruction.proposedIndex,
-      modifyDisplacement = instruction.modifyDisplacement;
-  var displacedBy = getDisplacedBy(destination.axis, draggable.displaceBy);
+  return calculateReorderImpact({
+    draggable: draggable,
+    insideDestination: insideDestination,
+    destination: destination,
+    viewport: viewport,
+    last: previousImpact.displaced,
+    displacedBy: previousImpact.displacedBy,
+    index: newIndex
+  });
+});
 
-  var displaced = function () {
-    var lastDisplaced = previousImpact.movement.displaced;
+var getCombinedItemDisplacement = (function (_ref) {
+  var displaced = _ref.displaced,
+      afterCritical = _ref.afterCritical,
+      combineWith = _ref.combineWith,
+      displacedBy = _ref.displacedBy;
+  var isDisplaced = Boolean(displaced.visible[combineWith] || displaced.invisible[combineWith]);
 
-    if (!modifyDisplacement) {
-      return lastDisplaced;
-    }
+  if (didStartAfterCritical(combineWith, afterCritical)) {
+    return isDisplaced ? origin : negate(displacedBy.point);
+  }
 
-    if (isMovingForward) {
-      return removeClosest(lastDisplaced);
-    }
-
-    var withoutDraggable = removeDraggableFromList(draggable, insideDestination);
-    var atProposedIndex = withoutDraggable[proposedIndex];
-    return addClosest(atProposedIndex, lastDisplaced);
-  }();
-
-  return {
-    movement: {
-      displacedBy: displacedBy,
-      displaced: displaced,
-      map: getDisplacementMap(displaced)
-    },
-    destination: {
-      droppableId: destination.descriptor.id,
-      index: proposedIndex
-    },
-    merge: null
-  };
+  return isDisplaced ? displacedBy.point : origin;
 });
 
 var whenCombining = (function (_ref) {
-  var combine = _ref.combine,
-      onLift = _ref.onLift,
-      movement = _ref.movement,
+  var afterCritical = _ref.afterCritical,
+      impact = _ref.impact,
       draggables = _ref.draggables;
+  var combine = tryGetCombine(impact);
+  !combine ?  true ? invariant(false) : 0 : void 0;
   var combineWith = combine.draggableId;
   var center = draggables[combineWith].page.borderBox.center;
   var displaceBy = getCombinedItemDisplacement({
-    displaced: movement.map,
-    onLift: onLift,
+    displaced: impact.displaced,
+    afterCritical: afterCritical,
     combineWith: combineWith,
-    displacedBy: movement.displacedBy
+    displacedBy: impact.displacedBy
   });
   return add(center, displaceBy);
 });
@@ -28167,11 +26280,11 @@ var goIntoStart = function goIntoStart(_ref3) {
 };
 
 var whenReordering = (function (_ref) {
-  var movement = _ref.movement,
+  var impact = _ref.impact,
       draggable = _ref.draggable,
       draggables = _ref.draggables,
       droppable = _ref.droppable,
-      onLift = _ref.onLift;
+      afterCritical = _ref.afterCritical;
   var insideDestination = getDraggablesInsideDroppable(droppable.descriptor.id, draggables);
   var draggablePage = draggable.page;
   var axis = droppable.axis;
@@ -28184,21 +26297,22 @@ var whenReordering = (function (_ref) {
     });
   }
 
-  var displaced = movement.displaced,
-      displacedBy = movement.displacedBy;
+  var displaced = impact.displaced,
+      displacedBy = impact.displacedBy;
+  var closestAfter = displaced.all[0];
 
-  if (displaced.length) {
-    var closestAfter = draggables[displaced[0].draggableId];
+  if (closestAfter) {
+    var closest = draggables[closestAfter];
 
-    if (didStartDisplaced(closestAfter.descriptor.id, onLift)) {
+    if (didStartAfterCritical(closestAfter, afterCritical)) {
       return goBefore({
         axis: axis,
-        moveRelativeTo: closestAfter.page,
+        moveRelativeTo: closest.page,
         isMoving: draggablePage
       });
     }
 
-    var withDisplacement = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.offset)(closestAfter.page, displacedBy.point);
+    var withDisplacement = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.offset)(closest.page, displacedBy.point);
     return goBefore({
       axis: axis,
       moveRelativeTo: withDisplacement,
@@ -28212,8 +26326,8 @@ var whenReordering = (function (_ref) {
     return draggablePage.borderBox.center;
   }
 
-  if (didStartDisplaced(last.descriptor.id, onLift)) {
-    var page = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.offset)(last.page, negate(onLift.displacedBy.point));
+  if (didStartAfterCritical(last.descriptor.id, afterCritical)) {
+    var page = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.offset)(last.page, negate(afterCritical.displacedBy.point));
     return goAfter({
       axis: axis,
       moveRelativeTo: page,
@@ -28243,35 +26357,33 @@ var getResultWithoutDroppableDisplacement = function getResultWithoutDroppableDi
       draggable = _ref.draggable,
       droppable = _ref.droppable,
       draggables = _ref.draggables,
-      onLift = _ref.onLift;
-  var merge = impact.merge;
-  var destination = impact.destination;
+      afterCritical = _ref.afterCritical;
   var original = draggable.page.borderBox.center;
+  var at = impact.at;
 
   if (!droppable) {
     return original;
   }
 
-  if (destination) {
+  if (!at) {
+    return original;
+  }
+
+  if (at.type === 'REORDER') {
     return whenReordering({
-      movement: impact.movement,
+      impact: impact,
       draggable: draggable,
       draggables: draggables,
       droppable: droppable,
-      onLift: onLift
+      afterCritical: afterCritical
     });
   }
 
-  if (merge) {
-    return whenCombining({
-      movement: impact.movement,
-      combine: merge.combine,
-      draggables: draggables,
-      onLift: onLift
-    });
-  }
-
-  return original;
+  return whenCombining({
+    impact: impact,
+    draggables: draggables,
+    afterCritical: afterCritical
+  });
 };
 
 var getPageBorderBoxCenterFromImpact = (function (args) {
@@ -28284,7 +26396,7 @@ var getPageBorderBoxCenterFromImpact = (function (args) {
 var scrollViewport = (function (viewport, newScroll) {
   var diff = subtract(newScroll, viewport.scroll.initial);
   var displacement = negate(diff);
-  var frame = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.getRect)({
+  var frame = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getRect)({
     top: newScroll.y,
     bottom: newScroll.y + viewport.frame.height,
     left: newScroll.x,
@@ -28305,60 +26417,72 @@ var scrollViewport = (function (viewport, newScroll) {
   return updated;
 });
 
-var withNewDisplacement = (function (impact, displaced) {
-  return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, impact, {
-    movement: (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, impact.movement, {
-      displaced: displaced,
-      map: getDisplacementMap(displaced)
-    })
+function getDraggables(ids, draggables) {
+  return ids.map(function (id) {
+    return draggables[id];
   });
-});
+}
+
+function tryGetVisible(id, groups) {
+  for (var i = 0; i < groups.length; i++) {
+    var displacement = groups[i].visible[id];
+
+    if (displacement) {
+      return displacement;
+    }
+  }
+
+  return null;
+}
 
 var speculativelyIncrease = (function (_ref) {
   var impact = _ref.impact,
       viewport = _ref.viewport,
       destination = _ref.destination,
       draggables = _ref.draggables,
-      maxScrollChange = _ref.maxScrollChange,
-      onLift = _ref.onLift;
-  var displaced = impact.movement.displaced;
+      maxScrollChange = _ref.maxScrollChange;
   var scrolledViewport = scrollViewport(viewport, add(viewport.scroll.current, maxScrollChange));
   var scrolledDroppable = destination.frame ? scrollDroppable(destination, add(destination.frame.scroll.current, maxScrollChange)) : destination;
-  var updated = displaced.map(function (entry) {
-    if (entry.isVisible) {
-      return entry;
-    }
-
-    var draggable = draggables[entry.draggableId];
-    var withScrolledViewport = getDisplacement({
-      draggable: draggable,
-      destination: destination,
-      previousImpact: impact,
-      viewport: scrolledViewport.frame,
-      onLift: onLift,
-      forceShouldAnimate: false
-    });
-
-    if (withScrolledViewport.isVisible) {
-      return withScrolledViewport;
-    }
-
-    var withScrolledDroppable = getDisplacement({
-      draggable: draggable,
-      destination: scrolledDroppable,
-      previousImpact: impact,
-      viewport: viewport.frame,
-      onLift: onLift,
-      forceShouldAnimate: false
-    });
-
-    if (withScrolledDroppable.isVisible) {
-      return withScrolledDroppable;
-    }
-
-    return entry;
+  var last = impact.displaced;
+  var withViewportScroll = getDisplacementGroups({
+    afterDragging: getDraggables(last.all, draggables),
+    destination: destination,
+    displacedBy: impact.displacedBy,
+    viewport: scrolledViewport.frame,
+    last: last,
+    forceShouldAnimate: false
   });
-  return withNewDisplacement(impact, updated);
+  var withDroppableScroll = getDisplacementGroups({
+    afterDragging: getDraggables(last.all, draggables),
+    destination: scrolledDroppable,
+    displacedBy: impact.displacedBy,
+    viewport: viewport.frame,
+    last: last,
+    forceShouldAnimate: false
+  });
+  var invisible = {};
+  var visible = {};
+  var groups = [last, withViewportScroll, withDroppableScroll];
+  last.all.forEach(function (id) {
+    var displacement = tryGetVisible(id, groups);
+
+    if (displacement) {
+      visible[id] = displacement;
+      return;
+    }
+
+    invisible[id] = true;
+  });
+
+  var newImpact = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, impact, {
+    displaced: {
+      all: last.all,
+      invisible: invisible,
+      visible: visible
+    }
+  });
+
+  return newImpact;
 });
 
 var withViewportDisplacement = (function (viewport, point) {
@@ -28402,7 +26526,7 @@ var moveToNextPlace = (function (_ref) {
       viewport = _ref.viewport,
       previousPageBorderBoxCenter = _ref.previousPageBorderBoxCenter,
       previousClientSelection = _ref.previousClientSelection,
-      onLift = _ref.onLift;
+      afterCritical = _ref.afterCritical;
 
   if (!destination.isEnabled) {
     return null;
@@ -28411,7 +26535,6 @@ var moveToNextPlace = (function (_ref) {
   var insideDestination = getDraggablesInsideDroppable(destination.descriptor.id, draggables);
   var isInHomeList = isHomeOf(draggable, destination);
   var impact = moveToNextCombine({
-    isInHomeList: isInHomeList,
     isMovingForward: isMovingForward,
     draggable: draggable,
     destination: destination,
@@ -28425,7 +26548,8 @@ var moveToNextPlace = (function (_ref) {
     destination: destination,
     insideDestination: insideDestination,
     previousImpact: previousImpact,
-    onLift: onLift
+    viewport: viewport,
+    afterCritical: afterCritical
   });
 
   if (!impact) {
@@ -28437,7 +26561,7 @@ var moveToNextPlace = (function (_ref) {
     draggable: draggable,
     droppable: destination,
     draggables: draggables,
-    onLift: onLift
+    afterCritical: afterCritical
   });
   var isVisibleInNewLocation = isTotallyVisibleInNewLocation({
     draggable: draggable,
@@ -28467,8 +26591,7 @@ var moveToNextPlace = (function (_ref) {
     viewport: viewport,
     destination: destination,
     draggables: draggables,
-    maxScrollChange: distance,
-    onLift: onLift
+    maxScrollChange: distance
   });
   return {
     clientSelection: previousClientSelection,
@@ -28479,7 +26602,7 @@ var moveToNextPlace = (function (_ref) {
 
 var getKnownActive = function getKnownActive(droppable) {
   var rect = droppable.subject.active;
-  !rect ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot get clipped area from droppable') : 0 : void 0;
+  !rect ?  true ? invariant(false, 'Cannot get clipped area from droppable') : 0 : void 0;
   return rect;
 };
 
@@ -28565,13 +26688,13 @@ var getBestCrossAxisDroppable = (function (_ref) {
   })[0];
 });
 
-var getCurrentPageBorderBoxCenter = function getCurrentPageBorderBoxCenter(draggable, onLift) {
+var getCurrentPageBorderBoxCenter = function getCurrentPageBorderBoxCenter(draggable, afterCritical) {
   var original = draggable.page.borderBox.center;
-  return didStartDisplaced(draggable.descriptor.id, onLift) ? subtract(original, onLift.displacedBy.point) : original;
+  return didStartAfterCritical(draggable.descriptor.id, afterCritical) ? subtract(original, afterCritical.displacedBy.point) : original;
 };
-var getCurrentPageBorderBox = function getCurrentPageBorderBox(draggable, onLift) {
+var getCurrentPageBorderBox = function getCurrentPageBorderBox(draggable, afterCritical) {
   var original = draggable.page.borderBox;
-  return didStartDisplaced(draggable.descriptor.id, onLift) ? offsetByPosition(original, negate(onLift.displacedBy.point)) : original;
+  return didStartAfterCritical(draggable.descriptor.id, afterCritical) ? offsetByPosition(original, negate(afterCritical.displacedBy.point)) : original;
 };
 
 var getClosestDraggable = (function (_ref) {
@@ -28579,17 +26702,17 @@ var getClosestDraggable = (function (_ref) {
       viewport = _ref.viewport,
       destination = _ref.destination,
       insideDestination = _ref.insideDestination,
-      onLift = _ref.onLift;
+      afterCritical = _ref.afterCritical;
   var sorted = insideDestination.filter(function (draggable) {
     return isTotallyVisible({
-      target: getCurrentPageBorderBox(draggable, onLift),
+      target: getCurrentPageBorderBox(draggable, afterCritical),
       destination: destination,
       viewport: viewport.frame,
       withDroppableDisplacement: true
     });
   }).sort(function (a, b) {
-    var distanceToA = distance(pageBorderBoxCenter, withDroppableDisplacement(destination, getCurrentPageBorderBoxCenter(a, onLift)));
-    var distanceToB = distance(pageBorderBoxCenter, withDroppableDisplacement(destination, getCurrentPageBorderBoxCenter(b, onLift)));
+    var distanceToA = distance(pageBorderBoxCenter, withDroppableDisplacement(destination, getCurrentPageBorderBoxCenter(a, afterCritical)));
+    var distanceToB = distance(pageBorderBoxCenter, withDroppableDisplacement(destination, getCurrentPageBorderBoxCenter(b, afterCritical)));
 
     if (distanceToA < distanceToB) {
       return -1;
@@ -28604,6 +26727,115 @@ var getClosestDraggable = (function (_ref) {
   return sorted[0] || null;
 });
 
+var getDisplacedBy = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function getDisplacedBy(axis, displaceBy) {
+  var displacement = displaceBy[axis.line];
+  return {
+    value: displacement,
+    point: patch(axis.line, displacement)
+  };
+});
+
+var getRequiredGrowthForPlaceholder = function getRequiredGrowthForPlaceholder(droppable, placeholderSize, draggables) {
+  var axis = droppable.axis;
+
+  if (droppable.descriptor.mode === 'virtual') {
+    return patch(axis.line, placeholderSize[axis.line]);
+  }
+
+  var availableSpace = droppable.subject.page.contentBox[axis.size];
+  var insideDroppable = getDraggablesInsideDroppable(droppable.descriptor.id, draggables);
+  var spaceUsed = insideDroppable.reduce(function (sum, dimension) {
+    return sum + dimension.client.marginBox[axis.size];
+  }, 0);
+  var requiredSpace = spaceUsed + placeholderSize[axis.line];
+  var needsToGrowBy = requiredSpace - availableSpace;
+
+  if (needsToGrowBy <= 0) {
+    return null;
+  }
+
+  return patch(axis.line, needsToGrowBy);
+};
+
+var withMaxScroll = function withMaxScroll(frame, max) {
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, frame, {
+    scroll: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, frame.scroll, {
+      max: max
+    })
+  });
+};
+
+var addPlaceholder = function addPlaceholder(droppable, draggable, draggables) {
+  var frame = droppable.frame;
+  !!isHomeOf(draggable, droppable) ?  true ? invariant(false, 'Should not add placeholder space to home list') : 0 : void 0;
+  !!droppable.subject.withPlaceholder ?  true ? invariant(false, 'Cannot add placeholder size to a subject when it already has one') : 0 : void 0;
+  var placeholderSize = getDisplacedBy(droppable.axis, draggable.displaceBy).point;
+  var requiredGrowth = getRequiredGrowthForPlaceholder(droppable, placeholderSize, draggables);
+  var added = {
+    placeholderSize: placeholderSize,
+    increasedBy: requiredGrowth,
+    oldFrameMaxScroll: droppable.frame ? droppable.frame.scroll.max : null
+  };
+
+  if (!frame) {
+    var _subject = getSubject({
+      page: droppable.subject.page,
+      withPlaceholder: added,
+      axis: droppable.axis,
+      frame: droppable.frame
+    });
+
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, droppable, {
+      subject: _subject
+    });
+  }
+
+  var maxScroll = requiredGrowth ? add(frame.scroll.max, requiredGrowth) : frame.scroll.max;
+  var newFrame = withMaxScroll(frame, maxScroll);
+  var subject = getSubject({
+    page: droppable.subject.page,
+    withPlaceholder: added,
+    axis: droppable.axis,
+    frame: newFrame
+  });
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, droppable, {
+    subject: subject,
+    frame: newFrame
+  });
+};
+var removePlaceholder = function removePlaceholder(droppable) {
+  var added = droppable.subject.withPlaceholder;
+  !added ?  true ? invariant(false, 'Cannot remove placeholder form subject when there was none') : 0 : void 0;
+  var frame = droppable.frame;
+
+  if (!frame) {
+    var _subject2 = getSubject({
+      page: droppable.subject.page,
+      axis: droppable.axis,
+      frame: null,
+      withPlaceholder: null
+    });
+
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, droppable, {
+      subject: _subject2
+    });
+  }
+
+  var oldMaxScroll = added.oldFrameMaxScroll;
+  !oldMaxScroll ?  true ? invariant(false, 'Expected droppable with frame to have old max frame scroll when removing placeholder') : 0 : void 0;
+  var newFrame = withMaxScroll(frame, oldMaxScroll);
+  var subject = getSubject({
+    page: droppable.subject.page,
+    axis: droppable.axis,
+    frame: newFrame,
+    withPlaceholder: null
+  });
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, droppable, {
+    subject: subject,
+    frame: newFrame
+  });
+};
+
 var moveToNewDroppable = (function (_ref) {
   var previousPageBorderBoxCenter = _ref.previousPageBorderBoxCenter,
       moveRelativeTo = _ref.moveRelativeTo,
@@ -28611,9 +26843,8 @@ var moveToNewDroppable = (function (_ref) {
       draggable = _ref.draggable,
       draggables = _ref.draggables,
       destination = _ref.destination,
-      previousImpact = _ref.previousImpact,
       viewport = _ref.viewport,
-      onLift = _ref.onLift;
+      afterCritical = _ref.afterCritical;
 
   if (!moveRelativeTo) {
     if (insideDestination.length) {
@@ -28621,19 +26852,22 @@ var moveToNewDroppable = (function (_ref) {
     }
 
     var proposed = {
-      movement: noMovement,
-      destination: {
-        droppableId: destination.descriptor.id,
-        index: 0
-      },
-      merge: null
+      displaced: emptyGroups,
+      displacedBy: noDisplacedBy,
+      at: {
+        type: 'REORDER',
+        destination: {
+          droppableId: destination.descriptor.id,
+          index: 0
+        }
+      }
     };
     var proposedPageBorderBoxCenter = getPageBorderBoxCenterFromImpact({
       impact: proposed,
       draggable: draggable,
       droppable: destination,
       draggables: draggables,
-      onLift: onLift
+      afterCritical: afterCritical
     });
     var withPlaceholder = isHomeOf(draggable, destination) ? destination : addPlaceholder(destination, draggable, draggables);
     var isVisibleInNewLocation = isTotallyVisibleInNewLocation({
@@ -28647,45 +26881,32 @@ var moveToNewDroppable = (function (_ref) {
     return isVisibleInNewLocation ? proposed : null;
   }
 
-  var isGoingBeforeTarget = Boolean(previousPageBorderBoxCenter[destination.axis.line] < moveRelativeTo.page.borderBox.center[destination.axis.line]);
-  var targetIndex = insideDestination.indexOf(moveRelativeTo);
-  !(targetIndex !== -1) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot find target in list') : 0 : void 0;
+  var isGoingBeforeTarget = Boolean(previousPageBorderBoxCenter[destination.axis.line] <= moveRelativeTo.page.borderBox.center[destination.axis.line]);
 
   var proposedIndex = function () {
+    var relativeTo = moveRelativeTo.descriptor.index;
+
     if (moveRelativeTo.descriptor.id === draggable.descriptor.id) {
-      return targetIndex;
+      return relativeTo;
     }
 
     if (isGoingBeforeTarget) {
-      return targetIndex;
+      return relativeTo;
     }
 
-    return targetIndex + 1;
+    return relativeTo + 1;
   }();
 
-  var displaced = removeDraggableFromList(draggable, insideDestination).slice(proposedIndex).map(function (dimension) {
-    return getDisplacement({
-      draggable: dimension,
-      destination: destination,
-      viewport: viewport.frame,
-      previousImpact: previousImpact,
-      onLift: onLift
-    });
-  });
   var displacedBy = getDisplacedBy(destination.axis, draggable.displaceBy);
-  var impact = {
-    movement: {
-      displacedBy: displacedBy,
-      displaced: displaced,
-      map: getDisplacementMap(displaced)
-    },
-    destination: {
-      droppableId: destination.descriptor.id,
-      index: proposedIndex
-    },
-    merge: null
-  };
-  return impact;
+  return calculateReorderImpact({
+    draggable: draggable,
+    insideDestination: insideDestination,
+    destination: destination,
+    viewport: viewport,
+    displacedBy: displacedBy,
+    last: emptyGroups,
+    index: proposedIndex
+  });
 });
 
 var moveCrossAxis = (function (_ref) {
@@ -28695,9 +26916,8 @@ var moveCrossAxis = (function (_ref) {
       isOver = _ref.isOver,
       draggables = _ref.draggables,
       droppables = _ref.droppables,
-      previousImpact = _ref.previousImpact,
       viewport = _ref.viewport,
-      onLift = _ref.onLift;
+      afterCritical = _ref.afterCritical;
   var destination = getBestCrossAxisDroppable({
     isMovingForward: isMovingForward,
     pageBorderBoxCenter: previousPageBorderBoxCenter,
@@ -28716,7 +26936,7 @@ var moveCrossAxis = (function (_ref) {
     viewport: viewport,
     destination: destination,
     insideDestination: insideDestination,
-    onLift: onLift
+    afterCritical: afterCritical
   });
   var impact = moveToNewDroppable({
     previousPageBorderBoxCenter: previousPageBorderBoxCenter,
@@ -28725,9 +26945,8 @@ var moveCrossAxis = (function (_ref) {
     draggables: draggables,
     moveRelativeTo: moveRelativeTo,
     insideDestination: insideDestination,
-    previousImpact: previousImpact,
     viewport: viewport,
-    onLift: onLift
+    afterCritical: afterCritical
   });
 
   if (!impact) {
@@ -28739,7 +26958,7 @@ var moveCrossAxis = (function (_ref) {
     draggable: draggable,
     droppable: destination,
     draggables: draggables,
-    onLift: onLift
+    afterCritical: afterCritical
   });
   var clientSelection = getClientFromPageBorderBoxCenter({
     pageBorderBoxCenter: pageBorderBoxCenter,
@@ -28753,7 +26972,21 @@ var moveCrossAxis = (function (_ref) {
   };
 });
 
-var getDroppableOver$1 = function getDroppableOver(impact, droppables) {
+var whatIsDraggedOver = (function (impact) {
+  var at = impact.at;
+
+  if (!at) {
+    return null;
+  }
+
+  if (at.type === 'REORDER') {
+    return at.destination.droppableId;
+  }
+
+  return at.combine.droppableId;
+});
+
+var getDroppableOver = function getDroppableOver(impact, droppables) {
   var id = whatIsDraggedOver(impact);
   return id ? droppables[id] : null;
 };
@@ -28761,7 +26994,7 @@ var getDroppableOver$1 = function getDroppableOver(impact, droppables) {
 var moveInDirection = (function (_ref) {
   var state = _ref.state,
       type = _ref.type;
-  var isActuallyOver = getDroppableOver$1(state.impact, state.dimensions.droppables);
+  var isActuallyOver = getDroppableOver(state.impact, state.dimensions.droppables);
   var isMainAxisMovementAllowed = Boolean(isActuallyOver);
   var home = state.dimensions.droppables[state.critical.droppable.id];
   var isOver = isActuallyOver || home;
@@ -28787,7 +27020,7 @@ var moveInDirection = (function (_ref) {
     viewport: state.viewport,
     previousClientSelection: state.current.client.selection,
     previousImpact: state.impact,
-    onLift: state.onLift
+    afterCritical: state.afterCritical
   }) : moveCrossAxis({
     isMovingForward: isMovingForward,
     previousPageBorderBoxCenter: previousPageBorderBoxCenter,
@@ -28795,9 +27028,8 @@ var moveInDirection = (function (_ref) {
     isOver: isOver,
     draggables: draggables,
     droppables: droppables,
-    previousImpact: state.impact,
     viewport: state.viewport,
-    onLift: state.onLift
+    afterCritical: state.afterCritical
   });
 });
 
@@ -28805,28 +27037,349 @@ function isMovementAllowed(state) {
   return state.phase === 'DRAGGING' || state.phase === 'COLLECTING';
 }
 
-var getVertical = function getVertical(previous, diff) {
-  if (diff === 0) {
-    return previous;
-  }
-
-  return diff > 0 ? 'down' : 'up';
-};
-
-var getHorizontal = function getHorizontal(previous, diff) {
-  if (diff === 0) {
-    return previous;
-  }
-
-  return diff > 0 ? 'right' : 'left';
-};
-
-var getUserDirection = (function (previous, oldPageBorderBoxCenter, newPageBorderBoxCenter) {
-  var diff = subtract(newPageBorderBoxCenter, oldPageBorderBoxCenter);
-  return {
-    horizontal: getHorizontal(previous.horizontal, diff.x),
-    vertical: getVertical(previous.vertical, diff.y)
+function isPositionInFrame(frame) {
+  var isWithinVertical = isWithin(frame.top, frame.bottom);
+  var isWithinHorizontal = isWithin(frame.left, frame.right);
+  return function run(point) {
+    return isWithinVertical(point.y) && isWithinHorizontal(point.x);
   };
+}
+
+function getHasOverlap(first, second) {
+  return first.left < second.right && first.right > second.left && first.top < second.bottom && first.bottom > second.top;
+}
+
+function getFurthestAway(_ref) {
+  var pageBorderBox = _ref.pageBorderBox,
+      draggable = _ref.draggable,
+      candidates = _ref.candidates;
+  var startCenter = draggable.page.borderBox.center;
+  var sorted = candidates.map(function (candidate) {
+    var axis = candidate.axis;
+    var target = patch(candidate.axis.line, pageBorderBox.center[axis.line], candidate.page.borderBox.center[axis.crossAxisLine]);
+    return {
+      id: candidate.descriptor.id,
+      distance: distance(startCenter, target)
+    };
+  }).sort(function (a, b) {
+    return b.distance - a.distance;
+  });
+  return sorted[0] ? sorted[0].id : null;
+}
+
+function getDroppableOver$1(_ref2) {
+  var pageBorderBox = _ref2.pageBorderBox,
+      draggable = _ref2.draggable,
+      droppables = _ref2.droppables;
+  var candidates = toDroppableList(droppables).filter(function (item) {
+    if (!item.isEnabled) {
+      return false;
+    }
+
+    var active = item.subject.active;
+
+    if (!active) {
+      return false;
+    }
+
+    if (!getHasOverlap(pageBorderBox, active)) {
+      return false;
+    }
+
+    if (isPositionInFrame(active)(pageBorderBox.center)) {
+      return true;
+    }
+
+    var axis = item.axis;
+    var childCenter = active.center[axis.crossAxisLine];
+    var crossAxisStart = pageBorderBox[axis.crossAxisStart];
+    var crossAxisEnd = pageBorderBox[axis.crossAxisEnd];
+    var isContained = isWithin(active[axis.crossAxisStart], active[axis.crossAxisEnd]);
+    var isStartContained = isContained(crossAxisStart);
+    var isEndContained = isContained(crossAxisEnd);
+
+    if (!isStartContained && !isEndContained) {
+      return true;
+    }
+
+    if (isStartContained) {
+      return crossAxisStart < childCenter;
+    }
+
+    return crossAxisEnd > childCenter;
+  });
+
+  if (!candidates.length) {
+    return null;
+  }
+
+  if (candidates.length === 1) {
+    return candidates[0].descriptor.id;
+  }
+
+  return getFurthestAway({
+    pageBorderBox: pageBorderBox,
+    draggable: draggable,
+    candidates: candidates
+  });
+}
+
+var offsetRectByPosition = function offsetRectByPosition(rect, point) {
+  return (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getRect)(offsetByPosition(rect, point));
+};
+
+var withDroppableScroll = (function (droppable, area) {
+  var frame = droppable.frame;
+
+  if (!frame) {
+    return area;
+  }
+
+  return offsetRectByPosition(area, frame.scroll.diff.value);
+});
+
+function getIsDisplaced(_ref) {
+  var displaced = _ref.displaced,
+      id = _ref.id;
+  return Boolean(displaced.visible[id] || displaced.invisible[id]);
+}
+
+function atIndex(_ref) {
+  var draggable = _ref.draggable,
+      closest = _ref.closest,
+      inHomeList = _ref.inHomeList;
+
+  if (!closest) {
+    return null;
+  }
+
+  if (!inHomeList) {
+    return closest.descriptor.index;
+  }
+
+  if (closest.descriptor.index > draggable.descriptor.index) {
+    return closest.descriptor.index - 1;
+  }
+
+  return closest.descriptor.index;
+}
+
+var getReorderImpact = (function (_ref2) {
+  var targetRect = _ref2.pageBorderBoxWithDroppableScroll,
+      draggable = _ref2.draggable,
+      destination = _ref2.destination,
+      insideDestination = _ref2.insideDestination,
+      last = _ref2.last,
+      viewport = _ref2.viewport,
+      afterCritical = _ref2.afterCritical;
+  var axis = destination.axis;
+  var displacedBy = getDisplacedBy(destination.axis, draggable.displaceBy);
+  var displacement = displacedBy.value;
+  var targetStart = targetRect[axis.start];
+  var targetEnd = targetRect[axis.end];
+  var withoutDragging = removeDraggableFromList(draggable, insideDestination);
+  var closest = find(withoutDragging, function (child) {
+    var id = child.descriptor.id;
+    var childCenter = child.page.borderBox.center[axis.line];
+    var didStartAfterCritical$1 = didStartAfterCritical(id, afterCritical);
+    var isDisplaced = getIsDisplaced({
+      displaced: last,
+      id: id
+    });
+
+    if (didStartAfterCritical$1) {
+      if (isDisplaced) {
+        return targetEnd <= childCenter;
+      }
+
+      return targetStart < childCenter - displacement;
+    }
+
+    if (isDisplaced) {
+      return targetEnd <= childCenter + displacement;
+    }
+
+    return targetStart < childCenter;
+  });
+  var newIndex = atIndex({
+    draggable: draggable,
+    closest: closest,
+    inHomeList: isHomeOf(draggable, destination)
+  });
+  return calculateReorderImpact({
+    draggable: draggable,
+    insideDestination: insideDestination,
+    destination: destination,
+    viewport: viewport,
+    last: last,
+    displacedBy: displacedBy,
+    index: newIndex
+  });
+});
+
+var combineThresholdDivisor = 4;
+var getCombineImpact = (function (_ref) {
+  var draggable = _ref.draggable,
+      targetRect = _ref.pageBorderBoxWithDroppableScroll,
+      previousImpact = _ref.previousImpact,
+      destination = _ref.destination,
+      insideDestination = _ref.insideDestination,
+      afterCritical = _ref.afterCritical;
+
+  if (!destination.isCombineEnabled) {
+    return null;
+  }
+
+  var axis = destination.axis;
+  var displacedBy = getDisplacedBy(destination.axis, draggable.displaceBy);
+  var displacement = displacedBy.value;
+  var targetStart = targetRect[axis.start];
+  var targetEnd = targetRect[axis.end];
+  var withoutDragging = removeDraggableFromList(draggable, insideDestination);
+  var combineWith = find(withoutDragging, function (child) {
+    var id = child.descriptor.id;
+    var childRect = child.page.borderBox;
+    var childSize = childRect[axis.size];
+    var threshold = childSize / combineThresholdDivisor;
+    var didStartAfterCritical$1 = didStartAfterCritical(id, afterCritical);
+    var isDisplaced = getIsDisplaced({
+      displaced: previousImpact.displaced,
+      id: id
+    });
+
+    if (didStartAfterCritical$1) {
+      if (isDisplaced) {
+        return targetEnd > childRect[axis.start] + threshold && targetEnd < childRect[axis.end] - threshold;
+      }
+
+      return targetStart > childRect[axis.start] - displacement + threshold && targetStart < childRect[axis.end] - displacement - threshold;
+    }
+
+    if (isDisplaced) {
+      return targetEnd > childRect[axis.start] + displacement + threshold && targetEnd < childRect[axis.end] + displacement - threshold;
+    }
+
+    return targetStart > childRect[axis.start] + threshold && targetStart < childRect[axis.end] - threshold;
+  });
+
+  if (!combineWith) {
+    return null;
+  }
+
+  var impact = {
+    displacedBy: displacedBy,
+    displaced: previousImpact.displaced,
+    at: {
+      type: 'COMBINE',
+      combine: {
+        draggableId: combineWith.descriptor.id,
+        droppableId: destination.descriptor.id
+      }
+    }
+  };
+  return impact;
+});
+
+var getDragImpact = (function (_ref) {
+  var pageOffset = _ref.pageOffset,
+      draggable = _ref.draggable,
+      draggables = _ref.draggables,
+      droppables = _ref.droppables,
+      previousImpact = _ref.previousImpact,
+      viewport = _ref.viewport,
+      afterCritical = _ref.afterCritical;
+  var pageBorderBox = offsetRectByPosition(draggable.page.borderBox, pageOffset);
+  var destinationId = getDroppableOver$1({
+    pageBorderBox: pageBorderBox,
+    draggable: draggable,
+    droppables: droppables
+  });
+
+  if (!destinationId) {
+    return noImpact;
+  }
+
+  var destination = droppables[destinationId];
+  var insideDestination = getDraggablesInsideDroppable(destination.descriptor.id, draggables);
+  var pageBorderBoxWithDroppableScroll = withDroppableScroll(destination, pageBorderBox);
+  return getCombineImpact({
+    pageBorderBoxWithDroppableScroll: pageBorderBoxWithDroppableScroll,
+    draggable: draggable,
+    previousImpact: previousImpact,
+    destination: destination,
+    insideDestination: insideDestination,
+    afterCritical: afterCritical
+  }) || getReorderImpact({
+    pageBorderBoxWithDroppableScroll: pageBorderBoxWithDroppableScroll,
+    draggable: draggable,
+    destination: destination,
+    insideDestination: insideDestination,
+    last: previousImpact.displaced,
+    viewport: viewport,
+    afterCritical: afterCritical
+  });
+});
+
+var patchDroppableMap = (function (droppables, updated) {
+  var _extends2;
+
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, droppables, (_extends2 = {}, _extends2[updated.descriptor.id] = updated, _extends2));
+});
+
+var clearUnusedPlaceholder = function clearUnusedPlaceholder(_ref) {
+  var previousImpact = _ref.previousImpact,
+      impact = _ref.impact,
+      droppables = _ref.droppables;
+  var last = whatIsDraggedOver(previousImpact);
+  var now = whatIsDraggedOver(impact);
+
+  if (!last) {
+    return droppables;
+  }
+
+  if (last === now) {
+    return droppables;
+  }
+
+  var lastDroppable = droppables[last];
+
+  if (!lastDroppable.subject.withPlaceholder) {
+    return droppables;
+  }
+
+  var updated = removePlaceholder(lastDroppable);
+  return patchDroppableMap(droppables, updated);
+};
+
+var recomputePlaceholders = (function (_ref2) {
+  var draggable = _ref2.draggable,
+      draggables = _ref2.draggables,
+      droppables = _ref2.droppables,
+      previousImpact = _ref2.previousImpact,
+      impact = _ref2.impact;
+  var cleaned = clearUnusedPlaceholder({
+    previousImpact: previousImpact,
+    impact: impact,
+    droppables: droppables
+  });
+  var isOver = whatIsDraggedOver(impact);
+
+  if (!isOver) {
+    return cleaned;
+  }
+
+  var droppable = droppables[isOver];
+
+  if (isHomeOf(draggable, droppable)) {
+    return cleaned;
+  }
+
+  if (droppable.subject.withPlaceholder) {
+    return cleaned;
+  }
+
+  var patched = addPlaceholder(droppable, draggable, draggables);
+  return patchDroppableMap(cleaned, patched);
 });
 
 var update = (function (_ref) {
@@ -28837,7 +27390,6 @@ var update = (function (_ref) {
       forcedImpact = _ref.impact,
       scrollJumpRequest = _ref.scrollJumpRequest;
   var viewport = forcedViewport || state.viewport;
-  var currentWindowScroll = viewport.scroll.current;
   var dimensions = forcedDimensions || state.dimensions;
   var clientSelection = forcedClientSelection || state.current.client.selection;
   var offset = subtract(clientSelection, state.initial.client.selection);
@@ -28847,36 +27399,34 @@ var update = (function (_ref) {
     borderBoxCenter: add(state.initial.client.borderBoxCenter, offset)
   };
   var page = {
-    selection: add(client.selection, currentWindowScroll),
-    borderBoxCenter: add(client.borderBoxCenter, currentWindowScroll)
+    selection: add(client.selection, viewport.scroll.current),
+    borderBoxCenter: add(client.borderBoxCenter, viewport.scroll.current),
+    offset: add(client.offset, viewport.scroll.diff.value)
   };
   var current = {
     client: client,
     page: page
   };
-  var userDirection = getUserDirection(state.userDirection, state.current.page.borderBoxCenter, current.page.borderBoxCenter);
 
   if (state.phase === 'COLLECTING') {
-    return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
       phase: 'COLLECTING'
     }, state, {
       dimensions: dimensions,
       viewport: viewport,
-      current: current,
-      userDirection: userDirection
+      current: current
     });
   }
 
   var draggable = dimensions.draggables[state.critical.draggable.id];
   var newImpact = forcedImpact || getDragImpact({
-    pageBorderBoxCenter: page.borderBoxCenter,
+    pageOffset: page.offset,
     draggable: draggable,
     draggables: dimensions.draggables,
     droppables: dimensions.droppables,
     previousImpact: state.impact,
     viewport: viewport,
-    userDirection: userDirection,
-    onLift: state.onLift
+    afterCritical: state.afterCritical
   });
   var withUpdatedPlaceholders = recomputePlaceholders({
     draggable: draggable,
@@ -28886,9 +27436,8 @@ var update = (function (_ref) {
     droppables: dimensions.droppables
   });
 
-  var result = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, {
+  var result = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state, {
     current: current,
-    userDirection: userDirection,
     dimensions: {
       draggables: dimensions.draggables,
       droppables: withUpdatedPlaceholders
@@ -28902,24 +27451,31 @@ var update = (function (_ref) {
   return result;
 });
 
+function getDraggables$1(ids, draggables) {
+  return ids.map(function (id) {
+    return draggables[id];
+  });
+}
+
 var recompute = (function (_ref) {
   var impact = _ref.impact,
       viewport = _ref.viewport,
-      destination = _ref.destination,
       draggables = _ref.draggables,
-      onLift = _ref.onLift,
+      destination = _ref.destination,
       forceShouldAnimate = _ref.forceShouldAnimate;
-  var updated = impact.movement.displaced.map(function (entry) {
-    return getDisplacement({
-      draggable: draggables[entry.draggableId],
-      destination: destination,
-      previousImpact: impact,
-      viewport: viewport.frame,
-      onLift: onLift,
-      forceShouldAnimate: forceShouldAnimate
-    });
+  var last = impact.displaced;
+  var afterDragging = getDraggables$1(last.all, draggables);
+  var displaced = getDisplacementGroups({
+    afterDragging: afterDragging,
+    destination: destination,
+    displacedBy: impact.displacedBy,
+    viewport: viewport.frame,
+    forceShouldAnimate: forceShouldAnimate,
+    last: last
   });
-  return withNewDisplacement(impact, updated);
+  return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, impact, {
+    displaced: displaced
+  });
 });
 
 var getClientBorderBoxCenter = (function (_ref) {
@@ -28928,13 +27484,13 @@ var getClientBorderBoxCenter = (function (_ref) {
       droppable = _ref.droppable,
       draggables = _ref.draggables,
       viewport = _ref.viewport,
-      onLift = _ref.onLift;
+      afterCritical = _ref.afterCritical;
   var pageBorderBoxCenter = getPageBorderBoxCenterFromImpact({
     impact: impact,
     draggable: draggable,
     draggables: draggables,
     droppable: droppable,
-    onLift: onLift
+    afterCritical: afterCritical
   });
   return getClientFromPageBorderBoxCenter({
     pageBorderBoxCenter: pageBorderBoxCenter,
@@ -28947,7 +27503,7 @@ var refreshSnap = (function (_ref) {
   var state = _ref.state,
       forcedDimensions = _ref.dimensions,
       forcedViewport = _ref.viewport;
-  !(state.movementMode === 'SNAP') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false) : 0 : void 0;
+  !(state.movementMode === 'SNAP') ?  true ? invariant(false) : 0 : void 0;
   var needsVisibilityCheck = state.impact;
   var viewport = forcedViewport || state.viewport;
   var dimensions = forcedDimensions || state.dimensions;
@@ -28955,14 +27511,13 @@ var refreshSnap = (function (_ref) {
       droppables = dimensions.droppables;
   var draggable = draggables[state.critical.draggable.id];
   var isOver = whatIsDraggedOver(needsVisibilityCheck);
-  !isOver ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Must be over a destination in SNAP movement mode') : 0 : void 0;
+  !isOver ?  true ? invariant(false, 'Must be over a destination in SNAP movement mode') : 0 : void 0;
   var destination = droppables[isOver];
   var impact = recompute({
     impact: needsVisibilityCheck,
     viewport: viewport,
     destination: destination,
-    draggables: draggables,
-    onLift: state.onLift
+    draggables: draggables
   });
   var clientSelection = getClientBorderBoxCenter({
     impact: impact,
@@ -28970,7 +27525,7 @@ var refreshSnap = (function (_ref) {
     droppable: destination,
     draggables: draggables,
     viewport: viewport,
-    onLift: state.onLift
+    afterCritical: state.afterCritical
   });
   return update({
     impact: impact,
@@ -28981,11 +27536,197 @@ var refreshSnap = (function (_ref) {
   });
 });
 
+var getHomeLocation = (function (descriptor) {
+  return {
+    index: descriptor.index,
+    droppableId: descriptor.droppableId
+  };
+});
+
+var getLiftEffect = (function (_ref) {
+  var draggable = _ref.draggable,
+      home = _ref.home,
+      draggables = _ref.draggables,
+      viewport = _ref.viewport;
+  var displacedBy = getDisplacedBy(home.axis, draggable.displaceBy);
+  var insideHome = getDraggablesInsideDroppable(home.descriptor.id, draggables);
+  var rawIndex = insideHome.indexOf(draggable);
+  !(rawIndex !== -1) ?  true ? invariant(false, 'Expected draggable to be inside home list') : 0 : void 0;
+  var afterDragging = insideHome.slice(rawIndex + 1);
+  var effected = afterDragging.reduce(function (previous, item) {
+    previous[item.descriptor.id] = true;
+    return previous;
+  }, {});
+  var afterCritical = {
+    inVirtualList: home.descriptor.mode === 'virtual',
+    displacedBy: displacedBy,
+    effected: effected
+  };
+  var displaced = getDisplacementGroups({
+    afterDragging: afterDragging,
+    destination: home,
+    displacedBy: displacedBy,
+    last: null,
+    viewport: viewport.frame,
+    forceShouldAnimate: false
+  });
+  var impact = {
+    displaced: displaced,
+    displacedBy: displacedBy,
+    at: {
+      type: 'REORDER',
+      destination: getHomeLocation(draggable.descriptor)
+    }
+  };
+  return {
+    impact: impact,
+    afterCritical: afterCritical
+  };
+});
+
 var patchDimensionMap = (function (dimensions, updated) {
   return {
     draggables: dimensions.draggables,
     droppables: patchDroppableMap(dimensions.droppables, updated)
   };
+});
+
+var start = function start(key) {
+  if (true) {
+    {
+      return;
+    }
+  }
+};
+var finish = function finish(key) {
+  if (true) {
+    {
+      return;
+    }
+  }
+};
+
+var offsetDraggable = (function (_ref) {
+  var draggable = _ref.draggable,
+      offset$1 = _ref.offset,
+      initialWindowScroll = _ref.initialWindowScroll;
+  var client = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.offset)(draggable.client, offset$1);
+  var page = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.withScroll)(client, initialWindowScroll);
+
+  var moved = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, draggable, {
+    placeholder: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, draggable.placeholder, {
+      client: client
+    }),
+    client: client,
+    page: page
+  });
+
+  return moved;
+});
+
+var getFrame = (function (droppable) {
+  var frame = droppable.frame;
+  !frame ?  true ? invariant(false, 'Expected Droppable to have a frame') : 0 : void 0;
+  return frame;
+});
+
+var adjustAdditionsForScrollChanges = (function (_ref) {
+  var additions = _ref.additions,
+      updatedDroppables = _ref.updatedDroppables,
+      viewport = _ref.viewport;
+  var windowScrollChange = viewport.scroll.diff.value;
+  return additions.map(function (draggable) {
+    var droppableId = draggable.descriptor.droppableId;
+    var modified = updatedDroppables[droppableId];
+    var frame = getFrame(modified);
+    var droppableScrollChange = frame.scroll.diff.value;
+    var totalChange = add(windowScrollChange, droppableScrollChange);
+    var moved = offsetDraggable({
+      draggable: draggable,
+      offset: totalChange,
+      initialWindowScroll: viewport.scroll.initial
+    });
+    return moved;
+  });
+});
+
+var publishWhileDraggingInVirtual = (function (_ref) {
+  var state = _ref.state,
+      published = _ref.published;
+  start();
+  var withScrollChange = published.modified.map(function (update) {
+    var existing = state.dimensions.droppables[update.droppableId];
+    var scrolled = scrollDroppable(existing, update.scroll);
+    return scrolled;
+  });
+
+  var droppables = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state.dimensions.droppables, {}, toDroppableMap(withScrollChange));
+
+  var updatedAdditions = toDraggableMap(adjustAdditionsForScrollChanges({
+    additions: published.additions,
+    updatedDroppables: droppables,
+    viewport: state.viewport
+  }));
+
+  var draggables = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state.dimensions.draggables, {}, updatedAdditions);
+
+  published.removals.forEach(function (id) {
+    delete draggables[id];
+  });
+  var dimensions = {
+    droppables: droppables,
+    draggables: draggables
+  };
+  var wasOverId = whatIsDraggedOver(state.impact);
+  var wasOver = wasOverId ? dimensions.droppables[wasOverId] : null;
+  var draggable = dimensions.draggables[state.critical.draggable.id];
+  var home = dimensions.droppables[state.critical.droppable.id];
+
+  var _getLiftEffect = getLiftEffect({
+    draggable: draggable,
+    home: home,
+    draggables: draggables,
+    viewport: state.viewport
+  }),
+      onLiftImpact = _getLiftEffect.impact,
+      afterCritical = _getLiftEffect.afterCritical;
+
+  var previousImpact = wasOver && wasOver.isCombineEnabled ? state.impact : onLiftImpact;
+  var impact = getDragImpact({
+    pageOffset: state.current.page.offset,
+    draggable: dimensions.draggables[state.critical.draggable.id],
+    draggables: dimensions.draggables,
+    droppables: dimensions.droppables,
+    previousImpact: previousImpact,
+    viewport: state.viewport,
+    afterCritical: afterCritical
+  });
+  finish();
+
+  var draggingState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+    phase: 'DRAGGING'
+  }, state, {
+    phase: 'DRAGGING',
+    impact: impact,
+    onLiftImpact: onLiftImpact,
+    dimensions: dimensions,
+    afterCritical: afterCritical,
+    forceShouldAnimate: false
+  });
+
+  if (state.phase === 'COLLECTING') {
+    return draggingState;
+  }
+
+  var dropPending = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+    phase: 'DROP_PENDING'
+  }, draggingState, {
+    phase: 'DROP_PENDING',
+    reason: state.reason,
+    isWaiting: false
+  });
+
+  return dropPending;
 });
 
 var isSnapping = function isSnapping(state) {
@@ -29008,6 +27749,18 @@ var postDroppableChange = function postDroppableChange(state, updated, isEnabled
   });
 };
 
+function removeScrollJumpRequest(state) {
+  if (state.isDragging && state.movementMode === 'SNAP') {
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+      phase: 'DRAGGING'
+    }, state, {
+      scrollJumpRequest: null
+    });
+  }
+
+  return state;
+}
+
 var idle = {
   phase: 'IDLE',
   completed: null,
@@ -29018,12 +27771,14 @@ var reducer = (function (state, action) {
     state = idle;
   }
 
-  if (action.type === 'CLEAN') {
-    return idle;
+  if (action.type === 'FLUSH') {
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, idle, {
+      shouldFlush: true
+    });
   }
 
   if (action.type === 'INITIAL_PUBLISH') {
-    !(state.phase === 'IDLE') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'INITIAL_PUBLISH must come after a IDLE phase') : 0 : void 0;
+    !(state.phase === 'IDLE') ?  true ? invariant(false, 'INITIAL_PUBLISH must come after a IDLE phase') : 0 : void 0;
     var _action$payload = action.payload,
         critical = _action$payload.critical,
         clientSelection = _action$payload.clientSelection,
@@ -29041,21 +27796,22 @@ var reducer = (function (state, action) {
       client: client,
       page: {
         selection: add(client.selection, viewport.scroll.initial),
-        borderBoxCenter: add(client.selection, viewport.scroll.initial)
+        borderBoxCenter: add(client.selection, viewport.scroll.initial),
+        offset: add(client.selection, viewport.scroll.diff.value)
       }
     };
     var isWindowScrollAllowed = toDroppableList(dimensions.droppables).every(function (item) {
       return !item.isFixedOnPage;
     });
 
-    var _getHomeOnLift = getHomeOnLift({
+    var _getLiftEffect = getLiftEffect({
       draggable: draggable,
       home: home,
       draggables: dimensions.draggables,
       viewport: viewport
     }),
-        impact = _getHomeOnLift.impact,
-        onLift = _getHomeOnLift.onLift;
+        impact = _getLiftEffect.impact,
+        afterCritical = _getLiftEffect.afterCritical;
 
     var result = {
       phase: 'DRAGGING',
@@ -29067,10 +27823,9 @@ var reducer = (function (state, action) {
       current: initial,
       isWindowScrollAllowed: isWindowScrollAllowed,
       impact: impact,
-      onLift: onLift,
+      afterCritical: afterCritical,
       onLiftImpact: impact,
       viewport: viewport,
-      userDirection: forward,
       scrollJumpRequest: null,
       forceShouldAnimate: null
     };
@@ -29078,24 +27833,24 @@ var reducer = (function (state, action) {
   }
 
   if (action.type === 'COLLECTION_STARTING') {
-    var _extends2;
-
     if (state.phase === 'COLLECTING' || state.phase === 'DROP_PENDING') {
       return state;
     }
 
-    !(state.phase === 'DRAGGING') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Collection cannot start from phase " + state.phase) : 0 : void 0;
+    !(state.phase === 'DRAGGING') ?  true ? invariant(false, "Collection cannot start from phase " + state.phase) : 0 : void 0;
 
-    var _result = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    var _result = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
       phase: 'COLLECTING'
-    }, state, (_extends2 = {}, _extends2["phase"] = 'COLLECTING', _extends2));
+    }, state, {
+      phase: 'COLLECTING'
+    });
 
     return _result;
   }
 
   if (action.type === 'PUBLISH_WHILE_DRAGGING') {
-    !(state.phase === 'COLLECTING' || state.phase === 'DROP_PENDING') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Unexpected " + action.type + " received in phase " + state.phase) : 0 : void 0;
-    return publishWhileDragging({
+    !(state.phase === 'COLLECTING' || state.phase === 'DROP_PENDING') ?  true ? invariant(false, "Unexpected " + action.type + " received in phase " + state.phase) : 0 : void 0;
+    return publishWhileDraggingInVirtual({
       state: state,
       published: action.payload
     });
@@ -29106,7 +27861,7 @@ var reducer = (function (state, action) {
       return state;
     }
 
-    !isMovementAllowed(state) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, action.type + " not permitted in phase " + state.phase) : 0 : void 0;
+    !isMovementAllowed(state) ?  true ? invariant(false, action.type + " not permitted in phase " + state.phase) : 0 : void 0;
     var _clientSelection = action.payload.client;
 
     if (isEqual(_clientSelection, state.current.client.selection)) {
@@ -29122,24 +27877,24 @@ var reducer = (function (state, action) {
 
   if (action.type === 'UPDATE_DROPPABLE_SCROLL') {
     if (state.phase === 'DROP_PENDING') {
-      return state;
+      return removeScrollJumpRequest(state);
     }
 
     if (state.phase === 'COLLECTING') {
-      return state;
+      return removeScrollJumpRequest(state);
     }
 
-    !isMovementAllowed(state) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, action.type + " not permitted in phase " + state.phase) : 0 : void 0;
+    !isMovementAllowed(state) ?  true ? invariant(false, action.type + " not permitted in phase " + state.phase) : 0 : void 0;
     var _action$payload2 = action.payload,
         id = _action$payload2.id,
-        offset = _action$payload2.offset;
+        newScroll = _action$payload2.newScroll;
     var target = state.dimensions.droppables[id];
 
     if (!target) {
       return state;
     }
 
-    var scrolled = scrollDroppable(target, offset);
+    var scrolled = scrollDroppable(target, newScroll);
     return postDroppableChange(state, scrolled, false);
   }
 
@@ -29148,15 +27903,15 @@ var reducer = (function (state, action) {
       return state;
     }
 
-    !isMovementAllowed(state) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Attempting to move in an unsupported phase " + state.phase) : 0 : void 0;
+    !isMovementAllowed(state) ?  true ? invariant(false, "Attempting to move in an unsupported phase " + state.phase) : 0 : void 0;
     var _action$payload3 = action.payload,
         _id = _action$payload3.id,
         isEnabled = _action$payload3.isEnabled;
     var _target = state.dimensions.droppables[_id];
-    !_target ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot find Droppable[id: " + _id + "] to toggle its enabled state") : 0 : void 0;
-    !(_target.isEnabled !== isEnabled) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Trying to set droppable isEnabled to " + String(isEnabled) + "\n      but it is already " + String(_target.isEnabled)) : 0 : void 0;
+    !_target ?  true ? invariant(false, "Cannot find Droppable[id: " + _id + "] to toggle its enabled state") : 0 : void 0;
+    !(_target.isEnabled !== isEnabled) ?  true ? invariant(false, "Trying to set droppable isEnabled to " + String(isEnabled) + "\n      but it is already " + String(_target.isEnabled)) : 0 : void 0;
 
-    var updated = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _target, {
+    var updated = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, _target, {
       isEnabled: isEnabled
     });
 
@@ -29168,15 +27923,15 @@ var reducer = (function (state, action) {
       return state;
     }
 
-    !isMovementAllowed(state) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Attempting to move in an unsupported phase " + state.phase) : 0 : void 0;
+    !isMovementAllowed(state) ?  true ? invariant(false, "Attempting to move in an unsupported phase " + state.phase) : 0 : void 0;
     var _action$payload4 = action.payload,
         _id2 = _action$payload4.id,
         isCombineEnabled = _action$payload4.isCombineEnabled;
     var _target2 = state.dimensions.droppables[_id2];
-    !_target2 ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot find Droppable[id: " + _id2 + "] to toggle its isCombineEnabled state") : 0 : void 0;
-    !(_target2.isCombineEnabled !== isCombineEnabled) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Trying to set droppable isCombineEnabled to " + String(isCombineEnabled) + "\n      but it is already " + String(_target2.isCombineEnabled)) : 0 : void 0;
+    !_target2 ?  true ? invariant(false, "Cannot find Droppable[id: " + _id2 + "] to toggle its isCombineEnabled state") : 0 : void 0;
+    !(_target2.isCombineEnabled !== isCombineEnabled) ?  true ? invariant(false, "Trying to set droppable isCombineEnabled to " + String(isCombineEnabled) + "\n      but it is already " + String(_target2.isCombineEnabled)) : 0 : void 0;
 
-    var _updated = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, _target2, {
+    var _updated = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, _target2, {
       isCombineEnabled: isCombineEnabled
     });
 
@@ -29188,15 +27943,15 @@ var reducer = (function (state, action) {
       return state;
     }
 
-    !isMovementAllowed(state) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot move by window in phase " + state.phase) : 0 : void 0;
-    !state.isWindowScrollAllowed ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Window scrolling is currently not supported for fixed lists. Aborting drag') : 0 : void 0;
-    var newScroll = action.payload.newScroll;
+    !isMovementAllowed(state) ?  true ? invariant(false, "Cannot move by window in phase " + state.phase) : 0 : void 0;
+    !state.isWindowScrollAllowed ?  true ? invariant(false, 'Window scrolling is currently not supported for fixed lists') : 0 : void 0;
+    var _newScroll = action.payload.newScroll;
 
-    if (isEqual(state.viewport.scroll.current, newScroll)) {
-      return state;
+    if (isEqual(state.viewport.scroll.current, _newScroll)) {
+      return removeScrollJumpRequest(state);
     }
 
-    var _viewport = scrollViewport(state.viewport, newScroll);
+    var _viewport = scrollViewport(state.viewport, _newScroll);
 
     if (isSnapping(state)) {
       return refreshSnap({
@@ -29222,13 +27977,13 @@ var reducer = (function (state, action) {
       return state;
     }
 
-    var withMaxScroll = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state.viewport, {
-      scroll: (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state.viewport.scroll, {
+    var withMaxScroll = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state.viewport, {
+      scroll: (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, state.viewport.scroll, {
         max: maxScroll
       })
     });
 
-    return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
       phase: 'DRAGGING'
     }, state, {
       viewport: withMaxScroll
@@ -29240,7 +27995,7 @@ var reducer = (function (state, action) {
       return state;
     }
 
-    !(state.phase === 'DRAGGING') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, action.type + " received while not in DRAGGING phase") : 0 : void 0;
+    !(state.phase === 'DRAGGING') ?  true ? invariant(false, action.type + " received while not in DRAGGING phase") : 0 : void 0;
 
     var _result2 = moveInDirection({
       state: state,
@@ -29260,14 +28015,16 @@ var reducer = (function (state, action) {
   }
 
   if (action.type === 'DROP_PENDING') {
-    var _extends3;
-
     var reason = action.payload.reason;
-    !(state.phase === 'COLLECTING') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Can only move into the DROP_PENDING phase from the COLLECTING phase') : 0 : void 0;
+    !(state.phase === 'COLLECTING') ?  true ? invariant(false, 'Can only move into the DROP_PENDING phase from the COLLECTING phase') : 0 : void 0;
 
-    var newState = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    var newState = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
       phase: 'DROP_PENDING'
-    }, state, (_extends3 = {}, _extends3["phase"] = 'DROP_PENDING', _extends3.isWaiting = true, _extends3.reason = reason, _extends3));
+    }, state, {
+      phase: 'DROP_PENDING',
+      isWaiting: true,
+      reason: reason
+    });
 
     return newState;
   }
@@ -29277,31 +28034,35 @@ var reducer = (function (state, action) {
         completed = _action$payload5.completed,
         dropDuration = _action$payload5.dropDuration,
         newHomeClientOffset = _action$payload5.newHomeClientOffset;
-    !(state.phase === 'DRAGGING' || state.phase === 'DROP_PENDING') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot animate drop from phase " + state.phase) : 0 : void 0;
+    !(state.phase === 'DRAGGING' || state.phase === 'DROP_PENDING') ?  true ? invariant(false, "Cannot animate drop from phase " + state.phase) : 0 : void 0;
     var _result3 = {
       phase: 'DROP_ANIMATING',
-      dimensions: state.dimensions,
       completed: completed,
       dropDuration: dropDuration,
-      newHomeClientOffset: newHomeClientOffset
+      newHomeClientOffset: newHomeClientOffset,
+      dimensions: state.dimensions
     };
     return _result3;
   }
 
   if (action.type === 'DROP_COMPLETE') {
-    var _action$payload6 = action.payload,
-        _completed = _action$payload6.completed,
-        shouldFlush = _action$payload6.shouldFlush;
+    var _completed = action.payload.completed;
     return {
       phase: 'IDLE',
       completed: _completed,
-      shouldFlush: shouldFlush
+      shouldFlush: false
     };
   }
 
   return state;
 });
 
+var beforeInitialCapture = function beforeInitialCapture(args) {
+  return {
+    type: 'BEFORE_INITIAL_CAPTURE',
+    payload: args
+  };
+};
 var lift = function lift(args) {
   return {
     type: 'LIFT',
@@ -29314,7 +28075,7 @@ var initialPublish = function initialPublish(args) {
     payload: args
   };
 };
-var publishWhileDragging$1 = function publishWhileDragging(args) {
+var publishWhileDragging = function publishWhileDragging(args) {
   return {
     type: 'PUBLISH_WHILE_DRAGGING',
     payload: args
@@ -29386,9 +28147,9 @@ var moveLeft = function moveLeft() {
     payload: null
   };
 };
-var clean = function clean() {
+var flush = function flush() {
   return {
-    type: 'CLEAN',
+    type: 'FLUSH',
     payload: null
   };
 };
@@ -29423,7 +28184,44 @@ var dropAnimationFinished = function dropAnimationFinished() {
   };
 };
 
-var lift$1 = (function (getMarshal) {
+function checkIndexes(insideDestination) {
+  if (insideDestination.length <= 1) {
+    return;
+  }
+
+  var indexes = insideDestination.map(function (d) {
+    return d.descriptor.index;
+  });
+  var errors = {};
+
+  for (var i = 1; i < indexes.length; i++) {
+    var current = indexes[i];
+    var previous = indexes[i - 1];
+
+    if (current !== previous + 1) {
+      errors[current] = true;
+    }
+  }
+
+  if (!Object.keys(errors).length) {
+    return;
+  }
+
+  var formatted = indexes.map(function (index) {
+    var hasError = Boolean(errors[index]);
+    return hasError ? "[\uD83D\uDD25" + index + "]" : "" + index;
+  }).join(', ');
+   true ? warning("\n    Detected non-consecutive <Draggable /> indexes.\n\n    (This can cause unexpected bugs)\n\n    " + formatted + "\n  ") : 0;
+}
+
+function validateDimensions(critical, dimensions) {
+  if (true) {
+    var insideDestination = getDraggablesInsideDroppable(critical.droppable.id, dimensions.draggables);
+    checkIndexes(insideDestination);
+  }
+}
+
+var lift$1 = (function (marshal) {
   return function (_ref) {
     var getState = _ref.getState,
         dispatch = _ref.dispatch;
@@ -29434,7 +28232,6 @@ var lift$1 = (function (getMarshal) {
           return;
         }
 
-        var marshal = getMarshal();
         var _action$payload = action.payload,
             id = _action$payload.id,
             clientSelection = _action$payload.clientSelection,
@@ -29443,12 +28240,16 @@ var lift$1 = (function (getMarshal) {
 
         if (initial.phase === 'DROP_ANIMATING') {
           dispatch(completeDrop({
-            completed: initial.completed,
-            shouldFlush: true
+            completed: initial.completed
           }));
         }
 
-        !(getState().phase === 'IDLE') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Incorrect phase to start a drag') : 0 : void 0;
+        !(getState().phase === 'IDLE') ?  true ? invariant(false, 'Unexpected phase to start a drag') : 0 : void 0;
+        dispatch(flush());
+        dispatch(beforeInitialCapture({
+          draggableId: id,
+          movementMode: movementMode
+        }));
         var scrollOptions = {
           shouldPublishImmediately: movementMode === 'SNAP'
         };
@@ -29462,6 +28263,7 @@ var lift$1 = (function (getMarshal) {
             dimensions = _marshal$startPublish.dimensions,
             viewport = _marshal$startPublish.viewport;
 
+        validateDimensions(critical, dimensions);
         dispatch(initialPublish({
           critical: critical,
           dimensions: dimensions,
@@ -29486,7 +28288,7 @@ var style = (function (marshal) {
           marshal.dropping(action.payload.completed.result.reason);
         }
 
-        if (action.type === 'CLEAN' || action.type === 'DROP_COMPLETE') {
+        if (action.type === 'FLUSH' || action.type === 'DROP_COMPLETE') {
           marshal.resting();
         }
 
@@ -29577,7 +28379,7 @@ var getNewHomeClientOffset = (function (_ref) {
       draggable = _ref.draggable,
       dimensions = _ref.dimensions,
       viewport = _ref.viewport,
-      onLift = _ref.onLift;
+      afterCritical = _ref.afterCritical;
   var draggables = dimensions.draggables,
       droppables = dimensions.droppables;
   var droppableId = whatIsDraggedOver(impact);
@@ -29587,59 +28389,50 @@ var getNewHomeClientOffset = (function (_ref) {
     impact: impact,
     draggable: draggable,
     draggables: draggables,
-    onLift: onLift,
+    afterCritical: afterCritical,
     droppable: destination || home,
     viewport: viewport
   });
   var offset = subtract(newClientCenter, draggable.client.borderBox.center);
-  var merge = impact.merge;
-
-  if (merge && didStartDisplaced(merge.combine.draggableId, onLift)) {
-    return subtract(offset, onLift.displacedBy.point);
-  }
-
   return offset;
 });
 
 var getDropImpact = (function (_ref) {
-  var reason = _ref.reason,
+  var draggables = _ref.draggables,
+      reason = _ref.reason,
       lastImpact = _ref.lastImpact,
       home = _ref.home,
       viewport = _ref.viewport,
-      draggables = _ref.draggables,
-      onLiftImpact = _ref.onLiftImpact,
-      onLift = _ref.onLift;
-  var didDropInsideDroppable = reason === 'DROP' && Boolean(whatIsDraggedOver(lastImpact));
+      onLiftImpact = _ref.onLiftImpact;
 
-  if (!didDropInsideDroppable) {
-    var impact = recompute({
+  if (!lastImpact.at || reason !== 'DROP') {
+    var recomputedHomeImpact = recompute({
+      draggables: draggables,
       impact: onLiftImpact,
       destination: home,
       viewport: viewport,
-      draggables: draggables,
-      onLift: onLift,
       forceShouldAnimate: true
     });
     return {
-      impact: impact,
-      didDropInsideDroppable: didDropInsideDroppable
+      impact: recomputedHomeImpact,
+      didDropInsideDroppable: false
     };
   }
 
-  if (lastImpact.destination) {
+  if (lastImpact.at.type === 'REORDER') {
     return {
       impact: lastImpact,
-      didDropInsideDroppable: didDropInsideDroppable
+      didDropInsideDroppable: true
     };
   }
 
-  var withoutMovement = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, lastImpact, {
-    movement: noMovement
+  var withoutMovement = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, lastImpact, {
+    displaced: emptyGroups
   });
 
   return {
     impact: withoutMovement,
-    didDropInsideDroppable: didDropInsideDroppable
+    didDropInsideDroppable: true
   };
 });
 
@@ -29668,15 +28461,16 @@ var drop$1 = (function (_ref) {
       }
 
       var isWaitingForDrop = state.phase === 'DROP_PENDING' && state.isWaiting;
-      !!isWaitingForDrop ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'A DROP action occurred while DROP_PENDING and still waiting') : 0 : void 0;
-      !(state.phase === 'DRAGGING' || state.phase === 'DROP_PENDING') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot drop in phase: " + state.phase) : 0 : void 0;
+      !!isWaitingForDrop ?  true ? invariant(false, 'A DROP action occurred while DROP_PENDING and still waiting') : 0 : void 0;
+      !(state.phase === 'DRAGGING' || state.phase === 'DROP_PENDING') ?  true ? invariant(false, "Cannot drop in phase: " + state.phase) : 0 : void 0;
       var critical = state.critical;
       var dimensions = state.dimensions;
+      var draggable = dimensions.draggables[state.critical.draggable.id];
 
       var _getDropImpact = getDropImpact({
         reason: reason,
         lastImpact: state.impact,
-        onLift: state.onLift,
+        afterCritical: state.afterCritical,
         onLiftImpact: state.onLiftImpact,
         home: state.dimensions.droppables[state.critical.droppable.id],
         viewport: state.viewport,
@@ -29685,9 +28479,8 @@ var drop$1 = (function (_ref) {
           impact = _getDropImpact.impact,
           didDropInsideDroppable = _getDropImpact.didDropInsideDroppable;
 
-      var draggable = dimensions.draggables[state.critical.draggable.id];
-      var destination = didDropInsideDroppable ? impact.destination : null;
-      var combine = didDropInsideDroppable && impact.merge ? impact.merge.combine : null;
+      var destination = didDropInsideDroppable ? tryGetDestination(impact) : null;
+      var combine = didDropInsideDroppable ? tryGetCombine(impact) : null;
       var source = {
         index: critical.draggable.index,
         droppableId: critical.droppable.id
@@ -29706,10 +28499,11 @@ var drop$1 = (function (_ref) {
         draggable: draggable,
         dimensions: dimensions,
         viewport: state.viewport,
-        onLift: state.onLift
+        afterCritical: state.afterCritical
       });
       var completed = {
         critical: state.critical,
+        afterCritical: state.afterCritical,
         result: result,
         impact: impact
       };
@@ -29717,8 +28511,7 @@ var drop$1 = (function (_ref) {
 
       if (!isAnimationRequired) {
         dispatch(completeDrop({
-          completed: completed,
-          shouldFlush: false
+          completed: completed
         }));
         return;
       }
@@ -29738,110 +28531,90 @@ var drop$1 = (function (_ref) {
   };
 });
 
-var position = function position(index) {
-  return index + 1;
-};
+var getWindowScroll = (function () {
+  return {
+    x: window.pageXOffset,
+    y: window.pageYOffset
+  };
+});
 
-var onDragStart = function onDragStart(start) {
-  return "\n  You have lifted an item in position " + position(start.source.index) + ".\n  Use the arrow keys to move, space bar to drop, and escape to cancel.\n";
-};
+function getWindowScrollBinding(update) {
+  return {
+    eventName: 'scroll',
+    options: {
+      passive: true,
+      capture: false
+    },
+    fn: function fn(event) {
+      if (event.target !== window && event.target !== window.document) {
+        return;
+      }
 
-var withLocation = function withLocation(source, destination) {
-  var isInHomeList = source.droppableId === destination.droppableId;
-  var startPosition = position(source.index);
-  var endPosition = position(destination.index);
+      update();
+    }
+  };
+}
 
-  if (isInHomeList) {
-    return "\n      You have moved the item from position " + startPosition + "\n      to position " + endPosition + "\n    ";
+function getScrollListener(_ref) {
+  var onWindowScroll = _ref.onWindowScroll;
+
+  function updateScroll() {
+    onWindowScroll(getWindowScroll());
   }
 
-  return "\n    You have moved the item from position " + startPosition + "\n    in list " + source.droppableId + "\n    to list " + destination.droppableId + "\n    in position " + endPosition + "\n  ";
-};
+  var scheduled = (0,raf_schd__WEBPACK_IMPORTED_MODULE_7__["default"])(updateScroll);
+  var binding = getWindowScrollBinding(scheduled);
+  var unbind = noop;
 
-var withCombine = function withCombine(id, source, combine) {
-  var inHomeList = source.droppableId === combine.droppableId;
-
-  if (inHomeList) {
-    return "\n      The item " + id + "\n      has been combined with " + combine.draggableId;
+  function isActive() {
+    return unbind !== noop;
   }
 
-  return "\n      The item " + id + "\n      in list " + source.droppableId + "\n      has been combined with " + combine.draggableId + "\n      in list " + combine.droppableId + "\n    ";
-};
-
-var onDragUpdate = function onDragUpdate(update) {
-  var location = update.destination;
-
-  if (location) {
-    return withLocation(update.source, location);
+  function start() {
+    !!isActive() ?  true ? invariant(false, 'Cannot start scroll listener when already active') : 0 : void 0;
+    unbind = bindEvents(window, [binding]);
   }
 
-  var combine = update.combine;
-
-  if (combine) {
-    return withCombine(update.draggableId, update.source, combine);
+  function stop() {
+    !isActive() ?  true ? invariant(false, 'Cannot stop scroll listener when not active') : 0 : void 0;
+    scheduled.cancel();
+    unbind();
+    unbind = noop;
   }
 
-  return 'You are over an area that cannot be dropped on';
+  return {
+    start: start,
+    stop: stop,
+    isActive: isActive
+  };
+}
+
+var shouldEnd = function shouldEnd(action) {
+  return action.type === 'DROP_COMPLETE' || action.type === 'DROP_ANIMATE' || action.type === 'FLUSH';
 };
 
-var returnedToStart = function returnedToStart(source) {
-  return "\n  The item has returned to its starting position\n  of " + position(source.index) + "\n";
-};
+var scrollListener = (function (store) {
+  var listener = getScrollListener({
+    onWindowScroll: function onWindowScroll(newScroll) {
+      store.dispatch(moveByWindowScroll({
+        newScroll: newScroll
+      }));
+    }
+  });
+  return function (next) {
+    return function (action) {
+      if (!listener.isActive() && action.type === 'INITIAL_PUBLISH') {
+        listener.start();
+      }
 
-var onDragEnd = function onDragEnd(result) {
-  if (result.reason === 'CANCEL') {
-    return "\n      Movement cancelled.\n      " + returnedToStart(result.source) + "\n    ";
-  }
+      if (listener.isActive() && shouldEnd(action)) {
+        listener.stop();
+      }
 
-  var location = result.destination;
-  var combine = result.combine;
-
-  if (location) {
-    return "\n      You have dropped the item.\n      " + withLocation(result.source, location) + "\n    ";
-  }
-
-  if (combine) {
-    return "\n      You have dropped the item.\n      " + withCombine(result.draggableId, result.source, combine) + "\n    ";
-  }
-
-  return "\n    The item has been dropped while not over a drop area.\n    " + returnedToStart(result.source) + "\n  ";
-};
-
-var preset = {
-  onDragStart: onDragStart,
-  onDragUpdate: onDragUpdate,
-  onDragEnd: onDragEnd
-};
-
-var isProduction = "development" === 'production';
-var spacesAndTabs = /[ \t]{2,}/g;
-var lineStartWithSpaces = /^[ \t]*/gm;
-
-var clean$1 = function clean(value) {
-  return value.replace(spacesAndTabs, ' ').replace(lineStartWithSpaces, '').trim();
-};
-
-var getDevMessage = function getDevMessage(message) {
-  return clean$1("\n  %creact-beautiful-dnd\n\n  %c" + clean$1(message) + "\n\n  %c\uD83D\uDC77\u200D This is a development only message. It will be removed in production builds.\n");
-};
-
-var getFormattedMessage = function getFormattedMessage(message) {
-  return [getDevMessage(message), 'color: #00C584; font-size: 1.2em; font-weight: bold;', 'line-height: 1.5', 'color: #723874;'];
-};
-var isDisabledFlag = '__react-beautiful-dnd-disable-dev-warnings';
-var warning = function warning(message) {
-  var _console;
-
-  if (isProduction) {
-    return;
-  }
-
-  if (typeof window !== 'undefined' && window[isDisabledFlag]) {
-    return;
-  }
-
-  (_console = console).warn.apply(_console, getFormattedMessage(message));
-};
+      next(action);
+    };
+  };
+});
 
 var getExpiringAnnounce = (function (announce) {
   var wasCalled = false;
@@ -29880,7 +28653,7 @@ var getAsyncMarshal = (function () {
     var index = findIndex(entries, function (item) {
       return item.timerId === timerId;
     });
-    !(index !== -1) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Could not find timer') : 0 : void 0;
+    !(index !== -1) ?  true ? invariant(false, 'Could not find timer') : 0 : void 0;
 
     var _entries$splice = entries.splice(index, 1),
         entry = _entries$splice[0];
@@ -29951,9 +28724,9 @@ var isCriticalEqual = function isCriticalEqual(first, second) {
 };
 
 var withTimings = function withTimings(key, fn) {
-  start(key);
+  start();
   fn();
-  finish(key);
+  finish();
 };
 
 var getDragStart = function getDragStart(critical, mode) {
@@ -29989,8 +28762,23 @@ var getPublisher = (function (getResponders, announce) {
   var asyncMarshal = getAsyncMarshal();
   var dragging = null;
 
+  var beforeCapture = function beforeCapture(draggableId, mode) {
+    !!dragging ?  true ? invariant(false, 'Cannot fire onBeforeCapture as a drag start has already been published') : 0 : void 0;
+    withTimings('onBeforeCapture', function () {
+      var fn = getResponders().onBeforeCapture;
+
+      if (fn) {
+        var before = {
+          draggableId: draggableId,
+          mode: mode
+        };
+        fn(before);
+      }
+    });
+  };
+
   var beforeStart = function beforeStart(critical, mode) {
-    !!dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot fire onBeforeDragStart as a drag start has already been published') : 0 : void 0;
+    !!dragging ?  true ? invariant(false, 'Cannot fire onBeforeDragStart as a drag start has already been published') : 0 : void 0;
     withTimings('onBeforeDragStart', function () {
       var fn = getResponders().onBeforeDragStart;
 
@@ -30001,7 +28789,7 @@ var getPublisher = (function (getResponders, announce) {
   };
 
   var start = function start(critical, mode) {
-    !!dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot fire onBeforeDragStart as a drag start has already been published') : 0 : void 0;
+    !!dragging ?  true ? invariant(false, 'Cannot fire onBeforeDragStart as a drag start has already been published') : 0 : void 0;
     var data = getDragStart(critical, mode);
     dragging = {
       mode: mode,
@@ -30017,9 +28805,9 @@ var getPublisher = (function (getResponders, announce) {
   };
 
   var update = function update(critical, impact) {
-    var location = impact.destination;
-    var combine = impact.merge ? impact.merge.combine : null;
-    !dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot fire onDragMove when onDragStart has not been called') : 0 : void 0;
+    var location = tryGetDestination(impact);
+    var combine = tryGetCombine(impact);
+    !dragging ?  true ? invariant(false, 'Cannot fire onDragMove when onDragStart has not been called') : 0 : void 0;
     var hasCriticalChanged = !isCriticalEqual(critical, dragging.lastCritical);
 
     if (hasCriticalChanged) {
@@ -30042,7 +28830,7 @@ var getPublisher = (function (getResponders, announce) {
       return;
     }
 
-    var data = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, getDragStart(critical, dragging.mode), {
+    var data = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, getDragStart(critical, dragging.mode), {
       combine: combine,
       destination: location
     });
@@ -30055,12 +28843,12 @@ var getPublisher = (function (getResponders, announce) {
   };
 
   var flush = function flush() {
-    !dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Can only flush responders while dragging') : 0 : void 0;
+    !dragging ?  true ? invariant(false, 'Can only flush responders while dragging') : 0 : void 0;
     asyncMarshal.flush();
   };
 
   var drop = function drop(result) {
-    !dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot fire onDragEnd when there is no matching onDragStart') : 0 : void 0;
+    !dragging ?  true ? invariant(false, 'Cannot fire onDragEnd when there is no matching onDragStart') : 0 : void 0;
     dragging = null;
     withTimings('onDragEnd', function () {
       return execute(getResponders().onDragEnd, result, announce, preset.onDragEnd);
@@ -30072,7 +28860,7 @@ var getPublisher = (function (getResponders, announce) {
       return;
     }
 
-    var result = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, getDragStart(dragging.lastCritical, dragging.mode), {
+    var result = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, getDragStart(dragging.lastCritical, dragging.mode), {
       combine: null,
       destination: null,
       reason: 'CANCEL'
@@ -30082,6 +28870,7 @@ var getPublisher = (function (getResponders, announce) {
   };
 
   return {
+    beforeCapture: beforeCapture,
     beforeStart: beforeStart,
     start: start,
     update: update,
@@ -30096,6 +28885,11 @@ var responders = (function (getResponders, announce) {
   return function (store) {
     return function (next) {
       return function (action) {
+        if (action.type === 'BEFORE_INITIAL_CAPTURE') {
+          publisher.beforeCapture(action.payload.draggableId, action.payload.movementMode);
+          return;
+        }
+
         if (action.type === 'INITIAL_PUBLISH') {
           var critical = action.payload.critical;
           publisher.beforeStart(critical, action.payload.movementMode);
@@ -30114,7 +28908,7 @@ var responders = (function (getResponders, announce) {
 
         next(action);
 
-        if (action.type === 'CLEAN') {
+        if (action.type === 'FLUSH') {
           publisher.abort();
           return;
         }
@@ -30138,21 +28932,70 @@ var dropAnimationFinish = (function (store) {
       }
 
       var state = store.getState();
-      !(state.phase === 'DROP_ANIMATING') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot finish a drop animating when no drop is occurring') : 0 : void 0;
+      !(state.phase === 'DROP_ANIMATING') ?  true ? invariant(false, 'Cannot finish a drop animating when no drop is occurring') : 0 : void 0;
       store.dispatch(completeDrop({
-        completed: state.completed,
-        shouldFlush: false
+        completed: state.completed
       }));
     };
   };
 });
 
-var dimensionMarshalStopper = (function (getMarshal) {
+var dropAnimationFlushOnScroll = (function (store) {
+  var unbind = null;
+  var frameId = null;
+
+  function clear() {
+    if (frameId) {
+      cancelAnimationFrame(frameId);
+      frameId = null;
+    }
+
+    if (unbind) {
+      unbind();
+      unbind = null;
+    }
+  }
+
+  return function (next) {
+    return function (action) {
+      if (action.type === 'FLUSH' || action.type === 'DROP_COMPLETE' || action.type === 'DROP_ANIMATION_FINISHED') {
+        clear();
+      }
+
+      next(action);
+
+      if (action.type !== 'DROP_ANIMATE') {
+        return;
+      }
+
+      var binding = {
+        eventName: 'scroll',
+        options: {
+          capture: true,
+          passive: false,
+          once: true
+        },
+        fn: function flushDropAnimation() {
+          var state = store.getState();
+
+          if (state.phase === 'DROP_ANIMATING') {
+            store.dispatch(dropAnimationFinished());
+          }
+        }
+      };
+      frameId = requestAnimationFrame(function () {
+        frameId = null;
+        unbind = bindEvents(window, [binding]);
+      });
+    };
+  };
+});
+
+var dimensionMarshalStopper = (function (marshal) {
   return function () {
     return function (next) {
       return function (action) {
-        if (action.type === 'DROP_COMPLETE' || action.type === 'CLEAN' || action.type === 'DROP_ANIMATE') {
-          var marshal = getMarshal();
+        if (action.type === 'DROP_COMPLETE' || action.type === 'FLUSH' || action.type === 'DROP_ANIMATE') {
           marshal.stopPublishing();
         }
 
@@ -30162,26 +29005,56 @@ var dimensionMarshalStopper = (function (getMarshal) {
   };
 });
 
-var shouldEnd = function shouldEnd(action) {
-  return action.type === 'DROP_COMPLETE' || action.type === 'DROP_ANIMATE' || action.type === 'CLEAN';
-};
-
-var shouldCancelPending = function shouldCancelPending(action) {
-  return action.type === 'COLLECTION_STARTING';
-};
-
-var autoScroll = (function (getScroller) {
-  return function (store) {
+var focus = (function (marshal) {
+  var isWatching = false;
+  return function () {
     return function (next) {
       return function (action) {
-        if (shouldEnd(action)) {
-          getScroller().stop();
+        if (action.type === 'INITIAL_PUBLISH') {
+          isWatching = true;
+          marshal.tryRecordFocus(action.payload.critical.draggable.id);
           next(action);
+          marshal.tryRestoreFocusRecorded();
           return;
         }
 
-        if (shouldCancelPending(action)) {
-          getScroller().cancelPending();
+        next(action);
+
+        if (!isWatching) {
+          return;
+        }
+
+        if (action.type === 'FLUSH') {
+          isWatching = false;
+          marshal.tryRestoreFocusRecorded();
+          return;
+        }
+
+        if (action.type === 'DROP_COMPLETE') {
+          isWatching = false;
+          var result = action.payload.completed.result;
+
+          if (result.combine) {
+            marshal.tryShiftRecord(result.draggableId, result.combine.draggableId);
+          }
+
+          marshal.tryRestoreFocusRecorded();
+        }
+      };
+    };
+  };
+});
+
+var shouldStop = function shouldStop(action) {
+  return action.type === 'DROP_COMPLETE' || action.type === 'DROP_ANIMATE' || action.type === 'FLUSH';
+};
+
+var autoScroll = (function (autoScroller) {
+  return function (store) {
+    return function (next) {
+      return function (action) {
+        if (shouldStop(action)) {
+          autoScroller.stop();
           next(action);
           return;
         }
@@ -30189,13 +29062,13 @@ var autoScroll = (function (getScroller) {
         if (action.type === 'INITIAL_PUBLISH') {
           next(action);
           var state = store.getState();
-          !(state.phase === 'DRAGGING') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Expected phase to be DRAGGING after INITIAL_PUBLISH') : 0 : void 0;
-          getScroller().start(state);
+          !(state.phase === 'DRAGGING') ?  true ? invariant(false, 'Expected phase to be DRAGGING after INITIAL_PUBLISH') : 0 : void 0;
+          autoScroller.start(state);
           return;
         }
 
         next(action);
-        getScroller().scroll(store.getState());
+        autoScroller.scroll(store.getState());
       };
     };
   };
@@ -30227,104 +29100,84 @@ var pendingDrop = (function (store) {
   };
 });
 
-var composeEnhancers =  true && typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ : redux__WEBPACK_IMPORTED_MODULE_12__.compose;
+var composeEnhancers =  true && typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ? window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({
+  name: 'react-beautiful-dnd'
+}) : redux__WEBPACK_IMPORTED_MODULE_8__.compose;
 var createStore = (function (_ref) {
-  var getDimensionMarshal = _ref.getDimensionMarshal,
+  var dimensionMarshal = _ref.dimensionMarshal,
+      focusMarshal = _ref.focusMarshal,
       styleMarshal = _ref.styleMarshal,
       getResponders = _ref.getResponders,
       announce = _ref.announce,
-      getScroller = _ref.getScroller;
-  return (0,redux__WEBPACK_IMPORTED_MODULE_12__.createStore)(reducer, composeEnhancers((0,redux__WEBPACK_IMPORTED_MODULE_12__.applyMiddleware)(style(styleMarshal), dimensionMarshalStopper(getDimensionMarshal), lift$1(getDimensionMarshal), drop$1, dropAnimationFinish, pendingDrop, autoScroll(getScroller), responders(getResponders, announce))));
+      autoScroller = _ref.autoScroller;
+  return (0,redux__WEBPACK_IMPORTED_MODULE_8__.createStore)(reducer, composeEnhancers((0,redux__WEBPACK_IMPORTED_MODULE_8__.applyMiddleware)(style(styleMarshal), dimensionMarshalStopper(dimensionMarshal), lift$1(dimensionMarshal), drop$1, dropAnimationFinish, dropAnimationFlushOnScroll, pendingDrop, autoScroll(autoScroller), scrollListener, focus(focusMarshal), responders(getResponders, announce))));
 });
 
-var clean$2 = function clean() {
+var clean$1 = function clean() {
   return {
     additions: {},
     removals: {},
     modified: {}
   };
 };
-
-var timingKey = 'Publish collection from DOM';
-var createPublisher = (function (_ref) {
-  var getEntries = _ref.getEntries,
+function createPublisher(_ref) {
+  var registry = _ref.registry,
       callbacks = _ref.callbacks;
-
-  var advancedUsageWarning = function () {
-    if (false) {}
-
-    var hasAnnounced = false;
-    return function () {
-      if (hasAnnounced) {
-        return;
-      }
-
-      hasAnnounced = true;
-       true ? warning("\n        Advanced usage warning: you are adding or removing a dimension during a drag\n        This an advanced feature.\n\n        More information: https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/guides/changes-while-dragging.md\n      ") : 0;
-    };
-  }();
-
-  var staging = clean$2();
+  var staging = clean$1();
   var frameId = null;
 
   var collect = function collect() {
-    advancedUsageWarning();
-
     if (frameId) {
       return;
     }
 
+    callbacks.collectionStarting();
     frameId = requestAnimationFrame(function () {
       frameId = null;
-      callbacks.collectionStarting();
-      var critical = callbacks.getCritical();
-      start(timingKey);
-      var entries = getEntries();
+      start();
       var _staging = staging,
           additions = _staging.additions,
           removals = _staging.removals,
           modified = _staging.modified;
-
-      var added = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(additions).map(function (id) {
-        return entries.draggables[id].getDimension(origin);
+      var added = Object.keys(additions).map(function (id) {
+        return registry.draggable.getById(id).getDimension(origin);
       }).sort(function (a, b) {
         return a.descriptor.index - b.descriptor.index;
       });
-
-      var updated = _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(modified).map(function (id) {
-        var entry = entries.droppables[id];
-        !entry ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot find dynamically added droppable in cache') : 0 : void 0;
-        var isHome = entry.descriptor.id === critical.droppable.id;
-        var options = {
-          withoutPlaceholder: !isHome
+      var updated = Object.keys(modified).map(function (id) {
+        var entry = registry.droppable.getById(id);
+        var scroll = entry.callbacks.getScrollWhileDragging();
+        return {
+          droppableId: id,
+          scroll: scroll
         };
-        return entry.callbacks.recollect(options);
       });
-
       var result = {
         additions: added,
-        removals: _babel_runtime_corejs2_core_js_object_keys__WEBPACK_IMPORTED_MODULE_5___default()(removals),
+        removals: Object.keys(removals),
         modified: updated
       };
-      staging = clean$2();
-      finish(timingKey);
+      staging = clean$1();
+      finish();
       callbacks.publish(result);
     });
   };
 
-  var add = function add(descriptor) {
-    staging.additions[descriptor.id] = descriptor;
-    staging.modified[descriptor.droppableId] = true;
+  var add = function add(entry) {
+    var id = entry.descriptor.id;
+    staging.additions[id] = entry;
+    staging.modified[entry.descriptor.droppableId] = true;
 
-    if (staging.removals[descriptor.id]) {
-      delete staging.removals[descriptor.id];
+    if (staging.removals[id]) {
+      delete staging.removals[id];
     }
 
     collect();
   };
 
-  var remove = function remove(descriptor) {
-    staging.removals[descriptor.id] = descriptor;
+  var remove = function remove(entry) {
+    var descriptor = entry.descriptor;
+    staging.removals[descriptor.id] = true;
     staging.modified[descriptor.droppableId] = true;
 
     if (staging.additions[descriptor.id]) {
@@ -30341,7 +29194,7 @@ var createPublisher = (function (_ref) {
 
     cancelAnimationFrame(frameId);
     frameId = null;
-    staging = clean$2();
+    staging = clean$1();
   };
 
   return {
@@ -30349,18 +29202,30 @@ var createPublisher = (function (_ref) {
     remove: remove,
     stop: stop
   };
-});
+}
 
-var getWindowScroll = (function () {
-  return {
-    x: window.pageXOffset,
-    y: window.pageYOffset
+var getMaxScroll = (function (_ref) {
+  var scrollHeight = _ref.scrollHeight,
+      scrollWidth = _ref.scrollWidth,
+      height = _ref.height,
+      width = _ref.width;
+  var maxScroll = subtract({
+    x: scrollWidth,
+    y: scrollHeight
+  }, {
+    x: width,
+    y: height
+  });
+  var adjustedMaxScroll = {
+    x: Math.max(0, maxScroll.x),
+    y: Math.max(0, maxScroll.y)
   };
+  return adjustedMaxScroll;
 });
 
 var getDocumentElement = (function () {
   var doc = document.documentElement;
-  !doc ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot find document.documentElement') : 0 : void 0;
+  !doc ?  true ? invariant(false, 'Cannot find document.documentElement') : 0 : void 0;
   return doc;
 });
 
@@ -30385,7 +29250,7 @@ var getViewport = (function () {
   var height = doc.clientHeight;
   var right = left + width;
   var bottom = top + height;
-  var frame = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.getRect)({
+  var frame = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getRect)({
     top: top,
     left: left,
     right: right,
@@ -30409,27 +29274,22 @@ var getViewport = (function () {
 var getInitialPublish = (function (_ref) {
   var critical = _ref.critical,
       scrollOptions = _ref.scrollOptions,
-      entries = _ref.entries;
-  var timingKey = 'Initial collection from DOM';
-  start(timingKey);
+      registry = _ref.registry;
+  start();
   var viewport = getViewport();
   var windowScroll = viewport.scroll.current;
   var home = critical.droppable;
-  var droppables = values(entries.droppables).filter(function (entry) {
-    return entry.descriptor.type === home.type;
-  }).map(function (entry) {
+  var droppables = registry.droppable.getAllByType(home.type).map(function (entry) {
     return entry.callbacks.getDimensionAndWatchScroll(windowScroll, scrollOptions);
   });
-  var draggables = values(entries.draggables).filter(function (entry) {
-    return entry.descriptor.type === critical.draggable.type;
-  }).map(function (entry) {
+  var draggables = registry.draggable.getAllByType(critical.draggable.type).map(function (entry) {
     return entry.getDimension(windowScroll);
   });
   var dimensions = {
     draggables: toDraggableMap(draggables),
     droppables: toDroppableMap(droppables)
   };
-  finish(timingKey);
+  finish();
   var result = {
     dimensions: dimensions,
     critical: critical,
@@ -30438,108 +29298,37 @@ var getInitialPublish = (function (_ref) {
   return result;
 });
 
-var throwIfAddOrRemoveOfWrongType = function throwIfAddOrRemoveOfWrongType(collection, descriptor) {
-  !(collection.critical.draggable.type === descriptor.type) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "We have detected that you have added a Draggable during a drag.\n      This is not of the same type as the dragging item\n\n      Dragging type: " + collection.critical.draggable.type + ".\n      Added type: " + descriptor.type + "\n\n      We are not allowing this as you can run into problems if your change\n      has shifted the positioning of other Droppables, or has changed the size of the page") : 0 : void 0;
-};
+function shouldPublishUpdate(registry, dragging, entry) {
+  if (entry.descriptor.id === dragging.id) {
+    return false;
+  }
 
-var createDimensionMarshal = (function (callbacks) {
-  var entries = {
-    droppables: {},
-    draggables: {}
-  };
+  if (entry.descriptor.type !== dragging.type) {
+    return false;
+  }
+
+  var home = registry.droppable.getById(entry.descriptor.droppableId);
+
+  if (home.descriptor.mode !== 'virtual') {
+     true ? warning("\n      You are attempting to add or remove a Draggable [id: " + entry.descriptor.id + "]\n      while a drag is occurring. This is only supported for virtual lists.\n\n      See https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/patterns/virtual-lists.md\n    ") : 0;
+    return false;
+  }
+
+  return true;
+}
+
+var createDimensionMarshal = (function (registry, callbacks) {
   var collection = null;
   var publisher = createPublisher({
     callbacks: {
       publish: callbacks.publishWhileDragging,
-      collectionStarting: callbacks.collectionStarting,
-      getCritical: function getCritical() {
-        !collection ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot get critical when there is no collection') : 0 : void 0;
-        return collection.critical;
-      }
+      collectionStarting: callbacks.collectionStarting
     },
-    getEntries: function getEntries() {
-      return entries;
-    }
+    registry: registry
   });
 
-  var registerDraggable = function registerDraggable(descriptor, getDimension) {
-    var entry = {
-      descriptor: descriptor,
-      getDimension: getDimension
-    };
-    entries.draggables[descriptor.id] = entry;
-
-    if (!collection) {
-      return;
-    }
-
-    throwIfAddOrRemoveOfWrongType(collection, descriptor);
-    publisher.add(descriptor);
-  };
-
-  var updateDraggable = function updateDraggable(previous, descriptor, getDimension) {
-    !entries.draggables[previous.id] ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot update draggable registration as no previous registration was found') : 0 : void 0;
-    delete entries.draggables[previous.id];
-    var entry = {
-      descriptor: descriptor,
-      getDimension: getDimension
-    };
-    entries.draggables[descriptor.id] = entry;
-  };
-
-  var unregisterDraggable = function unregisterDraggable(descriptor) {
-    var entry = entries.draggables[descriptor.id];
-    !entry ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot unregister Draggable with id:\n      " + descriptor.id + " as it is not registered") : 0 : void 0;
-
-    if (entry.descriptor !== descriptor) {
-      return;
-    }
-
-    delete entries.draggables[descriptor.id];
-
-    if (!collection) {
-      return;
-    }
-
-    !(collection.critical.draggable.id !== descriptor.id) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot remove the dragging item during a drag') : 0 : void 0;
-    throwIfAddOrRemoveOfWrongType(collection, descriptor);
-    publisher.remove(descriptor);
-  };
-
-  var registerDroppable = function registerDroppable(descriptor, droppableCallbacks) {
-    var id = descriptor.id;
-    entries.droppables[id] = {
-      descriptor: descriptor,
-      callbacks: droppableCallbacks
-    };
-    !!collection ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot add a Droppable during a drag') : 0 : void 0;
-  };
-
-  var updateDroppable = function updateDroppable(previous, descriptor, droppableCallbacks) {
-    !entries.droppables[previous.id] ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot update droppable registration as no previous registration was found') : 0 : void 0;
-    delete entries.droppables[previous.id];
-    var entry = {
-      descriptor: descriptor,
-      callbacks: droppableCallbacks
-    };
-    entries.droppables[descriptor.id] = entry;
-    !!collection ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'You are not able to update the id or type of a droppable during a drag') : 0 : void 0;
-  };
-
-  var unregisterDroppable = function unregisterDroppable(descriptor) {
-    var entry = entries.droppables[descriptor.id];
-    !entry ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot unregister Droppable with id " + descriptor.id + " as as it is not registered") : 0 : void 0;
-
-    if (entry.descriptor !== descriptor) {
-      return;
-    }
-
-    delete entries.droppables[descriptor.id];
-    !!collection ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot add a Droppable during a drag') : 0 : void 0;
-  };
-
   var updateDroppableIsEnabled = function updateDroppableIsEnabled(id, isEnabled) {
-    !entries.droppables[id] ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot update is enabled flag of Droppable " + id + " as it is not registered") : 0 : void 0;
+    !registry.droppable.exists(id) ?  true ? invariant(false, "Cannot update is enabled flag of Droppable " + id + " as it is not registered") : 0 : void 0;
 
     if (!collection) {
       return;
@@ -30552,12 +29341,11 @@ var createDimensionMarshal = (function (callbacks) {
   };
 
   var updateDroppableIsCombineEnabled = function updateDroppableIsCombineEnabled(id, isCombineEnabled) {
-    !entries.droppables[id] ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot update isCombineEnabled flag of Droppable " + id + " as it is not registered") : 0 : void 0;
-
     if (!collection) {
       return;
     }
 
+    !registry.droppable.exists(id) ?  true ? invariant(false, "Cannot update isCombineEnabled flag of Droppable " + id + " as it is not registered") : 0 : void 0;
     callbacks.updateDroppableIsCombineEnabled({
       id: id,
       isCombineEnabled: isCombineEnabled
@@ -30565,27 +29353,23 @@ var createDimensionMarshal = (function (callbacks) {
   };
 
   var updateDroppableScroll = function updateDroppableScroll(id, newScroll) {
-    !entries.droppables[id] ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot update the scroll on Droppable " + id + " as it is not registered") : 0 : void 0;
-
     if (!collection) {
       return;
     }
 
+    !registry.droppable.exists(id) ?  true ? invariant(false, "Cannot update the scroll on Droppable " + id + " as it is not registered") : 0 : void 0;
     callbacks.updateDroppableScroll({
       id: id,
-      offset: newScroll
+      newScroll: newScroll
     });
   };
 
   var scrollDroppable = function scrollDroppable(id, change) {
-    var entry = entries.droppables[id];
-    !entry ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Cannot scroll Droppable " + id + " as it is not registered") : 0 : void 0;
-
     if (!collection) {
       return;
     }
 
-    entry.callbacks.scroll(change);
+    registry.droppable.getById(id).callbacks.scroll(change);
   };
 
   var stopPublishing = function stopPublishing() {
@@ -30595,196 +29379,57 @@ var createDimensionMarshal = (function (callbacks) {
 
     publisher.stop();
     var home = collection.critical.droppable;
-    values(entries.droppables).filter(function (entry) {
-      return entry.descriptor.type === home.type;
-    }).forEach(function (entry) {
+    registry.droppable.getAllByType(home.type).forEach(function (entry) {
       return entry.callbacks.dragStopped();
     });
+    collection.unsubscribe();
     collection = null;
   };
 
+  var subscriber = function subscriber(event) {
+    !collection ?  true ? invariant(false, 'Should only be subscribed when a collection is occurring') : 0 : void 0;
+    var dragging = collection.critical.draggable;
+
+    if (event.type === 'ADDITION') {
+      if (shouldPublishUpdate(registry, dragging, event.value)) {
+        publisher.add(event.value);
+      }
+    }
+
+    if (event.type === 'REMOVAL') {
+      if (shouldPublishUpdate(registry, dragging, event.value)) {
+        publisher.remove(event.value);
+      }
+    }
+  };
+
   var startPublishing = function startPublishing(request) {
-    !!collection ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot start capturing critical dimensions as there is already a collection') : 0 : void 0;
-    var entry = entries.draggables[request.draggableId];
-    !entry ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot find critical draggable entry') : 0 : void 0;
-    var home = entries.droppables[entry.descriptor.droppableId];
-    !home ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot find critical droppable entry') : 0 : void 0;
+    !!collection ?  true ? invariant(false, 'Cannot start capturing critical dimensions as there is already a collection') : 0 : void 0;
+    var entry = registry.draggable.getById(request.draggableId);
+    var home = registry.droppable.getById(entry.descriptor.droppableId);
     var critical = {
       draggable: entry.descriptor,
       droppable: home.descriptor
     };
+    var unsubscribe = registry.subscribe(subscriber);
     collection = {
-      critical: critical
+      critical: critical,
+      unsubscribe: unsubscribe
     };
     return getInitialPublish({
       critical: critical,
-      entries: entries,
+      registry: registry,
       scrollOptions: request.scrollOptions
     });
   };
 
   var marshal = {
-    registerDraggable: registerDraggable,
-    updateDraggable: updateDraggable,
-    unregisterDraggable: unregisterDraggable,
-    registerDroppable: registerDroppable,
-    updateDroppable: updateDroppable,
-    unregisterDroppable: unregisterDroppable,
     updateDroppableIsEnabled: updateDroppableIsEnabled,
     updateDroppableIsCombineEnabled: updateDroppableIsCombineEnabled,
     scrollDroppable: scrollDroppable,
     updateDroppableScroll: updateDroppableScroll,
     startPublishing: startPublishing,
     stopPublishing: stopPublishing
-  };
-  return marshal;
-});
-
-var prefix = 'data-react-beautiful-dnd';
-var dragHandle = prefix + "-drag-handle";
-var draggable = prefix + "-draggable";
-var droppable = prefix + "-droppable";
-
-var makeGetSelector = function makeGetSelector(context) {
-  return function (attribute) {
-    return "[" + attribute + "=\"" + context + "\"]";
-  };
-};
-
-var getStyles = function getStyles(rules, property) {
-  return rules.map(function (rule) {
-    var value = rule.styles[property];
-
-    if (!value) {
-      return '';
-    }
-
-    return rule.selector + " { " + value + " }";
-  }).join(' ');
-};
-
-var noPointerEvents = 'pointer-events: none;';
-var getStyles$1 = (function (styleContext) {
-  var getSelector = makeGetSelector(styleContext);
-
-  var dragHandle$1 = function () {
-    var grabCursor = "\n      cursor: -webkit-grab;\n      cursor: grab;\n    ";
-    return {
-      selector: getSelector(dragHandle),
-      styles: {
-        always: "\n          -webkit-touch-callout: none;\n          -webkit-tap-highlight-color: rgba(0,0,0,0);\n          touch-action: manipulation;\n        ",
-        resting: grabCursor,
-        dragging: noPointerEvents,
-        dropAnimating: grabCursor
-      }
-    };
-  }();
-
-  var draggable$1 = function () {
-    var transition = "\n      transition: " + transitions.outOfTheWay + ";\n    ";
-    return {
-      selector: getSelector(draggable),
-      styles: {
-        dragging: transition,
-        dropAnimating: transition,
-        userCancel: transition
-      }
-    };
-  }();
-
-  var droppable$1 = {
-    selector: getSelector(droppable),
-    styles: {
-      always: "overflow-anchor: none;"
-    }
-  };
-  var body = {
-    selector: 'body',
-    styles: {
-      dragging: "\n        cursor: grabbing;\n        cursor: -webkit-grabbing;\n        user-select: none;\n        -webkit-user-select: none;\n        -moz-user-select: none;\n        -ms-user-select: none;\n        overflow-anchor: none;\n      "
-    }
-  };
-  var rules = [draggable$1, dragHandle$1, droppable$1, body];
-  return {
-    always: getStyles(rules, 'always'),
-    resting: getStyles(rules, 'resting'),
-    dragging: getStyles(rules, 'dragging'),
-    dropAnimating: getStyles(rules, 'dropAnimating'),
-    userCancel: getStyles(rules, 'userCancel')
-  };
-});
-
-var count = 0;
-var resetStyleContext = function resetStyleContext() {
-  count = 0;
-};
-
-var getHead = function getHead() {
-  var head = document.querySelector('head');
-  !head ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot find the head to append a style to') : 0 : void 0;
-  return head;
-};
-
-var createStyleEl = function createStyleEl() {
-  var el = document.createElement('style');
-  el.type = 'text/css';
-  return el;
-};
-
-var createStyleMarshal = (function () {
-  var context = "" + count++;
-  var styles = getStyles$1(context);
-  var always = null;
-  var dynamic = null;
-  var setStyle = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (el, proposed) {
-    !el ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot set style of style tag if not mounted') : 0 : void 0;
-    el.innerHTML = proposed;
-  });
-
-  var mount = function mount() {
-    !(!always && !dynamic) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Style marshal already mounted') : 0 : void 0;
-    always = createStyleEl();
-    dynamic = createStyleEl();
-    always.setAttribute(prefix + "-always", context);
-    dynamic.setAttribute(prefix + "-dynamic", context);
-    getHead().appendChild(always);
-    getHead().appendChild(dynamic);
-    setStyle(always, styles.always);
-    setStyle(dynamic, styles.resting);
-  };
-
-  var dragging = function dragging() {
-    return setStyle(dynamic, styles.dragging);
-  };
-
-  var dropping = function dropping(reason) {
-    if (reason === 'DROP') {
-      setStyle(dynamic, styles.dropAnimating);
-      return;
-    }
-
-    setStyle(dynamic, styles.userCancel);
-  };
-
-  var resting = function resting() {
-    return setStyle(dynamic, styles.resting);
-  };
-
-  var unmount = function unmount() {
-    !(always && dynamic) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot unmount style marshal as it is already unmounted') : 0 : void 0;
-    getHead().removeChild(always);
-    getHead().removeChild(dynamic);
-    always = null;
-    dynamic = null;
-  };
-
-  var marshal = {
-    dragging: dragging,
-    dropping: dropping,
-    resting: resting,
-    styleContext: context,
-    mount: mount,
-    unmount: unmount
   };
   return marshal;
 });
@@ -30809,66 +29454,7 @@ var scrollWindow = (function (change) {
   window.scrollBy(change.x, change.y);
 });
 
-var getBodyElement = (function () {
-  var body = document.body;
-  !body ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot find document.body') : 0 : void 0;
-  return body;
-});
-
-var count$1 = 0;
-var visuallyHidden = {
-  position: 'absolute',
-  width: '1px',
-  height: '1px',
-  margin: '-1px',
-  border: '0',
-  padding: '0',
-  overflow: 'hidden',
-  clip: 'rect(0 0 0 0)',
-  'clip-path': 'inset(100%)'
-};
-var createAnnouncer = (function () {
-  var id = "react-beautiful-dnd-announcement-" + count$1++;
-  var el = null;
-
-  var announce = function announce(message) {
-    if (el) {
-      el.textContent = message;
-      return;
-    }
-
-     true ? warning("\n      A screen reader message was trying to be announced but it was unable to do so.\n      This can occur if you unmount your <DragDropContext /> in your onDragEnd.\n      Consider calling provided.announce() before the unmount so that the instruction will\n      not be lost for users relying on a screen reader.\n\n      Message not passed to screen reader:\n\n      \"" + message + "\"\n    ") : 0;
-  };
-
-  var mount = function mount() {
-    !!el ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Announcer already mounted') : 0 : void 0;
-    el = document.createElement('div');
-    el.id = id;
-    el.setAttribute('aria-live', 'assertive');
-    el.setAttribute('role', 'log');
-    el.setAttribute('aria-atomic', 'true');
-
-    _babel_runtime_corejs2_core_js_object_assign__WEBPACK_IMPORTED_MODULE_6___default()(el.style, visuallyHidden);
-
-    getBodyElement().appendChild(el);
-  };
-
-  var unmount = function unmount() {
-    !el ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Will not unmount announcer as it is already unmounted') : 0 : void 0;
-    getBodyElement().removeChild(el);
-    el = null;
-  };
-
-  var announcer = {
-    announce: announce,
-    id: id,
-    mount: mount,
-    unmount: unmount
-  };
-  return announcer;
-});
-
-var getScrollableDroppables = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (droppables) {
+var getScrollableDroppables = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (droppables) {
   return toDroppableList(droppables).filter(function (droppable) {
     if (!droppable.isEnabled) {
       return false;
@@ -30884,7 +29470,7 @@ var getScrollableDroppables = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["defa
 
 var getScrollableDroppableOver = function getScrollableDroppableOver(target, droppables) {
   var maybe = find(getScrollableDroppables(droppables), function (droppable) {
-    !droppable.frame ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Invalid result') : 0 : void 0;
+    !droppable.frame ?  true ? invariant(false, 'Invalid result') : 0 : void 0;
     return isPositionInFrame(droppable.frame.pageMarginBox)(target);
   });
   return maybe;
@@ -30978,9 +29564,7 @@ var stopAt = config.durationDampening.stopDampeningAt;
 var dampenValueByTime = (function (proposedScroll, dragStartTime) {
   var startOfRange = dragStartTime;
   var endOfRange = stopAt;
-
-  var now = _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_7___default()();
-
+  var now = Date.now();
   var runTime = now - startOfRange;
 
   if (runTime >= stopAt) {
@@ -31065,7 +29649,7 @@ var adjustForSizeLimits = (function (_ref) {
   };
 });
 
-var clean$3 = apply(function (value) {
+var clean$2 = apply(function (value) {
   return value === 0 ? 0 : value;
 });
 var getScroll = (function (_ref) {
@@ -31094,7 +29678,7 @@ var getScroll = (function (_ref) {
     axis: horizontal,
     shouldUseTimeDampening: shouldUseTimeDampening
   });
-  var required = clean$3({
+  var required = clean$2({
     x: x,
     y: y
   });
@@ -31324,12 +29908,12 @@ var scroll$1 = (function (_ref) {
 var createFluidScroller = (function (_ref) {
   var scrollWindow = _ref.scrollWindow,
       scrollDroppable = _ref.scrollDroppable;
-  var scheduleWindowScroll = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(scrollWindow);
-  var scheduleDroppableScroll = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(scrollDroppable);
+  var scheduleWindowScroll = (0,raf_schd__WEBPACK_IMPORTED_MODULE_7__["default"])(scrollWindow);
+  var scheduleDroppableScroll = (0,raf_schd__WEBPACK_IMPORTED_MODULE_7__["default"])(scrollDroppable);
   var dragging = null;
 
   var tryScroll = function tryScroll(state) {
-    !dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot fluid scroll if not dragging') : 0 : void 0;
+    !dragging ?  true ? invariant(false, 'Cannot fluid scroll if not dragging') : 0 : void 0;
     var _dragging = dragging,
         shouldUseTimeDampening = _dragging.shouldUseTimeDampening,
         dragStartTime = _dragging.dragStartTime;
@@ -31342,18 +29926,10 @@ var createFluidScroller = (function (_ref) {
     });
   };
 
-  var cancelPending = function cancelPending() {
-    !dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot cancel pending fluid scroll when not started') : 0 : void 0;
-    scheduleWindowScroll.cancel();
-    scheduleDroppableScroll.cancel();
-  };
-
   var start$1 = function start$1(state) {
-    start('starting fluid scroller');
-    !!dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot start auto scrolling when already started') : 0 : void 0;
-
-    var dragStartTime = _babel_runtime_corejs2_core_js_date_now__WEBPACK_IMPORTED_MODULE_7___default()();
-
+    start();
+    !!dragging ?  true ? invariant(false, 'Cannot start auto scrolling when already started') : 0 : void 0;
+    var dragStartTime = Date.now();
     var wasScrollNeeded = false;
 
     var fakeScrollCallback = function fakeScrollCallback() {
@@ -31371,7 +29947,7 @@ var createFluidScroller = (function (_ref) {
       dragStartTime: dragStartTime,
       shouldUseTimeDampening: wasScrollNeeded
     };
-    finish('starting fluid scroller');
+    finish();
 
     if (wasScrollNeeded) {
       tryScroll(state);
@@ -31383,14 +29959,14 @@ var createFluidScroller = (function (_ref) {
       return;
     }
 
-    cancelPending();
+    scheduleWindowScroll.cancel();
+    scheduleDroppableScroll.cancel();
     dragging = null;
   };
 
   return {
     start: start$1,
     stop: stop,
-    cancelPending: cancelPending,
     scroll: tryScroll
   };
 });
@@ -31455,7 +30031,7 @@ var createJumpScroller = (function (_ref) {
     }
 
     var destination = whatIsDraggedOver(state.impact);
-    !destination ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot perform a jump scroll when there is no destination') : 0 : void 0;
+    !destination ?  true ? invariant(false, 'Cannot perform a jump scroll when there is no destination') : 0 : void 0;
     var droppableRemainder = scrollDroppableAsMuchAsItCan(state.dimensions.droppables[destination], request);
 
     if (!droppableRemainder) {
@@ -31508,34 +30084,598 @@ var createAutoScroller = (function (_ref) {
 
   var scroller = {
     scroll: scroll,
-    cancelPending: fluidScroller.cancelPending,
     start: fluidScroller.start,
     stop: fluidScroller.stop
   };
   return scroller;
 });
 
-var prefix$1 = function prefix(key) {
-  return "private-react-beautiful-dnd-key-do-not-use-" + key;
+var prefix$1 = 'data-rbd';
+var dragHandle = function () {
+  var base = prefix$1 + "-drag-handle";
+  return {
+    base: base,
+    draggableId: base + "-draggable-id",
+    contextId: base + "-context-id"
+  };
+}();
+var draggable = function () {
+  var base = prefix$1 + "-draggable";
+  return {
+    base: base,
+    contextId: base + "-context-id",
+    id: base + "-id"
+  };
+}();
+var droppable = function () {
+  var base = prefix$1 + "-droppable";
+  return {
+    base: base,
+    contextId: base + "-context-id",
+    id: base + "-id"
+  };
+}();
+var scrollContainer = {
+  contextId: prefix$1 + "-scroll-container-context-id"
 };
 
-var storeKey = prefix$1('store');
-var droppableIdKey = prefix$1('droppable-id');
-var droppableTypeKey = prefix$1('droppable-type');
-var dimensionMarshalKey = prefix$1('dimension-marshal');
-var styleKey = prefix$1('style');
-var canLiftKey = prefix$1('can-lift');
-var isMovementAllowedKey = prefix$1('is-movement-allowed');
+var makeGetSelector = function makeGetSelector(context) {
+  return function (attribute) {
+    return "[" + attribute + "=\"" + context + "\"]";
+  };
+};
+
+var getStyles = function getStyles(rules, property) {
+  return rules.map(function (rule) {
+    var value = rule.styles[property];
+
+    if (!value) {
+      return '';
+    }
+
+    return rule.selector + " { " + value + " }";
+  }).join(' ');
+};
+
+var noPointerEvents = 'pointer-events: none;';
+var getStyles$1 = (function (contextId) {
+  var getSelector = makeGetSelector(contextId);
+
+  var dragHandle$1 = function () {
+    var grabCursor = "\n      cursor: -webkit-grab;\n      cursor: grab;\n    ";
+    return {
+      selector: getSelector(dragHandle.contextId),
+      styles: {
+        always: "\n          -webkit-touch-callout: none;\n          -webkit-tap-highlight-color: rgba(0,0,0,0);\n          touch-action: manipulation;\n        ",
+        resting: grabCursor,
+        dragging: noPointerEvents,
+        dropAnimating: grabCursor
+      }
+    };
+  }();
+
+  var draggable$1 = function () {
+    var transition = "\n      transition: " + transitions.outOfTheWay + ";\n    ";
+    return {
+      selector: getSelector(draggable.contextId),
+      styles: {
+        dragging: transition,
+        dropAnimating: transition,
+        userCancel: transition
+      }
+    };
+  }();
+
+  var droppable$1 = {
+    selector: getSelector(droppable.contextId),
+    styles: {
+      always: "overflow-anchor: none;"
+    }
+  };
+  var body = {
+    selector: 'body',
+    styles: {
+      dragging: "\n        cursor: grabbing;\n        cursor: -webkit-grabbing;\n        user-select: none;\n        -webkit-user-select: none;\n        -moz-user-select: none;\n        -ms-user-select: none;\n        overflow-anchor: none;\n      "
+    }
+  };
+  var rules = [draggable$1, dragHandle$1, droppable$1, body];
+  return {
+    always: getStyles(rules, 'always'),
+    resting: getStyles(rules, 'resting'),
+    dragging: getStyles(rules, 'dragging'),
+    dropAnimating: getStyles(rules, 'dropAnimating'),
+    userCancel: getStyles(rules, 'userCancel')
+  };
+});
+
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0__.useEffect;
+
+var getHead = function getHead() {
+  var head = document.querySelector('head');
+  !head ?  true ? invariant(false, 'Cannot find the head to append a style to') : 0 : void 0;
+  return head;
+};
+
+var createStyleEl = function createStyleEl(nonce) {
+  var el = document.createElement('style');
+
+  if (nonce) {
+    el.setAttribute('nonce', nonce);
+  }
+
+  el.type = 'text/css';
+  return el;
+};
+
+function useStyleMarshal(contextId, nonce) {
+  var styles = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return getStyles$1(contextId);
+  }, [contextId]);
+  var alwaysRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var dynamicRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var setDynamicStyle = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)((0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (proposed) {
+    var el = dynamicRef.current;
+    !el ?  true ? invariant(false, 'Cannot set dynamic style element if it is not set') : 0 : void 0;
+    el.textContent = proposed;
+  }), []);
+  var setAlwaysStyle = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (proposed) {
+    var el = alwaysRef.current;
+    !el ?  true ? invariant(false, 'Cannot set dynamic style element if it is not set') : 0 : void 0;
+    el.textContent = proposed;
+  }, []);
+  useIsomorphicLayoutEffect(function () {
+    !(!alwaysRef.current && !dynamicRef.current) ?  true ? invariant(false, 'style elements already mounted') : 0 : void 0;
+    var always = createStyleEl(nonce);
+    var dynamic = createStyleEl(nonce);
+    alwaysRef.current = always;
+    dynamicRef.current = dynamic;
+    always.setAttribute(prefix$1 + "-always", contextId);
+    dynamic.setAttribute(prefix$1 + "-dynamic", contextId);
+    getHead().appendChild(always);
+    getHead().appendChild(dynamic);
+    setAlwaysStyle(styles.always);
+    setDynamicStyle(styles.resting);
+    return function () {
+      var remove = function remove(ref) {
+        var current = ref.current;
+        !current ?  true ? invariant(false, 'Cannot unmount ref as it is not set') : 0 : void 0;
+        getHead().removeChild(current);
+        ref.current = null;
+      };
+
+      remove(alwaysRef);
+      remove(dynamicRef);
+    };
+  }, [nonce, setAlwaysStyle, setDynamicStyle, styles.always, styles.resting, contextId]);
+  var dragging = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    return setDynamicStyle(styles.dragging);
+  }, [setDynamicStyle, styles.dragging]);
+  var dropping = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (reason) {
+    if (reason === 'DROP') {
+      setDynamicStyle(styles.dropAnimating);
+      return;
+    }
+
+    setDynamicStyle(styles.userCancel);
+  }, [setDynamicStyle, styles.dropAnimating, styles.userCancel]);
+  var resting = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    if (!dynamicRef.current) {
+      return;
+    }
+
+    setDynamicStyle(styles.resting);
+  }, [setDynamicStyle, styles.resting]);
+  var marshal = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      dragging: dragging,
+      dropping: dropping,
+      resting: resting
+    };
+  }, [dragging, dropping, resting]);
+  return marshal;
+}
+
+var getWindowFromEl = (function (el) {
+  return el && el.ownerDocument ? el.ownerDocument.defaultView : window;
+});
+
+function isHtmlElement(el) {
+  return el instanceof getWindowFromEl(el).HTMLElement;
+}
+
+function findDragHandle(contextId, draggableId) {
+  var selector = "[" + dragHandle.contextId + "=\"" + contextId + "\"]";
+  var possible = toArray(document.querySelectorAll(selector));
+
+  if (!possible.length) {
+     true ? warning("Unable to find any drag handles in the context \"" + contextId + "\"") : 0;
+    return null;
+  }
+
+  var handle = find(possible, function (el) {
+    return el.getAttribute(dragHandle.draggableId) === draggableId;
+  });
+
+  if (!handle) {
+     true ? warning("Unable to find drag handle with id \"" + draggableId + "\" as no handle with a matching id was found") : 0;
+    return null;
+  }
+
+  if (!isHtmlElement(handle)) {
+     true ? warning('drag handle needs to be a HTMLElement') : 0;
+    return null;
+  }
+
+  return handle;
+}
+
+function useFocusMarshal(contextId) {
+  var entriesRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)({});
+  var recordRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var restoreFocusFrameRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var isMountedRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(false);
+  var register = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function register(id, focus) {
+    var entry = {
+      id: id,
+      focus: focus
+    };
+    entriesRef.current[id] = entry;
+    return function unregister() {
+      var entries = entriesRef.current;
+      var current = entries[id];
+
+      if (current !== entry) {
+        delete entries[id];
+      }
+    };
+  }, []);
+  var tryGiveFocus = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function tryGiveFocus(tryGiveFocusTo) {
+    var handle = findDragHandle(contextId, tryGiveFocusTo);
+
+    if (handle && handle !== document.activeElement) {
+      handle.focus();
+    }
+  }, [contextId]);
+  var tryShiftRecord = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function tryShiftRecord(previous, redirectTo) {
+    if (recordRef.current === previous) {
+      recordRef.current = redirectTo;
+    }
+  }, []);
+  var tryRestoreFocusRecorded = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function tryRestoreFocusRecorded() {
+    if (restoreFocusFrameRef.current) {
+      return;
+    }
+
+    if (!isMountedRef.current) {
+      return;
+    }
+
+    restoreFocusFrameRef.current = requestAnimationFrame(function () {
+      restoreFocusFrameRef.current = null;
+      var record = recordRef.current;
+
+      if (record) {
+        tryGiveFocus(record);
+      }
+    });
+  }, [tryGiveFocus]);
+  var tryRecordFocus = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function tryRecordFocus(id) {
+    recordRef.current = null;
+    var focused = document.activeElement;
+
+    if (!focused) {
+      return;
+    }
+
+    if (focused.getAttribute(dragHandle.draggableId) !== id) {
+      return;
+    }
+
+    recordRef.current = id;
+  }, []);
+  useIsomorphicLayoutEffect(function () {
+    isMountedRef.current = true;
+    return function clearFrameOnUnmount() {
+      isMountedRef.current = false;
+      var frameId = restoreFocusFrameRef.current;
+
+      if (frameId) {
+        cancelAnimationFrame(frameId);
+      }
+    };
+  }, []);
+  var marshal = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      register: register,
+      tryRecordFocus: tryRecordFocus,
+      tryRestoreFocusRecorded: tryRestoreFocusRecorded,
+      tryShiftRecord: tryShiftRecord
+    };
+  }, [register, tryRecordFocus, tryRestoreFocusRecorded, tryShiftRecord]);
+  return marshal;
+}
+
+function createRegistry() {
+  var entries = {
+    draggables: {},
+    droppables: {}
+  };
+  var subscribers = [];
+
+  function subscribe(cb) {
+    subscribers.push(cb);
+    return function unsubscribe() {
+      var index = subscribers.indexOf(cb);
+
+      if (index === -1) {
+        return;
+      }
+
+      subscribers.splice(index, 1);
+    };
+  }
+
+  function notify(event) {
+    if (subscribers.length) {
+      subscribers.forEach(function (cb) {
+        return cb(event);
+      });
+    }
+  }
+
+  function findDraggableById(id) {
+    return entries.draggables[id] || null;
+  }
+
+  function getDraggableById(id) {
+    var entry = findDraggableById(id);
+    !entry ?  true ? invariant(false, "Cannot find draggable entry with id [" + id + "]") : 0 : void 0;
+    return entry;
+  }
+
+  var draggableAPI = {
+    register: function register(entry) {
+      entries.draggables[entry.descriptor.id] = entry;
+      notify({
+        type: 'ADDITION',
+        value: entry
+      });
+    },
+    update: function update(entry, last) {
+      var current = entries.draggables[last.descriptor.id];
+
+      if (!current) {
+        return;
+      }
+
+      if (current.uniqueId !== entry.uniqueId) {
+        return;
+      }
+
+      delete entries.draggables[last.descriptor.id];
+      entries.draggables[entry.descriptor.id] = entry;
+    },
+    unregister: function unregister(entry) {
+      var draggableId = entry.descriptor.id;
+      var current = findDraggableById(draggableId);
+
+      if (!current) {
+        return;
+      }
+
+      if (entry.uniqueId !== current.uniqueId) {
+        return;
+      }
+
+      delete entries.draggables[draggableId];
+      notify({
+        type: 'REMOVAL',
+        value: entry
+      });
+    },
+    getById: getDraggableById,
+    findById: findDraggableById,
+    exists: function exists(id) {
+      return Boolean(findDraggableById(id));
+    },
+    getAllByType: function getAllByType(type) {
+      return values(entries.draggables).filter(function (entry) {
+        return entry.descriptor.type === type;
+      });
+    }
+  };
+
+  function findDroppableById(id) {
+    return entries.droppables[id] || null;
+  }
+
+  function getDroppableById(id) {
+    var entry = findDroppableById(id);
+    !entry ?  true ? invariant(false, "Cannot find droppable entry with id [" + id + "]") : 0 : void 0;
+    return entry;
+  }
+
+  var droppableAPI = {
+    register: function register(entry) {
+      entries.droppables[entry.descriptor.id] = entry;
+    },
+    unregister: function unregister(entry) {
+      var current = findDroppableById(entry.descriptor.id);
+
+      if (!current) {
+        return;
+      }
+
+      if (entry.uniqueId !== current.uniqueId) {
+        return;
+      }
+
+      delete entries.droppables[entry.descriptor.id];
+    },
+    getById: getDroppableById,
+    findById: findDroppableById,
+    exists: function exists(id) {
+      return Boolean(findDroppableById(id));
+    },
+    getAllByType: function getAllByType(type) {
+      return values(entries.droppables).filter(function (entry) {
+        return entry.descriptor.type === type;
+      });
+    }
+  };
+
+  function clean() {
+    entries.draggables = {};
+    entries.droppables = {};
+    subscribers.length = 0;
+  }
+
+  return {
+    draggable: draggableAPI,
+    droppable: droppableAPI,
+    subscribe: subscribe,
+    clean: clean
+  };
+}
+
+function useRegistry() {
+  var registry = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(createRegistry, []);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    return function unmount() {
+      requestAnimationFrame(registry.clean);
+    };
+  }, [registry]);
+  return registry;
+}
+
+var StoreContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+
+var getBodyElement = (function () {
+  var body = document.body;
+  !body ?  true ? invariant(false, 'Cannot find document.body') : 0 : void 0;
+  return body;
+});
+
+var visuallyHidden = {
+  position: 'absolute',
+  width: '1px',
+  height: '1px',
+  margin: '-1px',
+  border: '0',
+  padding: '0',
+  overflow: 'hidden',
+  clip: 'rect(0 0 0 0)',
+  'clip-path': 'inset(100%)'
+};
+
+var getId = function getId(contextId) {
+  return "rbd-announcement-" + contextId;
+};
+function useAnnouncer(contextId) {
+  var id = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return getId(contextId);
+  }, [contextId]);
+  var ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function setup() {
+    var el = document.createElement('div');
+    ref.current = el;
+    el.id = id;
+    el.setAttribute('aria-live', 'assertive');
+    el.setAttribute('aria-atomic', 'true');
+
+    (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])(el.style, visuallyHidden);
+
+    getBodyElement().appendChild(el);
+    return function cleanup() {
+      setTimeout(function remove() {
+        var body = getBodyElement();
+
+        if (body.contains(el)) {
+          body.removeChild(el);
+        }
+
+        if (el === ref.current) {
+          ref.current = null;
+        }
+      });
+    };
+  }, [id]);
+  var announce = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (message) {
+    var el = ref.current;
+
+    if (el) {
+      el.textContent = message;
+      return;
+    }
+
+     true ? warning("\n      A screen reader message was trying to be announced but it was unable to do so.\n      This can occur if you unmount your <DragDropContext /> in your onDragEnd.\n      Consider calling provided.announce() before the unmount so that the instruction will\n      not be lost for users relying on a screen reader.\n\n      Message not passed to screen reader:\n\n      \"" + message + "\"\n    ") : 0;
+  }, []);
+  return announce;
+}
+
+var count = 0;
+var defaults = {
+  separator: '::'
+};
+function reset() {
+  count = 0;
+}
+function useUniqueId(prefix, options) {
+  if (options === void 0) {
+    options = defaults;
+  }
+
+  return (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return "" + prefix + options.separator + count++;
+  }, [options.separator, prefix]);
+}
+
+function getElementId(_ref) {
+  var contextId = _ref.contextId,
+      uniqueId = _ref.uniqueId;
+  return "rbd-hidden-text-" + contextId + "-" + uniqueId;
+}
+function useHiddenTextElement(_ref2) {
+  var contextId = _ref2.contextId,
+      text = _ref2.text;
+  var uniqueId = useUniqueId('hidden-text', {
+    separator: '-'
+  });
+  var id = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return getElementId({
+      contextId: contextId,
+      uniqueId: uniqueId
+    });
+  }, [uniqueId, contextId]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function mount() {
+    var el = document.createElement('div');
+    el.id = id;
+    el.textContent = text;
+    el.style.display = 'none';
+    getBodyElement().appendChild(el);
+    return function unmount() {
+      var body = getBodyElement();
+
+      if (body.contains(el)) {
+        body.removeChild(el);
+      }
+    };
+  }, [id, text]);
+  return id;
+}
+
+var AppContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
 
 var peerDependencies = {
-	react: "^16.3.1"
+	react: "^16.8.5 || ^17.0.0 || ^18.0.0",
+	"react-dom": "^16.8.5 || ^17.0.0 || ^18.0.0"
 };
 
 var semver = /(\d+)\.(\d+)\.(\d+)/;
 
 var getVersion = function getVersion(value) {
   var result = semver.exec(value);
-  !(result != null) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "Unable to parse React version " + value) : 0 : void 0;
+  !(result != null) ?  true ? invariant(false, "Unable to parse React version " + value) : 0 : void 0;
   var major = Number(result[1]);
   var minor = Number(result[2]);
   var patch = Number(result[3]);
@@ -31596,190 +30736,1483 @@ var checkDoctype = (function (doc) {
   }
 });
 
-function printFatalError(error) {
-  var _console;
-
-  if (false) {}
-
-  (_console = console).error.apply(_console, getFormattedMessage("\n        An error has occurred while a drag is occurring.\n        Any existing drag will be cancelled.\n\n        > " + error.message + "\n        "));
-
-  console.error('raw', error);
+function useDev(useHook) {
+  if (true) {
+    useHook();
+  }
 }
 
-var ErrorBoundary = function (_React$Component) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(ErrorBoundary, _React$Component);
+function useDevSetupWarning(fn, inputs) {
+  useDev(function () {
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+      try {
+        fn();
+      } catch (e) {
+        error("\n          A setup problem was encountered.\n\n          > " + e.message + "\n        ");
+      }
+    }, inputs);
+  });
+}
 
-  function ErrorBoundary() {
-    var _this;
+function useStartupValidation() {
+  useDevSetupWarning(function () {
+    checkReactVersion(peerDependencies.react, react__WEBPACK_IMPORTED_MODULE_0__.version);
+    checkDoctype(document);
+  }, []);
+}
 
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
+function usePrevious(current) {
+  var ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(current);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    ref.current = current;
+  });
+  return ref;
+}
+
+function create() {
+  var lock = null;
+
+  function isClaimed() {
+    return Boolean(lock);
+  }
+
+  function isActive(value) {
+    return value === lock;
+  }
+
+  function claim(abandon) {
+    !!lock ?  true ? invariant(false, 'Cannot claim lock as it is already claimed') : 0 : void 0;
+    var newLock = {
+      abandon: abandon
+    };
+    lock = newLock;
+    return newLock;
+  }
+
+  function release() {
+    !lock ?  true ? invariant(false, 'Cannot release lock when there is no lock') : 0 : void 0;
+    lock = null;
+  }
+
+  function tryAbandon() {
+    if (lock) {
+      lock.abandon();
+      release();
+    }
+  }
+
+  return {
+    isClaimed: isClaimed,
+    isActive: isActive,
+    claim: claim,
+    release: release,
+    tryAbandon: tryAbandon
+  };
+}
+
+var tab = 9;
+var enter = 13;
+var escape = 27;
+var space = 32;
+var pageUp = 33;
+var pageDown = 34;
+var end = 35;
+var home = 36;
+var arrowLeft = 37;
+var arrowUp = 38;
+var arrowRight = 39;
+var arrowDown = 40;
+
+var _preventedKeys;
+var preventedKeys = (_preventedKeys = {}, _preventedKeys[enter] = true, _preventedKeys[tab] = true, _preventedKeys);
+var preventStandardKeyEvents = (function (event) {
+  if (preventedKeys[event.keyCode]) {
+    event.preventDefault();
+  }
+});
+
+var supportedEventName = function () {
+  var base = 'visibilitychange';
+
+  if (typeof document === 'undefined') {
+    return base;
+  }
+
+  var candidates = [base, "ms" + base, "webkit" + base, "moz" + base, "o" + base];
+  var supported = find(candidates, function (eventName) {
+    return "on" + eventName in document;
+  });
+  return supported || base;
+}();
+
+var primaryButton = 0;
+var sloppyClickThreshold = 5;
+
+function isSloppyClickThresholdExceeded(original, current) {
+  return Math.abs(current.x - original.x) >= sloppyClickThreshold || Math.abs(current.y - original.y) >= sloppyClickThreshold;
+}
+
+var idle$1 = {
+  type: 'IDLE'
+};
+
+function getCaptureBindings(_ref) {
+  var cancel = _ref.cancel,
+      completed = _ref.completed,
+      getPhase = _ref.getPhase,
+      setPhase = _ref.setPhase;
+  return [{
+    eventName: 'mousemove',
+    fn: function fn(event) {
+      var button = event.button,
+          clientX = event.clientX,
+          clientY = event.clientY;
+
+      if (button !== primaryButton) {
+        return;
+      }
+
+      var point = {
+        x: clientX,
+        y: clientY
+      };
+      var phase = getPhase();
+
+      if (phase.type === 'DRAGGING') {
+        event.preventDefault();
+        phase.actions.move(point);
+        return;
+      }
+
+      !(phase.type === 'PENDING') ?  true ? invariant(false, 'Cannot be IDLE') : 0 : void 0;
+      var pending = phase.point;
+
+      if (!isSloppyClickThresholdExceeded(pending, point)) {
+        return;
+      }
+
+      event.preventDefault();
+      var actions = phase.actions.fluidLift(point);
+      setPhase({
+        type: 'DRAGGING',
+        actions: actions
+      });
+    }
+  }, {
+    eventName: 'mouseup',
+    fn: function fn(event) {
+      var phase = getPhase();
+
+      if (phase.type !== 'DRAGGING') {
+        cancel();
+        return;
+      }
+
+      event.preventDefault();
+      phase.actions.drop({
+        shouldBlockNextClick: true
+      });
+      completed();
+    }
+  }, {
+    eventName: 'mousedown',
+    fn: function fn(event) {
+      if (getPhase().type === 'DRAGGING') {
+        event.preventDefault();
+      }
+
+      cancel();
+    }
+  }, {
+    eventName: 'keydown',
+    fn: function fn(event) {
+      var phase = getPhase();
+
+      if (phase.type === 'PENDING') {
+        cancel();
+        return;
+      }
+
+      if (event.keyCode === escape) {
+        event.preventDefault();
+        cancel();
+        return;
+      }
+
+      preventStandardKeyEvents(event);
+    }
+  }, {
+    eventName: 'resize',
+    fn: cancel
+  }, {
+    eventName: 'scroll',
+    options: {
+      passive: true,
+      capture: false
+    },
+    fn: function fn() {
+      if (getPhase().type === 'PENDING') {
+        cancel();
+      }
+    }
+  }, {
+    eventName: 'webkitmouseforcedown',
+    fn: function fn(event) {
+      var phase = getPhase();
+      !(phase.type !== 'IDLE') ?  true ? invariant(false, 'Unexpected phase') : 0 : void 0;
+
+      if (phase.actions.shouldRespectForcePress()) {
+        cancel();
+        return;
+      }
+
+      event.preventDefault();
+    }
+  }, {
+    eventName: supportedEventName,
+    fn: cancel
+  }];
+}
+
+function useMouseSensor(api) {
+  var phaseRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(idle$1);
+  var unbindEventsRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(noop);
+  var startCaptureBinding = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      eventName: 'mousedown',
+      fn: function onMouseDown(event) {
+        if (event.defaultPrevented) {
+          return;
+        }
+
+        if (event.button !== primaryButton) {
+          return;
+        }
+
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
+          return;
+        }
+
+        var draggableId = api.findClosestDraggableId(event);
+
+        if (!draggableId) {
+          return;
+        }
+
+        var actions = api.tryGetLock(draggableId, stop, {
+          sourceEvent: event
+        });
+
+        if (!actions) {
+          return;
+        }
+
+        event.preventDefault();
+        var point = {
+          x: event.clientX,
+          y: event.clientY
+        };
+        unbindEventsRef.current();
+        startPendingDrag(actions, point);
+      }
+    };
+  }, [api]);
+  var preventForcePressBinding = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      eventName: 'webkitmouseforcewillbegin',
+      fn: function fn(event) {
+        if (event.defaultPrevented) {
+          return;
+        }
+
+        var id = api.findClosestDraggableId(event);
+
+        if (!id) {
+          return;
+        }
+
+        var options = api.findOptionsForDraggable(id);
+
+        if (!options) {
+          return;
+        }
+
+        if (options.shouldRespectForcePress) {
+          return;
+        }
+
+        if (!api.canGetLock(id)) {
+          return;
+        }
+
+        event.preventDefault();
+      }
+    };
+  }, [api]);
+  var listenForCapture = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function listenForCapture() {
+    var options = {
+      passive: false,
+      capture: true
+    };
+    unbindEventsRef.current = bindEvents(window, [preventForcePressBinding, startCaptureBinding], options);
+  }, [preventForcePressBinding, startCaptureBinding]);
+  var stop = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var current = phaseRef.current;
+
+    if (current.type === 'IDLE') {
+      return;
     }
 
-    _this = _React$Component.call.apply(_React$Component, [this].concat(args)) || this;
+    phaseRef.current = idle$1;
+    unbindEventsRef.current();
+    listenForCapture();
+  }, [listenForCapture]);
+  var cancel = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var phase = phaseRef.current;
+    stop();
 
-    _this.onFatalError = function (error) {
-      printFatalError(error);
+    if (phase.type === 'DRAGGING') {
+      phase.actions.cancel({
+        shouldBlockNextClick: true
+      });
+    }
 
-      _this.props.onError();
+    if (phase.type === 'PENDING') {
+      phase.actions.abort();
+    }
+  }, [stop]);
+  var bindCapturingEvents = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function bindCapturingEvents() {
+    var options = {
+      capture: true,
+      passive: false
+    };
+    var bindings = getCaptureBindings({
+      cancel: cancel,
+      completed: stop,
+      getPhase: function getPhase() {
+        return phaseRef.current;
+      },
+      setPhase: function setPhase(phase) {
+        phaseRef.current = phase;
+      }
+    });
+    unbindEventsRef.current = bindEvents(window, bindings, options);
+  }, [cancel, stop]);
+  var startPendingDrag = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function startPendingDrag(actions, point) {
+    !(phaseRef.current.type === 'IDLE') ?  true ? invariant(false, 'Expected to move from IDLE to PENDING drag') : 0 : void 0;
+    phaseRef.current = {
+      type: 'PENDING',
+      point: point,
+      actions: actions
+    };
+    bindCapturingEvents();
+  }, [bindCapturingEvents]);
+  useIsomorphicLayoutEffect(function mount() {
+    listenForCapture();
+    return function unmount() {
+      unbindEventsRef.current();
+    };
+  }, [listenForCapture]);
+}
 
-      if (error.message.indexOf('Invariant failed') !== -1) {
-        _this.setState({});
+var _scrollJumpKeys;
+
+function noop$1() {}
+
+var scrollJumpKeys = (_scrollJumpKeys = {}, _scrollJumpKeys[pageDown] = true, _scrollJumpKeys[pageUp] = true, _scrollJumpKeys[home] = true, _scrollJumpKeys[end] = true, _scrollJumpKeys);
+
+function getDraggingBindings(actions, stop) {
+  function cancel() {
+    stop();
+    actions.cancel();
+  }
+
+  function drop() {
+    stop();
+    actions.drop();
+  }
+
+  return [{
+    eventName: 'keydown',
+    fn: function fn(event) {
+      if (event.keyCode === escape) {
+        event.preventDefault();
+        cancel();
+        return;
+      }
+
+      if (event.keyCode === space) {
+        event.preventDefault();
+        drop();
+        return;
+      }
+
+      if (event.keyCode === arrowDown) {
+        event.preventDefault();
+        actions.moveDown();
+        return;
+      }
+
+      if (event.keyCode === arrowUp) {
+        event.preventDefault();
+        actions.moveUp();
+        return;
+      }
+
+      if (event.keyCode === arrowRight) {
+        event.preventDefault();
+        actions.moveRight();
+        return;
+      }
+
+      if (event.keyCode === arrowLeft) {
+        event.preventDefault();
+        actions.moveLeft();
+        return;
+      }
+
+      if (scrollJumpKeys[event.keyCode]) {
+        event.preventDefault();
+        return;
+      }
+
+      preventStandardKeyEvents(event);
+    }
+  }, {
+    eventName: 'mousedown',
+    fn: cancel
+  }, {
+    eventName: 'mouseup',
+    fn: cancel
+  }, {
+    eventName: 'click',
+    fn: cancel
+  }, {
+    eventName: 'touchstart',
+    fn: cancel
+  }, {
+    eventName: 'resize',
+    fn: cancel
+  }, {
+    eventName: 'wheel',
+    fn: cancel,
+    options: {
+      passive: true
+    }
+  }, {
+    eventName: supportedEventName,
+    fn: cancel
+  }];
+}
+
+function useKeyboardSensor(api) {
+  var unbindEventsRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(noop$1);
+  var startCaptureBinding = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      eventName: 'keydown',
+      fn: function onKeyDown(event) {
+        if (event.defaultPrevented) {
+          return;
+        }
+
+        if (event.keyCode !== space) {
+          return;
+        }
+
+        var draggableId = api.findClosestDraggableId(event);
+
+        if (!draggableId) {
+          return;
+        }
+
+        var preDrag = api.tryGetLock(draggableId, stop, {
+          sourceEvent: event
+        });
+
+        if (!preDrag) {
+          return;
+        }
+
+        event.preventDefault();
+        var isCapturing = true;
+        var actions = preDrag.snapLift();
+        unbindEventsRef.current();
+
+        function stop() {
+          !isCapturing ?  true ? invariant(false, 'Cannot stop capturing a keyboard drag when not capturing') : 0 : void 0;
+          isCapturing = false;
+          unbindEventsRef.current();
+          listenForCapture();
+        }
+
+        unbindEventsRef.current = bindEvents(window, getDraggingBindings(actions, stop), {
+          capture: true,
+          passive: false
+        });
+      }
+    };
+  }, [api]);
+  var listenForCapture = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function tryStartCapture() {
+    var options = {
+      passive: false,
+      capture: true
+    };
+    unbindEventsRef.current = bindEvents(window, [startCaptureBinding], options);
+  }, [startCaptureBinding]);
+  useIsomorphicLayoutEffect(function mount() {
+    listenForCapture();
+    return function unmount() {
+      unbindEventsRef.current();
+    };
+  }, [listenForCapture]);
+}
+
+var idle$2 = {
+  type: 'IDLE'
+};
+var timeForLongPress = 120;
+var forcePressThreshold = 0.15;
+
+function getWindowBindings(_ref) {
+  var cancel = _ref.cancel,
+      getPhase = _ref.getPhase;
+  return [{
+    eventName: 'orientationchange',
+    fn: cancel
+  }, {
+    eventName: 'resize',
+    fn: cancel
+  }, {
+    eventName: 'contextmenu',
+    fn: function fn(event) {
+      event.preventDefault();
+    }
+  }, {
+    eventName: 'keydown',
+    fn: function fn(event) {
+      if (getPhase().type !== 'DRAGGING') {
+        cancel();
+        return;
+      }
+
+      if (event.keyCode === escape) {
+        event.preventDefault();
+      }
+
+      cancel();
+    }
+  }, {
+    eventName: supportedEventName,
+    fn: cancel
+  }];
+}
+
+function getHandleBindings(_ref2) {
+  var cancel = _ref2.cancel,
+      completed = _ref2.completed,
+      getPhase = _ref2.getPhase;
+  return [{
+    eventName: 'touchmove',
+    options: {
+      capture: false
+    },
+    fn: function fn(event) {
+      var phase = getPhase();
+
+      if (phase.type !== 'DRAGGING') {
+        cancel();
+        return;
+      }
+
+      phase.hasMoved = true;
+      var _event$touches$ = event.touches[0],
+          clientX = _event$touches$.clientX,
+          clientY = _event$touches$.clientY;
+      var point = {
+        x: clientX,
+        y: clientY
+      };
+      event.preventDefault();
+      phase.actions.move(point);
+    }
+  }, {
+    eventName: 'touchend',
+    fn: function fn(event) {
+      var phase = getPhase();
+
+      if (phase.type !== 'DRAGGING') {
+        cancel();
+        return;
+      }
+
+      event.preventDefault();
+      phase.actions.drop({
+        shouldBlockNextClick: true
+      });
+      completed();
+    }
+  }, {
+    eventName: 'touchcancel',
+    fn: function fn(event) {
+      if (getPhase().type !== 'DRAGGING') {
+        cancel();
+        return;
+      }
+
+      event.preventDefault();
+      cancel();
+    }
+  }, {
+    eventName: 'touchforcechange',
+    fn: function fn(event) {
+      var phase = getPhase();
+      !(phase.type !== 'IDLE') ?  true ? invariant(false) : 0 : void 0;
+      var touch = event.touches[0];
+
+      if (!touch) {
+        return;
+      }
+
+      var isForcePress = touch.force >= forcePressThreshold;
+
+      if (!isForcePress) {
+        return;
+      }
+
+      var shouldRespect = phase.actions.shouldRespectForcePress();
+
+      if (phase.type === 'PENDING') {
+        if (shouldRespect) {
+          cancel();
+        }
 
         return;
       }
 
-      throw error;
-    };
+      if (shouldRespect) {
+        if (phase.hasMoved) {
+          event.preventDefault();
+          return;
+        }
 
-    return _this;
-  }
+        cancel();
+        return;
+      }
 
-  var _proto = ErrorBoundary.prototype;
+      event.preventDefault();
+    }
+  }, {
+    eventName: supportedEventName,
+    fn: cancel
+  }];
+}
 
-  _proto.componentDidMount = function componentDidMount() {
-    window.addEventListener('error', this.onFatalError);
-  };
+function useTouchSensor(api) {
+  var phaseRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(idle$2);
+  var unbindEventsRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(noop);
+  var getPhase = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function getPhase() {
+    return phaseRef.current;
+  }, []);
+  var setPhase = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function setPhase(phase) {
+    phaseRef.current = phase;
+  }, []);
+  var startCaptureBinding = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      eventName: 'touchstart',
+      fn: function onTouchStart(event) {
+        if (event.defaultPrevented) {
+          return;
+        }
 
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    window.removeEventListener('error', this.onFatalError);
-  };
+        var draggableId = api.findClosestDraggableId(event);
 
-  _proto.componentDidCatch = function componentDidCatch(error) {
-    this.onFatalError(error);
-  };
+        if (!draggableId) {
+          return;
+        }
 
-  _proto.render = function render() {
-    return this.props.children;
-  };
+        var actions = api.tryGetLock(draggableId, stop, {
+          sourceEvent: event
+        });
 
-  return ErrorBoundary;
-}(react__WEBPACK_IMPORTED_MODULE_2__.Component);
+        if (!actions) {
+          return;
+        }
 
-var _DragDropContext$chil;
-var resetServerContext = function resetServerContext() {
-  resetStyleContext();
-};
-
-var DragDropContext = function (_React$Component) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(DragDropContext, _React$Component);
-
-  function DragDropContext(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-    _this.store = void 0;
-    _this.dimensionMarshal = void 0;
-    _this.styleMarshal = void 0;
-    _this.autoScroller = void 0;
-    _this.announcer = void 0;
-    _this.unsubscribe = void 0;
-
-    _this.canLift = function (id) {
-      return canStartDrag(_this.store.getState(), id);
-    };
-
-    _this.getIsMovementAllowed = function () {
-      return isMovementAllowed(_this.store.getState());
-    };
-
-    _this.tryResetStore = function () {
-      var state = _this.store.getState();
-
-      if (state.phase !== 'IDLE') {
-        _this.store.dispatch(clean());
+        var touch = event.touches[0];
+        var clientX = touch.clientX,
+            clientY = touch.clientY;
+        var point = {
+          x: clientX,
+          y: clientY
+        };
+        unbindEventsRef.current();
+        startPendingDrag(actions, point);
       }
     };
+  }, [api]);
+  var listenForCapture = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function listenForCapture() {
+    var options = {
+      capture: true,
+      passive: false
+    };
+    unbindEventsRef.current = bindEvents(window, [startCaptureBinding], options);
+  }, [startCaptureBinding]);
+  var stop = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var current = phaseRef.current;
 
-    if (true) {
-      !(typeof props.onDragEnd === 'function') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'A DragDropContext requires an onDragEnd function to perform reordering logic') : 0 : void 0;
+    if (current.type === 'IDLE') {
+      return;
     }
 
-    _this.announcer = createAnnouncer();
-    _this.styleMarshal = createStyleMarshal();
-    _this.store = createStore({
-      getDimensionMarshal: function getDimensionMarshal() {
-        return _this.dimensionMarshal;
-      },
-      styleMarshal: _this.styleMarshal,
-      getResponders: function getResponders() {
-        return {
-          onBeforeDragStart: _this.props.onBeforeDragStart,
-          onDragStart: _this.props.onDragStart,
-          onDragEnd: _this.props.onDragEnd,
-          onDragUpdate: _this.props.onDragUpdate
+    if (current.type === 'PENDING') {
+      clearTimeout(current.longPressTimerId);
+    }
+
+    setPhase(idle$2);
+    unbindEventsRef.current();
+    listenForCapture();
+  }, [listenForCapture, setPhase]);
+  var cancel = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var phase = phaseRef.current;
+    stop();
+
+    if (phase.type === 'DRAGGING') {
+      phase.actions.cancel({
+        shouldBlockNextClick: true
+      });
+    }
+
+    if (phase.type === 'PENDING') {
+      phase.actions.abort();
+    }
+  }, [stop]);
+  var bindCapturingEvents = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function bindCapturingEvents() {
+    var options = {
+      capture: true,
+      passive: false
+    };
+    var args = {
+      cancel: cancel,
+      completed: stop,
+      getPhase: getPhase
+    };
+    var unbindTarget = bindEvents(window, getHandleBindings(args), options);
+    var unbindWindow = bindEvents(window, getWindowBindings(args), options);
+
+    unbindEventsRef.current = function unbindAll() {
+      unbindTarget();
+      unbindWindow();
+    };
+  }, [cancel, getPhase, stop]);
+  var startDragging = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function startDragging() {
+    var phase = getPhase();
+    !(phase.type === 'PENDING') ?  true ? invariant(false, "Cannot start dragging from phase " + phase.type) : 0 : void 0;
+    var actions = phase.actions.fluidLift(phase.point);
+    setPhase({
+      type: 'DRAGGING',
+      actions: actions,
+      hasMoved: false
+    });
+  }, [getPhase, setPhase]);
+  var startPendingDrag = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function startPendingDrag(actions, point) {
+    !(getPhase().type === 'IDLE') ?  true ? invariant(false, 'Expected to move from IDLE to PENDING drag') : 0 : void 0;
+    var longPressTimerId = setTimeout(startDragging, timeForLongPress);
+    setPhase({
+      type: 'PENDING',
+      point: point,
+      actions: actions,
+      longPressTimerId: longPressTimerId
+    });
+    bindCapturingEvents();
+  }, [bindCapturingEvents, getPhase, setPhase, startDragging]);
+  useIsomorphicLayoutEffect(function mount() {
+    listenForCapture();
+    return function unmount() {
+      unbindEventsRef.current();
+      var phase = getPhase();
+
+      if (phase.type === 'PENDING') {
+        clearTimeout(phase.longPressTimerId);
+        setPhase(idle$2);
+      }
+    };
+  }, [getPhase, listenForCapture, setPhase]);
+  useIsomorphicLayoutEffect(function webkitHack() {
+    var unbind = bindEvents(window, [{
+      eventName: 'touchmove',
+      fn: function fn() {},
+      options: {
+        capture: false,
+        passive: false
+      }
+    }]);
+    return unbind;
+  }, []);
+}
+
+function useValidateSensorHooks(sensorHooks) {
+  useDev(function () {
+    var previousRef = usePrevious(sensorHooks);
+    useDevSetupWarning(function () {
+      !(previousRef.current.length === sensorHooks.length) ?  true ? invariant(false, 'Cannot change the amount of sensor hooks after mounting') : 0 : void 0;
+    });
+  });
+}
+
+var interactiveTagNames = {
+  input: true,
+  button: true,
+  textarea: true,
+  select: true,
+  option: true,
+  optgroup: true,
+  video: true,
+  audio: true
+};
+
+function isAnInteractiveElement(parent, current) {
+  if (current == null) {
+    return false;
+  }
+
+  var hasAnInteractiveTag = Boolean(interactiveTagNames[current.tagName.toLowerCase()]);
+
+  if (hasAnInteractiveTag) {
+    return true;
+  }
+
+  var attribute = current.getAttribute('contenteditable');
+
+  if (attribute === 'true' || attribute === '') {
+    return true;
+  }
+
+  if (current === parent) {
+    return false;
+  }
+
+  return isAnInteractiveElement(parent, current.parentElement);
+}
+
+function isEventInInteractiveElement(draggable, event) {
+  var target = event.target;
+
+  if (!isHtmlElement(target)) {
+    return false;
+  }
+
+  return isAnInteractiveElement(draggable, target);
+}
+
+var getBorderBoxCenterPosition = (function (el) {
+  return (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getRect)(el.getBoundingClientRect()).center;
+});
+
+function isElement(el) {
+  return el instanceof getWindowFromEl(el).Element;
+}
+
+var supportedMatchesName = function () {
+  var base = 'matches';
+
+  if (typeof document === 'undefined') {
+    return base;
+  }
+
+  var candidates = [base, 'msMatchesSelector', 'webkitMatchesSelector'];
+  var value = find(candidates, function (name) {
+    return name in Element.prototype;
+  });
+  return value || base;
+}();
+
+function closestPonyfill(el, selector) {
+  if (el == null) {
+    return null;
+  }
+
+  if (el[supportedMatchesName](selector)) {
+    return el;
+  }
+
+  return closestPonyfill(el.parentElement, selector);
+}
+
+function closest$1(el, selector) {
+  if (el.closest) {
+    return el.closest(selector);
+  }
+
+  return closestPonyfill(el, selector);
+}
+
+function getSelector(contextId) {
+  return "[" + dragHandle.contextId + "=\"" + contextId + "\"]";
+}
+
+function findClosestDragHandleFromEvent(contextId, event) {
+  var target = event.target;
+
+  if (!isElement(target)) {
+     true ? warning('event.target must be a Element') : 0;
+    return null;
+  }
+
+  var selector = getSelector(contextId);
+  var handle = closest$1(target, selector);
+
+  if (!handle) {
+    return null;
+  }
+
+  if (!isHtmlElement(handle)) {
+     true ? warning('drag handle must be a HTMLElement') : 0;
+    return null;
+  }
+
+  return handle;
+}
+
+function tryGetClosestDraggableIdFromEvent(contextId, event) {
+  var handle = findClosestDragHandleFromEvent(contextId, event);
+
+  if (!handle) {
+    return null;
+  }
+
+  return handle.getAttribute(dragHandle.draggableId);
+}
+
+function findDraggable(contextId, draggableId) {
+  var selector = "[" + draggable.contextId + "=\"" + contextId + "\"]";
+  var possible = toArray(document.querySelectorAll(selector));
+  var draggable$1 = find(possible, function (el) {
+    return el.getAttribute(draggable.id) === draggableId;
+  });
+
+  if (!draggable$1) {
+    return null;
+  }
+
+  if (!isHtmlElement(draggable$1)) {
+     true ? warning('Draggable element is not a HTMLElement') : 0;
+    return null;
+  }
+
+  return draggable$1;
+}
+
+function preventDefault(event) {
+  event.preventDefault();
+}
+
+function _isActive(_ref) {
+  var expected = _ref.expected,
+      phase = _ref.phase,
+      isLockActive = _ref.isLockActive,
+      shouldWarn = _ref.shouldWarn;
+
+  if (!isLockActive()) {
+    if (shouldWarn) {
+       true ? warning("\n        Cannot perform action.\n        The sensor no longer has an action lock.\n\n        Tips:\n\n        - Throw away your action handlers when forceStop() is called\n        - Check actions.isActive() if you really need to\n      ") : 0;
+    }
+
+    return false;
+  }
+
+  if (expected !== phase) {
+    if (shouldWarn) {
+       true ? warning("\n        Cannot perform action.\n        The actions you used belong to an outdated phase\n\n        Current phase: " + expected + "\n        You called an action from outdated phase: " + phase + "\n\n        Tips:\n\n        - Do not use preDragActions actions after calling preDragActions.lift()\n      ") : 0;
+    }
+
+    return false;
+  }
+
+  return true;
+}
+
+function canStart(_ref2) {
+  var lockAPI = _ref2.lockAPI,
+      store = _ref2.store,
+      registry = _ref2.registry,
+      draggableId = _ref2.draggableId;
+
+  if (lockAPI.isClaimed()) {
+    return false;
+  }
+
+  var entry = registry.draggable.findById(draggableId);
+
+  if (!entry) {
+     true ? warning("Unable to find draggable with id: " + draggableId) : 0;
+    return false;
+  }
+
+  if (!entry.options.isEnabled) {
+    return false;
+  }
+
+  if (!canStartDrag(store.getState(), draggableId)) {
+    return false;
+  }
+
+  return true;
+}
+
+function tryStart(_ref3) {
+  var lockAPI = _ref3.lockAPI,
+      contextId = _ref3.contextId,
+      store = _ref3.store,
+      registry = _ref3.registry,
+      draggableId = _ref3.draggableId,
+      forceSensorStop = _ref3.forceSensorStop,
+      sourceEvent = _ref3.sourceEvent;
+  var shouldStart = canStart({
+    lockAPI: lockAPI,
+    store: store,
+    registry: registry,
+    draggableId: draggableId
+  });
+
+  if (!shouldStart) {
+    return null;
+  }
+
+  var entry = registry.draggable.getById(draggableId);
+  var el = findDraggable(contextId, entry.descriptor.id);
+
+  if (!el) {
+     true ? warning("Unable to find draggable element with id: " + draggableId) : 0;
+    return null;
+  }
+
+  if (sourceEvent && !entry.options.canDragInteractiveElements && isEventInInteractiveElement(el, sourceEvent)) {
+    return null;
+  }
+
+  var lock = lockAPI.claim(forceSensorStop || noop);
+  var phase = 'PRE_DRAG';
+
+  function getShouldRespectForcePress() {
+    return entry.options.shouldRespectForcePress;
+  }
+
+  function isLockActive() {
+    return lockAPI.isActive(lock);
+  }
+
+  function tryDispatch(expected, getAction) {
+    if (_isActive({
+      expected: expected,
+      phase: phase,
+      isLockActive: isLockActive,
+      shouldWarn: true
+    })) {
+      store.dispatch(getAction());
+    }
+  }
+
+  var tryDispatchWhenDragging = tryDispatch.bind(null, 'DRAGGING');
+
+  function lift$1(args) {
+    function completed() {
+      lockAPI.release();
+      phase = 'COMPLETED';
+    }
+
+    if (phase !== 'PRE_DRAG') {
+      completed();
+      !(phase === 'PRE_DRAG') ?  true ? invariant(false, "Cannot lift in phase " + phase) : 0 : void 0;
+    }
+
+    store.dispatch(lift(args.liftActionArgs));
+    phase = 'DRAGGING';
+
+    function finish(reason, options) {
+      if (options === void 0) {
+        options = {
+          shouldBlockNextClick: false
         };
+      }
+
+      args.cleanup();
+
+      if (options.shouldBlockNextClick) {
+        var unbind = bindEvents(window, [{
+          eventName: 'click',
+          fn: preventDefault,
+          options: {
+            once: true,
+            passive: false,
+            capture: true
+          }
+        }]);
+        setTimeout(unbind);
+      }
+
+      completed();
+      store.dispatch(drop({
+        reason: reason
+      }));
+    }
+
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
+      isActive: function isActive() {
+        return _isActive({
+          expected: 'DRAGGING',
+          phase: phase,
+          isLockActive: isLockActive,
+          shouldWarn: false
+        });
       },
-      announce: _this.announcer.announce,
-      getScroller: function getScroller() {
-        return _this.autoScroller;
+      shouldRespectForcePress: getShouldRespectForcePress,
+      drop: function drop(options) {
+        return finish('DROP', options);
+      },
+      cancel: function cancel(options) {
+        return finish('CANCEL', options);
+      }
+    }, args.actions);
+  }
+
+  function fluidLift(clientSelection) {
+    var move$1 = (0,raf_schd__WEBPACK_IMPORTED_MODULE_7__["default"])(function (client) {
+      tryDispatchWhenDragging(function () {
+        return move({
+          client: client
+        });
+      });
+    });
+    var api = lift$1({
+      liftActionArgs: {
+        id: draggableId,
+        clientSelection: clientSelection,
+        movementMode: 'FLUID'
+      },
+      cleanup: function cleanup() {
+        return move$1.cancel();
+      },
+      actions: {
+        move: move$1
       }
     });
-    var callbacks = (0,redux__WEBPACK_IMPORTED_MODULE_12__.bindActionCreators)({
-      publishWhileDragging: publishWhileDragging$1,
+    return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, api, {
+      move: move$1
+    });
+  }
+
+  function snapLift() {
+    var actions = {
+      moveUp: function moveUp$1() {
+        return tryDispatchWhenDragging(moveUp);
+      },
+      moveRight: function moveRight$1() {
+        return tryDispatchWhenDragging(moveRight);
+      },
+      moveDown: function moveDown$1() {
+        return tryDispatchWhenDragging(moveDown);
+      },
+      moveLeft: function moveLeft$1() {
+        return tryDispatchWhenDragging(moveLeft);
+      }
+    };
+    return lift$1({
+      liftActionArgs: {
+        id: draggableId,
+        clientSelection: getBorderBoxCenterPosition(el),
+        movementMode: 'SNAP'
+      },
+      cleanup: noop,
+      actions: actions
+    });
+  }
+
+  function abortPreDrag() {
+    var shouldRelease = _isActive({
+      expected: 'PRE_DRAG',
+      phase: phase,
+      isLockActive: isLockActive,
+      shouldWarn: true
+    });
+
+    if (shouldRelease) {
+      lockAPI.release();
+    }
+  }
+
+  var preDrag = {
+    isActive: function isActive() {
+      return _isActive({
+        expected: 'PRE_DRAG',
+        phase: phase,
+        isLockActive: isLockActive,
+        shouldWarn: false
+      });
+    },
+    shouldRespectForcePress: getShouldRespectForcePress,
+    fluidLift: fluidLift,
+    snapLift: snapLift,
+    abort: abortPreDrag
+  };
+  return preDrag;
+}
+
+var defaultSensors = [useMouseSensor, useKeyboardSensor, useTouchSensor];
+function useSensorMarshal(_ref4) {
+  var contextId = _ref4.contextId,
+      store = _ref4.store,
+      registry = _ref4.registry,
+      customSensors = _ref4.customSensors,
+      enableDefaultSensors = _ref4.enableDefaultSensors;
+  var useSensors = [].concat(enableDefaultSensors ? defaultSensors : [], customSensors || []);
+  var lockAPI = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(function () {
+    return create();
+  })[0];
+  var tryAbandonLock = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function tryAbandonLock(previous, current) {
+    if (previous.isDragging && !current.isDragging) {
+      lockAPI.tryAbandon();
+    }
+  }, [lockAPI]);
+  useIsomorphicLayoutEffect(function listenToStore() {
+    var previous = store.getState();
+    var unsubscribe = store.subscribe(function () {
+      var current = store.getState();
+      tryAbandonLock(previous, current);
+      previous = current;
+    });
+    return unsubscribe;
+  }, [lockAPI, store, tryAbandonLock]);
+  useIsomorphicLayoutEffect(function () {
+    return lockAPI.tryAbandon;
+  }, [lockAPI.tryAbandon]);
+  var canGetLock = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (draggableId) {
+    return canStart({
+      lockAPI: lockAPI,
+      registry: registry,
+      store: store,
+      draggableId: draggableId
+    });
+  }, [lockAPI, registry, store]);
+  var tryGetLock = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (draggableId, forceStop, options) {
+    return tryStart({
+      lockAPI: lockAPI,
+      registry: registry,
+      contextId: contextId,
+      store: store,
+      draggableId: draggableId,
+      forceSensorStop: forceStop,
+      sourceEvent: options && options.sourceEvent ? options.sourceEvent : null
+    });
+  }, [contextId, lockAPI, registry, store]);
+  var findClosestDraggableId = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (event) {
+    return tryGetClosestDraggableIdFromEvent(contextId, event);
+  }, [contextId]);
+  var findOptionsForDraggable = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (id) {
+    var entry = registry.draggable.findById(id);
+    return entry ? entry.options : null;
+  }, [registry.draggable]);
+  var tryReleaseLock = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function tryReleaseLock() {
+    if (!lockAPI.isClaimed()) {
+      return;
+    }
+
+    lockAPI.tryAbandon();
+
+    if (store.getState().phase !== 'IDLE') {
+      store.dispatch(flush());
+    }
+  }, [lockAPI, store]);
+  var isLockClaimed = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(lockAPI.isClaimed, [lockAPI]);
+  var api = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      canGetLock: canGetLock,
+      tryGetLock: tryGetLock,
+      findClosestDraggableId: findClosestDraggableId,
+      findOptionsForDraggable: findOptionsForDraggable,
+      tryReleaseLock: tryReleaseLock,
+      isLockClaimed: isLockClaimed
+    };
+  }, [canGetLock, tryGetLock, findClosestDraggableId, findOptionsForDraggable, tryReleaseLock, isLockClaimed]);
+  useValidateSensorHooks(useSensors);
+
+  for (var i = 0; i < useSensors.length; i++) {
+    useSensors[i](api);
+  }
+}
+
+var createResponders = function createResponders(props) {
+  return {
+    onBeforeCapture: props.onBeforeCapture,
+    onBeforeDragStart: props.onBeforeDragStart,
+    onDragStart: props.onDragStart,
+    onDragEnd: props.onDragEnd,
+    onDragUpdate: props.onDragUpdate
+  };
+};
+
+function getStore(lazyRef) {
+  !lazyRef.current ?  true ? invariant(false, 'Could not find store from lazy ref') : 0 : void 0;
+  return lazyRef.current;
+}
+
+function App(props) {
+  var contextId = props.contextId,
+      setCallbacks = props.setCallbacks,
+      sensors = props.sensors,
+      nonce = props.nonce,
+      dragHandleUsageInstructions = props.dragHandleUsageInstructions;
+  var lazyStoreRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  useStartupValidation();
+  var lastPropsRef = usePrevious(props);
+  var getResponders = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    return createResponders(lastPropsRef.current);
+  }, [lastPropsRef]);
+  var announce = useAnnouncer(contextId);
+  var dragHandleUsageInstructionsId = useHiddenTextElement({
+    contextId: contextId,
+    text: dragHandleUsageInstructions
+  });
+  var styleMarshal = useStyleMarshal(contextId, nonce);
+  var lazyDispatch = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (action) {
+    getStore(lazyStoreRef).dispatch(action);
+  }, []);
+  var marshalCallbacks = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return (0,redux__WEBPACK_IMPORTED_MODULE_8__.bindActionCreators)({
+      publishWhileDragging: publishWhileDragging,
       updateDroppableScroll: updateDroppableScroll,
       updateDroppableIsEnabled: updateDroppableIsEnabled,
       updateDroppableIsCombineEnabled: updateDroppableIsCombineEnabled,
       collectionStarting: collectionStarting
-    }, _this.store.dispatch);
-    _this.dimensionMarshal = createDimensionMarshal(callbacks);
-    _this.autoScroller = createAutoScroller((0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({
+    }, lazyDispatch);
+  }, [lazyDispatch]);
+  var registry = useRegistry();
+  var dimensionMarshal = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return createDimensionMarshal(registry, marshalCallbacks);
+  }, [registry, marshalCallbacks]);
+  var autoScroller = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return createAutoScroller((0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({
       scrollWindow: scrollWindow,
-      scrollDroppable: _this.dimensionMarshal.scrollDroppable
-    }, (0,redux__WEBPACK_IMPORTED_MODULE_12__.bindActionCreators)({
+      scrollDroppable: dimensionMarshal.scrollDroppable
+    }, (0,redux__WEBPACK_IMPORTED_MODULE_8__.bindActionCreators)({
       move: move
-    }, _this.store.dispatch)));
-    return _this;
+    }, lazyDispatch)));
+  }, [dimensionMarshal.scrollDroppable, lazyDispatch]);
+  var focusMarshal = useFocusMarshal(contextId);
+  var store = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return createStore({
+      announce: announce,
+      autoScroller: autoScroller,
+      dimensionMarshal: dimensionMarshal,
+      focusMarshal: focusMarshal,
+      getResponders: getResponders,
+      styleMarshal: styleMarshal
+    });
+  }, [announce, autoScroller, dimensionMarshal, focusMarshal, getResponders, styleMarshal]);
+
+  if (true) {
+    if (lazyStoreRef.current && lazyStoreRef.current !== store) {
+       true ? warning('unexpected store change') : 0;
+    }
   }
 
-  var _proto = DragDropContext.prototype;
+  lazyStoreRef.current = store;
+  var tryResetStore = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var current = getStore(lazyStoreRef);
+    var state = current.getState();
 
-  _proto.getChildContext = function getChildContext() {
-    var _ref;
-
-    return _ref = {}, _ref[storeKey] = this.store, _ref[dimensionMarshalKey] = this.dimensionMarshal, _ref[styleKey] = this.styleMarshal.styleContext, _ref[canLiftKey] = this.canLift, _ref[isMovementAllowedKey] = this.getIsMovementAllowed, _ref;
-  };
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.styleMarshal.mount();
-    this.announcer.mount();
-
-    if (true) {
-      checkReactVersion(peerDependencies.react, react__WEBPACK_IMPORTED_MODULE_2__.version);
-      checkDoctype(document);
+    if (state.phase !== 'IDLE') {
+      current.dispatch(flush());
     }
-  };
+  }, []);
+  var isDragging = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var state = getStore(lazyStoreRef).getState();
+    return state.isDragging || state.phase === 'DROP_ANIMATING';
+  }, []);
+  var appCallbacks = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      isDragging: isDragging,
+      tryAbort: tryResetStore
+    };
+  }, [isDragging, tryResetStore]);
+  setCallbacks(appCallbacks);
+  var getCanLift = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (id) {
+    return canStartDrag(getStore(lazyStoreRef).getState(), id);
+  }, []);
+  var getIsMovementAllowed = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    return isMovementAllowed(getStore(lazyStoreRef).getState());
+  }, []);
+  var appContext = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      marshal: dimensionMarshal,
+      focus: focusMarshal,
+      contextId: contextId,
+      canLift: getCanLift,
+      isMovementAllowed: getIsMovementAllowed,
+      dragHandleUsageInstructionsId: dragHandleUsageInstructionsId,
+      registry: registry
+    };
+  }, [contextId, dimensionMarshal, dragHandleUsageInstructionsId, focusMarshal, getCanLift, getIsMovementAllowed, registry]);
+  useSensorMarshal({
+    contextId: contextId,
+    store: store,
+    registry: registry,
+    customSensors: sensors,
+    enableDefaultSensors: props.enableDefaultSensors !== false
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    return tryResetStore;
+  }, [tryResetStore]);
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(AppContext.Provider, {
+    value: appContext
+  }, react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_3__.Provider, {
+    context: StoreContext,
+    store: store
+  }, props.children));
+}
 
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.tryResetStore();
-    this.styleMarshal.unmount();
-    this.announcer.unmount();
-  };
+var count$1 = 0;
+function reset$1() {
+  count$1 = 0;
+}
+function useInstanceCount() {
+  return (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return "" + count$1++;
+  }, []);
+}
 
-  _proto.render = function render() {
-    return react__WEBPACK_IMPORTED_MODULE_2__.createElement(ErrorBoundary, {
-      onError: this.tryResetStore
-    }, this.props.children);
-  };
+function resetServerContext() {
+  reset$1();
+  reset();
+}
+function DragDropContext(props) {
+  var contextId = useInstanceCount();
+  var dragHandleUsageInstructions = props.dragHandleUsageInstructions || preset.dragHandleUsageInstructions;
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(ErrorBoundary, null, function (setCallbacks) {
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(App, {
+      nonce: props.nonce,
+      contextId: contextId,
+      setCallbacks: setCallbacks,
+      dragHandleUsageInstructions: dragHandleUsageInstructions,
+      enableDefaultSensors: props.enableDefaultSensors,
+      sensors: props.sensors,
+      onBeforeCapture: props.onBeforeCapture,
+      onBeforeDragStart: props.onBeforeDragStart,
+      onDragStart: props.onDragStart,
+      onDragUpdate: props.onDragUpdate,
+      onDragEnd: props.onDragEnd
+    }, props.children);
+  });
+}
 
-  return DragDropContext;
-}(react__WEBPACK_IMPORTED_MODULE_2__.Component);
-
-DragDropContext.childContextTypes = (_DragDropContext$chil = {}, _DragDropContext$chil[storeKey] = prop_types__WEBPACK_IMPORTED_MODULE_14___default().shape({
-  dispatch: (prop_types__WEBPACK_IMPORTED_MODULE_14___default().func.isRequired),
-  subscribe: (prop_types__WEBPACK_IMPORTED_MODULE_14___default().func.isRequired),
-  getState: (prop_types__WEBPACK_IMPORTED_MODULE_14___default().func.isRequired)
-}).isRequired, _DragDropContext$chil[dimensionMarshalKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().object.isRequired), _DragDropContext$chil[styleKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().string.isRequired), _DragDropContext$chil[canLiftKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().func.isRequired), _DragDropContext$chil[isMovementAllowedKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().func.isRequired), _DragDropContext$chil);
-
-var isEqual$2 = function isEqual(base) {
+var isEqual$1 = function isEqual(base) {
   return function (value) {
     return base === value;
   };
 };
 
-var isScroll = isEqual$2('scroll');
-var isAuto = isEqual$2('auto');
-var isVisible$1 = isEqual$2('visible');
+var isScroll = isEqual$1('scroll');
+var isAuto = isEqual$1('auto');
+var isVisible$1 = isEqual$1('visible');
 
 var isEither = function isEither(overflow, fn) {
   return fn(overflow.overflowX) || fn(overflow.overflowY);
@@ -31803,7 +32236,7 @@ var isBodyScrollable = function isBodyScrollable() {
 
   var body = getBodyElement();
   var html = document.documentElement;
-  !html ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false) : 0 : void 0;
+  !html ?  true ? invariant(false) : 0 : void 0;
 
   if (!isElementScrollable(body)) {
     return false;
@@ -31887,8 +32320,69 @@ var getEnv = (function (start) {
   };
 });
 
+var getDroppableDimension = (function (_ref) {
+  var descriptor = _ref.descriptor,
+      isEnabled = _ref.isEnabled,
+      isCombineEnabled = _ref.isCombineEnabled,
+      isFixedOnPage = _ref.isFixedOnPage,
+      direction = _ref.direction,
+      client = _ref.client,
+      page = _ref.page,
+      closest = _ref.closest;
+
+  var frame = function () {
+    if (!closest) {
+      return null;
+    }
+
+    var scrollSize = closest.scrollSize,
+        frameClient = closest.client;
+    var maxScroll = getMaxScroll({
+      scrollHeight: scrollSize.scrollHeight,
+      scrollWidth: scrollSize.scrollWidth,
+      height: frameClient.paddingBox.height,
+      width: frameClient.paddingBox.width
+    });
+    return {
+      pageMarginBox: closest.page.marginBox,
+      frameClient: frameClient,
+      scrollSize: scrollSize,
+      shouldClipSubject: closest.shouldClipSubject,
+      scroll: {
+        initial: closest.scroll,
+        current: closest.scroll,
+        max: maxScroll,
+        diff: {
+          value: origin,
+          displacement: origin
+        }
+      }
+    };
+  }();
+
+  var axis = direction === 'vertical' ? vertical : horizontal;
+  var subject = getSubject({
+    page: page,
+    withPlaceholder: null,
+    axis: axis,
+    frame: frame
+  });
+  var dimension = {
+    descriptor: descriptor,
+    isCombineEnabled: isCombineEnabled,
+    isFixedOnPage: isFixedOnPage,
+    axis: axis,
+    isEnabled: isEnabled,
+    client: client,
+    page: page,
+    frame: frame,
+    subject: subject
+  };
+  return dimension;
+});
+
 var getClient = function getClient(targetRef, closestScrollable) {
-  var base = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.getBox)(targetRef);
+  var base = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getBox)(targetRef);
 
   if (!closestScrollable) {
     return base;
@@ -31908,8 +32402,8 @@ var getClient = function getClient(targetRef, closestScrollable) {
     bottom: bottom,
     left: left
   };
-  var borderBox = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.expand)(paddingBox, base.border);
-  var client = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.createBox)({
+  var borderBox = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.expand)(paddingBox, base.border);
+  var client = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.createBox)({
     borderBox: borderBox,
     margin: base.margin,
     border: base.border,
@@ -31929,21 +32423,21 @@ var getDimension = (function (_ref) {
       shouldClipSubject = _ref.shouldClipSubject;
   var closestScrollable = env.closestScrollable;
   var client = getClient(ref, closestScrollable);
-  var page = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.withScroll)(client, windowScroll);
+  var page = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.withScroll)(client, windowScroll);
 
   var closest = function () {
     if (!closestScrollable) {
       return null;
     }
 
-    var frameClient = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.getBox)(closestScrollable);
+    var frameClient = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.getBox)(closestScrollable);
     var scrollSize = {
       scrollHeight: closestScrollable.scrollHeight,
       scrollWidth: closestScrollable.scrollWidth
     };
     return {
       client: frameClient,
-      page: (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.withScroll)(frameClient, windowScroll),
+      page: (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.withScroll)(frameClient, windowScroll),
       scroll: getScroll$1(closestScrollable),
       scrollSize: scrollSize,
       shouldClipSubject: shouldClipSubject
@@ -31963,265 +32457,188 @@ var getDimension = (function (_ref) {
   return dimension;
 });
 
-var _DroppableDimensionPu;
-
-var getClosestScrollable$1 = function getClosestScrollable(dragging) {
-  return dragging && dragging.env.closestScrollable || null;
-};
-
 var immediate = {
   passive: false
 };
 var delayed = {
   passive: true
 };
-
-var getListenerOptions = function getListenerOptions(options) {
+var getListenerOptions = (function (options) {
   return options.shouldPublishImmediately ? immediate : delayed;
-};
+});
 
-var withoutPlaceholder = function withoutPlaceholder(placeholder, fn) {
-  if (!placeholder) {
-    return fn();
-  }
-
-  var last = placeholder.style.display;
-  placeholder.style.display = 'none';
-  var result = fn();
-  placeholder.style.display = last;
+function useRequiredContext(Context) {
+  var result = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(Context);
+  !result ?  true ? invariant(false, 'Could not find required context') : 0 : void 0;
   return result;
+}
+
+var getClosestScrollableFromDrag = function getClosestScrollableFromDrag(dragging) {
+  return dragging && dragging.env.closestScrollable || null;
 };
 
-var DroppableDimensionPublisher = function (_React$Component) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(DroppableDimensionPublisher, _React$Component);
-
-  function DroppableDimensionPublisher(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-    _this.dragging = void 0;
-    _this.callbacks = void 0;
-    _this.publishedDescriptor = null;
-
-    _this.getClosestScroll = function () {
-      var dragging = _this.dragging;
-
-      if (!dragging || !dragging.env.closestScrollable) {
-        return origin;
-      }
-
-      return getScroll$1(dragging.env.closestScrollable);
+function useDroppablePublisher(args) {
+  var whileDraggingRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var appContext = useRequiredContext(AppContext);
+  var uniqueId = useUniqueId('droppable');
+  var registry = appContext.registry,
+      marshal = appContext.marshal;
+  var previousRef = usePrevious(args);
+  var descriptor = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      id: args.droppableId,
+      type: args.type,
+      mode: args.mode
     };
-
-    _this.memoizedUpdateScroll = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (x, y) {
-      !_this.publishedDescriptor ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot update scroll on unpublished droppable') : 0 : void 0;
-      var newScroll = {
+  }, [args.droppableId, args.mode, args.type]);
+  var publishedDescriptorRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(descriptor);
+  var memoizedUpdateScroll = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (x, y) {
+      !whileDraggingRef.current ?  true ? invariant(false, 'Can only update scroll when dragging') : 0 : void 0;
+      var scroll = {
         x: x,
         y: y
       };
-      var marshal = _this.context[dimensionMarshalKey];
-      marshal.updateDroppableScroll(_this.publishedDescriptor.id, newScroll);
+      marshal.updateDroppableScroll(descriptor.id, scroll);
     });
+  }, [descriptor.id, marshal]);
+  var getClosestScroll = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var dragging = whileDraggingRef.current;
 
-    _this.updateScroll = function () {
-      var scroll = _this.getClosestScroll();
+    if (!dragging || !dragging.env.closestScrollable) {
+      return origin;
+    }
 
-      _this.memoizedUpdateScroll(scroll.x, scroll.y);
-    };
+    return getScroll$1(dragging.env.closestScrollable);
+  }, []);
+  var updateScroll = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var scroll = getClosestScroll();
+    memoizedUpdateScroll(scroll.x, scroll.y);
+  }, [getClosestScroll, memoizedUpdateScroll]);
+  var scheduleScrollUpdate = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return (0,raf_schd__WEBPACK_IMPORTED_MODULE_7__["default"])(updateScroll);
+  }, [updateScroll]);
+  var onClosestScroll = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var dragging = whileDraggingRef.current;
+    var closest = getClosestScrollableFromDrag(dragging);
+    !(dragging && closest) ?  true ? invariant(false, 'Could not find scroll options while scrolling') : 0 : void 0;
+    var options = dragging.scrollOptions;
 
-    _this.scheduleScrollUpdate = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(_this.updateScroll);
-
-    _this.onClosestScroll = function () {
-      var dragging = _this.dragging;
-      var closest = getClosestScrollable$1(_this.dragging);
-      !(dragging && closest) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Could not find scroll options while scrolling') : 0 : void 0;
-      var options = dragging.scrollOptions;
-
-      if (options.shouldPublishImmediately) {
-        _this.updateScroll();
-
-        return;
-      }
-
-      _this.scheduleScrollUpdate();
-    };
-
-    _this.scroll = function (change) {
-      var closest = getClosestScrollable$1(_this.dragging);
-      !closest ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot scroll a droppable with no closest scrollable') : 0 : void 0;
-      closest.scrollTop += change.y;
-      closest.scrollLeft += change.x;
-    };
-
-    _this.dragStopped = function () {
-      var dragging = _this.dragging;
-      !dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot stop drag when no active drag') : 0 : void 0;
-      var closest = getClosestScrollable$1(dragging);
-      _this.dragging = null;
-
-      if (!closest) {
-        return;
-      }
-
-      _this.scheduleScrollUpdate.cancel();
-
-      closest.removeEventListener('scroll', _this.onClosestScroll, getListenerOptions(dragging.scrollOptions));
-    };
-
-    _this.getMemoizedDescriptor = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (id, type) {
-      return {
-        id: id,
-        type: type
-      };
-    });
-
-    _this.publish = function () {
-      var marshal = _this.context[dimensionMarshalKey];
-
-      var descriptor = _this.getMemoizedDescriptor(_this.props.droppableId, _this.props.type);
-
-      if (!_this.publishedDescriptor) {
-        marshal.registerDroppable(descriptor, _this.callbacks);
-        _this.publishedDescriptor = descriptor;
-        return;
-      }
-
-      if (_this.publishedDescriptor === descriptor) {
-        return;
-      }
-
-      marshal.updateDroppable(_this.publishedDescriptor, descriptor, _this.callbacks);
-      _this.publishedDescriptor = descriptor;
-    };
-
-    _this.unpublish = function () {
-      !_this.publishedDescriptor ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot unpublish descriptor when none is published') : 0 : void 0;
-      var marshal = _this.context[dimensionMarshalKey];
-      marshal.unregisterDroppable(_this.publishedDescriptor);
-      _this.publishedDescriptor = null;
-    };
-
-    _this.recollect = function (options) {
-      var dragging = _this.dragging;
-      var closest = getClosestScrollable$1(dragging);
-      !(dragging && closest) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Can only recollect Droppable client for Droppables that have a scroll container') : 0 : void 0;
-
-      var execute = function execute() {
-        return getDimension({
-          ref: dragging.ref,
-          descriptor: dragging.descriptor,
-          env: dragging.env,
-          windowScroll: origin,
-          direction: _this.props.direction,
-          isDropDisabled: _this.props.isDropDisabled,
-          isCombineEnabled: _this.props.isCombineEnabled,
-          shouldClipSubject: !_this.props.ignoreContainerClipping
-        });
-      };
-
-      if (!options.withoutPlaceholder) {
-        return execute();
-      }
-
-      return withoutPlaceholder(_this.props.getPlaceholderRef(), execute);
-    };
-
-    _this.getDimensionAndWatchScroll = function (windowScroll, options) {
-      !!_this.dragging ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot collect a droppable while a drag is occurring') : 0 : void 0;
-      var descriptor = _this.publishedDescriptor;
-      !descriptor ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot get dimension for unpublished droppable') : 0 : void 0;
-
-      var ref = _this.props.getDroppableRef();
-
-      !ref ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot collect without a droppable ref') : 0 : void 0;
-      var env = getEnv(ref);
-      var dragging = {
-        ref: ref,
-        descriptor: descriptor,
-        env: env,
-        scrollOptions: options
-      };
-      _this.dragging = dragging;
-      var dimension = getDimension({
-        ref: ref,
-        descriptor: descriptor,
-        env: env,
-        windowScroll: windowScroll,
-        direction: _this.props.direction,
-        isDropDisabled: _this.props.isDropDisabled,
-        isCombineEnabled: _this.props.isCombineEnabled,
-        shouldClipSubject: !_this.props.ignoreContainerClipping
-      });
-
-      if (env.closestScrollable) {
-        env.closestScrollable.addEventListener('scroll', _this.onClosestScroll, getListenerOptions(dragging.scrollOptions));
-
-        if (true) {
-          checkForNestedScrollContainers(env.closestScrollable);
-        }
-      }
-
-      return dimension;
-    };
-
-    var callbacks = {
-      getDimensionAndWatchScroll: _this.getDimensionAndWatchScroll,
-      recollect: _this.recollect,
-      dragStopped: _this.dragStopped,
-      scroll: _this.scroll
-    };
-    _this.callbacks = callbacks;
-    return _this;
-  }
-
-  var _proto = DroppableDimensionPublisher.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.publish();
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    this.publish();
-
-    if (!this.dragging) {
+    if (options.shouldPublishImmediately) {
+      updateScroll();
       return;
     }
 
-    var isDisabledChanged = this.props.isDropDisabled !== prevProps.isDropDisabled;
-    var isCombineChanged = this.props.isCombineEnabled !== prevProps.isCombineEnabled;
+    scheduleScrollUpdate();
+  }, [scheduleScrollUpdate, updateScroll]);
+  var getDimensionAndWatchScroll = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (windowScroll, options) {
+    !!whileDraggingRef.current ?  true ? invariant(false, 'Cannot collect a droppable while a drag is occurring') : 0 : void 0;
+    var previous = previousRef.current;
+    var ref = previous.getDroppableRef();
+    !ref ?  true ? invariant(false, 'Cannot collect without a droppable ref') : 0 : void 0;
+    var env = getEnv(ref);
+    var dragging = {
+      ref: ref,
+      descriptor: descriptor,
+      env: env,
+      scrollOptions: options
+    };
+    whileDraggingRef.current = dragging;
+    var dimension = getDimension({
+      ref: ref,
+      descriptor: descriptor,
+      env: env,
+      windowScroll: windowScroll,
+      direction: previous.direction,
+      isDropDisabled: previous.isDropDisabled,
+      isCombineEnabled: previous.isCombineEnabled,
+      shouldClipSubject: !previous.ignoreContainerClipping
+    });
+    var scrollable = env.closestScrollable;
 
-    if (!isDisabledChanged && !isCombineChanged) {
+    if (scrollable) {
+      scrollable.setAttribute(scrollContainer.contextId, appContext.contextId);
+      scrollable.addEventListener('scroll', onClosestScroll, getListenerOptions(dragging.scrollOptions));
+
+      if (true) {
+        checkForNestedScrollContainers(scrollable);
+      }
+    }
+
+    return dimension;
+  }, [appContext.contextId, descriptor, onClosestScroll, previousRef]);
+  var getScrollWhileDragging = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var dragging = whileDraggingRef.current;
+    var closest = getClosestScrollableFromDrag(dragging);
+    !(dragging && closest) ?  true ? invariant(false, 'Can only recollect Droppable client for Droppables that have a scroll container') : 0 : void 0;
+    return getScroll$1(closest);
+  }, []);
+  var dragStopped = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    var dragging = whileDraggingRef.current;
+    !dragging ?  true ? invariant(false, 'Cannot stop drag when no active drag') : 0 : void 0;
+    var closest = getClosestScrollableFromDrag(dragging);
+    whileDraggingRef.current = null;
+
+    if (!closest) {
       return;
     }
 
-    var marshal = this.context[dimensionMarshalKey];
+    scheduleScrollUpdate.cancel();
+    closest.removeAttribute(scrollContainer.contextId);
+    closest.removeEventListener('scroll', onClosestScroll, getListenerOptions(dragging.scrollOptions));
+  }, [onClosestScroll, scheduleScrollUpdate]);
+  var scroll = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (change) {
+    var dragging = whileDraggingRef.current;
+    !dragging ?  true ? invariant(false, 'Cannot scroll when there is no drag') : 0 : void 0;
+    var closest = getClosestScrollableFromDrag(dragging);
+    !closest ?  true ? invariant(false, 'Cannot scroll a droppable with no closest scrollable') : 0 : void 0;
+    closest.scrollTop += change.y;
+    closest.scrollLeft += change.x;
+  }, []);
+  var callbacks = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      getDimensionAndWatchScroll: getDimensionAndWatchScroll,
+      getScrollWhileDragging: getScrollWhileDragging,
+      dragStopped: dragStopped,
+      scroll: scroll
+    };
+  }, [dragStopped, getDimensionAndWatchScroll, getScrollWhileDragging, scroll]);
+  var entry = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      uniqueId: uniqueId,
+      descriptor: descriptor,
+      callbacks: callbacks
+    };
+  }, [callbacks, descriptor, uniqueId]);
+  useIsomorphicLayoutEffect(function () {
+    publishedDescriptorRef.current = entry.descriptor;
+    registry.droppable.register(entry);
+    return function () {
+      if (whileDraggingRef.current) {
+         true ? warning('Unsupported: changing the droppableId or type of a Droppable during a drag') : 0;
+        dragStopped();
+      }
 
-    if (isDisabledChanged) {
-      marshal.updateDroppableIsEnabled(this.props.droppableId, !this.props.isDropDisabled);
+      registry.droppable.unregister(entry);
+    };
+  }, [callbacks, descriptor, dragStopped, entry, marshal, registry.droppable]);
+  useIsomorphicLayoutEffect(function () {
+    if (!whileDraggingRef.current) {
+      return;
     }
 
-    if (isCombineChanged) {
-      marshal.updateDroppableIsCombineEnabled(this.props.droppableId, this.props.isCombineEnabled);
-    }
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    if (this.dragging) {
-       true ? warning('unmounting droppable while a drag is occurring') : 0;
-      this.dragStopped();
+    marshal.updateDroppableIsEnabled(publishedDescriptorRef.current.id, !args.isDropDisabled);
+  }, [args.isDropDisabled, marshal]);
+  useIsomorphicLayoutEffect(function () {
+    if (!whileDraggingRef.current) {
+      return;
     }
 
-    this.unpublish();
-  };
+    marshal.updateDroppableIsCombineEnabled(publishedDescriptorRef.current.id, args.isCombineEnabled);
+  }, [args.isCombineEnabled, marshal]);
+}
 
-  _proto.render = function render() {
-    return this.props.children;
-  };
-
-  return DroppableDimensionPublisher;
-}(react__WEBPACK_IMPORTED_MODULE_2__.Component);
-
-DroppableDimensionPublisher.contextTypes = (_DroppableDimensionPu = {}, _DroppableDimensionPu[dimensionMarshalKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().object.isRequired), _DroppableDimensionPu);
+function noop$2() {}
 
 var empty = {
   width: 0,
@@ -32229,143 +32646,185 @@ var empty = {
   margin: noSpacing
 };
 
-var Placeholder = function (_PureComponent) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(Placeholder, _PureComponent);
+var getSize = function getSize(_ref) {
+  var isAnimatingOpenOnMount = _ref.isAnimatingOpenOnMount,
+      placeholder = _ref.placeholder,
+      animate = _ref.animate;
 
-  function Placeholder() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _PureComponent.call.apply(_PureComponent, [this].concat(args)) || this;
-    _this.mountTimerId = null;
-    _this.state = {
-      isAnimatingOpenOnMount: _this.props.animate === 'open'
-    };
-
-    _this.onTransitionEnd = function (event) {
-      if (event.propertyName !== 'height') {
-        return;
-      }
-
-      _this.props.onTransitionEnd();
-
-      if (_this.props.animate === 'close') {
-        _this.props.onClose();
-      }
-    };
-
-    return _this;
+  if (isAnimatingOpenOnMount) {
+    return empty;
   }
 
-  Placeholder.getDerivedStateFromProps = function getDerivedStateFromProps(props, state) {
-    if (state.isAnimatingOpenOnMount && props.animate !== 'open') {
-      return {
-        isAnimatingOpenOnMount: false
-      };
-    }
+  if (animate === 'close') {
+    return empty;
+  }
 
-    return state;
+  return {
+    height: placeholder.client.borderBox.height,
+    width: placeholder.client.borderBox.width,
+    margin: placeholder.client.margin
   };
+};
 
-  var _proto = Placeholder.prototype;
+var getStyle = function getStyle(_ref2) {
+  var isAnimatingOpenOnMount = _ref2.isAnimatingOpenOnMount,
+      placeholder = _ref2.placeholder,
+      animate = _ref2.animate;
+  var size = getSize({
+    isAnimatingOpenOnMount: isAnimatingOpenOnMount,
+    placeholder: placeholder,
+    animate: animate
+  });
+  return {
+    display: placeholder.display,
+    boxSizing: 'border-box',
+    width: size.width,
+    height: size.height,
+    marginTop: size.margin.top,
+    marginRight: size.margin.right,
+    marginBottom: size.margin.bottom,
+    marginLeft: size.margin.left,
+    flexShrink: '0',
+    flexGrow: '0',
+    pointerEvents: 'none',
+    transition: animate !== 'none' ? transitions.placeholder : null
+  };
+};
 
-  _proto.componentDidMount = function componentDidMount() {
-    var _this2 = this;
-
-    if (!this.state.isAnimatingOpenOnMount) {
+function Placeholder(props) {
+  var animateOpenTimerRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var tryClearAnimateOpenTimer = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    if (!animateOpenTimerRef.current) {
       return;
     }
 
-    this.mountTimerId = setTimeout(function () {
-      _this2.mountTimerId = null;
+    clearTimeout(animateOpenTimerRef.current);
+    animateOpenTimerRef.current = null;
+  }, []);
+  var animate = props.animate,
+      onTransitionEnd = props.onTransitionEnd,
+      onClose = props.onClose,
+      contextId = props.contextId;
 
-      if (_this2.state.isAnimatingOpenOnMount) {
-        _this2.setState({
-          isAnimatingOpenOnMount: false
-        });
-      }
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(props.animate === 'open'),
+      isAnimatingOpenOnMount = _useState[0],
+      setIsAnimatingOpenOnMount = _useState[1];
+
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (!isAnimatingOpenOnMount) {
+      return noop$2;
+    }
+
+    if (animate !== 'open') {
+      tryClearAnimateOpenTimer();
+      setIsAnimatingOpenOnMount(false);
+      return noop$2;
+    }
+
+    if (animateOpenTimerRef.current) {
+      return noop$2;
+    }
+
+    animateOpenTimerRef.current = setTimeout(function () {
+      animateOpenTimerRef.current = null;
+      setIsAnimatingOpenOnMount(false);
     });
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    if (!this.mountTimerId) {
+    return tryClearAnimateOpenTimer;
+  }, [animate, isAnimatingOpenOnMount, tryClearAnimateOpenTimer]);
+  var onSizeChangeEnd = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (event) {
+    if (event.propertyName !== 'height') {
       return;
     }
 
-    clearTimeout(this.mountTimerId);
-    this.mountTimerId = null;
-  };
+    onTransitionEnd();
 
-  _proto.getSize = function getSize() {
-    if (this.state.isAnimatingOpenOnMount) {
-      return empty;
+    if (animate === 'close') {
+      onClose();
     }
-
-    if (this.props.animate === 'close') {
-      return empty;
-    }
-
-    var placeholder = this.props.placeholder;
-    return {
-      height: placeholder.client.borderBox.height,
-      width: placeholder.client.borderBox.width,
-      margin: placeholder.client.margin
-    };
-  };
-
-  _proto.render = function render() {
-    var placeholder = this.props.placeholder;
-    var size = this.getSize();
-    var display = placeholder.display,
-        tagName = placeholder.tagName;
-    var style = {
-      display: display,
-      boxSizing: 'border-box',
-      width: size.width,
-      height: size.height,
-      marginTop: size.margin.top,
-      marginRight: size.margin.right,
-      marginBottom: size.margin.bottom,
-      marginLeft: size.margin.left,
-      flexShrink: '0',
-      flexGrow: '0',
-      pointerEvents: 'none',
-      transition: transitions.placeholder
-    };
-    return react__WEBPACK_IMPORTED_MODULE_2__.createElement(tagName, {
-      style: style,
-      onTransitionEnd: this.onTransitionEnd,
-      ref: this.props.innerRef
-    });
-  };
-
-  return Placeholder;
-}(react__WEBPACK_IMPORTED_MODULE_2__.PureComponent);
-
-var getWindowFromEl = (function (el) {
-  return el && el.ownerDocument ? el.ownerDocument.defaultView : window;
-});
-
-function isHtmlElement(el) {
-  return el instanceof getWindowFromEl(el).HTMLElement;
+  }, [animate, onClose, onTransitionEnd]);
+  var style = getStyle({
+    isAnimatingOpenOnMount: isAnimatingOpenOnMount,
+    animate: props.animate,
+    placeholder: props.placeholder
+  });
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(props.placeholder.tagName, {
+    style: style,
+    'data-rbd-placeholder-context-id': contextId,
+    onTransitionEnd: onSizeChangeEnd,
+    ref: props.innerRef
+  });
 }
 
-var throwIfRefIsInvalid = (function (ref) {
-  !(ref && isHtmlElement(ref)) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "\n    provided.innerRef has not been provided with a HTMLElement.\n\n    You can find a guide on using the innerRef callback functions at:\n    https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/guides/using-inner-ref.md\n  ") : 0 : void 0;
-});
+var Placeholder$1 = react__WEBPACK_IMPORTED_MODULE_0__.memo(Placeholder);
 
-var checkOwnProps = (function (props) {
-  !props.droppableId ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'A Droppable requires a droppableId prop') : 0 : void 0;
-  !(typeof props.isDropDisabled === 'boolean') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'isDropDisabled must be a boolean') : 0 : void 0;
-  !(typeof props.isCombineEnabled === 'boolean') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'isCombineEnabled must be a boolean') : 0 : void 0;
-  !(typeof props.ignoreContainerClipping === 'boolean') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'ignoreContainerClipping must be a boolean') : 0 : void 0;
-});
+var DroppableContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+
+function checkIsValidInnerRef(el) {
+  !(el && isHtmlElement(el)) ?  true ? invariant(false, "\n    provided.innerRef has not been provided with a HTMLElement.\n\n    You can find a guide on using the innerRef callback functions at:\n    https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/guides/using-inner-ref.md\n  ") : 0 : void 0;
+}
+
+function isBoolean(value) {
+  return typeof value === 'boolean';
+}
+
+function runChecks(args, checks) {
+  checks.forEach(function (check) {
+    return check(args);
+  });
+}
+
+var shared = [function required(_ref) {
+  var props = _ref.props;
+  !props.droppableId ?  true ? invariant(false, 'A Droppable requires a droppableId prop') : 0 : void 0;
+  !(typeof props.droppableId === 'string') ?  true ? invariant(false, "A Droppable requires a [string] droppableId. Provided: [" + typeof props.droppableId + "]") : 0 : void 0;
+}, function _boolean(_ref2) {
+  var props = _ref2.props;
+  !isBoolean(props.isDropDisabled) ?  true ? invariant(false, 'isDropDisabled must be a boolean') : 0 : void 0;
+  !isBoolean(props.isCombineEnabled) ?  true ? invariant(false, 'isCombineEnabled must be a boolean') : 0 : void 0;
+  !isBoolean(props.ignoreContainerClipping) ?  true ? invariant(false, 'ignoreContainerClipping must be a boolean') : 0 : void 0;
+}, function ref(_ref3) {
+  var getDroppableRef = _ref3.getDroppableRef;
+  checkIsValidInnerRef(getDroppableRef());
+}];
+var standard = [function placeholder(_ref4) {
+  var props = _ref4.props,
+      getPlaceholderRef = _ref4.getPlaceholderRef;
+
+  if (!props.placeholder) {
+    return;
+  }
+
+  var ref = getPlaceholderRef();
+
+  if (ref) {
+    return;
+  }
+
+   true ? warning("\n      Droppable setup issue [droppableId: \"" + props.droppableId + "\"]:\n      DroppableProvided > placeholder could not be found.\n\n      Please be sure to add the {provided.placeholder} React Node as a child of your Droppable.\n      More information: https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/api/droppable.md\n    ") : 0;
+}];
+var virtual = [function hasClone(_ref5) {
+  var props = _ref5.props;
+  !props.renderClone ?  true ? invariant(false, 'Must provide a clone render function (renderClone) for virtual lists') : 0 : void 0;
+}, function hasNoPlaceholder(_ref6) {
+  var getPlaceholderRef = _ref6.getPlaceholderRef;
+  !!getPlaceholderRef() ?  true ? invariant(false, 'Expected virtual list to not have a placeholder') : 0 : void 0;
+}];
+function useValidation(args) {
+  useDevSetupWarning(function () {
+    runChecks(args, shared);
+
+    if (args.props.mode === 'standard') {
+      runChecks(args, standard);
+    }
+
+    if (args.props.mode === 'virtual') {
+      runChecks(args, virtual);
+    }
+  });
+}
 
 var AnimateInOut = function (_React$PureComponent) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(AnimateInOut, _React$PureComponent);
+  (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(AnimateInOut, _React$PureComponent);
 
   function AnimateInOut() {
     var _this;
@@ -32442,1742 +32901,7 @@ var AnimateInOut = function (_React$PureComponent) {
   };
 
   return AnimateInOut;
-}(react__WEBPACK_IMPORTED_MODULE_2__.PureComponent);
-
-var _Droppable$contextTyp, _Droppable$childConte;
-
-var Droppable = function (_React$Component) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(Droppable, _React$Component);
-
-  function Droppable(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-    _this.styleContext = void 0;
-    _this.ref = null;
-    _this.placeholderRef = null;
-
-    _this.setPlaceholderRef = function (ref) {
-      _this.placeholderRef = ref;
-    };
-
-    _this.getPlaceholderRef = function () {
-      return _this.placeholderRef;
-    };
-
-    _this.setRef = function (ref) {
-      if (ref === null) {
-        return;
-      }
-
-      if (ref === _this.ref) {
-        return;
-      }
-
-      _this.ref = ref;
-      throwIfRefIsInvalid(ref);
-    };
-
-    _this.getDroppableRef = function () {
-      return _this.ref;
-    };
-
-    _this.onPlaceholderTransitionEnd = function () {
-      var isMovementAllowed = _this.context[isMovementAllowedKey]();
-
-      if (isMovementAllowed) {
-        _this.props.updateViewportMaxScroll({
-          maxScroll: getMaxWindowScroll()
-        });
-      }
-    };
-
-    _this.styleContext = context[styleKey];
-
-    if (true) {
-      checkOwnProps(props);
-    }
-
-    return _this;
-  }
-
-  var _proto = Droppable.prototype;
-
-  _proto.getChildContext = function getChildContext() {
-    var _value;
-
-    var value = (_value = {}, _value[droppableIdKey] = this.props.droppableId, _value[droppableTypeKey] = this.props.type, _value);
-    return value;
-  };
-
-  _proto.componentDidMount = function componentDidMount() {
-    throwIfRefIsInvalid(this.ref);
-    this.warnIfPlaceholderNotMounted();
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate() {
-    this.warnIfPlaceholderNotMounted();
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.ref = null;
-    this.placeholderRef = null;
-  };
-
-  _proto.warnIfPlaceholderNotMounted = function warnIfPlaceholderNotMounted() {
-    if (false) {}
-
-    if (!this.props.placeholder) {
-      return;
-    }
-
-    if (this.placeholderRef) {
-      return;
-    }
-
-     true ? warning("\n      Droppable setup issue [droppableId: \"" + this.props.droppableId + "\"]:\n      DroppableProvided > placeholder could not be found.\n\n      Please be sure to add the {provided.placeholder} React Node as a child of your Droppable.\n      More information: https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/api/droppable.md\n    ") : 0;
-  };
-
-  _proto.getPlaceholder = function getPlaceholder() {
-    var _this2 = this;
-
-    return react__WEBPACK_IMPORTED_MODULE_2__.createElement(AnimateInOut, {
-      on: this.props.placeholder,
-      shouldAnimate: this.props.shouldAnimatePlaceholder
-    }, function (_ref) {
-      var onClose = _ref.onClose,
-          data = _ref.data,
-          animate = _ref.animate;
-      return react__WEBPACK_IMPORTED_MODULE_2__.createElement(Placeholder, {
-        placeholder: data,
-        onClose: onClose,
-        innerRef: _this2.setPlaceholderRef,
-        animate: animate,
-        onTransitionEnd: _this2.onPlaceholderTransitionEnd
-      });
-    });
-  };
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        children = _this$props.children,
-        direction = _this$props.direction,
-        type = _this$props.type,
-        droppableId = _this$props.droppableId,
-        isDropDisabled = _this$props.isDropDisabled,
-        isCombineEnabled = _this$props.isCombineEnabled,
-        ignoreContainerClipping = _this$props.ignoreContainerClipping,
-        snapshot = _this$props.snapshot;
-    var provided = {
-      innerRef: this.setRef,
-      placeholder: this.getPlaceholder(),
-      droppableProps: {
-        'data-react-beautiful-dnd-droppable': this.styleContext
-      }
-    };
-    return react__WEBPACK_IMPORTED_MODULE_2__.createElement(DroppableDimensionPublisher, {
-      droppableId: droppableId,
-      type: type,
-      direction: direction,
-      ignoreContainerClipping: ignoreContainerClipping,
-      isDropDisabled: isDropDisabled,
-      isCombineEnabled: isCombineEnabled,
-      getDroppableRef: this.getDroppableRef,
-      getPlaceholderRef: this.getPlaceholderRef
-    }, children(provided, snapshot));
-  };
-
-  return Droppable;
-}(react__WEBPACK_IMPORTED_MODULE_2__.Component);
-
-Droppable.contextTypes = (_Droppable$contextTyp = {}, _Droppable$contextTyp[styleKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().string.isRequired), _Droppable$contextTyp[isMovementAllowedKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().func.isRequired), _Droppable$contextTyp);
-Droppable.childContextTypes = (_Droppable$childConte = {}, _Droppable$childConte[droppableIdKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().string.isRequired), _Droppable$childConte[droppableTypeKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().string.isRequired), _Droppable$childConte);
-
-var isStrictEqual = (function (a, b) {
-  return a === b;
-});
-
-var whatIsDraggedOverFromResult = (function (result) {
-  var combine = result.combine,
-      destination = result.destination;
-
-  if (destination) {
-    return destination.droppableId;
-  }
-
-  if (combine) {
-    return combine.droppableId;
-  }
-
-  return null;
-});
-
-var isMatchingType = function isMatchingType(type, critical) {
-  return type === critical.droppable.type;
-};
-
-var getDraggable = function getDraggable(critical, dimensions) {
-  return dimensions.draggables[critical.draggable.id];
-};
-
-var makeMapStateToProps = function makeMapStateToProps() {
-  var idle = {
-    placeholder: null,
-    shouldAnimatePlaceholder: true,
-    snapshot: {
-      isDraggingOver: false,
-      draggingOverWith: null,
-      draggingFromThisWith: null
-    }
-  };
-
-  var idleWithoutAnimation = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, idle, {
-    shouldAnimatePlaceholder: false
-  });
-
-  var getMapProps = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (id, isDraggingOver, dragging, snapshot) {
-    var isHome = dragging.descriptor.droppableId === id;
-
-    if (isHome) {
-      return {
-        placeholder: dragging.placeholder,
-        shouldAnimatePlaceholder: false,
-        snapshot: snapshot
-      };
-    }
-
-    if (!isDraggingOver) {
-      return idle;
-    }
-
-    return {
-      placeholder: dragging.placeholder,
-      shouldAnimatePlaceholder: true,
-      snapshot: snapshot
-    };
-  });
-  var getSnapshot = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (id, isDraggingOver, dragging) {
-    var draggableId = dragging.descriptor.id;
-    var isHome = dragging.descriptor.droppableId === id;
-    var draggingOverWith = isDraggingOver ? draggableId : null;
-    var draggingFromThisWith = isHome ? draggableId : null;
-    return {
-      isDraggingOver: isDraggingOver,
-      draggingOverWith: draggingOverWith,
-      draggingFromThisWith: draggingFromThisWith
-    };
-  });
-
-  var selector = function selector(state, ownProps) {
-    var id = ownProps.droppableId;
-    var type = ownProps.type;
-
-    if (state.isDragging) {
-      var critical = state.critical;
-
-      if (!isMatchingType(type, critical)) {
-        return idle;
-      }
-
-      var dragging = getDraggable(critical, state.dimensions);
-      var isDraggingOver = whatIsDraggedOver(state.impact) === id;
-      var snapshot = getSnapshot(id, isDraggingOver, dragging);
-      return getMapProps(id, isDraggingOver, dragging, snapshot);
-    }
-
-    if (state.phase === 'DROP_ANIMATING') {
-      var completed = state.completed;
-
-      if (!isMatchingType(type, completed.critical)) {
-        return idle;
-      }
-
-      var _dragging = getDraggable(completed.critical, state.dimensions);
-
-      var _snapshot = getSnapshot(id, whatIsDraggedOverFromResult(completed.result) === id, _dragging);
-
-      return getMapProps(id, whatIsDraggedOver(completed.impact) === id, _dragging, _snapshot);
-    }
-
-    if (state.phase === 'IDLE' && state.completed) {
-      var _completed = state.completed;
-
-      if (!isMatchingType(type, _completed.critical)) {
-        return idle;
-      }
-
-      var wasOver = whatIsDraggedOver(_completed.impact) === id;
-      var wasCombining = Boolean(_completed.impact.merge);
-
-      if (state.shouldFlush) {
-        return idleWithoutAnimation;
-      }
-
-      if (wasOver) {
-        return wasCombining ? idle : idleWithoutAnimation;
-      }
-
-      return idle;
-    }
-
-    return idle;
-  };
-
-  return selector;
-};
-var mapDispatchToProps = {
-  updateViewportMaxScroll: updateViewportMaxScroll
-};
-var defaultProps = {
-  type: 'DEFAULT',
-  direction: 'vertical',
-  isDropDisabled: false,
-  isCombineEnabled: false,
-  ignoreContainerClipping: false
-};
-var ConnectedDroppable = (0,react_redux__WEBPACK_IMPORTED_MODULE_8__.connect)(makeMapStateToProps, mapDispatchToProps, null, {
-  storeKey: storeKey,
-  pure: true,
-  areStatePropsEqual: isStrictEqual
-})(Droppable);
-ConnectedDroppable.defaultProps = defaultProps;
-
-var _DraggableDimensionPu;
-
-var DraggableDimensionPublisher = function (_Component) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(DraggableDimensionPublisher, _Component);
-
-  function DraggableDimensionPublisher() {
-    var _this;
-
-    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
-      args[_key] = arguments[_key];
-    }
-
-    _this = _Component.call.apply(_Component, [this].concat(args)) || this;
-    _this.publishedDescriptor = null;
-    _this.getMemoizedDescriptor = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (id, index, droppableId, type) {
-      return {
-        id: id,
-        index: index,
-        droppableId: droppableId,
-        type: type
-      };
-    });
-
-    _this.publish = function () {
-      var marshal = _this.context[dimensionMarshalKey];
-
-      var descriptor = _this.getMemoizedDescriptor(_this.props.draggableId, _this.props.index, _this.props.droppableId, _this.props.type);
-
-      if (!_this.publishedDescriptor) {
-        marshal.registerDraggable(descriptor, _this.getDimension);
-        _this.publishedDescriptor = descriptor;
-        return;
-      }
-
-      if (descriptor === _this.publishedDescriptor) {
-        return;
-      }
-
-      marshal.updateDraggable(_this.publishedDescriptor, descriptor, _this.getDimension);
-      _this.publishedDescriptor = descriptor;
-    };
-
-    _this.unpublish = function () {
-      !_this.publishedDescriptor ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot unpublish descriptor when none is published') : 0 : void 0;
-      var marshal = _this.context[dimensionMarshalKey];
-      marshal.unregisterDraggable(_this.publishedDescriptor);
-      _this.publishedDescriptor = null;
-    };
-
-    _this.getDimension = function (windowScroll) {
-      if (windowScroll === void 0) {
-        windowScroll = origin;
-      }
-
-      var targetRef = _this.props.getDraggableRef();
-
-      var descriptor = _this.publishedDescriptor;
-      !targetRef ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'DraggableDimensionPublisher cannot calculate a dimension when not attached to the DOM') : 0 : void 0;
-      !descriptor ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot get dimension for unpublished draggable') : 0 : void 0;
-      var computedStyles = window.getComputedStyle(targetRef);
-      var borderBox = targetRef.getBoundingClientRect();
-      var client = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.calculateBox)(borderBox, computedStyles);
-      var page = (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.withScroll)(client, windowScroll);
-      var placeholder = {
-        client: client,
-        tagName: targetRef.tagName.toLowerCase(),
-        display: computedStyles.display
-      };
-      var displaceBy = {
-        x: client.marginBox.width,
-        y: client.marginBox.height
-      };
-      var dimension = {
-        descriptor: descriptor,
-        placeholder: placeholder,
-        displaceBy: displaceBy,
-        client: client,
-        page: page
-      };
-      return dimension;
-    };
-
-    return _this;
-  }
-
-  var _proto = DraggableDimensionPublisher.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    this.publish();
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate() {
-    this.publish();
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.unpublish();
-  };
-
-  _proto.render = function render() {
-    return this.props.children;
-  };
-
-  return DraggableDimensionPublisher;
-}(react__WEBPACK_IMPORTED_MODULE_2__.Component);
-
-DraggableDimensionPublisher.contextTypes = (_DraggableDimensionPu = {}, _DraggableDimensionPu[dimensionMarshalKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().object.isRequired), _DraggableDimensionPu);
-
-function isSvgElement(el) {
-  return el instanceof getWindowFromEl(el).SVGElement;
-}
-
-var selector = "[" + dragHandle + "]";
-
-var throwIfSVG = function throwIfSVG(el) {
-  !!isSvgElement(el) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "A drag handle cannot be an SVGElement: it has inconsistent focus support.\n\n    More information: https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/guides/dragging-svgs.md") : 0 : void 0;
-};
-
-var getDragHandleRef = function getDragHandleRef(draggableRef) {
-  if (draggableRef.hasAttribute(dragHandle)) {
-    throwIfSVG(draggableRef);
-    return draggableRef;
-  }
-
-  var el = draggableRef.querySelector(selector);
-  throwIfSVG(draggableRef);
-  !el ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, "\n      Cannot find drag handle element inside of Draggable.\n      Please be sure to apply the {...provided.dragHandleProps} to your Draggable\n\n      More information: https://github.com/atlassian/react-beautiful-dnd/blob/master/docs/api/draggable.md\n    ") : 0 : void 0;
-  !isHtmlElement(el) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'A drag handle must be a HTMLElement') : 0 : void 0;
-  return el;
-};
-
-var retainingFocusFor = null;
-var listenerOptions = {
-  capture: true
-};
-
-var clearRetentionOnFocusChange = function () {
-  var isBound = false;
-
-  var bind = function bind() {
-    if (isBound) {
-      return;
-    }
-
-    isBound = true;
-    window.addEventListener('focus', onWindowFocusChange, listenerOptions);
-  };
-
-  var unbind = function unbind() {
-    if (!isBound) {
-      return;
-    }
-
-    isBound = false;
-    window.removeEventListener('focus', onWindowFocusChange, listenerOptions);
-  };
-
-  var onWindowFocusChange = function onWindowFocusChange() {
-    unbind();
-    retainingFocusFor = null;
-  };
-
-  var result = function result() {
-    return bind();
-  };
-
-  result.cancel = function () {
-    return unbind();
-  };
-
-  return result;
-}();
-
-var retain = function retain(id) {
-  retainingFocusFor = id;
-  clearRetentionOnFocusChange();
-};
-
-var tryRestoreFocus = function tryRestoreFocus(id, draggableRef) {
-  if (!retainingFocusFor) {
-    return;
-  }
-
-  if (id !== retainingFocusFor) {
-    return;
-  }
-
-  retainingFocusFor = null;
-  clearRetentionOnFocusChange.cancel();
-  var dragHandleRef = getDragHandleRef(draggableRef);
-
-  if (!dragHandleRef) {
-     true ? warning('Could not find drag handle in the DOM to focus on it') : 0;
-    return;
-  }
-
-  dragHandleRef.focus();
-};
-
-var retainer = {
-  retain: retain,
-  tryRestoreFocus: tryRestoreFocus
-};
-
-function isElement(el) {
-  return el instanceof getWindowFromEl(el).Element;
-}
-
-var interactiveTagNames = {
-  input: true,
-  button: true,
-  textarea: true,
-  select: true,
-  option: true,
-  optgroup: true,
-  video: true,
-  audio: true
-};
-
-var isAnInteractiveElement = function isAnInteractiveElement(parent, current) {
-  if (current == null) {
-    return false;
-  }
-
-  var hasAnInteractiveTag = Boolean(interactiveTagNames[current.tagName.toLowerCase()]);
-
-  if (hasAnInteractiveTag) {
-    return true;
-  }
-
-  var attribute = current.getAttribute('contenteditable');
-
-  if (attribute === 'true' || attribute === '') {
-    return true;
-  }
-
-  if (current === parent) {
-    return false;
-  }
-
-  return isAnInteractiveElement(parent, current.parentElement);
-};
-
-var shouldAllowDraggingFromTarget = (function (event, props) {
-  if (props.canDragInteractiveElements) {
-    return true;
-  }
-
-  var target = event.target,
-      currentTarget = event.currentTarget;
-
-  if (!isElement(target) || !isElement(currentTarget)) {
-    return true;
-  }
-
-  return !isAnInteractiveElement(currentTarget, target);
-});
-
-var createScheduler = (function (callbacks) {
-  var memoizedMove = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (x, y) {
-    var point = {
-      x: x,
-      y: y
-    };
-    callbacks.onMove(point);
-  });
-  var move = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(function (point) {
-    return memoizedMove(point.x, point.y);
-  });
-  var moveUp = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(callbacks.onMoveUp);
-  var moveDown = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(callbacks.onMoveDown);
-  var moveRight = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(callbacks.onMoveRight);
-  var moveLeft = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(callbacks.onMoveLeft);
-  var windowScrollMove = (0,raf_schd__WEBPACK_IMPORTED_MODULE_13__["default"])(callbacks.onWindowScroll);
-
-  var cancel = function cancel() {
-    move.cancel();
-    moveUp.cancel();
-    moveDown.cancel();
-    moveRight.cancel();
-    moveLeft.cancel();
-    windowScrollMove.cancel();
-  };
-
-  return {
-    move: move,
-    moveUp: moveUp,
-    moveDown: moveDown,
-    moveRight: moveRight,
-    moveLeft: moveLeft,
-    windowScrollMove: windowScrollMove,
-    cancel: cancel
-  };
-});
-
-var sloppyClickThreshold = 5;
-var isSloppyClickThresholdExceeded = (function (original, current) {
-  return Math.abs(current.x - original.x) >= sloppyClickThreshold || Math.abs(current.y - original.y) >= sloppyClickThreshold;
-});
-
-var tab = 9;
-var enter = 13;
-var escape = 27;
-var space = 32;
-var pageUp = 33;
-var pageDown = 34;
-var end = 35;
-var home = 36;
-var arrowLeft = 37;
-var arrowUp = 38;
-var arrowRight = 39;
-var arrowDown = 40;
-
-var _preventedKeys;
-var preventedKeys = (_preventedKeys = {}, _preventedKeys[enter] = true, _preventedKeys[tab] = true, _preventedKeys);
-var preventStandardKeyEvents = (function (event) {
-  if (preventedKeys[event.keyCode]) {
-    event.preventDefault();
-  }
-});
-
-var getOptions = function getOptions(shared, fromBinding) {
-  return (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, shared, fromBinding);
-};
-
-var bindEvents = function bindEvents(el, bindings, sharedOptions) {
-  bindings.forEach(function (binding) {
-    var options = getOptions(sharedOptions, binding.options);
-    el.addEventListener(binding.eventName, binding.fn, options);
-  });
-};
-var unbindEvents = function unbindEvents(el, bindings, sharedOptions) {
-  bindings.forEach(function (binding) {
-    var options = getOptions(sharedOptions, binding.options);
-    el.removeEventListener(binding.eventName, binding.fn, options);
-  });
-};
-
-var sharedOptions = {
-  capture: true
-};
-var createPostDragEventPreventer = (function (getWindow) {
-  var isBound = false;
-
-  var bind = function bind() {
-    if (isBound) {
-      return;
-    }
-
-    isBound = true;
-    bindEvents(getWindow(), pointerEvents, sharedOptions);
-  };
-
-  var unbind = function unbind() {
-    if (!isBound) {
-      return;
-    }
-
-    isBound = false;
-    unbindEvents(getWindow(), pointerEvents, sharedOptions);
-  };
-
-  var pointerEvents = [{
-    eventName: 'click',
-    fn: function fn(event) {
-      event.preventDefault();
-      unbind();
-    }
-  }, {
-    eventName: 'mousedown',
-    fn: unbind
-  }, {
-    eventName: 'touchstart',
-    fn: unbind
-  }];
-
-  var preventNext = function preventNext() {
-    if (isBound) {
-      unbind();
-    }
-
-    bind();
-  };
-
-  var preventer = {
-    preventNext: preventNext,
-    abort: unbind
-  };
-  return preventer;
-});
-
-var createEventMarshal = (function () {
-  var isMouseDownHandled = false;
-
-  var handle = function handle() {
-    !!isMouseDownHandled ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot handle mouse down as it is already handled') : 0 : void 0;
-    isMouseDownHandled = true;
-  };
-
-  var isHandled = function isHandled() {
-    return isMouseDownHandled;
-  };
-
-  var reset = function reset() {
-    isMouseDownHandled = false;
-  };
-
-  return {
-    handle: handle,
-    isHandled: isHandled,
-    reset: reset
-  };
-});
-
-var supportedEventName = function () {
-  var base = 'visibilitychange';
-
-  if (typeof document === 'undefined') {
-    return base;
-  }
-
-  var candidates = [base, "ms" + base, "webkit" + base, "moz" + base, "o" + base];
-  var supported = find(candidates, function (eventName) {
-    return "on" + eventName in document;
-  });
-  return supported || base;
-}();
-
-var primaryButton = 0;
-
-var noop = function noop() {};
-
-var mouseDownMarshal = createEventMarshal();
-var createMouseSensor = (function (_ref) {
-  var callbacks = _ref.callbacks,
-      getWindow = _ref.getWindow,
-      canStartCapturing = _ref.canStartCapturing,
-      getShouldRespectForceTouch = _ref.getShouldRespectForceTouch;
-  var state = {
-    isDragging: false,
-    pending: null
-  };
-
-  var setState = function setState(newState) {
-    state = newState;
-  };
-
-  var isDragging = function isDragging() {
-    return state.isDragging;
-  };
-
-  var isCapturing = function isCapturing() {
-    return Boolean(state.pending || state.isDragging);
-  };
-
-  var schedule = createScheduler(callbacks);
-  var postDragEventPreventer = createPostDragEventPreventer(getWindow);
-
-  var startDragging = function startDragging(fn) {
-    if (fn === void 0) {
-      fn = noop;
-    }
-
-    setState({
-      pending: null,
-      isDragging: true
-    });
-    fn();
-  };
-
-  var stopDragging = function stopDragging(fn, shouldBlockClick) {
-    if (fn === void 0) {
-      fn = noop;
-    }
-
-    if (shouldBlockClick === void 0) {
-      shouldBlockClick = true;
-    }
-
-    schedule.cancel();
-    unbindWindowEvents();
-    mouseDownMarshal.reset();
-
-    if (shouldBlockClick) {
-      postDragEventPreventer.preventNext();
-    }
-
-    setState({
-      isDragging: false,
-      pending: null
-    });
-    fn();
-  };
-
-  var startPendingDrag = function startPendingDrag(point) {
-    setState({
-      pending: point,
-      isDragging: false
-    });
-    bindWindowEvents();
-  };
-
-  var stopPendingDrag = function stopPendingDrag() {
-    stopDragging(noop, false);
-  };
-
-  var kill = function kill(fn) {
-    if (fn === void 0) {
-      fn = noop;
-    }
-
-    if (state.pending) {
-      stopPendingDrag();
-      return;
-    }
-
-    if (state.isDragging) {
-      stopDragging(fn);
-    }
-  };
-
-  var unmount = function unmount() {
-    kill();
-    postDragEventPreventer.abort();
-  };
-
-  var cancel = function cancel() {
-    kill(callbacks.onCancel);
-  };
-
-  var windowBindings = [{
-    eventName: 'mousemove',
-    fn: function fn(event) {
-      var button = event.button,
-          clientX = event.clientX,
-          clientY = event.clientY;
-
-      if (button !== primaryButton) {
-        return;
-      }
-
-      var point = {
-        x: clientX,
-        y: clientY
-      };
-
-      if (state.isDragging) {
-        event.preventDefault();
-        schedule.move(point);
-        return;
-      }
-
-      if (!state.pending) {
-        stopPendingDrag();
-         true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Expected there to be an active or pending drag when window mousemove event is received') : 0;
-      }
-
-      if (!isSloppyClickThresholdExceeded(state.pending, point)) {
-        return;
-      }
-
-      event.preventDefault();
-      startDragging(function () {
-        return callbacks.onLift({
-          clientSelection: point,
-          movementMode: 'FLUID'
-        });
-      });
-    }
-  }, {
-    eventName: 'mouseup',
-    fn: function fn(event) {
-      if (state.pending) {
-        stopPendingDrag();
-        return;
-      }
-
-      event.preventDefault();
-      stopDragging(callbacks.onDrop);
-    }
-  }, {
-    eventName: 'mousedown',
-    fn: function fn(event) {
-      if (state.isDragging) {
-        event.preventDefault();
-      }
-
-      stopDragging(callbacks.onCancel);
-    }
-  }, {
-    eventName: 'keydown',
-    fn: function fn(event) {
-      if (!state.isDragging) {
-        cancel();
-        return;
-      }
-
-      if (event.keyCode === escape) {
-        event.preventDefault();
-        cancel();
-        return;
-      }
-
-      preventStandardKeyEvents(event);
-    }
-  }, {
-    eventName: 'resize',
-    fn: cancel
-  }, {
-    eventName: 'scroll',
-    options: {
-      passive: true,
-      capture: false
-    },
-    fn: function fn(event) {
-      if (event.currentTarget !== getWindow()) {
-        return;
-      }
-
-      if (state.pending) {
-        stopPendingDrag();
-        return;
-      }
-
-      schedule.windowScrollMove();
-    }
-  }, {
-    eventName: 'webkitmouseforcechanged',
-    fn: function fn(event) {
-      if (event.webkitForce == null || MouseEvent.WEBKIT_FORCE_AT_FORCE_MOUSE_DOWN == null) {
-         true ? warning('handling a mouse force changed event when it is not supported') : 0;
-        return;
-      }
-
-      var forcePressThreshold = MouseEvent.WEBKIT_FORCE_AT_FORCE_MOUSE_DOWN;
-      var isForcePressing = event.webkitForce >= forcePressThreshold;
-
-      if (!getShouldRespectForceTouch()) {
-        event.preventDefault();
-        return;
-      }
-
-      if (isForcePressing) {
-        cancel();
-      }
-    }
-  }, {
-    eventName: supportedEventName,
-    fn: cancel
-  }];
-
-  var bindWindowEvents = function bindWindowEvents() {
-    var win = getWindow();
-    bindEvents(win, windowBindings, {
-      capture: true
-    });
-  };
-
-  var unbindWindowEvents = function unbindWindowEvents() {
-    var win = getWindow();
-    unbindEvents(win, windowBindings, {
-      capture: true
-    });
-  };
-
-  var onMouseDown = function onMouseDown(event) {
-    if (mouseDownMarshal.isHandled()) {
-      return;
-    }
-
-    !!isCapturing() ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Should not be able to perform a mouse down while a drag or pending drag is occurring') : 0 : void 0;
-
-    if (!canStartCapturing(event)) {
-      return;
-    }
-
-    if (event.button !== primaryButton) {
-      return;
-    }
-
-    if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) {
-      return;
-    }
-
-    mouseDownMarshal.handle();
-    event.preventDefault();
-    var point = {
-      x: event.clientX,
-      y: event.clientY
-    };
-    startPendingDrag(point);
-  };
-
-  var sensor = {
-    onMouseDown: onMouseDown,
-    kill: kill,
-    isCapturing: isCapturing,
-    isDragging: isDragging,
-    unmount: unmount
-  };
-  return sensor;
-});
-
-var getBorderBoxCenterPosition = (function (el) {
-  return (0,css_box_model__WEBPACK_IMPORTED_MODULE_10__.getRect)(el.getBoundingClientRect()).center;
-});
-
-var _scrollJumpKeys;
-var scrollJumpKeys = (_scrollJumpKeys = {}, _scrollJumpKeys[pageDown] = true, _scrollJumpKeys[pageUp] = true, _scrollJumpKeys[home] = true, _scrollJumpKeys[end] = true, _scrollJumpKeys);
-
-var noop$1 = function noop() {};
-
-var createKeyboardSensor = (function (_ref) {
-  var callbacks = _ref.callbacks,
-      getWindow = _ref.getWindow,
-      getDraggableRef = _ref.getDraggableRef,
-      canStartCapturing = _ref.canStartCapturing;
-  var state = {
-    isDragging: false
-  };
-
-  var setState = function setState(newState) {
-    state = newState;
-  };
-
-  var startDragging = function startDragging(fn) {
-    if (fn === void 0) {
-      fn = noop$1;
-    }
-
-    setState({
-      isDragging: true
-    });
-    bindWindowEvents();
-    fn();
-  };
-
-  var stopDragging = function stopDragging(postDragFn) {
-    if (postDragFn === void 0) {
-      postDragFn = noop$1;
-    }
-
-    schedule.cancel();
-    unbindWindowEvents();
-    setState({
-      isDragging: false
-    });
-    postDragFn();
-  };
-
-  var kill = function kill() {
-    if (state.isDragging) {
-      stopDragging();
-    }
-  };
-
-  var cancel = function cancel() {
-    stopDragging(callbacks.onCancel);
-  };
-
-  var isDragging = function isDragging() {
-    return state.isDragging;
-  };
-
-  var schedule = createScheduler(callbacks);
-
-  var onKeyDown = function onKeyDown(event) {
-    if (!isDragging()) {
-      if (event.defaultPrevented) {
-        return;
-      }
-
-      if (!canStartCapturing(event)) {
-        return;
-      }
-
-      if (event.keyCode !== space) {
-        return;
-      }
-
-      var ref = getDraggableRef();
-      !ref ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot start a keyboard drag without a draggable ref') : 0 : void 0;
-      var center = getBorderBoxCenterPosition(ref);
-      event.preventDefault();
-      startDragging(function () {
-        return callbacks.onLift({
-          clientSelection: center,
-          movementMode: 'SNAP'
-        });
-      });
-      return;
-    }
-
-    if (event.keyCode === escape) {
-      event.preventDefault();
-      cancel();
-      return;
-    }
-
-    if (event.keyCode === space) {
-      event.preventDefault();
-      stopDragging(callbacks.onDrop);
-      return;
-    }
-
-    if (event.keyCode === arrowDown) {
-      event.preventDefault();
-      schedule.moveDown();
-      return;
-    }
-
-    if (event.keyCode === arrowUp) {
-      event.preventDefault();
-      schedule.moveUp();
-      return;
-    }
-
-    if (event.keyCode === arrowRight) {
-      event.preventDefault();
-      schedule.moveRight();
-      return;
-    }
-
-    if (event.keyCode === arrowLeft) {
-      event.preventDefault();
-      schedule.moveLeft();
-      return;
-    }
-
-    if (scrollJumpKeys[event.keyCode]) {
-      event.preventDefault();
-      return;
-    }
-
-    preventStandardKeyEvents(event);
-  };
-
-  var windowBindings = [{
-    eventName: 'mousedown',
-    fn: cancel
-  }, {
-    eventName: 'mouseup',
-    fn: cancel
-  }, {
-    eventName: 'click',
-    fn: cancel
-  }, {
-    eventName: 'touchstart',
-    fn: cancel
-  }, {
-    eventName: 'resize',
-    fn: cancel
-  }, {
-    eventName: 'wheel',
-    fn: cancel,
-    options: {
-      passive: true
-    }
-  }, {
-    eventName: 'scroll',
-    options: {
-      capture: false
-    },
-    fn: function fn(event) {
-      if (event.currentTarget !== getWindow()) {
-        return;
-      }
-
-      callbacks.onWindowScroll();
-    }
-  }, {
-    eventName: supportedEventName,
-    fn: cancel
-  }];
-
-  var bindWindowEvents = function bindWindowEvents() {
-    bindEvents(getWindow(), windowBindings, {
-      capture: true
-    });
-  };
-
-  var unbindWindowEvents = function unbindWindowEvents() {
-    unbindEvents(getWindow(), windowBindings, {
-      capture: true
-    });
-  };
-
-  var sensor = {
-    onKeyDown: onKeyDown,
-    kill: kill,
-    isDragging: isDragging,
-    isCapturing: isDragging,
-    unmount: kill
-  };
-  return sensor;
-});
-
-var timeForLongPress = 150;
-var forcePressThreshold = 0.15;
-var touchStartMarshal = createEventMarshal();
-
-var noop$2 = function noop() {};
-
-var webkitHack = function () {
-  var stub = {
-    preventTouchMove: noop$2,
-    releaseTouchMove: noop$2
-  };
-
-  if (typeof window === 'undefined') {
-    return stub;
-  }
-
-  if (!('ontouchstart' in window)) {
-    return stub;
-  }
-
-  var isBlocking = false;
-  window.addEventListener('touchmove', function (event) {
-    if (!isBlocking) {
-      return;
-    }
-
-    if (event.defaultPrevented) {
-      return;
-    }
-
-    event.preventDefault();
-  }, {
-    passive: false,
-    capture: false
-  });
-
-  var preventTouchMove = function preventTouchMove() {
-    isBlocking = true;
-  };
-
-  var releaseTouchMove = function releaseTouchMove() {
-    isBlocking = false;
-  };
-
-  return {
-    preventTouchMove: preventTouchMove,
-    releaseTouchMove: releaseTouchMove
-  };
-}();
-
-var initial = {
-  isDragging: false,
-  pending: null,
-  hasMoved: false,
-  longPressTimerId: null
-};
-var createTouchSensor = (function (_ref) {
-  var callbacks = _ref.callbacks,
-      getWindow = _ref.getWindow,
-      canStartCapturing = _ref.canStartCapturing,
-      getShouldRespectForceTouch = _ref.getShouldRespectForceTouch;
-  var state = initial;
-
-  var setState = function setState(partial) {
-    state = (0,_babel_runtime_corejs2_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, state, partial);
-  };
-
-  var isDragging = function isDragging() {
-    return state.isDragging;
-  };
-
-  var isCapturing = function isCapturing() {
-    return Boolean(state.pending || state.isDragging || state.longPressTimerId);
-  };
-
-  var schedule = createScheduler(callbacks);
-  var postDragEventPreventer = createPostDragEventPreventer(getWindow);
-
-  var startDragging = function startDragging() {
-    var pending = state.pending;
-
-    if (!pending) {
-      stopPendingDrag();
-       true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'cannot start a touch drag without a pending position') : 0;
-    }
-
-    setState({
-      isDragging: true,
-      hasMoved: false,
-      pending: null,
-      longPressTimerId: null
-    });
-    callbacks.onLift({
-      clientSelection: pending,
-      movementMode: 'FLUID'
-    });
-  };
-
-  var stopDragging = function stopDragging(fn) {
-    if (fn === void 0) {
-      fn = noop$2;
-    }
-
-    schedule.cancel();
-    touchStartMarshal.reset();
-    webkitHack.releaseTouchMove();
-    unbindWindowEvents();
-    postDragEventPreventer.preventNext();
-    setState(initial);
-    fn();
-  };
-
-  var startPendingDrag = function startPendingDrag(event) {
-    var touch = event.touches[0];
-    var clientX = touch.clientX,
-        clientY = touch.clientY;
-    var point = {
-      x: clientX,
-      y: clientY
-    };
-    var longPressTimerId = setTimeout(startDragging, timeForLongPress);
-    setState({
-      longPressTimerId: longPressTimerId,
-      pending: point,
-      isDragging: false,
-      hasMoved: false
-    });
-    bindWindowEvents();
-  };
-
-  var stopPendingDrag = function stopPendingDrag() {
-    if (state.longPressTimerId) {
-      clearTimeout(state.longPressTimerId);
-    }
-
-    schedule.cancel();
-    touchStartMarshal.reset();
-    webkitHack.releaseTouchMove();
-    unbindWindowEvents();
-    setState(initial);
-  };
-
-  var kill = function kill(fn) {
-    if (fn === void 0) {
-      fn = noop$2;
-    }
-
-    if (state.pending) {
-      stopPendingDrag();
-      return;
-    }
-
-    if (state.isDragging) {
-      stopDragging(fn);
-    }
-  };
-
-  var unmount = function unmount() {
-    kill();
-    postDragEventPreventer.abort();
-  };
-
-  var cancel = function cancel() {
-    kill(callbacks.onCancel);
-  };
-
-  var windowBindings = [{
-    eventName: 'touchmove',
-    options: {
-      passive: false
-    },
-    fn: function fn(event) {
-      if (!state.isDragging) {
-        stopPendingDrag();
-        return;
-      }
-
-      if (!state.hasMoved) {
-        setState({
-          hasMoved: true
-        });
-      }
-
-      var _event$touches$ = event.touches[0],
-          clientX = _event$touches$.clientX,
-          clientY = _event$touches$.clientY;
-      var point = {
-        x: clientX,
-        y: clientY
-      };
-      event.preventDefault();
-      schedule.move(point);
-    }
-  }, {
-    eventName: 'touchend',
-    fn: function fn(event) {
-      if (!state.isDragging) {
-        stopPendingDrag();
-        return;
-      }
-
-      event.preventDefault();
-      stopDragging(callbacks.onDrop);
-    }
-  }, {
-    eventName: 'touchcancel',
-    fn: function fn(event) {
-      if (!state.isDragging) {
-        stopPendingDrag();
-        return;
-      }
-
-      event.preventDefault();
-      stopDragging(callbacks.onCancel);
-    }
-  }, {
-    eventName: 'touchstart',
-    fn: cancel
-  }, {
-    eventName: 'orientationchange',
-    fn: cancel
-  }, {
-    eventName: 'resize',
-    fn: cancel
-  }, {
-    eventName: 'scroll',
-    options: {
-      passive: true,
-      capture: false
-    },
-    fn: function fn() {
-      if (state.pending) {
-        stopPendingDrag();
-        return;
-      }
-
-      schedule.windowScrollMove();
-    }
-  }, {
-    eventName: 'contextmenu',
-    fn: function fn(event) {
-      event.preventDefault();
-    }
-  }, {
-    eventName: 'keydown',
-    fn: function fn(event) {
-      if (!state.isDragging) {
-        cancel();
-        return;
-      }
-
-      if (event.keyCode === escape) {
-        event.preventDefault();
-      }
-
-      cancel();
-    }
-  }, {
-    eventName: 'touchforcechange',
-    fn: function fn(event) {
-      if (!state.isDragging && !state.pending) {
-        return;
-      }
-
-      if (state.hasMoved) {
-        event.preventDefault();
-        return;
-      }
-
-      if (!getShouldRespectForceTouch()) {
-        event.preventDefault();
-        return;
-      }
-
-      var touch = event.touches[0];
-
-      if (touch.force >= forcePressThreshold) {
-        cancel();
-      }
-    }
-  }, {
-    eventName: supportedEventName,
-    fn: cancel
-  }];
-
-  var bindWindowEvents = function bindWindowEvents() {
-    bindEvents(getWindow(), windowBindings, {
-      capture: true
-    });
-  };
-
-  var unbindWindowEvents = function unbindWindowEvents() {
-    unbindEvents(getWindow(), windowBindings, {
-      capture: true
-    });
-  };
-
-  var onTouchStart = function onTouchStart(event) {
-    if (touchStartMarshal.isHandled()) {
-      return;
-    }
-
-    !!isCapturing() ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Should not be able to perform a touch start while a drag or pending drag is occurring') : 0 : void 0;
-
-    if (!canStartCapturing(event)) {
-      return;
-    }
-
-    touchStartMarshal.handle();
-    webkitHack.preventTouchMove();
-    startPendingDrag(event);
-  };
-
-  var sensor = {
-    onTouchStart: onTouchStart,
-    kill: kill,
-    isCapturing: isCapturing,
-    isDragging: isDragging,
-    unmount: unmount
-  };
-  return sensor;
-});
-
-var _DragHandle$contextTy;
-
-var preventHtml5Dnd = function preventHtml5Dnd(event) {
-  event.preventDefault();
-};
-
-var DragHandle = function (_Component) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(DragHandle, _Component);
-
-  function DragHandle(props, context) {
-    var _this;
-
-    _this = _Component.call(this, props, context) || this;
-    _this.mouseSensor = void 0;
-    _this.keyboardSensor = void 0;
-    _this.touchSensor = void 0;
-    _this.sensors = void 0;
-    _this.styleContext = void 0;
-    _this.canLift = void 0;
-    _this.isFocused = false;
-    _this.lastDraggableRef = void 0;
-
-    _this.onFocus = function () {
-      _this.isFocused = true;
-    };
-
-    _this.onBlur = function () {
-      _this.isFocused = false;
-    };
-
-    _this.onKeyDown = function (event) {
-      if (_this.mouseSensor.isCapturing() || _this.touchSensor.isCapturing()) {
-        return;
-      }
-
-      _this.keyboardSensor.onKeyDown(event);
-    };
-
-    _this.onMouseDown = function (event) {
-      if (_this.keyboardSensor.isCapturing() || _this.mouseSensor.isCapturing()) {
-        return;
-      }
-
-      _this.mouseSensor.onMouseDown(event);
-    };
-
-    _this.onTouchStart = function (event) {
-      if (_this.mouseSensor.isCapturing() || _this.keyboardSensor.isCapturing()) {
-        return;
-      }
-
-      _this.touchSensor.onTouchStart(event);
-    };
-
-    _this.canStartCapturing = function (event) {
-      if (_this.isAnySensorCapturing()) {
-        return false;
-      }
-
-      if (!_this.canLift(_this.props.draggableId)) {
-        return false;
-      }
-
-      return shouldAllowDraggingFromTarget(event, _this.props);
-    };
-
-    _this.isAnySensorCapturing = function () {
-      return _this.sensors.some(function (sensor) {
-        return sensor.isCapturing();
-      });
-    };
-
-    _this.getProvided = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (isEnabled) {
-      if (!isEnabled) {
-        return null;
-      }
-
-      var provided = {
-        onMouseDown: _this.onMouseDown,
-        onKeyDown: _this.onKeyDown,
-        onTouchStart: _this.onTouchStart,
-        onFocus: _this.onFocus,
-        onBlur: _this.onBlur,
-        tabIndex: 0,
-        'data-react-beautiful-dnd-drag-handle': _this.styleContext,
-        'aria-roledescription': 'Draggable item. Press space bar to lift',
-        draggable: false,
-        onDragStart: preventHtml5Dnd
-      };
-      return provided;
-    });
-
-    var getWindow = function getWindow() {
-      return getWindowFromEl(_this.props.getDraggableRef());
-    };
-
-    var args = {
-      callbacks: _this.props.callbacks,
-      getDraggableRef: _this.props.getDraggableRef,
-      getWindow: getWindow,
-      canStartCapturing: _this.canStartCapturing,
-      getShouldRespectForceTouch: _this.props.getShouldRespectForceTouch
-    };
-    _this.mouseSensor = createMouseSensor(args);
-    _this.keyboardSensor = createKeyboardSensor(args);
-    _this.touchSensor = createTouchSensor(args);
-    _this.sensors = [_this.mouseSensor, _this.keyboardSensor, _this.touchSensor];
-    _this.styleContext = context[styleKey];
-    _this.canLift = context[canLiftKey];
-    return _this;
-  }
-
-  var _proto = DragHandle.prototype;
-
-  _proto.componentDidMount = function componentDidMount() {
-    var draggableRef = this.props.getDraggableRef();
-    this.lastDraggableRef = draggableRef;
-    !draggableRef ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot get draggable ref from drag handle') : 0 : void 0;
-
-    if (!this.props.isEnabled) {
-      return;
-    }
-
-    var dragHandleRef = getDragHandleRef(draggableRef);
-    retainer.tryRestoreFocus(this.props.draggableId, dragHandleRef);
-  };
-
-  _proto.componentDidUpdate = function componentDidUpdate(prevProps) {
-    var _this2 = this;
-
-    var ref = this.props.getDraggableRef();
-
-    if (ref !== this.lastDraggableRef) {
-      this.lastDraggableRef = ref;
-
-      if (ref && this.isFocused && this.props.isEnabled) {
-        getDragHandleRef(ref).focus();
-      }
-    }
-
-    var isCapturing = this.isAnySensorCapturing();
-
-    if (!isCapturing) {
-      return;
-    }
-
-    var isBeingDisabled = prevProps.isEnabled && !this.props.isEnabled;
-
-    if (isBeingDisabled) {
-      this.sensors.forEach(function (sensor) {
-        if (!sensor.isCapturing()) {
-          return;
-        }
-
-        var wasDragging = sensor.isDragging();
-        sensor.kill();
-
-        if (wasDragging) {
-           true ? warning('You have disabled dragging on a Draggable while it was dragging. The drag has been cancelled') : 0;
-
-          _this2.props.callbacks.onCancel();
-        }
-      });
-    }
-
-    var isDragAborted = prevProps.isDragging && !this.props.isDragging;
-
-    if (isDragAborted) {
-      this.sensors.forEach(function (sensor) {
-        if (sensor.isCapturing()) {
-          sensor.kill();
-        }
-      });
-    }
-  };
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    var _this3 = this;
-
-    this.sensors.forEach(function (sensor) {
-      var wasDragging = sensor.isDragging();
-      sensor.unmount();
-
-      if (wasDragging) {
-        _this3.props.callbacks.onCancel();
-      }
-    });
-
-    var shouldRetainFocus = function () {
-      if (!_this3.props.isEnabled) {
-        return false;
-      }
-
-      if (!_this3.isFocused) {
-        return false;
-      }
-
-      return _this3.props.isDragging || _this3.props.isDropAnimating;
-    }();
-
-    if (shouldRetainFocus) {
-      retainer.retain(this.props.draggableId);
-    }
-  };
-
-  _proto.render = function render() {
-    var _this$props = this.props,
-        children = _this$props.children,
-        isEnabled = _this$props.isEnabled;
-    return children(this.getProvided(isEnabled));
-  };
-
-  return DragHandle;
-}(react__WEBPACK_IMPORTED_MODULE_2__.Component);
-
-DragHandle.contextTypes = (_DragHandle$contextTy = {}, _DragHandle$contextTy[styleKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().string.isRequired), _DragHandle$contextTy[canLiftKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().func.isRequired), _DragHandle$contextTy);
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
 
 var zIndexOptions = {
   dragging: 5000,
@@ -34245,195 +32969,264 @@ function getSecondaryStyle(secondary) {
   };
 }
 
-function getStyle(mapped) {
+function getStyle$1(mapped) {
   return mapped.type === 'DRAGGING' ? getDraggingStyle(mapped) : getSecondaryStyle(mapped);
 }
 
-var checkOwnProps$1 = (function (props) {
-  !_babel_runtime_corejs2_core_js_number_is_integer__WEBPACK_IMPORTED_MODULE_9___default()(props.index) ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Draggable requires an integer index prop') : 0 : void 0;
-  !props.draggableId ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Draggable requires a draggableId') : 0 : void 0;
-  !(typeof props.isDragDisabled === 'boolean') ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'isDragDisabled must be a boolean') : 0 : void 0;
-});
-
-var _Draggable$contextTyp;
-
-var Draggable = function (_React$Component) {
-  (0,_babel_runtime_corejs2_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(Draggable, _React$Component);
-
-  function Draggable(props, context) {
-    var _this;
-
-    _this = _React$Component.call(this, props, context) || this;
-    _this.callbacks = void 0;
-    _this.styleContext = void 0;
-    _this.ref = null;
-
-    _this.onMoveEnd = function (event) {
-      var mapped = _this.props.mapped;
-      var isDropping = mapped.type === 'DRAGGING' && Boolean(mapped.dropping);
-
-      if (!isDropping) {
-        return;
-      }
-
-      if (event.propertyName !== 'transform') {
-        return;
-      }
-
-      _this.props.dropAnimationFinished();
-    };
-
-    _this.onLift = function (options) {
-      start('LIFT');
-      var ref = _this.ref;
-      !ref ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false) : 0 : void 0;
-      !!_this.props.isDragDisabled ?  true ? (0,tiny_invariant__WEBPACK_IMPORTED_MODULE_3__["default"])(false, 'Cannot lift a Draggable when it is disabled') : 0 : void 0;
-      var clientSelection = options.clientSelection,
-          movementMode = options.movementMode;
-      var _this$props = _this.props,
-          lift = _this$props.lift,
-          draggableId = _this$props.draggableId;
-      lift({
-        id: draggableId,
-        clientSelection: clientSelection,
-        movementMode: movementMode
-      });
-      finish('LIFT');
-    };
-
-    _this.setRef = function (ref) {
-      if (ref === null) {
-        return;
-      }
-
-      if (ref === _this.ref) {
-        return;
-      }
-
-      _this.ref = ref;
-      throwIfRefIsInvalid(ref);
-    };
-
-    _this.getDraggableRef = function () {
-      return _this.ref;
-    };
-
-    _this.getShouldRespectForceTouch = function () {
-      return _this.props.shouldRespectForceTouch;
-    };
-
-    _this.getProvided = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (mapped, dragHandleProps) {
-      var style = getStyle(mapped);
-      var onTransitionEnd = mapped.type === 'DRAGGING' && Boolean(mapped.dropping) ? _this.onMoveEnd : null;
-      var result = {
-        innerRef: _this.setRef,
-        draggableProps: {
-          'data-react-beautiful-dnd-draggable': _this.styleContext,
-          style: style,
-          onTransitionEnd: onTransitionEnd
-        },
-        dragHandleProps: dragHandleProps
-      };
-      return result;
-    });
-
-    _this.renderChildren = function (dragHandleProps) {
-      var _this$props2 = _this.props,
-          children = _this$props2.children,
-          mapped = _this$props2.mapped;
-      return children(_this.getProvided(mapped, dragHandleProps), mapped.snapshot);
-    };
-
-    var callbacks = {
-      onLift: _this.onLift,
-      onMove: function onMove(clientSelection) {
-        return props.move({
-          client: clientSelection
-        });
-      },
-      onDrop: function onDrop() {
-        return props.drop({
-          reason: 'DROP'
-        });
-      },
-      onCancel: function onCancel() {
-        return props.drop({
-          reason: 'CANCEL'
-        });
-      },
-      onMoveUp: props.moveUp,
-      onMoveDown: props.moveDown,
-      onMoveRight: props.moveRight,
-      onMoveLeft: props.moveLeft,
-      onWindowScroll: function onWindowScroll() {
-        return props.moveByWindowScroll({
-          newScroll: getWindowScroll()
-        });
-      }
-    };
-    _this.callbacks = callbacks;
-    _this.styleContext = context[styleKey];
-
-    if (true) {
-      checkOwnProps$1(props);
-    }
-
-    return _this;
+function getDimension$1(descriptor, el, windowScroll) {
+  if (windowScroll === void 0) {
+    windowScroll = origin;
   }
 
-  var _proto = Draggable.prototype;
-
-  _proto.componentWillUnmount = function componentWillUnmount() {
-    this.ref = null;
+  var computedStyles = window.getComputedStyle(el);
+  var borderBox = el.getBoundingClientRect();
+  var client = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.calculateBox)(borderBox, computedStyles);
+  var page = (0,css_box_model__WEBPACK_IMPORTED_MODULE_5__.withScroll)(client, windowScroll);
+  var placeholder = {
+    client: client,
+    tagName: el.tagName.toLowerCase(),
+    display: computedStyles.display
   };
+  var displaceBy = {
+    x: client.marginBox.width,
+    y: client.marginBox.height
+  };
+  var dimension = {
+    descriptor: descriptor,
+    placeholder: placeholder,
+    displaceBy: displaceBy,
+    client: client,
+    page: page
+  };
+  return dimension;
+}
 
-  _proto.render = function render() {
-    var _this$props3 = this.props,
-        draggableId = _this$props3.draggableId,
-        index = _this$props3.index,
-        mapped = _this$props3.mapped,
-        isDragDisabled = _this$props3.isDragDisabled,
-        disableInteractiveElementBlocking = _this$props3.disableInteractiveElementBlocking;
-    var droppableId = this.context[droppableIdKey];
-    var type = this.context[droppableTypeKey];
-    var isDragging = mapped.type === 'DRAGGING';
-    var isDropAnimating = mapped.type === 'DRAGGING' && Boolean(mapped.dropping);
-    return react__WEBPACK_IMPORTED_MODULE_2__.createElement(DraggableDimensionPublisher, {
-      key: draggableId,
-      draggableId: draggableId,
-      droppableId: droppableId,
+function useDraggablePublisher(args) {
+  var uniqueId = useUniqueId('draggable');
+  var descriptor = args.descriptor,
+      registry = args.registry,
+      getDraggableRef = args.getDraggableRef,
+      canDragInteractiveElements = args.canDragInteractiveElements,
+      shouldRespectForcePress = args.shouldRespectForcePress,
+      isEnabled = args.isEnabled;
+  var options = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      canDragInteractiveElements: canDragInteractiveElements,
+      shouldRespectForcePress: shouldRespectForcePress,
+      isEnabled: isEnabled
+    };
+  }, [canDragInteractiveElements, isEnabled, shouldRespectForcePress]);
+  var getDimension = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (windowScroll) {
+    var el = getDraggableRef();
+    !el ?  true ? invariant(false, 'Cannot get dimension when no ref is set') : 0 : void 0;
+    return getDimension$1(descriptor, el, windowScroll);
+  }, [descriptor, getDraggableRef]);
+  var entry = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      uniqueId: uniqueId,
+      descriptor: descriptor,
+      options: options,
+      getDimension: getDimension
+    };
+  }, [descriptor, getDimension, options, uniqueId]);
+  var publishedRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(entry);
+  var isFirstPublishRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(true);
+  useIsomorphicLayoutEffect(function () {
+    registry.draggable.register(publishedRef.current);
+    return function () {
+      return registry.draggable.unregister(publishedRef.current);
+    };
+  }, [registry.draggable]);
+  useIsomorphicLayoutEffect(function () {
+    if (isFirstPublishRef.current) {
+      isFirstPublishRef.current = false;
+      return;
+    }
+
+    var last = publishedRef.current;
+    publishedRef.current = entry;
+    registry.draggable.update(entry, last);
+  }, [entry, registry.draggable]);
+}
+
+function useValidation$1(props, contextId, getRef) {
+  useDevSetupWarning(function () {
+    function prefix(id) {
+      return "Draggable[id: " + id + "]: ";
+    }
+
+    var id = props.draggableId;
+    !id ?  true ? invariant(false, 'Draggable requires a draggableId') : 0 : void 0;
+    !(typeof id === 'string') ?  true ? invariant(false, "Draggable requires a [string] draggableId.\n      Provided: [type: " + typeof id + "] (value: " + id + ")") : 0 : void 0;
+    !isInteger(props.index) ?  true ? invariant(false, prefix(id) + " requires an integer index prop") : 0 : void 0;
+
+    if (props.mapped.type === 'DRAGGING') {
+      return;
+    }
+
+    checkIsValidInnerRef(getRef());
+
+    if (props.isEnabled) {
+      !findDragHandle(contextId, id) ?  true ? invariant(false, prefix(id) + " Unable to find drag handle") : 0 : void 0;
+    }
+  });
+}
+function useClonePropValidation(isClone) {
+  useDev(function () {
+    var initialRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(isClone);
+    useDevSetupWarning(function () {
+      !(isClone === initialRef.current) ?  true ? invariant(false, 'Draggable isClone prop value changed during component life') : 0 : void 0;
+    }, [isClone]);
+  });
+}
+
+function preventHtml5Dnd(event) {
+  event.preventDefault();
+}
+
+function Draggable(props) {
+  var ref = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var setRef = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (el) {
+    ref.current = el;
+  }, []);
+  var getRef = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    return ref.current;
+  }, []);
+
+  var _useRequiredContext = useRequiredContext(AppContext),
+      contextId = _useRequiredContext.contextId,
+      dragHandleUsageInstructionsId = _useRequiredContext.dragHandleUsageInstructionsId,
+      registry = _useRequiredContext.registry;
+
+  var _useRequiredContext2 = useRequiredContext(DroppableContext),
+      type = _useRequiredContext2.type,
+      droppableId = _useRequiredContext2.droppableId;
+
+  var descriptor = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      id: props.draggableId,
+      index: props.index,
       type: type,
-      index: index,
-      getDraggableRef: this.getDraggableRef
-    }, react__WEBPACK_IMPORTED_MODULE_2__.createElement(DragHandle, {
-      draggableId: draggableId,
-      isDragging: isDragging,
-      isDropAnimating: isDropAnimating,
-      isEnabled: !isDragDisabled,
-      callbacks: this.callbacks,
-      getDraggableRef: this.getDraggableRef,
-      getShouldRespectForceTouch: this.getShouldRespectForceTouch,
-      canDragInteractiveElements: disableInteractiveElementBlocking
-    }, this.renderChildren));
-  };
+      droppableId: droppableId
+    };
+  }, [props.draggableId, props.index, type, droppableId]);
+  var children = props.children,
+      draggableId = props.draggableId,
+      isEnabled = props.isEnabled,
+      shouldRespectForcePress = props.shouldRespectForcePress,
+      canDragInteractiveElements = props.canDragInteractiveElements,
+      isClone = props.isClone,
+      mapped = props.mapped,
+      dropAnimationFinishedAction = props.dropAnimationFinished;
+  useValidation$1(props, contextId, getRef);
+  useClonePropValidation(isClone);
 
-  return Draggable;
-}(react__WEBPACK_IMPORTED_MODULE_2__.Component);
+  if (!isClone) {
+    var forPublisher = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+      return {
+        descriptor: descriptor,
+        registry: registry,
+        getDraggableRef: getRef,
+        canDragInteractiveElements: canDragInteractiveElements,
+        shouldRespectForcePress: shouldRespectForcePress,
+        isEnabled: isEnabled
+      };
+    }, [descriptor, registry, getRef, canDragInteractiveElements, shouldRespectForcePress, isEnabled]);
+    useDraggablePublisher(forPublisher);
+  }
 
-Draggable.contextTypes = (_Draggable$contextTyp = {}, _Draggable$contextTyp[droppableIdKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().string.isRequired), _Draggable$contextTyp[droppableTypeKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().string.isRequired), _Draggable$contextTyp[styleKey] = (prop_types__WEBPACK_IMPORTED_MODULE_14___default().string.isRequired), _Draggable$contextTyp);
+  var dragHandleProps = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return isEnabled ? {
+      tabIndex: 0,
+      role: 'button',
+      'aria-describedby': dragHandleUsageInstructionsId,
+      'data-rbd-drag-handle-draggable-id': draggableId,
+      'data-rbd-drag-handle-context-id': contextId,
+      draggable: false,
+      onDragStart: preventHtml5Dnd
+    } : null;
+  }, [contextId, dragHandleUsageInstructionsId, draggableId, isEnabled]);
+  var onMoveEnd = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (event) {
+    if (mapped.type !== 'DRAGGING') {
+      return;
+    }
+
+    if (!mapped.dropping) {
+      return;
+    }
+
+    if (event.propertyName !== 'transform') {
+      return;
+    }
+
+    dropAnimationFinishedAction();
+  }, [dropAnimationFinishedAction, mapped]);
+  var provided = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    var style = getStyle$1(mapped);
+    var onTransitionEnd = mapped.type === 'DRAGGING' && mapped.dropping ? onMoveEnd : null;
+    var result = {
+      innerRef: setRef,
+      draggableProps: {
+        'data-rbd-draggable-context-id': contextId,
+        'data-rbd-draggable-id': draggableId,
+        style: style,
+        onTransitionEnd: onTransitionEnd
+      },
+      dragHandleProps: dragHandleProps
+    };
+    return result;
+  }, [contextId, dragHandleProps, draggableId, mapped, onMoveEnd, setRef]);
+  var rubric = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      draggableId: descriptor.id,
+      type: descriptor.type,
+      source: {
+        index: descriptor.index,
+        droppableId: descriptor.droppableId
+      }
+    };
+  }, [descriptor.droppableId, descriptor.id, descriptor.index, descriptor.type]);
+  return children(provided, mapped.snapshot, rubric);
+}
+
+var isStrictEqual = (function (a, b) {
+  return a === b;
+});
+
+var whatIsDraggedOverFromResult = (function (result) {
+  var combine = result.combine,
+      destination = result.destination;
+
+  if (destination) {
+    return destination.droppableId;
+  }
+
+  if (combine) {
+    return combine.droppableId;
+  }
+
+  return null;
+});
 
 var getCombineWithFromResult = function getCombineWithFromResult(result) {
   return result.combine ? result.combine.draggableId : null;
 };
 
 var getCombineWithFromImpact = function getCombineWithFromImpact(impact) {
-  return impact.merge ? impact.merge.combine.draggableId : null;
+  return impact.at && impact.at.type === 'COMBINE' ? impact.at.combine.draggableId : null;
 };
 
-var makeMapStateToProps$1 = function makeMapStateToProps() {
-  var getDraggingSnapshot = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (mode, draggingOver, combineWith, dropping) {
+function getDraggableSelector() {
+  var memoizedOffset = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (x, y) {
+    return {
+      x: x,
+      y: y
+    };
+  });
+  var getMemoizedSnapshot = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (mode, isClone, draggingOver, combineWith, dropping) {
     return {
       isDragging: true,
+      isClone: isClone,
       isDropAnimating: Boolean(dropping),
       dropAnimation: dropping,
       mode: mode,
@@ -34442,33 +33235,7 @@ var makeMapStateToProps$1 = function makeMapStateToProps() {
       combineTargetFor: null
     };
   });
-  var getSecondarySnapshot = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (combineTargetFor) {
-    return {
-      isDragging: false,
-      isDropAnimating: false,
-      dropAnimation: null,
-      mode: null,
-      draggingOver: null,
-      combineTargetFor: combineTargetFor,
-      combineWith: null
-    };
-  });
-  var defaultMapProps = {
-    mapped: {
-      type: 'SECONDARY',
-      offset: origin,
-      combineTargetFor: null,
-      shouldAnimateDisplacement: true,
-      snapshot: getSecondarySnapshot(null)
-    }
-  };
-  var memoizedOffset = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (x, y) {
-    return {
-      x: x,
-      y: y
-    };
-  });
-  var getDraggingProps = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (offset, mode, dimension, draggingOver, combineWith, forceShouldAnimate) {
+  var getMemoizedProps = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (offset, mode, dimension, isClone, draggingOver, combineWith, forceShouldAnimate) {
     return {
       mapped: {
         type: 'DRAGGING',
@@ -34479,51 +33246,12 @@ var makeMapStateToProps$1 = function makeMapStateToProps() {
         offset: offset,
         dimension: dimension,
         forceShouldAnimate: forceShouldAnimate,
-        snapshot: getDraggingSnapshot(mode, draggingOver, combineWith, null)
-      }
-    };
-  });
-  var getSecondaryProps = (0,memoize_one__WEBPACK_IMPORTED_MODULE_11__["default"])(function (offset, combineTargetFor, shouldAnimateDisplacement) {
-    if (combineTargetFor === void 0) {
-      combineTargetFor = null;
-    }
-
-    return {
-      mapped: {
-        type: 'SECONDARY',
-        offset: offset,
-        combineTargetFor: combineTargetFor,
-        shouldAnimateDisplacement: shouldAnimateDisplacement,
-        snapshot: getSecondarySnapshot(combineTargetFor)
+        snapshot: getMemoizedSnapshot(mode, isClone, draggingOver, combineWith, null)
       }
     };
   });
 
-  var getSecondaryMovement = function getSecondaryMovement(ownId, draggingId, impact) {
-    var map = impact.movement.map;
-    var displacement = map[ownId];
-    var movement = impact.movement;
-    var merge = impact.merge;
-    var isCombinedWith = Boolean(merge && merge.combine.draggableId === ownId);
-    var displacedBy = movement.displacedBy.point;
-    var offset = memoizedOffset(displacedBy.x, displacedBy.y);
-
-    if (isCombinedWith) {
-      return getSecondaryProps(displacement ? offset : origin, draggingId, displacement ? displacement.shouldAnimate : true);
-    }
-
-    if (!displacement) {
-      return null;
-    }
-
-    if (!displacement.isVisible) {
-      return null;
-    }
-
-    return getSecondaryProps(offset, null, displacement.shouldAnimate);
-  };
-
-  var draggingSelector = function draggingSelector(state, ownProps) {
+  var selector = function selector(state, ownProps) {
     if (state.isDragging) {
       if (state.critical.draggable.id !== ownProps.draggableId) {
         return null;
@@ -34531,11 +33259,10 @@ var makeMapStateToProps$1 = function makeMapStateToProps() {
 
       var offset = state.current.client.offset;
       var dimension = state.dimensions.draggables[ownProps.draggableId];
-      var mode = state.movementMode;
       var draggingOver = whatIsDraggedOver(state.impact);
       var combineWith = getCombineWithFromImpact(state.impact);
       var forceShouldAnimate = state.forceShouldAnimate;
-      return getDraggingProps(memoizedOffset(offset.x, offset.y), mode, dimension, draggingOver, combineWith, forceShouldAnimate);
+      return getMemoizedProps(memoizedOffset(offset.x, offset.y), state.movementMode, dimension, ownProps.isClone, draggingOver, combineWith, forceShouldAnimate);
     }
 
     if (state.phase === 'DROP_ANIMATING') {
@@ -34545,9 +33272,10 @@ var makeMapStateToProps$1 = function makeMapStateToProps() {
         return null;
       }
 
+      var isClone = ownProps.isClone;
       var _dimension = state.dimensions.draggables[ownProps.draggableId];
       var result = completed.result;
-      var _mode = result.mode;
+      var mode = result.mode;
 
       var _draggingOver = whatIsDraggedOverFromResult(result);
 
@@ -34569,9 +33297,9 @@ var makeMapStateToProps$1 = function makeMapStateToProps() {
           dropping: dropping,
           draggingOver: _draggingOver,
           combineWith: _combineWith,
-          mode: _mode,
+          mode: mode,
           forceShouldAnimate: null,
-          snapshot: getDraggingSnapshot(_mode, _draggingOver, _combineWith, dropping)
+          snapshot: getMemoizedSnapshot(mode, isClone, _draggingOver, _combineWith, dropping)
         }
       };
     }
@@ -34579,13 +33307,98 @@ var makeMapStateToProps$1 = function makeMapStateToProps() {
     return null;
   };
 
-  var secondarySelector = function secondarySelector(state, ownProps) {
+  return selector;
+}
+
+function getSecondarySnapshot(combineTargetFor) {
+  return {
+    isDragging: false,
+    isDropAnimating: false,
+    isClone: false,
+    dropAnimation: null,
+    mode: null,
+    draggingOver: null,
+    combineTargetFor: combineTargetFor,
+    combineWith: null
+  };
+}
+
+var atRest = {
+  mapped: {
+    type: 'SECONDARY',
+    offset: origin,
+    combineTargetFor: null,
+    shouldAnimateDisplacement: true,
+    snapshot: getSecondarySnapshot(null)
+  }
+};
+
+function getSecondarySelector() {
+  var memoizedOffset = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (x, y) {
+    return {
+      x: x,
+      y: y
+    };
+  });
+  var getMemoizedSnapshot = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(getSecondarySnapshot);
+  var getMemoizedProps = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (offset, combineTargetFor, shouldAnimateDisplacement) {
+    if (combineTargetFor === void 0) {
+      combineTargetFor = null;
+    }
+
+    return {
+      mapped: {
+        type: 'SECONDARY',
+        offset: offset,
+        combineTargetFor: combineTargetFor,
+        shouldAnimateDisplacement: shouldAnimateDisplacement,
+        snapshot: getMemoizedSnapshot(combineTargetFor)
+      }
+    };
+  });
+
+  var getFallback = function getFallback(combineTargetFor) {
+    return combineTargetFor ? getMemoizedProps(origin, combineTargetFor, true) : null;
+  };
+
+  var getProps = function getProps(ownId, draggingId, impact, afterCritical) {
+    var visualDisplacement = impact.displaced.visible[ownId];
+    var isAfterCriticalInVirtualList = Boolean(afterCritical.inVirtualList && afterCritical.effected[ownId]);
+    var combine = tryGetCombine(impact);
+    var combineTargetFor = combine && combine.draggableId === ownId ? draggingId : null;
+
+    if (!visualDisplacement) {
+      if (!isAfterCriticalInVirtualList) {
+        return getFallback(combineTargetFor);
+      }
+
+      if (impact.displaced.invisible[ownId]) {
+        return null;
+      }
+
+      var change = negate(afterCritical.displacedBy.point);
+
+      var _offset = memoizedOffset(change.x, change.y);
+
+      return getMemoizedProps(_offset, combineTargetFor, true);
+    }
+
+    if (isAfterCriticalInVirtualList) {
+      return getFallback(combineTargetFor);
+    }
+
+    var displaceBy = impact.displacedBy.point;
+    var offset = memoizedOffset(displaceBy.x, displaceBy.y);
+    return getMemoizedProps(offset, combineTargetFor, visualDisplacement.shouldAnimate);
+  };
+
+  var selector = function selector(state, ownProps) {
     if (state.isDragging) {
       if (state.critical.draggable.id === ownProps.draggableId) {
         return null;
       }
 
-      return getSecondaryMovement(ownProps.draggableId, state.critical.draggable.id, state.impact);
+      return getProps(ownProps.draggableId, state.critical.draggable.id, state.impact, state.afterCritical);
     }
 
     if (state.phase === 'DROP_ANIMATING') {
@@ -34595,43 +33408,611 @@ var makeMapStateToProps$1 = function makeMapStateToProps() {
         return null;
       }
 
-      return getSecondaryMovement(ownProps.draggableId, completed.result.draggableId, completed.impact);
+      return getProps(ownProps.draggableId, completed.result.draggableId, completed.impact, completed.afterCritical);
     }
 
     return null;
   };
 
+  return selector;
+}
+
+var makeMapStateToProps = function makeMapStateToProps() {
+  var draggingSelector = getDraggableSelector();
+  var secondarySelector = getSecondarySelector();
+
   var selector = function selector(state, ownProps) {
-    return draggingSelector(state, ownProps) || secondarySelector(state, ownProps) || defaultMapProps;
+    return draggingSelector(state, ownProps) || secondarySelector(state, ownProps) || atRest;
+  };
+
+  return selector;
+};
+var mapDispatchToProps = {
+  dropAnimationFinished: dropAnimationFinished
+};
+var ConnectedDraggable = (0,react_redux__WEBPACK_IMPORTED_MODULE_3__.connect)(makeMapStateToProps, mapDispatchToProps, null, {
+  context: StoreContext,
+  pure: true,
+  areStatePropsEqual: isStrictEqual
+})(Draggable);
+
+function PrivateDraggable(props) {
+  var droppableContext = useRequiredContext(DroppableContext);
+  var isUsingCloneFor = droppableContext.isUsingCloneFor;
+
+  if (isUsingCloneFor === props.draggableId && !props.isClone) {
+    return null;
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(ConnectedDraggable, props);
+}
+function PublicDraggable(props) {
+  var isEnabled = typeof props.isDragDisabled === 'boolean' ? !props.isDragDisabled : true;
+  var canDragInteractiveElements = Boolean(props.disableInteractiveElementBlocking);
+  var shouldRespectForcePress = Boolean(props.shouldRespectForcePress);
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(PrivateDraggable, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, props, {
+    isClone: false,
+    isEnabled: isEnabled,
+    canDragInteractiveElements: canDragInteractiveElements,
+    shouldRespectForcePress: shouldRespectForcePress
+  }));
+}
+
+function Droppable(props) {
+  var appContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(AppContext);
+  !appContext ?  true ? invariant(false, 'Could not find app context') : 0 : void 0;
+  var contextId = appContext.contextId,
+      isMovementAllowed = appContext.isMovementAllowed;
+  var droppableRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var placeholderRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var children = props.children,
+      droppableId = props.droppableId,
+      type = props.type,
+      mode = props.mode,
+      direction = props.direction,
+      ignoreContainerClipping = props.ignoreContainerClipping,
+      isDropDisabled = props.isDropDisabled,
+      isCombineEnabled = props.isCombineEnabled,
+      snapshot = props.snapshot,
+      useClone = props.useClone,
+      updateViewportMaxScroll = props.updateViewportMaxScroll,
+      getContainerForClone = props.getContainerForClone;
+  var getDroppableRef = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    return droppableRef.current;
+  }, []);
+  var setDroppableRef = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (value) {
+    droppableRef.current = value;
+  }, []);
+  var getPlaceholderRef = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    return placeholderRef.current;
+  }, []);
+  var setPlaceholderRef = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function (value) {
+    placeholderRef.current = value;
+  }, []);
+  useValidation({
+    props: props,
+    getDroppableRef: getDroppableRef,
+    getPlaceholderRef: getPlaceholderRef
+  });
+  var onPlaceholderTransitionEnd = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useCallback)(function () {
+    if (isMovementAllowed()) {
+      updateViewportMaxScroll({
+        maxScroll: getMaxWindowScroll()
+      });
+    }
+  }, [isMovementAllowed, updateViewportMaxScroll]);
+  useDroppablePublisher({
+    droppableId: droppableId,
+    type: type,
+    mode: mode,
+    direction: direction,
+    isDropDisabled: isDropDisabled,
+    isCombineEnabled: isCombineEnabled,
+    ignoreContainerClipping: ignoreContainerClipping,
+    getDroppableRef: getDroppableRef
+  });
+  var placeholder = react__WEBPACK_IMPORTED_MODULE_0__.createElement(AnimateInOut, {
+    on: props.placeholder,
+    shouldAnimate: props.shouldAnimatePlaceholder
+  }, function (_ref) {
+    var onClose = _ref.onClose,
+        data = _ref.data,
+        animate = _ref.animate;
+    return react__WEBPACK_IMPORTED_MODULE_0__.createElement(Placeholder$1, {
+      placeholder: data,
+      onClose: onClose,
+      innerRef: setPlaceholderRef,
+      animate: animate,
+      contextId: contextId,
+      onTransitionEnd: onPlaceholderTransitionEnd
+    });
+  });
+  var provided = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      innerRef: setDroppableRef,
+      placeholder: placeholder,
+      droppableProps: {
+        'data-rbd-droppable-id': droppableId,
+        'data-rbd-droppable-context-id': contextId
+      }
+    };
+  }, [contextId, droppableId, placeholder, setDroppableRef]);
+  var isUsingCloneFor = useClone ? useClone.dragging.draggableId : null;
+  var droppableContext = (0,use_memo_one__WEBPACK_IMPORTED_MODULE_9__.useMemo)(function () {
+    return {
+      droppableId: droppableId,
+      type: type,
+      isUsingCloneFor: isUsingCloneFor
+    };
+  }, [droppableId, isUsingCloneFor, type]);
+
+  function getClone() {
+    if (!useClone) {
+      return null;
+    }
+
+    var dragging = useClone.dragging,
+        render = useClone.render;
+    var node = react__WEBPACK_IMPORTED_MODULE_0__.createElement(PrivateDraggable, {
+      draggableId: dragging.draggableId,
+      index: dragging.source.index,
+      isClone: true,
+      isEnabled: true,
+      shouldRespectForcePress: false,
+      canDragInteractiveElements: true
+    }, function (draggableProvided, draggableSnapshot) {
+      return render(draggableProvided, draggableSnapshot, dragging);
+    });
+    return react_dom__WEBPACK_IMPORTED_MODULE_4__.createPortal(node, getContainerForClone());
+  }
+
+  return react__WEBPACK_IMPORTED_MODULE_0__.createElement(DroppableContext.Provider, {
+    value: droppableContext
+  }, children(provided, snapshot), getClone());
+}
+
+var isMatchingType = function isMatchingType(type, critical) {
+  return type === critical.droppable.type;
+};
+
+var getDraggable = function getDraggable(critical, dimensions) {
+  return dimensions.draggables[critical.draggable.id];
+};
+
+var makeMapStateToProps$1 = function makeMapStateToProps() {
+  var idleWithAnimation = {
+    placeholder: null,
+    shouldAnimatePlaceholder: true,
+    snapshot: {
+      isDraggingOver: false,
+      draggingOverWith: null,
+      draggingFromThisWith: null,
+      isUsingPlaceholder: false
+    },
+    useClone: null
+  };
+
+  var idleWithoutAnimation = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, idleWithAnimation, {
+    shouldAnimatePlaceholder: false
+  });
+
+  var getDraggableRubric = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (descriptor) {
+    return {
+      draggableId: descriptor.id,
+      type: descriptor.type,
+      source: {
+        index: descriptor.index,
+        droppableId: descriptor.droppableId
+      }
+    };
+  });
+  var getMapProps = (0,memoize_one__WEBPACK_IMPORTED_MODULE_6__["default"])(function (id, isEnabled, isDraggingOverForConsumer, isDraggingOverForImpact, dragging, renderClone) {
+    var draggableId = dragging.descriptor.id;
+    var isHome = dragging.descriptor.droppableId === id;
+
+    if (isHome) {
+      var useClone = renderClone ? {
+        render: renderClone,
+        dragging: getDraggableRubric(dragging.descriptor)
+      } : null;
+      var _snapshot = {
+        isDraggingOver: isDraggingOverForConsumer,
+        draggingOverWith: isDraggingOverForConsumer ? draggableId : null,
+        draggingFromThisWith: draggableId,
+        isUsingPlaceholder: true
+      };
+      return {
+        placeholder: dragging.placeholder,
+        shouldAnimatePlaceholder: false,
+        snapshot: _snapshot,
+        useClone: useClone
+      };
+    }
+
+    if (!isEnabled) {
+      return idleWithoutAnimation;
+    }
+
+    if (!isDraggingOverForImpact) {
+      return idleWithAnimation;
+    }
+
+    var snapshot = {
+      isDraggingOver: isDraggingOverForConsumer,
+      draggingOverWith: draggableId,
+      draggingFromThisWith: null,
+      isUsingPlaceholder: true
+    };
+    return {
+      placeholder: dragging.placeholder,
+      shouldAnimatePlaceholder: true,
+      snapshot: snapshot,
+      useClone: null
+    };
+  });
+
+  var selector = function selector(state, ownProps) {
+    var id = ownProps.droppableId;
+    var type = ownProps.type;
+    var isEnabled = !ownProps.isDropDisabled;
+    var renderClone = ownProps.renderClone;
+
+    if (state.isDragging) {
+      var critical = state.critical;
+
+      if (!isMatchingType(type, critical)) {
+        return idleWithoutAnimation;
+      }
+
+      var dragging = getDraggable(critical, state.dimensions);
+      var isDraggingOver = whatIsDraggedOver(state.impact) === id;
+      return getMapProps(id, isEnabled, isDraggingOver, isDraggingOver, dragging, renderClone);
+    }
+
+    if (state.phase === 'DROP_ANIMATING') {
+      var completed = state.completed;
+
+      if (!isMatchingType(type, completed.critical)) {
+        return idleWithoutAnimation;
+      }
+
+      var _dragging = getDraggable(completed.critical, state.dimensions);
+
+      return getMapProps(id, isEnabled, whatIsDraggedOverFromResult(completed.result) === id, whatIsDraggedOver(completed.impact) === id, _dragging, renderClone);
+    }
+
+    if (state.phase === 'IDLE' && state.completed && !state.shouldFlush) {
+      var _completed = state.completed;
+
+      if (!isMatchingType(type, _completed.critical)) {
+        return idleWithoutAnimation;
+      }
+
+      var wasOver = whatIsDraggedOver(_completed.impact) === id;
+      var wasCombining = Boolean(_completed.impact.at && _completed.impact.at.type === 'COMBINE');
+      var isHome = _completed.critical.droppable.id === id;
+
+      if (wasOver) {
+        return wasCombining ? idleWithAnimation : idleWithoutAnimation;
+      }
+
+      if (isHome) {
+        return idleWithAnimation;
+      }
+
+      return idleWithoutAnimation;
+    }
+
+    return idleWithoutAnimation;
   };
 
   return selector;
 };
 var mapDispatchToProps$1 = {
-  lift: lift,
-  move: move,
-  moveUp: moveUp,
-  moveDown: moveDown,
-  moveLeft: moveLeft,
-  moveRight: moveRight,
-  moveByWindowScroll: moveByWindowScroll,
-  drop: drop,
-  dropAnimationFinished: dropAnimationFinished
+  updateViewportMaxScroll: updateViewportMaxScroll
 };
-var defaultProps$1 = {
-  isDragDisabled: false,
-  disableInteractiveElementBlocking: false,
-  shouldRespectForceTouch: true
+
+function getBody() {
+  !document.body ?  true ? invariant(false, 'document.body is not ready') : 0 : void 0;
+  return document.body;
+}
+
+var defaultProps = {
+  mode: 'standard',
+  type: 'DEFAULT',
+  direction: 'vertical',
+  isDropDisabled: false,
+  isCombineEnabled: false,
+  ignoreContainerClipping: false,
+  renderClone: null,
+  getContainerForClone: getBody
 };
-var ConnectedDraggable = (0,react_redux__WEBPACK_IMPORTED_MODULE_8__.connect)(makeMapStateToProps$1, mapDispatchToProps$1, null, {
-  storeKey: storeKey,
+var ConnectedDroppable = (0,react_redux__WEBPACK_IMPORTED_MODULE_3__.connect)(makeMapStateToProps$1, mapDispatchToProps$1, null, {
+  context: StoreContext,
   pure: true,
   areStatePropsEqual: isStrictEqual
-})(Draggable);
-ConnectedDraggable.defaultProps = defaultProps$1;
+})(Droppable);
+ConnectedDroppable.defaultProps = defaultProps;
 
 
 
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-is/cjs/react-is.development.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-is/cjs/react-is.development.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+/** @license React v17.0.2
+ * react-is.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+if (true) {
+  (function() {
+'use strict';
+
+// ATTENTION
+// When adding new symbols to this file,
+// Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+// nor polyfill, then a plain number is used for performance.
+var REACT_ELEMENT_TYPE = 0xeac7;
+var REACT_PORTAL_TYPE = 0xeaca;
+var REACT_FRAGMENT_TYPE = 0xeacb;
+var REACT_STRICT_MODE_TYPE = 0xeacc;
+var REACT_PROFILER_TYPE = 0xead2;
+var REACT_PROVIDER_TYPE = 0xeacd;
+var REACT_CONTEXT_TYPE = 0xeace;
+var REACT_FORWARD_REF_TYPE = 0xead0;
+var REACT_SUSPENSE_TYPE = 0xead1;
+var REACT_SUSPENSE_LIST_TYPE = 0xead8;
+var REACT_MEMO_TYPE = 0xead3;
+var REACT_LAZY_TYPE = 0xead4;
+var REACT_BLOCK_TYPE = 0xead9;
+var REACT_SERVER_BLOCK_TYPE = 0xeada;
+var REACT_FUNDAMENTAL_TYPE = 0xead5;
+var REACT_SCOPE_TYPE = 0xead7;
+var REACT_OPAQUE_ID_TYPE = 0xeae0;
+var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
+var REACT_OFFSCREEN_TYPE = 0xeae2;
+var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
+
+if (typeof Symbol === 'function' && Symbol.for) {
+  var symbolFor = Symbol.for;
+  REACT_ELEMENT_TYPE = symbolFor('react.element');
+  REACT_PORTAL_TYPE = symbolFor('react.portal');
+  REACT_FRAGMENT_TYPE = symbolFor('react.fragment');
+  REACT_STRICT_MODE_TYPE = symbolFor('react.strict_mode');
+  REACT_PROFILER_TYPE = symbolFor('react.profiler');
+  REACT_PROVIDER_TYPE = symbolFor('react.provider');
+  REACT_CONTEXT_TYPE = symbolFor('react.context');
+  REACT_FORWARD_REF_TYPE = symbolFor('react.forward_ref');
+  REACT_SUSPENSE_TYPE = symbolFor('react.suspense');
+  REACT_SUSPENSE_LIST_TYPE = symbolFor('react.suspense_list');
+  REACT_MEMO_TYPE = symbolFor('react.memo');
+  REACT_LAZY_TYPE = symbolFor('react.lazy');
+  REACT_BLOCK_TYPE = symbolFor('react.block');
+  REACT_SERVER_BLOCK_TYPE = symbolFor('react.server.block');
+  REACT_FUNDAMENTAL_TYPE = symbolFor('react.fundamental');
+  REACT_SCOPE_TYPE = symbolFor('react.scope');
+  REACT_OPAQUE_ID_TYPE = symbolFor('react.opaque.id');
+  REACT_DEBUG_TRACING_MODE_TYPE = symbolFor('react.debug_trace_mode');
+  REACT_OFFSCREEN_TYPE = symbolFor('react.offscreen');
+  REACT_LEGACY_HIDDEN_TYPE = symbolFor('react.legacy_hidden');
+}
+
+// Filter certain DOM attributes (e.g. src, href) if their values are empty strings.
+
+var enableScopeAPI = false; // Experimental Create Event Handle API.
+
+function isValidElementType(type) {
+  if (typeof type === 'string' || typeof type === 'function') {
+    return true;
+  } // Note: typeof might be other than 'symbol' or 'number' (e.g. if it's a polyfill).
+
+
+  if (type === REACT_FRAGMENT_TYPE || type === REACT_PROFILER_TYPE || type === REACT_DEBUG_TRACING_MODE_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || type === REACT_LEGACY_HIDDEN_TYPE || enableScopeAPI ) {
+    return true;
+  }
+
+  if (typeof type === 'object' && type !== null) {
+    if (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_BLOCK_TYPE || type[0] === REACT_SERVER_BLOCK_TYPE) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function typeOf(object) {
+  if (typeof object === 'object' && object !== null) {
+    var $$typeof = object.$$typeof;
+
+    switch ($$typeof) {
+      case REACT_ELEMENT_TYPE:
+        var type = object.type;
+
+        switch (type) {
+          case REACT_FRAGMENT_TYPE:
+          case REACT_PROFILER_TYPE:
+          case REACT_STRICT_MODE_TYPE:
+          case REACT_SUSPENSE_TYPE:
+          case REACT_SUSPENSE_LIST_TYPE:
+            return type;
+
+          default:
+            var $$typeofType = type && type.$$typeof;
+
+            switch ($$typeofType) {
+              case REACT_CONTEXT_TYPE:
+              case REACT_FORWARD_REF_TYPE:
+              case REACT_LAZY_TYPE:
+              case REACT_MEMO_TYPE:
+              case REACT_PROVIDER_TYPE:
+                return $$typeofType;
+
+              default:
+                return $$typeof;
+            }
+
+        }
+
+      case REACT_PORTAL_TYPE:
+        return $$typeof;
+    }
+  }
+
+  return undefined;
+}
+var ContextConsumer = REACT_CONTEXT_TYPE;
+var ContextProvider = REACT_PROVIDER_TYPE;
+var Element = REACT_ELEMENT_TYPE;
+var ForwardRef = REACT_FORWARD_REF_TYPE;
+var Fragment = REACT_FRAGMENT_TYPE;
+var Lazy = REACT_LAZY_TYPE;
+var Memo = REACT_MEMO_TYPE;
+var Portal = REACT_PORTAL_TYPE;
+var Profiler = REACT_PROFILER_TYPE;
+var StrictMode = REACT_STRICT_MODE_TYPE;
+var Suspense = REACT_SUSPENSE_TYPE;
+var hasWarnedAboutDeprecatedIsAsyncMode = false;
+var hasWarnedAboutDeprecatedIsConcurrentMode = false; // AsyncMode should be deprecated
+
+function isAsyncMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
+      hasWarnedAboutDeprecatedIsAsyncMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
+    }
+  }
+
+  return false;
+}
+function isConcurrentMode(object) {
+  {
+    if (!hasWarnedAboutDeprecatedIsConcurrentMode) {
+      hasWarnedAboutDeprecatedIsConcurrentMode = true; // Using console['warn'] to evade Babel and ESLint
+
+      console['warn']('The ReactIs.isConcurrentMode() alias has been deprecated, ' + 'and will be removed in React 18+.');
+    }
+  }
+
+  return false;
+}
+function isContextConsumer(object) {
+  return typeOf(object) === REACT_CONTEXT_TYPE;
+}
+function isContextProvider(object) {
+  return typeOf(object) === REACT_PROVIDER_TYPE;
+}
+function isElement(object) {
+  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
+}
+function isForwardRef(object) {
+  return typeOf(object) === REACT_FORWARD_REF_TYPE;
+}
+function isFragment(object) {
+  return typeOf(object) === REACT_FRAGMENT_TYPE;
+}
+function isLazy(object) {
+  return typeOf(object) === REACT_LAZY_TYPE;
+}
+function isMemo(object) {
+  return typeOf(object) === REACT_MEMO_TYPE;
+}
+function isPortal(object) {
+  return typeOf(object) === REACT_PORTAL_TYPE;
+}
+function isProfiler(object) {
+  return typeOf(object) === REACT_PROFILER_TYPE;
+}
+function isStrictMode(object) {
+  return typeOf(object) === REACT_STRICT_MODE_TYPE;
+}
+function isSuspense(object) {
+  return typeOf(object) === REACT_SUSPENSE_TYPE;
+}
+
+exports.ContextConsumer = ContextConsumer;
+exports.ContextProvider = ContextProvider;
+exports.Element = Element;
+exports.ForwardRef = ForwardRef;
+exports.Fragment = Fragment;
+exports.Lazy = Lazy;
+exports.Memo = Memo;
+exports.Portal = Portal;
+exports.Profiler = Profiler;
+exports.StrictMode = StrictMode;
+exports.Suspense = Suspense;
+exports.isAsyncMode = isAsyncMode;
+exports.isConcurrentMode = isConcurrentMode;
+exports.isContextConsumer = isContextConsumer;
+exports.isContextProvider = isContextProvider;
+exports.isElement = isElement;
+exports.isForwardRef = isForwardRef;
+exports.isFragment = isFragment;
+exports.isLazy = isLazy;
+exports.isMemo = isMemo;
+exports.isPortal = isPortal;
+exports.isProfiler = isProfiler;
+exports.isStrictMode = isStrictMode;
+exports.isSuspense = isSuspense;
+exports.isValidElementType = isValidElementType;
+exports.typeOf = typeOf;
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-is/index.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-is/index.js ***!
+  \*************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-beautiful-dnd/node_modules/react-is/cjs/react-is.development.js");
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ReactReduxContext": () => (/* binding */ ReactReduxContext),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var ReactReduxContext = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
+
+if (true) {
+  ReactReduxContext.displayName = 'ReactRedux';
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ReactReduxContext);
 
 /***/ }),
 
@@ -34639,92 +34020,72 @@ ConnectedDraggable.defaultProps = defaultProps$1;
 /*!*********************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Provider.js ***!
   \*********************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createProvider": function() { return /* binding */ createProvider; }
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _utils_PropTypes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/PropTypes */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/PropTypes.js");
-/* harmony import */ var _utils_warning__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/warning */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/warning.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Context */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js");
+/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/Subscription.js");
+/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
 
 
 
 
 
-var prefixUnsafeLifecycleMethods = typeof react__WEBPACK_IMPORTED_MODULE_1__.forwardRef !== "undefined";
-var didWarnAboutReceivingStore = false;
 
-function warnAboutReceivingStore() {
-  if (didWarnAboutReceivingStore) {
-    return;
-  }
-
-  didWarnAboutReceivingStore = true;
-  (0,_utils_warning__WEBPACK_IMPORTED_MODULE_3__["default"])('<Provider> does not support changing `store` on the fly. ' + 'It is most likely that you see this error because you updated to ' + 'Redux 2.x and React Redux 2.x which no longer hot reload reducers ' + 'automatically. See https://github.com/reduxjs/react-redux/releases/' + 'tag/v2.0.0 for the migration instructions.');
-}
-
-function createProvider(storeKey) {
-  var _Provider$childContex;
-
-  if (storeKey === void 0) {
-    storeKey = 'store';
-  }
-
-  var subscriptionKey = storeKey + "Subscription";
-
-  var Provider =
-  /*#__PURE__*/
-  function (_Component) {
-    (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(Provider, _Component);
-
-    var _proto = Provider.prototype;
-
-    _proto.getChildContext = function getChildContext() {
-      var _ref;
-
-      return _ref = {}, _ref[storeKey] = this[storeKey], _ref[subscriptionKey] = null, _ref;
+function Provider(_ref) {
+  var store = _ref.store,
+      context = _ref.context,
+      children = _ref.children;
+  var contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    var subscription = (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_2__.createSubscription)(store);
+    return {
+      store: store,
+      subscription: subscription
     };
+  }, [store]);
+  var previousState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    return store.getState();
+  }, [store]);
+  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__.useIsomorphicLayoutEffect)(function () {
+    var subscription = contextValue.subscription;
+    subscription.onStateChange = subscription.notifyNestedSubs;
+    subscription.trySubscribe();
 
-    function Provider(props, context) {
-      var _this;
-
-      _this = _Component.call(this, props, context) || this;
-      _this[storeKey] = props.store;
-      return _this;
+    if (previousState !== store.getState()) {
+      subscription.notifyNestedSubs();
     }
 
-    _proto.render = function render() {
-      return react__WEBPACK_IMPORTED_MODULE_1__.Children.only(this.props.children);
+    return function () {
+      subscription.tryUnsubscribe();
+      subscription.onStateChange = null;
     };
-
-    return Provider;
-  }(react__WEBPACK_IMPORTED_MODULE_1__.Component);
-
-  if (true) {
-    // Use UNSAFE_ event name where supported
-    var eventName = prefixUnsafeLifecycleMethods ? 'UNSAFE_componentWillReceiveProps' : 'componentWillReceiveProps';
-
-    Provider.prototype[eventName] = function (nextProps) {
-      if (this[storeKey] !== nextProps.store) {
-        warnAboutReceivingStore();
-      }
-    };
-  }
-
-  Provider.propTypes = {
-    store: _utils_PropTypes__WEBPACK_IMPORTED_MODULE_2__.storeShape.isRequired,
-    children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().element.isRequired)
-  };
-  Provider.childContextTypes = (_Provider$childContex = {}, _Provider$childContex[storeKey] = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_2__.storeShape.isRequired, _Provider$childContex[subscriptionKey] = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_2__.subscriptionShape, _Provider$childContex);
-  return Provider;
+  }, [contextValue, previousState]);
+  var Context = context || _Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Context.Provider, {
+    value: contextValue
+  }, children);
 }
-/* harmony default export */ __webpack_exports__["default"] = (createProvider());
+
+if (true) {
+  Provider.propTypes = {
+    store: prop_types__WEBPACK_IMPORTED_MODULE_4___default().shape({
+      subscribe: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func.isRequired),
+      dispatch: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func.isRequired),
+      getState: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().func.isRequired)
+    }),
+    context: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().object),
+    children: (prop_types__WEBPACK_IMPORTED_MODULE_4___default().any)
+  };
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Provider);
 
 /***/ }),
 
@@ -34732,81 +34093,166 @@ function createProvider(storeKey) {
 /*!****************************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/connectAdvanced.js ***!
   \****************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ connectAdvanced; }
+/* harmony export */   "default": () => (/* binding */ connectAdvanced)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/inheritsLoose */ "./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js");
-/* harmony import */ var _babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
-/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
-/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
-/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! invariant */ "./node_modules/invariant/browser.js");
-/* harmony import */ var invariant__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(invariant__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/Subscription.js");
-/* harmony import */ var _utils_PropTypes__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../utils/PropTypes */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/PropTypes.js");
+/* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
+/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
+/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react_is__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-is */ "./node_modules/react-beautiful-dnd/node_modules/react-is/index.js");
+/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/Subscription.js");
+/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
+/* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Context */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js");
+
+
+var _excluded = ["getDisplayName", "methodName", "renderCountProp", "shouldHandleStateChanges", "storeKey", "withRef", "forwardRef", "context"],
+    _excluded2 = ["reactReduxForwardedRef"];
 
 
 
 
 
+ // Define some constant arrays just to avoid re-creating these
+
+var EMPTY_ARRAY = [];
+var NO_SUBSCRIPTION_ARRAY = [null, null];
+
+var stringifyComponent = function stringifyComponent(Comp) {
+  try {
+    return JSON.stringify(Comp);
+  } catch (err) {
+    return String(Comp);
+  }
+};
+
+function storeStateUpdatesReducer(state, action) {
+  var updateCount = state[1];
+  return [action.payload, updateCount + 1];
+}
+
+function useIsomorphicLayoutEffectWithArgs(effectFunc, effectArgs, dependencies) {
+  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_6__.useIsomorphicLayoutEffect)(function () {
+    return effectFunc.apply(void 0, effectArgs);
+  }, dependencies);
+}
+
+function captureWrapperProps(lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, actualChildProps, childPropsFromStoreUpdate, notifyNestedSubs) {
+  // We want to capture the wrapper props and child props we used for later comparisons
+  lastWrapperProps.current = wrapperProps;
+  lastChildProps.current = actualChildProps;
+  renderIsScheduled.current = false; // If the render was from a store update, clear out that reference and cascade the subscriber update
+
+  if (childPropsFromStoreUpdate.current) {
+    childPropsFromStoreUpdate.current = null;
+    notifyNestedSubs();
+  }
+}
+
+function subscribeUpdates(shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, childPropsFromStoreUpdate, notifyNestedSubs, forceComponentUpdateDispatch) {
+  // If we're not subscribed to the store, nothing to do here
+  if (!shouldHandleStateChanges) return; // Capture values for checking if and when this component unmounts
+
+  var didUnsubscribe = false;
+  var lastThrownError = null; // We'll run this callback every time a store subscription update propagates to this component
+
+  var checkForUpdates = function checkForUpdates() {
+    if (didUnsubscribe) {
+      // Don't run stale listeners.
+      // Redux doesn't guarantee unsubscriptions happen until next dispatch.
+      return;
+    }
+
+    var latestStoreState = store.getState();
+    var newChildProps, error;
+
+    try {
+      // Actually run the selector with the most recent store state and wrapper props
+      // to determine what the child props should be
+      newChildProps = childPropsSelector(latestStoreState, lastWrapperProps.current);
+    } catch (e) {
+      error = e;
+      lastThrownError = e;
+    }
+
+    if (!error) {
+      lastThrownError = null;
+    } // If the child props haven't changed, nothing to do here - cascade the subscription update
 
 
-
-
-
-var prefixUnsafeLifecycleMethods = typeof react__WEBPACK_IMPORTED_MODULE_6__.forwardRef !== "undefined";
-var hotReloadingVersion = 0;
-var dummyState = {};
-
-function noop() {}
-
-function makeSelectorStateful(sourceSelector, store) {
-  // wrap the selector in an object that tracks its results between runs.
-  var selector = {
-    run: function runComponentSelector(props) {
-      try {
-        var nextProps = sourceSelector(store.getState(), props);
-
-        if (nextProps !== selector.props || selector.error) {
-          selector.shouldComponentUpdate = true;
-          selector.props = nextProps;
-          selector.error = null;
-        }
-      } catch (error) {
-        selector.shouldComponentUpdate = true;
-        selector.error = error;
+    if (newChildProps === lastChildProps.current) {
+      if (!renderIsScheduled.current) {
+        notifyNestedSubs();
       }
+    } else {
+      // Save references to the new child props.  Note that we track the "child props from store update"
+      // as a ref instead of a useState/useReducer because we need a way to determine if that value has
+      // been processed.  If this went into useState/useReducer, we couldn't clear out the value without
+      // forcing another re-render, which we don't want.
+      lastChildProps.current = newChildProps;
+      childPropsFromStoreUpdate.current = newChildProps;
+      renderIsScheduled.current = true; // If the child props _did_ change (or we caught an error), this wrapper component needs to re-render
+
+      forceComponentUpdateDispatch({
+        type: 'STORE_UPDATED',
+        payload: {
+          error: error
+        }
+      });
+    }
+  }; // Actually subscribe to the nearest connected ancestor (or store)
+
+
+  subscription.onStateChange = checkForUpdates;
+  subscription.trySubscribe(); // Pull data from the store after first render in case the store has
+  // changed since we began.
+
+  checkForUpdates();
+
+  var unsubscribeWrapper = function unsubscribeWrapper() {
+    didUnsubscribe = true;
+    subscription.tryUnsubscribe();
+    subscription.onStateChange = null;
+
+    if (lastThrownError) {
+      // It's possible that we caught an error due to a bad mapState function, but the
+      // parent re-rendered without this component and we're about to unmount.
+      // This shouldn't happen as long as we do top-down subscriptions correctly, but
+      // if we ever do those wrong, this throw will surface the error in our tests.
+      // In that case, throw the error from here so it doesn't get lost.
+      throw lastThrownError;
     }
   };
-  return selector;
+
+  return unsubscribeWrapper;
 }
+
+var initStateUpdates = function initStateUpdates() {
+  return [null, 0];
+};
 
 function connectAdvanced(
 /*
   selectorFactory is a func that is responsible for returning the selector function used to
   compute new props from state, props, and dispatch. For example:
-     export default connectAdvanced((dispatch, options) => (state, props) => ({
+      export default connectAdvanced((dispatch, options) => (state, props) => ({
       thing: state.things[props.thingId],
       saveThing: fields => dispatch(actionCreators.saveThing(props.thingId, fields)),
     }))(YourComponent)
-   Access to dispatch is provided to the factory so selectorFactories can bind actionCreators
+    Access to dispatch is provided to the factory so selectorFactories can bind actionCreators
   outside of their selector as an optimization. Options passed to connectAdvanced are passed to
   the selectorFactory, along with displayName and WrappedComponent, as the second argument.
-   Note that selectorFactory is responsible for all caching/memoization of inbound and outbound
+    Note that selectorFactory is responsible for all caching/memoization of inbound and outbound
   props. Do not use connectAdvanced directly without memoizing results between calls to your
   selector, otherwise the Connect component will re-render on every state or props change.
 */
 selectorFactory, // options object:
 _ref) {
-  var _contextTypes, _childContextTypes;
-
   if (_ref === void 0) {
     _ref = {};
   }
@@ -34826,233 +34272,218 @@ _ref) {
       storeKey = _ref2$storeKey === void 0 ? 'store' : _ref2$storeKey,
       _ref2$withRef = _ref2.withRef,
       withRef = _ref2$withRef === void 0 ? false : _ref2$withRef,
-      connectOptions = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_3__["default"])(_ref2, ["getDisplayName", "methodName", "renderCountProp", "shouldHandleStateChanges", "storeKey", "withRef"]);
+      _ref2$forwardRef = _ref2.forwardRef,
+      forwardRef = _ref2$forwardRef === void 0 ? false : _ref2$forwardRef,
+      _ref2$context = _ref2.context,
+      context = _ref2$context === void 0 ? _Context__WEBPACK_IMPORTED_MODULE_7__.ReactReduxContext : _ref2$context,
+      connectOptions = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref2, _excluded);
 
-  var subscriptionKey = storeKey + 'Subscription';
-  var version = hotReloadingVersion++;
-  var contextTypes = (_contextTypes = {}, _contextTypes[storeKey] = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_9__.storeShape, _contextTypes[subscriptionKey] = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_9__.subscriptionShape, _contextTypes);
-  var childContextTypes = (_childContextTypes = {}, _childContextTypes[subscriptionKey] = _utils_PropTypes__WEBPACK_IMPORTED_MODULE_9__.subscriptionShape, _childContextTypes);
+  if (true) {
+    if (renderCountProp !== undefined) {
+      throw new Error("renderCountProp is removed. render counting is built into the latest React Dev Tools profiling extension");
+    }
+
+    if (withRef) {
+      throw new Error('withRef is removed. To access the wrapped instance, use a ref on the connected component');
+    }
+
+    var customStoreWarningMessage = 'To use a custom Redux store for specific components, create a custom React context with ' + "React.createContext(), and pass the context object to React Redux's Provider and specific components" + ' like: <Provider context={MyContext}><ConnectedComponent context={MyContext} /></Provider>. ' + 'You may also pass a {context : MyContext} option to connect';
+
+    if (storeKey !== 'store') {
+      throw new Error('storeKey has been removed and does not do anything. ' + customStoreWarningMessage);
+    }
+  }
+
+  var Context = context;
   return function wrapWithConnect(WrappedComponent) {
-    invariant__WEBPACK_IMPORTED_MODULE_5___default()((0,react_is__WEBPACK_IMPORTED_MODULE_7__.isValidElementType)(WrappedComponent), "You must pass a component to the function returned by " + (methodName + ". Instead received " + JSON.stringify(WrappedComponent)));
+    if ( true && !(0,react_is__WEBPACK_IMPORTED_MODULE_4__.isValidElementType)(WrappedComponent)) {
+      throw new Error("You must pass a component to the function returned by " + (methodName + ". Instead received " + stringifyComponent(WrappedComponent)));
+    }
+
     var wrappedComponentName = WrappedComponent.displayName || WrappedComponent.name || 'Component';
     var displayName = getDisplayName(wrappedComponentName);
 
-    var selectorFactoryOptions = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, connectOptions, {
+    var selectorFactoryOptions = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, connectOptions, {
       getDisplayName: getDisplayName,
       methodName: methodName,
       renderCountProp: renderCountProp,
       shouldHandleStateChanges: shouldHandleStateChanges,
       storeKey: storeKey,
-      withRef: withRef,
       displayName: displayName,
       wrappedComponentName: wrappedComponentName,
-      WrappedComponent: WrappedComponent // TODO Actually fix our use of componentWillReceiveProps
-
-      /* eslint-disable react/no-deprecated */
-
+      WrappedComponent: WrappedComponent
     });
 
-    var Connect =
-    /*#__PURE__*/
-    function (_Component) {
-      (0,_babel_runtime_helpers_esm_inheritsLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(Connect, _Component);
+    var pure = connectOptions.pure;
 
-      function Connect(props, context) {
-        var _this;
-
-        _this = _Component.call(this, props, context) || this;
-        _this.version = version;
-        _this.state = {};
-        _this.renderCount = 0;
-        _this.store = props[storeKey] || context[storeKey];
-        _this.propsMode = Boolean(props[storeKey]);
-        _this.setWrappedInstance = _this.setWrappedInstance.bind((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__["default"])((0,_babel_runtime_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_1__["default"])(_this)));
-        invariant__WEBPACK_IMPORTED_MODULE_5___default()(_this.store, "Could not find \"" + storeKey + "\" in either the context or props of " + ("\"" + displayName + "\". Either wrap the root component in a <Provider>, ") + ("or explicitly pass \"" + storeKey + "\" as a prop to \"" + displayName + "\"."));
-
-        _this.initSelector();
-
-        _this.initSubscription();
-
-        return _this;
-      }
-
-      var _proto = Connect.prototype;
-
-      _proto.getChildContext = function getChildContext() {
-        var _ref3;
-
-        // If this component received store from props, its subscription should be transparent
-        // to any descendants receiving store+subscription from context; it passes along
-        // subscription passed to it. Otherwise, it shadows the parent subscription, which allows
-        // Connect to control ordering of notifications to flow top-down.
-        var subscription = this.propsMode ? null : this.subscription;
-        return _ref3 = {}, _ref3[subscriptionKey] = subscription || this.context[subscriptionKey], _ref3;
-      };
-
-      _proto.componentDidMount = function componentDidMount() {
-        if (!shouldHandleStateChanges) return; // componentWillMount fires during server side rendering, but componentDidMount and
-        // componentWillUnmount do not. Because of this, trySubscribe happens during ...didMount.
-        // Otherwise, unsubscription would never take place during SSR, causing a memory leak.
-        // To handle the case where a child component may have triggered a state change by
-        // dispatching an action in its componentWillMount, we have to re-run the select and maybe
-        // re-render.
-
-        this.subscription.trySubscribe();
-        this.selector.run(this.props);
-        if (this.selector.shouldComponentUpdate) this.forceUpdate();
-      }; // Note: this is renamed below to the UNSAFE_ version in React >=16.3.0
+    function createChildSelector(store) {
+      return selectorFactory(store.dispatch, selectorFactoryOptions);
+    } // If we aren't running in "pure" mode, we don't want to memoize values.
+    // To avoid conditionally calling hooks, we fall back to a tiny wrapper
+    // that just executes the given callback immediately.
 
 
-      _proto.componentWillReceiveProps = function componentWillReceiveProps(nextProps) {
-        this.selector.run(nextProps);
-      };
+    var usePureOnlyMemo = pure ? react__WEBPACK_IMPORTED_MODULE_3__.useMemo : function (callback) {
+      return callback();
+    };
 
-      _proto.shouldComponentUpdate = function shouldComponentUpdate() {
-        return this.selector.shouldComponentUpdate;
-      };
+    function ConnectFunction(props) {
+      var _useMemo = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
+        // Distinguish between actual "data" props that were passed to the wrapper component,
+        // and values needed to control behavior (forwarded refs, alternate context instances).
+        // To maintain the wrapperProps object reference, memoize this destructuring.
+        var reactReduxForwardedRef = props.reactReduxForwardedRef,
+            wrapperProps = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(props, _excluded2);
 
-      _proto.componentWillUnmount = function componentWillUnmount() {
-        if (this.subscription) this.subscription.tryUnsubscribe();
-        this.subscription = null;
-        this.notifyNestedSubs = noop;
-        this.store = null;
-        this.selector.run = noop;
-        this.selector.shouldComponentUpdate = false;
-      };
+        return [props.context, reactReduxForwardedRef, wrapperProps];
+      }, [props]),
+          propsContext = _useMemo[0],
+          reactReduxForwardedRef = _useMemo[1],
+          wrapperProps = _useMemo[2];
 
-      _proto.getWrappedInstance = function getWrappedInstance() {
-        invariant__WEBPACK_IMPORTED_MODULE_5___default()(withRef, "To access the wrapped instance, you need to specify " + ("{ withRef: true } in the options argument of the " + methodName + "() call."));
-        return this.wrappedInstance;
-      };
+      var ContextToUse = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
+        // Users may optionally pass in a custom context instance to use instead of our ReactReduxContext.
+        // Memoize the check that determines which context instance we should use.
+        return propsContext && propsContext.Consumer && (0,react_is__WEBPACK_IMPORTED_MODULE_4__.isContextConsumer)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(propsContext.Consumer, null)) ? propsContext : Context;
+      }, [propsContext, Context]); // Retrieve the store and ancestor subscription via context, if available
 
-      _proto.setWrappedInstance = function setWrappedInstance(ref) {
-        this.wrappedInstance = ref;
-      };
+      var contextValue = (0,react__WEBPACK_IMPORTED_MODULE_3__.useContext)(ContextToUse); // The store _must_ exist as either a prop or in context.
+      // We'll check to see if it _looks_ like a Redux store first.
+      // This allows us to pass through a `store` prop that is just a plain value.
 
-      _proto.initSelector = function initSelector() {
-        var sourceSelector = selectorFactory(this.store.dispatch, selectorFactoryOptions);
-        this.selector = makeSelectorStateful(sourceSelector, this.store);
-        this.selector.run(this.props);
-      };
+      var didStoreComeFromProps = Boolean(props.store) && Boolean(props.store.getState) && Boolean(props.store.dispatch);
+      var didStoreComeFromContext = Boolean(contextValue) && Boolean(contextValue.store);
 
-      _proto.initSubscription = function initSubscription() {
-        if (!shouldHandleStateChanges) return; // parentSub's source should match where store came from: props vs. context. A component
+      if ( true && !didStoreComeFromProps && !didStoreComeFromContext) {
+        throw new Error("Could not find \"store\" in the context of " + ("\"" + displayName + "\". Either wrap the root component in a <Provider>, ") + "or pass a custom React context provider to <Provider> and the corresponding " + ("React context consumer to " + displayName + " in connect options."));
+      } // Based on the previous check, one of these must be true
+
+
+      var store = didStoreComeFromProps ? props.store : contextValue.store;
+      var childPropsSelector = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
+        // The child props selector needs the store reference as an input.
+        // Re-create this selector whenever the store changes.
+        return createChildSelector(store);
+      }, [store]);
+
+      var _useMemo2 = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
+        if (!shouldHandleStateChanges) return NO_SUBSCRIPTION_ARRAY; // This Subscription's source should match where store came from: props vs. context. A component
         // connected to the store via props shouldn't use subscription from context, or vice versa.
 
-        var parentSub = (this.propsMode ? this.props : this.context)[subscriptionKey];
-        this.subscription = new _utils_Subscription__WEBPACK_IMPORTED_MODULE_8__["default"](this.store, parentSub, this.onStateChange.bind(this)); // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
-        // the middle of the notification loop, where `this.subscription` will then be null. An
-        // extra null check every change can be avoided by copying the method onto `this` and then
-        // replacing it with a no-op on unmount. This can probably be avoided if Subscription's
-        // listeners logic is changed to not call listeners that have been unsubscribed in the
-        // middle of the notification loop.
+        // This Subscription's source should match where store came from: props vs. context. A component
+        // connected to the store via props shouldn't use subscription from context, or vice versa.
+        var subscription = (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_5__.createSubscription)(store, didStoreComeFromProps ? null : contextValue.subscription); // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
+        // the middle of the notification loop, where `subscription` will then be null. This can
+        // probably be avoided if Subscription's listeners logic is changed to not call listeners
+        // that have been unsubscribed in the  middle of the notification loop.
 
-        this.notifyNestedSubs = this.subscription.notifyNestedSubs.bind(this.subscription);
-      };
+        // `notifyNestedSubs` is duplicated to handle the case where the component is unmounted in
+        // the middle of the notification loop, where `subscription` will then be null. This can
+        // probably be avoided if Subscription's listeners logic is changed to not call listeners
+        // that have been unsubscribed in the  middle of the notification loop.
+        var notifyNestedSubs = subscription.notifyNestedSubs.bind(subscription);
+        return [subscription, notifyNestedSubs];
+      }, [store, didStoreComeFromProps, contextValue]),
+          subscription = _useMemo2[0],
+          notifyNestedSubs = _useMemo2[1]; // Determine what {store, subscription} value should be put into nested context, if necessary,
+      // and memoize that value to avoid unnecessary context updates.
 
-      _proto.onStateChange = function onStateChange() {
-        this.selector.run(this.props);
 
-        if (!this.selector.shouldComponentUpdate) {
-          this.notifyNestedSubs();
-        } else {
-          this.componentDidUpdate = this.notifyNestedSubsOnComponentDidUpdate;
-          this.setState(dummyState);
+      var overriddenContextValue = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
+        if (didStoreComeFromProps) {
+          // This component is directly subscribed to a store from props.
+          // We don't want descendants reading from this store - pass down whatever
+          // the existing context value is from the nearest connected ancestor.
+          return contextValue;
+        } // Otherwise, put this component's subscription instance into context, so that
+        // connected descendants won't update until after this component is done
+
+
+        return (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, contextValue, {
+          subscription: subscription
+        });
+      }, [didStoreComeFromProps, contextValue, subscription]); // We need to force this wrapper component to re-render whenever a Redux store update
+      // causes a change to the calculated child component props (or we caught an error in mapState)
+
+      var _useReducer = (0,react__WEBPACK_IMPORTED_MODULE_3__.useReducer)(storeStateUpdatesReducer, EMPTY_ARRAY, initStateUpdates),
+          _useReducer$ = _useReducer[0],
+          previousStateUpdateResult = _useReducer$[0],
+          forceComponentUpdateDispatch = _useReducer[1]; // Propagate any mapState/mapDispatch errors upwards
+
+
+      if (previousStateUpdateResult && previousStateUpdateResult.error) {
+        throw previousStateUpdateResult.error;
+      } // Set up refs to coordinate values between the subscription effect and the render logic
+
+
+      var lastChildProps = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
+      var lastWrapperProps = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(wrapperProps);
+      var childPropsFromStoreUpdate = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
+      var renderIsScheduled = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(false);
+      var actualChildProps = usePureOnlyMemo(function () {
+        // Tricky logic here:
+        // - This render may have been triggered by a Redux store update that produced new child props
+        // - However, we may have gotten new wrapper props after that
+        // If we have new child props, and the same wrapper props, we know we should use the new child props as-is.
+        // But, if we have new wrapper props, those might change the child props, so we have to recalculate things.
+        // So, we'll use the child props from store update only if the wrapper props are the same as last time.
+        if (childPropsFromStoreUpdate.current && wrapperProps === lastWrapperProps.current) {
+          return childPropsFromStoreUpdate.current;
+        } // TODO We're reading the store directly in render() here. Bad idea?
+        // This will likely cause Bad Things (TM) to happen in Concurrent Mode.
+        // Note that we do this because on renders _not_ caused by store updates, we need the latest store state
+        // to determine what the child props should be.
+
+
+        return childPropsSelector(store.getState(), wrapperProps);
+      }, [store, previousStateUpdateResult, wrapperProps]); // We need this to execute synchronously every time we re-render. However, React warns
+      // about useLayoutEffect in SSR, so we try to detect environment and fall back to
+      // just useEffect instead to avoid the warning, since neither will run anyway.
+
+      useIsomorphicLayoutEffectWithArgs(captureWrapperProps, [lastWrapperProps, lastChildProps, renderIsScheduled, wrapperProps, actualChildProps, childPropsFromStoreUpdate, notifyNestedSubs]); // Our re-subscribe logic only runs when the store/subscription setup changes
+
+      useIsomorphicLayoutEffectWithArgs(subscribeUpdates, [shouldHandleStateChanges, store, subscription, childPropsSelector, lastWrapperProps, lastChildProps, renderIsScheduled, childPropsFromStoreUpdate, notifyNestedSubs, forceComponentUpdateDispatch], [store, subscription, childPropsSelector]); // Now that all that's done, we can finally try to actually render the child component.
+      // We memoize the elements for the rendered child component as an optimization.
+
+      var renderedWrappedComponent = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(WrappedComponent, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, actualChildProps, {
+          ref: reactReduxForwardedRef
+        }));
+      }, [reactReduxForwardedRef, WrappedComponent, actualChildProps]); // If React sees the exact same element reference as last time, it bails out of re-rendering
+      // that child, same as if it was wrapped in React.memo() or returned false from shouldComponentUpdate.
+
+      var renderedChild = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(function () {
+        if (shouldHandleStateChanges) {
+          // If this component is subscribed to store updates, we need to pass its own
+          // subscription instance down to our descendants. That means rendering the same
+          // Context instance, and putting a different value into the context.
+          return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(ContextToUse.Provider, {
+            value: overriddenContextValue
+          }, renderedWrappedComponent);
         }
-      };
 
-      _proto.notifyNestedSubsOnComponentDidUpdate = function notifyNestedSubsOnComponentDidUpdate() {
-        // `componentDidUpdate` is conditionally implemented when `onStateChange` determines it
-        // needs to notify nested subs. Once called, it unimplements itself until further state
-        // changes occur. Doing it this way vs having a permanent `componentDidUpdate` that does
-        // a boolean check every time avoids an extra method call most of the time, resulting
-        // in some perf boost.
-        this.componentDidUpdate = undefined;
-        this.notifyNestedSubs();
-      };
-
-      _proto.isSubscribed = function isSubscribed() {
-        return Boolean(this.subscription) && this.subscription.isSubscribed();
-      };
-
-      _proto.addExtraProps = function addExtraProps(props) {
-        if (!withRef && !renderCountProp && !(this.propsMode && this.subscription)) return props; // make a shallow copy so that fields added don't leak to the original selector.
-        // this is especially important for 'ref' since that's a reference back to the component
-        // instance. a singleton memoized selector would then be holding a reference to the
-        // instance, preventing the instance from being garbage collected, and that would be bad
-
-        var withExtras = (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_2__["default"])({}, props);
-
-        if (withRef) withExtras.ref = this.setWrappedInstance;
-        if (renderCountProp) withExtras[renderCountProp] = this.renderCount++;
-        if (this.propsMode && this.subscription) withExtras[subscriptionKey] = this.subscription;
-        return withExtras;
-      };
-
-      _proto.render = function render() {
-        var selector = this.selector;
-        selector.shouldComponentUpdate = false;
-
-        if (selector.error) {
-          throw selector.error;
-        } else {
-          return (0,react__WEBPACK_IMPORTED_MODULE_6__.createElement)(WrappedComponent, this.addExtraProps(selector.props));
-        }
-      };
-
-      return Connect;
-    }(react__WEBPACK_IMPORTED_MODULE_6__.Component);
-
-    if (prefixUnsafeLifecycleMethods) {
-      // Use UNSAFE_ event name where supported
-      Connect.prototype.UNSAFE_componentWillReceiveProps = Connect.prototype.componentWillReceiveProps;
-      delete Connect.prototype.componentWillReceiveProps;
-    }
-    /* eslint-enable react/no-deprecated */
+        return renderedWrappedComponent;
+      }, [ContextToUse, renderedWrappedComponent, overriddenContextValue]);
+      return renderedChild;
+    } // If we're in "pure" mode, ensure our wrapper component only re-renders when incoming props have changed.
 
 
+    var Connect = pure ? react__WEBPACK_IMPORTED_MODULE_3__.memo(ConnectFunction) : ConnectFunction;
     Connect.WrappedComponent = WrappedComponent;
-    Connect.displayName = displayName;
-    Connect.childContextTypes = childContextTypes;
-    Connect.contextTypes = contextTypes;
-    Connect.propTypes = contextTypes;
+    Connect.displayName = ConnectFunction.displayName = displayName;
 
-    if (true) {
-      // Use UNSAFE_ event name where supported
-      var eventName = prefixUnsafeLifecycleMethods ? 'UNSAFE_componentWillUpdate' : 'componentWillUpdate';
-
-      Connect.prototype[eventName] = function componentWillUpdate() {
-        var _this2 = this;
-
-        // We are hot reloading!
-        if (this.version !== version) {
-          this.version = version;
-          this.initSelector(); // If any connected descendants don't hot reload (and resubscribe in the process), their
-          // listeners will be lost when we unsubscribe. Unfortunately, by copying over all
-          // listeners, this does mean that the old versions of connected descendants will still be
-          // notified of state changes; however, their onStateChange function is a no-op so this
-          // isn't a huge deal.
-
-          var oldListeners = [];
-
-          if (this.subscription) {
-            oldListeners = this.subscription.listeners.get();
-            this.subscription.tryUnsubscribe();
-          }
-
-          this.initSubscription();
-
-          if (shouldHandleStateChanges) {
-            this.subscription.trySubscribe();
-            oldListeners.forEach(function (listener) {
-              return _this2.subscription.listeners.subscribe(listener);
-            });
-          }
-        }
-      };
+    if (forwardRef) {
+      var forwarded = react__WEBPACK_IMPORTED_MODULE_3__.forwardRef(function forwardConnectRef(props, ref) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(Connect, (0,_babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, props, {
+          reactReduxForwardedRef: ref
+        }));
+      });
+      forwarded.displayName = displayName;
+      forwarded.WrappedComponent = WrappedComponent;
+      return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2___default()(forwarded, WrappedComponent);
     }
 
-    return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_4___default()(Connect, WrappedComponent);
+    return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_2___default()(Connect, WrappedComponent);
   };
 }
 
@@ -35062,12 +34493,13 @@ _ref) {
 /*!*****************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/connect.js ***!
   \*****************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createConnect": function() { return /* binding */ createConnect; }
+/* harmony export */   "createConnect": () => (/* binding */ createConnect),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
@@ -35079,6 +34511,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _selectorFactory__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./selectorFactory */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/selectorFactory.js");
 
 
+var _excluded = ["pure", "areStatesEqual", "areOwnPropsEqual", "areStatePropsEqual", "areMergedPropsEqual"];
 
 
 
@@ -35090,7 +34523,7 @@ __webpack_require__.r(__webpack_exports__);
   selectorFactory, which has the signature:
 
     (dispatch, options) => (nextState, nextOwnProps) => nextFinalProps
-
+  
   connect passes its args to connectAdvanced as options, which will in turn pass them to
   selectorFactory each time a Connect component instance is instantiated or hot reloaded.
 
@@ -35148,7 +34581,7 @@ function createConnect(_temp) {
         areStatePropsEqual = _ref3$areStatePropsEq === void 0 ? _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_3__["default"] : _ref3$areStatePropsEq,
         _ref3$areMergedPropsE = _ref3.areMergedPropsEqual,
         areMergedPropsEqual = _ref3$areMergedPropsE === void 0 ? _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_3__["default"] : _ref3$areMergedPropsE,
-        extraOptions = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref3, ["pure", "areStatesEqual", "areOwnPropsEqual", "areStatePropsEqual", "areMergedPropsEqual"]);
+        extraOptions = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__["default"])(_ref3, _excluded);
 
     var initMapStateToProps = match(mapStateToProps, mapStateToPropsFactories, 'mapStateToProps');
     var initMapDispatchToProps = match(mapDispatchToProps, mapDispatchToPropsFactories, 'mapDispatchToProps');
@@ -35174,7 +34607,7 @@ function createConnect(_temp) {
     }, extraOptions));
   };
 }
-/* harmony default export */ __webpack_exports__["default"] = (createConnect());
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (/*#__PURE__*/createConnect());
 
 /***/ }),
 
@@ -35182,35 +34615,36 @@ function createConnect(_temp) {
 /*!****************************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/mapDispatchToProps.js ***!
   \****************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "whenMapDispatchToPropsIsFunction": function() { return /* binding */ whenMapDispatchToPropsIsFunction; },
-/* harmony export */   "whenMapDispatchToPropsIsMissing": function() { return /* binding */ whenMapDispatchToPropsIsMissing; },
-/* harmony export */   "whenMapDispatchToPropsIsObject": function() { return /* binding */ whenMapDispatchToPropsIsObject; }
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "whenMapDispatchToPropsIsFunction": () => (/* binding */ whenMapDispatchToPropsIsFunction),
+/* harmony export */   "whenMapDispatchToPropsIsMissing": () => (/* binding */ whenMapDispatchToPropsIsMissing),
+/* harmony export */   "whenMapDispatchToPropsIsObject": () => (/* binding */ whenMapDispatchToPropsIsObject)
 /* harmony export */ });
-/* harmony import */ var redux__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! redux */ "./node_modules/redux/es/redux.js");
-/* harmony import */ var _wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wrapMapToProps */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/wrapMapToProps.js");
+/* harmony import */ var _utils_bindActionCreators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/bindActionCreators */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/bindActionCreators.js");
+/* harmony import */ var _wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./wrapMapToProps */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/wrapMapToProps.js");
 
 
 function whenMapDispatchToPropsIsFunction(mapDispatchToProps) {
-  return typeof mapDispatchToProps === 'function' ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__.wrapMapToPropsFunc)(mapDispatchToProps, 'mapDispatchToProps') : undefined;
+  return typeof mapDispatchToProps === 'function' ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsFunc)(mapDispatchToProps, 'mapDispatchToProps') : undefined;
 }
 function whenMapDispatchToPropsIsMissing(mapDispatchToProps) {
-  return !mapDispatchToProps ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__.wrapMapToPropsConstant)(function (dispatch) {
+  return !mapDispatchToProps ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsConstant)(function (dispatch) {
     return {
       dispatch: dispatch
     };
   }) : undefined;
 }
 function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
-  return mapDispatchToProps && typeof mapDispatchToProps === 'object' ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__.wrapMapToPropsConstant)(function (dispatch) {
-    return (0,redux__WEBPACK_IMPORTED_MODULE_1__.bindActionCreators)(mapDispatchToProps, dispatch);
+  return mapDispatchToProps && typeof mapDispatchToProps === 'object' ? (0,_wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__.wrapMapToPropsConstant)(function (dispatch) {
+    return (0,_utils_bindActionCreators__WEBPACK_IMPORTED_MODULE_0__["default"])(mapDispatchToProps, dispatch);
   }) : undefined;
 }
-/* harmony default export */ __webpack_exports__["default"] = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([whenMapDispatchToPropsIsFunction, whenMapDispatchToPropsIsMissing, whenMapDispatchToPropsIsObject]);
 
 /***/ }),
 
@@ -35218,13 +34652,14 @@ function whenMapDispatchToPropsIsObject(mapDispatchToProps) {
 /*!*************************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/mapStateToProps.js ***!
   \*************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "whenMapStateToPropsIsFunction": function() { return /* binding */ whenMapStateToPropsIsFunction; },
-/* harmony export */   "whenMapStateToPropsIsMissing": function() { return /* binding */ whenMapStateToPropsIsMissing; }
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "whenMapStateToPropsIsFunction": () => (/* binding */ whenMapStateToPropsIsFunction),
+/* harmony export */   "whenMapStateToPropsIsMissing": () => (/* binding */ whenMapStateToPropsIsMissing)
 /* harmony export */ });
 /* harmony import */ var _wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wrapMapToProps */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/wrapMapToProps.js");
 
@@ -35236,7 +34671,7 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
     return {};
   }) : undefined;
 }
-/* harmony default export */ __webpack_exports__["default"] = ([whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([whenMapStateToPropsIsFunction, whenMapStateToPropsIsMissing]);
 
 /***/ }),
 
@@ -35244,15 +34679,16 @@ function whenMapStateToPropsIsMissing(mapStateToProps) {
 /*!********************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/mergeProps.js ***!
   \********************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "defaultMergeProps": function() { return /* binding */ defaultMergeProps; },
-/* harmony export */   "whenMergePropsIsFunction": function() { return /* binding */ whenMergePropsIsFunction; },
-/* harmony export */   "whenMergePropsIsOmitted": function() { return /* binding */ whenMergePropsIsOmitted; },
-/* harmony export */   "wrapMergePropsFunc": function() { return /* binding */ wrapMergePropsFunc; }
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "defaultMergeProps": () => (/* binding */ defaultMergeProps),
+/* harmony export */   "whenMergePropsIsFunction": () => (/* binding */ whenMergePropsIsFunction),
+/* harmony export */   "whenMergePropsIsOmitted": () => (/* binding */ whenMergePropsIsOmitted),
+/* harmony export */   "wrapMergePropsFunc": () => (/* binding */ wrapMergePropsFunc)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _utils_verifyPlainObject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/verifyPlainObject */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/verifyPlainObject.js");
@@ -35291,7 +34727,7 @@ function whenMergePropsIsOmitted(mergeProps) {
     return defaultMergeProps;
   } : undefined;
 }
-/* harmony default export */ __webpack_exports__["default"] = ([whenMergePropsIsFunction, whenMergePropsIsOmitted]);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([whenMergePropsIsFunction, whenMergePropsIsOmitted]);
 
 /***/ }),
 
@@ -35299,18 +34735,19 @@ function whenMergePropsIsOmitted(mergeProps) {
 /*!*************************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/selectorFactory.js ***!
   \*************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ finalPropsSelectorFactory; },
-/* harmony export */   "impureFinalPropsSelectorFactory": function() { return /* binding */ impureFinalPropsSelectorFactory; },
-/* harmony export */   "pureFinalPropsSelectorFactory": function() { return /* binding */ pureFinalPropsSelectorFactory; }
+/* harmony export */   "default": () => (/* binding */ finalPropsSelectorFactory),
+/* harmony export */   "impureFinalPropsSelectorFactory": () => (/* binding */ impureFinalPropsSelectorFactory),
+/* harmony export */   "pureFinalPropsSelectorFactory": () => (/* binding */ pureFinalPropsSelectorFactory)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var _verifySubselectors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./verifySubselectors */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/verifySubselectors.js");
 
+var _excluded = ["initMapStateToProps", "initMapDispatchToProps", "initMergeProps"];
 
 function impureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, mergeProps, dispatch) {
   return function impureFinalPropsSelector(state, ownProps) {
@@ -35362,7 +34799,7 @@ function pureFinalPropsSelectorFactory(mapStateToProps, mapDispatchToProps, merg
 
   function handleSubsequentCalls(nextState, nextOwnProps) {
     var propsChanged = !areOwnPropsEqual(nextOwnProps, ownProps);
-    var stateChanged = !areStatesEqual(nextState, state);
+    var stateChanged = !areStatesEqual(nextState, state, nextOwnProps, ownProps);
     state = nextState;
     ownProps = nextOwnProps;
     if (propsChanged && stateChanged) return handleNewPropsAndNewState();
@@ -35384,7 +34821,7 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
   var initMapStateToProps = _ref2.initMapStateToProps,
       initMapDispatchToProps = _ref2.initMapDispatchToProps,
       initMergeProps = _ref2.initMergeProps,
-      options = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref2, ["initMapStateToProps", "initMapDispatchToProps", "initMergeProps"]);
+      options = (0,_babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__["default"])(_ref2, _excluded);
 
   var mapStateToProps = initMapStateToProps(dispatch, options);
   var mapDispatchToProps = initMapDispatchToProps(dispatch, options);
@@ -35404,12 +34841,12 @@ function finalPropsSelectorFactory(dispatch, _ref2) {
 /*!****************************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/verifySubselectors.js ***!
   \****************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ verifySubselectors; }
+/* harmony export */   "default": () => (/* binding */ verifySubselectors)
 /* harmony export */ });
 /* harmony import */ var _utils_warning__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/warning */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/warning.js");
 
@@ -35418,7 +34855,7 @@ function verify(selector, methodName, displayName) {
   if (!selector) {
     throw new Error("Unexpected value for " + methodName + " in " + displayName + ".");
   } else if (methodName === 'mapStateToProps' || methodName === 'mapDispatchToProps') {
-    if (!selector.hasOwnProperty('dependsOnOwnProps')) {
+    if (!Object.prototype.hasOwnProperty.call(selector, 'dependsOnOwnProps')) {
       (0,_utils_warning__WEBPACK_IMPORTED_MODULE_0__["default"])("The selector for " + methodName + " of " + displayName + " did not specify a value for dependsOnOwnProps.");
     }
   }
@@ -35436,14 +34873,14 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps, dis
 /*!************************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/wrapMapToProps.js ***!
   \************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getDependsOnOwnProps": function() { return /* binding */ getDependsOnOwnProps; },
-/* harmony export */   "wrapMapToPropsConstant": function() { return /* binding */ wrapMapToPropsConstant; },
-/* harmony export */   "wrapMapToPropsFunc": function() { return /* binding */ wrapMapToPropsFunc; }
+/* harmony export */   "getDependsOnOwnProps": () => (/* binding */ getDependsOnOwnProps),
+/* harmony export */   "wrapMapToPropsConstant": () => (/* binding */ wrapMapToPropsConstant),
+/* harmony export */   "wrapMapToPropsFunc": () => (/* binding */ wrapMapToPropsFunc)
 /* harmony export */ });
 /* harmony import */ var _utils_verifyPlainObject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/verifyPlainObject */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/verifyPlainObject.js");
 
@@ -35513,23 +34950,40 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 
 /***/ }),
 
-/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/index.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/index.js ***!
-  \*******************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/exports.js":
+/*!*********************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/exports.js ***!
+  \*********************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Provider": function() { return /* reexport safe */ _components_Provider__WEBPACK_IMPORTED_MODULE_0__["default"]; },
-/* harmony export */   "connect": function() { return /* reexport safe */ _connect_connect__WEBPACK_IMPORTED_MODULE_2__["default"]; },
-/* harmony export */   "connectAdvanced": function() { return /* reexport safe */ _components_connectAdvanced__WEBPACK_IMPORTED_MODULE_1__["default"]; },
-/* harmony export */   "createProvider": function() { return /* reexport safe */ _components_Provider__WEBPACK_IMPORTED_MODULE_0__.createProvider; }
+/* harmony export */   "Provider": () => (/* reexport safe */ _components_Provider__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   "ReactReduxContext": () => (/* reexport safe */ _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext),
+/* harmony export */   "connect": () => (/* reexport safe */ _connect_connect__WEBPACK_IMPORTED_MODULE_3__["default"]),
+/* harmony export */   "connectAdvanced": () => (/* reexport safe */ _components_connectAdvanced__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   "createDispatchHook": () => (/* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_4__.createDispatchHook),
+/* harmony export */   "createSelectorHook": () => (/* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_5__.createSelectorHook),
+/* harmony export */   "createStoreHook": () => (/* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_6__.createStoreHook),
+/* harmony export */   "shallowEqual": () => (/* reexport safe */ _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_7__["default"]),
+/* harmony export */   "useDispatch": () => (/* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_4__.useDispatch),
+/* harmony export */   "useSelector": () => (/* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_5__.useSelector),
+/* harmony export */   "useStore": () => (/* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_6__.useStore)
 /* harmony export */ });
 /* harmony import */ var _components_Provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Provider */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Provider.js");
 /* harmony import */ var _components_connectAdvanced__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/connectAdvanced */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/connectAdvanced.js");
-/* harmony import */ var _connect_connect__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./connect/connect */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/connect.js");
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/Context */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js");
+/* harmony import */ var _connect_connect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./connect/connect */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/connect/connect.js");
+/* harmony import */ var _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./hooks/useDispatch */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useDispatch.js");
+/* harmony import */ var _hooks_useSelector__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./hooks/useSelector */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useSelector.js");
+/* harmony import */ var _hooks_useStore__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./hooks/useStore */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useStore.js");
+/* harmony import */ var _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./utils/shallowEqual */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/shallowEqual.js");
+
+
+
+
+
 
 
 
@@ -35537,32 +34991,380 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/PropTypes.js":
-/*!*****************************************************************************************!*\
-  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/PropTypes.js ***!
-  \*****************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useDispatch.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useDispatch.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "storeShape": function() { return /* binding */ storeShape; },
-/* harmony export */   "subscriptionShape": function() { return /* binding */ subscriptionShape; }
+/* harmony export */   "createDispatchHook": () => (/* binding */ createDispatchHook),
+/* harmony export */   "useDispatch": () => (/* binding */ useDispatch)
 /* harmony export */ });
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js");
+/* harmony import */ var _useStore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useStore */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useStore.js");
 
-var subscriptionShape = prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
-  trySubscribe: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().func.isRequired),
-  tryUnsubscribe: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().func.isRequired),
-  notifyNestedSubs: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().func.isRequired),
-  isSubscribed: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().func.isRequired)
-});
-var storeShape = prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
-  subscribe: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().func.isRequired),
-  dispatch: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().func.isRequired),
-  getState: (prop_types__WEBPACK_IMPORTED_MODULE_0___default().func.isRequired)
-});
+
+/**
+ * Hook factory, which creates a `useDispatch` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useDispatch` hook bound to the specified context.
+ */
+
+function createDispatchHook(context) {
+  if (context === void 0) {
+    context = _components_Context__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext;
+  }
+
+  var useStore = context === _components_Context__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext ? _useStore__WEBPACK_IMPORTED_MODULE_1__.useStore : (0,_useStore__WEBPACK_IMPORTED_MODULE_1__.createStoreHook)(context);
+  return function useDispatch() {
+    var store = useStore();
+    return store.dispatch;
+  };
+}
+/**
+ * A hook to access the redux `dispatch` function.
+ *
+ * @returns {any|function} redux store's `dispatch` function
+ *
+ * @example
+ *
+ * import React, { useCallback } from 'react'
+ * import { useDispatch } from 'react-redux'
+ *
+ * export const CounterComponent = ({ value }) => {
+ *   const dispatch = useDispatch()
+ *   const increaseCounter = useCallback(() => dispatch({ type: 'increase-counter' }), [])
+ *   return (
+ *     <div>
+ *       <span>{value}</span>
+ *       <button onClick={increaseCounter}>Increase counter</button>
+ *     </div>
+ *   )
+ * }
+ */
+
+var useDispatch = /*#__PURE__*/createDispatchHook();
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useReduxContext.js":
+/*!***********************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useReduxContext.js ***!
+  \***********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useReduxContext": () => (/* binding */ useReduxContext)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js");
+
+
+/**
+ * A hook to access the value of the `ReactReduxContext`. This is a low-level
+ * hook that you should usually not need to call directly.
+ *
+ * @returns {any} the value of the `ReactReduxContext`
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useReduxContext } from 'react-redux'
+ *
+ * export const CounterComponent = ({ value }) => {
+ *   const { store } = useReduxContext()
+ *   return <div>{store.getState()}</div>
+ * }
+ */
+
+function useReduxContext() {
+  var contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext);
+
+  if ( true && !contextValue) {
+    throw new Error('could not find react-redux context value; please ensure the component is wrapped in a <Provider>');
+  }
+
+  return contextValue;
+}
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useSelector.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useSelector.js ***!
+  \*******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createSelectorHook": () => (/* binding */ createSelectorHook),
+/* harmony export */   "useSelector": () => (/* binding */ useSelector)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _useReduxContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useReduxContext */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useReduxContext.js");
+/* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/Subscription.js");
+/* harmony import */ var _utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../utils/useIsomorphicLayoutEffect */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js");
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js");
+
+
+
+
+
+
+var refEquality = function refEquality(a, b) {
+  return a === b;
+};
+
+function useSelectorWithStoreAndSubscription(selector, equalityFn, store, contextSub) {
+  var _useReducer = (0,react__WEBPACK_IMPORTED_MODULE_0__.useReducer)(function (s) {
+    return s + 1;
+  }, 0),
+      forceRender = _useReducer[1];
+
+  var subscription = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(function () {
+    return (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_2__.createSubscription)(store, contextSub);
+  }, [store, contextSub]);
+  var latestSubscriptionCallbackError = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var latestSelector = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var latestStoreState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var latestSelectedState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  var storeState = store.getState();
+  var selectedState;
+
+  try {
+    if (selector !== latestSelector.current || storeState !== latestStoreState.current || latestSubscriptionCallbackError.current) {
+      var newSelectedState = selector(storeState); // ensure latest selected state is reused so that a custom equality function can result in identical references
+
+      if (latestSelectedState.current === undefined || !equalityFn(newSelectedState, latestSelectedState.current)) {
+        selectedState = newSelectedState;
+      } else {
+        selectedState = latestSelectedState.current;
+      }
+    } else {
+      selectedState = latestSelectedState.current;
+    }
+  } catch (err) {
+    if (latestSubscriptionCallbackError.current) {
+      err.message += "\nThe error may be correlated with this previous error:\n" + latestSubscriptionCallbackError.current.stack + "\n\n";
+    }
+
+    throw err;
+  }
+
+  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__.useIsomorphicLayoutEffect)(function () {
+    latestSelector.current = selector;
+    latestStoreState.current = storeState;
+    latestSelectedState.current = selectedState;
+    latestSubscriptionCallbackError.current = undefined;
+  });
+  (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__.useIsomorphicLayoutEffect)(function () {
+    function checkForUpdates() {
+      try {
+        var newStoreState = store.getState(); // Avoid calling selector multiple times if the store's state has not changed
+
+        if (newStoreState === latestStoreState.current) {
+          return;
+        }
+
+        var _newSelectedState = latestSelector.current(newStoreState);
+
+        if (equalityFn(_newSelectedState, latestSelectedState.current)) {
+          return;
+        }
+
+        latestSelectedState.current = _newSelectedState;
+        latestStoreState.current = newStoreState;
+      } catch (err) {
+        // we ignore all errors here, since when the component
+        // is re-rendered, the selectors are called again, and
+        // will throw again, if neither props nor store state
+        // changed
+        latestSubscriptionCallbackError.current = err;
+      }
+
+      forceRender();
+    }
+
+    subscription.onStateChange = checkForUpdates;
+    subscription.trySubscribe();
+    checkForUpdates();
+    return function () {
+      return subscription.tryUnsubscribe();
+    };
+  }, [store, subscription]);
+  return selectedState;
+}
+/**
+ * Hook factory, which creates a `useSelector` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useSelector` hook bound to the specified context.
+ */
+
+
+function createSelectorHook(context) {
+  if (context === void 0) {
+    context = _components_Context__WEBPACK_IMPORTED_MODULE_4__.ReactReduxContext;
+  }
+
+  var useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_4__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_1__.useReduxContext : function () {
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
+  };
+  return function useSelector(selector, equalityFn) {
+    if (equalityFn === void 0) {
+      equalityFn = refEquality;
+    }
+
+    if (true) {
+      if (!selector) {
+        throw new Error("You must pass a selector to useSelector");
+      }
+
+      if (typeof selector !== 'function') {
+        throw new Error("You must pass a function as a selector to useSelector");
+      }
+
+      if (typeof equalityFn !== 'function') {
+        throw new Error("You must pass a function as an equality function to useSelector");
+      }
+    }
+
+    var _useReduxContext = useReduxContext(),
+        store = _useReduxContext.store,
+        contextSub = _useReduxContext.subscription;
+
+    var selectedState = useSelectorWithStoreAndSubscription(selector, equalityFn, store, contextSub);
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useDebugValue)(selectedState);
+    return selectedState;
+  };
+}
+/**
+ * A hook to access the redux store's state. This hook takes a selector function
+ * as an argument. The selector is called with the store state.
+ *
+ * This hook takes an optional equality comparison function as the second parameter
+ * that allows you to customize the way the selected state is compared to determine
+ * whether the component needs to be re-rendered.
+ *
+ * @param {Function} selector the selector function
+ * @param {Function=} equalityFn the function that will be used to determine equality
+ *
+ * @returns {any} the selected state
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useSelector } from 'react-redux'
+ *
+ * export const CounterComponent = () => {
+ *   const counter = useSelector(state => state.counter)
+ *   return <div>{counter}</div>
+ * }
+ */
+
+var useSelector = /*#__PURE__*/createSelectorHook();
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useStore.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useStore.js ***!
+  \****************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createStoreHook": () => (/* binding */ createStoreHook),
+/* harmony export */   "useStore": () => (/* binding */ useStore)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/components/Context.js");
+/* harmony import */ var _useReduxContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useReduxContext */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/hooks/useReduxContext.js");
+
+
+
+/**
+ * Hook factory, which creates a `useStore` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useStore` hook bound to the specified context.
+ */
+
+function createStoreHook(context) {
+  if (context === void 0) {
+    context = _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext;
+  }
+
+  var useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_2__.useReduxContext : function () {
+    return (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
+  };
+  return function useStore() {
+    var _useReduxContext = useReduxContext(),
+        store = _useReduxContext.store;
+
+    return store;
+  };
+}
+/**
+ * A hook to access the redux store.
+ *
+ * @returns {any} the redux store
+ *
+ * @example
+ *
+ * import React from 'react'
+ * import { useStore } from 'react-redux'
+ *
+ * export const ExampleComponent = () => {
+ *   const store = useStore()
+ *   return <div>{store.getState()}</div>
+ * }
+ */
+
+var useStore = /*#__PURE__*/createStoreHook();
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/index.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/index.js ***!
+  \*******************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Provider": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.Provider),
+/* harmony export */   "ReactReduxContext": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext),
+/* harmony export */   "batch": () => (/* reexport safe */ _utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_1__.unstable_batchedUpdates),
+/* harmony export */   "connect": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.connect),
+/* harmony export */   "connectAdvanced": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.connectAdvanced),
+/* harmony export */   "createDispatchHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.createDispatchHook),
+/* harmony export */   "createSelectorHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.createSelectorHook),
+/* harmony export */   "createStoreHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.createStoreHook),
+/* harmony export */   "shallowEqual": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.shallowEqual),
+/* harmony export */   "useDispatch": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.useDispatch),
+/* harmony export */   "useSelector": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.useSelector),
+/* harmony export */   "useStore": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_0__.useStore)
+/* harmony export */ });
+/* harmony import */ var _exports__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./exports */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/exports.js");
+/* harmony import */ var _utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./utils/reactBatchedUpdates */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/reactBatchedUpdates.js");
+/* harmony import */ var _utils_batch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./utils/batch */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/batch.js");
+
+
+ // Enable batched updates in our subscriptions for use
+// with standard React renderers (ReactDOM, React Native)
+
+(0,_utils_batch__WEBPACK_IMPORTED_MODULE_2__.setBatch)(_utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_1__.unstable_batchedUpdates);
+
 
 /***/ }),
 
@@ -35570,101 +35372,202 @@ var storeShape = prop_types__WEBPACK_IMPORTED_MODULE_0___default().shape({
 /*!********************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/Subscription.js ***!
   \********************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ Subscription; }
+/* harmony export */   "createSubscription": () => (/* binding */ createSubscription)
 /* harmony export */ });
-// encapsulates the subscription logic for connecting a component to the redux store, as
+/* harmony import */ var _batch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./batch */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/batch.js");
+ // encapsulates the subscription logic for connecting a component to the redux store, as
 // well as nesting subscriptions of descendant components, so that we can ensure the
 // ancestor components re-render before descendants
-var CLEARED = null;
-var nullListeners = {
-  notify: function notify() {}
-};
 
 function createListenerCollection() {
-  // the current/next pattern is copied from redux's createStore code.
-  // TODO: refactor+expose that code to be reusable here?
-  var current = [];
-  var next = [];
+  var batch = (0,_batch__WEBPACK_IMPORTED_MODULE_0__.getBatch)();
+  var first = null;
+  var last = null;
   return {
     clear: function clear() {
-      next = CLEARED;
-      current = CLEARED;
+      first = null;
+      last = null;
     },
     notify: function notify() {
-      var listeners = current = next;
+      batch(function () {
+        var listener = first;
 
-      for (var i = 0; i < listeners.length; i++) {
-        listeners[i]();
-      }
+        while (listener) {
+          listener.callback();
+          listener = listener.next;
+        }
+      });
     },
     get: function get() {
-      return next;
+      var listeners = [];
+      var listener = first;
+
+      while (listener) {
+        listeners.push(listener);
+        listener = listener.next;
+      }
+
+      return listeners;
     },
-    subscribe: function subscribe(listener) {
+    subscribe: function subscribe(callback) {
       var isSubscribed = true;
-      if (next === current) next = current.slice();
-      next.push(listener);
+      var listener = last = {
+        callback: callback,
+        next: null,
+        prev: last
+      };
+
+      if (listener.prev) {
+        listener.prev.next = listener;
+      } else {
+        first = listener;
+      }
+
       return function unsubscribe() {
-        if (!isSubscribed || current === CLEARED) return;
+        if (!isSubscribed || first === null) return;
         isSubscribed = false;
-        if (next === current) next = current.slice();
-        next.splice(next.indexOf(listener), 1);
+
+        if (listener.next) {
+          listener.next.prev = listener.prev;
+        } else {
+          last = listener.prev;
+        }
+
+        if (listener.prev) {
+          listener.prev.next = listener.next;
+        } else {
+          first = listener.next;
+        }
       };
     }
   };
 }
 
-var Subscription =
-/*#__PURE__*/
-function () {
-  function Subscription(store, parentSub, onStateChange) {
-    this.store = store;
-    this.parentSub = parentSub;
-    this.onStateChange = onStateChange;
-    this.unsubscribe = null;
-    this.listeners = nullListeners;
+var nullListeners = {
+  notify: function notify() {},
+  get: function get() {
+    return [];
+  }
+};
+function createSubscription(store, parentSub) {
+  var unsubscribe;
+  var listeners = nullListeners;
+
+  function addNestedSub(listener) {
+    trySubscribe();
+    return listeners.subscribe(listener);
   }
 
-  var _proto = Subscription.prototype;
+  function notifyNestedSubs() {
+    listeners.notify();
+  }
 
-  _proto.addNestedSub = function addNestedSub(listener) {
-    this.trySubscribe();
-    return this.listeners.subscribe(listener);
+  function handleChangeWrapper() {
+    if (subscription.onStateChange) {
+      subscription.onStateChange();
+    }
+  }
+
+  function isSubscribed() {
+    return Boolean(unsubscribe);
+  }
+
+  function trySubscribe() {
+    if (!unsubscribe) {
+      unsubscribe = parentSub ? parentSub.addNestedSub(handleChangeWrapper) : store.subscribe(handleChangeWrapper);
+      listeners = createListenerCollection();
+    }
+  }
+
+  function tryUnsubscribe() {
+    if (unsubscribe) {
+      unsubscribe();
+      unsubscribe = undefined;
+      listeners.clear();
+      listeners = nullListeners;
+    }
+  }
+
+  var subscription = {
+    addNestedSub: addNestedSub,
+    notifyNestedSubs: notifyNestedSubs,
+    handleChangeWrapper: handleChangeWrapper,
+    isSubscribed: isSubscribed,
+    trySubscribe: trySubscribe,
+    tryUnsubscribe: tryUnsubscribe,
+    getListeners: function getListeners() {
+      return listeners;
+    }
   };
+  return subscription;
+}
 
-  _proto.notifyNestedSubs = function notifyNestedSubs() {
-    this.listeners.notify();
-  };
+/***/ }),
 
-  _proto.isSubscribed = function isSubscribed() {
-    return Boolean(this.unsubscribe);
-  };
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/batch.js":
+/*!*************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/batch.js ***!
+  \*************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-  _proto.trySubscribe = function trySubscribe() {
-    if (!this.unsubscribe) {
-      this.unsubscribe = this.parentSub ? this.parentSub.addNestedSub(this.onStateChange) : this.store.subscribe(this.onStateChange);
-      this.listeners = createListenerCollection();
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getBatch": () => (/* binding */ getBatch),
+/* harmony export */   "setBatch": () => (/* binding */ setBatch)
+/* harmony export */ });
+// Default to a dummy "batch" implementation that just runs the callback
+function defaultNoopBatch(callback) {
+  callback();
+}
+
+var batch = defaultNoopBatch; // Allow injecting another batching function later
+
+var setBatch = function setBatch(newBatch) {
+  return batch = newBatch;
+}; // Supply a getter just to skip dealing with ESM bindings
+
+var getBatch = function getBatch() {
+  return batch;
+};
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/bindActionCreators.js":
+/*!**************************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/bindActionCreators.js ***!
+  \**************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ bindActionCreators)
+/* harmony export */ });
+function bindActionCreators(actionCreators, dispatch) {
+  var boundActionCreators = {};
+
+  var _loop = function _loop(key) {
+    var actionCreator = actionCreators[key];
+
+    if (typeof actionCreator === 'function') {
+      boundActionCreators[key] = function () {
+        return dispatch(actionCreator.apply(void 0, arguments));
+      };
     }
   };
 
-  _proto.tryUnsubscribe = function tryUnsubscribe() {
-    if (this.unsubscribe) {
-      this.unsubscribe();
-      this.unsubscribe = null;
-      this.listeners.clear();
-      this.listeners = nullListeners;
-    }
-  };
+  for (var key in actionCreators) {
+    _loop(key);
+  }
 
-  return Subscription;
-}();
-
-
+  return boundActionCreators;
+}
 
 /***/ }),
 
@@ -35672,12 +35575,12 @@ function () {
 /*!*********************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/isPlainObject.js ***!
   \*********************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ isPlainObject; }
+/* harmony export */   "default": () => (/* binding */ isPlainObject)
 /* harmony export */ });
 /**
  * @param {any} obj The object to inspect.
@@ -35698,19 +35601,34 @@ function isPlainObject(obj) {
 
 /***/ }),
 
-/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/shallowEqual.js":
-/*!********************************************************************************************!*\
-  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/shallowEqual.js ***!
-  \********************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/reactBatchedUpdates.js":
+/*!***************************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/reactBatchedUpdates.js ***!
+  \***************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ shallowEqual; }
+/* harmony export */   "unstable_batchedUpdates": () => (/* reexport safe */ react_dom__WEBPACK_IMPORTED_MODULE_0__.unstable_batchedUpdates)
 /* harmony export */ });
-var hasOwn = Object.prototype.hasOwnProperty;
+/* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+/* eslint-disable import/no-unresolved */
 
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/shallowEqual.js":
+/*!********************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/shallowEqual.js ***!
+  \********************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ shallowEqual)
+/* harmony export */ });
 function is(x, y) {
   if (x === y) {
     return x !== 0 || y !== 0 || 1 / x === 1 / y;
@@ -35731,7 +35649,7 @@ function shallowEqual(objA, objB) {
   if (keysA.length !== keysB.length) return false;
 
   for (var i = 0; i < keysA.length; i++) {
-    if (!hasOwn.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
+    if (!Object.prototype.hasOwnProperty.call(objB, keysA[i]) || !is(objA[keysA[i]], objB[keysA[i]])) {
       return false;
     }
   }
@@ -35741,16 +35659,41 @@ function shallowEqual(objA, objB) {
 
 /***/ }),
 
-/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/verifyPlainObject.js":
-/*!*************************************************************************************************!*\
-  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/verifyPlainObject.js ***!
-  \*************************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js":
+/*!*********************************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js ***!
+  \*********************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ verifyPlainObject; }
+/* harmony export */   "useIsomorphicLayoutEffect": () => (/* binding */ useIsomorphicLayoutEffect)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+ // React currently throws a warning when using useLayoutEffect on the server.
+// To get around it, we can conditionally useEffect on the server (no-op) and
+// useLayoutEffect in the browser. We need useLayoutEffect to ensure the store
+// subscription callback always has the selector from the latest render commit
+// available, otherwise a store update may happen between render and the effect,
+// which may cause missed updates; we also must ensure the store subscription
+// is created synchronously, otherwise a store update may occur before the
+// subscription is created and an inconsistent state may be observed
+
+var useIsomorphicLayoutEffect = typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined' ? react__WEBPACK_IMPORTED_MODULE_0__.useLayoutEffect : react__WEBPACK_IMPORTED_MODULE_0__.useEffect;
+
+/***/ }),
+
+/***/ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/verifyPlainObject.js":
+/*!*************************************************************************************************!*\
+  !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/verifyPlainObject.js ***!
+  \*************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ verifyPlainObject)
 /* harmony export */ });
 /* harmony import */ var _isPlainObject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isPlainObject */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/isPlainObject.js");
 /* harmony import */ var _warning__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./warning */ "./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/warning.js");
@@ -35768,12 +35711,12 @@ function verifyPlainObject(value, displayName, methodName) {
 /*!***************************************************************************************!*\
   !*** ./node_modules/react-beautiful-dnd/node_modules/react-redux/es/utils/warning.js ***!
   \***************************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ warning; }
+/* harmony export */   "default": () => (/* binding */ warning)
 /* harmony export */ });
 /**
  * Prints a warning in the console if it exists.
@@ -35806,7 +35749,7 @@ function warning(message) {
 /*!*************************************************************!*\
   !*** ./node_modules/react-dom/cjs/react-dom.development.js ***!
   \*************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 /** @license React v16.14.0
@@ -60829,7 +60772,7 @@ exports.version = ReactVersion;
 /*!*****************************************!*\
   !*** ./node_modules/react-dom/index.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -60873,7 +60816,7 @@ if (false) {} else {
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, exports) {
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 /** @license React v16.13.1
@@ -61065,7 +61008,7 @@ exports.typeOf = typeOf;
 /*!****************************************!*\
   !*** ./node_modules/react-is/index.js ***!
   \****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -61081,42 +61024,23 @@ if (false) {} else {
 /*!***********************************************************!*\
   !*** ./node_modules/react-redux/es/components/Context.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "ReactReduxContext": function() { return /* binding */ ReactReduxContext; }
+/* harmony export */   "ReactReduxContext": () => (/* binding */ ReactReduxContext),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
-const ContextKey = Symbol.for(`react-redux-context`);
-const gT = typeof globalThis !== "undefined" ? globalThis :
-/* fall back to a per-module scope (pre-8.1 behaviour) if `globalThis` is not available */
-{};
+const ReactReduxContext = /*#__PURE__*/(0,react__WEBPACK_IMPORTED_MODULE_0__.createContext)(null);
 
-function getContext() {
-  var _gT$ContextKey;
-
-  if (!react__WEBPACK_IMPORTED_MODULE_0__.createContext) return {};
-  const contextMap = (_gT$ContextKey = gT[ContextKey]) != null ? _gT$ContextKey : gT[ContextKey] = new Map();
-  let realContext = contextMap.get(react__WEBPACK_IMPORTED_MODULE_0__.createContext);
-
-  if (!realContext) {
-    realContext = react__WEBPACK_IMPORTED_MODULE_0__.createContext(null);
-
-    if (true) {
-      realContext.displayName = 'ReactRedux';
-    }
-
-    contextMap.set(react__WEBPACK_IMPORTED_MODULE_0__.createContext, realContext);
-  }
-
-  return realContext;
+if (true) {
+  ReactReduxContext.displayName = 'ReactRedux';
 }
 
-const ReactReduxContext = /*#__PURE__*/getContext();
-/* harmony default export */ __webpack_exports__["default"] = (ReactReduxContext);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ReactReduxContext);
 
 /***/ }),
 
@@ -61124,10 +61048,13 @@ const ReactReduxContext = /*#__PURE__*/getContext();
 /*!************************************************************!*\
   !*** ./node_modules/react-redux/es/components/Provider.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Context */ "./node_modules/react-redux/es/components/Context.js");
 /* harmony import */ var _utils_Subscription__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../utils/Subscription */ "./node_modules/react-redux/es/utils/Subscription.js");
@@ -61141,21 +61068,17 @@ function Provider({
   store,
   context,
   children,
-  serverState,
-  stabilityCheck = 'once',
-  noopCheck = 'once'
+  serverState
 }) {
-  const contextValue = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => {
+  const contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => {
     const subscription = (0,_utils_Subscription__WEBPACK_IMPORTED_MODULE_2__.createSubscription)(store);
     return {
       store,
       subscription,
-      getServerState: serverState ? () => serverState : undefined,
-      stabilityCheck,
-      noopCheck
+      getServerState: serverState ? () => serverState : undefined
     };
-  }, [store, serverState, stabilityCheck, noopCheck]);
-  const previousState = react__WEBPACK_IMPORTED_MODULE_0__.useMemo(() => store.getState(), [store]);
+  }, [store, serverState]);
+  const previousState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useMemo)(() => store.getState(), [store]);
   (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_3__.useIsomorphicLayoutEffect)(() => {
     const {
       subscription
@@ -61179,7 +61102,7 @@ function Provider({
   }, children);
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (Provider);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Provider);
 
 /***/ }),
 
@@ -61187,12 +61110,13 @@ function Provider({
 /*!***********************************************************!*\
   !*** ./node_modules/react-redux/es/components/connect.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "initializeConnect": function() { return /* binding */ initializeConnect; }
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "initializeConnect": () => (/* binding */ initializeConnect)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
@@ -61427,7 +61351,7 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
     };
 
     function ConnectFunction(props) {
-      const [propsContext, reactReduxForwardedRef, wrapperProps] = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const [propsContext, reactReduxForwardedRef, wrapperProps] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         // Distinguish between actual "data" props that were passed to the wrapper component,
         // and values needed to control behavior (forwarded refs, alternate context instances).
         // To maintain the wrapperProps object reference, memoize this destructuring.
@@ -61438,14 +61362,14 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
 
         return [props.context, reactReduxForwardedRef, wrapperProps];
       }, [props]);
-      const ContextToUse = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const ContextToUse = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         // Users may optionally pass in a custom context instance to use instead of our ReactReduxContext.
         // Memoize the check that determines which context instance we should use.
         return propsContext && propsContext.Consumer && // @ts-ignore
         (0,react_is__WEBPACK_IMPORTED_MODULE_4__.isContextConsumer)( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_3__.createElement(propsContext.Consumer, null)) ? propsContext : Context;
       }, [propsContext, Context]); // Retrieve the store and ancestor subscription via context, if available
 
-      const contextValue = react__WEBPACK_IMPORTED_MODULE_3__.useContext(ContextToUse); // The store _must_ exist as either a prop or in context.
+      const contextValue = (0,react__WEBPACK_IMPORTED_MODULE_3__.useContext)(ContextToUse); // The store _must_ exist as either a prop or in context.
       // We'll check to see if it _looks_ like a Redux store first.
       // This allows us to pass through a `store` prop that is just a plain value.
 
@@ -61459,12 +61383,12 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
 
       const store = didStoreComeFromProps ? props.store : contextValue.store;
       const getServerState = didStoreComeFromContext ? contextValue.getServerState : store.getState;
-      const childPropsSelector = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const childPropsSelector = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         // The child props selector needs the store reference as an input.
         // Re-create this selector whenever the store changes.
         return (0,_connect_selectorFactory__WEBPACK_IMPORTED_MODULE_5__["default"])(store.dispatch, selectorFactoryOptions);
       }, [store]);
-      const [subscription, notifyNestedSubs] = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const [subscription, notifyNestedSubs] = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         if (!shouldHandleStateChanges) return NO_SUBSCRIPTION_ARRAY; // This Subscription's source should match where store came from: props vs. context. A component
         // connected to the store via props shouldn't use subscription from context, or vice versa.
 
@@ -61478,7 +61402,7 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
       }, [store, didStoreComeFromProps, contextValue]); // Determine what {store, subscription} value should be put into nested context, if necessary,
       // and memoize that value to avoid unnecessary context updates.
 
-      const overriddenContextValue = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const overriddenContextValue = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         if (didStoreComeFromProps) {
           // This component is directly subscribed to a store from props.
           // We don't want descendants reading from this store - pass down whatever
@@ -61493,20 +61417,20 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
         });
       }, [didStoreComeFromProps, contextValue, subscription]); // Set up refs to coordinate values between the subscription effect and the render logic
 
-      const lastChildProps = react__WEBPACK_IMPORTED_MODULE_3__.useRef();
-      const lastWrapperProps = react__WEBPACK_IMPORTED_MODULE_3__.useRef(wrapperProps);
-      const childPropsFromStoreUpdate = react__WEBPACK_IMPORTED_MODULE_3__.useRef();
-      const renderIsScheduled = react__WEBPACK_IMPORTED_MODULE_3__.useRef(false);
-      const isProcessingDispatch = react__WEBPACK_IMPORTED_MODULE_3__.useRef(false);
-      const isMounted = react__WEBPACK_IMPORTED_MODULE_3__.useRef(false);
-      const latestSubscriptionCallbackError = react__WEBPACK_IMPORTED_MODULE_3__.useRef();
+      const lastChildProps = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
+      const lastWrapperProps = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(wrapperProps);
+      const childPropsFromStoreUpdate = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
+      const renderIsScheduled = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(false);
+      const isProcessingDispatch = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(false);
+      const isMounted = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)(false);
+      const latestSubscriptionCallbackError = (0,react__WEBPACK_IMPORTED_MODULE_3__.useRef)();
       (0,_utils_useIsomorphicLayoutEffect__WEBPACK_IMPORTED_MODULE_10__.useIsomorphicLayoutEffect)(() => {
         isMounted.current = true;
         return () => {
           isMounted.current = false;
         };
       }, []);
-      const actualChildPropsSelector = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const actualChildPropsSelector = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         const selector = () => {
           // Tricky logic here:
           // - This render may have been triggered by a Redux store update that produced new child props
@@ -61530,7 +61454,7 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
       // about useLayoutEffect in SSR, so we try to detect environment and fall back to
       // just useEffect instead to avoid the warning, since neither will run anyway.
 
-      const subscribeForReact = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const subscribeForReact = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         const subscribe = reactListener => {
           if (!subscription) {
             return () => {};
@@ -61566,7 +61490,7 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
       }); // Now that all that's done, we can finally try to actually render the child component.
       // We memoize the elements for the rendered child component as an optimization.
 
-      const renderedWrappedComponent = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const renderedWrappedComponent = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         return (
           /*#__PURE__*/
           // @ts-ignore
@@ -61577,7 +61501,7 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
       }, [reactReduxForwardedRef, WrappedComponent, actualChildProps]); // If React sees the exact same element reference as last time, it bails out of re-rendering
       // that child, same as if it was wrapped in React.memo() or returned false from shouldComponentUpdate.
 
-      const renderedChild = react__WEBPACK_IMPORTED_MODULE_3__.useMemo(() => {
+      const renderedChild = (0,react__WEBPACK_IMPORTED_MODULE_3__.useMemo)(() => {
         if (shouldHandleStateChanges) {
           // If this component is subscribed to store updates, we need to pass its own
           // subscription instance down to our descendants. That means rendering the same
@@ -61619,7 +61543,7 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
   return wrapWithConnect;
 }
 
-/* harmony default export */ __webpack_exports__["default"] = (connect);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (connect);
 
 /***/ }),
 
@@ -61627,12 +61551,12 @@ function connect(mapStateToProps, mapDispatchToProps, mergeProps, {
 /*!******************************************************************!*\
   !*** ./node_modules/react-redux/es/connect/invalidArgFactory.js ***!
   \******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createInvalidArgFactory": function() { return /* binding */ createInvalidArgFactory; }
+/* harmony export */   "createInvalidArgFactory": () => (/* binding */ createInvalidArgFactory)
 /* harmony export */ });
 function createInvalidArgFactory(arg, name) {
   return (dispatch, options) => {
@@ -61646,12 +61570,12 @@ function createInvalidArgFactory(arg, name) {
 /*!*******************************************************************!*\
   !*** ./node_modules/react-redux/es/connect/mapDispatchToProps.js ***!
   \*******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "mapDispatchToPropsFactory": function() { return /* binding */ mapDispatchToPropsFactory; }
+/* harmony export */   "mapDispatchToPropsFactory": () => (/* binding */ mapDispatchToPropsFactory)
 /* harmony export */ });
 /* harmony import */ var _utils_bindActionCreators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/bindActionCreators */ "./node_modules/react-redux/es/utils/bindActionCreators.js");
 /* harmony import */ var _wrapMapToProps__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./wrapMapToProps */ "./node_modules/react-redux/es/connect/wrapMapToProps.js");
@@ -61673,12 +61597,12 @@ function mapDispatchToPropsFactory(mapDispatchToProps) {
 /*!****************************************************************!*\
   !*** ./node_modules/react-redux/es/connect/mapStateToProps.js ***!
   \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "mapStateToPropsFactory": function() { return /* binding */ mapStateToPropsFactory; }
+/* harmony export */   "mapStateToPropsFactory": () => (/* binding */ mapStateToPropsFactory)
 /* harmony export */ });
 /* harmony import */ var _wrapMapToProps__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./wrapMapToProps */ "./node_modules/react-redux/es/connect/wrapMapToProps.js");
 /* harmony import */ var _invalidArgFactory__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./invalidArgFactory */ "./node_modules/react-redux/es/connect/invalidArgFactory.js");
@@ -61695,14 +61619,14 @@ function mapStateToPropsFactory(mapStateToProps) {
 /*!***********************************************************!*\
   !*** ./node_modules/react-redux/es/connect/mergeProps.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "defaultMergeProps": function() { return /* binding */ defaultMergeProps; },
-/* harmony export */   "mergePropsFactory": function() { return /* binding */ mergePropsFactory; },
-/* harmony export */   "wrapMergePropsFunc": function() { return /* binding */ wrapMergePropsFunc; }
+/* harmony export */   "defaultMergeProps": () => (/* binding */ defaultMergeProps),
+/* harmony export */   "mergePropsFactory": () => (/* binding */ mergePropsFactory),
+/* harmony export */   "wrapMergePropsFunc": () => (/* binding */ wrapMergePropsFunc)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
 /* harmony import */ var _utils_verifyPlainObject__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../utils/verifyPlainObject */ "./node_modules/react-redux/es/utils/verifyPlainObject.js");
@@ -61746,13 +61670,13 @@ function mergePropsFactory(mergeProps) {
 /*!****************************************************************!*\
   !*** ./node_modules/react-redux/es/connect/selectorFactory.js ***!
   \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ finalPropsSelectorFactory; },
-/* harmony export */   "pureFinalPropsSelectorFactory": function() { return /* binding */ pureFinalPropsSelectorFactory; }
+/* harmony export */   "default": () => (/* binding */ finalPropsSelectorFactory),
+/* harmony export */   "pureFinalPropsSelectorFactory": () => (/* binding */ pureFinalPropsSelectorFactory)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_objectWithoutPropertiesLoose__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectWithoutPropertiesLoose */ "./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js");
 /* harmony import */ var _verifySubselectors__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./verifySubselectors */ "./node_modules/react-redux/es/connect/verifySubselectors.js");
@@ -61847,12 +61771,12 @@ function finalPropsSelectorFactory(dispatch, _ref) {
 /*!*******************************************************************!*\
   !*** ./node_modules/react-redux/es/connect/verifySubselectors.js ***!
   \*******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ verifySubselectors; }
+/* harmony export */   "default": () => (/* binding */ verifySubselectors)
 /* harmony export */ });
 /* harmony import */ var _utils_warning__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/warning */ "./node_modules/react-redux/es/utils/warning.js");
 
@@ -61879,14 +61803,14 @@ function verifySubselectors(mapStateToProps, mapDispatchToProps, mergeProps) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-redux/es/connect/wrapMapToProps.js ***!
   \***************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getDependsOnOwnProps": function() { return /* binding */ getDependsOnOwnProps; },
-/* harmony export */   "wrapMapToPropsConstant": function() { return /* binding */ wrapMapToPropsConstant; },
-/* harmony export */   "wrapMapToPropsFunc": function() { return /* binding */ wrapMapToPropsFunc; }
+/* harmony export */   "getDependsOnOwnProps": () => (/* binding */ getDependsOnOwnProps),
+/* harmony export */   "wrapMapToPropsConstant": () => (/* binding */ wrapMapToPropsConstant),
+/* harmony export */   "wrapMapToPropsFunc": () => (/* binding */ wrapMapToPropsFunc)
 /* harmony export */ });
 /* harmony import */ var _utils_verifyPlainObject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../utils/verifyPlainObject */ "./node_modules/react-redux/es/utils/verifyPlainObject.js");
 
@@ -61966,21 +61890,21 @@ function wrapMapToPropsFunc(mapToProps, methodName) {
 /*!************************************************!*\
   !*** ./node_modules/react-redux/es/exports.js ***!
   \************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Provider": function() { return /* reexport safe */ _components_Provider__WEBPACK_IMPORTED_MODULE_0__["default"]; },
-/* harmony export */   "ReactReduxContext": function() { return /* reexport safe */ _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext; },
-/* harmony export */   "connect": function() { return /* reexport safe */ _components_connect__WEBPACK_IMPORTED_MODULE_1__["default"]; },
-/* harmony export */   "createDispatchHook": function() { return /* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_3__.createDispatchHook; },
-/* harmony export */   "createSelectorHook": function() { return /* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__.createSelectorHook; },
-/* harmony export */   "createStoreHook": function() { return /* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_5__.createStoreHook; },
-/* harmony export */   "shallowEqual": function() { return /* reexport safe */ _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_6__["default"]; },
-/* harmony export */   "useDispatch": function() { return /* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_3__.useDispatch; },
-/* harmony export */   "useSelector": function() { return /* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__.useSelector; },
-/* harmony export */   "useStore": function() { return /* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_5__.useStore; }
+/* harmony export */   "Provider": () => (/* reexport safe */ _components_Provider__WEBPACK_IMPORTED_MODULE_0__["default"]),
+/* harmony export */   "ReactReduxContext": () => (/* reexport safe */ _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext),
+/* harmony export */   "connect": () => (/* reexport safe */ _components_connect__WEBPACK_IMPORTED_MODULE_1__["default"]),
+/* harmony export */   "createDispatchHook": () => (/* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_3__.createDispatchHook),
+/* harmony export */   "createSelectorHook": () => (/* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__.createSelectorHook),
+/* harmony export */   "createStoreHook": () => (/* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_5__.createStoreHook),
+/* harmony export */   "shallowEqual": () => (/* reexport safe */ _utils_shallowEqual__WEBPACK_IMPORTED_MODULE_6__["default"]),
+/* harmony export */   "useDispatch": () => (/* reexport safe */ _hooks_useDispatch__WEBPACK_IMPORTED_MODULE_3__.useDispatch),
+/* harmony export */   "useSelector": () => (/* reexport safe */ _hooks_useSelector__WEBPACK_IMPORTED_MODULE_4__.useSelector),
+/* harmony export */   "useStore": () => (/* reexport safe */ _hooks_useStore__WEBPACK_IMPORTED_MODULE_5__.useStore)
 /* harmony export */ });
 /* harmony import */ var _components_Provider__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/Provider */ "./node_modules/react-redux/es/components/Provider.js");
 /* harmony import */ var _components_connect__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/connect */ "./node_modules/react-redux/es/components/connect.js");
@@ -62006,13 +61930,13 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************************************************!*\
   !*** ./node_modules/react-redux/es/hooks/useDispatch.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createDispatchHook": function() { return /* binding */ createDispatchHook; },
-/* harmony export */   "useDispatch": function() { return /* binding */ useDispatch; }
+/* harmony export */   "createDispatchHook": () => (/* binding */ createDispatchHook),
+/* harmony export */   "useDispatch": () => (/* binding */ useDispatch)
 /* harmony export */ });
 /* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
 /* harmony import */ var _useStore__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useStore */ "./node_modules/react-redux/es/hooks/useStore.js");
@@ -62064,37 +61988,18 @@ const useDispatch = /*#__PURE__*/createDispatchHook();
 /*!**************************************************************!*\
   !*** ./node_modules/react-redux/es/hooks/useReduxContext.js ***!
   \**************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createReduxContextHook": function() { return /* binding */ createReduxContextHook; },
-/* harmony export */   "useReduxContext": function() { return /* binding */ useReduxContext; }
+/* harmony export */   "useReduxContext": () => (/* binding */ useReduxContext)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
 
 
 
-/**
- * Hook factory, which creates a `useReduxContext` hook bound to a given context. This is a low-level
- * hook that you should usually not need to call directly.
- *
- * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
- * @returns {Function} A `useReduxContext` hook bound to the specified context.
- */
-function createReduxContextHook(context = _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext) {
-  return function useReduxContext() {
-    const contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
-
-    if ( true && !contextValue) {
-      throw new Error('could not find react-redux context value; please ensure the component is wrapped in a <Provider>');
-    }
-
-    return contextValue;
-  };
-}
 /**
  * A hook to access the value of the `ReactReduxContext`. This is a low-level
  * hook that you should usually not need to call directly.
@@ -62111,8 +62016,15 @@ function createReduxContextHook(context = _components_Context__WEBPACK_IMPORTED_
  *   return <div>{store.getState()}</div>
  * }
  */
+function useReduxContext() {
+  const contextValue = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext);
 
-const useReduxContext = /*#__PURE__*/createReduxContextHook();
+  if ( true && !contextValue) {
+    throw new Error('could not find react-redux context value; please ensure the component is wrapped in a <Provider>');
+  }
+
+  return contextValue;
+}
 
 /***/ }),
 
@@ -62120,14 +62032,14 @@ const useReduxContext = /*#__PURE__*/createReduxContextHook();
 /*!**********************************************************!*\
   !*** ./node_modules/react-redux/es/hooks/useSelector.js ***!
   \**********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createSelectorHook": function() { return /* binding */ createSelectorHook; },
-/* harmony export */   "initializeUseSelector": function() { return /* binding */ initializeUseSelector; },
-/* harmony export */   "useSelector": function() { return /* binding */ useSelector; }
+/* harmony export */   "createSelectorHook": () => (/* binding */ createSelectorHook),
+/* harmony export */   "initializeUseSelector": () => (/* binding */ initializeUseSelector),
+/* harmony export */   "useSelector": () => (/* binding */ useSelector)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _useReduxContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useReduxContext */ "./node_modules/react-redux/es/hooks/useReduxContext.js");
@@ -62152,16 +62064,8 @@ const refEquality = (a, b) => a === b;
 
 
 function createSelectorHook(context = _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext) {
-  const useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_1__.useReduxContext : (0,_useReduxContext__WEBPACK_IMPORTED_MODULE_1__.createReduxContextHook)(context);
-  return function useSelector(selector, equalityFnOrOptions = {}) {
-    const {
-      equalityFn = refEquality,
-      stabilityCheck = undefined,
-      noopCheck = undefined
-    } = typeof equalityFnOrOptions === 'function' ? {
-      equalityFn: equalityFnOrOptions
-    } : equalityFnOrOptions;
-
+  const useReduxContext = context === _components_Context__WEBPACK_IMPORTED_MODULE_2__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_1__.useReduxContext : () => (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
+  return function useSelector(selector, equalityFn = refEquality) {
     if (true) {
       if (!selector) {
         throw new Error(`You must pass a selector to useSelector`);
@@ -62179,47 +62083,9 @@ function createSelectorHook(context = _components_Context__WEBPACK_IMPORTED_MODU
     const {
       store,
       subscription,
-      getServerState,
-      stabilityCheck: globalStabilityCheck,
-      noopCheck: globalNoopCheck
+      getServerState
     } = useReduxContext();
-    const firstRun = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(true);
-    const wrappedSelector = (0,react__WEBPACK_IMPORTED_MODULE_0__.useCallback)({
-      [selector.name](state) {
-        const selected = selector(state);
-
-        if (true) {
-          const finalStabilityCheck = typeof stabilityCheck === 'undefined' ? globalStabilityCheck : stabilityCheck;
-
-          if (finalStabilityCheck === 'always' || finalStabilityCheck === 'once' && firstRun.current) {
-            const toCompare = selector(state);
-
-            if (!equalityFn(selected, toCompare)) {
-              console.warn('Selector ' + (selector.name || 'unknown') + ' returned a different result when called with the same parameters. This can lead to unnecessary rerenders.' + '\nSelectors that return a new reference (such as an object or an array) should be memoized: https://redux.js.org/usage/deriving-data-selectors#optimizing-selectors-with-memoization', {
-                state,
-                selected,
-                selected2: toCompare
-              });
-            }
-          }
-
-          const finalNoopCheck = typeof noopCheck === 'undefined' ? globalNoopCheck : noopCheck;
-
-          if (finalNoopCheck === 'always' || finalNoopCheck === 'once' && firstRun.current) {
-            // @ts-ignore
-            if (selected === state) {
-              console.warn('Selector ' + (selector.name || 'unknown') + ' returned the root state when called. This can lead to unnecessary rerenders.' + '\nSelectors that return the entire state are almost certainly a mistake, as they will cause a rerender whenever *anything* in state changes.');
-            }
-          }
-
-          if (firstRun.current) firstRun.current = false;
-        }
-
-        return selected;
-      }
-
-    }[selector.name], [selector, globalStabilityCheck, stabilityCheck]);
-    const selectedState = useSyncExternalStoreWithSelector(subscription.addNestedSub, store.getState, getServerState || store.getState, wrappedSelector, equalityFn);
+    const selectedState = useSyncExternalStoreWithSelector(subscription.addNestedSub, store.getState, getServerState || store.getState, selector, equalityFn);
     (0,react__WEBPACK_IMPORTED_MODULE_0__.useDebugValue)(selectedState);
     return selectedState;
   };
@@ -62256,16 +62122,18 @@ const useSelector = /*#__PURE__*/createSelectorHook();
 /*!*******************************************************!*\
   !*** ./node_modules/react-redux/es/hooks/useStore.js ***!
   \*******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createStoreHook": function() { return /* binding */ createStoreHook; },
-/* harmony export */   "useStore": function() { return /* binding */ useStore; }
+/* harmony export */   "createStoreHook": () => (/* binding */ createStoreHook),
+/* harmony export */   "useStore": () => (/* binding */ useStore)
 /* harmony export */ });
-/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
-/* harmony import */ var _useReduxContext__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./useReduxContext */ "./node_modules/react-redux/es/hooks/useReduxContext.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _components_Context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/Context */ "./node_modules/react-redux/es/components/Context.js");
+/* harmony import */ var _useReduxContext__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./useReduxContext */ "./node_modules/react-redux/es/hooks/useReduxContext.js");
+
 
 
 /**
@@ -62275,10 +62143,9 @@ __webpack_require__.r(__webpack_exports__);
  * @returns {Function} A `useStore` hook bound to the specified context.
  */
 
-function createStoreHook(context = _components_Context__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext) {
+function createStoreHook(context = _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext) {
   const useReduxContext = // @ts-ignore
-  context === _components_Context__WEBPACK_IMPORTED_MODULE_0__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_1__.useReduxContext : // @ts-ignore
-  (0,_useReduxContext__WEBPACK_IMPORTED_MODULE_1__.createReduxContextHook)(context);
+  context === _components_Context__WEBPACK_IMPORTED_MODULE_1__.ReactReduxContext ? _useReduxContext__WEBPACK_IMPORTED_MODULE_2__.useReduxContext : () => (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(context);
   return function useStore() {
     const {
       store
@@ -62311,22 +62178,22 @@ const useStore = /*#__PURE__*/createStoreHook();
 /*!**********************************************!*\
   !*** ./node_modules/react-redux/es/index.js ***!
   \**********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "Provider": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.Provider; },
-/* harmony export */   "ReactReduxContext": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.ReactReduxContext; },
-/* harmony export */   "batch": function() { return /* reexport safe */ _utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_2__.unstable_batchedUpdates; },
-/* harmony export */   "connect": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.connect; },
-/* harmony export */   "createDispatchHook": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createDispatchHook; },
-/* harmony export */   "createSelectorHook": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createSelectorHook; },
-/* harmony export */   "createStoreHook": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createStoreHook; },
-/* harmony export */   "shallowEqual": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.shallowEqual; },
-/* harmony export */   "useDispatch": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useDispatch; },
-/* harmony export */   "useSelector": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useSelector; },
-/* harmony export */   "useStore": function() { return /* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useStore; }
+/* harmony export */   "Provider": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.Provider),
+/* harmony export */   "ReactReduxContext": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.ReactReduxContext),
+/* harmony export */   "batch": () => (/* reexport safe */ _utils_reactBatchedUpdates__WEBPACK_IMPORTED_MODULE_2__.unstable_batchedUpdates),
+/* harmony export */   "connect": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.connect),
+/* harmony export */   "createDispatchHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createDispatchHook),
+/* harmony export */   "createSelectorHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createSelectorHook),
+/* harmony export */   "createStoreHook": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.createStoreHook),
+/* harmony export */   "shallowEqual": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.shallowEqual),
+/* harmony export */   "useDispatch": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useDispatch),
+/* harmony export */   "useSelector": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useSelector),
+/* harmony export */   "useStore": () => (/* reexport safe */ _exports__WEBPACK_IMPORTED_MODULE_6__.useStore)
 /* harmony export */ });
 /* harmony import */ var use_sync_external_store_shim__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! use-sync-external-store/shim */ "./node_modules/use-sync-external-store/shim/index.js");
 /* harmony import */ var use_sync_external_store_shim_with_selector__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! use-sync-external-store/shim/with-selector */ "./node_modules/use-sync-external-store/shim/with-selector.js");
@@ -62358,7 +62225,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************************************!*\
   !*** ./node_modules/react-redux/es/types.js ***!
   \**********************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
@@ -62370,12 +62237,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************************************!*\
   !*** ./node_modules/react-redux/es/utils/Subscription.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "createSubscription": function() { return /* binding */ createSubscription; }
+/* harmony export */   "createSubscription": () => (/* binding */ createSubscription)
 /* harmony export */ });
 /* harmony import */ var _batch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./batch */ "./node_modules/react-redux/es/utils/batch.js");
  // encapsulates the subscription logic for connecting a component to the redux store, as
@@ -62512,13 +62379,13 @@ function createSubscription(store, parentSub) {
 /*!****************************************************!*\
   !*** ./node_modules/react-redux/es/utils/batch.js ***!
   \****************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "getBatch": function() { return /* binding */ getBatch; },
-/* harmony export */   "setBatch": function() { return /* binding */ setBatch; }
+/* harmony export */   "getBatch": () => (/* binding */ getBatch),
+/* harmony export */   "setBatch": () => (/* binding */ setBatch)
 /* harmony export */ });
 // Default to a dummy "batch" implementation that just runs the callback
 function defaultNoopBatch(callback) {
@@ -62537,12 +62404,12 @@ const getBatch = () => batch;
 /*!*****************************************************************!*\
   !*** ./node_modules/react-redux/es/utils/bindActionCreators.js ***!
   \*****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ bindActionCreators; }
+/* harmony export */   "default": () => (/* binding */ bindActionCreators)
 /* harmony export */ });
 function bindActionCreators(actionCreators, dispatch) {
   const boundActionCreators = {};
@@ -62564,12 +62431,12 @@ function bindActionCreators(actionCreators, dispatch) {
 /*!************************************************************!*\
   !*** ./node_modules/react-redux/es/utils/isPlainObject.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ isPlainObject; }
+/* harmony export */   "default": () => (/* binding */ isPlainObject)
 /* harmony export */ });
 /**
  * @param {any} obj The object to inspect.
@@ -62594,12 +62461,12 @@ function isPlainObject(obj) {
 /*!******************************************************************!*\
   !*** ./node_modules/react-redux/es/utils/reactBatchedUpdates.js ***!
   \******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "unstable_batchedUpdates": function() { return /* reexport safe */ react_dom__WEBPACK_IMPORTED_MODULE_0__.unstable_batchedUpdates; }
+/* harmony export */   "unstable_batchedUpdates": () => (/* reexport safe */ react_dom__WEBPACK_IMPORTED_MODULE_0__.unstable_batchedUpdates)
 /* harmony export */ });
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 
@@ -62610,12 +62477,12 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************************************!*\
   !*** ./node_modules/react-redux/es/utils/shallowEqual.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ shallowEqual; }
+/* harmony export */   "default": () => (/* binding */ shallowEqual)
 /* harmony export */ });
 function is(x, y) {
   if (x === y) {
@@ -62651,13 +62518,13 @@ function shallowEqual(objA, objB) {
 /*!************************************************************************!*\
   !*** ./node_modules/react-redux/es/utils/useIsomorphicLayoutEffect.js ***!
   \************************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "canUseDOM": function() { return /* binding */ canUseDOM; },
-/* harmony export */   "useIsomorphicLayoutEffect": function() { return /* binding */ useIsomorphicLayoutEffect; }
+/* harmony export */   "canUseDOM": () => (/* binding */ canUseDOM),
+/* harmony export */   "useIsomorphicLayoutEffect": () => (/* binding */ useIsomorphicLayoutEffect)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
  // React currently throws a warning when using useLayoutEffect on the server.
@@ -62679,12 +62546,12 @@ const useIsomorphicLayoutEffect = canUseDOM ? react__WEBPACK_IMPORTED_MODULE_0__
 /*!*******************************************************************!*\
   !*** ./node_modules/react-redux/es/utils/useSyncExternalStore.js ***!
   \*******************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "notInitialized": function() { return /* binding */ notInitialized; }
+/* harmony export */   "notInitialized": () => (/* binding */ notInitialized)
 /* harmony export */ });
 const notInitialized = () => {
   throw new Error('uSES not initialized!');
@@ -62696,12 +62563,12 @@ const notInitialized = () => {
 /*!****************************************************************!*\
   !*** ./node_modules/react-redux/es/utils/verifyPlainObject.js ***!
   \****************************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ verifyPlainObject; }
+/* harmony export */   "default": () => (/* binding */ verifyPlainObject)
 /* harmony export */ });
 /* harmony import */ var _isPlainObject__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./isPlainObject */ "./node_modules/react-redux/es/utils/isPlainObject.js");
 /* harmony import */ var _warning__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./warning */ "./node_modules/react-redux/es/utils/warning.js");
@@ -62719,12 +62586,12 @@ function verifyPlainObject(value, displayName, methodName) {
 /*!******************************************************!*\
   !*** ./node_modules/react-redux/es/utils/warning.js ***!
   \******************************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ warning; }
+/* harmony export */   "default": () => (/* binding */ warning)
 /* harmony export */ });
 /**
  * Prints a warning in the console if it exists.
@@ -62757,7 +62624,7 @@ function warning(message) {
 /*!************************************************************************************!*\
   !*** ./node_modules/react-redux/node_modules/react-is/cjs/react-is.development.js ***!
   \************************************************************************************/
-/***/ (function(__unused_webpack_module, exports) {
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 /**
@@ -62989,7 +62856,7 @@ exports.typeOf = typeOf;
 /*!*****************************************************************!*\
   !*** ./node_modules/react-redux/node_modules/react-is/index.js ***!
   \*****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -63005,7 +62872,7 @@ if (false) {} else {
 /*!*****************************************************!*\
   !*** ./node_modules/react/cjs/react.development.js ***!
   \*****************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 /** @license React v16.14.0
@@ -64928,7 +64795,7 @@ exports.version = ReactVersion;
 /*!*************************************!*\
   !*** ./node_modules/react/index.js ***!
   \*************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -64944,7 +64811,7 @@ if (false) {} else {
 /*!************************************************!*\
   !*** ./node_modules/redux-undo/lib/actions.js ***!
   \************************************************/
-/***/ (function(__unused_webpack_module, exports) {
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
@@ -65005,7 +64872,7 @@ exports.ActionCreators = ActionCreators;
 /*!**********************************************!*\
   !*** ./node_modules/redux-undo/lib/debug.js ***!
   \**********************************************/
-/***/ (function(__unused_webpack_module, exports) {
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
@@ -65147,7 +65014,7 @@ function set(debug) {
 /*!************************************************!*\
   !*** ./node_modules/redux-undo/lib/helpers.js ***!
   \************************************************/
-/***/ (function(__unused_webpack_module, exports) {
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 
@@ -65239,7 +65106,7 @@ function newHistory(past, present, future) {
 /*!**********************************************!*\
   !*** ./node_modules/redux-undo/lib/index.js ***!
   \**********************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
@@ -65322,7 +65189,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "d
 /*!************************************************!*\
   !*** ./node_modules/redux-undo/lib/reducer.js ***!
   \************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 
@@ -65595,18 +65462,18 @@ function undoable(reducer) {
 /*!****************************************!*\
   !*** ./node_modules/redux/es/redux.js ***!
   \****************************************/
-/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "__DO_NOT_USE__ActionTypes": function() { return /* binding */ ActionTypes; },
-/* harmony export */   "applyMiddleware": function() { return /* binding */ applyMiddleware; },
-/* harmony export */   "bindActionCreators": function() { return /* binding */ bindActionCreators; },
-/* harmony export */   "combineReducers": function() { return /* binding */ combineReducers; },
-/* harmony export */   "compose": function() { return /* binding */ compose; },
-/* harmony export */   "createStore": function() { return /* binding */ createStore; },
-/* harmony export */   "legacy_createStore": function() { return /* binding */ legacy_createStore; }
+/* harmony export */   "__DO_NOT_USE__ActionTypes": () => (/* binding */ ActionTypes),
+/* harmony export */   "applyMiddleware": () => (/* binding */ applyMiddleware),
+/* harmony export */   "bindActionCreators": () => (/* binding */ bindActionCreators),
+/* harmony export */   "combineReducers": () => (/* binding */ combineReducers),
+/* harmony export */   "compose": () => (/* binding */ compose),
+/* harmony export */   "createStore": () => (/* binding */ createStore),
+/* harmony export */   "legacy_createStore": () => (/* binding */ legacy_createStore)
 /* harmony export */ });
 /* harmony import */ var _babel_runtime_helpers_esm_objectSpread2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/esm/objectSpread2 */ "./node_modules/@babel/runtime/helpers/esm/objectSpread2.js");
 
@@ -66322,7 +66189,7 @@ function applyMiddleware() {
 /*!*********************************************************************!*\
   !*** ./node_modules/scheduler/cjs/scheduler-tracing.development.js ***!
   \*********************************************************************/
-/***/ (function(__unused_webpack_module, exports) {
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 /** @license React v0.19.1
@@ -66682,7 +66549,7 @@ exports.unstable_wrap = unstable_wrap;
 /*!*************************************************************!*\
   !*** ./node_modules/scheduler/cjs/scheduler.development.js ***!
   \*************************************************************/
-/***/ (function(__unused_webpack_module, exports) {
+/***/ ((__unused_webpack_module, exports) => {
 
 "use strict";
 /** @license React v0.19.1
@@ -67551,7 +67418,7 @@ exports.unstable_wrapCallback = unstable_wrapCallback;
 /*!*****************************************!*\
   !*** ./node_modules/scheduler/index.js ***!
   \*****************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -67567,7 +67434,7 @@ if (false) {} else {
 /*!*******************************************!*\
   !*** ./node_modules/scheduler/tracing.js ***!
   \*******************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -67583,7 +67450,7 @@ if (false) {} else {
 /*!********************************************!*\
   !*** ./node_modules/side-channel/index.js ***!
   \********************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -68338,11 +68205,75 @@ module.exports = exports['default'];
 
 /***/ }),
 
+/***/ "./node_modules/use-memo-one/dist/use-memo-one.esm.js":
+/*!************************************************************!*\
+  !*** ./node_modules/use-memo-one/dist/use-memo-one.esm.js ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "useCallback": () => (/* binding */ useCallback),
+/* harmony export */   "useCallbackOne": () => (/* binding */ useCallbackOne),
+/* harmony export */   "useMemo": () => (/* binding */ useMemo),
+/* harmony export */   "useMemoOne": () => (/* binding */ useMemoOne)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+
+function areInputsEqual(newInputs, lastInputs) {
+  if (newInputs.length !== lastInputs.length) {
+    return false;
+  }
+
+  for (var i = 0; i < newInputs.length; i++) {
+    if (newInputs[i] !== lastInputs[i]) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+function useMemoOne(getResult, inputs) {
+  var initial = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(function () {
+    return {
+      inputs: inputs,
+      result: getResult()
+    };
+  })[0];
+  var isFirstRun = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(true);
+  var committed = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(initial);
+  var useCache = isFirstRun.current || Boolean(inputs && committed.current.inputs && areInputsEqual(inputs, committed.current.inputs));
+  var cache = useCache ? committed.current : {
+    inputs: inputs,
+    result: getResult()
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    isFirstRun.current = false;
+    committed.current = cache;
+  }, [cache]);
+  return cache.result;
+}
+function useCallbackOne(callback, inputs) {
+  return useMemoOne(function () {
+    return callback;
+  }, inputs);
+}
+var useMemo = useMemoOne;
+var useCallback = useCallbackOne;
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js":
 /*!**********************************************************************************************!*\
   !*** ./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js ***!
   \**********************************************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 /**
@@ -68581,7 +68512,7 @@ if (
 ) {
   __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 }
-
+        
   })();
 }
 
@@ -68592,7 +68523,7 @@ if (
 /*!************************************************************************************************************!*\
   !*** ./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js ***!
   \************************************************************************************************************/
-/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
 "use strict";
 /**
@@ -68757,7 +68688,7 @@ if (
 ) {
   __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
 }
-
+        
   })();
 }
 
@@ -68768,7 +68699,7 @@ if (
 /*!************************************************************!*\
   !*** ./node_modules/use-sync-external-store/shim/index.js ***!
   \************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -68784,7 +68715,7 @@ if (false) {} else {
 /*!********************************************************************!*\
   !*** ./node_modules/use-sync-external-store/shim/with-selector.js ***!
   \********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
 
@@ -68800,155 +68731,9 @@ if (false) {} else {
 /*!********************************!*\
   !*** ./util.inspect (ignored) ***!
   \********************************/
-/***/ (function() {
+/***/ (() => {
 
 /* (ignored) */
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/date/now.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/date/now.js ***!
-  \*****************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/date/now */ "./node_modules/core-js/library/fn/date/now.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/number/is-integer.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/number/is-integer.js ***!
-  \**************************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/number/is-integer */ "./node_modules/core-js/library/fn/number/is-integer.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
-  \**********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "./node_modules/core-js/library/fn/object/assign.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
-  \********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./node_modules/core-js/library/fn/object/keys.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/values.js":
-/*!**********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/values.js ***!
-  \**********************************************************************/
-/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! core-js/library/fn/object/values */ "./node_modules/core-js/library/fn/object/values.js");
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/extends.js ***!
-  \********************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _extends; }
-/* harmony export */ });
-/* harmony import */ var core_js_library_fn_object_assign_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/library/fn/object/assign.js */ "./node_modules/core-js/library/fn/object/assign.js");
-
-function _extends() {
-  _extends = core_js_library_fn_object_assign_js__WEBPACK_IMPORTED_MODULE_0__ ? core_js_library_fn_object_assign_js__WEBPACK_IMPORTED_MODULE_0__.bind() : function (target) {
-    for (var i = 1; i < arguments.length; i++) {
-      var source = arguments[i];
-      for (var key in source) {
-        if (Object.prototype.hasOwnProperty.call(source, key)) {
-          target[key] = source[key];
-        }
-      }
-    }
-    return target;
-  };
-  return _extends.apply(this, arguments);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/inheritsLoose.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/inheritsLoose.js ***!
-  \**************************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _inheritsLoose; }
-/* harmony export */ });
-/* harmony import */ var core_js_library_fn_object_create_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/library/fn/object/create.js */ "./node_modules/core-js/library/fn/object/create.js");
-/* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js");
-
-
-function _inheritsLoose(subClass, superClass) {
-  subClass.prototype = core_js_library_fn_object_create_js__WEBPACK_IMPORTED_MODULE_0__(superClass.prototype);
-  subClass.prototype.constructor = subClass;
-  (0,_setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_1__["default"])(subClass, superClass);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/setPrototypeOf.js ***!
-  \***************************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _setPrototypeOf; }
-/* harmony export */ });
-/* harmony import */ var core_js_library_fn_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! core-js/library/fn/object/set-prototype-of.js */ "./node_modules/core-js/library/fn/object/set-prototype-of.js");
-
-function _setPrototypeOf(o, p) {
-  _setPrototypeOf = core_js_library_fn_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_0__ ? core_js_library_fn_object_set_prototype_of_js__WEBPACK_IMPORTED_MODULE_0__.bind() : function _setPrototypeOf(o, p) {
-    o.__proto__ = p;
-    return o;
-  };
-  return _setPrototypeOf(o, p);
-}
-
-/***/ }),
-
-/***/ "./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/@babel/runtime/helpers/esm/assertThisInitialized.js ***!
-  \**************************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _assertThisInitialized; }
-/* harmony export */ });
-function _assertThisInitialized(self) {
-  if (self === void 0) {
-    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-  }
-  return self;
-}
 
 /***/ }),
 
@@ -68956,12 +68741,12 @@ function _assertThisInitialized(self) {
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/defineProperty.js ***!
   \*******************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _defineProperty; }
+/* harmony export */   "default": () => (/* binding */ _defineProperty)
 /* harmony export */ });
 /* harmony import */ var _toPropertyKey_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./toPropertyKey.js */ "./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js");
 
@@ -68986,12 +68771,12 @@ function _defineProperty(obj, key, value) {
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
   \************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _extends; }
+/* harmony export */   "default": () => (/* binding */ _extends)
 /* harmony export */ });
 function _extends() {
   _extends = Object.assign ? Object.assign.bind() : function (target) {
@@ -69014,12 +68799,12 @@ function _extends() {
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/inheritsLoose.js ***!
   \******************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _inheritsLoose; }
+/* harmony export */   "default": () => (/* binding */ _inheritsLoose)
 /* harmony export */ });
 /* harmony import */ var _setPrototypeOf_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./setPrototypeOf.js */ "./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js");
 
@@ -69035,12 +68820,12 @@ function _inheritsLoose(subClass, superClass) {
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/objectSpread2.js ***!
   \******************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _objectSpread2; }
+/* harmony export */   "default": () => (/* binding */ _objectSpread2)
 /* harmony export */ });
 /* harmony import */ var _defineProperty_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./defineProperty.js */ "./node_modules/@babel/runtime/helpers/esm/defineProperty.js");
 
@@ -69072,12 +68857,12 @@ function _objectSpread2(target) {
 /*!*********************************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js ***!
   \*********************************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _objectWithoutPropertiesLoose; }
+/* harmony export */   "default": () => (/* binding */ _objectWithoutPropertiesLoose)
 /* harmony export */ });
 function _objectWithoutPropertiesLoose(source, excluded) {
   if (source == null) return {};
@@ -69098,12 +68883,12 @@ function _objectWithoutPropertiesLoose(source, excluded) {
 /*!*******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/setPrototypeOf.js ***!
   \*******************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _setPrototypeOf; }
+/* harmony export */   "default": () => (/* binding */ _setPrototypeOf)
 /* harmony export */ });
 function _setPrototypeOf(o, p) {
   _setPrototypeOf = Object.setPrototypeOf ? Object.setPrototypeOf.bind() : function _setPrototypeOf(o, p) {
@@ -69119,12 +68904,12 @@ function _setPrototypeOf(o, p) {
 /*!****************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/toPrimitive.js ***!
   \****************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _toPrimitive; }
+/* harmony export */   "default": () => (/* binding */ _toPrimitive)
 /* harmony export */ });
 /* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 
@@ -69145,12 +68930,12 @@ function _toPrimitive(input, hint) {
 /*!******************************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/toPropertyKey.js ***!
   \******************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _toPropertyKey; }
+/* harmony export */   "default": () => (/* binding */ _toPropertyKey)
 /* harmony export */ });
 /* harmony import */ var _typeof_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./typeof.js */ "./node_modules/@babel/runtime/helpers/esm/typeof.js");
 /* harmony import */ var _toPrimitive_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./toPrimitive.js */ "./node_modules/@babel/runtime/helpers/esm/toPrimitive.js");
@@ -69167,12 +68952,12 @@ function _toPropertyKey(arg) {
 /*!***********************************************************!*\
   !*** ./node_modules/@babel/runtime/helpers/esm/typeof.js ***!
   \***********************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ _typeof; }
+/* harmony export */   "default": () => (/* binding */ _typeof)
 /* harmony export */ });
 function _typeof(obj) {
   "@babel/helpers - typeof";
@@ -69190,12 +68975,12 @@ function _typeof(obj) {
 /*!****************************************************************!*\
   !*** ./node_modules/tiny-invariant/dist/esm/tiny-invariant.js ***!
   \****************************************************************/
-/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": function() { return /* binding */ invariant; }
+/* harmony export */   "default": () => (/* binding */ invariant)
 /* harmony export */ });
 var isProduction = "development" === 'production';
 var prefix = 'Invariant failed';
@@ -69220,7 +69005,7 @@ function invariant(condition, message) {
 /************************************************************************/
 /******/ 	// The module cache
 /******/ 	var __webpack_module_cache__ = {};
-/******/
+/******/ 	
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/ 		// Check if module is in cache
@@ -69234,44 +69019,44 @@ function invariant(condition, message) {
 /******/ 			loaded: false,
 /******/ 			exports: {}
 /******/ 		};
-/******/
+/******/ 	
 /******/ 		// Execute the module function
 /******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
+/******/ 	
 /******/ 		// Flag the module as loaded
 /******/ 		module.loaded = true;
-/******/
+/******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
-/******/
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
-/******/ 		__webpack_require__.n = function(module) {
+/******/ 		__webpack_require__.n = (module) => {
 /******/ 			var getter = module && module.__esModule ?
-/******/ 				function() { return module['default']; } :
-/******/ 				function() { return module; };
+/******/ 				() => (module['default']) :
+/******/ 				() => (module);
 /******/ 			__webpack_require__.d(getter, { a: getter });
 /******/ 			return getter;
 /******/ 		};
-/******/ 	}();
-/******/
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/define property getters */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define getter functions for harmony exports
-/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 		__webpack_require__.d = (exports, definition) => {
 /******/ 			for(var key in definition) {
 /******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
 /******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
 /******/ 				}
 /******/ 			}
 /******/ 		};
-/******/ 	}();
-/******/
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
 /******/ 			if (typeof globalThis === 'object') return globalThis;
 /******/ 			try {
@@ -69280,37 +69065,37 @@ function invariant(condition, message) {
 /******/ 				if (typeof window === 'object') return window;
 /******/ 			}
 /******/ 		})();
-/******/ 	}();
-/******/
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
-/******/ 	!function() {
-/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
-/******/ 	}();
-/******/
+/******/ 	(() => {
+/******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
-/******/ 	!function() {
+/******/ 	(() => {
 /******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = function(exports) {
+/******/ 		__webpack_require__.r = (exports) => {
 /******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	}();
-/******/
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/node module decorator */
-/******/ 	!function() {
-/******/ 		__webpack_require__.nmd = function(module) {
+/******/ 	(() => {
+/******/ 		__webpack_require__.nmd = (module) => {
 /******/ 			module.paths = [];
 /******/ 			if (!module.children) module.children = [];
 /******/ 			return module;
 /******/ 		};
-/******/ 	}();
-/******/
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be in strict mode.
-!function() {
+(() => {
 "use strict";
 /*!********************!*\
   !*** ./builder.js ***!
@@ -69330,33 +69115,17 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-console.log('dewdwedwdw');
+
 
 const errorMessage = 'undefined' !== typeof LearnDashData ? LearnDashData.error_messages && LearnDashData.error_messages.header && LearnDashData.error_messages.header : 'Sorry, something went wrong with LearnDash.';
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render(
-    /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-        _src_components_common_error_boundary__WEBPACK_IMPORTED_MODULE_6__["default"], {
-            message: errorMessage,
-            className: "builder-boundary"
-        },
-        /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-            react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {
-                store: _src_redux_configureStore__WEBPACK_IMPORTED_MODULE_3__.store
-            },
-            'sfwd-quiz' === LearnDashData.post_data.builder_post_type ?
-             /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-                _src_components_quizzes_quiz_builder__WEBPACK_IMPORTED_MODULE_5__["default"], null
-            ) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(
-                _src_components_courses_course_builder__WEBPACK_IMPORTED_MODULE_4__["default"], null
-            )
-        )
-    ), 
-    document.getElementById('learndash_builder_box_wrap')
-  );
-}
-();
-/******/
-})
-()
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_components_common_error_boundary__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  message: errorMessage,
+  className: "builder-boundary"
+}, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__.Provider, {
+  store: _src_redux_configureStore__WEBPACK_IMPORTED_MODULE_3__.store
+}, 'sfwd-quiz' === LearnDashData.post_data.builder_post_type ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_components_quizzes_quiz_builder__WEBPACK_IMPORTED_MODULE_5__["default"], null) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_src_components_courses_course_builder__WEBPACK_IMPORTED_MODULE_4__["default"], null))), document.getElementById('learndash_builder_box_wrap'));
+})();
+
+/******/ })()
 ;
 //# sourceMappingURL=builder.js.map

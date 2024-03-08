@@ -19,7 +19,7 @@ namespace LearnDash\Core\Themes;
 use Exception;
 use LDLMS_Post_Types;
 use LearnDash\Core\App;
-use LearnDash\Core\Factories\Model;
+use LearnDash\Core\Factories\Model_Factory;
 use LearnDash\Core\Models\Interfaces\Course_Step;
 use LearnDash\Core\Models\Post;
 use LearnDash\Core\Shortcodes;
@@ -157,7 +157,7 @@ class Breezy extends LearnDash_Theme_Register {
 		) {
 			if ( ! array_key_exists( 'model', $args ) ) {
 				try {
-					$args['model'] = Model::create_from_post( $post );
+					$args['model'] = Model_Factory::create( $post );
 				} catch ( Exception $e ) {
 					return $args;
 				}

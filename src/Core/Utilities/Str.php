@@ -7,6 +7,13 @@
  * @package LearnDash\Core
  */
 
+/** NOTICE: This code is currently under development and may not be stable.
+ *  Its functionality, behavior, and interfaces may change at any time without notice.
+ *  Please refrain from using it in production or other critical systems.
+ *  By using this code, you assume all risks and liabilities associated with its use.
+ *  Thank you for your understanding and cooperation.
+ **/
+
 namespace LearnDash\Core\Utilities;
 
 /**
@@ -181,25 +188,5 @@ class Str {
 		$end            = mb_substr( $string, $start_index + $segment_length );
 
 		return $start . str_repeat( mb_substr( $character, 0, 1, $encoding ), intval( $segment_length ) ) . $end;
-	}
-
-	/**
-	 * Gets the portion of a string before the first occurrence of a given value.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param string $subject Subject string.
-	 * @param string $search  String to search.
-	 *
-	 * @return string
-	 */
-	public static function before( string $subject, string $search ): string {
-		if ( $search === '' ) {
-			return $subject;
-		}
-
-		$result = strstr( $subject, $search, true );
-
-		return $result === false ? $subject : $result;
 	}
 }

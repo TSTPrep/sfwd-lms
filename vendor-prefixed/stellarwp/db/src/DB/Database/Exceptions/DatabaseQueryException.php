@@ -2,7 +2,7 @@
 /**
  * @license GPL-2.0
  *
- * Modified by learndash on 22-September-2023 using Strauss.
+ * Modified by learndash on 21-June-2023 using Strauss.
  * @see https://github.com/BrianHenryIE/strauss
  */
 
@@ -20,7 +20,7 @@ use Throwable;
  */
 class DatabaseQueryException extends \Exception {
 	/**
-	 * @var array<string, string[]>
+	 * @var string[]
 	 */
 	private $queryErrors;
 
@@ -31,8 +31,6 @@ class DatabaseQueryException extends \Exception {
 
 	/**
 	 * @since 1.0.0
-	 *
-	 * @param array<string, string[]> $queryErrors
 	 */
 	public function __construct(
 		string $query,
@@ -52,7 +50,7 @@ class DatabaseQueryException extends \Exception {
 	 *
 	 * @since 1.0.0
 	 *
-	 * @return array<string, string[]>
+	 * @return string[]
 	 */
 	public function getQueryErrors(): array {
 		return $this->queryErrors;

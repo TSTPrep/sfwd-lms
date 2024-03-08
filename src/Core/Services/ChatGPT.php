@@ -89,7 +89,7 @@ class ChatGPT {
 				'method'  => $method,
 				'body'    => wp_json_encode( $body ),
 				'headers' => $headers,
-				'timeout' => 2 * MINUTE_IN_SECONDS,
+				'timeout' => 30,
 			]
 		);
 
@@ -107,7 +107,7 @@ class ChatGPT {
 				$error_message = $response->get_error_message();
 
 				if ( mb_stristr( $error_message, 'curl error 28' ) ) {
-					$error_message .= '. ' . esc_html__( 'The request has timed out. Please try it again with lower number of items. If the issue persists, please check your website server or Open AI service status.', 'learndash' );
+					$error_message .= '. ' . esc_html__( 'You might have entered too many lessons. Please try it again with maximum 20-30 lessons. If the issue persists, please check your server or Open AI service status.', 'learndash' );
 				}
 			} else {
 				$body          = json_decode( $body, true );
@@ -154,12 +154,19 @@ class ChatGPT {
 	 *
 	 * @throws Exception Throw exception with error message and response code if request failed for any reason.
 	 *
-	 * @param string               $command Command for the request.
-	 * @param array<string, mixed> $args    Additional arguments if any.
+	 * @param string $command Command for the request.
 	 *
 	 * @return string
 	 */
-	public function send_command( $command, array $args = [] ): string {
+	public function send_command( $command ): string {
+		// Extract values from the command.
+		preg_match( "/Outline (\d+) lessons for a '(.+)' course on the topic of '(.+)'./", $command, $matches );
+		$lesson_count = $matches[1];
+		$course_name  = $matches[2];
+		$course_idea  = $matches[3];
+
+		$prompt = "Create a numbered bullet list with {$lesson_count} lesson titles for a '{$course_name}' course on the topic of '{$course_idea}'.";
+
 		$messages = [
 			[
 				'role'    => 'system',
@@ -167,7 +174,7 @@ class ChatGPT {
 			],
 			[
 				'role'    => 'user',
-				'content' => $command,
+				'content' => $prompt,
 			],
 		];
 
@@ -178,7 +185,6 @@ class ChatGPT {
 		 *
 		 * @param array<string, mixed> $data    Data to send to ChatGPT API.
 		 * @param string               $command Command for the request.
-		 * @param array<string, mixed> $args    Additional arguments if any.
 		 *
 		 * @return array<string, mixed>
 		 */
@@ -191,8 +197,7 @@ class ChatGPT {
 				'temperature' => 0.9,
 				'top_p'       => 0.7,
 			],
-			$command,
-			$args
+			$command
 		);
 
 		$response = $this->request(
@@ -201,10 +206,7 @@ class ChatGPT {
 		);
 
 		$response_data = json_decode( $response, true );
-		$response_text = is_array( $response_data )
-		&& isset( $response_data['choices'][0]['message']['content'] )
-			? $response_data['choices'][0]['message']['content']
-			: '';
+		$response_text = is_array( $response_data ) && isset( $response_data['choices'][0]['message']['content'] ) ? $response_data['choices'][0]['message']['content'] : '';
 
 		return $response_text;
 	}

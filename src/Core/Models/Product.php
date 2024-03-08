@@ -138,22 +138,21 @@ class Product extends Post {
 	 * Returns whether a product can be purchased.
 	 *
 	 * @since 4.7.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
+	 * @param WP_User|null $user User model. If null, the current user is used.
 	 *
 	 * @return bool
 	 */
-	public function can_be_purchased( $user = null ): bool {
-		$user = $this->map_user( $user );
+	public function can_be_purchased( WP_User $user = null ): bool {
+		$user = $user ?? wp_get_current_user();
 
 		$can_be_purchased = true;
 
 		if (
-			$this->has_ended( $user )
+			$this->has_ended()
 			|| $this->is_pre_ordered( $user )
 			|| $this->user_has_access( $user )
-			|| 0 === $this->get_seats_available( $user )
+			|| $this->get_seats_available() === 0
 		) {
 			$can_be_purchased = false;
 		}
@@ -162,15 +161,13 @@ class Product extends Post {
 		 * Filters whether a product has ended.
 		 *
 		 * @since 4.7.0
-		 * @since Added the $user parameter.
 		 *
-		 * @param bool        $can_be_purchased True if a product can be purchased, false otherwise.
-		 * @param Product     $product          Product model.
-		 * @param WP_User|int $user             The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param bool    $can_be_purchased True if a product can be purchased, false otherwise.
+		 * @param Product $product          Product model.
 		 *
 		 * @return bool True if a product can be purchased, false otherwise.
 		 */
-		return apply_filters( 'learndash_model_product_can_be_purchased', $can_be_purchased, $this, $user );
+		return apply_filters( 'learndash_model_product_can_be_purchased', $can_be_purchased, $this );
 	}
 
 	/**
@@ -208,34 +205,14 @@ class Product extends Post {
 	 * Returns whether a product has ended. If the product has not a end date or is open, it returns false.
 	 *
 	 * @since 4.7.0
-	 * @since 4.8.0 Added $user parameter.
-	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
 	 *
 	 * @return bool
 	 */
-	public function has_ended( $user = null ): bool {
-		$user    = $this->map_user( $user );
-		$user_id = $user instanceof WP_User ? $user->ID : $user;
+	public function has_ended(): bool {
+		// open products are not affected by the end date.
+		$has_ended = ! $this->is_price_type_open();
 
-		$end_date                  = $this->get_end_date();
-		$has_ended                 = ! $this->is_price_type_open(); // open products are not affected by the end date.
-		$extended_access_timestamp = 0;
-
-		// Check if the user has extended access.
-
-		if ( $this->is_post_type_by_key( LDLMS_Post_Types::COURSE ) ) {
-			$extended_access_timestamp = learndash_course_get_extended_access_timestamp( $this->post->ID, $user_id );
-		}
-
-		if (
-			! empty( $extended_access_timestamp )
-			&& $extended_access_timestamp > $end_date
-		) {
-			$end_date = $extended_access_timestamp;
-		}
-
-		// Check if the product has ended.
+		$end_date = $this->get_end_date();
 
 		if ( $has_ended ) {
 			$has_ended = $end_date !== null && $end_date <= time();
@@ -245,52 +222,29 @@ class Product extends Post {
 		 * Filters whether a product has ended.
 		 *
 		 * @since 4.7.0
-		 * @since 4.8.0 Added $user parameter.
 		 *
-		 * @param bool        $has_ended True if a product has ended, false otherwise.
-		 * @param ?int        $end_date  The end date.
-		 * @param Product     $product   Product model.
-		 * @param WP_User|int $user      The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param bool     $has_ended True if a product has ended, false otherwise.
+		 * @param ?int     $end_date  The end date.
+		 * @param Product  $product   Product model.
 		 *
 		 * @return bool True if a product has ended, false otherwise.
 		 */
-		return apply_filters(
-			'learndash_model_product_has_ended',
-			$has_ended,
-			$end_date,
-			$this,
-			$user
-		);
+		return apply_filters( 'learndash_model_product_has_ended', $has_ended, $end_date, $this );
 	}
 
 	/**
 	 * Returns the start date. Null if the product has not a start date.
 	 *
 	 * @since 4.7.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
-	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
 	 *
 	 * @return ?int
 	 */
-	public function get_start_date( $user = null ): ?int {
-		$user = $this->map_user( $user );
-
+	public function get_start_date(): ?int {
 		$start_date = null;
 
 		if ( $this->is_post_type_by_key( LDLMS_Post_Types::COURSE ) ) {
-			$associated_group = $this->get_first_course_group_for_user( $user );
-
-			if ( $associated_group ) {
-				$start_date = $associated_group->get_start_date( $user );
-			} else {
-				$start_date = Cast::to_int(
-					$this->get_setting( 'course_start_date' )
-				);
-			}
-		} elseif ( $this->is_post_type_by_key( LDLMS_Post_Types::GROUP ) ) {
 			$start_date = Cast::to_int(
-				$this->get_setting( 'group_start_date' )
+				$this->get_setting( 'course_start_date' )
 			);
 		}
 
@@ -300,45 +254,28 @@ class Product extends Post {
 		 * Filters the product start date.
 		 *
 		 * @since 4.7.0
-		 * @since 4.8.0 Added the $user parameter.
 		 *
-		 * @param ?int        $start_date Product start date. Null if the product has not a start date.
-		 * @param Product     $product    Product model.
-		 * @param WP_User|int $user       The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param ?int     $start_date Product start date. Null if the product has not a start date.
+		 * @param Product  $product    Product model.
 		 *
 		 * @return ?int Product start date. Null if the product has not a start date.
 		 */
-		return apply_filters( 'learndash_model_product_start_date', $start_date, $this, $user );
+		return apply_filters( 'learndash_model_product_start_date', $start_date, $this );
 	}
 
 	/**
 	 * Returns the end date. Null if the product has not an end date.
 	 *
 	 * @since 4.7.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
-	 *
-	 * @return ?int The timestamp of the end date. Null if the product has no end date.
+	 * @return ?int
 	 */
-	public function get_end_date( $user = null ): ?int {
-		$user = $this->map_user( $user );
-
+	public function get_end_date(): ?int {
 		$end_date = null;
 
 		if ( $this->is_post_type_by_key( LDLMS_Post_Types::COURSE ) ) {
-			$associated_group = $this->get_first_course_group_for_user( $user );
-
-			if ( $associated_group ) {
-				$end_date = $associated_group->get_end_date( $user );
-			} else {
-				$end_date = Cast::to_int(
-					$this->get_setting( 'course_end_date' )
-				);
-			}
-		} elseif ( $this->is_post_type_by_key( LDLMS_Post_Types::GROUP ) ) {
 			$end_date = Cast::to_int(
-				$this->get_setting( 'group_end_date' )
+				$this->get_setting( 'course_end_date' )
 			);
 		}
 
@@ -348,89 +285,63 @@ class Product extends Post {
 		 * Filters the product end date.
 		 *
 		 * @since 4.7.0
-		 * @since 4.8.0 Added the $user parameter.
 		 *
-		 * @param ?int        $end_date Product end date. Null if the product has not an end date.
-		 * @param Product     $product  Product model.
-		 * @param WP_User|int $user     The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param ?int     $end_date Product end date. Null if the product has not an end date.
+		 * @param Product  $product  Product model.
 		 *
 		 * @return ?int Product end date. Null if the product has not an end date.
 		 */
-		return apply_filters( 'learndash_model_product_end_date', $end_date, $this, $user );
+		return apply_filters( 'learndash_model_product_end_date', $end_date, $this );
 	}
 
 	/**
 	 * Returns the seats limit. Null if the product has not a seats limit.
 	 *
 	 * @since 4.7.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
-	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
 	 *
 	 * @return ?int
 	 */
-	public function get_seats_limit( $user = null ): ?int {
-		$user = $this->map_user( $user );
-
+	public function get_seats_limit(): ?int {
 		$seats_limit = null;
 
 		if ( $this->is_post_type_by_key( LDLMS_Post_Types::COURSE ) ) {
-			$associated_group = $this->get_first_course_group_for_user( $user );
-
-			if ( $associated_group ) {
-				$seats_limit = $associated_group->get_seats_limit( $user );
-			} else {
-				$seats_limit = Cast::to_int(
+			$seats_limit = max(
+				Cast::to_int(
 					$this->get_setting( 'course_seats_limit' )
-				);
-			}
-		} elseif ( $this->is_post_type_by_key( LDLMS_Post_Types::GROUP ) ) {
-			$seats_limit = Cast::to_int(
-				$this->get_setting( 'group_seats_limit' )
+				),
+				0
 			);
 		}
 
-		$seats_limit = ! empty( $seats_limit ) && $seats_limit > 0 ? $seats_limit : null;
+		$seats_limit = ! empty( $seats_limit ) ? $seats_limit : null;
 
 		/**
 		 * Filters the product seats limit.
 		 *
 		 * @since 4.7.0
-		 * @since 4.8.0 Added the $user parameter.
 		 *
-		 * @param ?int        $seats_limit Product seats limit. Null if the product has not a seats limit.
-		 * @param Product     $product     Product model.
-		 * @param WP_User|int $user        The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param ?int     $seats_limit Product seats limit. Null if the product has not a seats limit.
+		 * @param Product  $product     Product model.
 		 *
 		 * @return ?int Product seats limit. Null if the product has not a seats limit.
 		 */
-		return apply_filters( 'learndash_model_product_seats_limit', $seats_limit, $this, $user );
+		return apply_filters( 'learndash_model_product_seats_limit', $seats_limit, $this );
 	}
 
 	/**
 	 * Returns the number of seats used in the product.
 	 *
 	 * @since 4.7.0
-	 * @since 4.8.0 Added $user parameter.
-	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
 	 *
 	 * @return int|null The number of seats used in the product. Null if it is not possible to count.
 	 */
-	public function get_seats_used( $user = null ): ?int {
-		$user       = $this->map_user( $user );
+	public function get_seats_used(): ?int {
 		$seats_used = null;
 
 		if ( $this->is_post_type_by_key( LDLMS_Post_Types::COURSE ) ) {
-			$associated_group = $this->get_first_course_group_for_user( $user );
-
-			if ( $associated_group ) {
-				$seats_used = $associated_group->get_seats_used( $user );
-			} else {
-				$seats_used = DB::table( 'usermeta' )
+			$seats_used = DB::table( 'usermeta' )
 						->where( 'meta_key', "course_{$this->post->ID}_access_from" )
 						->count();
-			}
 		} elseif ( $this->is_post_type_by_key( LDLMS_Post_Types::GROUP ) ) {
 			$seats_used = DB::table( 'usermeta' )
 						->where( 'meta_key', "learndash_group_users_{$this->post->ID}" )
@@ -441,49 +352,41 @@ class Product extends Post {
 		 * Filters the product seats used.
 		 *
 		 * @since 4.7.0
-		 * @since 4.8.0 Added the $user parameter.
 		 *
-		 * @param int|null    $seats_used Product seats used.
-		 * @param Product     $product    Product model.
-		 * @param WP_User|int $user       The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param int|null $seats_used Product seats used.
+		 * @param Product  $product    Product model.
 		 *
 		 * @return int|null Product seats used.
 		 */
-		return apply_filters( 'learndash_model_product_seats_used', $seats_used, $this, $user );
+		return apply_filters( 'learndash_model_product_seats_used', $seats_used, $this );
 	}
 
 	/**
 	 * Returns the number of seats available.
 	 *
 	 * @since 4.7.0
-	 * @since 4.8.0 Added $user parameter.
-	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
 	 *
 	 * @return int|null The number of seats available. If there is no limit, it returns null.
 	 */
-	public function get_seats_available( $user = null ): ?int {
-		$user            = $this->map_user( $user );
-		$seats_limit     = $this->get_seats_limit( $user );
+	public function get_seats_available(): ?int {
+		$seats_limit     = $this->get_seats_limit();
 		$seats_available = null;
 
 		if ( ! is_null( $seats_limit ) ) {
-			$seats_available = max( $seats_limit - $this->get_seats_used( $user ), 0 );
+			$seats_available = max( $seats_limit - $this->get_seats_used(), 0 );
 		}
 
 		/**
 		 * Filters the product seats available.
 		 *
 		 * @since 4.7.0
-		 * @since 4.8.0 Added the $user parameter.
 		 *
-		 * @param int|null    $seats_available Product seats available.
-		 * @param Product     $product         Product model.
-		 * @param WP_User|int $user            The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param int|null $seats_available Product seats available.
+		 * @param Product  $product         Product model.
 		 *
 		 * @return int|null Product seats available.
 		 */
-		return apply_filters( 'learndash_model_product_seats_available', $seats_available, $this, $user );
+		return apply_filters( 'learndash_model_product_seats_available', $seats_available, $this );
 	}
 
 	/**
@@ -590,14 +493,12 @@ class Product extends Post {
 	 * Returns a pricing DTO.
 	 *
 	 * @since 4.5.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int|null $user The user ID or object. If null or empty, the current user is used.
+	 * @param WP_User|null $user If the special pricing for a user is needed.
 	 *
 	 * @return Learndash_Pricing_DTO
 	 */
-	public function get_pricing( $user = null ): Learndash_Pricing_DTO {
-		$user             = $this->map_user( $user );
+	public function get_pricing( WP_User $user = null ): Learndash_Pricing_DTO {
 		$pricing_settings = $this->get_pricing_settings( $user );
 
 		$pricing = array(
@@ -625,19 +526,16 @@ class Product extends Post {
 		 * Filters product pricing.
 		 *
 		 * @since 4.5.0
-		 * @since 4.8.0 Added the $user parameter.
 		 *
 		 * @param Learndash_Pricing_DTO $pricing_dto Product Pricing DTO.
 		 * @param Product               $product     Product model.
-		 * @param WP_User|int           $user        The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
 		 *
 		 * @return Learndash_Pricing_DTO Product pricing DTO.
 		 */
 		return apply_filters(
 			'learndash_model_product_pricing',
 			$pricing_dto,
-			$this,
-			$user
+			$this
 		);
 	}
 
@@ -646,27 +544,21 @@ class Product extends Post {
 	 *
 	 * @since 4.5.0
 	 * @since 4.7.0 $user parameter is optional.
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
+	 * @param WP_User|null $user WP_User object.
 	 *
 	 * @return bool
 	 */
-	public function user_has_access( $user = null ): bool {
-		$user    = $this->map_user( $user );
-		$user_id = $user instanceof WP_User ? $user->ID : $user;
+	public function user_has_access( WP_User $user = null ): bool {
+		$user = $user ?? wp_get_current_user();
 
 		$has_access = false;
 
-		if (
-			$user_id > 0
-			&& $this->has_started()
-			&& ! $this->has_ended( $user )
-		) {
+		if ( $user->exists() ) {
 			if ( learndash_is_course_post( $this->post ) ) {
-				$has_access = sfwd_lms_has_access( $this->post->ID, $user_id );
+				$has_access = sfwd_lms_has_access( $this->post->ID, $user->ID );
 			} elseif ( learndash_is_group_post( $this->post ) ) {
-				$has_access = learndash_is_user_in_group( $user_id, $this->post->ID );
+				$has_access = learndash_is_user_in_group( $user->ID, $this->post->ID );
 			}
 		}
 
@@ -674,11 +566,10 @@ class Product extends Post {
 		 * Filters whether a user has access to a product.
 		 *
 		 * @since 4.5.0
-		 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 		 *
-		 * @param bool        $has_access True if a user has access, false otherwise.
-		 * @param Product     $product    Product model.
-		 * @param WP_User|int $user       The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param bool    $has_access True if a user has access, false otherwise.
+		 * @param Product $product    Product model.
+		 * @param WP_User $user       User.
 		 *
 		 * @return bool True if a user has access, false otherwise.
 		 */
@@ -689,34 +580,18 @@ class Product extends Post {
 	 * Returns true if a user has pre-ordered this product, false otherwise.
 	 *
 	 * @since 4.7.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
+	 * @param WP_User|null $user WP_User object. If null, the current user will be used.
 	 *
 	 * @return bool
 	 */
-	public function is_pre_ordered( $user = null ): bool {
-		$user        = $this->map_user( $user );
-		$user_id     = $user instanceof WP_User ? $user->ID : $user;
-		$access_from = null;
+	public function is_pre_ordered( WP_User $user = null ): bool {
+		$user        = $user ?? wp_get_current_user();
 		$pre_ordered = false;
 
-		if ( $user_id > 0 ) {
+		if ( $user->exists() ) {
 			if ( $this->is_post_type_by_key( LDLMS_Post_Types::COURSE ) ) {
-				$associated_group = $this->get_first_course_group_for_user( $user );
-
-				if ( $associated_group ) {
-					$pre_ordered = $associated_group->is_pre_ordered( $user );
-				} else {
-					$access_from = ld_course_access_from( $this->post->ID, $user_id );
-				}
-			} elseif ( $this->is_post_type_by_key( LDLMS_Post_Types::GROUP ) ) {
-				$access_from = learndash_group_access_from( $this->post->ID, $user_id );
-			} else {
-				$access_from = 0;
-			}
-
-			if ( ! is_null( $access_from ) ) {
+				$access_from = ld_course_access_from( $this->post->ID, $user->ID );
 				$pre_ordered = $access_from > 0 && time() < $access_from;
 			}
 		}
@@ -725,11 +600,10 @@ class Product extends Post {
 		 * Filters whether a user has pre-ordered a product.
 		 *
 		 * @since 4.7.0
-		 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 		 *
-		 * @param bool        $pre_ordered True if a user has pre-ordered, false otherwise.
-		 * @param Product     $product     Product model.
-		 * @param WP_User|int $user        The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param bool    $pre_ordered True if a user has pre-ordered, false otherwise.
+		 * @param Product $product     Product model.
+		 * @param WP_User $user        User.
 		 *
 		 * @return bool True if a user has pre-ordered, false otherwise.
 		 */
@@ -740,37 +614,28 @@ class Product extends Post {
 	 * Adds access for a user.
 	 *
 	 * @since 4.5.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int $user The user ID or object.
+	 * @param WP_User $user WP_User object.
 	 *
 	 * @return bool Returns true if it successfully enrolled a user, false otherwise.
 	 */
-	public function enroll( $user ): bool {
-		$user = $this->map_user( $user, true );
-
-		if ( empty( $user ) ) {
-			return false; // unexpected parameter: no user ID.
-		}
-
-		$user_id  = $user instanceof WP_User ? $user->ID : $user;
+	public function enroll( WP_User $user ): bool {
 		$enrolled = false;
 
 		if ( learndash_is_course_post( $this->post ) ) {
-			$enrolled = ld_update_course_access( $user_id, $this->post->ID );
+			$enrolled = ld_update_course_access( $user->ID, $this->post->ID );
 		} elseif ( learndash_is_group_post( $this->post ) ) {
-			$enrolled = ld_update_group_access( $user_id, $this->post->ID );
+			$enrolled = ld_update_group_access( $user->ID, $this->post->ID );
 		}
 
 		/**
 		 * Filters whether a user was enrolled to a product.
 		 *
 		 * @since 4.5.0
-		 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 		 *
-		 * @param bool        $enrolled True if a user was enrolled, false otherwise.
-		 * @param Product     $product  Product model.
-		 * @param WP_User|int $user     The WP_User or the user ID, according to the filter's caller.
+		 * @param bool    $enrolled True if a user was enrolled, false otherwise.
+		 * @param Product $product  Product model.
+		 * @param WP_User $user     User.
 		 *
 		 * @return bool True if a user was enrolled, false otherwise.
 		 */
@@ -781,37 +646,28 @@ class Product extends Post {
 	 * Removes access for a user.
 	 *
 	 * @since 4.5.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int $user The user ID or object.
+	 * @param WP_User $user WP_User object.
 	 *
 	 * @return bool Returns true if it successfully unenrolled a user, false otherwise.
 	 */
-	public function unenroll( $user ): bool {
-		$user = $this->map_user( $user, true );
-
-		if ( empty( $user ) ) {
-			return false; // unexpected parameter: no user ID.
-		}
-
-		$user_id    = $user instanceof WP_User ? $user->ID : $user;
+	public function unenroll( WP_User $user ): bool {
 		$unenrolled = false;
 
 		if ( learndash_is_course_post( $this->post ) ) {
-			$unenrolled = ld_update_course_access( $user_id, $this->post->ID, true );
+			$unenrolled = ld_update_course_access( $user->ID, $this->post->ID, true );
 		} elseif ( learndash_is_group_post( $this->post ) ) {
-			$unenrolled = ld_update_group_access( $user_id, $this->post->ID, true );
+			$unenrolled = ld_update_group_access( $user->ID, $this->post->ID, true );
 		}
 
 		/**
 		 * Filters whether a user was unenrolled from a product.
 		 *
 		 * @since 4.5.0
-		 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 		 *
-		 * @param bool        $unenrolled True if a user was unenrolled, false otherwise.
-		 * @param Product     $product    Product model.
-		 * @param WP_User|int $user       The WP_User or the user ID, according to the filter's caller.
+		 * @param bool    $unenrolled True if a user was unenrolled, false otherwise.
+		 * @param Product $product    Product model.
+		 * @param WP_User $user       User.
 		 *
 		 * @return bool True if a user was unenrolled, false otherwise.
 		 */
@@ -819,74 +675,17 @@ class Product extends Post {
 	}
 
 	/**
-	 * Returns the enrollment date for a user.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param WP_User|int $user The user ID or object.
-	 *
-	 * @return ?int The enrollment date timestamp or null if we can't find it.
-	 */
-	public function get_enrollment_date( $user ): ?int {
-		$user = $this->map_user( $user, true );
-
-		if ( empty( $user ) ) {
-			return null; // unexpected parameter: no user ID.
-		}
-
-		$user_id         = $user instanceof WP_User ? $user->ID : $user;
-		$enrollment_date = null;
-
-		if ( $this->is_post_type_by_key( LDLMS_Post_Types::COURSE ) ) {
-			$enrollment_date = get_user_meta( $user_id, 'learndash_course_' . $this->get_id() . '_enrolled_at', true );
-
-			// Try to get the enrollment date from the course activity.
-
-			if ( empty( $enrollment_date ) ) {
-				$course_activity = learndash_get_user_activity(
-					[
-						'activity_type' => 'course',
-						'user_id'       => $user_id,
-						'post_id'       => $this->get_id(),
-						'course_id'     => $this->get_id(),
-					]
-				);
-
-				$enrollment_date = $course_activity->activity_started ?? null;
-			}
-		}
-
-		// Normalize the enrollment date.
-		$enrollment_date = Cast::to_int( $enrollment_date );
-		$enrollment_date = ! empty( $enrollment_date ) ? $enrollment_date : null;
-
-		/**
-		 * Filters the enrollment date for a user.
-		 *
-		 * @since 4.8.0
-		 *
-		 * @param ?int        $enrollment_date The enrollment date.
-		 * @param Product     $product         Product model.
-		 * @param WP_User|int $user            The WP_User or the user ID, according to the filter's caller.
-		 *
-		 * @return ?int The enrollment date timestamp or null if we can't find it.
-		 */
-		return apply_filters( 'learndash_model_product_user_enrollment_date', $enrollment_date, $this, $user_id );
-	}
-
-	/**
 	 * Returns whether the product content should be visible.
 	 *
 	 * @since 4.6.0
 	 * @since 4.7.0 $user parameter is optional.
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int|null $user The user ID or WP_User. If null or empty, the current user is used.
+	 * @param WP_User|null $user User.
 	 *
 	 * @return bool
 	 */
-	public function is_content_visible( $user = null ): bool {
-		$user = $this->map_user( $user );
+	public function is_content_visible( WP_User $user = null ): bool {
+		$user = $user ?? wp_get_current_user();
 
 		$is_content_visible = true;
 		$setting_value      = '';
@@ -906,11 +705,10 @@ class Product extends Post {
 		 * Filters whether a product content should be visible.
 		 *
 		 * @since 4.6.0
-		 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 		 *
-		 * @param bool        $is_content_visible True if the content should be visible, false otherwise.
-		 * @param Product     $product            Product model.
-		 * @param WP_User|int $user               The WP_User by default or the user ID if a user ID was passed explicitly to the filter's caller.
+		 * @param bool    $is_content_visible True if the content should be visible, false otherwise.
+		 * @param Product $product            Product model.
+		 * @param WP_User $user               User.
 		 *
 		 * @return bool True if the content should be visible, false otherwise.
 		 *
@@ -923,9 +721,8 @@ class Product extends Post {
 	 * Returns formatted post pricing data.
 	 *
 	 * @since 4.5.0
-	 * @since 4.8.0 Changed the $user parameter to accept an int or a WP_User object.
 	 *
-	 * @param WP_User|int|null $user The user ID or WP_User.
+	 * @param WP_User|null $user If the special pricing for a user is needed.
 	 *
 	 * @return array{
 	 *     type?: string,
@@ -941,11 +738,10 @@ class Product extends Post {
 	 *     trial_frequency_raw?: string
 	 * }
 	 */
-	private function get_pricing_settings( $user = null ): array {
+	private function get_pricing_settings( WP_User $user = null ): array {
 		$pricing_settings = array();
 
-		$user    = $this->map_user( $user );
-		$user_id = $user instanceof WP_User ? $user->ID : $user;
+		$user_id = $user ? $user->ID : 0;
 
 		if ( learndash_is_course_post( $this->post ) ) {
 			$pricing_settings = learndash_get_course_price( $this->post, $user_id );
@@ -954,36 +750,5 @@ class Product extends Post {
 		}
 
 		return $pricing_settings;
-	}
-
-	/**
-	 * Returns the first group product for the course respecting the user group enrollment status.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param WP_User|int $user The user ID or WP_User.
-	 *
-	 * @return Product|null
-	 */
-	private function get_first_course_group_for_user( $user ): ?Product {
-		$user    = $this->map_user( $user, true );
-		$user_id = $user instanceof WP_User ? $user->ID : $user;
-
-		if ( empty( $user_id ) ) {
-			return null;
-		}
-
-		$course_group_ids = array_intersect(
-			learndash_get_course_groups( $this->get_id() ),
-			learndash_get_users_group_ids( $user_id )
-		);
-
-		if ( empty( $course_group_ids ) ) {
-			return null;
-		}
-
-		$course_group_ids = array_values( $course_group_ids );
-
-		return self::find( $course_group_ids[0] );
 	}
 }

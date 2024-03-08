@@ -12,6 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit();
 }
 
+// Needed for confirm popup before setting up template.
+wp_enqueue_script( 'jquery-ui-dialog' );
+wp_enqueue_style( 'wp-jquery-ui-dialog' );
+
 ?>
 <div class="design-wizard layout-2">
 	<div class="header">
@@ -59,20 +63,12 @@ if ( ! defined( 'ABSPATH' ) ) {
 		</div>
 	</div>
 	<div id="ld_dw_confirm" style="display: none;">
-	<?php
-	$learndash_dw_confirm_message = sprintf(
-		__(
-			'Upon clicking continue we’ll install your selected template which will include:
-				<ul style="list-style-type: disc;margin-left: 20px;">
-					<li>Theme</li>
-					<li>Plugins</li>
-					<li>Content</li>
-				</ul>
-			<p>This will overwrite your existing theme. It will not replace content or plugins but the theme will impact your entire site, not only LearnDash content.</p>',
-			'learndash'
-		)
-	);
-	echo wp_kses_post( $learndash_dw_confirm_message );
-	?>
+		Upon clicking continue we’ll install your selected template which will include:
+			<ul style="list-style-type: disc;margin-left: 20px;">
+				<li>Theme</li>
+				<li>Plugins</li>
+				<li>Content</li>
+			</ul>
+		<p>This will overwrite your existing theme. It will not replace content or plugins but the theme will impact your entire site, not only LearnDash content.</p>
 	</div>
 </div>

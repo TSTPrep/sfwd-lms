@@ -1269,7 +1269,7 @@ function learndash_30_template_assets() {
 		wp_register_script( 'learndash-exam', $theme_template_url . '/assets/js/learndash-exam' . learndash_min_asset() . '.js', array(), LEARNDASH_SCRIPT_VERSION_TOKEN, true );
 	}
 
-	wp_register_style( 'learndash-quiz-front', $theme_template_url . '/assets/css/learndash.quiz.front' . learndash_min_asset() . '.css', array(), LEARNDASH_SCRIPT_VERSION_TOKEN .rand() );
+	wp_register_style( 'learndash-quiz-front', $theme_template_url . '/assets/css/learndash.quiz.front' . learndash_min_asset() . '.css', array(), LEARNDASH_SCRIPT_VERSION_TOKEN );
 
 	wp_enqueue_style( 'learndash-front' );
 	wp_style_add_data( 'learndash-front', 'rtl', 'replace' );

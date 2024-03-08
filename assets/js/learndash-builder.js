@@ -6,7 +6,6 @@ jQuery( function( $ ) {
 	var builder_items_count = 0;
 	var builder_items_points = 0;
 
-
 	var ld_builder_new_step_ajax_pid = '';
 
 	var touch = ( 'ontouchstart' in window ) || window.DocumentTouch && document instanceof DocumentTouch;
@@ -1054,8 +1053,6 @@ jQuery( function( $ ) {
 
 	// Utility function. We need to see if an element is on the left or right side of CB.
 	function course_buider_get_parent_selector_container( el ) { // cspell:disable-line
-
-		console.log(el);
 		if ( typeof el !== 'undefined' ) {
 			var selector_container = jQuery( el ).closest( '.learndash_selectors' );
 			if ( ( typeof selector_container !== 'undefined' ) && ( selector_container.length > 0 ) ) {

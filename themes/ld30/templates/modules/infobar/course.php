@@ -175,7 +175,7 @@ if ( is_user_logged_in() && isset( $has_access ) && $has_access ) :
 					else :
 						printf(
 							// translators: placeholder: course, course start date.
-							esc_attr_x( 'It is a pre-order. Enroll in this %1$s to get access after %2$s', 'placeholder: course, course start date', 'learndash' ),
+							esc_attr_x( 'It is a pre-order. Enroll in this %1$s to get access after %2$s', 'placeholder: course', 'learndash' ),
 							esc_html( learndash_get_custom_label_lower( 'course' ) ),
 							esc_html( learndash_adjust_date_time_display( $ld_product->get_start_date() ) )
 						);

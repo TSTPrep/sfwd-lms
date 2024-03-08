@@ -159,7 +159,7 @@ function learndash_get_user_assignments( $post_id, $user_id, $course_id = 0, str
 				'compare' => '=',
 			),
 		),
-		'fields'         => $fields,
+		'fields' => $fields,
 	);
 	return get_posts( $opt );
 }

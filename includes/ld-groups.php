@@ -7,9 +7,6 @@
  * @package LearnDash\Groups
  */
 
-use LearnDash\Core\Models\Product;
-use LearnDash\Core\Utilities\Cast;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -537,48 +534,25 @@ function learndash_group_course_access_from( $group_id = 0, $course_id = 0 ) {
  * @param int $user_id   User ID.
  * @param int $course_id Course ID.
  *
- * @return bool Whether a course can be accessed by the user's group.
+ * @return boolean Whether a course can be accessed by the user's group.
  */
 function learndash_user_group_enrolled_to_course( $user_id = 0, $course_id = 0 ) {
-	$user_id   = Cast::to_int( $user_id );
-	$course_id = Cast::to_int( $course_id );
-
-	if (
-		0 === $user_id
-		|| 0 === $course_id
-	) {
-		return false;
-	}
-
-	$user_group_ids = learndash_get_users_group_ids( $user_id );
-
-	if ( empty( $user_group_ids ) ) {
-		return false;
-	}
-
-	$user = get_user_by( 'ID', $user_id );
-
-	if ( ! $user ) {
-		return false;
-	}
-
-	foreach ( $user_group_ids as $group_id ) {
-		if ( ! learndash_group_has_course( $group_id, $course_id ) ) {
-			continue;
-		}
-
-		$group_product = Product::find( $group_id );
-
-		if (
-			$group_product
-			&& $group_product->user_has_access( $user )
-		) {
-			return true;
+	$user_id   = absint( $user_id );
+	$course_id = absint( $course_id );
+	if ( ( ! empty( $user_id ) ) && ( ! empty( $course_id ) ) ) {
+		$group_ids = learndash_get_users_group_ids( $user_id );
+		if ( ! empty( $group_ids ) ) {
+			foreach ( $group_ids as $group_id ) {
+				if ( learndash_group_has_course( $group_id, $course_id ) ) {
+					return true;
+				}
+			}
 		}
 	}
-
 	return false;
 }
+
+
 
 /**
  * Gets timestamp of when the course is available to a user in a group.
@@ -1582,16 +1556,14 @@ function ld_update_group_access( $user_id = 0, $group_id = 0, $remove = false ):
 	$user_id  = absint( $user_id );
 	$group_id = absint( $group_id );
 
-	if ( ! empty( $user_id ) && ! empty( $group_id ) ) {
+	if ( ( ! empty( $user_id ) ) && ( ! empty( $group_id ) ) ) {
+		$activity_type = 'group_access_user';
+
 		if ( $remove ) {
 			$user_enrolled = get_user_meta( $user_id, 'learndash_group_users_' . $group_id, true );
-
 			if ( $user_enrolled ) {
 				$action_success = true;
-
 				delete_user_meta( $user_id, 'learndash_group_users_' . $group_id );
-				// we don't delete the group enrollment date because it is used in reports.
-				delete_user_meta( $user_id, 'group_' . $group_id . '_access_from' );
 
 				/**
 				 * If the user is removed from the course then also remove the group_progress Activity.
@@ -1620,23 +1592,9 @@ function ld_update_group_access( $user_id = 0, $group_id = 0, $remove = false ):
 			}
 		} else {
 			$user_enrolled = get_user_meta( $user_id, 'learndash_group_users_' . $group_id, true );
-
 			if ( ! $user_enrolled ) {
 				$action_success = true;
-
 				update_user_meta( $user_id, 'learndash_group_users_' . $group_id, $group_id );
-				update_user_meta( $user_id, 'learndash_group_' . $group_id . '_enrolled_at', time() );
-
-				// Set the course access time to the course start date if it exists.
-				// We need that to avoid issues with content dripping in the future and keep it consistent with a course access meta.
-
-				$product = Product::find( $group_id );
-
-				update_user_meta(
-					$user_id,
-					'group_' . $group_id . '_access_from',
-					$product && $product->get_start_date() ? $product->get_start_date() : time()
-				);
 
 				/**
 				 * Fires after the user is added to group access meta.
@@ -2924,6 +2882,42 @@ function learndash_is_group_post( $post ): bool {
 }
 
 /**
+ * Returns group enrollment url.
+ *
+ * @param WP_Post|int|null $post Post or Post ID.
+ *
+ * @since 4.1.0
+ *
+ * @return string
+ */
+function learndash_get_group_enrollment_url( $post ): string {
+	if ( empty( $post ) ) {
+		return '';
+	}
+
+	if ( is_int( $post ) ) {
+		$post = get_post( $post );
+
+		if ( is_null( $post ) ) {
+			return '';
+		}
+	}
+
+	$url = get_permalink( $post );
+
+	$settings = learndash_get_setting( $post );
+
+	if ( 'paynow' === $settings['group_price_type'] && ! empty( $settings['group_price_type_paynow_enrollment_url'] ) ) {
+		$url = $settings['group_price_type_paynow_enrollment_url'];
+	} elseif ( 'subscribe' === $settings['group_price_type'] && ! empty( $settings['group_price_type_subscribe_enrollment_url'] ) ) {
+		$url = $settings['group_price_type_subscribe_enrollment_url'];
+	}
+
+	/** This filter is documented in includes/course/ld-course-functions.php */
+	return apply_filters( 'learndash_group_join_redirect', $url, $post->ID );
+}
+
+/**
  * Deletes group leader metadata when a group leader role is removed from a user.
  *
  * @since 4.7.0
@@ -2931,32 +2925,7 @@ function learndash_is_group_post( $post ): bool {
 add_action(
 	'remove_user_role',
 	function( int $user_id, string $role ) {
-		$referer = wp_get_referer();
-		$found   = [];
-
-		if (
-			$referer
-			&& strpos( $referer, '/wp-admin/user-edit.php' ) !== false
-			// phpcs:ignore WordPress.Security.NonceVerification.Missing
-			&& is_array( $_POST )
-		) {
-			// phpcs:ignore WordPress.Security.NonceVerification.Missing
-			foreach ( $_POST as $key => $value ) {
-				if ( strpos( $key, 'role' ) === false ) {
-					continue;
-				}
-
-				$found[] = is_array( $value )
-					? in_array( 'group_leader', $value, true )
-					: (
-						is_string( $value )
-							? strpos( $value, 'group_leader' ) !== false
-							: null
-					);
-			}
-		}
-
-		if ( 'group_leader' === $role && ! in_array( true, $found, true ) ) {
+		if ( 'group_leader' === $role ) {
 			global $wpdb;
 
 			$wpdb->query(
@@ -2971,37 +2940,3 @@ add_action(
 	10,
 	2
 );
-
-if ( ! function_exists( 'learndash_group_access_from' ) ) {
-	/**
-	 * Returns the date when a group becomes available for a user.
-	 *
-	 * It can return a future date if the group has not started yet (group with a start date).
-	 * Admin users don't have an access date even if they have access to the group.
-	 *
-	 * @since 4.8.0
-	 *
-	 * @param int $group_id Group ID to check.
-	 * @param int $user_id  User ID to check.
-	 *
-	 * @return int|null The date when a group becomes available for a user. Can be NULL when a user has been enrolled before 4.8.0 version.
-	 */
-	function learndash_group_access_from( int $group_id, int $user_id ): ?int {
-		$enrolled_timestamp = Cast::to_int(
-			get_user_meta( $user_id, 'group_' . $group_id . '_access_from', true )
-		);
-
-		/**
-		 * Filters the date when a group becomes available for a user.
-		 *
-		 * @since 4.8.0
-		 *
-		 * @param int|null $timestamp Enrollment date timestamp. Can be NULL when a user has been enrolled before 4.8.0 version.
-		 * @param int      $group_id  Group ID.
-		 * @param int      $user_id   User ID.
-		 *
-		 * @return int|null The date when a group becomes available for a user.
-		 */
-		return apply_filters( 'learndash_group_access_from', $enrolled_timestamp, $group_id, $user_id );
-	}
-}

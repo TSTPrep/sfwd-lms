@@ -130,26 +130,6 @@ function learndash_load_admin_resources() {
 	global $pagenow, $post, $typenow;
 	global $learndash_assets_loaded;
 
-	wp_register_style(
-		'ld-tailwindcss',
-		LEARNDASH_LMS_PLUGIN_URL . 'assets/css/ld-tailwind.css',
-		array(),
-		LEARNDASH_SCRIPT_VERSION_TOKEN
-	);
-
-	wp_style_add_data( 'ld-tailwindcss', 'rtl', 'replace' );
-
-	wp_register_style(
-		'learndash-admin',
-		LEARNDASH_LMS_PLUGIN_URL . 'src/assets/dist/css/admin/styles.css',
-		[],
-		LEARNDASH_SCRIPT_VERSION_TOKEN
-	);
-
-	wp_style_add_data( 'learndash-admin', 'rtl', 'replace' );
-
-	wp_enqueue_style( 'learndash-admin' );
-
 	wp_enqueue_style(
 		'learndash-admin-menu-style',
 		LEARNDASH_LMS_PLUGIN_URL . 'assets/css/learndash-admin-menu' . learndash_min_asset() . '.css',

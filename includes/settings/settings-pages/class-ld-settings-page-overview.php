@@ -241,9 +241,6 @@ if ( ( class_exists( 'LearnDash_Settings_Page' ) ) && ( ! class_exists( 'LearnDa
 					update_option( 'nss_plugin_license_sfwd_lms', $license );
 					update_option( 'nss_plugin_license_email_sfwd_lms', $email );
 
-					// try to activate the licensing plugin.
-					learndash_activate_learndash_hub();
-
 					$updater->reset();
 					$updater->generate_update_path();
 					$updater->getRemote_license();
@@ -262,9 +259,6 @@ if ( ( class_exists( 'LearnDash_Settings_Page' ) ) && ( ! class_exists( 'LearnDa
 					// Get values from the database.
 					$license = get_option( 'nss_plugin_license_sfwd_lms' );
 					$email   = get_option( 'nss_plugin_license_email_sfwd_lms' );
-
-					// try to activate the licensing plugin.
-					learndash_activate_learndash_hub();
 
 					// Check the license.
 					if ( ! empty( $license ) && ! empty( $email ) ) {
@@ -865,7 +859,7 @@ if ( ( class_exists( 'LearnDash_Settings_Page' ) ) && ( ! class_exists( 'LearnDa
 											if ( is_array( $rss_sell->get_items() ) ) {
 												echo '<ul>';
 												foreach ( $rss_sell->get_items( 0, 4 ) as $rss_sell_posts ) {
-													echo '<li><a href="' . esc_url( strval( $rss_sell_posts->get_permalink() ) ) . '" target="_blank" rel="noopener noreferrer">' . esc_html( strval( $rss_sell_posts->get_title() ) ) . '</a></li>';
+													echo '<li><a href="' . esc_url( $rss_sell_posts->get_permalink() ) . '" target="_blank" rel="noopener noreferrer">' . esc_html( $rss_sell_posts->get_title() ) . '</a></li>';
 												};
 												echo '</ul>';
 											} else {
@@ -901,7 +895,7 @@ if ( ( class_exists( 'LearnDash_Settings_Page' ) ) && ( ! class_exists( 'LearnDa
 											if ( is_array( $rss_tips->get_items() ) ) {
 												echo '<ul>';
 												foreach ( $rss_tips->get_items( 0, 4 ) as $rss_tips_posts ) {
-													echo '<li><a href="' . esc_url( strval( $rss_tips_posts->get_permalink() ) ) . '" target="_blank" rel="noopener noreferrer">' . esc_html( strval( $rss_tips_posts->get_title() ) ) . '</a></li>';
+													echo '<li><a href="' . esc_url( $rss_tips_posts->get_permalink() ) . '" target="_blank" rel="noopener noreferrer">' . esc_html( $rss_tips_posts->get_title() ) . '</a></li>';
 												};
 												echo '</ul>';
 											} else {
@@ -941,7 +935,7 @@ if ( ( class_exists( 'LearnDash_Settings_Page' ) ) && ( ! class_exists( 'LearnDa
 									if ( is_array( $rss_announcements->get_items() ) ) {
 										echo '<ul>';
 										foreach ( $rss_announcements->get_items( 0, 4 ) as $announcement_post ) {
-											echo '<li><a href="' . esc_url( strval( $announcement_post->get_permalink() ) ) . '" target="_blank" rel="noopener noreferrer">' . esc_html( strval( $announcement_post->get_title() ) ) . '</a></li>';
+											echo '<li><a href="' . esc_url( $announcement_post->get_permalink() ) . '" target="_blank" rel="noopener noreferrer">' . esc_html( $announcement_post->get_title() ) . '</a></li>';
 										};
 										echo '</ul>';
 									} else {

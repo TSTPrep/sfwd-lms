@@ -2,7 +2,7 @@
 /**
  * @license GPL-3.0-or-later
  *
- * Modified by learndash on 22-September-2023 using Strauss.
+ * Modified by learndash on 21-June-2023 using Strauss.
  * @see https://github.com/BrianHenryIE/strauss
  */
 
@@ -211,19 +211,6 @@ abstract class Model implements ModelInterface, Arrayable, JsonSerializable {
 	}
 
 	/**
-	 * Returns true if an attribute exists. Otherwise, false.
-	 *
-	 * @since 1.1.0
-	 *
-	 * @param string $key Attribute name.
-	 *
-	 * @return bool
-	 */
-	protected function hasAttribute( string $key ) : bool {
-		return array_key_exists( $key, $this->attributes );
-	}
-
-	/**
 	 * Checks whether a relationship has already been loaded.
 	 *
 	 * @since 1.0.0
@@ -317,7 +304,6 @@ abstract class Model implements ModelInterface, Arrayable, JsonSerializable {
 	 *
 	 * @return array<string,mixed>
 	 */
-	#[\ReturnTypeWillChange]
 	public function jsonSerialize() {
 		return get_object_vars( $this );
 	}
@@ -347,29 +333,7 @@ abstract class Model implements ModelInterface, Arrayable, JsonSerializable {
 		$this->validatePropertyExists( $key );
 		$this->validatePropertyType( $key, $value );
 
-		$validation_method = 'validate_' . $key;
-		if ( method_exists( $this, $validation_method ) ) {
-			$this->$validation_method( $value );
-		}
-
 		$this->attributes[ $key ] = $value;
-
-		return $this;
-	}
-
-	/**
-	 * Sets multiple attributes on the model.
-	 *
-	 * @since 1.2.0
-	 *
-	 * @param array<string,mixed> $attributes Attributes to set.
-	 *
-	 * @return ModelInterface
-	 */
-	public function setAttributes( array $attributes ) : ModelInterface {
-		foreach ( $attributes as $key => $value ) {
-			$this->setAttribute( $key, $value );
-		}
 
 		return $this;
 	}

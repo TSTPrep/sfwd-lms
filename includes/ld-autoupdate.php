@@ -181,9 +181,6 @@ if ( ! class_exists( 'nss_plugin_updater_sfwd_lms' ) ) {
 				update_option( 'nss_plugin_license_' . $this->code, trim( $license ), LEARNDASH_PLUGIN_LICENSE_OPTIONS_AUTOLOAD );
 				update_option( 'nss_plugin_license_email_' . $this->code, trim( $email ), LEARNDASH_PLUGIN_LICENSE_OPTIONS_AUTOLOAD );
 
-				// try to activate the licensing plugin.
-				learndash_activate_learndash_hub();
-
 				$this->reset();
 				$this->generate_update_path();
 
@@ -979,8 +976,6 @@ function learndash_get_updater_instance( $force_new = false ) {
 
 /**
  * Checks Whether the learndash license is valid or not.
- *
- * @since 3.4.0
  *
  * @return boolean
  */

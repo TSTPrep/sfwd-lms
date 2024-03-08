@@ -112,14 +112,14 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 		 */
 		public function load_settings_fields() {
 			$this->setting_option_fields = array(
-				'connection_button'         => array(
+				'connection_button'    => array(
 					'name'             => 'connection_button',
 					'type'             => 'text',
 					'label'            => '',
 					'value'            => null,
 					'display_callback' => array( $this, 'connection_button' ),
 				),
-				'enabled'                   => array(
+				'enabled'              => array(
 					'name'    => 'enabled',
 					'type'    => 'checkbox-switch',
 					'label'   => esc_html__( 'Active', 'learndash' ),
@@ -129,7 +129,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 						''    => '',
 					),
 				),
-				'test_mode'                 => array(
+				'test_mode'            => array(
 					'name'      => 'test_mode',
 					'label'     => esc_html__( 'Test Mode', 'learndash' ),
 					'help_text' => esc_html__( 'Check this box to enable test mode.', 'learndash' ),
@@ -141,41 +141,41 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'default'   => '',
 					'value'     => $this->setting_option_values['test_mode'] ?? 0,
 				),
-				'publishable_key_test'      => array(
+				'publishable_key_test' => array(
 					'name'      => 'publishable_key_test',
 					'label'     => __( 'Test Publishable Key', 'learndash' ),
 					'help_text' => __( 'Test publishable key used in test mode.', 'learndash' ),
 					'type'      => 'hidden',
 					'value'     => $this->setting_option_values['publishable_key_test'] ?? '',
 				),
-				'secret_key_test'           => array(
+				'secret_key_test'      => array(
 					'name'      => 'secret_key_test',
 					'label'     => __( 'Test Secret Key', 'learndash' ),
 					'help_text' => __( 'Test secret key used in test mode.', 'learndash' ),
 					'type'      => 'hidden',
 					'value'     => $this->setting_option_values['secret_key_test'] ?? '',
 				),
-				'publishable_key_live'      => array(
+				'publishable_key_live' => array(
 					'name'      => 'publishable_key_live',
 					'label'     => __( 'Live Publishable Key', 'learndash' ),
 					'help_text' => __( 'Live publishable key used in real transaction.', 'learndash' ),
 					'type'      => 'hidden',
 					'value'     => $this->setting_option_values['publishable_key_live'] ?? '',
 				),
-				'secret_key_live'           => array(
+				'secret_key_live'      => array(
 					'name'      => 'secret_key_live',
 					'label'     => __( 'Live Secret Key', 'learndash' ),
 					'help_text' => __( 'Live secret key used in real transaction.', 'learndash' ),
 					'type'      => 'hidden',
 					'value'     => $this->setting_option_values['secret_key_live'] ?? '',
 				),
-				'account_id'                => array(
+				'account_id'           => array(
 					'name'  => 'account_id',
 					'label' => __( 'Account Id', 'learndash' ),
 					'type'  => 'hidden',
 					'value' => $this->setting_option_values['account_id'] ?? '',
 				),
-				'payment_methods'           => array(
+				'payment_methods'      => array(
 					'name'      => 'payment_methods',
 					'label'     => __( 'Payment Methods', 'learndash' ),
 					'help_text' => __( 'Stripe payment methods to be enabled on the site.', 'learndash' ),
@@ -186,7 +186,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 						'ideal' => __( 'Ideal', 'learndash' ),
 					),
 				),
-				'return_url'                => array(
+				'return_url'           => array(
 					'name'      => 'return_url',
 					'label'     => __( 'Return URL ', 'learndash' ),
 					'help_text' => __(
@@ -196,7 +196,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 					'type'      => 'text',
 					'value'     => $this->setting_option_values['return_url'] ?? '',
 				),
-				'webhook_url'               => array(
+				'webhook_url'          => array(
 					'name'      => 'webhook_url',
 					'type'      => 'text',
 					'label'     => esc_html__( 'Webhook URL', 'learndash' ),
@@ -210,7 +210,7 @@ if ( ( class_exists( 'LearnDash_Settings_Section' ) ) && ( ! class_exists( 'Lear
 							'disable'  => 'disable',
 						),
 				),
-				'webhook_validation_button' => array(
+				'webhook_validation_button'    => array(
 					'name'             => 'webhook_validation_button',
 					'type'             => 'text',
 					'label'            => '',

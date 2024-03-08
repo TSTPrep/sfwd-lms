@@ -12,7 +12,6 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 use LearnDash\Core\Models\Product;
-use LearnDash\Core\Utilities\Cast;
 
 /**
  * LearnDash LD30 Shows registration form for user registration
@@ -1422,11 +1421,9 @@ function learndash_reset_password_output( $attr = array() ): void {
 		echo '';
 	} elseif ( isset( $_GET['password_reset'] ) && 'true' === $_GET['password_reset'] ) {
 		wp_login_form(
-			[
-				'redirect' => learndash_get_reset_password_success_page_id() > 0
-					? (string) get_permalink( learndash_get_reset_password_success_page_id() )
-					: home_url(),
-			]
+			array(
+				'redirect' => get_permalink( learndash_get_reset_password_page_id() ),
+			)
 		);
 	} else {
 		?>
@@ -1619,20 +1616,4 @@ if ( ! function_exists( 'learndash_registration_page_get_id' ) ) {
 			'registration'
 		);
 	}
-}
-
-/**
- * Returns the reset password success page ID or 0 if not set.
- *
- * @since 4.8.0
- *
- * @return int
- */
-function learndash_get_reset_password_success_page_id(): int {
-	$page_id = LearnDash_Settings_Section::get_section_setting(
-		'LearnDash_Settings_Section_Registration_Pages',
-		'reset_password_success'
-	);
-
-	return Cast::to_int( $page_id );
 }

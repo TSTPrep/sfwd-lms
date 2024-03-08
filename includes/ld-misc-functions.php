@@ -2086,41 +2086,24 @@ add_action( 'admin_notices', 'learndash_stripe_addon_deprecation_notice' );
  * @return void
  */
 function learndash_hub_deactivated_notice() {
-	if (
-		learndash_is_learndash_hub_active()
-		|| ! current_user_can( 'administrator' )
-	) {
-		return;
-	}
+	$class   = 'notice notice-warning is-dismissible';
+	$title   = __( 'LearnDash Licensing & Management', 'learndash' );
+	$message = __( 'Important! The LearnDash Licensing & Management plugin is missing. Please install and/or activate the plugin to ensure your LearnDash license works correctly. ', 'learndash' );
+	$links   = __( '<a href="https://www.learndash.com/support/docs/core/learndash-licensing-and-management/">LearnDash Licensing Guide</a>', 'learndash' );
 
-	if ( learndash_is_learndash_hub_installed() ) {
-		$activation_url = wp_nonce_url( admin_url( 'plugins.php?action=activate&plugin=' . LEARNDASH_HUB_PLUGIN_SLUG ), 'activate-plugin_' . LEARNDASH_HUB_PLUGIN_SLUG );
-
-		$message = sprintf(
-			// translators: %1$s: opening anchor tag, %2$s: closing anchor tag.
-			esc_html__( 'Important! The LearnDash Licensing & Management plugin is deactivated. Please %1$sclick here%2$s to activate the plugin to ensure your LearnDash license works correctly. ', 'learndash' ), // cspell: disable-line -- HTML link.
-			'<a href="' . $activation_url . '">',
-			'</a>'
+	if ( ! learndash_is_learndash_hub_active() && current_user_can( 'administrator' ) ) {
+		printf(
+			'<div class="%1$s">
+				<p><strong>%2$s</strong></p>
+				<p>%3$s</p>
+				<p>%4$s</p>
+			</div>',
+			esc_attr( $class ),
+			esc_html( $title ),
+			esc_html( $message ),
+			wp_kses_post( $links )
 		);
-	} else {
-		$message = esc_html__( 'Important! The LearnDash Licensing & Management plugin is missing. Please install the plugin to ensure your LearnDash license works correctly. ', 'learndash' );
 	}
-
-	$class = 'notice notice-warning is-dismissible';
-	$title = __( 'LearnDash Licensing & Management', 'learndash' );
-	$links = __( '<a href="https://www.learndash.com/support/docs/core/learndash-licensing-and-management/">LearnDash Licensing Guide</a>', 'learndash' );
-
-	printf(
-		'<div class="%1$s">
-			<p><strong>%2$s</strong></p>
-			<p>%3$s</p>
-			<p>%4$s</p>
-		</div>',
-		esc_attr( $class ),
-		esc_html( $title ),
-		$message, // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Need to output HTML.
-		wp_kses_post( $links )
-	);
 }
 
 add_action( 'admin_notices', 'learndash_hub_deactivated_notice' );

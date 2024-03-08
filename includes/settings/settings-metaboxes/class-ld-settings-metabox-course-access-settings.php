@@ -949,7 +949,7 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 						'min'  => 0,
 					),
 					'help_text' => sprintf(
-						// translators: placeholder: course, course, courses.
+					// translators: placeholder: course, course, courses.
 						esc_html_x(
 							'Limits the number of students who can take your %1$s. When the limit is reached the %2$s can no longer be purchased or enrolled in. Admins can enroll students even if the limit is reached. It does not affect open %3$s.',
 							'placeholder: course, course, courses',
@@ -1266,9 +1266,8 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 		}
 
 		/**
-		 * Update related settings after course access updating.
 		 *
-		 * @since 4.7.0
+		 * Update related settings after course access updating.
 		 *
 		 * @param WP_Post $post      The WP_Post object.
 		 * @param string  $key       The setting key.
@@ -1289,11 +1288,11 @@ if ( ( class_exists( 'LearnDash_Settings_Metabox' ) ) && ( ! class_exists( 'Lear
 						return;
 					}
 
-					$new_date = ! empty( $new_value ) ? Cast::to_int( $new_value ) : time();
+					$new_enrollment_date = ! empty( $new_value ) ? Cast::to_int( $new_value ) : time();
 
 					DB::table( 'usermeta' )
 						->where( 'meta_key', 'course_' . $post->ID . '_access_from' )
-						->update( [ 'meta_value' => $new_date ] );
+						->update( [ 'meta_value' => $new_enrollment_date ] );
 
 					break;
 			}

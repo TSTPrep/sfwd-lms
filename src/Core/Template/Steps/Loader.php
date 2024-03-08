@@ -18,7 +18,7 @@ namespace LearnDash\Core\Template\Steps;
 
 use InvalidArgumentException;
 use LearnDash\Core\Template\Steps;
-use LearnDash\Core\Factories\Model;
+use LearnDash\Core\Factories\Model_Factory;
 use LearnDash\Core\Factories\Step_Mapper_Factory;
 use LearnDash\Core\Template\Views\Traits\Supports_Steps_Context;
 
@@ -141,7 +141,7 @@ class Loader {
 		}
 
 		try {
-			$model = Model::create_from_post( $post );
+			$model = Model_Factory::create( $post );
 		} catch ( InvalidArgumentException $e ) {
 			wp_send_json_error(
 				[

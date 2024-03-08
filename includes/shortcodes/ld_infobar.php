@@ -6,8 +6,6 @@
  * @package LearnDash\Shortcodes
  */
 
-use LearnDash\Core\Models\Product;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -160,19 +158,8 @@ function learndash_infobar_shortcode( $atts = array(), $content = '', $shortcode
 		}
 	} elseif ( ! empty( $atts['group_id'] ) ) {
 
-		$post_post = get_post( $atts['group_id'] );
-
-		if ( $post_post instanceof WP_Post ) {
-			try {
-				$product    = Product::create_from_post( $post_post );
-				$has_access = $product->user_has_access();
-			} catch ( InvalidArgumentException $e ) {
-				$has_access = false;
-			}
-		} else {
-			$has_access = false;
-		}
-
+		$post_post    = get_post( $atts['group_id'] );
+		$has_access   = learndash_is_user_in_group( $atts['user_id'], $atts['group_id'] );
 		$group_status = learndash_get_user_group_status( $atts['group_id'], $atts['user_id'] );
 
 		$shortcode_output = SFWD_LMS::get_template(

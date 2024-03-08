@@ -80,10 +80,7 @@ if ( ( class_exists( 'LearnDash_Settings_Fields' ) ) && ( ! class_exists( 'Learn
 			$field_class = $this->get_field_attribute_class( $field_args, false );
 			$field_id    = $this->get_field_attribute_id( $field_args, false );
 
-			$disabled      = $field_args['disabled'] ?? false;
-			$disabled_html = $disabled ? 'disabled' : '';
-
-			$month_field = '<span class="screen-reader-text">' . esc_html__( 'Month', 'learndash' ) . '</span><select ' . $disabled_html . ' class="ld_date_mm ' . $field_class . '" name="' . $field_name . '[mm]" ><option value="">' . esc_html__( 'MM', 'learndash' ) . '</option>';
+			$month_field = '<span class="screen-reader-text">' . esc_html__( 'Month', 'learndash' ) . '</span><select class="ld_date_mm ' . $field_class . '" name="' . $field_name . '[mm]" ><option value="">' . esc_html__( 'MM', 'learndash' ) . '</option>';
 			for ( $i = 1; $i < 13; $i++ ) {
 				$monthnum     = zeroise( $i, 2 );
 				$monthtext    = $wp_locale->get_month_abbrev( $wp_locale->get_month( $i ) );
@@ -93,10 +90,10 @@ if ( ( class_exists( 'LearnDash_Settings_Fields' ) ) && ( ! class_exists( 'Learn
 			}
 				$month_field .= '</select>';
 
-			$day_field    = '<span class="screen-reader-text">' . esc_html__( 'Day', 'learndash' ) . '</span><input ' . $disabled_html . ' type="number" placeholder="DD" min="1" max="31" class="ld_date_jj ' . $field_class . '" name="' . $field_name . '[jj]" value="' . $value_jj . '" size="2" maxlength="2" autocomplete="off" />';
-			$year_field   = '<span class="screen-reader-text">' . esc_html__( 'Year', 'learndash' ) . '</span><input ' . $disabled_html . ' type="number" placeholder="YYYY" min="0000" max="9999" class="ld_date_aa ' . $field_class . '" name="' . $field_name . '[aa]" value="' . $value_aa . '" size="4" maxlength="4" autocomplete="off" />';
-			$hour_field   = '<span class="screen-reader-text">' . esc_html__( 'Hour', 'learndash' ) . '</span><input ' . $disabled_html . ' type="number" min="0" max="23" placeholder="HH" class="ld_date_hh ' . $field_class . '" name="' . $field_name . '[hh]" value="' . $value_hh . '" size="2" maxlength="2" autocomplete="off" />';
-			$minute_field = '<span class="screen-reader-text">' . esc_html__( 'Minute', 'learndash' ) . '</span><input ' . $disabled_html . ' type="number" min="0" max="59" placeholder="MN" class="ld_date_mn ' . $field_class . '" name="' . $field_name . '[mn]" value="' . $value_mn . '" size="2" maxlength="2" autocomplete="off" />';
+			$day_field    = '<span class="screen-reader-text">' . esc_html__( 'Day', 'learndash' ) . '</span><input type="number" placeholder="DD" min="1" max="31" class="ld_date_jj ' . $field_class . '" name="' . $field_name . '[jj]" value="' . $value_jj . '" size="2" maxlength="2" autocomplete="off" />';
+			$year_field   = '<span class="screen-reader-text">' . esc_html__( 'Year', 'learndash' ) . '</span><input  type="number" placeholder="YYYY" min="0000" max="9999" class="ld_date_aa ' . $field_class . '" name="' . $field_name . '[aa]" value="' . $value_aa . '" size="4" maxlength="4" autocomplete="off" />';
+			$hour_field   = '<span class="screen-reader-text">' . esc_html__( 'Hour', 'learndash' ) . '</span><input type="number" min="0" max="23" placeholder="HH" class="ld_date_hh ' . $field_class . '" name="' . $field_name . '[hh]" value="' . $value_hh . '" size="2" maxlength="2" autocomplete="off" />';
+			$minute_field = '<span class="screen-reader-text">' . esc_html__( 'Minute', 'learndash' ) . '</span><input type="number" min="0" max="59" placeholder="MN" class="ld_date_mn ' . $field_class . '" name="' . $field_name . '[mn]" value="' . $value_mn . '" size="2" maxlength="2" autocomplete="off" />';
 
 			$html .= '<div class="ld_date_selector">' . sprintf(
 				// translators: placeholders: Month Name, Day number, Year number, Hour number, Minute number.

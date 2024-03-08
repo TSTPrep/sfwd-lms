@@ -6,8 +6,6 @@
  * @since      4.1.0
  */
 
-use LearnDash\Core\Utilities\Cast;
-
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
@@ -92,7 +90,14 @@ if ( ! class_exists( 'LearnDash_Course_Wizard' ) ) {
 		public function enqueue_scripts() {
 			$screen = get_current_screen();
 			if ( is_object( $screen ) && 'toplevel_page_' . self::HANDLE === $screen->id ) {
+				wp_register_style(
+					'ld-tailwindcss',
+					LEARNDASH_LMS_PLUGIN_URL . 'assets/css/ld-tailwind.css',
+					array(),
+					LEARNDASH_SCRIPT_VERSION_TOKEN
+				);
 				wp_enqueue_style( 'ld-tailwindcss' );
+				wp_style_add_data( 'ld-tailwindcss', 'rtl', 'replace' );
 
 				wp_register_script(
 					self::HANDLE,
@@ -213,12 +218,11 @@ if ( ! class_exists( 'LearnDash_Course_Wizard' ) ) {
 				'headers'   => array(
 					'Content-Type' => 'application/json',
 				),
-				'body'      => (string) wp_json_encode(
+				'body'      => wp_json_encode(
 					array(
 						'playlist_url'  => rawurlencode( $playlist_url ),
 						'license_email' => get_option( self::LICENSE_EMAIL_KEY ),
 						'license_key'   => get_option( self::LICENSE_KEY ),
-						'site_url'      => rawurlencode( site_url() ),
 						'return_url'    => rawurlencode( $return_url ),
 					)
 				),
@@ -354,13 +358,8 @@ if ( ! class_exists( 'LearnDash_Course_Wizard' ) ) {
 				add_query_arg(
 					array(
 						'playlist_url'  => $encoded_playlist_url,
-						'license_email' => rawurlencode(
-							Cast::to_string(
-								get_option( self::LICENSE_EMAIL_KEY )
-							)
-						),
+						'license_email' => get_option( self::LICENSE_EMAIL_KEY ),
 						'license_key'   => get_option( self::LICENSE_KEY ),
-						'site_url'      => rawurlencode( site_url() ),
 						'return_url'    => rawurlencode( admin_url( 'admin.php?page=' . self::HANDLE . '&u=' . rawurlencode( $encoded_playlist_url ) ) ),
 					),
 					self::PLAYLIST_PROCESS_SERVER_ENDPOINT . '/url_data'
@@ -508,7 +507,7 @@ if ( ! class_exists( 'LearnDash_Course_Wizard' ) ) {
 						<div class="w-full ld-flex ld-mt-2">
 							<fieldset>
 								<div>
-									<input type="radio" id="ld_cw_course_price_type_open" name="ld_cw_course_price_type" value="open" <?php checked( LEARNDASH_PRICE_TYPE_OPEN, LEARNDASH_DEFAULT_COURSE_PRICE_TYPE ); ?>>
+									<input type="radio" id="ld_cw_course_price_type_open" name="ld_cw_course_price_type" value="open" checked="checked">
 									<label class="ld-font-bold" for="ld_cw_course_price_type_open">
 										<?php echo esc_html__( 'Open', 'learndash' ); ?>
 									</label>
@@ -516,7 +515,7 @@ if ( ! class_exists( 'LearnDash_Course_Wizard' ) ) {
 								</div>
 
 								<div>
-									<input type="radio" id="ld_cw_course_price_type_free" name="ld_cw_course_price_type" value="free" <?php checked( LEARNDASH_PRICE_TYPE_FREE, LEARNDASH_DEFAULT_COURSE_PRICE_TYPE ); ?>>
+									<input type="radio" id="ld_cw_course_price_type_free" name="ld_cw_course_price_type" value="free">
 									<label class="ld-font-bold" for="ld_cw_course_price_type_free">
 										<?php echo esc_html__( 'Free', 'learndash' ); ?>
 									</label>
@@ -524,7 +523,7 @@ if ( ! class_exists( 'LearnDash_Course_Wizard' ) ) {
 								</div>
 
 								<div>
-									<input type="radio" id="ld_cw_course_price_type_buy_now" name="ld_cw_course_price_type" value="paynow" <?php checked( LEARNDASH_PRICE_TYPE_PAYNOW, LEARNDASH_DEFAULT_COURSE_PRICE_TYPE ); ?>>
+									<input type="radio" id="ld_cw_course_price_type_buy_now" name="ld_cw_course_price_type" value="paynow">
 									<label class="ld-font-bold" for="ld_cw_course_price_type_buy_now">
 										<?php echo esc_html__( 'Buy now', 'learndash' ); ?>
 									</label>
@@ -540,7 +539,7 @@ if ( ! class_exists( 'LearnDash_Course_Wizard' ) ) {
 								</div>
 
 								<div>
-									<input type="radio" id="ld_cw_course_price_type_subscribe" name="ld_cw_course_price_type" value="subscribe" <?php checked( LEARNDASH_PRICE_TYPE_SUBSCRIBE, LEARNDASH_DEFAULT_COURSE_PRICE_TYPE ); ?>>
+									<input type="radio" id="ld_cw_course_price_type_subscribe" name="ld_cw_course_price_type" value="subscribe">
 									<label class="ld-font-bold" for="ld_cw_course_price_type_subscribe">
 										<?php echo esc_html__( 'Recurring', 'learndash' ); ?>
 									</label>
@@ -569,7 +568,7 @@ if ( ! class_exists( 'LearnDash_Course_Wizard' ) ) {
 								</div>
 
 								<div>
-									<input type="radio" id="ld_cw_course_price_type_closed" name="ld_cw_course_price_type" value="closed" <?php checked( LEARNDASH_PRICE_TYPE_CLOSED, LEARNDASH_DEFAULT_COURSE_PRICE_TYPE ); ?>>
+									<input type="radio" id="ld_cw_course_price_type_closed" name="ld_cw_course_price_type" value="closed">
 									<label class="ld-font-bold" for="ld_cw_course_price_type_closed">
 										<?php echo esc_html__( 'Closed', 'learndash' ); ?>
 									</label>

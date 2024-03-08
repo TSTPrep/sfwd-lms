@@ -3,7 +3,7 @@
  * Plugin Name: LearnDash LMS
  * Plugin URI: http://www.learndash.com
  * Description: LearnDash LMS Plugin - Turn your WordPress site into a learning management system.
- * Version: 4.9.1.1
+ * Version: 4.7.0
  * Author: LearnDash
  * Author URI: http://www.learndash.com
  * Text Domain: learndash
@@ -25,10 +25,9 @@ use LearnDash\Core\App;
 use LearnDash\Core\Autoloader;
 use LearnDash\Core\Container;
 use StellarWP\Learndash\lucatume\DI52\ContainerException;
-use StellarWP\Learndash\StellarWP\Telemetry\Config as TelemetryConfig;
+use StellarWP\Learndash\StellarWP\Telemetry\Config;
 use StellarWP\Learndash\StellarWP\Telemetry\Core as Telemetry;
 use StellarWP\Learndash\StellarWP\DB\DB;
-use StellarWP\Learndash\StellarWP\Validation\Config as ValidationConfig;
 
 // CONSTANTS.
 
@@ -39,7 +38,7 @@ use StellarWP\Learndash\StellarWP\Validation\Config as ValidationConfig;
 *
 * @internal Will be set by LearnDash LMS. Semantic versioning is used.
 */
-define( 'LEARNDASH_VERSION', '4.9.1.1' );
+define( 'LEARNDASH_VERSION', '4.7.0' );
 
 if ( ! defined( 'LEARNDASH_LMS_PLUGIN_DIR' ) ) {
 	/**
@@ -102,29 +101,21 @@ add_action(
 	function () {
 		// Telemetry.
 
-		$telemetry_server_url = defined( 'STELLARWP_TELEMETRY_SERVER' ) && ! empty( STELLARWP_TELEMETRY_SERVER )
-			? STELLARWP_TELEMETRY_SERVER
+		$telemetry_server_url = defined( 'LEARNDASH_TELEMETRY_URL' ) && ! empty( LEARNDASH_TELEMETRY_URL )
+			? LEARNDASH_TELEMETRY_URL
 			: 'https://telemetry.stellarwp.com/api/v1';
 
 		App::set_container( new Container() );
-
-		TelemetryConfig::set_container( App::container() );
-		TelemetryConfig::set_server_url( $telemetry_server_url );
-		TelemetryConfig::set_hook_prefix( 'learndash' );
-		TelemetryConfig::set_stellar_slug( 'learndash' );
+		Config::set_container( App::container() );
+		Config::set_server_url( $telemetry_server_url );
+		Config::set_hook_prefix( 'learndash' );
+		Config::set_stellar_slug( 'learndash' );
 
 		Telemetry::instance()->init( __FILE__ );
 
 		// DB.
 
 		DB::init();
-
-		// Validation.
-
-		ValidationConfig::setServiceContainer( App::container() );
-		ValidationConfig::setHookPrefix( 'learndash' );
-
-		ValidationConfig::initialize();
 	},
 	0
 );
@@ -196,8 +187,8 @@ function learndash_deactivated() {
  *
  * @since 4.6.0
  *
- * @param class-string $service_provider_class The fully-qualified Service Provider class name.
- * @param string       ...$alias               A list of aliases the provider should be registered with.
+ * @param string $service_provider_class The fully-qualified Service Provider class name.
+ * @param string ...$alias               A list of aliases the provider should be registered with.
  *
  * @throws ContainerException If the Service Provider is not correctly configured or there's an issue reflecting on it.
  *
