@@ -2887,8 +2887,8 @@
             /**
              * TSTPREP
              */
-            startTimer() {
-                let time = 20;
+            startTimer(time) {
+				console.log('time', time);
                 let timerContainer = $e.find('.wpProQuiz_spinnerII .timer');
 
                 let timer = setInterval(function () {
@@ -2904,20 +2904,22 @@
                 let startTimer = false;
                 if ($e.find('.wpProQuiz_spinnerII').length === 0) {
                     startTimer = true;
-                    $e.append('<div class="wpProQuiz_spinnerII"><div class="timer">20</div><div class="spinner"></div></div>');
+                    $e.append('<div class="wpProQuiz_spinnerII"><div class="timer">25</div><div class="spinner"></div></div>');
                 }
 
-                /**
-                 * Start the timer only once.
-                 */
-                if (startTimer === true) {
-                    plugin.methode.startTimer();
+				/**
+				 * Start the timer only once.
+				 */
+				console.log('StartTimer1', startTimer)
+				if (startTimer === true) {
+					console.log('StartTimer2', startTimer)
+                    plugin.methode.startTimer(25);
                 }
 
                 $e.find('.wpProQuiz_spinnerII').show();
             },
             hideSpinnerII() {
-                $e.find('.wpProQuiz_spinnerII').hide();
+                $e.find('.wpProQuiz_spinnerII').remove();
             },
             validateNumberOfWords: function ($question) {
                 const essayText = $question
