@@ -2888,7 +2888,7 @@
              * TSTPREP
              */
             startTimer() {
-                let time = 15;
+                let time = 20;
                 let timerContainer = $e.find('.wpProQuiz_spinnerII .timer');
 
                 let timer = setInterval(function () {
@@ -2904,7 +2904,7 @@
                 let startTimer = false;
                 if ($e.find('.wpProQuiz_spinnerII').length === 0) {
                     startTimer = true;
-                    $e.append('<div class="wpProQuiz_spinnerII"><div class="timer">15</div><div class="spinner"></div></div>');
+                    $e.append('<div class="wpProQuiz_spinnerII"><div class="timer">20</div><div class="spinner"></div></div>');
                 }
 
                 /**
@@ -3012,7 +3012,6 @@
                     /**
                      * TSTPREP - Validate number of words
                      */
-                    plugin.methode.showSpinnerII();
                     if ($this.find('.openai-disclaimer').length === 0)
                         $this
                             .find('.wpProQuiz_question_text')
@@ -3020,7 +3019,6 @@
 
                     if (!plugin.methode.validateNumberOfWords($this)) {
                         $this.find('.openai-disclaimer').show();
-                        plugin.methode.hideSpinnerII();
                         return false;
                     } else {
                         $this.find('.openai-disclaimer').hide();
