@@ -2,7 +2,7 @@
 /**
  * LearnDash Casting class.
  *
- * @since 4.7.0
+ * @since 4.7.0.1
  *
  * @package LearnDash\Core
  */
@@ -12,13 +12,13 @@ namespace LearnDash\Core\Utilities;
 /**
  * A helper class to provide easier ways to cast.
  *
- * @since 4.7.0
+ * @since 4.7.0.1
  */
 class Cast {
 	/**
 	 * Casts a value to a string if possible or returns an empty string.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @param mixed $value The value to cast.
 	 *
@@ -39,7 +39,7 @@ class Cast {
 	/**
 	 * Casts a value to a int if possible or returns an empty string.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @param mixed $value The value to cast.
 	 *
@@ -60,7 +60,7 @@ class Cast {
 	/**
 	 * Casts a value to a float if possible or returns an empty string.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @param mixed $value The value to cast.
 	 *
@@ -81,7 +81,7 @@ class Cast {
 	/**
 	 * Casts a value to a bool if possible or returns an empty string.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @param mixed $value The value to cast.
 	 *

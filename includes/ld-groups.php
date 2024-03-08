@@ -2920,7 +2920,7 @@ function learndash_get_group_enrollment_url( $post ): string {
 /**
  * Deletes group leader metadata when a group leader role is removed from a user.
  *
- * @since 4.7.0
+ * @since 4.7.0.1
  */
 add_action(
 	'remove_user_role',

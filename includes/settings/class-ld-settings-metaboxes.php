@@ -549,7 +549,7 @@ if ( ! class_exists( 'LearnDash_Settings_Metabox' ) ) {
 					/**
 					 * Fires after a settings field is updated.
 					 *
-					 * @since 4.7.0
+					 * @since 4.7.0.1
 					 *
 					 * @param WP_Post $post        WP_Post object being saved.
 					 * @param string  $setting_key Setting key updated.

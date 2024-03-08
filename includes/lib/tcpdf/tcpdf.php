@@ -1328,7 +1328,7 @@ class TCPDF {
 	/**
 	 * ID of page objects.
 	 * @protected
-	 * @since 4.7.000 (2009-08-29)
+	 * @since 4.7.0.100 (2009-08-29)
 	 */
 	protected $page_obj_id = array();
 

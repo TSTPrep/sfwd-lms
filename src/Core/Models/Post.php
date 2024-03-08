@@ -102,7 +102,7 @@ abstract class Post extends Model {
 	/**
 	 * Returns a post type.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @return string
 	 */
@@ -113,7 +113,7 @@ abstract class Post extends Model {
 	/**
 	 * Returns whether a post type is the same as the given one.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @param string $post_type Post type.
 	 *
@@ -126,7 +126,7 @@ abstract class Post extends Model {
 	/**
 	 * Returns whether a post type is the same as the given one (compared by key).
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @param LDLMS_Post_Types::* $post_type_key Post type key.
 	 *

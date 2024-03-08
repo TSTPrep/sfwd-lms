@@ -137,7 +137,7 @@ class Product extends Post {
 	/**
 	 * Returns whether a product can be purchased.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @param WP_User|null $user User model. If null, the current user is used.
 	 *
@@ -160,7 +160,7 @@ class Product extends Post {
 		/**
 		 * Filters whether a product has ended.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param bool    $can_be_purchased True if a product can be purchased, false otherwise.
 		 * @param Product $product          Product model.
@@ -173,7 +173,7 @@ class Product extends Post {
 	/**
 	 * Returns whether a product has started. If the product has not a start date or is open, it returns true.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @return bool
 	 */
@@ -190,7 +190,7 @@ class Product extends Post {
 		/**
 		 * Filters whether a product has started.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param bool     $has_started True if a product has started, false otherwise
 		 * @param ?int     $start_date  The start date.
@@ -204,7 +204,7 @@ class Product extends Post {
 	/**
 	 * Returns whether a product has ended. If the product has not a end date or is open, it returns false.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @return bool
 	 */
@@ -221,7 +221,7 @@ class Product extends Post {
 		/**
 		 * Filters whether a product has ended.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param bool     $has_ended True if a product has ended, false otherwise.
 		 * @param ?int     $end_date  The end date.
@@ -235,7 +235,7 @@ class Product extends Post {
 	/**
 	 * Returns the start date. Null if the product has not a start date.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @return ?int
 	 */
@@ -253,7 +253,7 @@ class Product extends Post {
 		/**
 		 * Filters the product start date.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param ?int     $start_date Product start date. Null if the product has not a start date.
 		 * @param Product  $product    Product model.
@@ -266,7 +266,7 @@ class Product extends Post {
 	/**
 	 * Returns the end date. Null if the product has not an end date.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @return ?int
 	 */
@@ -284,7 +284,7 @@ class Product extends Post {
 		/**
 		 * Filters the product end date.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param ?int     $end_date Product end date. Null if the product has not an end date.
 		 * @param Product  $product  Product model.
@@ -297,7 +297,7 @@ class Product extends Post {
 	/**
 	 * Returns the seats limit. Null if the product has not a seats limit.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @return ?int
 	 */
@@ -318,7 +318,7 @@ class Product extends Post {
 		/**
 		 * Filters the product seats limit.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param ?int     $seats_limit Product seats limit. Null if the product has not a seats limit.
 		 * @param Product  $product     Product model.
@@ -331,7 +331,7 @@ class Product extends Post {
 	/**
 	 * Returns the number of seats used in the product.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @return int|null The number of seats used in the product. Null if it is not possible to count.
 	 */
@@ -351,7 +351,7 @@ class Product extends Post {
 		/**
 		 * Filters the product seats used.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param int|null $seats_used Product seats used.
 		 * @param Product  $product    Product model.
@@ -364,7 +364,7 @@ class Product extends Post {
 	/**
 	 * Returns the number of seats available.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @return int|null The number of seats available. If there is no limit, it returns null.
 	 */
@@ -379,7 +379,7 @@ class Product extends Post {
 		/**
 		 * Filters the product seats available.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param int|null $seats_available Product seats available.
 		 * @param Product  $product         Product model.
@@ -543,7 +543,7 @@ class Product extends Post {
 	 * Returns true if a user has access to this product, false otherwise.
 	 *
 	 * @since 4.5.0
-	 * @since 4.7.0 $user parameter is optional.
+	 * @since 4.7.0.1 $user parameter is optional.
 	 *
 	 * @param WP_User|null $user WP_User object.
 	 *
@@ -579,7 +579,7 @@ class Product extends Post {
 	/**
 	 * Returns true if a user has pre-ordered this product, false otherwise.
 	 *
-	 * @since 4.7.0
+	 * @since 4.7.0.1
 	 *
 	 * @param WP_User|null $user WP_User object. If null, the current user will be used.
 	 *
@@ -599,7 +599,7 @@ class Product extends Post {
 		/**
 		 * Filters whether a user has pre-ordered a product.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @param bool    $pre_ordered True if a user has pre-ordered, false otherwise.
 		 * @param Product $product     Product model.
@@ -678,7 +678,7 @@ class Product extends Post {
 	 * Returns whether the product content should be visible.
 	 *
 	 * @since 4.6.0
-	 * @since 4.7.0 $user parameter is optional.
+	 * @since 4.7.0.1 $user parameter is optional.
 	 *
 	 * @param WP_User|null $user User.
 	 *

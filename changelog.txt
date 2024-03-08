@@ -1,4 +1,4 @@
-= [4.7.0] =
+= [4.7.0.1] =
 
 * Feature - Course pre-selling.
 * Feature - Course student limit.

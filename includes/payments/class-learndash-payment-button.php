@@ -26,7 +26,7 @@ if ( ! class_exists( 'Learndash_Payment_Button' ) ) {
 		/**
 		 * Current product.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @var Product|null
 		 */
@@ -244,7 +244,7 @@ if ( ! class_exists( 'Learndash_Payment_Button' ) ) {
 		/**
 		 * Returns a disabled button that does not react.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @return string
 		 */
@@ -259,7 +259,7 @@ if ( ! class_exists( 'Learndash_Payment_Button' ) ) {
 			/**
 			 * Filters disabled payment button HTML markup.
 			 *
-			 * @since 4.7.0
+			 * @since 4.7.0.1
 			 *
 			 * @param string                                $button Disabled payment button HTML markup.
 			 * @param array{ type?: string, price?: float } $params Payment parameters.
@@ -610,7 +610,7 @@ if ( ! class_exists( 'Learndash_Payment_Button' ) ) {
 		/**
 		 * Maps the group payment button label.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @return string
 		 */
@@ -623,7 +623,7 @@ if ( ! class_exists( 'Learndash_Payment_Button' ) ) {
 		/**
 		 * Maps the course payment button label.
 		 *
-		 * @since 4.7.0
+		 * @since 4.7.0.1
 		 *
 		 * @return string
 		 */
