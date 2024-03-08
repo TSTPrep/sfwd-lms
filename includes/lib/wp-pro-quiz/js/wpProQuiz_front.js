@@ -764,6 +764,23 @@
 						.find('#uploadEssayFile_' + question_id)
 						.val();
 
+
+
+
+                    /**
+                     * TSTPREP
+                     */
+                    if ($question.find('.acad-q-prompt').length) {
+                        plugin.methode.showSpinnerII();
+                        $question.find('.wpProQuiz_QuestionButton').hide();
+                        plugin.methode.makeAjaxCall(essayText, $question);
+                    }
+                    /**
+                     * /TSTPREP
+                     */
+
+
+
 					if (typeof essayText !== 'undefined') {
 						response = essayText;
 					}
@@ -2862,6 +2879,110 @@
 			hideSpinner() {
 				$e.find('.wpProQuiz_spinner').hide();
 			},
+
+
+
+
+
+            /**
+             * TSTPREP
+             */
+            startTimer() {
+                let time = 15;
+                let timerContainer = $e.find('.wpProQuiz_spinnerII .timer');
+
+                let timer = setInterval(function () {
+                    time--;
+                    timerContainer.html(time);
+
+                    if (time === 0) {
+                        clearInterval(timer);
+                    }
+                }, 1000);
+            },
+            showSpinnerII() {
+                let startTimer = false;
+                if ($e.find('.wpProQuiz_spinnerII').length === 0) {
+                    startTimer = true;
+                    $e.append('<div class="wpProQuiz_spinnerII"><div class="timer">15</div><div class="spinner"></div></div>');
+                }
+
+                /**
+                 * Start the timer only once.
+                 */
+                if (startTimer === true) {
+                    plugin.methode.startTimer();
+                }
+
+                $e.find('.wpProQuiz_spinnerII').show();
+            },
+            hideSpinnerII() {
+                $e.find('.wpProQuiz_spinnerII').hide();
+            },
+            validateNumberOfWords: function ($question) {
+                const essayText = $question
+                    .find('.wpProQuiz_questionEssay')
+                    .val();
+
+                const essayParts = essayText.split(' ');
+
+                return essayParts.length >= 100;
+            },
+
+            // Function to make AJAX call
+            makeAjaxCall: function (essayText, $question) {
+
+
+                let data = {
+                    essay: essayText,
+                    teacher: $question.find('.acad-q-prompt').text(),
+                    student_1: $question.find('.acad-answer-1').text(),
+                    student_2: $question.find('.acad-answer-2').text(),
+                };
+
+                data = JSON.stringify(data);
+
+
+                /**
+                 * TODO make the call to Procesio
+                 */
+                $.ajax({
+                    method: 'POST',
+                    type: 'application/json',
+                    contentType: 'application/json',
+                    url: 'https://webapi.procesio.app/api/webhooks/launch/7bdb88f1-6ca7-47a5-ada7-d8073b0f3a15',
+                    data: data,
+                    success: function (response) {
+                        console.log('stopAjaxCall - 2345634574');
+                        plugin.methode.showSpinnerII();
+
+                        const newText = response?.[0].choices[0].message.content.replace(/\n/g, '<br>');
+
+                        // Check
+                        if (response?.[0].object === 'chat.completion') {
+                            $question
+                                .find('.wpProQuiz_question_text')
+                                .append(`<p class="openai-feedback">${newText}</p>`);
+                        }
+                        plugin.methode.hideSpinnerII();
+
+                    }
+                });
+
+            },
+            /**
+             * /TSTPREP
+             */
+
+
+
+
+
+
+
+
+
+
 			checkQuestion(list, endCheck) {
 				const finishQuiz = list == undefined ? false : true;
 				const responses = {};
@@ -2882,6 +3003,36 @@
 					if ($this.data('check')) {
 						return true;
 					}
+
+
+
+
+
+
+                    /**
+                     * TSTPREP - Validate number of words
+                     */
+                    plugin.methode.showSpinnerII();
+                    if ($this.find('.openai-disclaimer').length === 0)
+                        $this
+                            .find('.wpProQuiz_question_text')
+                            .append('<p class="openai-disclaimer">You need to write at least 100 words.</p>');
+
+                    if (!plugin.methode.validateNumberOfWords($this)) {
+                        $this.find('.openai-disclaimer').show();
+                        plugin.methode.hideSpinnerII();
+                        return false;
+                    } else {
+                        $this.find('.openai-disclaimer').hide();
+                    }
+                    /**
+                     * TSTPREP - Validate number of words
+                     */
+
+
+
+
+
 
 					if (data.type == 'single' || data.type == 'multiple') {
 						name = 'singleMulti';
