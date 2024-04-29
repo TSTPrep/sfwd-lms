@@ -124,6 +124,16 @@ function learndash_load_resources() {
 		wp_enqueue_script( 'jquery-dropdown-js', LEARNDASH_LMS_PLUGIN_URL . 'assets/js/jquery.dropdown.min.js', array( 'jquery' ), LEARNDASH_SCRIPT_VERSION_TOKEN, true );
 		$learndash_assets_loaded['scripts']['jquery-dropdown-js'] = __FUNCTION__;
 	}
+
+
+    /**
+     * TSTPREP added for the tooltip
+     */
+	if ( ! is_admin() ) {
+		wp_enqueue_script( 'floating-ui-core', '//cdn.jsdelivr.net/npm/@floating-ui/core@1.6.1', ['jquery'], LEARNDASH_SCRIPT_VERSION_TOKEN, true );
+		wp_enqueue_script( 'floating-ui-dom', '//cdn.jsdelivr.net/npm/@floating-ui/dom@1.6.4', ['floating-ui-core'], LEARNDASH_SCRIPT_VERSION_TOKEN, true );
+	}
+
 }
 
 /**
