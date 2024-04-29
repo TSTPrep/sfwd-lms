@@ -5112,3 +5112,56 @@ var learndash_decodeHTML = function (html) {
 
     return html;
 };
+
+
+var renderSentenceFragment = ($el, data, mouseEnter, mouseLeave) => {
+	if (data.op === "addition") {
+		return;
+	}
+
+	const $s = $(`<span>${data.word}</span>`).appendTo($el);
+
+	if (data.op === "nochange") {
+		$s.addClass("nochange");
+		return;
+	}
+
+	$s.on("mouseleave", mouseLeave);
+
+	if (data.op === "deletion") {
+		$s.addClass("deletion").on("mouseenter", (e) => {
+			mouseEnter(e.target, "Delete this word");
+		});
+		return;
+	}
+
+	$s.addClass("incorrect").on("mouseenter", (e) => {
+		mouseEnter(e.target, "Correct: " + data.replace);
+	});
+};
+
+var renderSentence = ($el, index, data, mouseEnter, mouseLeave) => {
+	const $s = $(`<span class="s${index}" />`).appendTo($el);
+	data.forEach((d) => {
+		renderSentenceFragment($s, d, mouseEnter, mouseLeave);
+	});
+};
+
+var renderResponse = ($el, data) => {
+	const $p = $("<p/>").appendTo($el);
+	const $popper = $('<div class="popper-tooltip" />').appendTo($el);
+
+	const mouseEnter = (el, text) => {
+		$popper.css("display", "block").text(text);
+		window.FloatingUIDOM.computePosition(el, $popper.get(0), {
+			placement: "top",
+		}).then(({ x, y }) => {
+			$popper.css("left", x + "px").css("top", y + "px");
+		});
+	};
+	const mouseLeave = () => {
+		$popper.css("display", "");
+	};
+
+	data.operations.map((d, i) => renderSentence($p, i, d, mouseEnter, mouseLeave));
+};

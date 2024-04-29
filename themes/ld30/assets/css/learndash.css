@@ -7853,3 +7853,31 @@ body.ld-in-focus-mode.admin-bar {
         transform: rotate(1turn)
     }
 }
+
+.incorrect,
+.deletion {
+	border-bottom: 1px solid #ff585980;
+	padding: 0 3px 0 0;
+	display: inline;
+	background: #ff585905;
+	text-decoration: none;
+	color: var(--color-body);
+}
+
+.nochange {
+	display: inline;
+	padding: 0 3px 0 0;
+}
+
+.popper-tooltip {
+	display: none;
+	width: max-content;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	text-align: left;
+	border: 1px solid black;
+}
