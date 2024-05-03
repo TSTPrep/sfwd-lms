@@ -172,7 +172,6 @@ add_action( 'wp_print_footer_scripts', 'learndash_unload_resources', 1 );
 /**
  * TSTPREP process the API call
  */
-require_once LEARNDASH_LMS_PLUGIN_DIR . 'vendor/guzzlehttp/guzzle/src/Client.php';
 use GuzzleHttp\Client;
 
 // Handle the AJAX request
