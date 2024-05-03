@@ -7835,7 +7835,7 @@ body.ld-in-focus-mode.admin-bar {
 
 .wpProQuiz_spinnerII .spinner,
 .wpProQuiz_spinnerII .spinner:before {
-    --_g: linear-gradient(#17177c 0 0) 50%; /* update the color here */
+    --_g: linear-gradient(#00B189 0 0) 50%; /* update the color here */
     background: var(--_g)/34% 8% space no-repeat,
     var(--_g)/8% 34% no-repeat space;
 }
