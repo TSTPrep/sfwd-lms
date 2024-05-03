@@ -168,3 +168,48 @@ function learndash_unload_resources() {
 	}
 }
 add_action( 'wp_print_footer_scripts', 'learndash_unload_resources', 1 );
+
+/**
+ * TSTPREP process the API call
+ */
+require_once LEARNDASH_LMS_PLUGIN_DIR . 'vendor/guzzlehttp/guzzle/src/Client.php';
+use GuzzleHttp\Client;
+
+// Handle the AJAX request
+function feedback_type_correct_sent() {
+
+    // Check if the values are set and retrieve them
+    if ( isset( $_POST['student_text'] ) ) {
+
+        // Now you can use $correct_text and $student_text for your logic
+        // For example, just to check the values, you might want to send them back
+        $data = [
+            'essay' => stripslashes( $_POST['student_text'] ),
+            'task' => '',
+            'demo' => false,
+            'connection_id' => 10,
+        ];
+
+    } else {
+        // Send an error response back if the expected data isn't set
+        wp_send_json_error( [ 'message' => 'Data not received.' ] );
+    }
+
+    $client   = new Client( [ 'base_uri' => 'https://TSTPrep-tstprep-writing.hf.space/' ] );
+    $response = $client->request( 'POST', 'correct_sent', [
+        'headers' => [
+            'Authorization' => "Bearer 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",
+            'Content-Type'  => 'application/json',
+        ],
+        'json'    => $data,
+    ] );
+
+
+    /**
+     * Just return the $response of the request?
+     */
+    wp_send_json_success( json_decode( $response->getBody() ) );
+    wp_die();
+}
+add_action( 'wp_ajax_feedback_type_correct_sent', 'feedback_type_correct_sent' );
+add_action( 'wp_ajax_nopriv_feedback_type_correct_sent', 'feedback_type_correct_sent' );
