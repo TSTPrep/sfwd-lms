@@ -2998,7 +2998,6 @@
                 });
 
 
-
                 Promise.all([promise1, promise2])
                     .then(([response1, response2]) => {
                         // Handle the responses
@@ -3012,7 +3011,6 @@
                         // Handle the error
                         console.log(error);
                     });
-
 
 
             },
@@ -3034,79 +3032,85 @@
                 list = list == undefined ? currentQuestion : list;
 
                 list.each(function () {
-                    const $this = $(this);
-                    const question_index = $this.index();
-                    const $questionList = $this.find(globalNames.questionList);
-                    const question_id = $questionList.data('question_id');
-                    const data = config.json[$questionList.data('question_id')];
-                    let name = data.type;
+                        const $this = $(this);
+                        const question_index = $this.index();
+                        const $questionList = $this.find(globalNames.questionList);
+                        const question_id = $questionList.data('question_id');
+                        const data = config.json[$questionList.data('question_id')];
+                        let name = data.type;
 
-                    questionTimer.questionStop();
+                        questionTimer.questionStop();
 
-                    if ($this.data('check')) {
-                        return true;
-                    }
-
-
-                    /**
-                     * TSTPREP - Validate number of words
-                     */
-                    plugin.methode.showSpinnerII();
-                    if ($this.find('.openai-disclaimer').length === 0)
-                        $this
-                            .find('.wpProQuiz_question_text')
-                            .append('<p class="openai-disclaimer">You need to write at least 100 words.</p>');
-
-                    if (!plugin.methode.validateNumberOfWords($this)) {
-                        $this.find('.openai-disclaimer').show();
-                        plugin.methode.hideSpinnerII();
-                        return false;
-                    } else {
-                        $this.find('.openai-disclaimer').hide();
-                    }
-                    /**
-                     * TSTPREP - Validate number of words
-                     */
+                        if ($this.data('check')) {
+                            return true;
+                        }
 
 
-                    if (data.type == 'single' || data.type == 'multiple') {
-                        name = 'singleMulti';
-                    }
-                    //if (config.ld_script_debug == true) {
-                    //	console.log('checkQuestion: calling readResponses');
-                    //}
+                        /**
+                         * TSTPREP - Validate number of words
+                         */
+                        if ($this.find('.acad-q-prompt').length) {
+                            console.log($this)
 
-                    /**
-                     * TODO
-                     *
-                     */
-                    console.log('checkQuestion: calling readResponses');
+                            plugin.methode.showSpinnerII();
+                            if ($this.find('.openai-disclaimer').length === 0)
+                                $this
+                                    .find('.wpProQuiz_question_text')
+                                    .append('<p class="openai-disclaimer">You need to write at least 100 words.</p>');
 
-                    responses[question_id] = readResponses(
-                        name,
-                        data,
-                        $this,
-                        $questionList,
-                        true
-                    );
-                    responses[question_id].question_pro_id = data.id;
-                    responses[question_id].question_post_id =
-                        data.question_post_id;
-                    //console.log('responses[%o]', responses);
+                            if (!plugin.methode.validateNumberOfWords($this)) {
+                                $this.find('.openai-disclaimer').show();
+                                plugin.methode.hideSpinnerII();
+                                return false;
+                            } else {
+                                $this.find('.openai-disclaimer').hide();
+                            }
+                        }
+                        /**
+                         * TSTPREP - Validate number of words
+                         */
 
-                    if (
-                        config.timelimitcookie !== 0 ||
-                        config.quiz_resume_enabled === '1'
-                    ) {
-                        plugin.methode.CookieSaveResponse(
-                            question_id,
-                            question_index,
-                            data.type,
-                            responses[question_id],
+
+                        if (data.type == 'single' || data.type == 'multiple') {
+                            name = 'singleMulti';
+                        }
+                        //if (config.ld_script_debug == true) {
+                        //	console.log('checkQuestion: calling readResponses');
+                        //}
+
+                        /**
+                         * TODO
+                         *
+                         */
+                        console.log('checkQuestion: calling readResponses');
+
+                        responses[question_id] = readResponses(
+                            name,
+                            data,
+                            $this,
+                            $questionList,
                             true
                         );
+                        responses[question_id].question_pro_id = data.id;
+                        responses[question_id].question_post_id =
+                            data.question_post_id;
+                        //console.log('responses[%o]', responses);
+
+                        if (
+                            config.timelimitcookie !== 0 ||
+                            config.quiz_resume_enabled === '1'
+                        ) {
+                            plugin.methode.CookieSaveResponse(
+                                question_id,
+                                question_index,
+                                data.type,
+                                responses[question_id],
+                                true
+                            );
+                        }
                     }
-                });
+                )
+                ;
                 //console.log('responses[%o]', responses);
                 config.checkAnswers = {
                     list,
@@ -3699,7 +3703,8 @@
                             .sortable('destroy');
                         break;
                 }
-            },
+            }
+            ,
             setCheckedStatusFromData(data, question, list) {
                 if (config.ld_script_debug == true) {
                     console.log('setCheckedStatusFromData data[%o]', data);
@@ -3791,7 +3796,8 @@
                         }
                     }
                 });
-            },
+            }
+            ,
             showTip() {
                 const $this = $(this);
                 const id = $this
@@ -3821,7 +3827,8 @@
                         $(document).unbind('.tipEvent');
                     }
                 });
-            },
+            }
+            ,
 
             ajax(data, success, dataType) {
                 dataType = dataType || 'json';
@@ -3851,7 +3858,8 @@
                 if (bitOptions.cors) {
                     jQuery.support.cors = false;
                 }
-            },
+            }
+            ,
 
             checkQuizLock() {
                 quizStatus.loadLock = 1;
@@ -3872,10 +3880,10 @@
                              */
 
                             /*
-						if(json.lock.pre) {
-							$e.find('input[name="restartQuiz"]').hide();
-						}
-						*/
+                        if(json.lock.pre) {
+                            $e.find('input[name="restartQuiz"]').hide();
+                        }
+                        */
                         }
 
                         if (json.prerequisite != undefined) {
@@ -3896,7 +3904,8 @@
                         }
                     }
                 );
-            },
+            }
+            ,
 
             loadQuizData() {
                 plugin.methode.ajax(
@@ -3918,7 +3927,8 @@
                         }
                     }
                 );
-            },
+            }
+            ,
 
             setAverageResult(p, g) {
                 const v = $e.find(
@@ -3927,7 +3937,8 @@
 
                 v.eq(1).text(p + '%');
                 v.eq(0).css('width', (240 * p) / 100 + 'px');
-            },
+            }
+            ,
 
             handleToplistData(json) {
                 const $tp = $e.find('.wpProQuiz_addToplist');
@@ -3975,7 +3986,8 @@
                 } else {
                     $tp.hide();
                 }
-            },
+            }
+            ,
 
             scrollTo(e, h) {
                 const x = e.offset().top - 100;
@@ -3983,7 +3995,8 @@
                 if (h || (window.pageYOffset || document.body.scrollTop) > x) {
                     $('html,body').clearQueue().animate({scrollTop: x}, 300);
                 }
-            },
+            }
+            ,
 
             addToplist() {
                 if (bitOptions.preview) {
@@ -4044,13 +4057,15 @@
                         }
                     }
                 );
-            },
+            }
+            ,
 
             updateToplist() {
                 if (typeof wpProQuiz_fetchToplist === 'function') {
                     wpProQuiz_fetchToplist();
                 }
-            },
+            }
+            ,
 
             registerSolved() {
                 // Free Input field
@@ -4147,7 +4162,8 @@
                         values: {item: $p, index: $p.index(), solved: s},
                     });
                 });
-            },
+            }
+            ,
 
             loadQuizDataAjax(quizStart) {
                 plugin.methode.ajax(
@@ -4218,7 +4234,8 @@
                         }
                     }
                 );
-            },
+            }
+            ,
             nextQuestionClicked() {
                 const $questionList = currentQuestion.find(
                     globalNames.questionList
@@ -4248,7 +4265,8 @@
                 }
 
                 plugin.methode.nextQuestion();
-            },
+            }
+            ,
             initQuiz() {
                 //if (config.ld_script_debug == true) {
                 //	console.log('in initQuiz');
@@ -4360,7 +4378,8 @@
 
                 // Added in LD v2.4 to allow external notification when quiz init happens.
                 $e.trigger('learndash-quiz-init');
-            },
+            }
+            ,
             // Setup the Cookie specific to the Quiz ID.
             CookieInit() {
                 // Comment out to force clear cookie on init.
@@ -4403,7 +4422,8 @@
 
                 plugin.methode.CookieSetResponses();
                 plugin.methode.CookieResponseTimer();
-            },
+            }
+            ,
             CookieDelete() {
                 //if (config.ld_script_debug == true) {
                 //	console.log('CookieDelete: config.timelimitcookie[%o]', config.timelimitcookie);
@@ -4412,7 +4432,8 @@
                 //	console.log('CookieDelete: cookie_name[%o]', cookie_name);
                 //}
                 jQuery.cookie(cookie_name, '');
-            },
+            }
+            ,
             CookieProcessQuestionResponse(list, lockQuestion) {
                 var lockQuestion = lockQuestion || false;
                 if (list != null) {
@@ -4451,7 +4472,8 @@
                         );
                     });
                 }
-            },
+            }
+            ,
             // Save the answer(response) to the cookie. This is called from 'checkQuestion' and cookie timer functions.
             CookieSaveResponse(
                 question_id,
@@ -4488,7 +4510,8 @@
                 if (config.quiz_resume_enabled === '1' && !cookieSendTimer) {
                     plugin.methode.startCookieSendTimer();
                 }
-            },
+            }
+            ,
             calculateCookieExpiry() {
                 cookieExpireDate = new Date();
                 if (
@@ -4510,7 +4533,8 @@
                         config.quiz_resume_cookie_expiration * 1000
                     );
                 }
-            },
+            }
+            ,
             saveMetaDataToCookie(id, metadata) {
                 var metadata = metadata || false;
                 // Calculate the cookie date to expire.
@@ -4543,7 +4567,8 @@
                 if (config.quiz_resume_enabled === '1' && !cookieSendTimer) {
                     plugin.methode.startCookieSendTimer();
                 }
-            },
+            }
+            ,
             // The cookie timer loops every 5 seconds to save the last response from the user.
             // This only effect Essay questions as there is some current logic where once
             // 'readResponses' is called the question is locked.
@@ -4564,7 +4589,8 @@
                         );
                     }
                 });
-            },
+            }
+            ,
             // Load the Cookie (if present) and sets the values of the Quiz questions to the cookie saved value
             CookieSetResponses() {
                 if (config.ld_script_debug == true) {
@@ -4659,7 +4685,8 @@
                         }
                     }
                 });
-            },
+            }
+            ,
             startCookieSendTimer() {
                 // Immediately send the first cookie entry to the server
                 // to trigger the Continue Quiz logic when no server-side
@@ -4680,7 +4707,8 @@
                         plugin.methode.prepareSendCookieData();
                     }
                 }, config.quiz_resume_cookie_send_timer * 1000);
-            },
+            }
+            ,
             prepareSendCookieData() {
                 // Get Timelimit cookie data.
                 if (config.timelimit) {
@@ -4697,13 +4725,16 @@
                     cookieSending = true;
                     plugin.methode.sendCookieData(cookieKeys);
                 }
-            },
+            }
+            ,
             getObjectLength(object) {
                 return Object.keys(object).length;
-            },
+            }
+            ,
             getObjectKeys(object) {
                 return Object.keys(object);
-            },
+            }
+            ,
             excludeKeysFromCount(object, exclude) {
                 const allKeys = plugin.methode.getObjectKeys(object);
                 let count = 0;
@@ -4713,7 +4744,8 @@
                     }
                 });
                 return count;
-            },
+            }
+            ,
             addTimelimitCookieData() {
                 const quizTimelimitCookie = jQuery.cookie(
                     timelimit.timer_cookie
@@ -4724,7 +4756,8 @@
                             JSON.parse(quizTimelimitCookie),
                     });
                 }
-            },
+            }
+            ,
             moveToNextUnansweredQuestion(data) {
                 if (config.ld_script_debug == true) {
                     console.log('moveToNextUnansweredQuestion: data[%o]', data);
@@ -4830,7 +4863,8 @@
                         });
                     }
                 }
-            },
+            }
+            ,
             // Variation of showSinglePage()
             singlePageNavigationQuizResume(index) {
                 const answeredQuestions = config.qpp >= 1 ? index : index + 1;
@@ -4874,7 +4908,8 @@
                         0
                     );
                 }
-            },
+            }
+            ,
             sendCookieData(keys) {
                 jQuery.ajax({
                     type: 'POST',
@@ -4910,14 +4945,16 @@
                         cookieSending = false;
                     },
                 });
-            },
+            }
+            ,
             compareObjectKeys(a, b) {
                 const keysObjectA = Object.keys(a).sort();
                 const keysObjectB = Object.keys(b).sort();
                 return (
                     JSON.stringify(keysObjectA) === JSON.stringify(keysObjectB)
                 );
-            },
+            }
+            ,
             deleteCookieKeys(keys) {
                 // Remove saved keys from cookie object
                 keys.forEach(function (key) {
@@ -4928,7 +4965,8 @@
                 jQuery.cookie(cookie_name, JSON.stringify(cookie_value), {
                     expires: cookieExpireDate,
                 });
-            },
+            }
+            ,
             setupMatrixSortHeights() {
                 /**
                  * Here we have to do all the questions because the current logic when using X questions
@@ -4976,7 +5014,8 @@
                         }
                     }
                 );
-            },
+            }
+            ,
         };
 
         /**
@@ -5168,7 +5207,8 @@
     };
 
 
-})(jQuery);
+})
+(jQuery);
 
 var learndash_prepare_quiz_resume_data = function (config) {
     if (config.quiz_resume_enabled === 'undefined') {
