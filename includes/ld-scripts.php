@@ -179,7 +179,7 @@ add_action('wp_print_footer_scripts', 'learndash_unload_resources', 1);
 use GuzzleHttp\Client;
 
 // Handle the AJAX request
-function feedback_type_correct_sent()
+function feedback_type_correct_sent_1()
 {
 
     // Check if the values are set and retrieve them
@@ -216,5 +216,5 @@ function feedback_type_correct_sent()
     wp_die();
 }
 
-add_action('wp_ajax_feedback_type_correct_sent', 'feedback_type_correct_sent');
-add_action('wp_ajax_nopriv_feedback_type_correct_sent', 'feedback_type_correct_sent');
+add_action('wp_ajax_feedback_type_correct_sent', 'feedback_type_correct_sent_1');
+add_action('wp_ajax_nopriv_feedback_type_correct_sent', 'feedback_type_correct_sent_1');

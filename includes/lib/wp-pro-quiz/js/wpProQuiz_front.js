@@ -3053,18 +3053,18 @@
                             console.log($this)
 
                             plugin.methode.showSpinnerII();
-                            if ($this.find('.openai-disclaimer').length === 0)
-                                $this
-                                    .find('.wpProQuiz_question_text')
-                                    .append('<p class="openai-disclaimer">You need to write at least 100 words.</p>');
+                            // if ($this.find('.openai-disclaimer').length === 0)
+                            //     $this
+                            //         .find('.wpProQuiz_question_text')
+                            //         .append('<p class="openai-disclaimer">You need to write at least 100 words.</p>');
 
-                            if (!plugin.methode.validateNumberOfWords($this)) {
-                                $this.find('.openai-disclaimer').show();
-                                plugin.methode.hideSpinnerII();
-                                return false;
-                            } else {
-                                $this.find('.openai-disclaimer').hide();
-                            }
+                            // if (!plugin.methode.validateNumberOfWords($this)) {
+                            //     $this.find('.openai-disclaimer').show();
+                            //     plugin.methode.hideSpinnerII();
+                            //     return false;
+                            // } else {
+                            //     $this.find('.openai-disclaimer').hide();
+                            // }
                         }
                         /**
                          * TSTPREP - Validate number of words
